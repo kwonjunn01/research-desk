@@ -49,6 +49,7 @@
 <summary class="nav-mid-title">통합 지도</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">통합</span> Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html"><span class="nav-badge">예측</span> Prediction Feedback Loop</a></li>
 </ul>
 </details>
 <details class="nav-mid">
@@ -86,6 +87,7 @@
 <h2>먼저 볼 것</h2>
 <ul>
 <li><a href="/research-desk/reports/cross/2026-05-05.html">오늘의 Cross-Ontology Synthesis</a> — AI research signal ↔ market narrative 연결 리포트</li>
+<li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html">Prediction Feedback Loop</a> — 단기/중장기 예측, timing gap, prediction-vs-actual feedback system</li>
 <li><a href="/research-desk/ai-research/signal-map.html">AI Research Signal Map</a> — 기술 signal 지도</li>
 <li><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra Industry Linkage Map</a> — 산업/시장 연결 지도</li>
 </ul>
@@ -105,6 +107,19 @@
   DataCenter -- pulls_demand_for --&gt; Chips[AI Semiconductor]
   Chips -- depends_on --&gt; HBM[HBM / Advanced Packaging]
   DataCenter -- constrained_by --&gt; Power[Power / Grid / Cooling]</div></div>
+<h2>Forecasting Layer</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  Signal[&quot;Daily Signals&quot;] --&gt; Ledger[&quot;Prediction Ledger&quot;]
+  Ledger --&gt; Check[&quot;Short / Mid / Long Check&quot;]
+  Check --&gt; Gap[&quot;Prediction vs Actual Gap&quot;]
+  Gap --&gt; Update[&quot;Next Forecast Update&quot;]
+  Update --&gt; Ledger</div></div>
+<ul>
+<li><strong>Short-term:</strong> 1일~2주. 오늘 signal이 바로 어떤 narrative를 강화/약화하는지 확인</li>
+<li><strong>Mid-term:</strong> 1개월~1분기. 기술 signal이 adoption/infra demand로 이어지는지 확인</li>
+<li><strong>Long-term:</strong> 6개월~2년. structural theme와 산업 edge의 지속성 확인</li>
+<li>핵심은 예측을 지우지 않고, 실제 결과와의 간극을 기록해서 다음 예측의 가정과 가중치를 보정하는 것</li>
+</ul>
 <h2>읽는 순서</h2>
 <ol>
 <li><strong>Research node:</strong> 오늘 논문/레포/기술 signal이 어느 node를 강화했는가?</li>
