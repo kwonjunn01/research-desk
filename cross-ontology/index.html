@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Public Research Garden</title>
+  <title>Cross-Ontology Synthesizer</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -81,61 +81,52 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Public Research Garden</h1>
-<blockquote>뉴스를 많이 쌓는 곳이 아니라, <strong>오늘의 신호가 어느 지도 위에서 움직이는지</strong> 보는 개인 Research Desk.</blockquote>
-<h2>AI Research</h2>
-<h3>먼저 볼 것</h3>
+  <main><article><h1>Cross-Ontology Synthesizer</h1>
+<blockquote>AI Research signal과 Market Narrative를 따로 보지 않고, <strong>기술 변화가 어떤 산업 node와 market edge를 움직이는지</strong> 보는 통합 지도.</blockquote>
+<h2>먼저 볼 것</h2>
 <ul>
-<li><a href="/research-desk/ai-research/signal-map.html">AI Research Signal Map</a> — Post-training, Agent, Inference, Memory/RAG가 어떻게 이어지는지 보는 지도</li>
-<li><a href="/research-desk/ai-research/index.html">AI Research Radar</a> — 공개 리서치 허브</li>
+<li><a href="/research-desk/reports/cross/2026-05-05.html">오늘의 Cross-Ontology Synthesis</a> — AI research signal ↔ market narrative 연결 리포트</li>
+<li><a href="/research-desk/ai-research/signal-map.html">AI Research Signal Map</a> — 기술 signal 지도</li>
+<li><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra Industry Linkage Map</a> — 산업/시장 연결 지도</li>
 </ul>
-<h3>날짜별 리포트</h3>
+<h2>통합 지도</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  AI[AI Research Signals] --&gt; Inference[Inference Stack]
+  AI --&gt; Agent[Agentic AI / Orchestration]
+  AI --&gt; Memory[Memory / RAG Security]
+  AI --&gt; Device[On-device / Edge AI]
+
+  Inference -- cost_and_latency_pressure --&gt; Cloud[Cloud Hyperscaler]
+  Agent -- increases_workload_for --&gt; Cloud
+  Memory -- gates_adoption_for --&gt; Enterprise[Enterprise / Healthcare AI]
+  Device -- creates_demand_for --&gt; Robotics[Robotics / Edge Devices]
+
+  Cloud -- drives_capex_for --&gt; DataCenter[AI Data Center]
+  DataCenter -- pulls_demand_for --&gt; Chips[AI Semiconductor]
+  Chips -- depends_on --&gt; HBM[HBM / Advanced Packaging]
+  DataCenter -- constrained_by --&gt; Power[Power / Grid / Cooling]</div></div>
+<h2>읽는 순서</h2>
+<ol>
+<li><strong>Research node:</strong> 오늘 논문/레포/기술 signal이 어느 node를 강화했는가?</li>
+<li><strong>Bridge edge:</strong> 그 signal이 cost, workload, adoption, device shift 중 어디로 연결되는가?</li>
+<li><strong>Market node:</strong> 연결된 산업 node가 오늘 뉴스/가격 narrative에서도 강했는가?</li>
+<li><strong>Evidence card:</strong> research evidence와 market evidence가 같은 방향인지, 서로 충돌하는지 본다.</li>
+</ol>
+<h2>주요 bridge edge</h2>
 <ul>
-<li>2026-05-05: <a href="/research-desk/reports/ai-research/2026-05-05.html">Daily AI Research Radar</a></li>
-<li>2026-05-04: <a href="/research-desk/reports/ai-research/2026-05-04.html">Daily AI Research Radar</a></li>
+<li><strong>Inference Stack → Cloud/Data Center:</strong> inference 비용·메모리 병목은 cloud margin, GPU demand, power/cooling narrative와 연결된다.</li>
+<li><strong>Agentic AI → Cloud workload:</strong> agent workflow가 실제 제품화되면 tool call, memory, retrieval, multi-step inference가 늘어난다.</li>
+<li><strong>On-device LLM → Robotics/Edge:</strong> cloud inference 일부를 대체할 수도 있지만, edge device/robotics 수요를 새로 만들 수도 있다.</li>
+<li><strong>Memory/RAG Security → Enterprise adoption:</strong> evidence tracing과 retrieval trust는 regulated industry adoption의 병목이 된다.</li>
+<li><strong>Post-training → Compute demand:</strong> task 성공률이 높아지면 agent 사용량이 늘 수 있고, 효율화가 capex ROI narrative를 바꿀 수도 있다.</li>
 </ul>
-<h3>앞으로 채울 시각화</h3>
+<h2>앞으로 채울 시각화</h2>
 <ul>
-<li>Topic heatmap: 오늘 올라온 논문/레포를 topic node에 직접 연결</li>
-<li>Research flow: <code>post-training → agent → memory/RAG → production</code> 흐름별 병목</li>
-<li>Evidence cards: 논문/레포별 “왜 중요한지 / 어디에 연결되는지 / 다음 확인 질문” 카드</li>
-</ul>
-<h2>Cross-Ontology</h2>
-<h3>먼저 볼 것</h3>
-<ul>
-<li><a href="/research-desk/cross-ontology/index.html">Cross-Ontology Synthesizer</a> — AI research signal과 market narrative를 연결하는 통합 지도</li>
-<li>2026-05-05: <a href="/research-desk/reports/cross/2026-05-05.html">Cross-Ontology Synthesis</a></li>
-</ul>
-<h3>앞으로 채울 시각화</h3>
-<ul>
-<li>Cross signal heatmap: research node ↔ market node를 daily heat로 연결</li>
-<li>Evidence pair cards: 논문/레포 evidence와 시장 뉴스 evidence를 한 카드로 묶기</li>
-<li>Missing evidence: 기술 signal은 강하지만 market evidence가 약한 blind spot 표시</li>
-</ul>
-<h2>Market Ontology</h2>
-<h3>먼저 볼 것</h3>
-<ul>
-<li><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra Industry Linkage Map</a> — Cloud capex, AI data center, semiconductor, HBM, power grid가 이어지는 산업 지도</li>
-<li><a href="/research-desk/market-ontology/index.html">Market Ontology</a> — 공개 시장 온톨로지 허브</li>
-</ul>
-<h3>날짜별 리포트</h3>
-<ul>
-<li>2026-05-05: <a href="/research-desk/reports/market/2026-05-05.html">Market Narrative Brief</a></li>
-<li>2026-05-04: <a href="/research-desk/reports/market/2026-05-04.html">Market Narrative Brief</a></li>
-</ul>
-<h3>앞으로 채울 시각화</h3>
-<ul>
-<li>Bottleneck radar: HBM, advanced packaging, power/grid, export control의 완화/심화 상태</li>
-<li>Narrative map: 어떤 뉴스가 어떤 node/edge를 강하게 만들었는지</li>
-<li>Watchlist graph: 기업을 단순 ticker가 아니라 supply chain role로 연결</li>
-</ul>
-<h2>Operations</h2>
-<ul>
-<li><a href="/research-desk/weekly-reviews/index.html">Weekly Reviews</a> — daily signal을 주간 단위로 압축하는 곳</li>
-<li><a href="/research-desk/agent-build-log/index.html">Agent Build Log</a> — Research Desk를 어떻게 만들고 있는지 기록</li>
-</ul>
-<h2>Publishing Rule</h2>
-<p><code>01-daily</code>, <code>02-weekly</code>, <code>03-reports</code>, <code>04-ontology</code>는 working notes다. 공개 페이지는 사람이 검토한 뒤 <code>06-public/content/</code> 또는 static site로 승격한다.</p></article></main>
+<li>Cross signal heatmap: research node와 market node의 daily heat를 한 카드에 표시</li>
+<li>Evidence pair cards: 논문/레포 evidence 1개 + 시장 뉴스 evidence 1개를 한 묶음으로 표시</li>
+<li>Weekly bridge review: 한 주 동안 반복된 bridge edge를 trend로 승격</li>
+<li>Missing evidence card: 기술 signal은 강하지만 market evidence가 약한 node, 또는 반대 경우 표시</li>
+</ul></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';

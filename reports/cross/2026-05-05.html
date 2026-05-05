@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross-Ontology Synthesis — 2026-05-05</title>
+  <link rel="stylesheet" href="/research-desk/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1><a href="/research-desk/index.html">Research Desk</a></h1>
+    <div class="meta">Personal Research Radar</div>
+    <details class="nav-major">
+<summary class="nav-major-title">Home</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">Overview</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
+<li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
+<li><a href="/research-desk/agent-build-log/index.html"><span class="nav-badge">빌드</span> Agent Build Log</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">AI Research</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">MOC</span> AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/signal-map.html"><span class="nav-badge">지도</span> AI Research Signal Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-05.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-04.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Cross-Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">통합 지도</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">통합</span> Cross-Ontology Synthesizer</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-05.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Market Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">MOC</span> Market Ontology</a></li>
+<li><a href="/research-desk/market-ontology/industry-linkage-map.html"><span class="nav-badge">지도</span> AI Infra Industry Linkage Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-05.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-04.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+</details>
+</details>
+  </aside>
+  <main><article><h1>Cross-Ontology Synthesis — 2026-05-05</h1>
+<p>tags: #cross-ontology #research-radar #market-narrative</p>
+<p><span class="badge">Home</span> / <span class="badge">Research Radar MOC</span> / <span class="badge">Market Ontology MOC</span></p>
+<blockquote>자동 생성 초안이다. 투자 추천이 아니라, AI research signal이 market narrative/industry ontology와 만나는 지점을 찾기 위한 연결 지도다.</blockquote>
+<h2>0. 오늘의 통합 지도</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  Research[&quot;AI Research Signals&quot;] --&gt; Inference[&quot;Inference Stack&quot;]
+  Research --&gt; Agent[&quot;Agentic AI / Orchestration&quot;]
+  Research --&gt; Memory[&quot;Memory / RAG Security&quot;]
+  Research --&gt; Device[&quot;On-device / Edge AI&quot;]
+  Inference -- cost_and_latency_pressure --&gt; Cloud[&quot;Cloud Hyperscaler&quot;]
+  Cloud -- drives_capex_for --&gt; DataCenter[&quot;AI Data Center&quot;]
+  DataCenter -- pulls_demand_for --&gt; Chips[&quot;AI Semiconductor&quot;]
+  Chips -- depends_on --&gt; HBM[&quot;HBM / Advanced Packaging&quot;]
+  DataCenter -- constrained_by --&gt; Power[&quot;Power / Grid / Cooling&quot;]
+  Device -- creates_demand_for --&gt; Robotics[&quot;Robotics / Edge Devices&quot;]
+  Memory -- gates_adoption_for --&gt; Enterprise[&quot;Enterprise / Healthcare AI&quot;]
+  Agent -- increases_workload_for --&gt; Cloud</div></div>
+<h2>1. 오늘의 Cross Signal Heat</h2>
+<h3>강 · Inference Stack → AI Data Center / Cloud Hyperscaler / Power Infrastructure</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>inference_cost_pressure_links_to_capex_and_power</code></li>
+<li><strong>왜 연결되는가:</strong> inference 비용·메모리 병목은 cloud serving margin, data center 증설, 전력/냉각 수요 narrative와 직접 연결된다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://arxiv.org/abs/2605.01793v1">Analytic Framework for Estimating Memory Cost</a> — 메모리 비용을 정량화하려는 항목이라, agent/on-device inference가 실제 비용 병목을 넘을 수 있는지 보는 데 직접 연결된다.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxORWEybGxncUR3dVVLaE9ObEU3aU9vZ0stUHM1MzdsNE5HUFNuZEkzOXNwQzdmcHZfVmRFRUNBMDVvQzF2dmVrQ0tqZ1o2S0ZKR3IyckZIZG92OGstMERnbG1GU2o1clpNZ0NBb2Y2bER3VnQxMnFVY09TS2pQTDlrb1FjRl9oNkk?oc=5">AI is outpacing America’s power grid. Nuclear must become a national priority. - Utility Dive</a> — Utility Dive / quality 2 / hits: power, grid, nuclear</li>
+<li><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNcm9zcE12cGlGWW1NRXNXOWFRWTJYelJHQ0loZEJaZ1ZvY1owdTY4NDU5OEd6Rml4MFhPeDAxN3NNaDlrbHMxRzNjamdIUkFwYW13Q3Fpb0ZHckxfaXpKS09hdUpld0dqTnh1MjVxVzBUZXdTZlIybzdtQ3M2TG42QnpPQkdUMjliVVp3QnhhS1JlQ3IyR1BqWDVmWkRsQlU?oc=5">How Schneider Electric and NVIDIA are redefining AI data center design - IT Brief New Zealand</a> — IT Brief New Zealand / quality 2 / hits: ai data center, </li>
+</ul>
+<h3>강 · On-device LLM / Edge AI → On-device AI / Robotics / AI Semiconductor</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>workload_shift_creates_edge_device_demand</code></li>
+<li><strong>왜 연결되는가:</strong> on-device inference가 가능해지면 일부 cloud workload는 줄 수 있지만, 로봇·모바일·edge device의 새 수요와 chip narrative를 만든다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://arxiv.org/abs/2605.01793v1">Analytic Framework for Estimating Memory Cost</a> — 메모리 비용을 정량화하려는 항목이라, agent/on-device inference가 실제 비용 병목을 넘을 수 있는지 보는 데 직접 연결된다.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUTc2a2h0aUlEM2xtMVFyRzVoam1yTnQ2bTF4VkhVYWM1Wm9EcEVMZUtuTU5hZ1JiMVczWGxtMXE1cW1ueFhuc1lmU2Q5ZDVIM2k2OTI2WHZtSmJKYmJXazJJekpjZ2R1WTk1N1cyYmhJUTA3X1Y2SGxleGFpaFdnZEFnYkgyRW9ReC1Xb1RkRXF2LWVuVlAzRkZBMWRtdmZXcUVENFVITUxsSUY2QzExemE1Vk5GQnoyQ3NTb1NBdmhRa00?oc=5">Meta Acquires Robotics AI Company to Help Build Humanoid Technology - Bloomberg.com</a></li>
+<li><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPOUw4Z3ZUd0ZqdmRNalhsc1dXamdYVDZtNnRDdU02YUp6cTRVNDJMVFBmUDl5ZThOUnVzV3h0WEI5VXNVOWZLQlY3QVZVcUlwVWtVaC04MHJfNzh3SWotRVozekxybTZxdGlYZkxqTTZNSmR5amlVbnQ0bHdmRFZucWltdnVyd3V5M3JtdjNFSUw4TXMtSjdZ?oc=5">AI, GPU, And HPC Data Centers: The Infrastructure Behind Modern AI - Semiconductor Engineering</a> — Semiconductor Engineering / quality 2 / hits: data center</li>
+</ul>
+<h3>강 · Agentic AI / LLM Orchestration → Cloud Hyperscaler / Enterprise AI / Software Workflow</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>agent_workflows_drive_cloud_and_enterprise_adoption</code></li>
+<li><strong>왜 연결되는가:</strong> agent orchestration이 실제 workflow 제품으로 내려오면 cloud workload와 enterprise AI adoption narrative가 강화된다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://arxiv.org/abs/2605.01823v1">Selector-Guided Autonomous Curriculum for One-Shot Reinforcement Learning from Verifiable Rewards</a> — 오늘 올라온 RLVR/보상 기반 학습 항목이라, agent가 긴 reasoning/task를 더 안정적으로 수행할 수 있는지 확인할 가치가 있다.</li>
+<li><a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a> — agent 협업 UI/제품화 신호라, orchestration이 실제 사용자 workflow로 내려오는지 볼 수 있다.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOWFaQ1NWUDI2and3RVI0dk1wV2MyR3BmUEJMR1B6TzM1c3o4QWp4Ym5CQ1JnWHZYTUNzRFMyNWZvZDlvSnZfRFlaa2FQZkZ3OENNOFJEVGJER0NISXNNdkt6VFpGT2oxMDd1LUNpM1FrVkpzc0kwdndTX2tWSjJtdUYwd2lsbXpET25TVHlMalA4YzctRGd0Vl9NcGM5TWE1ZS00aWNPd0s?oc=5">Big Tech capex ranked: What Alphabet, Amazon, Apple, Meta, and Microsoft are spending as AI investment surges - Fast Company</a> — Fast Company /</li>
+<li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ3ZoQS1HTnhPNE04YW1Oa2pfZUlUU3U0SmRKSUJoUTFfZnNvbGpOaDg4ZUJOakptVERocGVpUkNBS0JTaHJqQ3VvOXB6amFWaHpXVk9kbVNxbTZVZDZDNklwV0JBVFNXUzl5THNVUFp3RTlvYjFyWVpWeHROMjh4VkRMaGdfQlNwM3NTQ2x3?oc=5">Data-Center Capex Hikes Positive For These AI Stocks - Investor&#x27;s Business Daily</a> — Investor&#x27;s Business Daily / quality 3 / hits: capex</li>
+</ul>
+<h3>강 · Memory / RAG / RAG Security → Enterprise AI Risk / Healthcare AI / Security</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>retrieval_trust_risk_controls_enterprise_adoption</code></li>
+<li><strong>왜 연결되는가:</strong> RAG evidence 추적·오염·보안 문제가 커지면 regulated enterprise/healthcare AI adoption 속도와 governance narrative에 영향을 준다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://arxiv.org/abs/2605.01793v1">Analytic Framework for Estimating Memory Cost</a> — 메모리 비용을 정량화하려는 항목이라, agent/on-device inference가 실제 비용 병목을 넘을 수 있는지 보는 데 직접 연결된다.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li>[8 Best Healthcare AI Stocks to Buy According to Analysts - Insider Monkey](https://news.google.com/rss/articles/CBMiogFBVV95cUxNdTVkWGFpVnpsazFoLV90RENQei14dkl0ajFlcTdVdW9SSlFiVXVlcl9BamNQSU11a0Z3Q2M2SjRhVWZ4bUU0UWp2TV90MlIwOGl4WlRtekNMRTFZVWhNdjc3TW90OTVwd29HSWw5Y2lLVUFEMVE4c3U1YllNTF9jQkRQQVZldVRCNzltdkFPdHd3a2t3OW0ybnkxRXNSZWZ1dkHSAaoBQVVfeXFMT3NlXzY4SURKX2xzV29OSVFNMjJCa3ZzcHBFa3dqNWFJcmdOSHpQZC1sdDM3UzZtcEo0R</li>
+<li><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPNUE3VTE0S0ZIU3VTUVVnbEtvMnhCQ1VjUldvWUZTQTNRU0ZjYUMyQ2ltOG9RbXpOME1QNDliRWhkTWItb1RwV1U2LXVVdHZwRFFmWDJhdFVrYmJxUFRSU2tMS0ZVRzB3U1RZLU4wV0NYM2JlS3hjVWNLdFBRX0I0aWJIdWRWc19SSjBCSFZUY1c1ZTAyckZqc2ozSjUzUWxHUlFkdlRCZzBqUzNFek1ZS3pNOXdBdVhQc2ZkQm9R?oc=5">Generative AI in healthcare: Adoption matures as agentic AI emerges - McKinsey &amp; Company</a> — McKinsey &amp; Company / </li>
+</ul>
+<h3>강 · Post-training / RLVR → AI Semiconductor / Cloud Capex ROI</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>model_capability_gains_raise_or_reprice_compute_demand</code></li>
+<li><strong>왜 연결되는가:</strong> post-training이 모델의 task 성공률을 높이면 agent 사용량과 compute demand를 늘릴 수 있고, 반대로 효율화는 capex ROI narrative를 재평가하게 만든다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://arxiv.org/abs/2605.01823v1">Selector-Guided Autonomous Curriculum for One-Shot Reinforcement Learning from Verifiable Rewards</a> — 오늘 올라온 RLVR/보상 기반 학습 항목이라, agent가 긴 reasoning/task를 더 안정적으로 수행할 수 있는지 확인할 가치가 있다.</li>
+<li><a href="https://arxiv.org/abs/2605.01823v1">Selector-Guided Autonomous Curriculum for One-Shot Reinforcement Learning from Verifiable Rewards</a> — arXiv, score 7, LLM Orchestration / Post-training</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQcm50RTdIRWJBZHVlUFQ5Sld2WURZZUhDUTJzRHI3YTlYR3Z3cmFtQTRTNE9UdTBhVmwwYkN1b0Fvc2RMTTlSTFBLUUhvekpUUE15a0NMVTZHc3kwaW1lakZqVXNUZmhiTUtYZlhzOURUVHJCSFVHajJqUTZfQ1hFWEdORUluU0I1ekZGVkNZWWhOSS03S3VqbTNnUnhUdUtFak5OVTZFZWIzUHZDSU5XdF9JYmE3R3FOY3dOXzN5WktzMUIxNWVLcU9n?oc=5">SK Hynix shares rally 13% after US tech firms signal strong AI spending plans - Reuters</a> — Reuter</li>
+<li><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNcm9zcE12cGlGWW1NRXNXOWFRWTJYelJHQ0loZEJaZ1ZvY1owdTY4NDU5OEd6Rml4MFhPeDAxN3NNaDlrbHMxRzNjamdIUkFwYW13Q3Fpb0ZHckxfaXpKS09hdUpld0dqTnh1MjVxVzBUZXdTZlIybzdtQ3M2TG42QnpPQkdUMjliVVp3QnhhS1JlQ3IyR1BqWDVmWkRsQlU?oc=5">How Schneider Electric and NVIDIA are redefining AI data center design - IT Brief New Zealand</a> — IT Brief New Zealand / quality 2 / hits: ai data center, </li>
+</ul>
+<hr>
+<h2>2. 오늘의 해석</h2>
+<ul>
+<li>Research signal은 단독으로 끝내지 않고 <code>compute cost</code>, <code>agent workload</code>, <code>RAG trust</code>, <code>on-device shift</code> 중 어디에 닿는지 본다.</li>
+<li>Market narrative는 가격 예측이 아니라 <code>어떤 산업 node/edge가 강해졌는지</code>로 읽는다.</li>
+<li>가장 중요한 질문은 ‘기술 signal이 실제 workload나 capex narrative를 바꾸는가?’다.</li>
+</ul>
+<h2>3. 다음 확인 질문</h2>
+<ul>
+<li>Inference memory/cost 개선이 cloud inference 비용을 실제로 낮추는가, 아니면 agent 사용량 증가로 총 compute demand를 키우는가?</li>
+<li>On-device LLM은 cloud 수요를 대체하는가, 아니면 robotics/edge workload를 새로 만들어 semiconductor 수요를 넓히는가?</li>
+<li>RAG security/evidence tracing은 enterprise/healthcare adoption의 병목인가, 아니면 governance 제품 기회인가?</li>
+<li>Hyperscaler capex 뉴스가 HBM/packaging/power bottleneck과 같은 방향으로 움직이는가?</li>
+</ul>
+<h2>4. 원본 리포트</h2>
+<ul>
+<li><span class="badge">Daily AI Research Radar — 2026-05-05</span></li>
+<li><span class="badge">Market Narrative Brief — 2026-05-05</span></li>
+</ul></article></main>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
+</body>
+</html>
