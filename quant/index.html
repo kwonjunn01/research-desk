@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quant Bot</title>
+  <link rel="stylesheet" href="/research-desk/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1><a href="/research-desk/index.html">Research Desk</a></h1>
+    <div class="meta">Personal Research Radar</div>
+    <details class="nav-major">
+<summary class="nav-major-title">Home</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">Overview</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
+<li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
+<li><a href="/research-desk/agent-build-log/index.html"><span class="nav-badge">빌드</span> Agent Build Log</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">AI Research</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">MOC</span> AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/signal-map.html"><span class="nav-badge">지도</span> AI Research Signal Map</a></li>
+<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html"><span class="nav-badge">전문</span> Agent AI Specialist Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-05.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-04.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Cross-Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">통합 지도</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">통합</span> Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">실제</span> Prediction Board</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html"><span class="nav-badge">예측</span> Prediction Feedback Loop</a></li>
+<li><a href="/research-desk/cross-ontology/inertia-gap-matrix.html"><span class="nav-badge">관성</span> Inertia Gap Matrix</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-05.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Market Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">MOC</span> Market Ontology</a></li>
+<li><a href="/research-desk/market-ontology/reference-dashboard-registry.html"><span class="nav-badge">상세</span> Reference Dashboard Registry</a></li>
+<li><a href="/research-desk/market-ontology/industry-linkage-map.html"><span class="nav-badge">지도</span> AI Infra Industry Linkage Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-05.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-04.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+</details>
+</details>
+  </aside>
+  <main><article><h1>Quant Bot</h1>
+<blockquote>OKX 실시간 public data 기반 BTC futures v2 paper trading과 전략/리스크/리포트/agent team을 분리해서 보는 Quant 운영 허브.</blockquote>
+<h2>현재 상태</h2>
+<div class="desk-dashboard">
+<div class="desk-card hot"><strong>Paper Trading Running</strong><p>OKX BTC-USDT-SWAP public data를 15초 간격으로 받아 300만원 기준 paper loop 실행 중</p></div>
+<div class="desk-card warn"><strong>No Live Orders</strong><p>private/trading API 미사용. live_orders_allowed=false. 현재 BUY/SELL은 paper signal</p></div>
+<div class="desk-card violet"><strong>Quant Alert Group Only</strong><p>전략 스위칭·BUY_WATCH·SELL_OR_EXIT_RISK·risk event만 Quant Alert group에 짧게 전송</p></div>
+</div>
+<h2>1. 전략 Strategy</h2>
+<ul>
+<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">BTC Futures Grid v2 Daily Report — 2026-05-05</a></li>
+<li>베이스 전략: BTC futures grid/mean-reversion v2</li>
+<li>핵심 gate:</li>
+<li>ADX &lt; 18, range box 내부, squeeze 직후 아님 → BUY_WATCH 후보</li>
+<li>ADX &gt; 22 rising 또는 squeeze lower breakdown → 신규 매수 금지 / pending buy cancel</li>
+<li>ATR 기반 grid spacing</li>
+<li>doubling 금지</li>
+</ul>
+<h2>2. 모의 트레이딩 Daily 결과</h2>
+<ul>
+<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">2026-05-05 Quant Daily Report</a></li>
+</ul>
+<p>Daily Report에 포함되는 항목:</p>
+<ul>
+<li>오늘의 판단: BUY_WATCH / SELL_OR_EXIT_RISK / HOLD</li>
+<li>가격: last / mark / funding</li>
+<li>gate state</li>
+<li>paper 계정 equity / margin proxy / pending orders</li>
+<li>이벤트 분포</li>
+<li>최근 이벤트</li>
+<li>안전 체크</li>
+</ul>
+<h2>3. 리스크 Risk</h2>
+<p>현재 paper 단계의 안전 조건:</p>
+<ul>
+<li>live trading API 사용 안 함</li>
+<li>private account API 사용 안 함</li>
+<li>OKX public data only</li>
+<li><code>QUANT_BOT_ALERT_CHAT_ID</code>가 group/supergroup이 아니면 알림 전송 중단</li>
+<li>동일 상태 반복 알림 dedup</li>
+<li>heartbeat는 ledger에만 저장</li>
+</ul>
+<p>Risk Bot이 우선권을 갖는 조건:</p>
+<ul>
+<li>margin ratio proxy 초과</li>
+<li>effective leverage cap 초과</li>
+<li>stale data / API timeout</li>
+<li>trend breakout / squeeze breakdown</li>
+<li>pending buy cancel 필요</li>
+</ul>
+<h2>4. Agent Team</h2>
+<p>실제 퀀트팀을 AI-agent 구조로 재구성한다.</p>
+<pre><code>Portfolio Manager Agent
+Research / Alpha Agent
+Time-Series Forecast Agent
+Strategy Bot
+Risk Bot
+Execution / Paper Broker Agent
+Validator Agent
+Optimizer Agent
+Operations / Alert Agent
+Reporting Agent</code></pre>
+<p>운영 원칙:</p>
+<ul>
+<li>Optimizer는 후보만 만든다.</li>
+<li>Validator/Risk가 독립 검증한다.</li>
+<li>live 승격은 사용자 승인 없이는 불가능하다.</li>
+<li>틀린 후보도 rejected ledger에 남긴다.</li>
+</ul>
+<h2>5. Rust Time-Series Forecast</h2>
+<p>Rust는 전체 봇 대체가 아니라 시계열 예측/특징 계산 코어로 쓴다.</p>
+<pre><code>Python: API 수집, orchestration, alert, report, promotion gate
+Rust: fast features, regime/volatility/tail-risk forecast, walk-forward sweep</code></pre>
+<p>예측 목표:</p>
+<ul>
+<li>방향성 단일 예측보다 range/trend likelihood</li>
+<li>volatility expansion probability</li>
+<li>lower-band breakdown risk</li>
+<li>tail move probability</li>
+<li>funding/basis stress</li>
+</ul>
+<p>Forecast 결과는 Strategy Bot의 보조 feature로만 사용한다. 단독 live 매수/매도 결정은 금지한다.</p>
+<h2>6. 다음 구현 후보</h2>
+<ul>
+<li>simulated fill</li>
+<li>split take-profit</li>
+<li>trailing stop</li>
+<li>fee/funding/slippage 누적</li>
+<li>Rust <code>quant-ts-forecast</code> crate scaffold</li>
+<li>Validator/Risk Bot의 rejected candidate ledger</li>
+</ul></article></main>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
+</body>
+</html>
