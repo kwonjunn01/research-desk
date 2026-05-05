@@ -50,6 +50,7 @@
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">통합</span> Cross-Ontology Synthesizer</a></li>
 <li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html"><span class="nav-badge">예측</span> Prediction Feedback Loop</a></li>
+<li><a href="/research-desk/cross-ontology/inertia-gap-matrix.html"><span class="nav-badge">관성</span> Inertia Gap Matrix</a></li>
 </ul>
 </details>
 <details class="nav-mid">
@@ -84,10 +85,16 @@
   </aside>
   <main><article><h1>Cross-Ontology Synthesizer</h1>
 <blockquote>AI Research signal과 Market Narrative를 따로 보지 않고, <strong>기술 변화가 어떤 산업 node와 market edge를 움직이는지</strong> 보는 통합 지도.</blockquote>
+<div class="desk-dashboard">
+<div class="desk-card hot"><strong>Ontology Lens</strong><p>오늘의 이슈를 research node, market node, bottleneck, inertia 위에 올려놓고 해석한다.</p></div>
+<div class="desk-card warn"><strong>Inertia Check</strong><p>오늘 이슈가 기존 capex·공급망·규제·시장 narrative를 이길 만큼 큰지 판단한다.</p></div>
+<div class="desk-card violet"><strong>Feedback Loop</strong><p>예측과 실제의 간극을 남기고 다음 예측의 가정과 가중치를 보정한다.</p></div>
+</div>
 <h2>먼저 볼 것</h2>
 <ul>
 <li><a href="/research-desk/reports/cross/2026-05-05.html">오늘의 Cross-Ontology Synthesis</a> — AI research signal ↔ market narrative 연결 리포트</li>
 <li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html">Prediction Feedback Loop</a> — 단기/중장기 예측, timing gap, prediction-vs-actual feedback system</li>
+<li><a href="/research-desk/cross-ontology/inertia-gap-matrix.html">Inertia Gap Matrix</a> — 오늘 이슈가 기존 관성을 깨는지, 강화하는지, 장기 해소요인인지 판단</li>
 <li><a href="/research-desk/ai-research/signal-map.html">AI Research Signal Map</a> — 기술 signal 지도</li>
 <li><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra Industry Linkage Map</a> — 산업/시장 연결 지도</li>
 </ul>
@@ -107,6 +114,19 @@
   DataCenter -- pulls_demand_for --&gt; Chips[AI Semiconductor]
   Chips -- depends_on --&gt; HBM[HBM / Advanced Packaging]
   DataCenter -- constrained_by --&gt; Power[Power / Grid / Cooling]</div></div>
+<h2>Inertia-Aware Forecasting</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  Past[&quot;Accumulated Inertia&quot;] --&gt; Today[&quot;Today&#x27;s Issue&quot;]
+  Today --&gt; Classify{&quot;Ontology Lens&quot;}
+  Classify --&gt; Breaker[&quot;Inertia Breaker&quot;]
+  Classify --&gt; Reinforce[&quot;Inertia Reinforcer&quot;]
+  Classify --&gt; Long[&quot;Long-term Resolution&quot;]
+  Classify --&gt; Mismatch[&quot;Narrative Mismatch&quot;]</div></div>
+<ul>
+<li>오늘 이슈가 기존 capex, supply chain, regulation, installed base, market narrative를 이길 만큼 큰지 판단한다.</li>
+<li>기술 발전이 <strong>새 병목을 만드는지</strong>, <strong>산업 확장을 여는지</strong>, <strong>기존 병목의 해결책을 제시하는지</strong>를 분리한다.</li>
+<li>단기 이슈와 장기 해소요인을 구분해 prediction ledger의 check date를 다르게 잡는다.</li>
+</ul>
 <h2>Forecasting Layer</h2>
 <div class="viz-card"><div class="mermaid">flowchart LR
   Signal[&quot;Daily Signals&quot;] --&gt; Ledger[&quot;Prediction Ledger&quot;]

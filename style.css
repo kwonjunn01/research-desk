@@ -6,6 +6,9 @@
   --muted: #a7adbb;
   --link: #8ab4ff;
   --accent: #b4f8c8;
+  --warn: #f7c948;
+  --hot: #ff8a8a;
+  --violet: #c4b5fd;
   --border: #2b303b;
 }
 * { box-sizing: border-box; }
@@ -56,6 +59,20 @@ pre { background: #080a0f; border: 1px solid var(--border); padding: 16px; borde
 pre code { background: transparent; padding: 0; }
 .viz-card { position: relative; background: radial-gradient(circle at 20% 0%, rgba(138,180,255,.12), transparent 35%), #0b0e14; border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin: 18px 0 24px; overflow-x: auto; }
 .mermaid { min-width: 680px; }
+.desk-dashboard { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 22px 0 28px; }
+.desk-card { background: linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.022)); border: 1px solid rgba(255,255,255,.09); border-radius: 16px; padding: 14px 15px; box-shadow: 0 14px 40px rgba(0,0,0,.18); }
+.desk-card strong { display: block; color: var(--accent); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 6px; }
+.desk-card p { margin: 0; color: var(--text); font-size: 14px; line-height: 1.5; }
+.desk-card.warn strong { color: var(--warn); }
+.desk-card.hot strong { color: var(--hot); }
+.desk-card.violet strong { color: var(--violet); }
+.lens-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin: 18px 0 28px; }
+.lens-card { border: 1px solid rgba(138,180,255,.18); background: rgba(138,180,255,.055); border-radius: 14px; padding: 14px 15px; }
+.lens-card h3 { margin: 0 0 8px; font-size: 16px; color: var(--accent); }
+.lens-card ul { margin: 0; padding-left: 1.05rem; }
+.horizon-strip { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; margin: 16px 0 26px; }
+.horizon { border-radius: 999px; border: 1px solid rgba(180,248,200,.20); padding: 10px 13px; background: rgba(180,248,200,.045); color: var(--text); font-size: 13px; }
+.horizon b { color: var(--accent); }
 article ul { padding-left: 1.2rem; }
 article li { margin: 7px 0; }
 article > ul { list-style: none; padding-left: 0; }
@@ -72,6 +89,8 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
   .nav-major-title { font-size: 13px; padding: 12px 11px; }
   .nav-major-title::after { font-size: 18px; }
   .viz-card { padding: 10px; margin-left: -4px; margin-right: -4px; }
+  .desk-dashboard, .lens-grid, .horizon-strip { grid-template-columns: 1fr; }
+  .desk-card, .lens-card { padding: 13px 14px; }
   .viz-card::before { content: "← 좌우로 스크롤해서 지도 보기 →"; display: block; color: var(--muted); font-size: 12px; margin: 0 0 8px 2px; }
   .mermaid { min-width: 720px; }
   .nav-mid { margin-left: 4px; }
