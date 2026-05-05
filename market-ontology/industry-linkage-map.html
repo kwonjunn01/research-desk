@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Infra Industry Linkage Map</title>
+  <link rel="stylesheet" href="/research-desk/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1><a href="/research-desk/index.html">Research Desk</a></h1>
+    <div class="meta">Personal Research Radar</div>
+    <ul><li><a href="/research-desk/agent-build-log/index.html">Agent Build Log</a></li>
+<li><a href="/research-desk/ai-research/index.html">AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/signal-map.html">AI Research Signal Map</a></li>
+<li><a href="/research-desk/index.html">Public Research Garden</a></li>
+<li><a href="/research-desk/market-ontology/index.html">Market Ontology</a></li>
+<li><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra Industry Linkage Map</a></li>
+<li><a href="/research-desk/weekly-reviews/index.html">Weekly Reviews</a></li>
+<li><a href="/research-desk/daily/market-2026-05-05.html">Market Narrative Brief — 2026-05-05</a></li>
+<li><a href="/research-desk/daily/market-2026-05-04.html">Market Narrative Brief — 2026-05-04</a></li>
+<li><a href="/research-desk/daily/2026-05-05.html">Daily AI Research Radar — 2026-05-05</a></li>
+<li><a href="/research-desk/daily/2026-05-04.html">Daily AI Research Radar — 2026-05-04</a></li>
+<li><a href="/research-desk/reports/ai-research/2026-05-05.html">Daily AI Research Radar — 2026-05-05</a></li>
+<li><a href="/research-desk/reports/ai-research/2026-05-04.html">Daily AI Research Radar — 2026-05-04</a></li>
+<li><a href="/research-desk/reports/market/2026-05-05.html">Market Narrative Brief — 2026-05-05</a></li>
+<li><a href="/research-desk/reports/market/2026-05-04.html">Market Narrative Brief — 2026-05-04</a></li></ul>
+  </aside>
+  <main><article><h1>AI Infra Industry Linkage Map</h1>
+<blockquote>투자 추천이 아니다. AI infra 산업을 <code>수요 → 병목 → 공급망 → 리스크</code> 연결망으로 보기 위한 공개 초안이다.</blockquote>
+<h2>한눈에 보는 구조</h2>
+<pre><code>flowchart LR
+  Cloud[&quot;Cloud Hyperscaler&quot;] -- drives_capex_for --&gt; DataCenter[&quot;AI Data Center&quot;]
+  DataCenter -- pulls_demand_for --&gt; GPU[&quot;AI Semiconductor&quot;]
+  GPU -- depends_on --&gt; HBM[&quot;HBM Memory&quot;]
+  GPU -- depends_on --&gt; Packaging[&quot;Advanced Packaging&quot;]
+  DataCenter -- constrained_by --&gt; Power[&quot;Power Infrastructure&quot;]
+  Power -- enables --&gt; Cloud
+  Device[&quot;On-device AI&quot;] -- shifts_some_inference_from --&gt; Cloud
+  Robotics[&quot;Robotics&quot;] -- creates_edge_ai_demand_for --&gt; Device
+  Healthcare[&quot;Healthcare AI&quot;] -- requires --&gt; Cloud
+  Export[&quot;Export Control&quot;] -- threatens --&gt; GPU
+  CapexRisk[&quot;Capex Overheating&quot;] -- threatens --&gt; Cloud</code></pre>
+<h2>핵심 해석</h2>
+<ul>
+<li><strong>Cloud/Hyperscaler capex</strong>가 AI data center 수요를 만들고, 이 수요가 GPU/HBM/packaging/power로 전파된다.</li>
+<li><strong>GPU 수요</strong>가 강해도 HBM 또는 advanced packaging이 막히면 출하와 고객 mix가 제한된다.</li>
+<li><strong>전력/냉각/그리드</strong>가 막히면 data center buildout 자체가 지연된다.</li>
+<li><strong>On-device AI</strong>는 일부 cloud inference를 대체할 수도 있지만, robotics/edge workload를 새로 만들 수도 있다.</li>
+<li><strong>Export control</strong>과 <strong>capex overheating</strong>은 demand headline과 별개로 연결망을 끊는 risk layer다.</li>
+</ul>
+<h2>Daily brief에서 볼 것</h2>
+<ol>
+<li>오늘 가장 뜨거운 node는 어디인가?</li>
+<li>그 node가 upstream/downstream으로 어떤 edge를 타고 전파되는가?</li>
+<li>병목은 완화 후보인가, 심화 후보인가?</li>
+<li>어떤 hard signal이 확인되면 ontology에 승격할 것인가?</li>
+</ol></article></main>
+</div>
+</body>
+</html>
