@@ -50,6 +50,7 @@
 <summary class="nav-mid-title">운영 허브</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/quant/index.html"><span class="nav-badge">허브</span> Quant Bot Hub</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-spec.html"><span class="nav-badge">Spec</span> BTC Futures v2 Spec</a></li>
 <li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html"><span class="nav-badge">Daily</span> BTC Futures v2 Daily Report</a></li>
 </ul>
 </details>
@@ -57,6 +58,7 @@
 <summary class="nav-mid-title">전략 / 시스템</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/quant/agent-team.html"><span class="nav-badge">팀</span> AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-council.html"><span class="nav-badge">회의</span> Quant Strategy Council</a></li>
 <li><a href="/research-desk/quant/strategy-evolution-charter.html"><span class="nav-badge">전략</span> Strategy Evolution Charter</a></li>
 <li><a href="/research-desk/quant/scenario-planning.html"><span class="nav-badge">위기</span> Scenario Planning</a></li>
 <li><a href="/research-desk/quant/feedback-system.html"><span class="nav-badge">피드백</span> Feedback System</a></li>
@@ -106,43 +108,87 @@
 </details>
   </aside>
   <main><article><h1>Scenario Planning Playbook</h1>
-<blockquote>블랙스완과 비정상 위험 상황을 Strategy Bot 내부에 덕지덕지 붙이지 않고, 별도 Scenario/Risk layer에서 관리한다.</blockquote>
+<blockquote>블랙스완과 비정상 위험 상황을 Strategy Bot 내부에 덕지덕지 붙이지 않고, 별도 Scenario/Risk layer에서 관리한다. 중요한 기준은 <strong>차트만 보지 않고 맥락을 같이 보는 것</strong>이다.</blockquote>
 <h2>Scenario Agent 역할</h2>
 <ul>
 <li>black swan / liquidity shock / funding shock / exchange outage 시나리오 생성</li>
+<li>사회상황, 기술 이슈, 규제/정책, 매크로 이벤트를 전략 맥락으로 변환</li>
 <li>각 시나리오의 failure mode와 대응 playbook 후보 작성</li>
-<li>Risk Bot에 <code>pause / no_new_grid / cancel_pending / kill_switch</code> 후보 전달</li>
+<li>Risk Bot에 <code>pause / no_new_stage / cancel_pending / reduce / kill_switch</code> 후보 전달</li>
 <li>Strategy Bot 본체의 복잡도 증가를 막음</li>
 </ul>
 <h2>기본 시나리오</h2>
 <div class="desk-dashboard">
-<div class="desk-card warn"><strong>Gap Down Shock</strong><p>BTC 5분 -5% 또는 ATR x8 range. grid cascade 위험</p></div>
-<div class="desk-card hot"><strong>Trend Acceleration</strong><p>ADX rising + lower breakdown. mean-reversion 금지</p></div>
-<div class="desk-card blue"><strong>Funding/Basis Shock</strong><p>funding 급변/포지션 쏠림. 신규 노출 축소</p></div>
-<div class="desk-card violet"><strong>Exchange/API Degradation</strong><p>stale data/timeout/last-mark divergence. data_not_ready</p></div>
+<div class="desk-card warn"><strong>Gap Down Shock</strong><p>BTC 5분 -5% 또는 ATR x8 range. stage cascade와 청산 buffer 훼손 위험</p></div>
+<div class="desk-card hot"><strong>Trend Acceleration</strong><p>ADX rising + lower breakdown. 추가매수 금지, 기존 TP만 유지</p></div>
+<div class="desk-card blue"><strong>Funding/Basis Shock</strong><p>funding 급변/포지션 쏠림. 신규 stage 축소 또는 중단</p></div>
+<div class="desk-card violet"><strong>External Event</strong><p>FOMC/CPI/규제/해킹/거래소 이슈. 차트 외 맥락 기반 pause 검토</p></div>
 </div>
+<h2>Context Sources</h2>
+<p>차트 지표는 결과이고, 맥락은 원인일 수 있다. Scenario Planning Agent는 아래 입력을 같이 본다.</p>
+<ul>
+<li><strong>Macro</strong>: FOMC, CPI, 금리, 달러, 유동성, 위험자산 선호</li>
+<li><strong>Regulation / Policy</strong>: SEC/ETF/거래소 규제, 국가별 정책 뉴스</li>
+<li><strong>Geopolitics / Social</strong>: 전쟁, 정치 이벤트, 사회적 panic/risk-off</li>
+<li><strong>Technology / Security</strong>: chain halt, exploit, bridge hack, custody 이슈</li>
+<li><strong>Crypto Market Structure</strong>: funding, basis, OI, liquidation cluster, ETF flow</li>
+<li><strong>Exchange Health</strong>: OKX stale data, mark-last divergence, API timeout</li>
+<li><strong>Narrative</strong>: BTC dominance, AI/tech sentiment, market rotation</li>
+</ul>
+<h2>Strategy Switch Inputs</h2>
+<p>시나리오 결과는 장세별 전략 스위치에 사용한다.</p>
+<pre><code>context + chart + risk state
+→ scenario hypothesis
+→ agent council review
+→ strategy_mode decision
+→ risk overlay</code></pre>
+<p>가능한 strategy mode:</p>
+<ul>
+<li><code>ACTIVE_INFINITE_BUY_V2</code></li>
+<li>횡보/평균회귀 친화 장세</li>
+<li>stage1/next-stage-only add-buy 허용</li>
+<li><code>HOLD_EXISTING_NO_NEW_STAGE</code></li>
+<li>애매한 장세</li>
+<li>기존 포지션 TP 유지, 신규 추가매수 중단</li>
+<li><code>ADD_BUY_OFF</code></li>
+<li>하락추세/브레이크다운 위험</li>
+<li>pending buy 취소, TP 유지</li>
+<li><code>EVENT_PAUSE</code></li>
+<li>CPI/FOMC/규제/거래소/해킹 등 외부 이벤트</li>
+<li>신규 stage 금지, 수동 리뷰</li>
+<li><code>DATA_NOT_READY</code></li>
+<li>데이터 품질 이상</li>
+<li>신규 intent 금지</li>
+</ul>
 <h2>Response Ladder</h2>
 <pre><code>observe
-→ no_new_grid
+→ hold_existing
+→ no_new_stage
 → cancel_pending_buys
-→ reduce_position
+→ reduce_position_candidate
 → kill_switch
 → manual_review</code></pre>
 <h2>Output Schema</h2>
 <pre><code>{
-  &quot;scenario_id&quot;: &quot;S02_trend_acceleration&quot;,
-  &quot;severity&quot;: &quot;high&quot;,
-  &quot;triggered&quot;: true,
-  &quot;evidence&quot;: [&quot;ADX rising&quot;, &quot;lower band breakdown&quot;],
-  &quot;recommended_action&quot;: &quot;no_new_grid&quot;,
+  &quot;scenario_id&quot;: &quot;S_macro_event_risk&quot;,
+  &quot;severity&quot;: &quot;medium_high&quot;,
+  &quot;context&quot;: [&quot;FOMC within 24h&quot;, &quot;funding abnormal&quot;, &quot;OI rising&quot;],
+  &quot;chart_evidence&quot;: [&quot;ADX rising&quot;, &quot;near lower band&quot;],
+  &quot;strategy_mode&quot;: &quot;HOLD_EXISTING_NO_NEW_STAGE&quot;,
+  &quot;recommended_action&quot;: &quot;keep_tp_cancel_new_stage&quot;,
   &quot;strategy_change&quot;: &quot;none&quot;,
-  &quot;risk_overlay&quot;: &quot;gate_off&quot;
+  &quot;risk_overlay&quot;: &quot;add_buy_gate_rest&quot;
 }</code></pre>
 <h2>Strategy Integration Rule</h2>
 <p>Scenario output은 Strategy Bot을 직접 변경하지 않는다.</p>
-<pre><code>Scenario → Risk overlay → Strategy intent gate</code></pre>
+<pre><code>Scenario → Strategy Council → Risk overlay → Strategy intent gate</code></pre>
 <p>전략 변경으로 승격하려면:</p>
-<pre><code>scenario repeats → hypothesis → replay/backtest → validator → strategy candidate</code></pre></article></main>
+<pre><code>scenario repeats
+→ hypothesis
+→ replay/backtest
+→ validator
+→ strategy candidate
+→ paper validation</code></pre></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';

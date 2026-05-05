@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BTC Futures v2 — Canonical Spec</title>
+  <title>Quant Strategy Council</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -107,153 +107,116 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>BTC Futures v2 — Canonical Spec</h1>
-<blockquote>기준 전략: <strong>20x BTC futures 무한매수법 v2</strong>. 원본 골격을 보존하고, 추가매수 중단 gate와 margin 방어만 추가한다. 기본 모드는 <code>paper/backtest only</code>; 실거래 자동주문은 별도 승인 전까지 비활성화한다.</blockquote>
-<h2>1. 전략 철학</h2>
-<p>목표는 원본 무한매수법의 구조를 깨지 않으면서 청산 확률을 낮추는 것이다.</p>
-<p>보존:</p>
+  <main><article><h1>Quant Strategy Council</h1>
+<blockquote>목적: 단일 Strategy Bot이 혼자 판단하지 않고, 에이전트 팀이 <strong>전략 회의</strong>를 통해 현재 구조의 리스크를 줄이고 장세별 전략 스위치를 결정한다.</blockquote>
+<h2>1. 회의 원칙</h2>
+<p>Strategy Council은 매번 “무엇을 살까?”보다 먼저 “지금 이 전략을 켜도 되는 장인가?”를 묻는다.</p>
+<div class="desk-dashboard">
+<div class="desk-card hot"><strong>Risk First</strong><p>수익률보다 청산 확률, margin buffer, tail-risk를 먼저 검토</p></div>
+<div class="desk-card warn"><strong>Regime Switch</strong><p>횡보/추세/이벤트/유동성 장세별로 전략 모드를 다르게 선택</p></div>
+<div class="desk-card violet"><strong>Context Aware</strong><p>차트뿐 아니라 사회상황, 기술 이슈, 규제/매크로, 거래소 리스크를 함께 반영</p></div>
+</div>
+<h2>2. 회의 참여 Agent</h2>
 <ul>
-<li>20x futures</li>
-<li>5단계 doubling</li>
-<li>1% 하락 추가매수</li>
-<li>평단 +0.5% 익절</li>
+<li><strong>Portfolio Manager Agent</strong></li>
+<li>현재 전략 자본, 손실 한도, exposure budget 결정</li>
+<li><strong>Strategy Bot</strong></li>
+<li>무한매수법 v2 기본 intent 생성</li>
+<li>전략 스위치 후보 제안</li>
+<li><strong>Risk Bot</strong></li>
+<li>margin, liquidation buffer, gap risk, kill-switch 조건 검토</li>
+<li><strong>Scenario Planning Agent</strong></li>
+<li>black swan, macro/social/technology issue, exchange risk 시나리오 제시</li>
+<li><strong>Research / Alpha Agent</strong></li>
+<li>뉴스, 정책, 기술, 온체인/시장 구조 변화 맥락 수집</li>
+<li><strong>Validator Agent</strong></li>
+<li>후보 전략이 과최적화인지, 백테스트/리플레이 근거가 충분한지 반박</li>
+<li><strong>Reporting Agent</strong></li>
+<li>결정과 근거를 Research Desk에 남김</li>
 </ul>
-<p>보강:</p>
+<h2>3. 회의 안건</h2>
+<p>각 회의는 아래 순서로 진행한다.</p>
+<pre><code>1. Current Position Review
+2. Market Regime Review
+3. External Context Review
+4. Scenario Planning
+5. Strategy Switch Decision
+6. Risk Budget / Margin Check
+7. Action Plan
+8. Rejected Alternatives 기록</code></pre>
+<h2>4. 현재 전략 기준</h2>
+<p>기본 전략은 <strong>BTC Futures 무한매수법 v2</strong>다.</p>
 <ul>
-<li>첫 매수 사이즈 역산</li>
-<li>서브계정/자본 격리</li>
-<li>ADX/Bollinger/Margin add-buy gate</li>
-<li>Mark Price 기반 백테스트</li>
-<li>fee/funding/slippage 반영</li>
+<li><code>20x</code> display leverage</li>
+<li>first notional: <code>capital × 20 × 0.5 / 31</code></li>
+<li><code>1-2-4-8-16</code> 5단계</li>
+<li><code>1%</code> 하락마다 다음 stage 1개만 pending</li>
+<li>평단 <code>+0.5%</code> 전체 익절</li>
+<li>Risk Bot은 추가매수만 중단/재개</li>
 </ul>
-<p>하지 않는 것:</p>
+<p>이 기본 골격은 회의 없이 즉흥적으로 바꾸지 않는다.</p>
+<h2>5. Strategy Switch Matrix</h2>
+<p>장세별로 전략 모드를 다르게 선택한다.</p>
 <ul>
-<li>사자마자 팔기</li>
-<li>split TP/trailing을 기본값으로 넣기</li>
-<li>stage2~5를 한 번에 전부 pending으로 깔기</li>
-<li>Strategy Bot 안에 예외 if문을 계속 덧붙이기</li>
+<li><strong>Range / Mean-Reversion Friendly</strong></li>
+<li>조건: ADX 낮음, lower breakdown 없음, funding/뉴스 리스크 낮음</li>
+<li>모드: 무한매수법 v2 <code>ACTIVE</code></li>
+<li>행동: stage1 진입, gate ON이면 다음 stage 1개 pending</li>
 </ul>
-<h2>2. 자본 구조</h2>
 <ul>
-<li>총자본 예시: <code>10,000 USDT</code></li>
-<li>전략용 서브계정만 운용</li>
-<li>메인 계정 reserve는 격리</li>
-<li>서브계정 내 cross margin</li>
-<li>손실 한도는 서브계정 잔고로 제한</li>
+<li><strong>Transition / Unclear</strong></li>
+<li>조건: 방향성 불확실, 이벤트 대기, 지표 혼재</li>
+<li>모드: <code>HOLD_EXISTING / NO_NEW_STAGE</code></li>
+<li>행동: 보유 포지션 TP 유지, 신규 추가매수 제한</li>
 </ul>
-<p>현재 paper:</p>
 <ul>
-<li>capital: <code>2035 USDT</code></li>
-<li>exchange data: OKX public <code>BTC-USDT-SWAP</code></li>
-<li>private/trading API: 미사용</li>
-<li>live orders: 금지</li>
+<li><strong>Trend Down / Breakdown Risk</strong></li>
+<li>조건: ADX rising, lower-band breakdown, 매크로/뉴스 악재</li>
+<li>모드: <code>ADD_BUY_OFF</code></li>
+<li>행동: 남은 pending buy 취소, 기존 TP만 유지</li>
 </ul>
-<h2>3. 첫 매수 사이즈</h2>
-<p>5단계 누적 배수:</p>
-<pre><code>1 + 2 + 4 + 8 + 16 = 31</code></pre>
-<p>공식:</p>
-<pre><code>first_buy_notional = capital × leverage × safety_buffer / 31</code></pre>
-<p>기본값:</p>
-<pre><code>leverage = 20
-safety_buffer = 0.5</code></pre>
-<p>현재 2035 USDT paper 기준:</p>
-<pre><code>first_buy_notional = 2035 × 20 × 0.5 / 31
-                   ≈ 656.45 USDT
-stage1_margin      ≈ 32.82 USDT
-account_eff_lev    ≈ 0.3226x at stage1</code></pre>
-<h2>4. 진입 / 추가매수 / 익절</h2>
-<p>Stage ladder:</p>
 <ul>
-<li>Stage 1: market starter buy, size <code>1x</code></li>
-<li>Stage 2: Stage 1 기준 약 <code>-1%</code>, size <code>2x</code></li>
-<li>Stage 3: 다음 <code>-1%</code>, size <code>4x</code></li>
-<li>Stage 4: 다음 <code>-1%</code>, size <code>8x</code></li>
-<li>Stage 5: 다음 <code>-1%</code>, size <code>16x</code></li>
+<li><strong>Event / Black-Swan Watch</strong></li>
+<li>조건: 전쟁/규제/거래소 장애/ETF·금리·CPI/FOMC 등 이벤트</li>
+<li>모드: <code>PAUSE_OR_REDUCE</code></li>
+<li>행동: 신규 stage 금지, 필요시 manual review</li>
 </ul>
-<p>Pending order rule:</p>
 <ul>
-<li>한 번에 <strong>다음 stage 1개만</strong> pending으로 둔다.</li>
-<li>stage2~5를 전부 미리 깔지 않는다.</li>
-<li>다음 stage가 체결되면 buy_stage를 올리고, 조건이 맞을 때 다음 stage 1개를 다시 둔다.</li>
+<li><strong>Data / Exchange Degradation</strong></li>
+<li>조건: stale data, last-mark divergence, API timeout</li>
+<li>모드: <code>DATA_NOT_READY</code></li>
+<li>행동: 신규 intent 금지, alert/report</li>
 </ul>
-<p>Take profit:</p>
-<pre><code>take_profit_price = avg_entry × 1.005</code></pre>
+<h2>6. Context Inputs</h2>
+<p>차트만 보지 않는다. Strategy Council은 아래 맥락을 같이 본다.</p>
 <ul>
-<li>TP 도달 시 전체 포지션 익절</li>
-<li>TP 미충족이면 보유</li>
-<li>gate OFF여도 TP는 계속 작동</li>
-<li>기본 전략에는 split TP/trailing stop 없음</li>
+<li>Macro:</li>
+<li>FOMC, CPI, 금리, 달러, 유동성</li>
+<li>Crypto market structure:</li>
+<li>funding, basis, open interest, liquidation cluster, ETF flow</li>
+<li>Social / geopolitical:</li>
+<li>전쟁, 규제, 대형 거래소 이슈, 법원/정책 이벤트</li>
+<li>Technology / security:</li>
+<li>체인 장애, 해킹, bridge exploit, L2/ETF/infrastructure 이슈</li>
+<li>Exchange / execution:</li>
+<li>OKX data health, mark/last divergence, funding abnormality, API degradation</li>
+<li>Narrative:</li>
+<li>BTC dominance, AI/tech risk-on/off, market sentiment shift</li>
 </ul>
-<h2>5. Add-Buy Gate</h2>
-<p>게이트는 원본 진입/익절을 바꾸지 않는다. <strong>남은 추가매수를 진행할지</strong>만 결정한다.</p>
-<p>ON — 모두 충족:</p>
-<ul>
-<li><code>ADX &lt; 22</code></li>
-<li>Bollinger squeeze lower breakdown 없음</li>
-<li>margin ratio proxy <code>&lt; 50%</code></li>
-</ul>
-<p>OFF — 하나라도 충족:</p>
-<ul>
-<li><code>ADX &gt; 25 and rising</code></li>
-<li>Bollinger squeeze lower breakdown</li>
-<li>margin ratio proxy <code>&gt; 60%</code></li>
-</ul>
-<p>REST:</p>
-<ul>
-<li>hard OFF는 아니지만 ON 조건도 부족한 중립 상태</li>
-<li>새 추가매수 주문을 적극적으로 깔지 않는다</li>
-<li>기존 포지션은 보유하고 TP를 기다린다</li>
-</ul>
-<p>OFF 행동:</p>
-<ul>
-<li>남은 pending buy 취소</li>
-<li>추가매수 중단</li>
-<li>보유 포지션의 avg+0.5% TP 유지</li>
-</ul>
-<h2>6. Margin 방어</h2>
-<p>내부 단계:</p>
-<ul>
-<li><code>50%</code>: 경고 / 다음 추가매수 skip 후보</li>
-<li><code>60%</code>: 남은 pending buy 취소</li>
-<li><code>70%</code>: 포지션 일부 축소 후보</li>
-</ul>
-<p>이건 손절 전략이 아니라 <strong>더 이상 못 사게 막는 장치</strong>다.</p>
-<h2>7. Backtest Requirements</h2>
-<p>캔들 종가만 보는 백테스트 금지.</p>
-<p>필수:</p>
-<ul>
-<li>Mark Price 기준 liquidation/margin ratio 계산</li>
-<li>round-trip fee</li>
-<li>funding rate</li>
-<li>partial fill simulation</li>
-<li>slippage simulation</li>
-<li>cross-margin equity tracking</li>
-<li>pending order cancellation logic</li>
-<li>stage별 fill/TP event ledger</li>
-</ul>
-<h2>8. Live Promotion Gate</h2>
-<p>live 승격 전 필수 조건:</p>
-<ul>
-<li>최소 며칠 이상의 public-data paper run</li>
-<li>stage별 fill/TP/reject ledger 검증</li>
-<li>fee/funding/slippage 포함 PnL 검증</li>
-<li>black-swan scenario replay</li>
-<li>Validator Agent 승인</li>
-<li>Risk Bot 승인</li>
-<li>사용자 명시 승인</li>
-</ul>
-<p>현재 상태:</p>
-<pre><code>live_orders_allowed = false
-private_api_used = false
-trading_api_used = false</code></pre>
-<h2>9. Operating Summary</h2>
-<pre><code>Start
-→ stage1 first buy
-→ if TP avg+0.5% hit: full close
-→ else if gate ON: place next stage only
-→ if next stage filled: update avg, increase stage
-→ if gate OFF/REST: stop new add-buys, keep TP active
-→ repeat until TP or max stage/risk intervention</code></pre></article></main>
+<h2>7. Decision Output</h2>
+<p>회의 결과는 아래 형태로 남긴다.</p>
+<pre><code>{
+  &quot;decision&quot;: &quot;ADD_BUY_OFF&quot;,
+  &quot;strategy_mode&quot;: &quot;infinite_buy_v2_hold_existing&quot;,
+  &quot;reason&quot;: [&quot;ADX rising&quot;, &quot;macro event within 24h&quot;, &quot;funding abnormal&quot;],
+  &quot;allowed_actions&quot;: [&quot;keep_tp&quot;, &quot;cancel_pending_buys&quot;],
+  &quot;blocked_actions&quot;: [&quot;new_stage&quot;, &quot;increase_leverage&quot;],
+  &quot;review_after&quot;: &quot;next_4h_or_event_resolution&quot;
+}</code></pre>
+<h2>8. Anti-Spaghetti Rule</h2>
+<p>회의에서 나온 아이디어는 바로 Strategy Bot 코드에 if문으로 추가하지 않는다.</p>
+<pre><code>scenario → hypothesis → replay/backtest → validator review → candidate → paper → promote/reject</code></pre>
+<p>전략 스위치는 agent team의 합의와 검증 로그를 따라야 한다.</p></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';

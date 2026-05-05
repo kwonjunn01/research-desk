@@ -50,6 +50,7 @@
 <summary class="nav-mid-title">운영 허브</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/quant/index.html"><span class="nav-badge">허브</span> Quant Bot Hub</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-spec.html"><span class="nav-badge">Spec</span> BTC Futures v2 Spec</a></li>
 <li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html"><span class="nav-badge">Daily</span> BTC Futures v2 Daily Report</a></li>
 </ul>
 </details>
@@ -57,6 +58,7 @@
 <summary class="nav-mid-title">전략 / 시스템</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/quant/agent-team.html"><span class="nav-badge">팀</span> AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-council.html"><span class="nav-badge">회의</span> Quant Strategy Council</a></li>
 <li><a href="/research-desk/quant/strategy-evolution-charter.html"><span class="nav-badge">전략</span> Strategy Evolution Charter</a></li>
 <li><a href="/research-desk/quant/scenario-planning.html"><span class="nav-badge">위기</span> Scenario Planning</a></li>
 <li><a href="/research-desk/quant/feedback-system.html"><span class="nav-badge">피드백</span> Feedback System</a></li>
@@ -106,42 +108,107 @@
 </details>
   </aside>
   <main><article><h1>AI Quant Agent Team</h1>
-<blockquote>실제 퀀트팀의 역할 분리를 차용하되, AI-agent가 더 잘하는 반복 검증·감시·리포팅·후보 생성 작업에 맞게 재구성한 팀 구조.</blockquote>
+<blockquote>Quant Bot은 “전략 하나가 모든 일을 하는 봇”이 아니라, 실제 퀀트팀처럼 역할을 나눈 agent system이다. 현재 기준 전략은 <strong>BTC Futures 무한매수법 v2</strong>이며, Strategy Bot은 원본 골격을 보존하고 Risk Bot은 추가매수만 통제한다.</blockquote>
 <h2>Team Map</h2>
 <div class="desk-dashboard">
-<div class="desk-card violet"><strong>PM Agent</strong><p>전략 포트폴리오 방향, 자본 배분 후보, pause/reduce/promote 제안</p></div>
-<div class="desk-card hot"><strong>Strategy Bot</strong><p>BTC v2 베이스 전략을 BUY_WATCH / SELL_OR_EXIT_RISK / HOLD signal로 변환</p></div>
-<div class="desk-card warn"><strong>Risk Bot</strong><p>Strategy보다 우선. leverage, margin, stale data, breakout 시 reject/kill</p></div>
-<div class="desk-card blue"><strong>Validator Bot</strong><p>Optimizer 후보를 walk-forward/OOS/leakage/fee/funding/slippage 기준으로 반박</p></div>
+<div class="desk-card hot"><strong>Strategy Bot</strong><p>20x / 1-2-4-8-16 / 1% add-buy / avg+0.5% TP 원본 골격 유지</p></div>
+<div class="desk-card warn"><strong>Risk Bot</strong><p>ADX/Squeeze/Margin gate로 남은 추가매수만 중단 또는 재개</p></div>
+<div class="desk-card violet"><strong>Paper Broker</strong><p>stage fill, avg entry, next-stage-only pending, avg+0.5% TP를 paper로 시뮬레이션</p></div>
+<div class="desk-card blue"><strong>Validator</strong><p>fee/funding/slippage, OOS, black-swan replay 기준으로 승격 반박</p></div>
 </div>
 <h2>역할</h2>
 <ul>
-<li><strong>Portfolio Manager Agent</strong>: 전체 운용 상태, 자본 배분 후보, pause/reduce/promote 제안.</li>
-<li><strong>Research / Alpha Agent</strong>: 새 signal 후보와 실패 가설 생성.</li>
-<li><strong>Time-Series Forecast Agent</strong>: Rust core로 regime/volatility/tail-risk 예측.</li>
-<li><strong>Strategy Bot</strong>: 베이스 전략 규칙을 signal/order intent로 변환. 주문 제출 권한 없음.</li>
-<li><strong>Risk Bot</strong>: 모든 order intent를 gate/reject/resize. Strategy보다 우선.</li>
-<li><strong>Execution / Paper Broker Agent</strong>: paper fill, TP, trailing, live later adapter.</li>
-<li><strong>Validator Agent</strong>: 후보의 overfit, leakage, OOS 안정성 검증.</li>
-<li><strong>Optimizer Agent</strong>: candidate config diff만 생성. live/risk cap 변경 금지.</li>
-<li><strong>Operations / Alert Agent</strong>: Quant Alert group only, event-driven concise alerts.</li>
-<li><strong>Reporting Agent</strong>: Daily/Weekly report와 homepage publish.</li>
+<li><strong>Portfolio Manager Agent</strong></li>
+<li>전략용 서브계정 자본, pause/reduce/promote 후보 관리</li>
+<li>high-watermark withdrawal 후보 제안</li>
+<li><strong>Research / Alpha Agent</strong></li>
+<li>새 signal 후보와 실패 가설 생성</li>
+<li>원본 무한매수법 골격 변경은 직접 반영하지 않고 candidate로만 기록</li>
+<li><strong>Time-Series Forecast Agent</strong></li>
+<li>regime, volatility expansion, lower-band breakdown risk, tail-risk feature 생성</li>
+<li>단독 매수/매도 결정 권한 없음</li>
+<li><strong>Scenario Planning Agent</strong></li>
+<li>black swan, liquidity gap, funding shock, exchange degradation 시나리오 작성</li>
+<li>대응은 Strategy 내부 if문이 아니라 Risk overlay 후보로 전달</li>
+<li><strong>Strategy Bot</strong></li>
+<li><code>first = capital × 20 × 0.5 / 31</code></li>
+<li><code>1-2-4-8-16</code> stage intent</li>
+<li><code>1%</code> 하락 next-stage add-buy intent</li>
+<li><code>avg +0.5%</code> full TP intent</li>
+<li>주문 제출 권한 없음</li>
+<li><strong>Risk Bot</strong></li>
+<li>add-buy gate 관리</li>
+<li>ADX/Squeeze/Margin 조건으로 pending buy cancel/block</li>
+<li>기존 포지션의 TP를 임의 제거하지 않음</li>
+<li><strong>Execution / Paper Broker Agent</strong></li>
+<li>paper fill / avg entry / realized-unrealized PnL / pending order 상태 기록</li>
+<li>pending은 다음 stage 1개만 유지</li>
+<li>기본 TP는 avg+0.5% full close; split TP/trailing은 현재 기본 전략 아님</li>
+<li><strong>Validator Agent</strong></li>
+<li>overfit, leakage, OOS, fee/funding/slippage, Mark Price liquidation 검증</li>
+<li><strong>Optimizer Agent</strong></li>
+<li>candidate config diff만 생성</li>
+<li>live/risk cap 변경 금지</li>
+<li><strong>Operations / Alert Agent</strong></li>
+<li>Quant Alert group only</li>
+<li>event-driven concise alerts</li>
+<li>duplicate heartbeat suppress</li>
+<li><strong>Reporting Agent</strong></li>
+<li>Daily/Weekly report와 Research Desk publish</li>
 </ul>
 <h2>의사결정 흐름</h2>
 <div class="viz-card"><div class="mermaid">flowchart LR
-  Data[OKX public/live data] --&gt; Quality[Data Quality Agent]
+  Data[OKX public data] --&gt; Quality[Data Quality Agent]
   Quality --&gt; Forecast[Time-Series Forecast Agent]
+  Quality --&gt; Scenario[Scenario Planning Agent]
   Forecast --&gt; Strategy[Strategy Bot]
-  Strategy --&gt; Risk[Risk Bot]
-  Risk --&gt; Paper[Paper Broker / Execution]
+  Scenario --&gt; Risk[Risk Bot]
+  Strategy --&gt; Risk
+  Risk --&gt; Paper[Paper Broker]
   Paper --&gt; Ledger[Ledger]
   Ledger --&gt; Validator[Validator]
   Ledger --&gt; Optimizer[Optimizer]
   Ledger --&gt; Report[Reporting]
   Risk --&gt; Alert[Quant Alert group]</div></div>
+<h2>Boundary Rules</h2>
+<p>Strategy Bot이 할 일:</p>
+<ul>
+<li>무한매수법 v2 원본 골격을 구현한다.</li>
+<li>stage intent와 TP intent를 만든다.</li>
+<li>전략 변경 후보는 candidate ledger로만 남긴다.</li>
+</ul>
+<p>Risk Bot이 할 일:</p>
+<ul>
+<li>남은 추가매수를 허용/중단한다.</li>
+<li>margin proxy와 liquidation buffer를 감시한다.</li>
+<li>stale data나 exchange degradation에서 신규 intent를 막는다.</li>
+</ul>
+<p>하지 말아야 할 일:</p>
+<ul>
+<li>Strategy Bot이 risk/margin/alert까지 전부 처리</li>
+<li>Risk Bot이 원본 TP를 마음대로 trailing/split TP로 바꿈</li>
+<li>피드백 하나마다 if문을 계속 추가</li>
+<li>stage2~5를 한 번에 전부 pending으로 깔기</li>
+</ul>
 <h2>Promotion Gate</h2>
-<pre><code>candidate → shadow → paper_canary → paper_primary → live_candidate → live_approved</code></pre>
-<p><code>live_approved</code>는 자동 승격 금지. 사용자 승인 필요.</p></article></main>
+<pre><code>candidate
+→ shadow
+→ paper_canary
+→ paper_primary
+→ live_candidate
+→ live_approved</code></pre>
+<p><code>live_approved</code>는 자동 승격 금지. 사용자 승인 필요.</p>
+<h2>Current Implementation</h2>
+<ul>
+<li>paper only</li>
+<li>OKX public data only</li>
+<li>private/trading API 미사용</li>
+<li>20x display leverage model</li>
+<li>first notional formula 적용</li>
+<li>next-stage-only pending 적용</li>
+<li>avg+0.5% TP 적용</li>
+<li>fee/funding/slippage 누적은 다음 보강 과제</li>
+</ul></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';

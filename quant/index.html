@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quant Bot</title>
+  <title>Quant Bot Hub</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -50,6 +50,7 @@
 <summary class="nav-mid-title">운영 허브</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/quant/index.html"><span class="nav-badge">허브</span> Quant Bot Hub</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-spec.html"><span class="nav-badge">Spec</span> BTC Futures v2 Spec</a></li>
 <li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html"><span class="nav-badge">Daily</span> BTC Futures v2 Daily Report</a></li>
 </ul>
 </details>
@@ -57,6 +58,7 @@
 <summary class="nav-mid-title">전략 / 시스템</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/quant/agent-team.html"><span class="nav-badge">팀</span> AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-council.html"><span class="nav-badge">회의</span> Quant Strategy Council</a></li>
 <li><a href="/research-desk/quant/strategy-evolution-charter.html"><span class="nav-badge">전략</span> Strategy Evolution Charter</a></li>
 <li><a href="/research-desk/quant/scenario-planning.html"><span class="nav-badge">위기</span> Scenario Planning</a></li>
 <li><a href="/research-desk/quant/feedback-system.html"><span class="nav-badge">피드백</span> Feedback System</a></li>
@@ -105,125 +107,168 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Quant Bot</h1>
-<blockquote>OKX 실시간 public data 기반 BTC futures v2 paper trading과 전략/리스크/리포트/agent team을 분리해서 보는 Quant 운영 허브.</blockquote>
+  <main><article><h1>Quant Bot Hub</h1>
+<blockquote>OKX <code>BTC-USDT-SWAP</code> public data 기반 20x futures paper trading 운영 허브. 현재 기준 전략은 <strong>무한매수법 v2</strong> — 원본 진입/익절 골격은 보존하고, 추가매수 중단 gate와 margin 방어만 얹는다.</blockquote>
 <h2>현재 상태</h2>
 <div class="desk-dashboard">
-<div class="desk-card hot"><strong>Paper Trading Running</strong><p>OKX BTC-USDT-SWAP public data를 15초 간격으로 받아 300만원 기준 paper loop 실행 중</p></div>
-<div class="desk-card warn"><strong>No Live Orders</strong><p>private/trading API 미사용. live_orders_allowed=false. 현재 BUY/SELL은 paper signal</p></div>
-<div class="desk-card violet"><strong>Quant Alert Group Only</strong><p>전략 스위칭·BUY_WATCH·SELL_OR_EXIT_RISK·risk event만 Quant Alert group에 짧게 전송</p></div>
+<div class="desk-card hot"><strong>Paper Trading Running</strong><p>15초 간격 OKX public data. private/trading API 미사용. 모든 BUY/SELL은 paper signal</p></div>
+<div class="desk-card warn"><strong>Infinite Buy v2</strong><p>20x, 1-2-4-8-16, 1% 하락 추가매수, 평단 +0.5% 전체 익절</p></div>
+<div class="desk-card violet"><strong>Risk Gate Only</strong><p>Risk Bot은 진입/익절을 바꾸지 않고 남은 추가매수만 중단/재개</p></div>
 </div>
-<h2>현재 Paper 계정 스냅샷</h2>
+<h2>Live Paper Snapshot</h2>
 <ul>
-<li>updated: <code>2026-05-05T16:14:47+00:00</code></li>
-<li>equity: <code>2035.0000 USDT</code></li>
+<li>updated: <code>2026-05-05T22:57:46+00:00</code></li>
+<li>run file: <code>20260505T171754Z-state.jsonl</code></li>
+<li>latest event: <strong>HOLD / REST</strong> — <code>conditions not ON; no hard OFF</code></li>
 <li>capital: <code>2035 USDT</code></li>
-<li>position: <code>0 BTC</code></li>
-<li>avg entry: <code>0</code></li>
-<li>unrealized PnL: <code>0.0000 USDT</code></li>
-<li>pending orders: <code>0</code></li>
+<li>equity: <code>2033.9233 USDT</code></li>
+<li>realized PnL: <code>+3.2823 USDT</code></li>
+<li>unrealized PnL: <code>-4.3589 USDT</code></li>
+<li>position: <code>0.008040828 BTC</code></li>
+<li>avg entry: <code>81639.8</code></li>
+<li>stage: <code>1 / 5</code></li>
+<li>pending buy orders: <code>0</code></li>
 <li>gate state: <code>REST</code></li>
-<li>latest signal: <strong>HOLD / REST</strong></li>
+<li>display leverage: <code>20x</code></li>
+<li>account effective leverage: <code>0.3206x</code></li>
+<li>margin proxy: <code>0.16%</code></li>
+<li>liquidation buffer estimate: <code>3.86%</code></li>
 </ul>
-<h2>1. 전략 Strategy</h2>
+<h2>Quick Links</h2>
 <ul>
 <li><a href="/research-desk/quant/btc-futures-v2-spec.html">BTC Futures v2 Canonical Spec</a></li>
-<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">BTC Futures Grid v2 Daily Report — 2026-05-05</a></li>
-<li><a href="/research-desk/quant/strategy-evolution-charter.html">Strategy Evolution Charter</a> — simple but beautiful, spaghetti 방지, change review gate</li>
-<li><a href="/research-desk/quant/scenario-planning.html">Scenario Planning Playbook</a> — black swan/위기 시나리오와 risk overlay</li>
-<li>베이스 전략: BTC futures grid/mean-reversion v2</li>
-<li>현재 paper 모델: OKX BTC-USDT-SWAP futures <code>20x display leverage</code></li>
-<li>starter/probe: <code>first_notional = capital × 20 × 0.5 / 31</code>; 현재 2035 USDT 기준 약 <code>656.45 USDT</code></li>
-<li>원본 골격 보존: <code>20x</code>, <code>1-2-4-8-16</code>, <code>1%</code> 하락 추가매수, 평단 <code>+0.5%</code> 전체 익절</li>
-<li>pending order는 다음 stage 1개만 둔다. stage2~5를 한 번에 전부 깔지 않는다.</li>
-<li>추가매수 gate만 보강: ADX/Squeeze/Margin 조건이 나쁘면 남은 물타기 주문을 취소/중단한다.</li>
-<li>상태 표기는 <code>display leverage</code>, <code>account effective leverage</code>, <code>liquidation buffer</code>를 분리해서 본다.</li>
-<li>핵심 gate:</li>
-<li>ADX &lt; 22, squeeze lower breakdown 없음, margin ratio &lt; 50% → 남은 1-2-4-8-16 추가매수 허용</li>
-<li>ADX &gt; 25 rising 또는 squeeze lower breakdown 또는 margin ratio &gt; 60% → 남은 매수 주문 취소</li>
-<li>gate OFF여도 이미 진입한 포지션의 <code>avg +0.5%</code> TP는 계속 작동</li>
-<li>사자마자 팔지 않음: TP 미충족이면 보유</li>
+<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">BTC Futures v2 Daily Report — 2026-05-05</a></li>
+<li><a href="/research-desk/quant/agent-team.html">AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-council.html">Quant Strategy Council</a></li>
+<li><a href="/research-desk/quant/strategy-evolution-charter.html">Strategy Evolution Charter</a></li>
+<li><a href="/research-desk/quant/scenario-planning.html">Scenario Planning Playbook</a></li>
+<li><a href="/research-desk/quant/feedback-system.html">Feedback System</a></li>
 </ul>
-<h2>2. 모의 트레이딩 Daily 결과</h2>
+<h2>Strategy Core</h2>
+<div class="desk-dashboard">
+<div class="desk-card hot"><strong>Entry</strong><p>첫 매수는 X × 20 × 0.5 / 31. 현재 2035 USDT 기준 first notional ≈ 656.45 USDT</p></div>
+<div class="desk-card warn"><strong>Ladder</strong><p>1-2-4-8-16, 총 5단계. 1% 하락마다 다음 stage 1개만 pending</p></div>
+<div class="desk-card violet"><strong>Take Profit</strong><p>평단 +0.5% 도달 시 전체 익절. TP 미충족이면 사자마자 팔지 않음</p></div>
+</div>
+<p>핵심 원칙:</p>
 <ul>
-<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">2026-05-05 Quant Daily Report</a></li>
+<li>원본 보존:</li>
+<li><code>20x</code> fixed display leverage</li>
+<li><code>1-2-4-8-16</code> 5단계 doubling</li>
+<li><code>1%</code> 하락마다 다음 단계 추가매수</li>
+<li><code>avg entry +0.5%</code> 전체 익절</li>
+<li>변경/보강:</li>
+<li>첫 매수 사이즈를 5단계 doubling 전체를 버틸 수 있게 역산</li>
+<li>pending buy는 <strong>다음 stage 1개만</strong> 둠</li>
+<li>stage2~5를 한 번에 전부 미리 깔지 않음</li>
+<li>Risk Bot은 남은 추가매수만 통제</li>
 </ul>
-<p>Daily Report에 포함되는 항목:</p>
+<h2>Add-Buy Gate</h2>
+<p>게이트는 <strong>포지션 청산/익절 로직이 아니라 추가매수 허용 장치</strong>다.</p>
+<p>ON 조건:</p>
 <ul>
-<li>오늘의 판단: BUY_WATCH / SELL_OR_EXIT_RISK / HOLD</li>
-<li>가격: last / mark / funding</li>
-<li>gate state</li>
-<li>paper 계정 equity / margin proxy / pending orders</li>
-<li>이벤트 분포</li>
-<li>최근 이벤트</li>
-<li>안전 체크</li>
+<li><code>ADX &lt; 22</code></li>
+<li>Bollinger squeeze lower breakdown 없음</li>
+<li>margin ratio proxy <code>&lt; 50%</code></li>
 </ul>
-<h2>3. 리스크 Risk</h2>
-<p>현재 paper 단계의 안전 조건:</p>
+<p>OFF 조건:</p>
 <ul>
-<li>display leverage: <code>20x</code></li>
-<li>account effective leverage: 약 <code>0.3226x</code> at stage 1</li>
-<li>stage1 notional: 약 <code>656.45 USDT</code></li>
-<li>stage1 margin used: 약 <code>32.82 USDT</code></li>
-<li>liquidation buffer: 약 <code>4.5%</code> at entry</li>
-<li>live trading API 사용 안 함</li>
-<li>private account API 사용 안 함</li>
-<li>OKX public data only</li>
-<li><code>QUANT_BOT_ALERT_CHAT_ID</code>가 group/supergroup이 아니면 알림 전송 중단</li>
-<li>동일 상태 반복 알림 dedup</li>
-<li>heartbeat는 ledger에만 저장</li>
+<li><code>ADX &gt; 25 and rising</code></li>
+<li>Bollinger squeeze lower breakdown</li>
+<li>margin ratio proxy <code>&gt; 60%</code></li>
 </ul>
-<p>Risk Bot이 우선권을 갖는 조건:</p>
+<p>OFF/REST 시 행동:</p>
 <ul>
-<li>margin ratio proxy 초과</li>
-<li>effective leverage cap 초과</li>
-<li>stale data / API timeout</li>
-<li>trend breakout / squeeze breakdown</li>
-<li>pending buy cancel 필요</li>
+<li>남은 pending buy 취소 또는 신규 추가매수 중단</li>
+<li>이미 보유한 포지션은 계속 보유</li>
+<li><code>avg +0.5%</code> TP는 계속 활성</li>
+<li>즉시 trailing/split sell 없음</li>
 </ul>
-<h2>4. Agent Team</h2>
-<p>실제 퀀트팀을 AI-agent 구조로 재구성한다.</p>
-<pre><code>Portfolio Manager Agent
-Research / Alpha Agent
-Time-Series Forecast Agent
-Scenario Planning Agent
-Strategy Bot
-Risk Bot
-Execution / Paper Broker Agent
-Validator Agent
-Optimizer Agent
-Operations / Alert Agent
-Reporting Agent</code></pre>
+<h2>Stage Ladder — 현재 2035 USDT 기준</h2>
+<ul>
+<li>Stage 1:</li>
+<li>notional: <code>656.45 USDT</code></li>
+<li>status: active position</li>
+<li>Stage 2:</li>
+<li>trigger: 현재 avg 기준 <code>-1%</code></li>
+<li>notional: <code>1,312.90 USDT</code></li>
+<li>pending: gate ON일 때 다음 stage 1개만</li>
+<li>Stage 3:</li>
+<li>trigger: stage2 체결 후 다음 <code>-1%</code></li>
+<li>notional: <code>2,625.81 USDT</code></li>
+<li>Stage 4:</li>
+<li>trigger: stage3 체결 후 다음 <code>-1%</code></li>
+<li>notional: <code>5,251.61 USDT</code></li>
+<li>Stage 5:</li>
+<li>trigger: stage4 체결 후 다음 <code>-1%</code></li>
+<li>notional: <code>10,503.23 USDT</code></li>
+</ul>
+<p>주의: 위 stage notional은 원본 <code>1-2-4-8-16</code> 구조를 설명하기 위한 값이다. 실제 운영에서는 gate, margin proxy, free equity, liquidation buffer가 우선한다.</p>
+<h2>Strategy Council / Regime Switch</h2>
+<p>전략은 장마다 다르게 켜고 끈다. 단, 그 결정은 단일 지표나 단일 봇이 아니라 <a href="/research-desk/quant/strategy-council.html">Quant Strategy Council</a>의 결정을 따른다.</p>
+<pre><code>chart regime + external context + risk state
+→ Strategy Council
+→ strategy_mode
+→ Risk overlay
+→ paper/live candidate action</code></pre>
+<p>전략 모드:</p>
+<ul>
+<li><code>ACTIVE_INFINITE_BUY_V2</code>: 횡보/평균회귀 친화 장세</li>
+<li><code>HOLD_EXISTING_NO_NEW_STAGE</code>: 애매한 장세, 기존 TP만 유지</li>
+<li><code>ADD_BUY_OFF</code>: 하락추세/브레이크다운 위험, pending buy 취소</li>
+<li><code>EVENT_PAUSE</code>: CPI/FOMC/규제/해킹/사회 이슈 등 외부 이벤트</li>
+<li><code>DATA_NOT_READY</code>: 데이터 품질 문제</li>
+</ul>
+<p>차트만 보지 않고 함께 보는 맥락:</p>
+<ul>
+<li>macro: FOMC, CPI, 금리, 달러, 유동성</li>
+<li>crypto structure: funding, basis, OI, ETF flow, liquidation cluster</li>
+<li>social/geopolitical: 전쟁, 규제, 사회적 panic/risk-off</li>
+<li>technology/security: chain halt, bridge exploit, custody 이슈</li>
+<li>exchange health: OKX data stale, mark-last divergence, API timeout</li>
+</ul>
+<h2>Agent Responsibilities</h2>
+<pre><code>OKX public data
+→ Data Quality Agent
+→ Scenario Planning Agent: 외부 맥락/위기 시나리오
+→ Strategy Council: 장세별 strategy_mode 결정
+→ Strategy Bot: 무한매수법 v2 intent 생성
+→ Risk Bot: add-buy gate / margin 방어
+→ Paper Broker Agent: paper fill / avg+0.5% TP simulation
+→ Ledger
+→ Feedback Recorder
+→ Validator / Optimizer / Reporting
+→ Quant Alert group + Research Desk</code></pre>
 <p>운영 원칙:</p>
 <ul>
+<li>Strategy Bot은 원본 전략 골격을 마음대로 바꾸지 않는다.</li>
+<li>Risk Bot은 “추가매수 계속/중단”만 우선 통제한다.</li>
 <li>Optimizer는 후보만 만든다.</li>
-<li>Strategy Bot은 피드백/시나리오/optimizer 결과를 바탕으로 전략 변경 후보를 만들되, <code>simple but beautiful</code> 원칙과 change review gate를 통과해야 한다.</li>
-<li>Scenario Planning Agent는 블랙스완/위기 시나리오를 구성하고 Risk overlay로 전달한다.</li>
 <li>Validator/Risk가 독립 검증한다.</li>
 <li>live 승격은 사용자 승인 없이는 불가능하다.</li>
-<li>틀린 후보도 rejected ledger에 남긴다.</li>
+<li>전략 변경은 <a href="/research-desk/quant/strategy-evolution-charter.html">Strategy Evolution Charter</a>를 통과해야 한다.</li>
 </ul>
-<h2>5. Rust Time-Series Forecast</h2>
-<p>Rust는 전체 봇 대체가 아니라 시계열 예측/특징 계산 코어로 쓴다.</p>
-<pre><code>Python: API 수집, orchestration, alert, report, promotion gate
-Rust: fast features, regime/volatility/tail-risk forecast, walk-forward sweep</code></pre>
-<p>예측 목표:</p>
+<h2>Implementation Status</h2>
+<p>완료:</p>
 <ul>
-<li>방향성 단일 예측보다 range/trend likelihood</li>
-<li>volatility expansion probability</li>
-<li>lower-band breakdown risk</li>
-<li>tail move probability</li>
-<li>funding/basis stress</li>
+<li>OKX public data paper loop</li>
+<li>20x display leverage paper model</li>
+<li>first notional 공식: <code>capital × 20 × 0.5 / 31</code></li>
+<li><code>1-2-4-8-16</code> stage model</li>
+<li>next-stage-only pending order</li>
+<li>avg <code>+0.5%</code> full TP</li>
+<li>ADX/Squeeze/Margin add-buy gate</li>
+<li>Quant Alert group-only alert policy</li>
 </ul>
-<p>Forecast 결과는 Strategy Bot의 보조 feature로만 사용한다. 단독 live 매수/매도 결정은 금지한다.</p>
-<h2>6. 다음 구현 후보</h2>
+<p>다음 보강:</p>
 <ul>
-<li>simulated fill / split take-profit / trailing stop 고도화</li>
-<li>fee/funding/slippage 누적</li>
-<li>Scenario Planning Agent runner + scenario ledger</li>
-<li>Strategy candidate/rejected_candidate ledger</li>
-<li>Rust <code>quant-ts-forecast</code> crate scaffold</li>
-<li>Validator/Risk Bot의 rejected candidate ledger</li>
+<li>fee/funding/slippage 누적 PnL</li>
+<li>Mark Price liquidation/margin ratio 정교화</li>
+<li>stage별 event ledger view</li>
+<li>Scenario runner + context-aware scenario ledger</li>
+<li>Strategy Council decision ledger</li>
+<li>장세별 strategy switch backtest/replay</li>
+<li>high-watermark withdrawal scheduler</li>
 </ul></article></main>
 </div>
 <script type="module">
