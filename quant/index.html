@@ -135,6 +135,7 @@
 <li>현재 paper 모델: OKX BTC-USDT-SWAP futures <code>20x display leverage</code></li>
 <li>starter/probe: <code>first_notional = capital × 20 × 0.5 / 31</code>; 현재 2035 USDT 기준 약 <code>656.45 USDT</code></li>
 <li>원본 골격 보존: <code>20x</code>, <code>1-2-4-8-16</code>, <code>1%</code> 하락 추가매수, 평단 <code>+0.5%</code> 전체 익절</li>
+<li>pending order는 다음 stage 1개만 둔다. stage2~5를 한 번에 전부 깔지 않는다.</li>
 <li>추가매수 gate만 보강: ADX/Squeeze/Margin 조건이 나쁘면 남은 물타기 주문을 취소/중단한다.</li>
 <li>상태 표기는 <code>display leverage</code>, <code>account effective leverage</code>, <code>liquidation buffer</code>를 분리해서 본다.</li>
 <li>핵심 gate:</li>
