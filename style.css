@@ -73,6 +73,17 @@ pre code { background: transparent; padding: 0; }
 .horizon-strip { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; margin: 16px 0 26px; }
 .horizon { border-radius: 999px; border: 1px solid rgba(180,248,200,.20); padding: 10px 13px; background: rgba(180,248,200,.045); color: var(--text); font-size: 13px; }
 .horizon b { color: var(--accent); }
+.prediction-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 20px 0 30px; }
+.prediction-card { background: linear-gradient(145deg, rgba(88,166,255,.09), rgba(255,255,255,.025)); border: 1px solid rgba(88,166,255,.22); border-radius: 16px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 14px 40px rgba(0,0,0,.20); }
+.prediction-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(88,166,255,.75), transparent); }
+.prediction-meta { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+.pred-pill { border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 3px 8px; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; background: rgba(255,255,255,.035); }
+.pred-pill.hot { color: var(--hot); border-color: rgba(255,138,138,.28); }
+.prediction-card h3 { margin: 0 0 9px; color: var(--text); font-size: 17px; }
+.prediction-card p { margin: 8px 0; font-size: 13px; color: var(--muted); line-height: 1.5; }
+.prediction-card .thesis { color: var(--text); }
+.prediction-card .label { color: var(--accent); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .07em; }
+.ref-note { border: 1px dashed rgba(247,201,72,.35); border-radius: 14px; padding: 12px 14px; background: rgba(247,201,72,.045); color: var(--muted); margin: 16px 0; }
 article ul { padding-left: 1.2rem; }
 article li { margin: 7px 0; }
 article > ul { list-style: none; padding-left: 0; }
@@ -90,7 +101,8 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
   .nav-major-title::after { font-size: 18px; }
   .viz-card { padding: 10px; margin-left: -4px; margin-right: -4px; }
   .desk-dashboard, .lens-grid, .horizon-strip { grid-template-columns: 1fr; }
-  .desk-card, .lens-card { padding: 13px 14px; }
+  .prediction-grid { grid-template-columns: 1fr; }
+  .desk-card, .lens-card, .prediction-card { padding: 13px 14px; }
   .viz-card::before { content: "← 좌우로 스크롤해서 지도 보기 →"; display: block; color: var(--muted); font-size: 12px; margin: 0 0 8px 2px; }
   .mermaid { min-width: 720px; }
   .nav-mid { margin-left: 4px; }
