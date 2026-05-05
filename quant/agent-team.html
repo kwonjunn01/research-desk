@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Inertia-Aware Ontology Forecasting</title>
+  <title>AI Quant Agent Team</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -103,100 +103,43 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Inertia-Aware Ontology Forecasting</h1>
-<blockquote>오늘의 signal이 중요한 이유는 “강해서”가 아니라, <strong>기존 관성을 깨는가 / 강화하는가 / 장기적으로 해소하는가 / 시장과 기술 사이의 간극을 드러내는가</strong>에 있다.</blockquote>
+  <main><article><h1>AI Quant Agent Team</h1>
+<blockquote>실제 퀀트팀의 역할 분리를 차용하되, AI-agent가 더 잘하는 반복 검증·감시·리포팅·후보 생성 작업에 맞게 재구성한 팀 구조.</blockquote>
+<h2>Team Map</h2>
 <div class="desk-dashboard">
-<div class="desk-card hot"><strong>Inertia Breaker</strong><p>오늘 이슈가 기존 병목·capex thesis·supply constraint를 직접 흔드는 경우.</p></div>
-<div class="desk-card warn"><strong>Long-term Resolution</strong><p>당장 시장 반응은 약하지만 병목 해소 방향을 제시하는 경우.</p></div>
-<div class="desk-card violet"><strong>Narrative Mismatch</strong><p>시장 narrative와 기술 evidence가 서로 다른 속도로 움직이는 blind spot.</p></div>
+<div class="desk-card violet"><strong>PM Agent</strong><p>전략 포트폴리오 방향, 자본 배분 후보, pause/reduce/promote 제안</p></div>
+<div class="desk-card hot"><strong>Strategy Bot</strong><p>BTC v2 베이스 전략을 BUY_WATCH / SELL_OR_EXIT_RISK / HOLD signal로 변환</p></div>
+<div class="desk-card warn"><strong>Risk Bot</strong><p>Strategy보다 우선. leverage, margin, stale data, breakout 시 reject/kill</p></div>
+<div class="desk-card blue"><strong>Validator Bot</strong><p>Optimizer 후보를 walk-forward/OOS/leakage/fee/funding/slippage 기준으로 반박</p></div>
 </div>
-<h2>왜 관성이 필요한가</h2>
-<p>AI Research와 Market Narrative는 같은 속도로 움직이지 않는다.</p>
+<h2>역할</h2>
 <ul>
-<li>기술은 빠르게 attention spike를 만들 수 있다.</li>
-<li>시장은 이미 형성된 narrative와 포지션 때문에 과하게 반응하거나 늦게 반응한다.</li>
-<li>산업은 capex, 공급망, regulation, procurement cycle 때문에 더 느리게 움직인다.</li>
+<li><strong>Portfolio Manager Agent</strong>: 전체 운용 상태, 자본 배분 후보, pause/reduce/promote 제안.</li>
+<li><strong>Research / Alpha Agent</strong>: 새 signal 후보와 실패 가설 생성.</li>
+<li><strong>Time-Series Forecast Agent</strong>: Rust core로 regime/volatility/tail-risk 예측.</li>
+<li><strong>Strategy Bot</strong>: 베이스 전략 규칙을 signal/order intent로 변환. 주문 제출 권한 없음.</li>
+<li><strong>Risk Bot</strong>: 모든 order intent를 gate/reject/resize. Strategy보다 우선.</li>
+<li><strong>Execution / Paper Broker Agent</strong>: paper fill, TP, trailing, live later adapter.</li>
+<li><strong>Validator Agent</strong>: 후보의 overfit, leakage, OOS 안정성 검증.</li>
+<li><strong>Optimizer Agent</strong>: candidate config diff만 생성. live/risk cap 변경 금지.</li>
+<li><strong>Operations / Alert Agent</strong>: Quant Alert group only, event-driven concise alerts.</li>
+<li><strong>Reporting Agent</strong>: Daily/Weekly report와 homepage publish.</li>
 </ul>
-<p>따라서 Research Desk는 오늘의 이슈를 기존 ontology 위에 올려놓고 묻는다.</p>
-<pre><code>오늘의 이슈가 기존 관성을 해결할 만큼 큰가?
-아니면 장기적 해소요인인가?
-아니면 병목을 더 키우는가?
-아니면 산업 확장을 여는가?</code></pre>
-<h2>Inertia Lens</h2>
+<h2>의사결정 흐름</h2>
 <div class="viz-card"><div class="mermaid">flowchart LR
-  I[&quot;Accumulated Inertia\n기존 narrative·capex·공급망·규제·습관&quot;] --&gt; Q{&quot;Today&#x27;s issue enough?&quot;}
-  T[&quot;Today&#x27;s Technical / Market Issue&quot;] --&gt; Q
-  Q --&gt; Breaker[&quot;Inertia Breaker\n관성 전환 후보&quot;]
-  Q --&gt; Reinforcer[&quot;Inertia Reinforcer\n기존 흐름 강화&quot;]
-  Q --&gt; Long[&quot;Long-term Resolution\n장기 해소요인&quot;]
-  Q --&gt; Mismatch[&quot;Narrative Mismatch\n시장·기술 간극&quot;]</div></div>
-<h2>Bottleneck / Expansion / Solution Lens</h2>
-<p>기술 발전은 항상 “좋은 뉴스”가 아니다. 어떤 기술은 새 병목을 만들고, 어떤 기술은 산업을 확장하고, 어떤 기술은 기존 병목의 해결책이 된다.</p>
-<div class="viz-card"><div class="mermaid">flowchart TB
-  Progress[&quot;Technical Progress&quot;] --&gt; Bottleneck[&quot;Creates or exposes bottleneck&quot;]
-  Progress --&gt; Expansion[&quot;Expands industry surface&quot;]
-  Progress --&gt; Solution[&quot;Offers solution / bypass&quot;]
-
-  Bottleneck --&gt; Power[&quot;Inference scale → power/grid/cooling&quot;]
-  Bottleneck --&gt; Memory[&quot;Agents → memory/RAG/security&quot;]
-  Bottleneck --&gt; HBM[&quot;Model scale → HBM/packaging&quot;]
-
-  Expansion --&gt; Edge[&quot;On-device AI → robotics/device&quot;]
-  Expansion --&gt; Enterprise[&quot;Agent workflow → enterprise software&quot;]
-  Expansion --&gt; Healthcare[&quot;Trust/RAG → healthcare AI&quot;]
-
-  Solution --&gt; Efficient[&quot;Efficient inference → margin relief&quot;]
-  Solution --&gt; Privacy[&quot;On-device → latency/privacy&quot;]
-  Solution --&gt; Governance[&quot;RAG security → adoption unlock&quot;]</div></div>
-<h2>판단 카드</h2>
-<h3>Inertia Breaker</h3>
-<p>오늘의 signal이 기존 병목/구조를 실제로 흔드는 경우.</p>
-<ul>
-<li>기존 bottleneck을 직접 완화</li>
-<li>adoption cost를 낮춤</li>
-<li>capex thesis를 바꿈</li>
-<li>supply constraint를 우회</li>
-</ul>
-<h3>Inertia Reinforcer</h3>
-<p>오늘의 signal이 기존 narrative를 더 강하게 만드는 경우.</p>
-<ul>
-<li>병목이 더 심해짐</li>
-<li>dominant player moat 강화</li>
-<li>시장 narrative가 같은 방향으로 반복</li>
-</ul>
-<h3>Long-term Resolution Factor</h3>
-<p>오늘 당장 market reaction은 약하지만, 장기적으로 병목 해소 가능성이 있는 경우.</p>
-<ul>
-<li>check date를 길게 잡음</li>
-<li>weekly/monthly review에서 재평가</li>
-<li>premature market reaction과 구분</li>
-</ul>
-<h3>Narrative Mismatch</h3>
-<p>시장은 강한데 기술 evidence가 약하거나, 기술은 강한데 시장이 아직 무시하는 경우.</p>
-<ul>
-<li>blind spot 후보</li>
-<li>prediction ledger에 남김</li>
-<li>다음 Cross Signal에서 follow-up</li>
-</ul>
-<h2>Forecast에 반영되는 필드</h2>
-<ul>
-<li>기존 narrative / 기존 bottleneck</li>
-<li>installed base / switching cost</li>
-<li>issue classification</li>
-<li>bottleneck effect</li>
-<li>expansion effect</li>
-<li>solution effect</li>
-<li>time to impact</li>
-<li>check date</li>
-<li>actual outcome</li>
-<li>gap analysis</li>
-</ul>
-<h2>연결 문서</h2>
-<ul>
-<li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html">Prediction Feedback Loop</a></li>
-<li><a href="/research-desk/cross-ontology/index.html">Cross-Ontology Synthesizer</a></li>
-<li><a href="/research-desk/reports/cross/2026-05-05.html">오늘의 Cross-Ontology Synthesis</a></li>
-</ul></article></main>
+  Data[OKX public/live data] --&gt; Quality[Data Quality Agent]
+  Quality --&gt; Forecast[Time-Series Forecast Agent]
+  Forecast --&gt; Strategy[Strategy Bot]
+  Strategy --&gt; Risk[Risk Bot]
+  Risk --&gt; Paper[Paper Broker / Execution]
+  Paper --&gt; Ledger[Ledger]
+  Ledger --&gt; Validator[Validator]
+  Ledger --&gt; Optimizer[Optimizer]
+  Ledger --&gt; Report[Reporting]
+  Risk --&gt; Alert[Quant Alert group]</div></div>
+<h2>Promotion Gate</h2>
+<pre><code>candidate → shadow → paper_canary → paper_primary → live_candidate → live_approved</code></pre>
+<p><code>live_approved</code>는 자동 승격 금지. 사용자 승인 필요.</p></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
