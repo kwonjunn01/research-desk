@@ -57,6 +57,8 @@
 <summary class="nav-mid-title">전략 / 시스템</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/quant/agent-team.html"><span class="nav-badge">팀</span> AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-evolution-charter.html"><span class="nav-badge">전략</span> Strategy Evolution Charter</a></li>
+<li><a href="/research-desk/quant/scenario-planning.html"><span class="nav-badge">위기</span> Scenario Planning</a></li>
 <li><a href="/research-desk/quant/feedback-system.html"><span class="nav-badge">피드백</span> Feedback System</a></li>
 </ul>
 </details>
@@ -126,6 +128,8 @@
 <h2>1. 전략 Strategy</h2>
 <ul>
 <li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">BTC Futures Grid v2 Daily Report — 2026-05-05</a></li>
+<li><a href="/research-desk/quant/strategy-evolution-charter.html">Strategy Evolution Charter</a> — simple but beautiful, spaghetti 방지, change review gate</li>
+<li><a href="/research-desk/quant/scenario-planning.html">Scenario Planning Playbook</a> — black swan/위기 시나리오와 risk overlay</li>
 <li>베이스 전략: BTC futures grid/mean-reversion v2</li>
 <li>핵심 gate:</li>
 <li>ADX &lt; 18, range box 내부, squeeze 직후 아님 → BUY_WATCH 후보</li>
@@ -170,6 +174,7 @@
 <pre><code>Portfolio Manager Agent
 Research / Alpha Agent
 Time-Series Forecast Agent
+Scenario Planning Agent
 Strategy Bot
 Risk Bot
 Execution / Paper Broker Agent
@@ -180,6 +185,8 @@ Reporting Agent</code></pre>
 <p>운영 원칙:</p>
 <ul>
 <li>Optimizer는 후보만 만든다.</li>
+<li>Strategy Bot은 피드백/시나리오/optimizer 결과를 바탕으로 전략 변경 후보를 만들되, <code>simple but beautiful</code> 원칙과 change review gate를 통과해야 한다.</li>
+<li>Scenario Planning Agent는 블랙스완/위기 시나리오를 구성하고 Risk overlay로 전달한다.</li>
 <li>Validator/Risk가 독립 검증한다.</li>
 <li>live 승격은 사용자 승인 없이는 불가능하다.</li>
 <li>틀린 후보도 rejected ledger에 남긴다.</li>
@@ -199,10 +206,10 @@ Rust: fast features, regime/volatility/tail-risk forecast, walk-forward sweep</c
 <p>Forecast 결과는 Strategy Bot의 보조 feature로만 사용한다. 단독 live 매수/매도 결정은 금지한다.</p>
 <h2>6. 다음 구현 후보</h2>
 <ul>
-<li>simulated fill</li>
-<li>split take-profit</li>
-<li>trailing stop</li>
+<li>simulated fill / split take-profit / trailing stop 고도화</li>
 <li>fee/funding/slippage 누적</li>
+<li>Scenario Planning Agent runner + scenario ledger</li>
+<li>Strategy candidate/rejected_candidate ledger</li>
 <li>Rust <code>quant-ts-forecast</code> crate scaffold</li>
 <li>Validator/Risk Bot의 rejected candidate ledger</li>
 </ul></article></main>
