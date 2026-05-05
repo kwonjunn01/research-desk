@@ -12,9 +12,9 @@
     <h1><a href="/research-desk/index.html">Research Desk</a></h1>
     <div class="meta">Personal Research Radar</div>
     <details class="nav-major">
-<summary class="nav-major-title">대분류 · Home</summary>
+<summary class="nav-major-title">Home</summary>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · Overview</summary>
+<summary class="nav-mid-title">Overview</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
 <li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
@@ -23,42 +23,42 @@
 </details>
 </details>
 <details class="nav-major">
-<summary class="nav-major-title">대분류 · AI Research</summary>
+<summary class="nav-major-title">AI Research</summary>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 지도 / MOC</summary>
+<summary class="nav-mid-title">지도 / MOC</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">MOC</span> AI Research Radar</a></li>
 <li><a href="/research-desk/ai-research/signal-map.html"><span class="nav-badge">지도</span> AI Research Signal Map</a></li>
 </ul>
 </details>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 날짜별 리포트</summary>
-<div class="nav-date">소분류 · 2026-05-05</div>
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/ai-research/2026-05-05.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
 </ul>
-<div class="nav-date">소분류 · 2026-05-04</div>
+<div class="nav-date">2026-05-04</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/ai-research/2026-05-04.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
 </ul>
 </details>
 </details>
 <details class="nav-major">
-<summary class="nav-major-title">대분류 · Market Ontology</summary>
+<summary class="nav-major-title">Market Ontology</summary>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 지도 / MOC</summary>
+<summary class="nav-mid-title">지도 / MOC</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">MOC</span> Market Ontology</a></li>
 <li><a href="/research-desk/market-ontology/industry-linkage-map.html"><span class="nav-badge">지도</span> AI Infra Industry Linkage Map</a></li>
 </ul>
 </details>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 날짜별 리포트</summary>
-<div class="nav-date">소분류 · 2026-05-05</div>
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/market/2026-05-05.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
 </ul>
-<div class="nav-date">소분류 · 2026-05-04</div>
+<div class="nav-date">2026-05-04</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/market/2026-05-04.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
 </ul>
@@ -66,13 +66,27 @@
 </details>
   </aside>
   <main><article><h1>Market Ontology</h1>
-<p>주식/산업 흐름을 종목 리스트가 아니라 node-edge 관계와 narrative 변화로 기록하는 공개 글 모음.</p>
+<p>주식/산업 흐름을 종목 리스트가 아니라 <strong>node-edge 관계와 narrative 변화</strong>로 기록하는 공개 허브.</p>
 <blockquote>투자 추천이 아니다. 산업 구조와 narrative 변화를 추적하기 위한 기록이다.</blockquote>
-<h2>Start Here</h2>
+<h2>먼저 볼 것</h2>
 <ul>
 <li><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra Industry Linkage Map</a> — 산업 연결/병목/리스크를 한 장으로 보는 지도</li>
+<li><a href="/research-desk/reports/market/2026-05-05.html">2026-05-05 Market Narrative Brief</a> — 최신 market signal</li>
 </ul>
-<h2>Planned Posts</h2>
+<h2>채울 축</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  News[News / Price / Filing] --&gt; Node[Industry Node]
+  Node --&gt; Edge[Supply-Demand Edge]
+  Edge --&gt; Bottleneck[Bottleneck Radar]
+  Bottleneck --&gt; Narrative[Market Narrative]
+  Narrative --&gt; Review[Human Review]</div></div>
+<ul>
+<li><strong>Industry Node:</strong> Cloud, Data Center, Semiconductor, HBM, Packaging, Power/Grid, On-device, Robotics</li>
+<li><strong>Supply-Demand Edge:</strong> capex, demand pull, supply constraint, risk transmission</li>
+<li><strong>Bottleneck Radar:</strong> 완화 후보 / 심화 후보 / 혼재 / 신호 약함</li>
+<li><strong>Human Review:</strong> 자동 생성된 signal을 사람이 ontology로 승격할지 판단</li>
+</ul>
+<h2>다음 공개 글 후보</h2>
 <ol>
 <li>주식 리포트를 종목이 아니라 ontology로 보고 싶다</li>
 <li>AI 인프라 산업을 node와 edge로 그려보기</li>
@@ -81,5 +95,23 @@
 <li>내가 모르는 것을 표시하는 투자 메모 시스템</li>
 </ol></article></main>
 </div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
 </body>
 </html>

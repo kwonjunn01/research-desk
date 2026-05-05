@@ -12,9 +12,9 @@
     <h1><a href="/research-desk/index.html">Research Desk</a></h1>
     <div class="meta">Personal Research Radar</div>
     <details class="nav-major">
-<summary class="nav-major-title">대분류 · Home</summary>
+<summary class="nav-major-title">Home</summary>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · Overview</summary>
+<summary class="nav-mid-title">Overview</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
 <li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
@@ -23,42 +23,42 @@
 </details>
 </details>
 <details class="nav-major">
-<summary class="nav-major-title">대분류 · AI Research</summary>
+<summary class="nav-major-title">AI Research</summary>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 지도 / MOC</summary>
+<summary class="nav-mid-title">지도 / MOC</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">MOC</span> AI Research Radar</a></li>
 <li><a href="/research-desk/ai-research/signal-map.html"><span class="nav-badge">지도</span> AI Research Signal Map</a></li>
 </ul>
 </details>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 날짜별 리포트</summary>
-<div class="nav-date">소분류 · 2026-05-05</div>
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/ai-research/2026-05-05.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
 </ul>
-<div class="nav-date">소분류 · 2026-05-04</div>
+<div class="nav-date">2026-05-04</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/ai-research/2026-05-04.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
 </ul>
 </details>
 </details>
 <details class="nav-major">
-<summary class="nav-major-title">대분류 · Market Ontology</summary>
+<summary class="nav-major-title">Market Ontology</summary>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 지도 / MOC</summary>
+<summary class="nav-mid-title">지도 / MOC</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">MOC</span> Market Ontology</a></li>
 <li><a href="/research-desk/market-ontology/industry-linkage-map.html"><span class="nav-badge">지도</span> AI Infra Industry Linkage Map</a></li>
 </ul>
 </details>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 날짜별 리포트</summary>
-<div class="nav-date">소분류 · 2026-05-05</div>
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/market/2026-05-05.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
 </ul>
-<div class="nav-date">소분류 · 2026-05-04</div>
+<div class="nav-date">2026-05-04</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/market/2026-05-04.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
 </ul>
@@ -66,15 +66,59 @@
 </details>
   </aside>
   <main><article><h1>Agent Build Log</h1>
-<p>Hermes + Codex 기반 개인 리서치 시스템 구축기.</p>
-<h2>Planned Posts</h2>
+<p>Hermes + Codex 기반 개인 Research Desk를 만드는 과정을 기록하는 공개 로그.</p>
+<h2>현재 만든 것</h2>
+<ul>
+<li>Obsidian/Markdown-first vault 구조</li>
+<li>Daily AI Research Radar 자동 생성</li>
+<li>Market Narrative Brief 자동 생성</li>
+<li>Telegram delivery용 cron job</li>
+<li>GitHub Pages 정적 사이트 배포</li>
+<li>AI Research / Market Ontology overview-first 리포트 구조</li>
+<li>접히는 sidebar navigation: 큰 카테고리만 먼저 보이고 클릭하면 하위 항목 표시</li>
+</ul>
+<h2>앞으로 채울 글</h2>
 <ol>
-<li>Hermes + Codex로 개인 리서치 에이전트 만들기</li>
-<li>MacBook Air M4 클램쉘을 개인 agent 서버처럼 써보기</li>
-<li>Telegram으로 매일 아침 AI research briefing 받기</li>
-<li>Research Radar Agent 구조 설계</li>
-<li>LLM agent가 hype와 real signal을 구분할 수 있을까?</li>
-</ol></article></main>
+<li><strong>왜 Notion-first가 아니라 Markdown/Obsidian-first인가</strong></li>
+<li><strong>Daily AI Research Radar 설계</strong>: source 수집 → ranking → topic heat → Telegram brief</li>
+<li><strong>Market Narrative Brief 설계</strong>: watchlist → narrative → bottleneck radar</li>
+<li><strong>GitHub Pages publishing loop</strong>: Markdown을 공개 HTML로 승격하는 방식</li>
+<li><strong>시각화 개선기</strong>: Mermaid graph, heatmap, ontology card, mobile-first layout</li>
+</ol>
+<h2>Build Map</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  Sources[Sources] --&gt; Collect[Collectors]
+  Collect --&gt; MD[Markdown Vault]
+  MD --&gt; Reports[Daily Reports]
+  Reports --&gt; Telegram[Telegram Brief]
+  Reports --&gt; Public[GitHub Pages]
+  MD --&gt; Ontology[Ontology Maps]
+  Ontology --&gt; Public</div></div>
+<h2>다음 개선 후보</h2>
+<ul>
+<li>report 안의 raw graph를 Mermaid로 렌더링</li>
+<li>topic heat를 표/목록이 아니라 card/heatmap 형태로 표시</li>
+<li>비어 있는 Weekly Review를 실제 주간 synthesis로 자동 초안화</li>
+<li>Market watchlist를 기업별 card + supply chain graph로 표현</li>
+</ul></article></main>
 </div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
 </body>
 </html>

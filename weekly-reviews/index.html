@@ -12,9 +12,9 @@
     <h1><a href="/research-desk/index.html">Research Desk</a></h1>
     <div class="meta">Personal Research Radar</div>
     <details class="nav-major">
-<summary class="nav-major-title">대분류 · Home</summary>
+<summary class="nav-major-title">Home</summary>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · Overview</summary>
+<summary class="nav-mid-title">Overview</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
 <li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
@@ -23,42 +23,42 @@
 </details>
 </details>
 <details class="nav-major">
-<summary class="nav-major-title">대분류 · AI Research</summary>
+<summary class="nav-major-title">AI Research</summary>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 지도 / MOC</summary>
+<summary class="nav-mid-title">지도 / MOC</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">MOC</span> AI Research Radar</a></li>
 <li><a href="/research-desk/ai-research/signal-map.html"><span class="nav-badge">지도</span> AI Research Signal Map</a></li>
 </ul>
 </details>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 날짜별 리포트</summary>
-<div class="nav-date">소분류 · 2026-05-05</div>
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/ai-research/2026-05-05.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
 </ul>
-<div class="nav-date">소분류 · 2026-05-04</div>
+<div class="nav-date">2026-05-04</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/ai-research/2026-05-04.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
 </ul>
 </details>
 </details>
 <details class="nav-major">
-<summary class="nav-major-title">대분류 · Market Ontology</summary>
+<summary class="nav-major-title">Market Ontology</summary>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 지도 / MOC</summary>
+<summary class="nav-mid-title">지도 / MOC</summary>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">MOC</span> Market Ontology</a></li>
 <li><a href="/research-desk/market-ontology/industry-linkage-map.html"><span class="nav-badge">지도</span> AI Infra Industry Linkage Map</a></li>
 </ul>
 </details>
 <details class="nav-mid">
-<summary class="nav-mid-title">중분류 · 날짜별 리포트</summary>
-<div class="nav-date">소분류 · 2026-05-05</div>
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/market/2026-05-05.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
 </ul>
-<div class="nav-date">소분류 · 2026-05-04</div>
+<div class="nav-date">2026-05-04</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/market/2026-05-04.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
 </ul>
@@ -66,15 +66,59 @@
 </details>
   </aside>
   <main><article><h1>Weekly Reviews</h1>
-<p>Daily Research Radar에서 의미 있는 항목만 골라 주간 단위로 정리한 공개 글 모음.</p>
-<h2>Format</h2>
+<p>Daily Research Radar에서 의미 있는 항목만 골라 <strong>주간 단위의 큰 흐름</strong>으로 압축하는 공개 글 모음.</p>
+<h2>채울 내용</h2>
+<p>아직 완성 글을 쌓기 전 단계라, 이 페이지는 아래 형식으로 채워간다.</p>
+<ol>
+<li><strong>이번 주 한 줄 요약</strong>  </li>
+</ol>
+<p>예: “Agent memory와 RAG security가 동시에 올라오며 production agent의 신뢰성 문제가 전면화됨.”</p>
+<ol>
+<li><strong>반복 등장한 키워드</strong>  </li>
+</ol>
+<p>Post-training, Agentic AI, Inference cost, On-device, Memory/RAG, RAG Security.</p>
+<ol>
+<li><strong>Hype vs Real Adoption</strong>  </li>
+</ol>
+<p>데모성 announcement와 실제 benchmark/repo/user adoption을 분리.</p>
+<ol>
+<li><strong>내 업무와 연결되는 흐름</strong>  </li>
+</ol>
+<p>어떤 논문/레포가 실제 agent orchestration, retrieval, local inference에 쓸모 있는지.</p>
+<ol>
+<li><strong>다음 주 확인할 signal</strong>  </li>
+</ol>
+<p>반복 등장 여부, 코드 공개 여부, benchmark 재현 여부, 실제 사용 사례.</p>
+<h2>시각화 방향</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  Daily[Daily Signals] --&gt; Cluster[Topic Clusters]
+  Cluster --&gt; Trend[Weekly Trend]
+  Trend --&gt; Adoption[Real Adoption]
+  Trend --&gt; Hype[Hype Warning]
+  Adoption --&gt; Next[Next Questions]</div></div>
+<h2>첫 번째로 만들 리뷰 후보</h2>
 <ul>
-<li>이번 주 한 줄 요약</li>
-<li>반복 등장한 키워드</li>
-<li>hype vs real adoption</li>
-<li>내 업무와 연결되는 흐름</li>
-<li>다음 주 확인할 signal</li>
+<li>2026-05 첫째 주: Agent memory / RAG security / inference memory cost</li>
+<li>2026-05 첫째 주: AI infra capex와 power grid 병목</li>
 </ul></article></main>
 </div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
 </body>
 </html>

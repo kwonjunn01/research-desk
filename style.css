@@ -18,6 +18,8 @@ body {
 }
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
+summary { list-style: none; }
+summary::marker { content: ""; }
 .layout { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
 .sidebar { padding: 28px 22px; border-right: 1px solid var(--border); background: #11141a; position: sticky; top: 0; height: 100vh; overflow: auto; }
 .sidebar h1 { font-size: 18px; margin: 0 0 14px; }
@@ -27,8 +29,8 @@ a:hover { text-decoration: underline; }
 .nav-major:first-of-type { border-top: 0; }
 .nav-major-title { color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; margin: 0; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 9px 10px; border-radius: 10px; background: rgba(180,248,200,.045); }
 .nav-major-title::-webkit-details-marker, .nav-mid-title::-webkit-details-marker { display: none; }
-.nav-major-title::after { content: "펼치기"; color: var(--muted); font-size: 10px; letter-spacing: 0; text-transform: none; font-weight: 700; }
-.nav-major[open] > .nav-major-title::after { content: "접기"; }
+.nav-major-title::after { content: "＋"; color: var(--muted); font-size: 15px; letter-spacing: 0; text-transform: none; font-weight: 800; }
+.nav-major[open] > .nav-major-title::after { content: "−"; }
 .nav-major-title:hover { background: rgba(180,248,200,.09); text-decoration: none; }
 .nav-mid { margin: 9px 0 0 10px; }
 .nav-mid-title { color: var(--muted); font-size: 12px; font-weight: 700; margin: 0; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 7px 9px; border-radius: 8px; background: rgba(255,255,255,.025); }
@@ -52,6 +54,13 @@ blockquote { margin: 20px 0; padding: 12px 18px; border-left: 4px solid var(--ac
 code { background: rgba(255,255,255,.08); padding: 2px 5px; border-radius: 5px; }
 pre { background: #080a0f; border: 1px solid var(--border); padding: 16px; border-radius: 12px; overflow-x: auto; }
 pre code { background: transparent; padding: 0; }
+.viz-card { position: relative; background: radial-gradient(circle at 20% 0%, rgba(138,180,255,.12), transparent 35%), #0b0e14; border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin: 18px 0 24px; overflow-x: auto; }
+.mermaid { min-width: 680px; }
+article ul { padding-left: 1.2rem; }
+article li { margin: 7px 0; }
+article > ul { list-style: none; padding-left: 0; }
+article > ul > li { background: rgba(255,255,255,.028); border: 1px solid rgba(255,255,255,.055); border-radius: 12px; padding: 10px 12px; }
+article > ul > li::marker { content: ""; }
 hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
 .meta { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
 .badge { display: inline-block; border: 1px solid var(--border); color: var(--muted); border-radius: 999px; padding: 2px 9px; font-size: 12px; margin-right: 6px; }
@@ -61,6 +70,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
   .sidebar h1 { font-size: 22px; }
   .nav-major { margin-top: 12px; padding-top: 10px; }
   .nav-major-title { font-size: 13px; padding: 12px 11px; }
+  .nav-major-title::after { font-size: 18px; }
+  .viz-card { padding: 10px; margin-left: -4px; margin-right: -4px; }
+  .viz-card::before { content: "← 좌우로 스크롤해서 지도 보기 →"; display: block; color: var(--muted); font-size: 12px; margin: 0 0 8px 2px; }
+  .mermaid { min-width: 720px; }
   .nav-mid { margin-left: 4px; }
   .nav-mid-title { font-size: 13px; padding: 10px 10px; }
   .nav-list li { font-size: 15px; margin: 4px 0; }
