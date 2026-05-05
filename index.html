@@ -179,6 +179,18 @@
 <li>Narrative map: 어떤 뉴스가 어떤 node/edge를 강하게 만들었는지</li>
 <li>Watchlist graph: 기업을 단순 ticker가 아니라 supply chain role로 연결</li>
 </ul>
+<h2>Quant Bot</h2>
+<h3>BTC Futures v2 Paper Trading</h3>
+<ul>
+<li>2026-05-05: <a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">BTC Futures v2 Quant Daily Report</a> — OKX public live-data 기반 paper signal, BUY/SELL/HOLD 판단, risk gate 상태</li>
+</ul>
+<p>운영 원칙:</p>
+<ul>
+<li>현재는 <code>paper_with_live_public_data</code>만 사용한다.</li>
+<li>BUY/SELL은 실거래 주문이 아니라 <code>paper signal / order intent</code>다.</li>
+<li>OKX private/trading API는 사용하지 않는다.</li>
+<li>Quant Telegram 그룹에는 <code>BUY_WATCH</code>, <code>SELL_OR_EXIT_RISK</code>, <code>HOLD</code> 판단만 짧게 보낸다.</li>
+</ul>
 <h2>Operations</h2>
 <ul>
 <li><a href="/research-desk/weekly-reviews/index.html">Weekly Reviews</a> — daily signal을 주간 단위로 압축하는 곳</li>
