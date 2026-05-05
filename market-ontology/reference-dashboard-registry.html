@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Public Research Garden</title>
+  <title>Reference Dashboard Registry</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -85,67 +85,98 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Public Research Garden</h1>
-<blockquote>뉴스를 많이 쌓는 곳이 아니라, <strong>오늘의 신호가 어느 지도 위에서 움직이는지</strong> 보는 개인 Research Desk.</blockquote>
-<h2>AI Research</h2>
-<h3>먼저 볼 것</h3>
+  <main><article><h1>Reference Dashboard Registry</h1>
+<blockquote>사용자가 제공한 <code>AI 산업 인텔리전스 대시보드</code>의 상세 항목을 Research Desk로 가져온 registry index. 이 페이지는 전체 원본을 그대로 복붙하는 곳이 아니라, <strong>상세 node registry가 어디에 저장되어 있고 어떤 수준까지 추출됐는지</strong> 확인하는 공개 인덱스다.</blockquote>
+<div class="desk-dashboard">
+<div class="desk-card hot"><strong>Detailed Nodes</strong><p>38개 node · 소재/장비/칩/메모리/전력/클라우드/모델/응용 layer</p></div>
+<div class="desk-card warn"><strong>Edges</strong><p>56개 supply/dependency/constraint edge</p></div>
+<div class="desk-card violet"><strong>Source Queries</strong><p>11개 뉴스 query seed · HBM/TSMC/EUV/NVIDIA/CoWoS/전력/agent 등</p></div>
+<p>::/dashboard</p>
+<h2>어디에 업데이트 중인가</h2>
 <ul>
-<li><a href="/research-desk/ai-research/signal-map.html">AI Research Signal Map</a> — Post-training, Agent, Inference, Memory/RAG가 어떻게 이어지는지 보는 지도</li>
-<li><a href="/research-desk/ai-research/index.html">AI Research Radar</a> — 공개 리서치 허브</li>
+<li>상세 Markdown registry: <code>04-ontology/Reference Dashboard Detailed Registry.md</code></li>
+<li>상세 JSON registry: <code>08-data/reference-dashboard-detailed-registry.json</code></li>
+<li>public index: <code>06-public/content/market-ontology/reference-dashboard-registry.md</code></li>
+<li>요약/운영 기준: <code>09-prompts/reference-dashboard-ingestion.md</code></li>
 </ul>
-<h3>날짜별 리포트</h3>
 <ul>
-<li>2026-05-05: <a href="/research-desk/reports/ai-research/2026-05-05.html">Daily AI Research Radar</a></li>
-<li>2026-05-04: <a href="/research-desk/reports/ai-research/2026-05-04.html">Daily AI Research Radar</a></li>
+<li>source query seed: <code>07-sources/reference-dashboard-queries.yaml</code></li>
 </ul>
-<h3>앞으로 채울 시각화</h3>
+<h2>추출된 theme layers</h2>
 <ul>
-<li>Topic heatmap: 오늘 올라온 논문/레포를 topic node에 직접 연결</li>
-<li>Research flow: <code>post-training → agent → memory/RAG → production</code> 흐름별 병목</li>
-<li>Evidence cards: 논문/레포별 “왜 중요한지 / 어디에 연결되는지 / 다음 확인 질문” 카드</li>
+<li>원자재·소재</li>
+<li>반도체 장비</li>
+<li>칩 설계</li>
+<li>칩 제조·패키징</li>
+<li>메모리</li>
+<li>네트워크·광통신</li>
+<li>발전 / 전력생산</li>
+<li>송전·변전</li>
+<li>DC 전력공급</li>
+<li>냉각 인프라</li>
+<li>데이터센터</li>
+<li>클라우드</li>
+<li>AI 모델</li>
+<li>응용·서비스</li>
+<li>온디바이스</li>
+<li>로봇·자율주행</li>
 </ul>
-<h2>Cross-Ontology</h2>
-<h3>먼저 볼 것</h3>
+<h2>상세 node 예시</h2>
+<h3>희토류</h3>
 <ul>
-<li><a href="/research-desk/market-ontology/reference-dashboard-registry.html">Reference Dashboard Registry</a> — 사용자가 준 AI 산업 인텔리전스 대시보드의 상세 node/link/query registry</li>
-<li><a href="/research-desk/cross-ontology/index.html">Cross-Ontology Synthesizer</a> — AI research signal과 market narrative를 연결하는 통합 지도</li>
-<li><a href="/research-desk/cross-ontology/prediction-board.html">Prediction Board</a> — 실제 short/mid/long 예측 카드와 확인일</li>
-<li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html">Prediction Feedback Loop</a> — 단기/중장기 예측, timing gap, prediction-vs-actual 보정 루프</li>
-<li><a href="/research-desk/cross-ontology/inertia-gap-matrix.html">Inertia Gap Matrix</a> — 기존 관성, 병목, 산업 확장, 해결책을 함께 판단하는 ontology lens</li>
-<li>2026-05-05: <a href="/research-desk/reports/cross/2026-05-05.html">Cross-Ontology Synthesis</a></li>
+<li>bottleneck: high</li>
+<li>chinaRisk: true</li>
+<li>policy: true</li>
+<li>핵심: 중국 공급 집중, 영구자석/정밀기기 핵심 소재</li>
+<li>기업: MP Materials, Lynas Rare Earths, 중국북방희토, 포스코퓨처엠</li>
 </ul>
-<h3>앞으로 채울 시각화</h3>
+<h3>EUV 노광장비</h3>
 <ul>
-<li>Cross signal heatmap: research node ↔ market node를 daily heat로 연결</li>
-<li>Evidence pair cards: 논문/레포 evidence와 시장 뉴스 evidence를 한 카드로 묶기</li>
-<li>Prediction ledger: 예측, 확인일, 실제 결과, 간극 분석, 다음 예측 보정을 한 카드로 표시</li>
-<li>Inertia matrix: 오늘 이슈가 관성을 깨는지/강화하는지/장기 해소요인인지 카드로 표시</li>
-<li>Missing evidence: 기술 signal은 강하지만 market evidence가 약한 blind spot 표시</li>
+<li>bottleneck: high</li>
+<li>policy: true</li>
+<li>핵심: ASML 독점, High-NA EUV 생산량 제한, 중국 수출금지</li>
+<li>기업: ASML, Canon, Nikon</li>
 </ul>
-<h2>Market Ontology</h2>
-<h3>먼저 볼 것</h3>
+<h3>HBM 메모리</h3>
 <ul>
-<li><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra Industry Linkage Map</a> — Cloud capex, AI data center, semiconductor, HBM, power grid가 이어지는 산업 지도</li>
-<li><a href="/research-desk/market-ontology/index.html">Market Ontology</a> — 공개 시장 온톨로지 허브</li>
+<li>bottleneck: high</li>
+<li>korea: strong</li>
+<li>hub: true</li>
+<li>핵심: HBM3E/HBM4, GPU 필수 메모리, SK하이닉스/삼성/마이크론</li>
+<li>market: <code>$50B (2027)</code></li>
+<li>growth: <code>CAGR 50%</code></li>
 </ul>
-<h3>날짜별 리포트</h3>
+<h3>CoWoS 패키징</h3>
 <ul>
-<li>2026-05-05: <a href="/research-desk/reports/market/2026-05-05.html">Market Narrative Brief</a></li>
-<li>2026-05-04: <a href="/research-desk/reports/market/2026-05-04.html">Market Narrative Brief</a></li>
+<li>bottleneck: high</li>
+<li>핵심: 2.5D/3D 적층, TSMC 중심, GPU 공급의 실제 병목</li>
+<li>기업: TSMC, 한미반도체, 삼성전자</li>
 </ul>
-<h3>앞으로 채울 시각화</h3>
+<h3>CPO / 광통신</h3>
 <ul>
-<li>Bottleneck radar: HBM, advanced packaging, power/grid, export control의 완화/심화 상태</li>
-<li>Narrative map: 어떤 뉴스가 어떤 node/edge를 강하게 만들었는지</li>
-<li>Watchlist graph: 기업을 단순 ticker가 아니라 supply chain role로 연결</li>
+<li>핵심: AI data center 내부 bandwidth bottleneck과 연결</li>
+<li>연결: 네트워크·광통신 → 데이터센터 → 클라우드 capex</li>
 </ul>
-<h2>Operations</h2>
-<ul>
-<li><a href="/research-desk/weekly-reviews/index.html">Weekly Reviews</a> — daily signal을 주간 단위로 압축하는 곳</li>
-<li><a href="/research-desk/agent-build-log/index.html">Agent Build Log</a> — Research Desk를 어떻게 만들고 있는지 기록</li>
-</ul>
-<h2>Publishing Rule</h2>
-<p><code>01-daily</code>, <code>02-weekly</code>, <code>03-reports</code>, <code>04-ontology</code>는 working notes다. 공개 페이지는 사람이 검토한 뒤 <code>06-public/content/</code> 또는 static site로 승격한다.</p></article></main>
+<h2>왜 중요함</h2>
+<p>이 registry는 단순 회사 리스트가 아니라 Research Desk의 <code>Market Ontology</code>를 깊게 만드는 seed다. 앞으로 daily market/cross signal은 이 node들과 연결되어야 한다.</p>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  Materials[원자재·소재] --&gt; Equipment[반도체 장비]
+  Equipment --&gt; Chip[칩 설계/제조/패키징]
+  Chip --&gt; Memory[HBM/DRAM]
+  Memory --&gt; DataCenter[AI 데이터센터]
+  Network[네트워크·광통신] --&gt; DataCenter
+  Power[전력/송전/냉각] --&gt; DataCenter
+  DataCenter --&gt; Cloud[클라우드]
+  Cloud --&gt; Model[AI 모델]
+  Model --&gt; Apps[응용/온디바이스/로봇]</div></div>
+<h2>다음 반영 작업</h2>
+<ol>
+<li>이 상세 registry의 38개 node를 public node card로 렌더링</li>
+<li>병목 high/medium 기준 heatmap 생성</li>
+<li>supply/dependency edge 56개를 network/sankey view로 변환</li>
+<li>daily market evidence가 어떤 reference node에 닿았는지 자동 tagging</li>
+<li>Prediction Board와 node 연결: 예측이 HBM/CoWoS/Power/Agent 중 어디를 건드리는지 표시</li>
+</ol></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
