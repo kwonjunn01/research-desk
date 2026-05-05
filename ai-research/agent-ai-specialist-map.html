@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent AI Specialist Map</title>
+  <link rel="stylesheet" href="/research-desk/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1><a href="/research-desk/index.html">Research Desk</a></h1>
+    <div class="meta">Personal Research Radar</div>
+    <details class="nav-major">
+<summary class="nav-major-title">Home</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">Overview</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
+<li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
+<li><a href="/research-desk/agent-build-log/index.html"><span class="nav-badge">빌드</span> Agent Build Log</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">AI Research</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">MOC</span> AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/signal-map.html"><span class="nav-badge">지도</span> AI Research Signal Map</a></li>
+<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html"><span class="nav-badge">전문</span> Agent AI Specialist Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-05.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-04.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Cross-Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">통합 지도</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">통합</span> Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">실제</span> Prediction Board</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html"><span class="nav-badge">예측</span> Prediction Feedback Loop</a></li>
+<li><a href="/research-desk/cross-ontology/inertia-gap-matrix.html"><span class="nav-badge">관성</span> Inertia Gap Matrix</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-05.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Market Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">MOC</span> Market Ontology</a></li>
+<li><a href="/research-desk/market-ontology/reference-dashboard-registry.html"><span class="nav-badge">상세</span> Reference Dashboard Registry</a></li>
+<li><a href="/research-desk/market-ontology/industry-linkage-map.html"><span class="nav-badge">지도</span> AI Infra Industry Linkage Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-05.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-04.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+</details>
+</details>
+  </aside>
+  <main><article><h1>Agent AI Specialist Map</h1>
+<blockquote>Agent AI를 하나의 buzzword로 보지 않고, <strong>기술 stack → personal agent → 병목 → 매일 점검 질문</strong>으로 쪼개 보는 전문 리서치 지도.</blockquote>
+<div class="desk-dashboard">
+<div class="desk-card hot"><strong>Core Layers</strong><p>9개 layer: model, planning, tool, memory, browser, runtime, eval, security, personal product</p></div>
+<div class="desk-card warn"><strong>Bottlenecks</strong><p>reliability, tool error, memory pollution, permission, eval gap, cost/latency</p></div>
+<div class="desk-card violet"><strong>Daily Use</strong><p>Daily AI Radar에 Agent AI Specialist Watch 섹션으로 연결</p></div>
+</div>
+<h2>1. Stack overview</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  Model[&quot;Model &amp; Reasoning&quot;] --&gt; Planning[&quot;Planning / Control&quot;]
+  Planning --&gt; Tool[&quot;Tool Use / MCP&quot;]
+  Tool --&gt; Runtime[&quot;Workflow Runtime&quot;]
+  Runtime --&gt; Memory[&quot;Memory / RAG&quot;]
+  Memory --&gt; Eval[&quot;Eval / Observability&quot;]
+  Eval --&gt; Trust[&quot;Security / Trust&quot;]
+  Trust --&gt; Product[&quot;Personal Agent Product&quot;]
+  Browser[&quot;Browser / Computer Use&quot;] --&gt; Tool
+  Inference[&quot;Cost / Latency&quot;] --&gt; Product</div></div>
+<h2>2. Specialist lenses</h2>
+<div class="lens-grid">
+<div class="lens-card"><h3>Model &amp; Reasoning</h3><ul><li>reasoning model이 실제 multi-step task success를 올리는가?</li><li>function/tool calling reliability가 좋아졌는가?</li><li>latency/cost가 daily agent UX를 허용하는가?</li></ul></div>
+<div class="lens-card"><h3>Planning &amp; Control</h3><ul><li>goal decomposition이 장기 task에서 무너지지 않는가?</li><li>replanning과 human checkpoint가 있는가?</li><li>계획 실패를 감지하는가?</li></ul></div>
+<div class="lens-card"><h3>Tool Use / MCP</h3><ul><li>tool discovery와 schema validation이 좋아졌는가?</li><li>MCP/tool protocol 생태계가 넓어지는가?</li><li>tool failure recovery가 있는가?</li></ul></div>
+<div class="lens-card"><h3>Memory / RAG</h3><ul><li>memory가 정확도를 올리는가, context pollution을 만드는가?</li><li>retrieved evidence trace가 있는가?</li><li>private memory permission이 명확한가?</li></ul></div>
+<div class="lens-card"><h3>Browser / Computer Use</h3><ul><li>웹사이트 변화/UI drift에 견디는가?</li><li>위험 action에 approval이 있는가?</li><li>multimodal/browser 비용이 UX를 망치지 않는가?</li></ul></div>
+<div class="lens-card"><h3>Runtime / Ops</h3><ul><li>state persistence와 resume이 되는가?</li><li>cron/background task 실패를 알리는가?</li><li>workflow version과 trace가 남는가?</li></ul></div>
+<div class="lens-card"><h3>Eval / Observability</h3><ul><li>benchmark가 실제 use-case와 맞는가?</li><li>task success/cost/latency를 추적하는가?</li><li>failure taxonomy가 있는가?</li></ul></div>
+<div class="lens-card"><h3>Security / Trust</h3><ul><li>prompt injection/tool abuse를 어떻게 막는가?</li><li>secret leakage와 permission boundary가 명확한가?</li><li>audit/revert가 가능한가?</li></ul></div>
+<div class="lens-card"><h3>Personal Agent Product</h3><ul><li>chatbot이 아니라 recurring workflow를 수행하는가?</li><li>email/calendar/browser/files/local memory와 연결되는가?</li><li>사용자가 어디까지 맡길 수 있는가?</li></ul></div>
+</div>
+<h2>3. Bottleneck map</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  LongHorizon[&quot;Long-horizon planning&quot;] --&gt; Reliability[&quot;Reliability&quot;]
+  ToolError[&quot;Tool selection/execution error&quot;] --&gt; Reliability
+  MemoryPollution[&quot;Context / memory pollution&quot;] --&gt; Reliability
+  PromptInjection[&quot;Prompt injection&quot;] --&gt; Trust[&quot;Trust&quot;]
+  Permission[&quot;Permission boundary&quot;] --&gt; Trust
+  Cost[&quot;Cost / latency&quot;] --&gt; Adoption[&quot;Daily adoption&quot;]
+  EvalGap[&quot;Eval-production gap&quot;] --&gt; Adoption
+  BrowserDrift[&quot;Website / UI drift&quot;] --&gt; BrowserAgent[&quot;Browser agent&quot;]
+  State[&quot;State persistence&quot;] --&gt; Runtime[&quot;Runtime reliability&quot;]</div></div>
+<h2>4. Daily Agent AI Specialist Watch</h2>
+<p>Daily AI Research Radar는 매일 아래 질문을 확인한다.</p>
+<ol>
+<li>오늘 신호는 어느 layer에서 나왔는가?</li>
+<li>실제 personal agent를 더 쓸모 있게 만드는가, 아니면 demo hype인가?</li>
+<li>어떤 병목을 직접 건드리는가?</li>
+<li>새 node/edge로 ontology에 추가해야 하는가?</li>
+<li>user-facing product 변화인가, infra/framework 변화인가?</li>
+<li>내가 모르고 있던 unknown은 무엇인가?</li>
+<li>market/cross ontology로 이어질 edge가 있는가?</li>
+<li>prediction ledger에 올릴 만한 timing-gap claim인가?</li>
+</ol>
+<h2>5. Canonical source files</h2>
+<ul>
+<li><code>04-ontology/Agent AI Domain Ontology.md</code></li>
+<li><code>09-prompts/agent-ai-daily-research-protocol.md</code></li>
+<li><code>11-scripts/generate_daily_radar.py</code></li>
+</ul></article></main>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
+</body>
+</html>
