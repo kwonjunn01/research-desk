@@ -127,15 +127,21 @@
 </ul>
 <h2>1. 전략 Strategy</h2>
 <ul>
+<li><a href="/research-desk/quant/btc-futures-v2-spec.html">BTC Futures v2 Canonical Spec</a></li>
 <li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">BTC Futures Grid v2 Daily Report — 2026-05-05</a></li>
 <li><a href="/research-desk/quant/strategy-evolution-charter.html">Strategy Evolution Charter</a> — simple but beautiful, spaghetti 방지, change review gate</li>
 <li><a href="/research-desk/quant/scenario-planning.html">Scenario Planning Playbook</a> — black swan/위기 시나리오와 risk overlay</li>
 <li>베이스 전략: BTC futures grid/mean-reversion v2</li>
+<li>현재 paper 모델: OKX BTC-USDT-SWAP futures <code>20x display leverage</code></li>
+<li>starter/probe: <code>first_notional = capital × 20 × 0.5 / 31</code>; 현재 2035 USDT 기준 약 <code>656.45 USDT</code></li>
+<li>원본 골격 보존: <code>20x</code>, <code>1-2-4-8-16</code>, <code>1%</code> 하락 추가매수, 평단 <code>+0.5%</code> 전체 익절</li>
+<li>추가매수 gate만 보강: ADX/Squeeze/Margin 조건이 나쁘면 남은 물타기 주문을 취소/중단한다.</li>
+<li>상태 표기는 <code>display leverage</code>, <code>account effective leverage</code>, <code>liquidation buffer</code>를 분리해서 본다.</li>
 <li>핵심 gate:</li>
-<li>ADX &lt; 18, range box 내부, squeeze 직후 아님 → BUY_WATCH 후보</li>
-<li>ADX &gt; 22 rising 또는 squeeze lower breakdown → 신규 매수 금지 / pending buy cancel</li>
-<li>ATR 기반 grid spacing</li>
-<li>doubling 금지</li>
+<li>ADX &lt; 22, squeeze lower breakdown 없음, margin ratio &lt; 50% → 남은 1-2-4-8-16 추가매수 허용</li>
+<li>ADX &gt; 25 rising 또는 squeeze lower breakdown 또는 margin ratio &gt; 60% → 남은 매수 주문 취소</li>
+<li>gate OFF여도 이미 진입한 포지션의 <code>avg +0.5%</code> TP는 계속 작동</li>
+<li>사자마자 팔지 않음: TP 미충족이면 보유</li>
 </ul>
 <h2>2. 모의 트레이딩 Daily 결과</h2>
 <ul>
@@ -154,6 +160,11 @@
 <h2>3. 리스크 Risk</h2>
 <p>현재 paper 단계의 안전 조건:</p>
 <ul>
+<li>display leverage: <code>20x</code></li>
+<li>account effective leverage: 약 <code>0.3226x</code> at stage 1</li>
+<li>stage1 notional: 약 <code>656.45 USDT</code></li>
+<li>stage1 margin used: 약 <code>32.82 USDT</code></li>
+<li>liquidation buffer: 약 <code>4.5%</code> at entry</li>
 <li>live trading API 사용 안 함</li>
 <li>private account API 사용 안 함</li>
 <li>OKX public data only</li>
