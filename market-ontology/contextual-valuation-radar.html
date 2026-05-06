@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Strategy Evolution Charter</title>
+  <title>Contextual Valuation Radar</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -125,46 +125,121 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Strategy Evolution Charter</h1>
-<blockquote>전략은 피드백과 시장 시나리오를 통해 발전해야 하지만, 스파게티가 되면 안 된다. 목표는 <strong>simple but beautiful</strong> — 단순하되 얕지 않고, 강건하되 과복잡하지 않은 전략이다.</blockquote>
-<h2>핵심 원칙</h2>
+  <main><article><h1>Contextual Valuation Radar</h1>
+<blockquote>현재 주가만 보거나 뉴스만 보는 것이 아니라, <strong>각 산업 node의 맥락과 현재 가격 위치를 함께 비교</strong>해 <code>맥락 대비 저평가/고평가 후보</code>를 분류하는 Market Radar 모듈이다.</blockquote>
+<h2>원칙</h2>
+<p>이 페이지는 투자 추천이 아니다. 목표는 “사라/팔아라”가 아니라 다음 질문에 답하는 것이다.</p>
+<pre><code>이 종목의 현재 가격 위치가
+해당 node의 기술/사회/정책/시장 맥락과 비교했을 때
+과하게 눌려 있는가, 이미 너무 앞서 갔는가, 아니면 판단 보류인가?</code></pre>
+<h2>입력 데이터</h2>
 <div class="desk-dashboard">
-<div class="desk-card hot"><strong>Clarity</strong><p>왜 작동하는지 설명 가능해야 한다</p></div>
-<div class="desk-card blue"><strong>Separation</strong><p>signal / risk / execution / report를 분리한다</p></div>
-<div class="desk-card warn"><strong>Robustness</strong><p>비용·슬리피지·충격 상황에서도 붕괴하지 않아야 한다</p></div>
-<div class="desk-card violet"><strong>Elegance</strong><p>규칙 수보다 구조가 중요하다</p></div>
-</div>
-<h2>금지</h2>
+<div class="desk-card hot"><strong>Price</strong><p></p></div>
 <ul>
-<li>예외 조건을 계속 덧붙여 과거 데이터에만 맞추는 것</li>
-<li>하나의 함수에 signal/risk/fill/alert/report를 섞는 것</li>
-<li>Optimizer 후보를 Validator/Risk 없이 곧바로 반영하는 것</li>
-<li>블랙스완 대응을 Strategy Bot 내부 if문으로 누적하는 것</li>
+<li>현재가</li>
+<li>당일 변동률</li>
+<li>52주 고점/저점</li>
+<li>52주 range 내 위치</li>
+<li>20D / 60D momentum</li>
 </ul>
-<h2>Strategy Change Review Gate</h2>
-<pre><code>hypothesis
-→ minimality check
-→ boundary check: Strategy/Risk/Execution/Scenario 중 어디인가?
-→ backtest/paper/OOS evidence
-→ fee/funding/slippage check
-→ scenario stress
-→ validator review
-→ risk review
-→ promotion or rejected_candidate</code></pre>
-<h2>Complexity Budget</h2>
-<pre><code>primary signals: 3~5
-risk gates: 5~8
-tunable params: 8~12
-exception rules: 0~2</code></pre>
-<p>예외 규칙이 늘어나면 기존 전략에 덧붙이지 않고 새 variant로 분리한다.</p>
-<h2>Feedback Loop Rule</h2>
-<p>피드백은 바로 전략 변경이 아니다.</p>
-<pre><code>feedback → candidate issue → hypothesis → test → validator → risk review → promotion</code></pre>
-<p>반복적으로 같은 문제가 관찰될 때만 전략 후보로 승격한다.</p>
-<h2>Black Swan Rule</h2>
-<p>블랙스완 대응은 평시 전략에 붙이지 않는다.</p>
-<pre><code>Scenario Planning Agent → Risk overlay → Strategy intent gate</code></pre>
-<p>즉 위기 대응은 <code>strategy if문</code>이 아니라 <code>scenario/risk layer</code>에서 다룬다.</p></article></main>
+<p>::</p>
+<div class="desk-card signal"><strong>Node Context</strong><p></p></div>
+<ul>
+<li>AI Semiconductor</li>
+<li>HBM Memory</li>
+<li>AI Data Center</li>
+<li>Power Infrastructure</li>
+<li>Cloud Hyperscaler</li>
+<li>On-device AI / Robotics / Healthcare AI</li>
+</ul>
+<p>::</p>
+<div class="desk-card warn"><strong>External Context</strong><p></p></div>
+<ul>
+<li>export control / regulation</li>
+<li>social risk-off / 지정학</li>
+<li>AI capex ROI debate</li>
+<li>기술/보안 shock</li>
+<li>market liquidity / risk appetite</li>
+</ul>
+<p>::</p>
+<div class="desk-card ok"><strong>Evidence</strong><p></p></div>
+<ul>
+<li>high-quality news source</li>
+<li>earnings / guidance / capex</li>
+<li>supply-chain data</li>
+<li>policy / regulation</li>
+<li>customer adoption signal</li>
+</ul>
+<p>::</p>
+<h2>분류 체계</h2>
+<h3>맥락 대비 저평가 후보</h3>
+<p>조건 후보:</p>
+<ul>
+<li>node narrative score가 강하다.</li>
+<li>현재가는 52주 range 하단/중단에 있다.</li>
+<li>고점 대비 할인폭이 크지만 핵심 thesis가 훼손되지 않았다.</li>
+<li>관련 뉴스가 supply/demand/adoption 근거를 보강한다.</li>
+<li>bear pressure가 일시적이거나 source quality가 낮다.</li>
+</ul>
+<p>해석:</p>
+<pre><code>가격은 눌려 있는데, 산업/사회/기술 맥락은 아직 살아 있는 후보.
+단, 매수 추천이 아니라 더 깊게 볼 후보군이다.</code></pre>
+<h3>고평가 부담 후보</h3>
+<p>조건 후보:</p>
+<ul>
+<li>현재가가 52주 range 상단에 있다.</li>
+<li>narrative score가 약하거나 이미 가격이 먼저 반영했다.</li>
+<li>social/policy risk가 커지고 있다.</li>
+<li>capex ROI, margin pressure, regulation, export control 같은 반대 근거가 증가한다.</li>
+</ul>
+<p>해석:</p>
+<pre><code>맥락보다 가격이 앞서갔을 수 있는 후보.
+좋은 회사여도 valuation 부담은 따로 표시한다.</code></pre>
+<h3>하락 재평가 후보</h3>
+<p>조건 후보:</p>
+<ul>
+<li>20D/60D momentum이 약하다.</li>
+<li>bear/news risk가 동시에 증가한다.</li>
+<li>기존 node thesis가 훼손되는 근거가 있다.</li>
+<li>시장상황이 risk-off로 바뀐다.</li>
+</ul>
+<p>해석:</p>
+<pre><code>단순 조정인지 thesis 변화인지 확인해야 하는 후보.</code></pre>
+<h3>판단 보류 / 정가치권</h3>
+<p>조건 후보:</p>
+<ul>
+<li>가격 위치와 맥락 점수가 서로 애매하다.</li>
+<li>현재가와 narrative가 대체로 같이 움직인다.</li>
+<li>근거가 부족하거나 social context가 혼재돼 있다.</li>
+</ul>
+<h2>종목-노드 연결</h2>
+<ul>
+<li><strong>NVIDIA / AMD / TSMC:</strong> AI Semiconductor, AI Data Center, Advanced Packaging</li>
+<li><strong>Samsung Electronics / SK Hynix:</strong> HBM Memory, On-device AI</li>
+<li><strong>Microsoft / Alphabet / Amazon:</strong> Cloud Hyperscaler, AI Data Center, Capex ROI</li>
+<li><strong>Vertiv / Eaton / NuScale Power:</strong> Power Infrastructure, Grid/Cooling/Nuclear bottleneck</li>
+</ul>
+<h2>사회적 맥락 입력</h2>
+<p>Daily Market Brief는 다음 context keyword를 별도 집계한다.</p>
+<ul>
+<li><strong>regulation/export:</strong> export, restriction, ban, China, tariff, control, regulation</li>
+<li><strong>security/technology shock:</strong> exploit, hack, outage, chain, custody, failure</li>
+<li><strong>social risk-off:</strong> war, conflict, election, geopolitical, panic</li>
+<li><strong>AI adoption/capex debate:</strong> capex, ROI, spending, investment, data center, hyperscaler</li>
+</ul>
+<h2>운영 방식</h2>
+<pre><code>수집: 현재가 + 뉴스 + node queries
+분석: price position + node narrative + social context
+분류: 저평가 후보 / 고평가 부담 / 하락 재평가 / 판단 보류
+출력: Daily Market Brief + Market Ontology page
+검토: human review 후 ontology/prediction ledger 승격</code></pre>
+<h2>주의</h2>
+<ul>
+<li>P/E, EV/EBITDA, FCF yield 같은 fundamental valuation은 아직 자동화하지 않았다.</li>
+<li>현재 분류는 <strong>contextual relative valuation 후보</strong>이지 절대가치 산정이 아니다.</li>
+<li>가격 데이터 provider 장애 시 fallback을 쓰고, source를 반드시 기록한다.</li>
+<li>잘못된 후보도 삭제하지 않고 prediction/valuation review에 남긴다.</li>
+</ul></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
