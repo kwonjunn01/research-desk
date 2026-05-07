@@ -103,15 +103,58 @@ pre code { background: transparent; padding: 0; white-space: pre; }
 .ref-edge-list { display:grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 8px; margin: 16px 0 28px; }
 .ref-edge { border-left: 3px solid rgba(180,248,200,.55); background: rgba(180,248,200,.045); border-radius: 12px; padding: 9px 11px; color: var(--muted); font-size: 13px; }
 .ref-edge b { color: var(--text); }
-.stock-light-group { border: 1px solid rgba(180,248,200,.18); border-radius: 18px; margin: 16px 0; padding: 0; background: linear-gradient(145deg, rgba(180,248,200,.055), rgba(255,255,255,.025)); overflow: hidden; }
-.stock-light-group > summary { cursor: pointer; padding: 16px 18px; background: rgba(255,255,255,.035); display:flex; justify-content:space-between; gap:10px; align-items:center; font-size: 16px; }
+.stock-hero-grid { display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:12px; margin: 22px 0 18px; }
+.stock-hero-card { border:1px solid rgba(138,180,255,.20); border-radius:18px; padding:15px; background: radial-gradient(circle at top left, rgba(138,180,255,.18), transparent 42%), rgba(255,255,255,.035); box-shadow:0 16px 45px rgba(0,0,0,.18); }
+.stock-hero-card span, .stock-method-card span, .stock-context span, .stock-category-panel span { display:block; color:var(--muted); font-size:12px; }
+.stock-hero-card b { display:block; font-size:26px; margin:4px 0; color:var(--text); }
+.stock-hero-card em { color:var(--accent); font-style:normal; font-size:12px; }
+.stock-light-strip { display:flex; flex-wrap:wrap; gap:8px; margin: 8px 0 22px; }
+.stock-light-strip span { border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:7px 10px; background:rgba(255,255,255,.035); color:var(--muted); }
+.stock-light-strip b { color:var(--text); }
+.stock-method-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(210px,1fr)); gap:10px; margin:16px 0 24px; }
+.stock-method-card { border:1px solid rgba(180,248,200,.14); border-radius:15px; padding:13px; background:linear-gradient(145deg, rgba(180,248,200,.07), rgba(255,255,255,.025)); }
+.stock-method-card b { display:block; color:var(--accent); margin-bottom:6px; }
+.stock-context-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(190px,1fr)); gap:10px; margin:14px 0 24px; }
+.stock-context { border:1px solid rgba(255,255,255,.10); border-radius:15px; padding:12px; background:rgba(255,255,255,.03); }
+.stock-context.hot { border-color:rgba(255,138,138,.28); background:rgba(255,138,138,.07); }
+.stock-context.warn { border-color:rgba(247,201,72,.28); background:rgba(247,201,72,.06); }
+.stock-context b { display:block; color:var(--text); }
+.stock-light-group { border: 1px solid rgba(180,248,200,.18); border-radius: 20px; margin: 18px 0; padding: 0; background: linear-gradient(145deg, rgba(180,248,200,.06), rgba(255,255,255,.022)); overflow: hidden; box-shadow:0 18px 55px rgba(0,0,0,.16); }
+.stock-light-group > summary { cursor: pointer; padding: 17px 18px; background: linear-gradient(90deg, rgba(180,248,200,.08), rgba(138,180,255,.04)); display:flex; justify-content:space-between; gap:12px; align-items:center; font-size: 16px; }
+.stock-summary-meta, .stock-bucket { color:var(--muted); font-size:12px; border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:3px 9px; white-space:nowrap; }
 .stock-light-group > summary::after, .stock-light-company > summary::after { content: "펼치기"; color: var(--muted); font-size: 11px; border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 2px 8px; white-space: nowrap; }
 .stock-light-group[open] > summary::after, .stock-light-company[open] > summary::after { content: "접기"; }
-.stock-light-group > ul, .stock-light-group > p, .stock-light-group > h3 { margin-left: 18px; margin-right: 18px; }
-.stock-light-company { border: 1px solid rgba(255,255,255,.10); border-radius: 14px; margin: 10px 18px; background: rgba(10,12,18,.50); overflow: hidden; }
-.stock-light-company > summary { cursor:pointer; padding: 13px 14px; display:flex; gap:8px; align-items:center; justify-content:space-between; line-height:1.45; }
+.stock-category-panel { display:grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap:8px; margin: 14px 18px; }
+.stock-category-panel div { border:1px solid rgba(255,255,255,.10); border-radius:13px; padding:10px; background:rgba(10,12,18,.42); }
+.stock-category-panel b { display:block; color:var(--text); font-size:14px; margin-top:3px; }
+.stock-category-desc { margin: 0 18px 14px; color:var(--muted); }
+.stock-light-company { border: 1px solid rgba(255,255,255,.11); border-radius: 16px; margin: 12px 18px; background: rgba(10,12,18,.62); overflow: hidden; }
+.stock-light-company > summary { cursor:pointer; padding: 14px 15px; display:flex; gap:10px; align-items:center; justify-content:space-between; line-height:1.45; background:rgba(255,255,255,.025); }
+.stock-company-title { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
 .stock-light-company > summary strong { color: var(--text); }
 .stock-light-company > summary code { color: var(--accent); background: rgba(138,180,255,.10); border: 1px solid rgba(138,180,255,.18); border-radius:999px; padding: 2px 7px; }
+.stock-company-dashboard { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:10px; margin:14px; }
+.stock-company-thesis { border:1px solid rgba(255,255,255,.10); border-radius:14px; padding:11px; background:rgba(255,255,255,.028); }
+.stock-company-thesis b { display:block; color:var(--accent); font-size:12px; margin-bottom:5px; }
+.stock-company-thesis span { color:var(--muted); font-size:13px; }
+.stock-metric-row { display:grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap:8px; margin: 0 14px 14px; }
+.stock-metric-row span { border:1px solid rgba(138,180,255,.13); border-radius:13px; padding:9px; background:rgba(138,180,255,.045); color:var(--text); font-variant-numeric:tabular-nums; }
+.stock-metric-row b { display:block; color:var(--muted); font-size:11px; font-weight:600; }
+.stock-factor-grid { display:grid; grid-template-columns: repeat(7, minmax(0,1fr)); gap:8px; margin: 0 14px 14px; }
+.stock-factor { border:1px solid rgba(255,255,255,.10); border-radius:13px; padding:9px; background:rgba(255,255,255,.03); min-height:108px; }
+.stock-factor.strong { border-color:rgba(180,248,200,.30); background:rgba(180,248,200,.07); }
+.stock-factor.mid { border-color:rgba(138,180,255,.25); background:rgba(138,180,255,.055); }
+.stock-factor.warn { border-color:rgba(247,201,72,.30); background:rgba(247,201,72,.065); }
+.stock-factor.risk { border-color:rgba(255,138,138,.32); background:rgba(255,138,138,.07); }
+.stock-factor span, .stock-factor small, .stock-factor em { display:block; color:var(--muted); font-size:11px; font-style:normal; }
+.stock-factor b { display:block; font-size:18px; color:var(--text); margin:3px 0; }
+.stock-factor em { color:var(--accent); margin-bottom:4px; }
+.stock-node-line { margin: 0 14px 12px; color:var(--muted); }
+.stock-evidence { margin:0 14px 14px; border-left:3px solid rgba(138,180,255,.45); border-radius:12px; padding:10px 12px; background:rgba(138,180,255,.045); }
+.stock-evidence b, .stock-evidence span { display:block; }
+.stock-evidence b { color:var(--accent); margin-bottom:5px; }
+.stock-evidence span { font-size:13px; margin:4px 0; }
+.stock-evidence.muted { border-color:rgba(255,255,255,.12); background:rgba(255,255,255,.025); }
 .stock-light-company ul { margin: 0 14px 14px 26px; }
 .stock-light-company li { margin: 7px 0; }
 .responsive-note { color: var(--muted); font-size: 12px; }
@@ -139,8 +182,14 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
   .viz-card { padding: 10px; margin-left: -4px; margin-right: -4px; }
   .desk-dashboard, .lens-grid, .horizon-strip { grid-template-columns: 1fr; }
   .prediction-grid { grid-template-columns: 1fr; }
+  .stock-hero-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .stock-category-panel { grid-template-columns: repeat(2, minmax(0,1fr)); margin: 12px 10px; }
+  .stock-company-dashboard { grid-template-columns: 1fr; margin:12px 10px; }
+  .stock-metric-row { grid-template-columns: repeat(2, minmax(0,1fr)); margin:0 10px 12px; }
+  .stock-factor-grid { grid-template-columns: repeat(2, minmax(0,1fr)); margin:0 10px 12px; }
   .desk-card, .lens-card, .prediction-card { padding: 13px 14px; }
   .stock-light-group > summary, .stock-light-company > summary { align-items: flex-start; flex-wrap: wrap; }
+  .stock-summary-meta, .stock-bucket { white-space: normal; }
   .stock-light-group > summary::after, .stock-light-company > summary::after { margin-left: 0; }
   .stock-light-company { margin-left: 10px; margin-right: 10px; }
   .stock-light-company ul { margin-left: 20px; }
@@ -164,6 +213,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
   h1 { font-size: 24px; }
   h2 { font-size: 19px; margin-top: 30px; }
   .stock-light-group > summary { padding: 13px 12px; font-size: 14px; }
+  .stock-hero-grid { grid-template-columns: 1fr; }
+  .stock-method-grid, .stock-context-grid { grid-template-columns: 1fr; }
+  .stock-category-panel { grid-template-columns: 1fr; }
+  .stock-factor-grid { grid-template-columns: 1fr; }
   .stock-light-company { margin-left: 6px; margin-right: 6px; }
   .stock-light-company > summary { padding: 11px 10px; font-size: 14px; }
   .stock-light-company ul { margin: 0 10px 12px 18px; padding-left: 0.75rem; }
