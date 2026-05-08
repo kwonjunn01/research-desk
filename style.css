@@ -204,13 +204,59 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
   article { padding: 22px 18px; border-radius: 14px; }
   h1 { font-size: 28px; }
 }
+/* Command-room skin: VS Code x GPT, dashboard-first */
+:root {
+  --bg: #050506;
+  --panel: #0b0c0f;
+  --panel2: #101217;
+  --text: #f4f5f6;
+  --muted: #8a8f98;
+  --link: #aeb3ff;
+  --accent: #7c7cff;
+  --warn: #f7c948;
+  --hot: #ff8a8a;
+  --violet: #c4b5fd;
+  --border: rgba(255,255,255,.08);
+}
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 70% 0%, rgba(124,124,255,.13), transparent 30%),
+    radial-gradient(circle at 15% 0%, rgba(38,208,124,.08), transparent 24%),
+    linear-gradient(180deg,#070809 0%,#050506 72%);
+}
+body::before { content:""; position:fixed; inset:0; pointer-events:none; z-index:-1; background:linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),linear-gradient(90deg,rgba(255,255,255,.014) 1px,transparent 1px); background-size:32px 32px; mask-image:linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.18)); }
+.layout { grid-template-columns: 304px minmax(0, 1fr); }
+.sidebar { background:rgba(9,10,11,.92); border-right:1px solid var(--border); box-shadow:inset -1px 0 rgba(255,255,255,.035),18px 0 90px rgba(0,0,0,.22); backdrop-filter: blur(14px); }
+.sidebar h1 { font-size: 15px; letter-spacing:-.02em; margin-bottom:18px; }
+.sidebar h1::before { content:"RESEARCH DESK"; display:block; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; color:#8b91ff; font-size:10px; letter-spacing:.14em; margin-bottom:5px; }
+.nav-major-title { background:linear-gradient(90deg,rgba(124,124,255,.16),rgba(255,255,255,.025)); color:#f4f5f6; border:1px solid rgba(124,124,255,.18); border-radius:10px; text-transform:none; letter-spacing:-.01em; font-size:13px; }
+.nav-mid-title, .nav-list a { border:1px solid rgba(255,255,255,.06); background:rgba(255,255,255,.018); }
+.nav-list a:hover { background:rgba(124,124,255,.12); }
+main { width:min(100%,1320px); padding:clamp(18px,3vw,34px) clamp(14px,3.5vw,44px) 90px; }
+article { background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018)); border:1px solid var(--border); border-radius:22px; box-shadow:0 28px 120px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.05); }
+article::before { content:"⌘ Research command view · maps / signals / factors"; display:block; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:11px; color:#737984; letter-spacing:.06em; border:1px solid rgba(255,255,255,.075); border-radius:999px; padding:7px 10px; width:max-content; max-width:100%; margin:0 0 18px; background:#08090a; }
+h1 { font-size: clamp(30px,4vw,52px); line-height:1.02; letter-spacing:-.055em; background:linear-gradient(180deg,#fff,#aeb4bd); -webkit-background-clip:text; background-clip:text; color:transparent; }
+h2 { border-top:1px solid rgba(255,255,255,.075); color:#f4f5f6; letter-spacing:-.035em; }
+h3 { color:#d7d8ff; }
+.desk-card, .lens-card, .prediction-card, .ref-node-card, .stock-hero-card, .stock-method-card, .stock-context, .stock-light-group, .stock-light-company { background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018)); border-color:rgba(255,255,255,.09); box-shadow:0 18px 70px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.035); }
+.desk-card strong, .lens-card h3, .stock-method-card b, .prediction-card .label { color:#8b91ff; }
+.viz-card { background:radial-gradient(circle at 20% 0%,rgba(124,124,255,.18),transparent 35%),#08090a; border-color:rgba(124,124,255,.18); }
+code { color:#cfd0ff; background:rgba(124,124,255,.12); border:1px solid rgba(124,124,255,.20); }
+pre { background:#070809; border-color:rgba(255,255,255,.09); }
+.badge, .pred-pill, .stock-summary-meta, .stock-bucket, .ref-tag { background:rgba(255,255,255,.035); border-color:rgba(255,255,255,.10); }
+@media (max-width: 800px) {
+  .layout { display:block; }
+  .sidebar { border-right:0; border-bottom:1px solid var(--border); box-shadow:none; }
+  article::before { width:auto; }
+}
 @media (max-width: 520px) {
   body { font-size: 15px; }
   .sidebar { padding: 16px 12px; }
   .sidebar h1 { font-size: 20px; }
   main { padding: 12px 8px 34px; }
   article { padding: 18px 14px; border-radius: 12px; }
-  h1 { font-size: 24px; }
+  h1 { font-size: 28px; }
   h2 { font-size: 19px; margin-top: 30px; }
   .stock-light-group > summary { padding: 13px 12px; font-size: 14px; }
   .stock-hero-grid { grid-template-columns: 1fr; }
