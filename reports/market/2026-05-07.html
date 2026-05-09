@@ -925,10 +925,10 @@
   };
   fetch(`${base}/data/company-search-index.json?v=aae2891`).then(r => r.json()).then(data => {
     rows = data.items || [];
-    if (count) count.textContent = `${rows.length} companies indexed by Kimi`;
+    if (count) count.textContent = `${rows.length} companies indexed · Codex default / Kimi optional`;
     const featured = rows.filter(x => ['NVIDIA','Vertiv','HD Hyundai Electric','SK Hynix','Microsoft','TSMC'].includes(x.company));
     render(featured.length ? featured : rows.slice(0,6));
-  }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Kimi index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });
+  }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Company index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });
   input.addEventListener('input', search);
   root.querySelectorAll('[data-kimi-query]').forEach(btn => btn.addEventListener('click', () => { input.value = btn.dataset.kimiQuery; search(); input.focus(); }));
 })();
