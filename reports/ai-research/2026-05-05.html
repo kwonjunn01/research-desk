@@ -630,8 +630,10 @@ ${cmd}`;
     if (!items.length) {
       const raw = input.value.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;');
       const cmd = `python3 11-scripts/request_company_report.py "${raw.replace(/"/g, '\"')}" --provider fast --publish`;
-      const action = 'http://158.247.217.223.sslip.io/api/research-desk/company-create';
-      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 바로 Codex+Kimi fast intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><form class="kimi-create-actions" method="post" action="${action}" target="_blank"><input type="hidden" name="query" value="${raw}"><input type="hidden" name="provider" value="fast"><button type="submit" class="kimi-create-btn" data-kimi-create>생성 시작</button></form><span class="kimi-create-status" data-kimi-create-status>새 창에서 진행 상태가 열린다.</span></div>`;
+      const action = `https://158.247.217.223.sslip.io/api/research-desk/company-create?query=${encodeURIComponent(raw)}&provider=fast`;
+      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 바로 Codex+Kimi fast intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><div class="kimi-create-actions"><a class="kimi-create-btn" href="${action}" target="_blank" rel="noopener" data-kimi-create>생성 시작</a><button type="button" class="kimi-create-btn secondary" data-copy-cmd>명령 복사</button></div><span class="kimi-create-status" data-kimi-create-status></span></div>`;
+      const copyBtn = result.querySelector('[data-copy-cmd]');
+      if (copyBtn) copyBtn.addEventListener('click', () => requestCreate(raw, cmd));
       return;
     }
     result.innerHTML = '<div class="kimi-results-title">추천/검색 결과</div>' + items.slice(0, 8).map(x => `

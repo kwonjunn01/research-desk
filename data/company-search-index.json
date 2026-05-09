@@ -1935,10 +1935,10 @@
       "change_pct": null,
       "price_position_52w_pct": null,
       "return_20d_pct": null,
-      "fundamentals_coverage": null,
-      "trailing_pe": null,
+      "fundamentals_coverage": 90.0,
+      "trailing_pe": -26.01,
       "forward_pe": null,
-      "price_to_book": null,
+      "price_to_book": 9.0,
       "page": "/research-desk/market-ontology/company-reports/328130-kq.html",
       "summary": "Company Intake · AI 기반 암 진단·검진 및 정밀의료 소프트웨어 공급자 · 🟢 초록불"
     }
