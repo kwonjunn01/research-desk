@@ -2652,9 +2652,10 @@
   const input = root.querySelector('[data-kimi-input]');
   const result = root.querySelector('[data-kimi-results]');
   const count = root.querySelector('[data-kimi-count]');
-  const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 엔비디아, NVDA, 팔란티어, CoreWeave, HD현대일렉</small></div>';
+  const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 삼성전자, 한미반도체, 네이버, NVDA, 팔란티어, HD현대일렉</small></div>';
   let rows = [];
   const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9가-힣]+/g, ' ').trim();
+  const compact = (s) => norm(s).replace(/\s+/g, '');
   const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '데이터 확인 중' : `${Number(v) >= 0 ? '+' : ''}${Number(v).toFixed(1)}%`;
   const requestCreate = (raw, cmd) => {
     const msg = `회사 생성 요청: ${raw}
@@ -2682,19 +2683,26 @@ ${cmd}`;
   };
   const search = () => {
     const q = norm(input.value);
+    const qc = compact(input.value);
     if (!q) { result.innerHTML = empty; return; }
     const terms = q.split(/\s+/).filter(Boolean);
     const scored = rows.map(x => {
-      const hay = norm([x.company, x.symbol, x.category, x.node, x.role, ...(x.aliases || [])].join(' '));
+      const fields = [x.company, x.symbol, x.category, x.node, x.role, ...(x.aliases || [])].join(' ');
+      const hay = norm(fields);
+      const hayc = compact(fields);
+      const symbolc = compact(x.symbol);
       let score = 0;
+      if (qc && (symbolc === qc || symbolc.replace(/us$|ks$|kq$/,'') === qc)) score += 100;
+      if (qc && hayc.includes(qc)) score += qc.length + 15;
       for (const t of terms) { if (hay.includes(t)) score += t.length + (hay.startsWith(t) ? 5 : 0); }
       return [score, x];
     }).filter(([s]) => s > 0).sort((a,b) => b[0]-a[0]).map(([,x]) => x);
     render(scored);
   };
-  fetch(`${base}/data/company-search-index.json?v=aae2891`).then(r => r.json()).then(data => {
+  const indexUrl = `${base}/data/company-search-index.json?v=${Date.now()}`;
+  fetch(indexUrl, {cache:'no-store'}).then(r => { if (!r.ok) throw new Error('index '+r.status); return r.json(); }).then(data => {
     rows = data.items || [];
-    if (count) count.textContent = `${rows.length} companies indexed · fast intake: Codex + Kimi`;
+    if (count) count.textContent = `${rows.length} companies indexed · KR/US fast local search · fast intake: Codex + Kimi`;
     const featured = rows.filter(x => ['NVIDIA','Vertiv','HD Hyundai Electric','SK Hynix','Microsoft','TSMC'].includes(x.company));
     render(featured.length ? featured : rows.slice(0,6));
   }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Company index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });

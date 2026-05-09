@@ -29,7 +29,8 @@
       "symbol": "AMD.US",
       "aliases": [
         "amd",
-        "amd.us"
+        "amd.us",
+        "에이엠디"
       ],
       "category": "AI Semiconductor / GPU / Accelerator",
       "node": "AI Semiconductor",
@@ -152,7 +153,8 @@
         "tsm",
         "taiwan semiconductor",
         "티에스엠씨",
-        "대만반도체"
+        "대만반도체",
+        "대만 반도체"
       ],
       "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
       "node": "Advanced Packaging",
@@ -290,7 +292,10 @@
       "aliases": [
         "hanmi semiconductor",
         "042700.kq",
-        "042700"
+        "042700",
+        "한미반도체",
+        "한미 반도체",
+        "한미"
       ],
       "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
       "node": "Advanced Packaging",
@@ -310,7 +315,8 @@
       "aliases": [
         "isc",
         "095340.kq",
-        "095340"
+        "095340",
+        "아이에스시"
       ],
       "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
       "node": "Advanced Packaging",
@@ -330,7 +336,9 @@
       "aliases": [
         "leeno industrial",
         "058470.kq",
-        "058470"
+        "058470",
+        "리노공업",
+        "리노"
       ],
       "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
       "node": "Advanced Packaging",
@@ -350,7 +358,11 @@
       "aliases": [
         "wonik ips",
         "240810.kq",
-        "240810"
+        "240810",
+        "원익ips",
+        "원익 ips",
+        "원익아이피에스",
+        "원익"
       ],
       "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
       "node": "Advanced Packaging",
@@ -370,7 +382,8 @@
       "aliases": [
         "hpsp",
         "403870.kq",
-        "403870"
+        "403870",
+        "에이치피에스피"
       ],
       "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
       "node": "Advanced Packaging",
@@ -412,7 +425,9 @@
         "005930.ks",
         "005930",
         "삼성전자",
-        "삼전"
+        "삼전",
+        "삼성",
+        "삼성 일렉트로닉스"
       ],
       "category": "HBM / Memory / Storage",
       "node": "HBM Memory",
@@ -435,7 +450,8 @@
         "000660",
         "hynix",
         "sk하이닉스",
-        "하이닉스"
+        "하이닉스",
+        "에스케이하이닉스"
       ],
       "category": "HBM / Memory / Storage",
       "node": "HBM Memory",
@@ -495,7 +511,9 @@
       "aliases": [
         "sk square",
         "402340.ks",
-        "402340"
+        "402340",
+        "sk스퀘어",
+        "에스케이스퀘어"
       ],
       "category": "HBM / Memory / Storage",
       "node": "HBM Memory",
@@ -515,7 +533,8 @@
       "aliases": [
         "korea zinc",
         "010130.ks",
-        "010130"
+        "010130",
+        "고려아연"
       ],
       "category": "HBM / Memory / Storage",
       "node": "HBM Memory",
@@ -584,7 +603,8 @@
         "microsoft",
         "msft.us",
         "msft",
-        "마이크로소프트"
+        "마이크로소프트",
+        "ms"
       ],
       "category": "Cloud Hyperscaler / AI Platform",
       "node": "Cloud Hyperscaler",
@@ -604,7 +624,10 @@
       "aliases": [
         "alphabet",
         "googl.us",
-        "googl"
+        "googl",
+        "google",
+        "구글",
+        "알파벳"
       ],
       "category": "Cloud Hyperscaler / AI Platform",
       "node": "Cloud Hyperscaler",
@@ -624,7 +647,9 @@
       "aliases": [
         "amazon",
         "amzn.us",
-        "amzn"
+        "amzn",
+        "아마존",
+        "aws"
       ],
       "category": "Cloud Hyperscaler / AI Platform",
       "node": "Cloud Hyperscaler",
@@ -643,7 +668,9 @@
       "symbol": "META.US",
       "aliases": [
         "meta",
-        "meta.us"
+        "meta.us",
+        "메타",
+        "페이스북"
       ],
       "category": "Cloud Hyperscaler / AI Platform",
       "node": "Cloud Hyperscaler",
@@ -748,7 +775,8 @@
       "aliases": [
         "naver",
         "035420.ks",
-        "035420"
+        "035420",
+        "네이버"
       ],
       "category": "Cloud Hyperscaler / AI Platform",
       "node": "Cloud Hyperscaler",
@@ -768,7 +796,8 @@
       "aliases": [
         "kakao",
         "035720.ks",
-        "035720"
+        "035720",
+        "카카오"
       ],
       "category": "Cloud Hyperscaler / AI Platform",
       "node": "Cloud Hyperscaler",
@@ -788,7 +817,10 @@
       "aliases": [
         "samsung sds",
         "018260.ks",
-        "018260"
+        "018260",
+        "삼성sds",
+        "삼성 sds",
+        "삼성에스디에스"
       ],
       "category": "Cloud Hyperscaler / AI Platform",
       "node": "Cloud Hyperscaler",
@@ -808,8 +840,7 @@
       "aliases": [
         "vertiv",
         "vrt.us",
-        "vrt",
-        "버티브"
+        "vrt"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -888,8 +919,7 @@
       "aliases": [
         "constellation energy",
         "ceg.us",
-        "ceg",
-        "컨스텔레이션"
+        "ceg"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -954,7 +984,8 @@
         "hyundai electric",
         "hd현대일렉",
         "에이치디현대일렉트릭",
-        "현대일렉트릭"
+        "현대일렉트릭",
+        "hd현대일렉트릭"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -975,7 +1006,8 @@
         "ls electric",
         "010120.ks",
         "010120",
-        "ls일렉트릭"
+        "ls일렉트릭",
+        "엘에스일렉트릭"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -995,7 +1027,8 @@
       "aliases": [
         "hyosung heavy industries",
         "298040.ks",
-        "298040"
+        "298040",
+        "효성중공업"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -1015,7 +1048,8 @@
       "aliases": [
         "iljin electric",
         "103590.ks",
-        "103590"
+        "103590",
+        "일진전기"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -1135,7 +1169,9 @@
       "aliases": [
         "lg innotek",
         "011070.ks",
-        "011070"
+        "011070",
+        "lg이노텍",
+        "엘지이노텍"
       ],
       "category": "Networking / Optical / Interconnect",
       "node": "AI Data Center Networking",
@@ -1277,11 +1313,11 @@
         "hyundai motor",
         "005380.ks",
         "005380",
+        "현대차",
         "현대자동차",
         "hyundai motor company",
         "hyundai",
         "hymtf",
-        "현대차",
         "현대",
         "현대차그룹"
       ],
@@ -1303,7 +1339,8 @@
       "aliases": [
         "hyundai mobis",
         "012330.ks",
-        "012330"
+        "012330",
+        "현대모비스"
       ],
       "category": "Edge / Robotics / Healthcare AI",
       "node": "Applied AI Demand",
@@ -1323,7 +1360,8 @@
       "aliases": [
         "doosan robotics",
         "454910.ks",
-        "454910"
+        "454910",
+        "두산로보틱스"
       ],
       "category": "Edge / Robotics / Healthcare AI",
       "node": "Applied AI Demand",
@@ -1343,7 +1381,9 @@
       "aliases": [
         "rainbow robotics",
         "277810.kq",
-        "277810"
+        "277810",
+        "레인보우로보틱스",
+        "레인보우 로보틱스"
       ],
       "category": "Edge / Robotics / Healthcare AI",
       "node": "Applied AI Demand",
@@ -1463,7 +1503,10 @@
       "aliases": [
         "lg energy solution",
         "373220.ks",
-        "373220"
+        "373220",
+        "lg에너지솔루션",
+        "엘지에너지솔루션",
+        "엘엔솔"
       ],
       "category": "Battery / ESS / Power Storage",
       "node": "Power Infrastructure",
@@ -1483,7 +1526,10 @@
       "aliases": [
         "samsung sdi",
         "006400.ks",
-        "006400"
+        "006400",
+        "삼성sdi",
+        "삼성 sdi",
+        "삼성에스디아이"
       ],
       "category": "Battery / ESS / Power Storage",
       "node": "Power Infrastructure",
@@ -1503,7 +1549,9 @@
       "aliases": [
         "lg chem",
         "051910.ks",
-        "051910"
+        "051910",
+        "lg화학",
+        "엘지화학"
       ],
       "category": "Battery / ESS / Power Storage",
       "node": "Power Infrastructure",
@@ -1523,7 +1571,9 @@
       "aliases": [
         "posco future m",
         "003670.ks",
-        "003670"
+        "003670",
+        "포스코퓨처엠",
+        "포스코 퓨처엠"
       ],
       "category": "Battery / ESS / Power Storage",
       "node": "Power Infrastructure",
@@ -1543,7 +1593,9 @@
       "aliases": [
         "sk innovation",
         "096770.ks",
-        "096770"
+        "096770",
+        "sk이노베이션",
+        "에스케이이노베이션"
       ],
       "category": "Battery / ESS / Power Storage",
       "node": "Power Infrastructure",

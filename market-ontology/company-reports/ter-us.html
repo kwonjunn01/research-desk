@@ -171,6 +171,11 @@
 <div class="company-kpi"><span>20D / 60D</span><b>-2.2%</b><small>60D +11.9%</small></div>
 <div class="company-kpi"><span>근거 수</span><b>6</b><small>오늘 관련 뉴스/리포트</small></div>
 </div>
+<div class="company-price-brief">
+<div class="company-price-card"><span>현재 가격 해석</span><b>52주 범위 중상단이다. 추세는 살아있을 수 있으나, 새 근거 없이 추가 상승을 가정하면 위험하다.</b><small>20일 흐름은 극단적이지 않다. 다음 판단은 가격보다 근거 변화가 좌우한다.</small></div>
+<div class="company-price-card"><span>미래 시나리오</span><b>Base: 수요/내러티브가 유지되면 관찰 강도는 유지된다. 다만 가격이 상단권이면 새 촉매 없이는 부담이 커진다.</b><small>Upside: AI data center/CAPEX 지출 언급이 실제 주문·매출·backlog로 연결되면 내러티브 인식이 강해질 수 있다.<br>Downside: 리스크 점수 상승, 수요 지연, 마진/정책/경쟁 악화, 20D 급락이 겹치면 관찰 등급을 낮춘다.</small></div>
+<div class="company-price-card"><span>다음 확인 질문</span><ul><li>다음 실적/가이던스에서 AI 수요가 숫자로 확인되는가</li><li>병목이 심해지는지 완화되는지</li></ul></div>
+</div>
 <div class="company-readme-card">
 <b>이 화면은 “주가 그래프”가 아니라 관찰 체크리스트다.</b>
 <span>왼쪽부터 가격/모멘텀 → 내러티브/CAPEX/수요 → 병목/리스크를 본다. 점수가 높다는 뜻은 “좋다”가 아니라, 지금 이 요소가 판단에 많이 들어간다는 뜻이다. 특히 리스크는 높을수록 부담이다.</span>
@@ -240,9 +245,10 @@
   const input = root.querySelector('[data-kimi-input]');
   const result = root.querySelector('[data-kimi-results]');
   const count = root.querySelector('[data-kimi-count]');
-  const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 엔비디아, NVDA, 팔란티어, CoreWeave, HD현대일렉</small></div>';
+  const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 삼성전자, 한미반도체, 네이버, NVDA, 팔란티어, HD현대일렉</small></div>';
   let rows = [];
   const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9가-힣]+/g, ' ').trim();
+  const compact = (s) => norm(s).replace(/\s+/g, '');
   const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '데이터 확인 중' : `${Number(v) >= 0 ? '+' : ''}${Number(v).toFixed(1)}%`;
   const requestCreate = (raw, cmd) => {
     const msg = `회사 생성 요청: ${raw}
@@ -270,19 +276,26 @@ ${cmd}`;
   };
   const search = () => {
     const q = norm(input.value);
+    const qc = compact(input.value);
     if (!q) { result.innerHTML = empty; return; }
     const terms = q.split(/\s+/).filter(Boolean);
     const scored = rows.map(x => {
-      const hay = norm([x.company, x.symbol, x.category, x.node, x.role, ...(x.aliases || [])].join(' '));
+      const fields = [x.company, x.symbol, x.category, x.node, x.role, ...(x.aliases || [])].join(' ');
+      const hay = norm(fields);
+      const hayc = compact(fields);
+      const symbolc = compact(x.symbol);
       let score = 0;
+      if (qc && (symbolc === qc || symbolc.replace(/us$|ks$|kq$/,'') === qc)) score += 100;
+      if (qc && hayc.includes(qc)) score += qc.length + 15;
       for (const t of terms) { if (hay.includes(t)) score += t.length + (hay.startsWith(t) ? 5 : 0); }
       return [score, x];
     }).filter(([s]) => s > 0).sort((a,b) => b[0]-a[0]).map(([,x]) => x);
     render(scored);
   };
-  fetch(`${base}/data/company-search-index.json?v=aae2891`).then(r => r.json()).then(data => {
+  const indexUrl = `${base}/data/company-search-index.json?v=${Date.now()}`;
+  fetch(indexUrl, {cache:'no-store'}).then(r => { if (!r.ok) throw new Error('index '+r.status); return r.json(); }).then(data => {
     rows = data.items || [];
-    if (count) count.textContent = `${rows.length} companies indexed · fast intake: Codex + Kimi`;
+    if (count) count.textContent = `${rows.length} companies indexed · KR/US fast local search · fast intake: Codex + Kimi`;
     const featured = rows.filter(x => ['NVIDIA','Vertiv','HD Hyundai Electric','SK Hynix','Microsoft','TSMC'].includes(x.company));
     render(featured.length ? featured : rows.slice(0,6));
   }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Company index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });
