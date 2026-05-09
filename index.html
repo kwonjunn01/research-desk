@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Public Research Garden</title>
+  <title>Research Desk</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -156,127 +156,64 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Public Research Garden</h1>
-<blockquote>뉴스를 많이 쌓는 곳이 아니라, <strong>오늘의 신호가 어느 지도 위에서 움직이는지</strong> 보는 개인 Research Desk.</blockquote>
-<h2>자동 업데이트 운영표</h2>
-<div class="desk-dashboard">
-<div class="desk-card hot"><strong>매일 08:00 KST</strong><p>AI Research Radar: 논문/레포/뉴스를 수집하고 Agent AI 세부분야·병목·unknown questions를 함께 갱신</p></div>
-<div class="desk-card warn"><strong>평일 18:30 KST</strong><p>Market Narrative Brief: 시장 현황을 간결한 뉴스레터 줄글로 요약하고 상세 evidence는 Pages에 축적</p></div>
-<div class="desk-card violet"><strong>평일 19:00 KST</strong><p>Cross-Ontology Synthesis: AI 기술 signal과 market narrative의 timing gap, 병목, 예측 후보를 연결</p></div>
+  <main><article><h1>Research Desk</h1>
+<div class="home-hero">
+<div>
+<p class="home-kicker">COMMAND MAP · AI × MARKET RADAR</p>
+<div class="home-hero-title">정독하지 않아도<br>오늘 어디를 봐야 하는지 보이는 대문</div>
+<p class="home-hero-copy">Research Desk는 뉴스를 쌓는 곳이 아니라, AI 기술 신호가 산업 병목·수요·수혜 회사·예측 검증으로 어떻게 이동하는지 보는 개인 상황판이다. 먼저 구조를 보고, 목적에 따라 바로 들어가면 된다.</p>
+<div class="home-hero-actions">
+<a class="home-cta" href="/research-desk/reports/market/2026-05-09.html">오늘 Market Brief 보기</a>
+<a class="home-cta secondary" href="/research-desk/reports/ai-research/2026-05-09.html">오늘 AI Radar 보기</a>
+<a class="home-cta secondary" href="/research-desk/market-ontology/stock-traffic-light.html">주식 신호등 보기</a>
 </div>
-<h3>현재 주기적으로 관리되는 항목</h3>
+</div>
+<div class="home-status-panel">
+<div class="home-status"><b>읽는 순서</b><small>20초 요약 → 강력 후보 1~2개 → 지도/카드 → 근거</small></div>
+<div class="home-status"><b>핵심 목적</b><small>시장보다 아주 약간 먼저 병목과 수혜 lane을 발견한다.</small></div>
+<div class="home-status"><b>검증 방식</b><small>예측·가정·틀릴 조건을 남기고 나중에 맞는지 확인한다.</small></div>
+</div>
+</div>
+<h2>한눈에 보는 구조도</h2>
+<div class="home-map">
+<div class="home-map-node"><span>01 SIGNAL</span><b>AI Research</b><small>HF Daily, arXiv, GitHub, Agent AI, post-training, inference stack에서 기술 신호를 잡는다.</small></div>
+<div class="home-map-node"><span>02 TRANSLATE</span><b>Cross-Ontology</b><small>기술 신호가 workload, bottleneck, capex, market recognition으로 번역되는지 본다.</small></div>
+<div class="home-map-node"><span>03 SCENARIO</span><b>Market Narrative</b><small>고정 렌즈가 아니라 오늘 factor로 Base / Upside / Downside를 만든다.</small></div>
+<div class="home-map-node"><span>04 BENEFICIARY</span><b>Company Lanes</b><small>수혜 후보 회사·공급망 역할·신호등 상태를 짧게 띄운다. 추천이 아니라 관찰 lane이다.</small></div>
+<div class="home-map-node"><span>05 FEEDBACK</span><b>Prediction Loop</b><small>가정이 맞았는지, 어디서 전파가 끊겼는지 기록하고 다음 가중치를 고친다.</small></div>
+</div>
+<h2>목적별로 바로 가기</h2>
+<div class="home-purpose-grid">
+<div class="home-purpose"><b>오늘 뭘 먼저 봐야 해?</b><small>짧게 읽고 싶으면 오늘 Market Brief와 AI Research Radar부터 본다. 상단 20초 요약과 강력 후보만 봐도 된다.</small><a href="/research-desk/reports/market/2026-05-09.html">Market Brief</a><a href="/research-desk/reports/ai-research/2026-05-09.html">AI Radar</a></div>
+<div class="home-purpose"><b>AI 기술이 어떤 시장 병목으로 이어져?</b><small>AI signal → workload → bottleneck → solver → market recognition 흐름을 보려면 Cross-Ontology를 본다.</small><a href="/research-desk/cross-ontology/narrative-impact-transmission-model.html">Narrative Impact Model</a><a href="/research-desk/cross-ontology/prediction-board.html">Prediction Board</a></div>
+<div class="home-purpose"><b>수혜 받을 회사는 어디야?</b><small>회사명만 먼저 보면 주식 신호등. 왜 수혜 lane인지 보려면 Market Brief의 강력 후보 아래를 본다.</small><a href="/research-desk/market-ontology/stock-traffic-light.html">주식 신호등</a><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra 산업 지도</a></div>
+<div class="home-purpose"><b>내 시스템이 잘 돌아가고 있어?</b><small>자동화 주기, weekly review, build log, 오래된 근거/깨진 링크 점검은 운영 섹션에서 본다.</small><a href="/research-desk/weekly-reviews/index.html">Weekly Reviews</a><a href="/research-desk/agent-build-log/index.html">Build Log</a></div>
+</div>
+<h2>운영되는 팀 구조</h2>
+<div class="home-lane-strip">
+<div class="home-lane"><b>AI Research Bot</b><small>논문·레포·Agent AI layer·기술 병목 수집</small></div>
+<div class="home-lane"><b>Market Bot</b><small>뉴스 factor 발견, 시나리오 플래닝, 수혜 회사 lane</small></div>
+<div class="home-lane"><b>Cross-Ontology Synthesizer</b><small>AI와 시장 사이 timing gap, inertia, prediction 연결</small></div>
+<div class="home-lane"><b>Publisher / QA</b><small>공개 페이지, 가독성, 모바일 시각 검증, deprecated 정리</small></div>
+</div>
+<h2>자동 업데이트 리듬</h2>
+<div class="desk-dashboard">
+<div class="desk-card hot"><strong>매일 08:00 KST</strong><p>AI Research Radar: 논문/레포/뉴스를 수집하고 Agent AI 세부분야·병목·unknown questions 갱신</p></div>
+<div class="desk-card warn"><strong>평일 18:30 KST</strong><p>Market Narrative Brief: 당일 factor를 분석·재정의하고 Base/Upside/Downside와 수혜 lane 작성</p></div>
+<div class="desk-card violet"><strong>평일 19:00 KST</strong><p>Cross-Ontology: AI 기술 signal과 market narrative의 timing gap, 병목, 예측 후보 연결</p></div>
+</div>
+<div class="home-note"><b>공개 페이지 정리 원칙:</b> 대문은 목적별 구조도만 보여준다. 오래된 duplicate daily page는 public navigation/output에서 제거하고, canonical report page만 유지한다.</div>
+<h2>주요 허브</h2>
 <ul>
-<li><strong>Daily AI Research Radar</strong> — 매일 08:00 KST  </li>
-</ul>
-<p>Agent AI, post-training, inference, memory/RAG, on-device, orchestration 신호를 수집하고 <code>Agent AI Specialist Watch</code>를 갱신한다.</p>
-<p>알림: <code>[AI Research Bot]</code> / 링크+핵심 요약 중심.</p>
-<ul>
-<li><strong>Daily Market Narrative Brief</strong> — 평일 18:30 KST  </li>
-</ul>
-<p>AI semiconductor, HBM, data center, power/grid, cloud capex, infra narrative를 뉴스레터 형식으로 요약한다.</p>
-<p>알림: <code>[Market Bot]</code> / 짧은 줄글 요약 + 상세 페이지 링크.</p>
-<ul>
-<li><strong>Daily Cross-Ontology Synthesis</strong> — 평일 19:00 KST  </li>
-</ul>
-<p>AI research signal과 market narrative를 연결해 timing gap, inertia, 병목, prediction 후보를 만든다.</p>
-<p>알림: <code>[Cross-Ontology Synthesizer]</code> / 핵심 연결 3개 + dashboard 링크.</p>
-<ul>
-<li><strong>Weekly Prediction Review</strong> — 매주 금요일 20:00 KST  </li>
-</ul>
-<p>Prediction Board의 check date, 실제 결과, 틀린 이유, 보정할 가중치를 점검한다.</p>
-<p>알림: <code>[Prediction Review]</code> / 맞음·틀림·보정 포인트.</p>
-<ul>
-<li><strong>Weekly Research Desk Dashboard QA</strong> — 매주 금요일 20:30 KST  </li>
-</ul>
-<p>Reference Dashboard Registry, Agent AI Specialist Map, Market Ontology, Cross-Ontology, Mermaid/rendering/link 상태를 점검한다.</p>
-<p>알림: <code>[Dashboard QA]</code> / 깨진 링크·오래된 섹션·추가해야 할 node.</p>
-<h3>상시 관리 기준</h3>
-<ul>
-<li><strong>Agent AI 전문 track</strong>: 매일 <code>Model &amp; Reasoning</code>, <code>Planning &amp; Control</code>, <code>Tool Use / MCP</code>, <code>Memory/RAG</code>, <code>Browser/Computer Use</code>, <code>Runtime/Ops</code>, <code>Eval/Observability</code>, <code>Security/Trust</code>, <code>Personal Agent Product</code>로 분류.</li>
-<li><strong>Reference Dashboard Registry</strong>: 사용자가 준 참고 대시보드의 16 themes / 38 nodes / 56 edges / 11 query seeds를 기준 데이터로 계속 갱신.</li>
-<li><strong>Prediction Ledger</strong>: short/mid/long 예측은 삭제하지 않고, 실제 결과와 gap analysis를 누적.</li>
-<li><strong>Telegram 운영</strong>: 이 DM은 작업방, <code>Khjermes_Alert</code>는 알림방. 알림방에는 짧은 요약과 GitHub Pages 링크만 보낸다.</li>
-</ul>
-<h2>AI Research</h2>
-<h3>먼저 볼 것</h3>
-<ul>
-<li><a href="/research-desk/ai-research/signal-map.html">AI Research Signal Map</a> — Post-training, Agent, Inference, Memory/RAG가 어떻게 이어지는지 보는 지도</li>
-<li><a href="/research-desk/ai-research/index.html">AI Research Radar</a> — 공개 리서치 허브</li>
-</ul>
-<h3>날짜별 리포트</h3>
-<ul>
-<li>2026-05-05: <a href="/research-desk/reports/ai-research/2026-05-05.html">Daily AI Research Radar</a></li>
-<li>2026-05-04: <a href="/research-desk/reports/ai-research/2026-05-04.html">Daily AI Research Radar</a></li>
-</ul>
-<h3>앞으로 채울 시각화</h3>
-<ul>
-<li>Topic heatmap: 오늘 올라온 논문/레포를 topic node에 직접 연결</li>
-<li>Research flow: <code>post-training → agent → memory/RAG → production</code> 흐름별 병목</li>
-<li>Evidence cards: 논문/레포별 “왜 중요한지 / 어디에 연결되는지 / 다음 확인 질문” 카드</li>
-</ul>
-<h2>Cross-Ontology</h2>
-<h3>먼저 볼 것</h3>
-<ul>
-<li><a href="/research-desk/market-ontology/reference-dashboard-registry.html">Reference Dashboard Registry</a> — 사용자가 준 AI 산업 인텔리전스 대시보드의 상세 node/link/query registry</li>
-<li><a href="/research-desk/cross-ontology/index.html">Cross-Ontology Synthesizer</a> — AI research signal과 market narrative를 연결하는 통합 지도</li>
-<li><a href="/research-desk/cross-ontology/prediction-board.html">Prediction Board</a> — 실제 short/mid/long 예측 카드와 확인일</li>
-<li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html">Prediction Feedback Loop</a> — 단기/중장기 예측, timing gap, prediction-vs-actual 보정 루프</li>
-<li><a href="/research-desk/cross-ontology/inertia-gap-matrix.html">Inertia Gap Matrix</a> — 기존 관성, 병목, 산업 확장, 해결책을 함께 판단하는 ontology lens</li>
-<li>2026-05-05: <a href="/research-desk/reports/cross/2026-05-05.html">Cross-Ontology Synthesis</a></li>
-</ul>
-<h3>앞으로 채울 시각화</h3>
-<ul>
-<li>Cross signal heatmap: research node ↔ market node를 daily heat로 연결</li>
-<li>Evidence pair cards: 논문/레포 evidence와 시장 뉴스 evidence를 한 카드로 묶기</li>
-<li>Prediction ledger: 예측, 확인일, 실제 결과, 간극 분석, 다음 예측 보정을 한 카드로 표시</li>
-<li>Inertia matrix: 오늘 이슈가 관성을 깨는지/강화하는지/장기 해소요인인지 카드로 표시</li>
-<li>Missing evidence: 기술 signal은 강하지만 market evidence가 약한 blind spot 표시</li>
-</ul>
-<h2>Market Ontology</h2>
-<h3>먼저 볼 것</h3>
-<ul>
-<li><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra Industry Linkage Map</a> — Cloud capex, AI data center, semiconductor, HBM, power grid가 이어지는 산업 지도</li>
-<li><a href="/research-desk/market-ontology/index.html">Market Ontology</a> — 공개 시장 온톨로지 허브</li>
-</ul>
-<h3>날짜별 리포트</h3>
-<ul>
-<li>2026-05-05: <a href="/research-desk/reports/market/2026-05-05.html">Market Narrative Brief</a></li>
-<li>2026-05-04: <a href="/research-desk/reports/market/2026-05-04.html">Market Narrative Brief</a></li>
-</ul>
-<h3>앞으로 채울 시각화</h3>
-<ul>
-<li>Bottleneck radar: HBM, advanced packaging, power/grid, export control의 완화/심화 상태</li>
-<li>Narrative map: 어떤 뉴스가 어떤 node/edge를 강하게 만들었는지</li>
-<li>Watchlist graph: 기업을 단순 ticker가 아니라 supply chain role로 연결</li>
-</ul>
-<h2>Quant Bot</h2>
-<h3>먼저 볼 것</h3>
-<ul>
-<li><a href="/research-desk/quant/index.html">Quant Bot Hub</a> — BTC futures v2 paper trading, 전략, 리스크, agent team, Rust 시계열 예측 엔진을 분리해서 보는 허브</li>
-</ul>
-<h3>전략 / 모의 트레이딩 Daily 결과</h3>
-<ul>
-<li>2026-05-05: <a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">BTC Futures v2 Quant Daily Report</a> — OKX public live-data 기반 paper signal, BUY/SELL/HOLD 판단, risk gate 상태</li>
-</ul>
-<h3>Agent Team / Rust Forecast</h3>
-<ul>
-<li>Agent Team: 실제 퀀트팀을 <code>Portfolio Manager / Research / Forecast / Strategy / Risk / Execution / Validator / Optimizer / Ops / Reporting Agent</code>로 재구성</li>
-<li>Rust Forecast: 방향성 단일 예측보다 <code>range/trend likelihood</code>, <code>volatility expansion</code>, <code>tail risk</code>, <code>funding/basis stress</code> 예측에 사용</li>
-</ul>
-<p>운영 원칙:</p>
-<ul>
-<li>현재는 <code>paper_with_live_public_data</code>만 사용한다.</li>
-<li>BUY/SELL은 실거래 주문이 아니라 <code>paper signal / order intent</code>다.</li>
-<li>OKX private/trading API는 사용하지 않는다.</li>
-<li>Quant Telegram 그룹에는 <code>BUY_WATCH</code>, <code>SELL_OR_EXIT_RISK</code>, <code>HOLD</code> 판단만 짧게 보낸다.</li>
-</ul>
-<h2>Operations</h2>
-<ul>
-<li><a href="/research-desk/weekly-reviews/index.html">Weekly Reviews</a> — daily signal을 주간 단위로 압축하는 곳</li>
-<li><a href="/research-desk/agent-build-log/index.html">Agent Build Log</a> — Research Desk를 어떻게 만들고 있는지 기록</li>
-</ul>
-<h2>Publishing Rule</h2>
-<p><code>01-daily</code>, <code>02-weekly</code>, <code>03-reports</code>, <code>04-ontology</code>는 working notes다. 공개 페이지는 사람이 검토한 뒤 <code>06-public/content/</code> 또는 static site로 승격한다.</p></article></main>
+<li><a href="/research-desk/ai-research/index.html">AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html">Agent AI Specialist Map</a></li>
+<li><a href="/research-desk/cross-ontology/index.html">Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-board.html">Prediction Board</a></li>
+<li><a href="/research-desk/market-ontology/index.html">Market Ontology</a></li>
+<li><a href="/research-desk/market-ontology/stock-traffic-light.html">주식 신호등</a></li>
+<li><a href="/research-desk/market-ontology/hyperscaler-capex-tracker.html">Hyperscaler CAPEX Tracker</a></li>
+<li><a href="/research-desk/quant/index.html">Quant Bot Hub</a></li>
+</ul></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
