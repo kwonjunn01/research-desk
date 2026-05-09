@@ -90,6 +90,7 @@
 <li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">통합</span> Cross-Ontology Synthesizer</a></li>
 <li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">실제</span> Prediction Board</a></li>
 <li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html"><span class="nav-badge">예측</span> Prediction Feedback Loop</a></li>
+<li><a href="/research-desk/cross-ontology/narrative-impact-transmission-model.html"><span class="nav-badge">전파</span> Narrative Impact Model</a></li>
 <li><a href="/research-desk/cross-ontology/inertia-gap-matrix.html"><span class="nav-badge">관성</span> Inertia Gap Matrix</a></li>
 </ul>
 </details>
@@ -574,11 +575,33 @@
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 <li><a href="https://arxiv.org/abs/2605.06662v1">Multi-Robot Coordination in V2X Environments</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 </ul>
+<h3>오늘의 강력 관찰 후보 1~2개</h3>
+<blockquote>추천이 아니라 참고용 early narrative 후보. 며칠간 같은 후보가 반복돼도 강한 narrative inertia로 유지한다.</blockquote>
+<ol>
+<li><strong>Agent workload → HBM/DRAM/AI server memory</strong></li>
+</ol>
+<ul>
+<li><strong>예상 전파:</strong> Agent workflow 인정 → multi-step inference/context/session 증가 → HBM·server DRAM·AI server 병목 → memory supplier/data center narrative</li>
+<li><strong>핵심 병목:</strong> HBM bandwidth, server DRAM content, KV/context cache, power/cooling</li>
+<li><strong>누가 해결 중인가:</strong> memory 공급자, AI server/OEM, hyperscaler infra team, inference serving stack</li>
+<li><strong>다음 확인:</strong> hyperscaler가 agent/inference workload를 capex·memory 수요와 같이 언급하는지</li>
+<li><strong>틀릴 조건:</strong> 실제 agent usage가 demo에 머물거나 efficiency/on-device/API 대체가 memory 증가를 압도</li>
+</ul>
+<ol>
+<li><strong>Agent browser/computer use → network/browser/proxy/observability 병목</strong></li>
+</ol>
+<ul>
+<li><strong>예상 전파:</strong> browser-use agent 확산 → task당 page load/request/screenshot/DOM extraction 증가 → proxy/CDN/anti-bot/browser runtime/observability 수요</li>
+<li><strong>핵심 병목:</strong> latency, bandwidth, anti-bot 차단, browser runtime cost, logging/monitoring</li>
+<li><strong>누가 해결 중인가:</strong> browser automation infra, proxy/CDN/security, agent observability, MCP/API data providers</li>
+<li><strong>다음 확인:</strong> Cloudflare/Akamai/Fastly/Zscaler/Datadog/Browserbase류가 AI agent traffic을 언급하는지</li>
+<li><strong>틀릴 조건:</strong> production agent가 일반 browsing 대신 API/MCP/cached search/structured data feed로 우회</li>
+</ul>
 <h3>Cross-market / prediction 후보</h3>
 <ul>
 <li>Agent workload 증가 → Inference Stack / Data Center: task당 token/tool/browser call이 늘어나는지 확인</li>
 <li>Memory/RAG 확산 → Storage / Retrieval / Security: enterprise agent memory가 tooling 수요를 만드는지 확인</li>
-<li>Browser/Computer Use 확산 → SaaS workflow / RPA / Identity: permission layer와 경쟁·보완 관계 확인</li>
+<li>Browser/Computer Use 확산 → Network / Proxy / CDN / Observability: browser traffic과 anti-bot 병목이 생기는지 확인</li>
 <li>On-device personal agent → Edge AI / Device / Privacy: local inference narrative로 이어지는지 확인</li>
 <li>Eval/Observability 중요도 상승 → AI DevOps / Monitoring: production incident가 tooling 수요를 당기는지 확인</li>
 </ul>

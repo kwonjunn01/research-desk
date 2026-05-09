@@ -90,6 +90,7 @@
 <li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">통합</span> Cross-Ontology Synthesizer</a></li>
 <li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">실제</span> Prediction Board</a></li>
 <li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html"><span class="nav-badge">예측</span> Prediction Feedback Loop</a></li>
+<li><a href="/research-desk/cross-ontology/narrative-impact-transmission-model.html"><span class="nav-badge">전파</span> Narrative Impact Model</a></li>
 <li><a href="/research-desk/cross-ontology/inertia-gap-matrix.html"><span class="nav-badge">관성</span> Inertia Gap Matrix</a></li>
 </ul>
 </details>
@@ -230,12 +231,55 @@
 <li>공급 증가나 가격 하락이 수요 증가를 상쇄할 수 있다.</li>
 </ul>
 <h2>현재 감시 후보</h2>
+<h3>오늘의 강력 관찰 후보 1~2개 운영</h3>
+<p>매일 1~2개만 올린다. 추천이 아니라 <strong>초기 narrative/context 후보</strong>다. 며칠간 같은 후보가 반복돼도 된다. 반복은 그만큼 강한 내러티브일 수 있다.</p>
+<p>각 후보는 반드시 아래를 포함한다.</p>
+<ul>
+<li>왜 지금인지</li>
+<li>예상 전파: research signal → workload → bottleneck → solver/company/sector → market recognition</li>
+<li>핵심 병목</li>
+<li>누가 해결 중인지</li>
+<li>초기 탑승 논리: 시장이 아직 덜 번역한 부분</li>
+<li>다음 확인 trigger</li>
+<li>틀릴 조건</li>
+</ul>
+<h3>우선 감시 후보</h3>
 <ul>
 <li>Agent AI → inference/session/context explosion → HBM/DRAM/AI server memory</li>
+<li>Agent browser/computer use → browser runtime/proxy/CDN/anti-bot/observability traffic</li>
 <li>Long-context / memory agents → storage/vector DB/observability/security</li>
 <li>Computer-use agents → enterprise desktop/cloud ops automation → governance/security spend</li>
 <li>On-device personal agents → mobile/edge NPU, local memory, privacy workflow</li>
 <li>AI coding agents → devtool/cloud compute consumption, CI/test workload, enterprise seat expansion</li>
+</ul>
+<h2>Agent Browser Traffic 가설</h2>
+<p>“Agent AI가 브라우징을 수십 번 하면 인터넷 트래픽이 수십 배 늘지 않을까?”는 좋은 early hypothesis다. 다만 전체 인터넷 트래픽이 바로 수십 배로 뛴다고 보기보다, 먼저 더 작은 demand unit으로 쪼갠다.</p>
+<h3>가능한 전파</h3>
+<pre><code>Agent browser/computer use adoption
+→ task당 page load / request / screenshot / DOM extraction 증가
+→ proxy, browser runtime, anti-bot, CDN, network, observability load 증가
+→ agent infra / web automation / security / monitoring solver 수요 증가</code></pre>
+<h3>반대 가능성</h3>
+<pre><code>Agent browsing 비용/지연/차단 과다
+→ production에서는 API, MCP, cached search, structured data feed로 우회
+→ 일반 인터넷 트래픽보다 agent-specific infra와 permission layer가 더 중요</code></pre>
+<p>그래서 확인할 것은 “인터넷 전체 트래픽”보다 다음이다.</p>
+<ul>
+<li>agent task당 browser call 수</li>
+<li>browser-use agent 제품의 latency/cost complaint</li>
+<li>proxy/CDN/anti-bot vendor의 AI agent traffic 언급</li>
+<li>Cloudflare/Akamai/Fastly/Zscaler/Datadog/Browserbase류의 agent traffic narrative</li>
+<li>MCP/API 우회가 browsing traffic을 줄이는지 여부</li>
+</ul>
+<h2>Bottleneck-Solver Lens</h2>
+<p>좋은 예측은 “무엇이 뜬다”보다 <strong>무엇이 막히고, 누가 그걸 해결하는가</strong>에서 나온다.</p>
+<ul>
+<li>Compute: GPU, inference accelerator, serving stack, batching, quantization</li>
+<li>Memory: HBM, server DRAM, KV cache, long context, retrieval cache</li>
+<li>Network/browser: browser-use agent, crawling, proxy, CDN, anti-bot, latency, bandwidth</li>
+<li>Power/cooling: grid, transformer, cooling, data center siting</li>
+<li>Trust/security: identity, permission, audit, RAG poisoning, observability</li>
+<li>Workflow: integration, approvals, UI automation, enterprise procurement</li>
 </ul>
 <h2>운영 원칙</h2>
 <blockquote>AI narrative가 주식에 영향을 주는지 묻기보다, 그 narrative가 어떤 workload와 bottleneck으로 번역되고, 누가 돈을 쓰며, 시장이 그 번역을 아직 놓치고 있는지를 추적한다.</blockquote></article></main>
