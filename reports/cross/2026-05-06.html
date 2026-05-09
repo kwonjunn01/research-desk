@@ -291,11 +291,8 @@ ${cmd}`;
     if (!items.length) {
       const raw = input.value.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;');
       const cmd = `python3 11-scripts/request_company_report.py "${raw.replace(/"/g, '\"')}" --provider fast --publish`;
-      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 Codex와 Kimi(키가 있으면)를 병렬 활용하는 fast intake 명령을 준비한다. 정적 사이트라 자동 실행은 Hermes/Telegram에서 승인 후 수행.</small><div class="kimi-create-actions"><button type="button" class="kimi-create-btn" data-kimi-create>생성 요청</button><button type="button" class="kimi-create-btn secondary" data-kimi-copy>명령 복사</button></div><i>${cmd}</i><span class="kimi-create-status" data-kimi-create-status></span></div>`;
-      const createBtn = root.querySelector('[data-kimi-create]');
-      const copyBtn = root.querySelector('[data-kimi-copy]');
-      if (createBtn) createBtn.addEventListener('click', () => requestCreate(raw, cmd));
-      if (copyBtn) copyBtn.addEventListener('click', () => requestCreate(raw, cmd));
+      const action = 'http://158.247.217.223.sslip.io/api/research-desk/company-create';
+      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 바로 Codex+Kimi fast intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><form class="kimi-create-actions" method="post" action="${action}" target="_blank"><input type="hidden" name="query" value="${raw}"><input type="hidden" name="provider" value="fast"><button type="submit" class="kimi-create-btn" data-kimi-create>생성 시작</button></form><span class="kimi-create-status" data-kimi-create-status>새 창에서 진행 상태가 열린다.</span></div>`;
       return;
     }
     result.innerHTML = '<div class="kimi-results-title">추천/검색 결과</div>' + items.slice(0, 8).map(x => `
