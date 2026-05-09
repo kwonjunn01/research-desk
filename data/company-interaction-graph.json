@@ -382,6 +382,17 @@
       "bucket": "demand_platform"
     },
     {
+      "id": "CRWV.US",
+      "symbol": "CRWV.US",
+      "company": "CoreWeave",
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "AI GPU cloud / neocloud infrastructure provider",
+      "tier": "emerging",
+      "region": "US",
+      "bucket": "demand_platform"
+    },
+    {
       "id": "SNOW.US",
       "symbol": "SNOW.US",
       "company": "Snowflake",
@@ -1196,6 +1207,76 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
+      "source": "CRWV.US",
+      "target": "NVDA.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "CoreWeave의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "AMD.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "CoreWeave의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "AVGO.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "CoreWeave의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "MRVL.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "CoreWeave의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "QCOM.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "CoreWeave의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "ARM.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "CoreWeave의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "INTC.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "CoreWeave의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
       "source": "SNOW.US",
       "target": "NVDA.US",
       "relation": "demand_pull",
@@ -1482,7 +1563,7 @@
       "direction": "upstream",
       "strength": 0.9,
       "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -1492,7 +1573,7 @@
       "direction": "upstream",
       "strength": 0.9,
       "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -1502,7 +1583,7 @@
       "direction": "upstream",
       "strength": 0.9,
       "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -1512,7 +1593,7 @@
       "direction": "upstream",
       "strength": 0.9,
       "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -1522,7 +1603,7 @@
       "direction": "upstream",
       "strength": 0.9,
       "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -1532,7 +1613,7 @@
       "direction": "upstream",
       "strength": 0.9,
       "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -1542,7 +1623,7 @@
       "direction": "upstream",
       "strength": 0.9,
       "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -3586,6 +3667,106 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
+      "source": "CRWV.US",
+      "target": "MU.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "000660.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "WDC.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "STX.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "402340.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "010130.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "373220.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "051910.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "003670.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
       "source": "SNOW.US",
       "target": "MU.US",
       "relation": "demand_pull",
@@ -3991,8 +4172,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4001,8 +4182,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4011,8 +4192,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4021,8 +4202,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4031,8 +4212,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4041,8 +4222,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4051,8 +4232,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4061,8 +4242,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4071,8 +4252,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4081,8 +4262,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
-      "reason": "Samsung SDS의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4636,6 +4817,76 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
+      "source": "CRWV.US",
+      "target": "VRT.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "CoreWeave의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "SU.PA",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "CoreWeave의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "PWR.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "CoreWeave의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "CEG.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "CoreWeave의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "GEV.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "CoreWeave의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "SMR.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "CoreWeave의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "010120.KS",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "CoreWeave의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
       "source": "SNOW.US",
       "target": "VRT.US",
       "relation": "capacity_pull",
@@ -4921,8 +5172,8 @@
       "relation": "capacity_pull",
       "direction": "upstream",
       "strength": 0.74,
-      "reason": "Samsung SDS의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4931,8 +5182,8 @@
       "relation": "capacity_pull",
       "direction": "upstream",
       "strength": 0.74,
-      "reason": "Samsung SDS의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4941,8 +5192,8 @@
       "relation": "capacity_pull",
       "direction": "upstream",
       "strength": 0.74,
-      "reason": "Samsung SDS의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4951,8 +5202,8 @@
       "relation": "capacity_pull",
       "direction": "upstream",
       "strength": 0.74,
-      "reason": "Samsung SDS의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4961,8 +5212,8 @@
       "relation": "capacity_pull",
       "direction": "upstream",
       "strength": 0.74,
-      "reason": "Samsung SDS의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4971,8 +5222,8 @@
       "relation": "capacity_pull",
       "direction": "upstream",
       "strength": 0.74,
-      "reason": "Samsung SDS의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -4981,8 +5232,8 @@
       "relation": "capacity_pull",
       "direction": "upstream",
       "strength": 0.74,
-      "reason": "Samsung SDS의 data center 증설은 power/grid/cooling capacity 필요를 키울 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -5476,6 +5727,76 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
+      "source": "CRWV.US",
+      "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "CoreWeave의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "CSCO.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "CoreWeave의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "CIEN.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "CoreWeave의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "COHR.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "CoreWeave의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "LITE.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "CoreWeave의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "011070.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "CoreWeave의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "PANW.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "CoreWeave의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
       "source": "SNOW.US",
       "target": "ANET.US",
       "relation": "demand_pull",
@@ -5761,8 +6082,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
-      "reason": "Samsung SDS의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -5771,8 +6092,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
-      "reason": "Samsung SDS의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -5781,8 +6102,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
-      "reason": "Samsung SDS의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -5791,8 +6112,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
-      "reason": "Samsung SDS의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -5801,8 +6122,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
-      "reason": "Samsung SDS의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -5811,8 +6132,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
-      "reason": "Samsung SDS의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -5821,8 +6142,8 @@
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
-      "reason": "Samsung SDS의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
-      "agent": "demand_analyst",
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
     {
@@ -7577,6 +7898,16 @@
     },
     {
       "source": "MSFT.US",
+      "target": "CRWV.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "MSFT.US",
       "target": "SNOW.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7608,16 +7939,6 @@
     {
       "source": "MSFT.US",
       "target": "035720.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "MSFT.US",
-      "target": "018260.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7657,6 +7978,16 @@
     },
     {
       "source": "GOOGL.US",
+      "target": "CRWV.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "GOOGL.US",
       "target": "SNOW.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7688,16 +8019,6 @@
     {
       "source": "GOOGL.US",
       "target": "035720.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "GOOGL.US",
-      "target": "018260.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7727,6 +8048,16 @@
     },
     {
       "source": "AMZN.US",
+      "target": "CRWV.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "AMZN.US",
       "target": "SNOW.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7758,16 +8089,6 @@
     {
       "source": "AMZN.US",
       "target": "035720.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "AMZN.US",
-      "target": "018260.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7787,6 +8108,16 @@
     },
     {
       "source": "META.US",
+      "target": "CRWV.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "META.US",
       "target": "SNOW.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7826,8 +8157,8 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "META.US",
-      "target": "018260.KS",
+      "source": "ORCL.US",
+      "target": "CRWV.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7876,8 +8207,38 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "ORCL.US",
-      "target": "018260.KS",
+      "source": "CRWV.US",
+      "target": "SNOW.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "PLTR.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "035420.KS",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "035720.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7916,16 +8277,6 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "SNOW.US",
-      "target": "018260.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
       "source": "PLTR.US",
       "target": "035420.KS",
       "relation": "peer_or_substitute",
@@ -7946,38 +8297,8 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "PLTR.US",
-      "target": "018260.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
       "source": "035420.KS",
       "target": "035720.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "035420.KS",
-      "target": "018260.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "demand_platform lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "035720.KS",
-      "target": "018260.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,

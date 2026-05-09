@@ -1,7 +1,7 @@
 {
   "manager": "Kimi",
   "generated_at": "2026-05-09",
-  "count": 73,
+  "count": 74,
   "items": [
     {
       "company": "NVIDIA",
@@ -10,13 +10,7 @@
         "nvidia",
         "nvda.us",
         "nvda",
-        "엔비디아",
-        "코어위브",
-        "coreweave",
-        "coreweave inc.",
-        "coreweave, inc.",
-        "crwv",
-        "코어웨이브"
+        "엔비디아"
       ],
       "category": "AI Semiconductor / GPU / Accelerator",
       "node": "AI Semiconductor",
@@ -634,6 +628,30 @@
       "return_20d_pct": 41.90021377112103,
       "page": "/research-desk/market-ontology/company-reports/orcl-us.html",
       "summary": "Cloud Hyperscaler · OCI/cloud AI infra · 🟠 주황불"
+    },
+    {
+      "company": "CoreWeave",
+      "symbol": "CRWV.US",
+      "aliases": [
+        "coreweave",
+        "crwv.us",
+        "crwv",
+        "코어위브",
+        "coreweave inc.",
+        "coreweave, inc.",
+        "코어웨이브"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "AI GPU cloud / neocloud infrastructure provider",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": null,
+      "change_pct": null,
+      "price_position_52w_pct": null,
+      "return_20d_pct": null,
+      "page": "/research-desk/market-ontology/company-reports/crwv-us.html",
+      "summary": "Cloud Hyperscaler · AI GPU cloud / neocloud infrastructure provider · 🟢 초록불"
     },
     {
       "company": "Snowflake",
