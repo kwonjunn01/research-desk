@@ -172,28 +172,32 @@
 <p>가격 쪽에서는 <strong>Lumentum +1276.48%, SK Square +1080.65%, Western Digital +983.52%</strong>가 눈에 띄지만, 오늘 해석의 중심은 가격 자체보다 narrative와 evidence의 정렬 여부다. 사회/정책/시장 맥락은 <strong>AI adoption/capex debate 5, regulation/export 2</strong>로 요약되며, 맥락 대비 저평가 후보는 <strong>Korea Zinc, Constellation Energy</strong>로만 기록한다. 특히 <strong>HBM 공급 완화 후보, 전력/냉각/그리드 완화 후보, Hyperscaler Capex 회수 혼재</strong>가 관찰되어, cloud capex → data center → semiconductor/HBM → power/grid로 이어지는 연결망에서 어느 구간이 압력을 받는지 계속 확인해야 한다.</p>
 <p>오늘의 결론은 간단하다. 시장은 AI theme를 하나의 종목 이슈로 보기보다, <strong>연산 수요가 실제 인프라·전력·메모리·패키징 병목을 얼마나 밀어 올리는지</strong>로 다시 해석하는 중이다. 따라서 내일 확인할 것은 새로운 헤드라인 수가 아니라, 같은 node가 여러 고품질 source에서 반복되는지, 그리고 실적·capex·공급망 데이터로 이어지는지다.</p>
 <h3>오늘의 강력 관찰 후보 1~2개</h3>
-<blockquote>추천이 아니라 참고용 early narrative 후보. 고정 예시가 아니라 오늘 뉴스/근거에서 시장보다 약간 먼저 볼 수 있는 병목을 고른다. 섹터가 며칠간 변하지 않아도 강한 narrative inertia로 유지한다.</blockquote>
+<blockquote>추천이 아니라 참고용 early narrative 후보. 미리 고정한 렌즈를 고르는 게 아니라, 오늘 관측된 factor를 분석·재정의한 뒤 가장 현실가능성 높은 base scenario를 고른다. 섹터가 며칠간 변하지 않아도 강한 narrative inertia로 유지한다.</blockquote>
 <ol>
-<li><strong>Power/cooling/site constraint</strong></li>
+<li><strong>전력/냉각/부지 — nuclear, power, cooling</strong></li>
 </ol>
 <ul>
-<li><strong>초기 탑승 논리:</strong> AI workload가 늘어도 전력·냉각·부지 병목이 capex 속도와 데이터센터 가동률을 제한할 수 있다.</li>
-<li><strong>핵심 병목:</strong> <span class="badge">AI Data Center</span> → <span class="badge">Power Infrastructure</span></li>
+<li><strong>현실가능성:</strong> 높음 / score 39.0</li>
+<li><strong>분석/재정의:</strong> 오늘 관측된 factor(nuclear, power, cooling)를 기준으로 보면, <strong>전력·냉각·부지 확보가 AI data center 증설 속도를 제한</strong> 시나리오가 가장 현실적이다.</li>
+<li><strong>Base scenario:</strong> 단기 base case는 <strong>전력·냉각·부지 확보가 AI data center 증설 속도를 제한</strong>이다. 시장은 아직 이를 단순 테마/개별 뉴스로 볼 수 있으므로, 반복 근거가 나오면 early narrative가 된다.</li>
+<li><strong>Upside scenario:</strong> 같은 factor가 실적발표·capex·제품 release note에서 반복되면 solver(grid/transformer, cooling, data-center design, energy/nuclear, power-management vendors) 쪽으로 narrative가 확장된다.</li>
+<li><strong>Downside / 틀릴 조건:</strong> capex가 줄거나 전력 확보가 빠르게 해결되면 약해진다</li>
 <li><strong>누가 해결 중인가:</strong> grid/transformer, cooling, data-center design, energy/nuclear, power-management vendors</li>
-<li><strong>오늘 근거:</strong> How Schneider Electric and NVIDIA are redefining AI data center design - IT Brief New Zealand(IT Brief New Zealand); Nuclear Power Emerging as a Clean AI Data Center Energy Source - IO Fund(IO Fund)</li>
-<li><strong>다음 확인:</strong> 같은 병목이 고품질 source·실적발표·제품 release note에서 반복되는지</li>
-<li><strong>틀릴 조건:</strong> capex가 축소되거나 전력 확보가 빠르게 진행되면 단기 병목성은 약해진다.</li>
+<li><strong>오늘 근거:</strong> Nuclear Power Emerging as a Clean AI Data Center Energy Source - IO Fund(IO Fund); NANO Nuclear Signs Strategic MOU with Supermicro to Power the Next Generation of AI Data Centers with Advanced Nuclear Energy - NANO Nuclear Energy Inc.(NANO Nuclear Energy Inc.)</li>
+<li><strong>다음 확인:</strong> 같은 factor가 고품질 source·실적발표·제품 release note에서 반복되는지</li>
 </ul>
 <ol>
-<li><strong>Memory/KV/cache pressure</strong></li>
+<li><strong>Embodied/edge AI — robot</strong></li>
 </ol>
 <ul>
-<li><strong>초기 탑승 논리:</strong> agent·long-context 사용이 늘면 GPU 자체보다 KV cache/context/session memory가 먼저 비용·latency 병목이 될 수 있다.</li>
-<li><strong>핵심 병목:</strong> <span class="badge">Inference Stack</span> → <span class="badge">HBM Memory</span> / <span class="badge">DRAM</span></li>
-<li><strong>누가 해결 중인가:</strong> HBM/DRAM suppliers, inference serving stack, model compression, cache/offload systems</li>
-<li><strong>오늘 근거:</strong> Micron’s AI memory rally is still running hot - MSN(MSN); Micron Rockets 11%, SanDisk Rallies 11%, Western Digital Up 3% on AI Memory Supercycle Bull Case - 24/7 Wall St.(24/7 Wall St.)</li>
-<li><strong>다음 확인:</strong> 같은 병목이 고품질 source·실적발표·제품 release note에서 반복되는지</li>
-<li><strong>틀릴 조건:</strong> 압축·routing·short-context UX가 충분히 강해져 memory 증가가 제한되면 약해진다.</li>
+<li><strong>현실가능성:</strong> 높음 / score 28.5</li>
+<li><strong>분석/재정의:</strong> 오늘 관측된 factor(robot)를 기준으로 보면, <strong>robotics/on-device AI가 edge inference, sensor, actuator, safety stack 수요를 만든다</strong> 시나리오가 가장 현실적이다.</li>
+<li><strong>Base scenario:</strong> 단기 base case는 <strong>robotics/on-device AI가 edge inference, sensor, actuator, safety stack 수요를 만든다</strong>이다. 시장은 아직 이를 단순 테마/개별 뉴스로 볼 수 있으므로, 반복 근거가 나오면 early narrative가 된다.</li>
+<li><strong>Upside scenario:</strong> 같은 factor가 실적발표·capex·제품 release note에서 반복되면 solver(edge AI chips, sensors, automation/robotics integrators) 쪽으로 narrative가 확장된다.</li>
+<li><strong>Downside / 틀릴 조건:</strong> 실사용 deployment가 지연되면 theme만 남는다</li>
+<li><strong>누가 해결 중인가:</strong> edge AI chips, sensors, automation/robotics integrators</li>
+<li><strong>오늘 근거:</strong> QNX to bring hands-on demonstrations and new research to the Robotics Summit - The Robot Report(The Robot Report); AI: Humanoid Robot “Gabi” Takes Precept Vows at Buddhist Temple in South Korea - Buddhistdoor Global(Buddhistdoor Global)</li>
+<li><strong>다음 확인:</strong> 같은 factor가 고품질 source·실적발표·제품 release note에서 반복되는지</li>
 </ul>
 <ul>
 <li>Narrative model: https://kwonjunn01.github.io/research-desk/cross-ontology/narrative-impact-transmission-model.html</li>
