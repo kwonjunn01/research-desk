@@ -338,6 +338,17 @@
       "bucket": "memory"
     },
     {
+      "id": "440110.KQ",
+      "symbol": "440110.KQ",
+      "company": "FADU Inc.",
+      "category": "HBM / Memory / Storage",
+      "node": "HBM Memory",
+      "role": "AI 데이터센터용 엔터프라이즈 SSD 컨트롤러·스토리지 반도체 팹리스",
+      "tier": "watch",
+      "region": "Korea",
+      "bucket": "memory"
+    },
+    {
       "id": "MSFT.US",
       "symbol": "MSFT.US",
       "company": "Microsoft",
@@ -2549,6 +2560,16 @@
     },
     {
       "source": "NVDA.US",
+      "target": "440110.KQ",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NVDA.US",
       "target": "373220.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -2568,16 +2589,6 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "NVDA.US",
-      "target": "051910.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
       "source": "AMD.US",
       "target": "MU.US",
       "relation": "attach_dependency",
@@ -2649,6 +2660,16 @@
     },
     {
       "source": "AMD.US",
+      "target": "440110.KQ",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "AMD.US",
       "target": "373220.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -2660,16 +2681,6 @@
     {
       "source": "AMD.US",
       "target": "006400.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "AMD.US",
-      "target": "051910.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
       "strength": 0.8,
@@ -2749,6 +2760,16 @@
     },
     {
       "source": "AVGO.US",
+      "target": "440110.KQ",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "AVGO.US",
       "target": "373220.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -2768,16 +2789,6 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "AVGO.US",
-      "target": "051910.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
       "source": "MRVL.US",
       "target": "MU.US",
       "relation": "attach_dependency",
@@ -2849,6 +2860,16 @@
     },
     {
       "source": "MRVL.US",
+      "target": "440110.KQ",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "MRVL.US",
       "target": "373220.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -2860,16 +2881,6 @@
     {
       "source": "MRVL.US",
       "target": "006400.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "MRVL.US",
-      "target": "051910.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
       "strength": 0.8,
@@ -2949,6 +2960,16 @@
     },
     {
       "source": "QCOM.US",
+      "target": "440110.KQ",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "QCOM.US",
       "target": "373220.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -2968,16 +2989,6 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "QCOM.US",
-      "target": "051910.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
       "source": "ARM.US",
       "target": "MU.US",
       "relation": "attach_dependency",
@@ -3049,6 +3060,16 @@
     },
     {
       "source": "ARM.US",
+      "target": "440110.KQ",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "ARM.US",
       "target": "373220.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -3060,16 +3081,6 @@
     {
       "source": "ARM.US",
       "target": "006400.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "ARM.US",
-      "target": "051910.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
       "strength": 0.8,
@@ -3149,6 +3160,16 @@
     },
     {
       "source": "INTC.US",
+      "target": "440110.KQ",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "INTC.US",
       "target": "373220.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -3168,16 +3189,6 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "INTC.US",
-      "target": "051910.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
       "source": "MSFT.US",
       "target": "MU.US",
       "relation": "demand_pull",
@@ -3249,6 +3260,16 @@
     },
     {
       "source": "MSFT.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Microsoft의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "MSFT.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -3260,16 +3281,6 @@
     {
       "source": "MSFT.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Microsoft의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "MSFT.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -3349,6 +3360,16 @@
     },
     {
       "source": "GOOGL.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Alphabet의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "GOOGL.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -3360,16 +3381,6 @@
     {
       "source": "GOOGL.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Alphabet의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "GOOGL.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -3449,6 +3460,16 @@
     },
     {
       "source": "AMZN.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Amazon의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "AMZN.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -3460,16 +3481,6 @@
     {
       "source": "AMZN.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Amazon의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "AMZN.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -3549,6 +3560,16 @@
     },
     {
       "source": "META.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Meta의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "META.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -3560,16 +3581,6 @@
     {
       "source": "META.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Meta의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "META.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -3649,6 +3660,16 @@
     },
     {
       "source": "ORCL.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Oracle의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "ORCL.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -3660,16 +3681,6 @@
     {
       "source": "ORCL.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Oracle의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "ORCL.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -3749,6 +3760,16 @@
     },
     {
       "source": "CRWV.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "CRWV.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -3760,16 +3781,6 @@
     {
       "source": "CRWV.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "CRWV.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -3849,6 +3860,16 @@
     },
     {
       "source": "SNOW.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Snowflake의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "SNOW.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -3860,16 +3881,6 @@
     {
       "source": "SNOW.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Snowflake의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "SNOW.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -3949,6 +3960,16 @@
     },
     {
       "source": "PLTR.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Palantir의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "PLTR.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -3960,16 +3981,6 @@
     {
       "source": "PLTR.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Palantir의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "PLTR.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -4049,6 +4060,16 @@
     },
     {
       "source": "035420.KS",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "NAVER의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "035420.KS",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -4060,16 +4081,6 @@
     {
       "source": "035420.KS",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "NAVER의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "035420.KS",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -4149,6 +4160,16 @@
     },
     {
       "source": "035720.KS",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Kakao의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "035720.KS",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -4160,16 +4181,6 @@
     {
       "source": "035720.KS",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Kakao의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "035720.KS",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -4249,6 +4260,16 @@
     },
     {
       "source": "018260.KS",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "018260.KS",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -4260,16 +4281,6 @@
     {
       "source": "018260.KS",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "018260.KS",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -4349,6 +4360,16 @@
     },
     {
       "source": "DDOG.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Datadog의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "DDOG.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -4360,16 +4381,6 @@
     {
       "source": "DDOG.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Datadog의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "DDOG.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -4449,6 +4460,16 @@
     },
     {
       "source": "NET.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Cloudflare의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NET.US",
       "target": "373220.KS",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -4460,16 +4481,6 @@
     {
       "source": "NET.US",
       "target": "006400.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Cloudflare의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "NET.US",
-      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -7479,6 +7490,16 @@
     },
     {
       "source": "MU.US",
+      "target": "440110.KQ",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "MU.US",
       "target": "373220.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7490,16 +7511,6 @@
     {
       "source": "MU.US",
       "target": "006400.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "MU.US",
-      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7559,6 +7570,16 @@
     },
     {
       "source": "000660.KS",
+      "target": "440110.KQ",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "000660.KS",
       "target": "373220.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7570,16 +7591,6 @@
     {
       "source": "000660.KS",
       "target": "006400.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "000660.KS",
-      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7629,6 +7640,16 @@
     },
     {
       "source": "WDC.US",
+      "target": "440110.KQ",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "WDC.US",
       "target": "373220.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7640,16 +7661,6 @@
     {
       "source": "WDC.US",
       "target": "006400.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "WDC.US",
-      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7689,6 +7700,16 @@
     },
     {
       "source": "STX.US",
+      "target": "440110.KQ",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "STX.US",
       "target": "373220.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7700,16 +7721,6 @@
     {
       "source": "STX.US",
       "target": "006400.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "STX.US",
-      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7739,6 +7750,16 @@
     },
     {
       "source": "402340.KS",
+      "target": "440110.KQ",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "402340.KS",
       "target": "373220.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7750,16 +7771,6 @@
     {
       "source": "402340.KS",
       "target": "006400.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "402340.KS",
-      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7779,6 +7790,16 @@
     },
     {
       "source": "010130.KS",
+      "target": "440110.KQ",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "010130.KS",
       "target": "373220.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7798,8 +7819,8 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "010130.KS",
-      "target": "051910.KS",
+      "source": "SNDK.US",
+      "target": "440110.KQ",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7828,8 +7849,8 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "SNDK.US",
-      "target": "051910.KS",
+      "source": "440110.KQ",
+      "target": "373220.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -7838,7 +7859,7 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
-      "source": "373220.KS",
+      "source": "440110.KQ",
       "target": "006400.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -7849,17 +7870,7 @@
     },
     {
       "source": "373220.KS",
-      "target": "051910.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "ontology_mapper",
-      "verification": "verify with filings/news/earnings calls"
-    },
-    {
-      "source": "006400.KS",
-      "target": "051910.KS",
+      "target": "006400.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,

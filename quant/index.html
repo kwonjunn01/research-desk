@@ -372,8 +372,8 @@ ${cmd}`;
       <a class="kimi-result" href="${x.page}">
         <span class="kimi-light">${String(x.traffic_light || '⚪').trim().split(/\s+/)[0]}</span>
         <b>${x.company} <em>${x.symbol}</em></b>
-        <small>${x.category} · ${x.role || 'role n/a'}</small>
-        <i>현재가 ${x.price ?? 'n/a'} · 20D ${fmtPct(x.return_20d_pct)} · 52W ${x.price_position_52w_pct == null ? 'n/a' : Number(x.price_position_52w_pct).toFixed(0)+'%'}</i>
+        <small>${x.category} · ${x.role || 'role 미정'}</small>
+        <i>현재가 ${x.price == null ? '데이터 확인 중' : x.price} · 20D ${fmtPct(x.return_20d_pct)} · 52W ${x.price_position_52w_pct == null ? '데이터 확인 중' : Number(x.price_position_52w_pct).toFixed(0)+'%'}</i>
       </a>`).join('');
   };
   const search = () => {

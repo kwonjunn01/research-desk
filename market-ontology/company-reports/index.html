@@ -190,6 +190,7 @@
 <li><a href="/research-desk/market-ontology/company-reports/402340-ks.html">SK Square (402340.KS)</a> — 🟠 주황불 · SK Hynix holding-company exposure</li>
 <li><a href="/research-desk/market-ontology/company-reports/010130-ks.html">Korea Zinc (010130.KS)</a> — 🟢 초록불 · strategic materials / battery-metal adjacency</li>
 <li><a href="/research-desk/market-ontology/company-reports/sndk-us.html">Sandisk Corporation (SNDK.US)</a> — 🟢 초록불 · NAND flash and enterprise SSD storage supplier for AI/data-center infrastructure</li>
+<li><a href="/research-desk/market-ontology/company-reports/440110-kq.html">FADU Inc. (440110.KQ)</a> — 🟢 초록불 · AI 데이터센터용 엔터프라이즈 SSD 컨트롤러·스토리지 반도체 팹리스</li>
 <li><a href="/research-desk/market-ontology/company-reports/msft-us.html">Microsoft (MSFT.US)</a> — 🟢 초록불 · Azure/OpenAI/enterprise AI</li>
 <li><a href="/research-desk/market-ontology/company-reports/googl-us.html">Alphabet (GOOGL.US)</a> — 🟠 주황불 · Google Cloud/TPU/Gemini</li>
 <li><a href="/research-desk/market-ontology/company-reports/amzn-us.html">Amazon (AMZN.US)</a> — 🟠 주황불 · AWS/Trainium/retail cloud cashflow</li>
@@ -290,8 +291,8 @@ ${cmd}`;
       <a class="kimi-result" href="${x.page}">
         <span class="kimi-light">${String(x.traffic_light || '⚪').trim().split(/\s+/)[0]}</span>
         <b>${x.company} <em>${x.symbol}</em></b>
-        <small>${x.category} · ${x.role || 'role n/a'}</small>
-        <i>현재가 ${x.price ?? 'n/a'} · 20D ${fmtPct(x.return_20d_pct)} · 52W ${x.price_position_52w_pct == null ? 'n/a' : Number(x.price_position_52w_pct).toFixed(0)+'%'}</i>
+        <small>${x.category} · ${x.role || 'role 미정'}</small>
+        <i>현재가 ${x.price == null ? '데이터 확인 중' : x.price} · 20D ${fmtPct(x.return_20d_pct)} · 52W ${x.price_position_52w_pct == null ? '데이터 확인 중' : Number(x.price_position_52w_pct).toFixed(0)+'%'}</i>
       </a>`).join('');
   };
   const search = () => {
