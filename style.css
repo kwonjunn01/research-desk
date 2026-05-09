@@ -167,8 +167,14 @@ article li { margin: 7px 0; }
   .desk-dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 article > ul { list-style: none; padding-left: 0; }
-article > ul > li { background: rgba(255,255,255,.028); border: 1px solid rgba(255,255,255,.055); border-radius: 12px; padding: 10px 12px; }
+article > ul > li, article > ol > li { background: rgba(255,255,255,.028); border: 1px solid rgba(255,255,255,.055); border-radius: 12px; padding: 10px 12px; }
 article > ul > li::marker { content: ""; }
+article > ol { list-style: none; padding-left: 0; counter-reset: strong-candidate; }
+article > ol > li { counter-increment: strong-candidate; margin: 12px 0; position: relative; padding: 14px 14px 14px 48px; background: linear-gradient(145deg, rgba(138,180,255,.085), rgba(255,255,255,.026)); border-color: rgba(138,180,255,.18); box-shadow: 0 14px 42px rgba(0,0,0,.18); }
+article > ol > li::before { content: counter(strong-candidate); position:absolute; left:14px; top:14px; width:22px; height:22px; border-radius:999px; display:grid; place-items:center; color:#050506; background:var(--accent); font-weight:900; font-size:12px; }
+article > ol > li > strong:first-child { display:block; color:var(--text); font-size:16px; margin-bottom:8px; }
+article > ol > li ul { margin-top: 9px; padding-left: 1rem; }
+article > ol > li li { margin: 5px 0; color: var(--muted); }
 hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
 .meta { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
 .badge { display: inline-block; border: 1px solid var(--border); color: var(--muted); border-radius: 999px; padding: 2px 9px; font-size: 12px; margin-right: 6px; }
