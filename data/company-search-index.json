@@ -1,7 +1,7 @@
 {
   "manager": "Kimi",
   "generated_at": "2026-05-09",
-  "count": 74,
+  "count": 75,
   "items": [
     {
       "company": "NVIDIA",
@@ -528,6 +528,29 @@
       "return_20d_pct": -1.6403785488959044,
       "page": "/research-desk/market-ontology/company-reports/010130-ks.html",
       "summary": "HBM Memory · strategic materials / battery-metal adjacency · 🟢 초록불"
+    },
+    {
+      "company": "Sandisk Corporation",
+      "symbol": "SNDK.US",
+      "aliases": [
+        "sandisk corporation",
+        "sndk.us",
+        "sndk",
+        "샌디스크",
+        "sandisk",
+        "샌디스크 코퍼레이션"
+      ],
+      "category": "HBM / Memory / Storage",
+      "node": "HBM Memory",
+      "role": "NAND flash and enterprise SSD storage supplier for AI/data-center infrastructure",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": null,
+      "change_pct": null,
+      "price_position_52w_pct": null,
+      "return_20d_pct": null,
+      "page": "/research-desk/market-ontology/company-reports/sndk-us.html",
+      "summary": "HBM Memory · NAND flash and enterprise SSD storage supplier for AI/data-center infrastructure · 🟢 초록불"
     },
     {
       "company": "Microsoft",
