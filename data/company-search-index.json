@@ -9,7 +9,8 @@
       "aliases": [
         "nvidia",
         "nvda.us",
-        "nvda"
+        "nvda",
+        "엔비디아"
       ],
       "category": "AI Semiconductor / GPU / Accelerator",
       "node": "AI Semiconductor",
@@ -48,7 +49,8 @@
       "aliases": [
         "broadcom",
         "avgo.us",
-        "avgo"
+        "avgo",
+        "브로드컴"
       ],
       "category": "AI Semiconductor / GPU / Accelerator",
       "node": "AI Semiconductor",
@@ -147,7 +149,10 @@
       "aliases": [
         "tsmc",
         "tsm.us",
-        "tsm"
+        "tsm",
+        "taiwan semiconductor",
+        "티에스엠씨",
+        "대만반도체"
       ],
       "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
       "node": "Advanced Packaging",
@@ -405,7 +410,9 @@
       "aliases": [
         "samsung electronics",
         "005930.ks",
-        "005930"
+        "005930",
+        "삼성전자",
+        "삼전"
       ],
       "category": "HBM / Memory / Storage",
       "node": "HBM Memory",
@@ -426,7 +433,9 @@
         "sk hynix",
         "000660.ks",
         "000660",
-        "hynix"
+        "hynix",
+        "sk하이닉스",
+        "하이닉스"
       ],
       "category": "HBM / Memory / Storage",
       "node": "HBM Memory",
@@ -526,7 +535,8 @@
       "aliases": [
         "microsoft",
         "msft.us",
-        "msft"
+        "msft",
+        "마이크로소프트"
       ],
       "category": "Cloud Hyperscaler / AI Platform",
       "node": "Cloud Hyperscaler",
@@ -645,7 +655,8 @@
       "aliases": [
         "palantir",
         "pltr.us",
-        "pltr"
+        "pltr",
+        "팔란티어"
       ],
       "category": "Cloud Hyperscaler / AI Platform",
       "node": "Cloud Hyperscaler",
@@ -725,7 +736,8 @@
       "aliases": [
         "vertiv",
         "vrt.us",
-        "vrt"
+        "vrt",
+        "버티브"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -804,7 +816,8 @@
       "aliases": [
         "constellation energy",
         "ceg.us",
-        "ceg"
+        "ceg",
+        "컨스텔레이션"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -866,7 +879,10 @@
         "267260.ks",
         "267260",
         "hd hyundai",
-        "hyundai electric"
+        "hyundai electric",
+        "hd현대일렉",
+        "에이치디현대일렉트릭",
+        "현대일렉트릭"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -886,7 +902,8 @@
       "aliases": [
         "ls electric",
         "010120.ks",
-        "010120"
+        "010120",
+        "ls일렉트릭"
       ],
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
@@ -1086,7 +1103,8 @@
       "aliases": [
         "tesla",
         "tsla.us",
-        "tsla"
+        "tsla",
+        "테슬라"
       ],
       "category": "Edge / Robotics / Healthcare AI",
       "node": "Applied AI Demand",
