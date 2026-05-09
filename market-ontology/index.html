@@ -222,7 +222,7 @@
   const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 엔비디아, NVDA, 팔란티어, CoreWeave, HD현대일렉</small></div>';
   let rows = [];
   const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9가-힣]+/g, ' ').trim();
-  const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? 'n/a' : `${Number(v) >= 0 ? '+' : ''}${Number(v).toFixed(1)}%`;
+  const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '데이터 확인 중' : `${Number(v) >= 0 ? '+' : ''}${Number(v).toFixed(1)}%`;
   const requestCreate = (raw, cmd) => {
     const msg = `회사 생성 요청: ${raw}
 ${cmd}`;
