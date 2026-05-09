@@ -190,7 +190,7 @@
       "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
       "node": "Advanced Packaging",
       "role": "ALD/equipment",
-      "tier": "manual",
+      "tier": "watch",
       "region": "Netherlands",
       "bucket": "semicap_foundry"
     },
@@ -498,7 +498,7 @@
       "category": "Data Center Power / Cooling / Grid",
       "node": "Power Infrastructure",
       "role": "energy management/data center electrical",
-      "tier": "manual",
+      "tier": "watch",
       "region": "France",
       "bucket": "power_grid"
     },
