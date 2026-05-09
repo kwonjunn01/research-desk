@@ -179,6 +179,10 @@ pre code { background: transparent; padding: 0; white-space: pre; }
 .kimi-result small { display:block; color:#c6c9d8; margin-top:6px; line-height:1.35; }
 .kimi-result i { display:block; color:#8a8f98; margin-top:9px; font-style:normal; font:700 12px/1.3 ui-monospace,SFMono-Regular,Menlo,monospace; }
 .kimi-result.empty { padding-left:14px; }
+.kimi-create-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.kimi-create-btn { cursor:pointer; border:1px solid rgba(124,124,255,.45); border-radius:999px; padding:9px 12px; background:linear-gradient(135deg,rgba(124,124,255,.28),rgba(124,124,255,.10)); color:#eef0ff; font-weight:900; }
+.kimi-create-btn.secondary { border-color:rgba(255,255,255,.13); background:rgba(255,255,255,.045); color:#cfd3ff; }
+.kimi-create-status { display:block; margin-top:9px; color:#9da3ff; font:800 12px/1.35 ui-monospace,SFMono-Regular,Menlo,monospace; }
 .kimi-hub-note { border:1px solid rgba(124,124,255,.22); border-radius:18px; padding:14px 15px; background:rgba(124,124,255,.08); }
 .kimi-hub-note b,.kimi-hub-note small { display:block; }
 .kimi-hub-note small { color:#c6c9d8; margin-top:5px; }
