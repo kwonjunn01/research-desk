@@ -875,6 +875,17 @@
       "tier": "extended",
       "region": "Korea",
       "bucket": "memory"
+    },
+    {
+      "id": "328130.KQ",
+      "symbol": "328130.KQ",
+      "company": "Lunit Inc.",
+      "category": "Company Intake / Observation",
+      "node": "Company Intake",
+      "role": "AI 기반 암 진단·검진 및 정밀의료 소프트웨어 공급자",
+      "tier": "watch",
+      "region": "Korea",
+      "bucket": "other"
     }
   ],
   "edges": [
