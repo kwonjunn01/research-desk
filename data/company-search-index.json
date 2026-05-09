@@ -1,0 +1,1464 @@
+{
+  "manager": "Kimi",
+  "generated_at": "2026-05-09",
+  "count": 73,
+  "items": [
+    {
+      "company": "NVIDIA",
+      "symbol": "NVDA.US",
+      "aliases": [
+        "nvidia",
+        "nvda.us",
+        "nvda"
+      ],
+      "category": "AI Semiconductor / GPU / Accelerator",
+      "node": "AI Semiconductor",
+      "role": "GPU/accelerator leader",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 215.2,
+      "change_pct": 83.35179347363038,
+      "price_position_52w_pct": 97.46563704921296,
+      "return_20d_pct": 14.085773434451344,
+      "page": "/research-desk/market-ontology/company-reports/nvda-us.html",
+      "summary": "AI Semiconductor · GPU/accelerator leader · 🟠 주황불"
+    },
+    {
+      "company": "AMD",
+      "symbol": "AMD.US",
+      "aliases": [
+        "amd",
+        "amd.us"
+      ],
+      "category": "AI Semiconductor / GPU / Accelerator",
+      "node": "AI Semiconductor",
+      "role": "GPU/CPU accelerator challenger",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 455.19,
+      "change_pct": 347.58112094395284,
+      "price_position_52w_pct": 99.70111377542948,
+      "return_20d_pct": 85.7615134148634,
+      "page": "/research-desk/market-ontology/company-reports/amd-us.html",
+      "summary": "AI Semiconductor · GPU/CPU accelerator challenger · 🟠 주황불"
+    },
+    {
+      "company": "Broadcom",
+      "symbol": "AVGO.US",
+      "aliases": [
+        "broadcom",
+        "avgo.us",
+        "avgo"
+      ],
+      "category": "AI Semiconductor / GPU / Accelerator",
+      "node": "AI Semiconductor",
+      "role": "custom ASIC/network silicon",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 430.0,
+      "change_pct": 106.95961880926023,
+      "price_position_52w_pct": 96.67762888862,
+      "return_20d_pct": 15.731399307594685,
+      "page": "/research-desk/market-ontology/company-reports/avgo-us.html",
+      "summary": "AI Semiconductor · custom ASIC/network silicon · 🟠 주황불"
+    },
+    {
+      "company": "Marvell",
+      "symbol": "MRVL.US",
+      "aliases": [
+        "marvell",
+        "mrvl.us",
+        "mrvl"
+      ],
+      "category": "AI Semiconductor / GPU / Accelerator",
+      "node": "AI Semiconductor",
+      "role": "custom silicon/DSP/networking",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 170.13,
+      "change_pct": 195.2108276939094,
+      "price_position_52w_pct": 95.16170071368268,
+      "return_20d_pct": 32.40718556047635,
+      "page": "/research-desk/market-ontology/company-reports/mrvl-us.html",
+      "summary": "AI Semiconductor · custom silicon/DSP/networking · 🟠 주황불"
+    },
+    {
+      "company": "Qualcomm",
+      "symbol": "QCOM.US",
+      "aliases": [
+        "qualcomm",
+        "qcom.us",
+        "qcom"
+      ],
+      "category": "AI Semiconductor / GPU / Accelerator",
+      "node": "AI Semiconductor",
+      "role": "edge/mobile AI silicon",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 219.09,
+      "change_pct": 50.99241902136459,
+      "price_position_52w_pct": 91.5605905964561,
+      "return_20d_pct": 71.08387019901008,
+      "page": "/research-desk/market-ontology/company-reports/qcom-us.html",
+      "summary": "AI Semiconductor · edge/mobile AI silicon · 🟠 주황불"
+    },
+    {
+      "company": "Arm",
+      "symbol": "ARM.US",
+      "aliases": [
+        "arm",
+        "arm.us"
+      ],
+      "category": "AI Semiconductor / GPU / Accelerator",
+      "node": "AI Semiconductor",
+      "role": "CPU IP ecosystem",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 213.27,
+      "change_pct": 83.03295571575696,
+      "price_position_52w_pct": 81.19443693095087,
+      "return_20d_pct": 43.20151110480892,
+      "page": "/research-desk/market-ontology/company-reports/arm-us.html",
+      "summary": "AI Semiconductor · CPU IP ecosystem · 🟠 주황불"
+    },
+    {
+      "company": "Intel",
+      "symbol": "INTC.US",
+      "aliases": [
+        "intel",
+        "intc.us",
+        "intc"
+      ],
+      "category": "AI Semiconductor / GPU / Accelerator",
+      "node": "AI Semiconductor",
+      "role": "CPU/foundry/AI accelerator turnaround",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 124.92,
+      "change_pct": 494.85714285714283,
+      "price_position_52w_pct": 94.93726978615564,
+      "return_20d_pct": 100.25648903659818,
+      "page": "/research-desk/market-ontology/company-reports/intc-us.html",
+      "summary": "AI Semiconductor · CPU/foundry/AI accelerator turnaround · 🟠 주황불"
+    },
+    {
+      "company": "TSMC",
+      "symbol": "TSM.US",
+      "aliases": [
+        "tsmc",
+        "tsm.us",
+        "tsm"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "leading foundry/CoWoS",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 411.68,
+      "change_pct": 134.9503481337747,
+      "price_position_52w_pct": 96.5835831143168,
+      "return_20d_pct": 11.084725639483661,
+      "page": "/research-desk/market-ontology/company-reports/tsm-us.html",
+      "summary": "Advanced Packaging · leading foundry/CoWoS · 🟠 주황불"
+    },
+    {
+      "company": "ASML",
+      "symbol": "ASML.US",
+      "aliases": [
+        "asml",
+        "asml.us"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "EUV lithography",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 1592.02,
+      "change_pct": 124.85205429148482,
+      "price_position_52w_pct": 99.63918073414342,
+      "return_20d_pct": 7.694074765876668,
+      "page": "/research-desk/market-ontology/company-reports/asml-us.html",
+      "summary": "Advanced Packaging · EUV lithography · 🟠 주황불"
+    },
+    {
+      "company": "Applied Materials",
+      "symbol": "AMAT.US",
+      "aliases": [
+        "applied materials",
+        "amat.us",
+        "amat"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "deposition/materials equipment",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 435.44,
+      "change_pct": 179.12820512820514,
+      "price_position_52w_pct": 99.100270617867,
+      "return_20d_pct": 8.998976355961673,
+      "page": "/research-desk/market-ontology/company-reports/amat-us.html",
+      "summary": "Advanced Packaging · deposition/materials equipment · 🟠 주황불"
+    },
+    {
+      "company": "Lam Research",
+      "symbol": "LRCX.US",
+      "aliases": [
+        "lam research",
+        "lrcx.us",
+        "lrcx"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "etch/deposition equipment",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 294.05,
+      "change_pct": 292.5901201602136,
+      "price_position_52w_pct": 98.2314752509579,
+      "return_20d_pct": 11.526206446100407,
+      "page": "/research-desk/market-ontology/company-reports/lrcx-us.html",
+      "summary": "Advanced Packaging · etch/deposition equipment · 🟠 주황불"
+    },
+    {
+      "company": "KLA",
+      "symbol": "KLAC.US",
+      "aliases": [
+        "kla",
+        "klac.us",
+        "klac"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "process control/inspection",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 1869.19,
+      "change_pct": 165.76287091408017,
+      "price_position_52w_pct": 94.35310711347422,
+      "return_20d_pct": 7.592902035287463,
+      "page": "/research-desk/market-ontology/company-reports/klac-us.html",
+      "summary": "Advanced Packaging · process control/inspection · 🟠 주황불"
+    },
+    {
+      "company": "Teradyne",
+      "symbol": "TER.US",
+      "aliases": [
+        "teradyne",
+        "ter.us",
+        "ter"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "semiconductor test/robotics",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 359.77,
+      "change_pct": 368.20666319625184,
+      "price_position_52w_pct": 81.98890916296445,
+      "return_20d_pct": -2.2337537575790156,
+      "page": "/research-desk/market-ontology/company-reports/ter-us.html",
+      "summary": "Advanced Packaging · semiconductor test/robotics · 🟢 초록불"
+    },
+    {
+      "company": "ASM International",
+      "symbol": "ASM.AS",
+      "aliases": [
+        "asm international",
+        "asm.as"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "ALD/equipment",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": null,
+      "change_pct": null,
+      "price_position_52w_pct": null,
+      "return_20d_pct": null,
+      "page": "/research-desk/market-ontology/company-reports/asm-as.html",
+      "summary": "Advanced Packaging · ALD/equipment · 🟢 초록불"
+    },
+    {
+      "company": "Hanmi Semiconductor",
+      "symbol": "042700.KQ",
+      "aliases": [
+        "hanmi semiconductor",
+        "042700.kq",
+        "042700"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "HBM TC bonder / advanced packaging equipment",
+      "traffic_light": "🟡 노란불",
+      "traffic_reason": "관찰은 필요하나 신호가 아직 혼재",
+      "price": 151000.0,
+      "change_pct": 92.35668789808918,
+      "price_position_52w_pct": 22.023809523809522,
+      "return_20d_pct": -46.16755793226381,
+      "page": "/research-desk/market-ontology/company-reports/042700-kq.html",
+      "summary": "Advanced Packaging · HBM TC bonder / advanced packaging equipment · 🟡 노란불"
+    },
+    {
+      "company": "ISC",
+      "symbol": "095340.KQ",
+      "aliases": [
+        "isc",
+        "095340.kq",
+        "095340"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "semiconductor test socket / AI chip test exposure",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 253500.0,
+      "change_pct": 368.57670979667284,
+      "price_position_52w_pct": 84.01639344262296,
+      "return_20d_pct": -1.3618677042801508,
+      "page": "/research-desk/market-ontology/company-reports/095340-kq.html",
+      "summary": "Advanced Packaging · semiconductor test socket / AI chip test exposure · 🟢 초록불"
+    },
+    {
+      "company": "Leeno Industrial",
+      "symbol": "058470.KQ",
+      "aliases": [
+        "leeno industrial",
+        "058470.kq",
+        "058470"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "test pin/socket / semiconductor probe components",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 112600.0,
+      "change_pct": 202.28187919463085,
+      "price_position_52w_pct": 82.32758620689656,
+      "return_20d_pct": -3.595890410958902,
+      "page": "/research-desk/market-ontology/company-reports/058470-kq.html",
+      "summary": "Advanced Packaging · test pin/socket / semiconductor probe components · 🟢 초록불"
+    },
+    {
+      "company": "Wonik IPS",
+      "symbol": "240810.KQ",
+      "aliases": [
+        "wonik ips",
+        "240810.kq",
+        "240810"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "deposition/semicap equipment",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 132900.0,
+      "change_pct": 469.16488222698075,
+      "price_position_52w_pct": 91.72809172809173,
+      "return_20d_pct": 9.472817133443169,
+      "page": "/research-desk/market-ontology/company-reports/240810-kq.html",
+      "summary": "Advanced Packaging · deposition/semicap equipment · 🟠 주황불"
+    },
+    {
+      "company": "HPSP",
+      "symbol": "403870.KQ",
+      "aliases": [
+        "hpsp",
+        "403870.kq",
+        "403870"
+      ],
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "high-pressure annealing equipment",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 53900.0,
+      "change_pct": 136.4035087719298,
+      "price_position_52w_pct": 88.87381275440977,
+      "return_20d_pct": 17.429193899782124,
+      "page": "/research-desk/market-ontology/company-reports/403870-kq.html",
+      "summary": "Advanced Packaging · high-pressure annealing equipment · 🟠 주황불"
+    },
+    {
+      "company": "Micron",
+      "symbol": "MU.US",
+      "aliases": [
+        "micron",
+        "mu.us",
+        "mu"
+      ],
+      "category": "HBM / Memory / Storage",
+      "node": "HBM Memory",
+      "role": "HBM/DRAM/NAND",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 746.81,
+      "change_pct": 777.0522607163828,
+      "price_position_52w_pct": 99.93962206095212,
+      "return_20d_pct": 77.56247331190278,
+      "page": "/research-desk/market-ontology/company-reports/mu-us.html",
+      "summary": "HBM Memory · HBM/DRAM/NAND · 🟠 주황불"
+    },
+    {
+      "company": "Samsung Electronics",
+      "symbol": "005930.KS",
+      "aliases": [
+        "samsung electronics",
+        "005930.ks",
+        "005930"
+      ],
+      "category": "HBM / Memory / Storage",
+      "node": "HBM Memory",
+      "role": "HBM/DRAM/NAND/foundry/device AI",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 268500.0,
+      "change_pct": 391.75824175824175,
+      "price_position_52w_pct": 96.19346171070309,
+      "return_20d_pct": 27.55344418052257,
+      "page": "/research-desk/market-ontology/company-reports/005930-ks.html",
+      "summary": "HBM Memory · HBM/DRAM/NAND/foundry/device AI · 🟠 주황불"
+    },
+    {
+      "company": "SK Hynix",
+      "symbol": "000660.KS",
+      "aliases": [
+        "sk hynix",
+        "000660.ks",
+        "000660",
+        "hynix"
+      ],
+      "category": "HBM / Memory / Storage",
+      "node": "HBM Memory",
+      "role": "HBM/DRAM leader / NVIDIA supply chain",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 1686000.0,
+      "change_pct": 785.9695218076721,
+      "price_position_52w_pct": 99.80029290374118,
+      "return_20d_pct": 63.21393998063891,
+      "page": "/research-desk/market-ontology/company-reports/000660-ks.html",
+      "summary": "HBM Memory · HBM/DRAM leader / NVIDIA supply chain · 🟠 주황불"
+    },
+    {
+      "company": "Western Digital",
+      "symbol": "WDC.US",
+      "aliases": [
+        "western digital",
+        "wdc.us",
+        "wdc"
+      ],
+      "category": "HBM / Memory / Storage",
+      "node": "HBM Memory",
+      "role": "storage/NAND",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 480.0,
+      "change_pct": 983.5214446952597,
+      "price_position_52w_pct": 99.12043565318992,
+      "return_20d_pct": 39.76647649791878,
+      "page": "/research-desk/market-ontology/company-reports/wdc-us.html",
+      "summary": "HBM Memory · storage/NAND · 🟠 주황불"
+    },
+    {
+      "company": "Seagate",
+      "symbol": "STX.US",
+      "aliases": [
+        "seagate",
+        "stx.us",
+        "stx"
+      ],
+      "category": "HBM / Memory / Storage",
+      "node": "HBM Memory",
+      "role": "HDD/data storage",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 782.64,
+      "change_pct": 712.7102803738319,
+      "price_position_52w_pct": 97.25922676150991,
+      "return_20d_pct": 55.554229007329845,
+      "page": "/research-desk/market-ontology/company-reports/stx-us.html",
+      "summary": "HBM Memory · HDD/data storage · 🟠 주황불"
+    },
+    {
+      "company": "SK Square",
+      "symbol": "402340.KS",
+      "aliases": [
+        "sk square",
+        "402340.ks",
+        "402340"
+      ],
+      "category": "HBM / Memory / Storage",
+      "node": "HBM Memory",
+      "role": "SK Hynix holding-company exposure",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 1098000.0,
+      "change_pct": 1080.6451612903227,
+      "price_position_52w_pct": 95.17456713028669,
+      "return_20d_pct": 89.96539792387543,
+      "page": "/research-desk/market-ontology/company-reports/402340-ks.html",
+      "summary": "HBM Memory · SK Hynix holding-company exposure · 🟠 주황불"
+    },
+    {
+      "company": "Korea Zinc",
+      "symbol": "010130.KS",
+      "aliases": [
+        "korea zinc",
+        "010130.ks",
+        "010130"
+      ],
+      "category": "HBM / Memory / Storage",
+      "node": "HBM Memory",
+      "role": "strategic materials / battery-metal adjacency",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 1559000.0,
+      "change_pct": 97.09228824273072,
+      "price_position_52w_pct": 57.2108843537415,
+      "return_20d_pct": -1.6403785488959044,
+      "page": "/research-desk/market-ontology/company-reports/010130-ks.html",
+      "summary": "HBM Memory · strategic materials / battery-metal adjacency · 🟢 초록불"
+    },
+    {
+      "company": "Microsoft",
+      "symbol": "MSFT.US",
+      "aliases": [
+        "microsoft",
+        "msft.us",
+        "msft"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "Azure/OpenAI/enterprise AI",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 415.12,
+      "change_pct": -5.260515325102132,
+      "price_position_52w_pct": 29.542600418637953,
+      "return_20d_pct": 11.931406008952106,
+      "page": "/research-desk/market-ontology/company-reports/msft-us.html",
+      "summary": "Cloud Hyperscaler · Azure/OpenAI/enterprise AI · 🟢 초록불"
+    },
+    {
+      "company": "Alphabet",
+      "symbol": "GOOGL.US",
+      "aliases": [
+        "alphabet",
+        "googl.us",
+        "googl"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "Google Cloud/TPU/Gemini",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 400.8,
+      "change_pct": 159.78739953331603,
+      "price_position_52w_pct": 99.51961569842281,
+      "return_20d_pct": 26.339683626862854,
+      "page": "/research-desk/market-ontology/company-reports/googl-us.html",
+      "summary": "Cloud Hyperscaler · Google Cloud/TPU/Gemini · 🟠 주황불"
+    },
+    {
+      "company": "Amazon",
+      "symbol": "AMZN.US",
+      "aliases": [
+        "amazon",
+        "amzn.us",
+        "amzn"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "AWS/Trainium/retail cloud cashflow",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 272.68,
+      "change_pct": 41.96168263223656,
+      "price_position_52w_pct": 93.27231353636253,
+      "return_20d_pct": 14.388788662895347,
+      "page": "/research-desk/market-ontology/company-reports/amzn-us.html",
+      "summary": "Cloud Hyperscaler · AWS/Trainium/retail cloud cashflow · 🟠 주황불"
+    },
+    {
+      "company": "Meta",
+      "symbol": "META.US",
+      "aliases": [
+        "meta",
+        "meta.us"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "AI capex/open models/social platform",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 609.63,
+      "change_pct": 1.9431113192087097,
+      "price_position_52w_pct": 32.38160563666842,
+      "return_20d_pct": -3.2118225989972937,
+      "page": "/research-desk/market-ontology/company-reports/meta-us.html",
+      "summary": "Cloud Hyperscaler · AI capex/open models/social platform · 🟢 초록불"
+    },
+    {
+      "company": "Oracle",
+      "symbol": "ORCL.US",
+      "aliases": [
+        "oracle",
+        "orcl.us",
+        "orcl"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "OCI/cloud AI infra",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 195.95,
+      "change_pct": 30.372588157019276,
+      "price_position_52w_pct": 29.069379327509044,
+      "return_20d_pct": 41.90021377112103,
+      "page": "/research-desk/market-ontology/company-reports/orcl-us.html",
+      "summary": "Cloud Hyperscaler · OCI/cloud AI infra · 🟠 주황불"
+    },
+    {
+      "company": "Snowflake",
+      "symbol": "SNOW.US",
+      "aliases": [
+        "snowflake",
+        "snow.us",
+        "snow"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "data cloud/enterprise AI",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 152.45,
+      "change_pct": -12.369948841754331,
+      "price_position_52w_pct": 21.032207160156,
+      "return_20d_pct": 25.877300992243345,
+      "page": "/research-desk/market-ontology/company-reports/snow-us.html",
+      "summary": "Cloud Hyperscaler · data cloud/enterprise AI · 🟠 주황불"
+    },
+    {
+      "company": "Palantir",
+      "symbol": "PLTR.US",
+      "aliases": [
+        "palantir",
+        "pltr.us",
+        "pltr"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "AI operations platform",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 137.8,
+      "change_pct": 15.652538816617712,
+      "price_position_52w_pct": 24.72467911362288,
+      "return_20d_pct": 7.605811828123565,
+      "page": "/research-desk/market-ontology/company-reports/pltr-us.html",
+      "summary": "Cloud Hyperscaler · AI operations platform · 🟢 초록불"
+    },
+    {
+      "company": "NAVER",
+      "symbol": "035420.KS",
+      "aliases": [
+        "naver",
+        "035420.ks",
+        "035420"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "Korean AI platform / cloud / search / sovereign AI",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 215000.0,
+      "change_pct": 13.937466878643349,
+      "price_position_52w_pct": 29.762949956101842,
+      "return_20d_pct": 6.699751861042191,
+      "page": "/research-desk/market-ontology/company-reports/035420-ks.html",
+      "summary": "Cloud Hyperscaler · Korean AI platform / cloud / search / sovereign AI · 🟢 초록불"
+    },
+    {
+      "company": "Kakao",
+      "symbol": "035720.KS",
+      "aliases": [
+        "kakao",
+        "035720.ks",
+        "035720"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "Korean consumer AI/platform ecosystem",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 46000.0,
+      "change_pct": 24.324324324324326,
+      "price_position_52w_pct": 27.47875354107649,
+      "return_20d_pct": -3.866248693834906,
+      "page": "/research-desk/market-ontology/company-reports/035720-ks.html",
+      "summary": "Cloud Hyperscaler · Korean consumer AI/platform ecosystem · 🟢 초록불"
+    },
+    {
+      "company": "Samsung SDS",
+      "symbol": "018260.KS",
+      "aliases": [
+        "samsung sds",
+        "018260.ks",
+        "018260"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "enterprise cloud / AI transformation / data center services",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 175400.0,
+      "change_pct": 36.49805447470817,
+      "price_position_52w_pct": 67.5,
+      "return_20d_pct": 13.896103896103895,
+      "page": "/research-desk/market-ontology/company-reports/018260-ks.html",
+      "summary": "Cloud Hyperscaler · enterprise cloud / AI transformation / data center services · 🟢 초록불"
+    },
+    {
+      "company": "Vertiv",
+      "symbol": "VRT.US",
+      "aliases": [
+        "vertiv",
+        "vrt.us",
+        "vrt"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "data center power/cooling",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 339.97,
+      "change_pct": 255.0971380823063,
+      "price_position_52w_pct": 92.57779074153265,
+      "return_20d_pct": 15.201117168230049,
+      "page": "/research-desk/market-ontology/company-reports/vrt-us.html",
+      "summary": "Power Infrastructure · data center power/cooling · 🟠 주황불"
+    },
+    {
+      "company": "Eaton",
+      "symbol": "ETN.US",
+      "aliases": [
+        "eaton",
+        "etn.us",
+        "etn"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "electrical equipment",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 401.51,
+      "change_pct": 30.767978113600826,
+      "price_position_52w_pct": 73.63594612909935,
+      "return_20d_pct": -0.3697270471464065,
+      "page": "/research-desk/market-ontology/company-reports/etn-us.html",
+      "summary": "Power Infrastructure · electrical equipment · 🟢 초록불"
+    },
+    {
+      "company": "Schneider Electric",
+      "symbol": "SU.PA",
+      "aliases": [
+        "schneider electric",
+        "su.pa"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "energy management/data center electrical",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": null,
+      "change_pct": null,
+      "price_position_52w_pct": null,
+      "return_20d_pct": null,
+      "page": "/research-desk/market-ontology/company-reports/su-pa.html",
+      "summary": "Power Infrastructure · energy management/data center electrical · 🟢 초록불"
+    },
+    {
+      "company": "Quanta Services",
+      "symbol": "PWR.US",
+      "aliases": [
+        "quanta services",
+        "pwr.us",
+        "pwr"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "grid/infrastructure contractor",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 745.0,
+      "change_pct": 128.35249042145594,
+      "price_position_52w_pct": 90.65550315644015,
+      "return_20d_pct": 27.272109239335695,
+      "page": "/research-desk/market-ontology/company-reports/pwr-us.html",
+      "summary": "Power Infrastructure · grid/infrastructure contractor · 🟠 주황불"
+    },
+    {
+      "company": "Constellation Energy",
+      "symbol": "CEG.US",
+      "aliases": [
+        "constellation energy",
+        "ceg.us",
+        "ceg"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "nuclear/power supply",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 303.63,
+      "change_pct": 12.210355149857726,
+      "price_position_52w_pct": 35.61392779674718,
+      "return_20d_pct": 5.979057591623027,
+      "page": "/research-desk/market-ontology/company-reports/ceg-us.html",
+      "summary": "Power Infrastructure · nuclear/power supply · 🟢 초록불"
+    },
+    {
+      "company": "GE Vernova",
+      "symbol": "GEV.US",
+      "aliases": [
+        "ge vernova",
+        "gev.us",
+        "gev"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "grid/gas turbine/electrification",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 1040.15,
+      "change_pct": 163.99746192893403,
+      "price_position_52w_pct": 82.16173204042994,
+      "return_20d_pct": 4.925754783017422,
+      "page": "/research-desk/market-ontology/company-reports/gev-us.html",
+      "summary": "Power Infrastructure · grid/gas turbine/electrification · 🟢 초록불"
+    },
+    {
+      "company": "NuScale Power",
+      "symbol": "SMR.US",
+      "aliases": [
+        "nuscale power",
+        "smr.us",
+        "smr"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "SMR/nuclear option",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 12.55,
+      "change_pct": -25.871234494979323,
+      "price_position_52w_pct": 7.61787067547359,
+      "return_20d_pct": 36.264928860141765,
+      "page": "/research-desk/market-ontology/company-reports/smr-us.html",
+      "summary": "Power Infrastructure · SMR/nuclear option · 🟠 주황불"
+    },
+    {
+      "company": "HD Hyundai Electric",
+      "symbol": "267260.KS",
+      "aliases": [
+        "hd hyundai electric",
+        "267260.ks",
+        "267260",
+        "hd hyundai",
+        "hyundai electric"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "transformer / power equipment for grid & data center demand",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 1403000.0,
+      "change_pct": 309.03790087463557,
+      "price_position_52w_pct": 97.54990925589837,
+      "return_20d_pct": 43.16326530612245,
+      "page": "/research-desk/market-ontology/company-reports/267260-ks.html",
+      "summary": "Power Infrastructure · transformer / power equipment for grid & data center demand · 🟠 주황불"
+    },
+    {
+      "company": "LS ELECTRIC",
+      "symbol": "010120.KS",
+      "aliases": [
+        "ls electric",
+        "010120.ks",
+        "010120"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "switchgear / grid automation / power infra",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 313000.0,
+      "change_pct": 612.9840546697038,
+      "price_position_52w_pct": 92.47863247863248,
+      "return_20d_pct": 98.6040609137056,
+      "page": "/research-desk/market-ontology/company-reports/010120-ks.html",
+      "summary": "Power Infrastructure · switchgear / grid automation / power infra · 🟠 주황불"
+    },
+    {
+      "company": "Hyosung Heavy Industries",
+      "symbol": "298040.KS",
+      "aliases": [
+        "hyosung heavy industries",
+        "298040.ks",
+        "298040"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "transformer / heavy electrical equipment",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 4398000.0,
+      "change_pct": 718.9944134078212,
+      "price_position_52w_pct": 91.88104791125797,
+      "return_20d_pct": 50.10238907849829,
+      "page": "/research-desk/market-ontology/company-reports/298040-ks.html",
+      "summary": "Power Infrastructure · transformer / heavy electrical equipment · 🟠 주황불"
+    },
+    {
+      "company": "Iljin Electric",
+      "symbol": "103590.KS",
+      "aliases": [
+        "iljin electric",
+        "103590.ks",
+        "103590"
+      ],
+      "category": "Data Center Power / Cooling / Grid",
+      "node": "Power Infrastructure",
+      "role": "power cable / transformer / grid equipment",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 144100.0,
+      "change_pct": 400.34722222222223,
+      "price_position_52w_pct": 96.86856201071281,
+      "return_20d_pct": 80.125,
+      "page": "/research-desk/market-ontology/company-reports/103590-ks.html",
+      "summary": "Power Infrastructure · power cable / transformer / grid equipment · 🟠 주황불"
+    },
+    {
+      "company": "Arista Networks",
+      "symbol": "ANET.US",
+      "aliases": [
+        "arista networks",
+        "anet.us",
+        "anet"
+      ],
+      "category": "Networking / Optical / Interconnect",
+      "node": "AI Data Center Networking",
+      "role": "AI data center Ethernet switching",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 141.77,
+      "change_pct": 62.44986822504872,
+      "price_position_52w_pct": 60.36146576108264,
+      "return_20d_pct": -3.7869059194986177,
+      "page": "/research-desk/market-ontology/company-reports/anet-us.html",
+      "summary": "AI Data Center Networking · AI data center Ethernet switching · 🟢 초록불"
+    },
+    {
+      "company": "Cisco",
+      "symbol": "CSCO.US",
+      "aliases": [
+        "cisco",
+        "csco.us",
+        "csco"
+      ],
+      "category": "Networking / Optical / Interconnect",
+      "node": "AI Data Center Networking",
+      "role": "networking/security",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 96.57,
+      "change_pct": 61.731703232289384,
+      "price_position_52w_pct": 98.80256341985292,
+      "return_20d_pct": 17.45317266631652,
+      "page": "/research-desk/market-ontology/company-reports/csco-us.html",
+      "summary": "AI Data Center Networking · networking/security · 🟠 주황불"
+    },
+    {
+      "company": "Ciena",
+      "symbol": "CIEN.US",
+      "aliases": [
+        "ciena",
+        "cien.us",
+        "cien"
+      ],
+      "category": "Networking / Optical / Interconnect",
+      "node": "AI Data Center Networking",
+      "role": "optical networking",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 548.11,
+      "change_pct": 632.9633591869484,
+      "price_position_52w_pct": 93.04691389516236,
+      "return_20d_pct": 10.501595125210251,
+      "page": "/research-desk/market-ontology/company-reports/cien-us.html",
+      "summary": "AI Data Center Networking · optical networking · 🟠 주황불"
+    },
+    {
+      "company": "Coherent",
+      "symbol": "COHR.US",
+      "aliases": [
+        "coherent",
+        "cohr.us",
+        "cohr"
+      ],
+      "category": "Networking / Optical / Interconnect",
+      "node": "AI Data Center Networking",
+      "role": "optical components",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 335.26,
+      "change_pct": 374.93979317183727,
+      "price_position_52w_pct": 89.98406764631859,
+      "return_20d_pct": 9.027642276422764,
+      "page": "/research-desk/market-ontology/company-reports/cohr-us.html",
+      "summary": "AI Data Center Networking · optical components · 🟠 주황불"
+    },
+    {
+      "company": "Lumentum",
+      "symbol": "LITE.US",
+      "aliases": [
+        "lumentum",
+        "lite.us",
+        "lite"
+      ],
+      "category": "Networking / Optical / Interconnect",
+      "node": "AI Data Center Networking",
+      "role": "optical components",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 903.8,
+      "change_pct": 1276.4849223271399,
+      "price_position_52w_pct": 87.75365196715421,
+      "return_20d_pct": 0.7243967787204486,
+      "page": "/research-desk/market-ontology/company-reports/lite-us.html",
+      "summary": "AI Data Center Networking · optical components · 🟠 주황불"
+    },
+    {
+      "company": "LG Innotek",
+      "symbol": "011070.KS",
+      "aliases": [
+        "lg innotek",
+        "011070.ks",
+        "011070"
+      ],
+      "category": "Networking / Optical / Interconnect",
+      "node": "AI Data Center Networking",
+      "role": "optical/electronics components / camera & substrate adjacency",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 624000.0,
+      "change_pct": 350.8670520231214,
+      "price_position_52w_pct": 95.11527940601798,
+      "return_20d_pct": 79.82708933717579,
+      "page": "/research-desk/market-ontology/company-reports/011070-ks.html",
+      "summary": "AI Data Center Networking · optical/electronics components / camera & substrate adjacency · 🟠 주황불"
+    },
+    {
+      "company": "Apple",
+      "symbol": "AAPL.US",
+      "aliases": [
+        "apple",
+        "aapl.us",
+        "aapl"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "on-device AI ecosystem",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 293.32,
+      "change_pct": 48.523975897513786,
+      "price_position_52w_pct": 98.57847016560379,
+      "return_20d_pct": 12.607489108020475,
+      "page": "/research-desk/market-ontology/company-reports/aapl-us.html",
+      "summary": "Applied AI Demand · on-device AI ecosystem · 🟠 주황불"
+    },
+    {
+      "company": "Tesla",
+      "symbol": "TSLA.US",
+      "aliases": [
+        "tesla",
+        "tsla.us",
+        "tsla"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "robotics/autonomy AI",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 428.35,
+      "change_pct": 50.39323081244296,
+      "price_position_52w_pct": 68.76163988229051,
+      "return_20d_pct": 22.75397192015598,
+      "page": "/research-desk/market-ontology/company-reports/tsla-us.html",
+      "summary": "Applied AI Demand · robotics/autonomy AI · 🟠 주황불"
+    },
+    {
+      "company": "Intuitive Surgical",
+      "symbol": "ISRG.US",
+      "aliases": [
+        "intuitive surgical",
+        "isrg.us",
+        "isrg"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "robotic surgery",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 450.06,
+      "change_pct": -16.370596105247504,
+      "price_position_52w_pct": 12.622132801384907,
+      "return_20d_pct": -0.12427214132871844,
+      "page": "/research-desk/market-ontology/company-reports/isrg-us.html",
+      "summary": "Applied AI Demand · robotic surgery · 🟢 초록불"
+    },
+    {
+      "company": "Stryker",
+      "symbol": "SYK.US",
+      "aliases": [
+        "stryker",
+        "syk.us",
+        "syk"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "medical robotics/devices",
+      "traffic_light": "🟡 노란불",
+      "traffic_reason": "관찰은 필요하나 신호가 아직 혼재",
+      "price": 285.47,
+      "change_pct": -25.359514720493635,
+      "price_position_52w_pct": 0.43338425546677206,
+      "return_20d_pct": -15.827803291327381,
+      "page": "/research-desk/market-ontology/company-reports/syk-us.html",
+      "summary": "Applied AI Demand · medical robotics/devices · 🟡 노란불"
+    },
+    {
+      "company": "Rockwell Automation",
+      "symbol": "ROK.US",
+      "aliases": [
+        "rockwell automation",
+        "rok.us",
+        "rok"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "industrial automation",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 453.89,
+      "change_pct": 55.84741106990797,
+      "price_position_52w_pct": 94.462075808245,
+      "return_20d_pct": 14.618686868686858,
+      "page": "/research-desk/market-ontology/company-reports/rok-us.html",
+      "summary": "Applied AI Demand · industrial automation · 🟠 주황불"
+    },
+    {
+      "company": "Teradyne",
+      "symbol": "TER.US",
+      "aliases": [
+        "teradyne",
+        "ter.us",
+        "ter"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "collaborative robots/test",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 359.77,
+      "change_pct": 368.20666319625184,
+      "price_position_52w_pct": 81.98890916296445,
+      "return_20d_pct": -2.2337537575790156,
+      "page": "/research-desk/market-ontology/company-reports/ter-us.html",
+      "summary": "Applied AI Demand · collaborative robots/test · 🟢 초록불"
+    },
+    {
+      "company": "Hyundai Motor",
+      "symbol": "005380.KS",
+      "aliases": [
+        "hyundai motor",
+        "005380.ks",
+        "005380"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "mobility autonomy / robotics adjacency",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 613000.0,
+      "change_pct": 227.632282202031,
+      "price_position_52w_pct": 85.4244632657081,
+      "return_20d_pct": 20.669291338582685,
+      "page": "/research-desk/market-ontology/company-reports/005380-ks.html",
+      "summary": "Applied AI Demand · mobility autonomy / robotics adjacency · 🟠 주황불"
+    },
+    {
+      "company": "Hyundai Mobis",
+      "symbol": "012330.KS",
+      "aliases": [
+        "hyundai mobis",
+        "012330.ks",
+        "012330"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "ADAS / automotive electronics / robotics supply chain",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 509000.0,
+      "change_pct": 96.52509652509652,
+      "price_position_52w_pct": 87.62214983713355,
+      "return_20d_pct": 25.06142506142506,
+      "page": "/research-desk/market-ontology/company-reports/012330-ks.html",
+      "summary": "Applied AI Demand · ADAS / automotive electronics / robotics supply chain · 🟠 주황불"
+    },
+    {
+      "company": "Doosan Robotics",
+      "symbol": "454910.KS",
+      "aliases": [
+        "doosan robotics",
+        "454910.ks",
+        "454910"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "collaborative robots",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 101000.0,
+      "change_pct": 97.65166340508806,
+      "price_position_52w_pct": 65.11490866234531,
+      "return_20d_pct": 13.866967305524236,
+      "page": "/research-desk/market-ontology/company-reports/454910-ks.html",
+      "summary": "Applied AI Demand · collaborative robots · 🟢 초록불"
+    },
+    {
+      "company": "Rainbow Robotics",
+      "symbol": "277810.KQ",
+      "aliases": [
+        "rainbow robotics",
+        "277810.kq",
+        "277810"
+      ],
+      "category": "Edge / Robotics / Healthcare AI",
+      "node": "Applied AI Demand",
+      "role": "humanoid/industrial robotics",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 784000.0,
+      "change_pct": 177.52212389380531,
+      "price_position_52w_pct": 78.08619430241052,
+      "return_20d_pct": 29.37293729372936,
+      "page": "/research-desk/market-ontology/company-reports/277810-kq.html",
+      "summary": "Applied AI Demand · humanoid/industrial robotics · 🟠 주황불"
+    },
+    {
+      "company": "CrowdStrike",
+      "symbol": "CRWD.US",
+      "aliases": [
+        "crowdstrike",
+        "crwd.us",
+        "crwd"
+      ],
+      "category": "AI Security / Observability / Data Layer",
+      "node": "AI Software Infrastructure",
+      "role": "cybersecurity/AI security",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 527.77,
+      "change_pct": 23.129505634229986,
+      "price_position_52w_pct": 82.54526703286486,
+      "return_20d_pct": 39.2459541179931,
+      "page": "/research-desk/market-ontology/company-reports/crwd-us.html",
+      "summary": "AI Software Infrastructure · cybersecurity/AI security · 🟠 주황불"
+    },
+    {
+      "company": "Palo Alto Networks",
+      "symbol": "PANW.US",
+      "aliases": [
+        "palo alto networks",
+        "panw.us",
+        "panw"
+      ],
+      "category": "AI Security / Observability / Data Layer",
+      "node": "AI Software Infrastructure",
+      "role": "security platform",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 207.88,
+      "change_pct": 10.263618522251097,
+      "price_position_52w_pct": 81.28272029152205,
+      "return_20d_pct": 33.48744988325893,
+      "page": "/research-desk/market-ontology/company-reports/panw-us.html",
+      "summary": "AI Software Infrastructure · security platform · 🟠 주황불"
+    },
+    {
+      "company": "Datadog",
+      "symbol": "DDOG.US",
+      "aliases": [
+        "datadog",
+        "ddog.us",
+        "ddog"
+      ],
+      "category": "AI Security / Observability / Data Layer",
+      "node": "AI Software Infrastructure",
+      "role": "observability/cloud monitoring",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 200.16,
+      "change_pct": 83.26313861930049,
+      "price_position_52w_pct": 98.52430320514777,
+      "return_20d_pct": 89.9591864692181,
+      "page": "/research-desk/market-ontology/company-reports/ddog-us.html",
+      "summary": "AI Software Infrastructure · observability/cloud monitoring · 🟠 주황불"
+    },
+    {
+      "company": "MongoDB",
+      "symbol": "MDB.US",
+      "aliases": [
+        "mongodb",
+        "mdb.us",
+        "mdb"
+      ],
+      "category": "AI Security / Observability / Data Layer",
+      "node": "AI Software Infrastructure",
+      "role": "developer data platform",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 299.47,
+      "change_pct": 67.05902041727103,
+      "price_position_52w_pct": 45.65725752263972,
+      "return_20d_pct": 32.538173952088556,
+      "page": "/research-desk/market-ontology/company-reports/mdb-us.html",
+      "summary": "AI Software Infrastructure · developer data platform · 🟠 주황불"
+    },
+    {
+      "company": "Cloudflare",
+      "symbol": "NET.US",
+      "aliases": [
+        "cloudflare",
+        "net.us",
+        "net"
+      ],
+      "category": "AI Security / Observability / Data Layer",
+      "node": "AI Software Infrastructure",
+      "role": "edge/network/security",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 196.13,
+      "change_pct": 57.77491754484755,
+      "price_position_52w_pct": 50.79352966229761,
+      "return_20d_pct": 17.45014285183002,
+      "page": "/research-desk/market-ontology/company-reports/net-us.html",
+      "summary": "AI Software Infrastructure · edge/network/security · 🟢 초록불"
+    },
+    {
+      "company": "LG Energy Solution",
+      "symbol": "373220.KS",
+      "aliases": [
+        "lg energy solution",
+        "373220.ks",
+        "373220"
+      ],
+      "category": "Battery / ESS / Power Storage",
+      "node": "Power Infrastructure",
+      "role": "battery cells / ESS / global EV-storage supply",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 476500.0,
+      "change_pct": 45.49618320610687,
+      "price_position_52w_pct": 80.65134099616859,
+      "return_20d_pct": 17.364532019704427,
+      "page": "/research-desk/market-ontology/company-reports/373220-ks.html",
+      "summary": "Power Infrastructure · battery cells / ESS / global EV-storage supply · 🟢 초록불"
+    },
+    {
+      "company": "Samsung SDI",
+      "symbol": "006400.KS",
+      "aliases": [
+        "samsung sdi",
+        "006400.ks",
+        "006400"
+      ],
+      "category": "Battery / ESS / Power Storage",
+      "node": "Power Infrastructure",
+      "role": "battery cells / ESS / high-density storage",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 678000.0,
+      "change_pct": 293.7282229965157,
+      "price_position_52w_pct": 92.03962497788784,
+      "return_20d_pct": 43.796394485684,
+      "page": "/research-desk/market-ontology/company-reports/006400-ks.html",
+      "summary": "Power Infrastructure · battery cells / ESS / high-density storage · 🟠 주황불"
+    },
+    {
+      "company": "LG Chem",
+      "symbol": "051910.KS",
+      "aliases": [
+        "lg chem",
+        "051910.ks",
+        "051910"
+      ],
+      "category": "Battery / ESS / Power Storage",
+      "node": "Power Infrastructure",
+      "role": "battery materials / chemicals",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 429500.0,
+      "change_pct": 105.50239234449761,
+      "price_position_52w_pct": 96.875,
+      "return_20d_pct": 24.67343976777938,
+      "page": "/research-desk/market-ontology/company-reports/051910-ks.html",
+      "summary": "Power Infrastructure · battery materials / chemicals · 🟠 주황불"
+    },
+    {
+      "company": "POSCO Future M",
+      "symbol": "003670.KS",
+      "aliases": [
+        "posco future m",
+        "003670.ks",
+        "003670"
+      ],
+      "category": "Battery / ESS / Power Storage",
+      "node": "Power Infrastructure",
+      "role": "cathode/anode materials",
+      "traffic_light": "🟠 주황불",
+      "traffic_reason": "가격/모멘텀이 앞서 있어 확인 필요",
+      "price": 290000.0,
+      "change_pct": 129.24901185770753,
+      "price_position_52w_pct": 95.27363184079603,
+      "return_20d_pct": 33.33333333333333,
+      "page": "/research-desk/market-ontology/company-reports/003670-ks.html",
+      "summary": "Power Infrastructure · cathode/anode materials · 🟠 주황불"
+    },
+    {
+      "company": "SK Innovation",
+      "symbol": "096770.KS",
+      "aliases": [
+        "sk innovation",
+        "096770.ks",
+        "096770"
+      ],
+      "category": "Battery / ESS / Power Storage",
+      "node": "Power Infrastructure",
+      "role": "battery / energy / refining transition",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": 134700.0,
+      "change_pct": 44.06417112299465,
+      "price_position_52w_pct": 72.2520107238606,
+      "return_20d_pct": 11.877076411960141,
+      "page": "/research-desk/market-ontology/company-reports/096770-ks.html",
+      "summary": "Power Infrastructure · battery / energy / refining transition · 🟢 초록불"
+    }
+  ]
+}
