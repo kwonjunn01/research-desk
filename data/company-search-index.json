@@ -1,7 +1,7 @@
 {
   "manager": "Kimi",
   "generated_at": "2026-05-09",
-  "count": 77,
+  "count": 78,
   "items": [
     {
       "company": "NVIDIA",
@@ -989,6 +989,34 @@
       "price_to_book": 1.37,
       "page": "/research-desk/market-ontology/company-reports/018260-ks.html",
       "summary": "Cloud Hyperscaler · enterprise cloud / AI transformation / data center services · 🟢 초록불"
+    },
+    {
+      "company": "Nebius Group N.V.",
+      "symbol": "NBIS.US",
+      "aliases": [
+        "nebius group n.v.",
+        "nbis.us",
+        "nbis",
+        "네비우스",
+        "nebius",
+        "nebius group",
+        "네비우스 그룹"
+      ],
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "AI GPU 클라우드 및 데이터센터 인프라 공급자",
+      "traffic_light": "🟢 초록불",
+      "traffic_reason": "관련 근거가 있고 가격 급락 신호는 제한적",
+      "price": null,
+      "change_pct": null,
+      "price_position_52w_pct": null,
+      "return_20d_pct": null,
+      "fundamentals_coverage": null,
+      "trailing_pe": null,
+      "forward_pe": null,
+      "price_to_book": null,
+      "page": "/research-desk/market-ontology/company-reports/nbis-us.html",
+      "summary": "Cloud Hyperscaler · AI GPU 클라우드 및 데이터센터 인프라 공급자 · 🟢 초록불"
     },
     {
       "company": "Vertiv",

@@ -470,6 +470,17 @@
       "bucket": "demand_platform"
     },
     {
+      "id": "NBIS.US",
+      "symbol": "NBIS.US",
+      "company": "Nebius Group N.V.",
+      "category": "Cloud Hyperscaler / AI Platform",
+      "node": "Cloud Hyperscaler",
+      "role": "AI GPU 클라우드 및 데이터센터 인프라 공급자",
+      "tier": "watch",
+      "region": "Europe",
+      "bucket": "demand_platform"
+    },
+    {
       "id": "VRT.US",
       "symbol": "VRT.US",
       "company": "Vertiv",
@@ -1660,6 +1671,76 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
+      "source": "NBIS.US",
+      "target": "NVDA.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "AMD.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "AVGO.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "MRVL.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "QCOM.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "ARM.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "INTC.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.9,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 compute_silicon 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
       "source": "DDOG.US",
       "target": "NVDA.US",
       "relation": "demand_pull",
@@ -4300,6 +4381,106 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
+      "source": "NBIS.US",
+      "target": "MU.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "000660.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "WDC.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "STX.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "402340.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "010130.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "SNDK.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "440110.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "373220.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
       "source": "DDOG.US",
       "target": "MU.US",
       "relation": "demand_pull",
@@ -5270,6 +5451,76 @@
       "verification": "verify with filings/news/earnings calls"
     },
     {
+      "source": "NBIS.US",
+      "target": "VRT.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "SU.PA",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "PWR.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "CEG.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "GEV.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "SMR.US",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "010120.KS",
+      "relation": "capacity_pull",
+      "direction": "upstream",
+      "strength": 0.74,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 power_grid 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
       "source": "DDOG.US",
       "target": "VRT.US",
       "relation": "capacity_pull",
@@ -6176,6 +6427,76 @@
       "direction": "upstream",
       "strength": 0.72,
       "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "CSCO.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "CIEN.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "COHR.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "LITE.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "011070.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "ontology_mapper",
+      "verification": "verify with filings/news/earnings calls"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "PANW.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
       "agent": "ontology_mapper",
       "verification": "verify with filings/news/earnings calls"
     },
