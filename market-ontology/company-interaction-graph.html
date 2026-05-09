@@ -220,7 +220,7 @@ ${cmd}`;
       if (copyBtn) copyBtn.addEventListener('click', () => requestCreate(raw, cmd));
       return;
     }
-    result.innerHTML = '<div class="kimi-results-title">추천/검색 결과</div>' + items.slice(0, 8).map(x => `
+    result.innerHTML = '<div class="kimi-results-title">검색 결과 / 관찰 후보</div>' + items.slice(0, 8).map(x => `
       <a class="kimi-result" href="${x.page}">
         <span class="kimi-light">${String(x.traffic_light || '⚪').trim().split(/\s+/)[0]}</span>
         <b>${x.company} <em>${x.symbol}</em></b>
