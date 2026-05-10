@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily AI Research Radar — 2026-05-09</title>
+  <title>Daily AI Research Radar — 2026-05-11</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -164,7 +164,7 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Daily AI Research Radar — 2026-05-09</h1>
+  <main><article><h1>Daily AI Research Radar — 2026-05-11</h1>
 <p>tags: #daily #research-radar</p>
 <p><span class="badge">Home</span> / <span class="badge">Research Radar MOC</span> / <span class="badge">Weekly Review MOC</span></p>
 <blockquote>자동 수집 기반 초안이다. 공개/블로그화 전 사람이 검토한다.</blockquote>
@@ -172,32 +172,32 @@
 <ul>
 <li><strong>Total items:</strong> 79</li>
 <li><strong>HF Daily Papers:</strong> 30개 — 오늘 digest의 1순위 source</li>
-<li><strong>Collected at:</strong> 2026-05-08T23:30:41.562481+00:00 UTC — 최신성 점검용 수집 시각</li>
+<li><strong>Collected at:</strong> 2026-05-10T23:00:42.725932+00:00 UTC — 최신성 점검용 수집 시각</li>
 <li><strong>Sources:</strong> Hugging Face Daily Papers 30, GitHub 18, arXiv 16, Hacker News 15</li>
-<li><strong>Top topics:</strong> <span class="badge">AI Research</span> 29, <span class="badge">Agentic AI</span> 28, <span class="badge">Agent Evaluation</span> 11, <span class="badge">Inference Stack</span> 11, <span class="badge">LLM Orchestration</span> 8</li>
+<li><strong>Top topics:</strong> <span class="badge">AI Research</span> 31, <span class="badge">Agentic AI</span> 28, <span class="badge">Inference Stack</span> 11, <span class="badge">Agent Evaluation</span> 10, <span class="badge">LLM Orchestration</span> 8</li>
 </ul>
 <hr>
 <h2>0-1. 20초 요약</h2>
 <ul>
-<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 29, <span class="badge">Agentic AI</span> 28, <span class="badge">Agent Evaluation</span> 11 쪽으로 attention이 몰렸다.</li>
-<li><strong>먼저 볼 논문:</strong> <strong>#1 Agent / Tool-use</strong> · 👍 53: <a href="https://huggingface.co/papers/2605.06130">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</a> — Hugging Face Daily Papers candidate; HF upvotes=53</li>
-<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 31, <span class="badge">Agentic AI</span> 28, <span class="badge">Inference Stack</span> 11 쪽으로 attention이 몰렸다.</li>
+<li><strong>먼저 볼 논문:</strong> <strong>#1 Agent / Tool-use</strong> · 👍 79 · TIGER-Lab: <a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><strong>읽는 순서:</strong> HF Daily digest → 오늘의 지도/topic heat → Lens Radar → Agent AI Specialist Watch</li>
 </ul>
 <hr>
 <h2>1. HF Daily digest — 먼저 볼 논문</h2>
 <blockquote>HF Daily Papers 원 순위를 유지해 상위 10개만 먼저 훑는다. 자세한 해석은 아래 Lens Radar에서 확인한다.</blockquote>
 <ul>
-<li><strong>#1 Agent / Tool-use</strong> · 👍 53: <a href="https://huggingface.co/papers/2605.06130">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</a> — Hugging Face Daily Papers candidate; HF upvotes=53</li>
-<li><strong>#2 Agent / Tool-use</strong> · 👍 45 · TIGER-Lab: <a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers candidate; HF upvotes=45; submitted_by=TIGER-Lab</li>
-<li><strong>#3 Multimodal / Generation</strong> · 👍 42: <a href="https://huggingface.co/papers/2605.06548">Continuous Latent Diffusion Language Model</a> — Hugging Face Daily Papers candidate; HF upvotes=42</li>
-<li><strong>#4 RAG / Memory</strong> · 👍 37 · Tencent: <a href="https://huggingface.co/papers/2605.06416">MiA-Signature: Approximating Global Activation for Long-Context Understanding</a> — Hugging Face Daily Papers candidate; HF upvotes=37; submitted_by=Tencent</li>
-<li><strong>#5 RAG / Memory</strong> · 👍 35 · Novosibirsk State University: <a href="https://huggingface.co/papers/2605.04523">RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation</a> — Hugging Face Daily Papers candidate; HF upvotes=35; submitted_by=Novosibirsk State University</li>
-<li><strong>#6 Reasoning / Post-training</strong> · 👍 33 · Zhejiang University: <a href="https://huggingface.co/papers/2605.06507">MARBLE: Multi-Aspect Reward Balance for Diffusion RL</a> — Hugging Face Daily Papers candidate; HF upvotes=33; submitted_by=Zhejiang University</li>
-<li><strong>#7 Reasoning / Post-training</strong> · 👍 33: <a href="https://huggingface.co/papers/2605.06222">When to Trust Imagination: Adaptive Action Execution for World Action Models</a> — Hugging Face Daily Papers candidate; HF upvotes=33</li>
-<li><strong>#8 Reasoning / Post-training</strong> · 👍 22 · alibaba-inc: <a href="https://huggingface.co/papers/2605.06376">Continuous-Time Distribution Matching for Few-Step Diffusion Distillation</a> — Hugging Face Daily Papers candidate; HF upvotes=22; submitted_by=alibaba-inc</li>
-<li><strong>#9 Agent / Tool-use</strong> · 👍 21: <a href="https://huggingface.co/papers/2605.06614">SkillOS: Learning Skill Curation for Self-Evolving Agents</a> — Hugging Face Daily Papers candidate; HF upvotes=21</li>
-<li><strong>#10 Reasoning / Post-training</strong> · 👍 20: <a href="https://huggingface.co/papers/2605.05566">Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration</a> — Hugging Face Daily Papers candidate; HF upvotes=20</li>
+<li><strong>#1 Agent / Tool-use</strong> · 👍 79 · TIGER-Lab: <a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#2 Agent / Tool-use</strong> · 👍 64: <a href="https://huggingface.co/papers/2605.06130">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</a> — HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#3 Multimodal / Generation</strong> · 👍 61 · ByteDance Seed: <a href="https://huggingface.co/papers/2605.06548">Continuous Latent Diffusion Language Model</a> — HF Daily 상위권 Multimodal / Generation 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#4 RAG / Memory</strong> · 👍 49 · Tencent: <a href="https://huggingface.co/papers/2605.06416">MiA-Signature: Approximating Global Activation for Long-Context Understanding</a> — HF Daily 상위권 RAG / Memory 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#5 RAG / Memory</strong> · 👍 39 · Novosibirsk State University: <a href="https://huggingface.co/papers/2605.04523">RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation</a> — HF Daily 상위권 RAG / Memory 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#6 Reasoning / Post-training</strong> · 👍 37: <a href="https://huggingface.co/papers/2605.06222">When to Trust Imagination: Adaptive Action Execution for World Action Models</a> — HF Daily 상위권 Reasoning / Post-training 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#7 Reasoning / Post-training</strong> · 👍 34 · Zhejiang University: <a href="https://huggingface.co/papers/2605.06507">MARBLE: Multi-Aspect Reward Balance for Diffusion RL</a> — HF Daily 상위권 Reasoning / Post-training 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#8 Agent / Tool-use</strong> · 👍 33: <a href="https://huggingface.co/papers/2605.06614">SkillOS: Learning Skill Curation for Self-Evolving Agents</a> — HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#9 Reasoning / Post-training</strong> · 👍 32: <a href="https://huggingface.co/papers/2605.05566">Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration</a> — HF Daily 상위권 Reasoning / Post-training 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#10 General AI Research</strong> · 👍 26 · National University of Singapore: <a href="https://huggingface.co/papers/2605.04045">Audio-Visual Intelligence in Large Foundation Models</a> — HF Daily 상위권 General AI Research 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
 </ul>
 <hr>
 <h2>2. 한눈에 보는 오늘의 AI Research 지도</h2>
@@ -244,7 +244,7 @@
 <li>기본 해석: <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)가 <span class="badge">Personal Agent</span>(email/calendar/browser/files/local memory를 다루는 개인 업무 자동화 agent 영역)에 <strong>개인 업무/생활 agent 제품으로 내려옴</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a> — 오늘 수집 항목 중 <span class="badge">Agentic AI</span>와 <span class="badge">Personal Agent</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Agent Evaluation</span> → <strong>validates</strong> → <span class="badge">Agentic AI</span> | heat: 강 (11/28, evidence 2)</li>
+<li><span class="badge">Agent Evaluation</span> → <strong>validates</strong> → <span class="badge">Agentic AI</span> | heat: 강 (10/28, evidence 2)</li>
 <li>기본 해석: <span class="badge">Agent Evaluation</span>(SWE-bench, WebArena, GAIA, OSWorld 등 agent 성공률/실패 유형 평가 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>실제 성공률과 실패 유형을 검증함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
@@ -262,12 +262,12 @@
 <li>오늘 올라온 내용:</li>
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
 <li><a href="https://arxiv.org/abs/2605.06662v1">Multi-Robot Coordination in V2X Environments</a> — 오늘 수집 항목 중 <span class="badge">Inference Stack</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Inference Stack</span> → <strong>enables</strong> → <span class="badge">On-device LLM</span> | heat: 강 (11/5, evidence 2)</li>
+<li><span class="badge">Inference Stack</span> → <strong>enables</strong> → <span class="badge">On-device LLM</span> | heat: 강 (11/4, evidence 2)</li>
 <li>기본 해석: <span class="badge">Inference Stack</span>(serving, latency, throughput, memory/KV cache 같은 실행 비용 계층)가 <span class="badge">On-device LLM</span>(모델을 cloud가 아니라 local/mobile/edge에서 돌리는 흐름)에 <strong>가능하게 함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://arxiv.org/abs/2605.06652v1">When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels</a> — 오늘 수집 항목 중 <span class="badge">Inference Stack</span>와 <span class="badge">On-device LLM</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
 <li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
-<li><span class="badge">On-device LLM</span> → <strong>moves_workloads_to</strong> → <span class="badge">Edge AI</span> | heat: 강 (5/0, evidence 2)</li>
+<li><span class="badge">On-device LLM</span> → <strong>moves_workloads_to</strong> → <span class="badge">Edge AI</span> | heat: 중 (4/0, evidence 2)</li>
 <li>기본 해석: <span class="badge">On-device LLM</span>(모델을 cloud가 아니라 local/mobile/edge에서 돌리는 흐름)가 <span class="badge">Edge AI</span>(로봇·모바일·기기 안에서 AI가 작동하는 영역)에 <strong>작업을 edge/device 쪽으로 이동시킴</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://arxiv.org/abs/2605.06652v1">When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels</a> — 오늘 수집 항목 중 <span class="badge">On-device LLM</span>와 <span class="badge">Edge AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
@@ -290,14 +290,14 @@
 </ul>
 <h3>TL;DR</h3>
 <ul>
-<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 29, <span class="badge">Agentic AI</span> 28, <span class="badge">Agent Evaluation</span> 11 쪽으로 attention이 몰렸다.</li>
+<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 31, <span class="badge">Agentic AI</span> 28, <span class="badge">Inference Stack</span> 11 쪽으로 attention이 몰렸다.</li>
 <li><strong>먼저 볼 것:</strong> HF Daily Papers 상위권 → <code>오늘의 강력 관찰 후보</code> → Lens Radar 순서로 훑는다.</li>
 <li><strong>더 읽을지 판단:</strong> agent/workload/bottleneck으로 번역되는 신호가 있으면 상세 signal을 본다.</li>
 <li><strong>승격 기준:</strong> 논문/레포가 실제 production stack, 비용/latency, 재현성, adoption 증거와 연결되면 weekly 후보로 올린다.</li>
 </ul>
 <h3>5분 스캔</h3>
 <ul>
-<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://huggingface.co/papers/2605.06130">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span></li>
 <li><a href="https://huggingface.co/papers/2605.04523">RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation</a> — Hugging Face Daily Papers, score 13, <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
@@ -354,7 +354,7 @@
 <li><strong>Status:</strong> signal 후보</li>
 <li><strong>Why this lens matters:</strong> agent memory와 retrieval이 실제 신뢰성/보안 문제를 해결하는지</li>
 <li><strong>Hard signal 후보:</strong></li>
-<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
@@ -384,7 +384,7 @@
 <li><strong>Status:</strong> signal 후보</li>
 <li><strong>Why this lens matters:</strong> benchmark와 실제 사용 간 gap을 줄이는지</li>
 <li><strong>Hard signal 후보:</strong></li>
-<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
@@ -414,9 +414,9 @@
 <li><strong>Source:</strong> Hugging Face Daily Papers</li>
 <li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a></li>
 <li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
-<li><strong>Why it matters:</strong> Hugging Face Daily Papers candidate; HF upvotes=45; submitted_by=TIGER-Lab</li>
+<li><strong>Why it matters:</strong> HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
 <li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
-<li><strong>Priority score:</strong> 16</li>
+<li><strong>Priority score:</strong> 18</li>
 <li><strong>Tags:</strong> #signal</li>
 </ul>
 <h3>Signal 2: Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</h3>
@@ -424,7 +424,7 @@
 <li><strong>Source:</strong> Hugging Face Daily Papers</li>
 <li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.06130">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</a></li>
 <li><strong>Topic:</strong> <span class="badge">Agentic AI</span></li>
-<li><strong>Why it matters:</strong> Hugging Face Daily Papers candidate; HF upvotes=53</li>
+<li><strong>Why it matters:</strong> HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
 <li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
 <li><strong>Priority score:</strong> 14</li>
 <li><strong>Tags:</strong> #signal</li>
@@ -434,7 +434,7 @@
 <li><strong>Source:</strong> Hugging Face Daily Papers</li>
 <li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.04523">RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation</a></li>
 <li><strong>Topic:</strong> <span class="badge">Agent Evaluation</span></li>
-<li><strong>Why it matters:</strong> Hugging Face Daily Papers candidate; HF upvotes=35; submitted_by=Novosibirsk State University</li>
+<li><strong>Why it matters:</strong> HF Daily 상위권 RAG / Memory 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
 <li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
 <li><strong>Priority score:</strong> 13</li>
 <li><strong>Tags:</strong> #signal</li>
@@ -491,35 +491,35 @@
 <ul>
 <li><strong>Type:</strong> HF Daily Paper</li>
 <li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a></li>
-<li><strong>One-line summary:</strong> Hugging Face Daily Papers candidate; HF upvotes=45; submitted_by=TIGER-Lab</li>
+<li><strong>One-line summary:</strong> HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
 <li><strong>Priority:</strong> High</li>
 </ul>
 <h3>Item 2: Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</h3>
 <ul>
 <li><strong>Type:</strong> HF Daily Paper</li>
 <li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.06130">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</a></li>
-<li><strong>One-line summary:</strong> Hugging Face Daily Papers candidate; HF upvotes=53</li>
+<li><strong>One-line summary:</strong> HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
 <li><strong>Priority:</strong> High</li>
 </ul>
 <h3>Item 3: RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation</h3>
 <ul>
 <li><strong>Type:</strong> HF Daily Paper</li>
 <li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.04523">RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation</a></li>
-<li><strong>One-line summary:</strong> Hugging Face Daily Papers candidate; HF upvotes=35; submitted_by=Novosibirsk State University</li>
+<li><strong>One-line summary:</strong> HF Daily 상위권 RAG / Memory 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
 <li><strong>Priority:</strong> High</li>
 </ul>
-<h3>Item 4: MARBLE: Multi-Aspect Reward Balance for Diffusion RL</h3>
-<ul>
-<li><strong>Type:</strong> HF Daily Paper</li>
-<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.06507">MARBLE: Multi-Aspect Reward Balance for Diffusion RL</a></li>
-<li><strong>One-line summary:</strong> Hugging Face Daily Papers candidate; HF upvotes=33; submitted_by=Zhejiang University</li>
-<li><strong>Priority:</strong> High</li>
-</ul>
-<h3>Item 5: Continuous Latent Diffusion Language Model</h3>
+<h3>Item 4: Continuous Latent Diffusion Language Model</h3>
 <ul>
 <li><strong>Type:</strong> HF Daily Paper</li>
 <li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.06548">Continuous Latent Diffusion Language Model</a></li>
-<li><strong>One-line summary:</strong> Hugging Face Daily Papers candidate; HF upvotes=42</li>
+<li><strong>One-line summary:</strong> HF Daily 상위권 Multimodal / Generation 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>Priority:</strong> High</li>
+</ul>
+<h3>Item 5: MARBLE: Multi-Aspect Reward Balance for Diffusion RL</h3>
+<ul>
+<li><strong>Type:</strong> HF Daily Paper</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.06507">MARBLE: Multi-Aspect Reward Balance for Diffusion RL</a></li>
+<li><strong>One-line summary:</strong> HF Daily 상위권 Reasoning / Post-training 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
 <li><strong>Priority:</strong> High</li>
 </ul>
 <hr>
@@ -549,8 +549,8 @@
 <h3>오늘의 layer heat</h3>
 <ul>
 <li><strong>Model &amp; Reasoning:</strong> 중 — 모델이 agent task 성공률을 실제로 올리는지</li>
+<li><a href="https://huggingface.co/papers/2605.06548">Continuous Latent Diffusion Language Model</a> — Hugging Face Daily Papers, score 11, <span class="badge">AI Research</span></li>
 <li><a href="https://arxiv.org/abs/2605.06664v1">BAMI: Training-Free Bias Mitigation in GUI Grounding</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">Inference Stack</span></li>
-<li><a href="https://arxiv.org/abs/2605.06642v1">StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Post-training</span></li>
 <li><strong>Planning &amp; Control:</strong> 중 — goal 분해·재계획·human checkpoint가 있는지</li>
 <li><a href="https://arxiv.org/abs/2605.06642v1">StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Post-training</span></li>
 <li><a href="https://huggingface.co/papers/2605.06638">Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Planning</span></li>
@@ -558,7 +558,7 @@
 <li><a href="https://arxiv.org/abs/2605.06662v1">Multi-Robot Coordination in V2X Environments</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><a href="https://arxiv.org/abs/2605.06661v1">Pro-Tensor Network</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">LLM Orchestration</span></li>
 <li><strong>Memory / RAG:</strong> 중 — memory가 정확도 개선인지 context pollution인지</li>
-<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Browser / Computer Use:</strong> 중 — 실제 웹/OS 조작이 견고한지</li>
 <li><a href="https://arxiv.org/abs/2605.06664v1">BAMI: Training-Free Bias Mitigation in GUI Grounding</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">Inference Stack</span></li>
@@ -567,7 +567,7 @@
 <li><a href="https://huggingface.co/papers/2605.04523">RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation</a> — Hugging Face Daily Papers, score 13, <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://arxiv.org/abs/2605.06642v1">StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Post-training</span></li>
 <li><strong>Eval / Observability:</strong> 중 — 벤치마크와 실제 사용성 gap을 줄이는지</li>
-<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Security / Trust:</strong> 약 — 권한·보안·감사 경계가 명확한지</li>
 <li><a href="https://arxiv.org/abs/2605.06652v1">When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels</a> — arXiv, score 10, <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
@@ -581,13 +581,13 @@
 <li><a href="https://arxiv.org/abs/2605.06642v1">StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Post-training</span></li>
 <li><a href="https://huggingface.co/papers/2605.06638">Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Planning</span></li>
 <li><strong>memory_precision:</strong> evidence 2</li>
-<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>browser_ui_drift:</strong> evidence 2</li>
 <li><a href="https://arxiv.org/abs/2605.06664v1">BAMI: Training-Free Bias Mitigation in GUI Grounding</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">Inference Stack</span></li>
 <li><a href="https://arxiv.org/abs/2605.06656v1">Why Global LLM Leaderboards Are Misleading: Small Portfolios for Heterogeneous Supervised ML</a> — arXiv, score 4, <span class="badge">LLM Orchestration</span></li>
 <li><strong>eval_production_gap:</strong> evidence 2</li>
-<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2605.05242">Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>cost_latency:</strong> evidence 2</li>
 <li><a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
@@ -646,28 +646,28 @@
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06647v1">Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06662v1">Multi-Robot Coordination in V2X Environments</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04523">RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06548">Continuous Latent Diffusion Language Model</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06507">MARBLE: Multi-Aspect Reward Balance for Diffusion RL</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06614">SkillOS: Learning Skill Curation for Self-Evolving Agents</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06664v1">BAMI: Training-Free Bias Mitigation in GUI Grounding</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06642v1">StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06660v1">Verifier-Backed Hard Problem Generation for Mathematical Reasoning</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06652v1">When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06661v1">Pro-Tensor Network</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06548">Continuous Latent Diffusion Language Model</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06416">MiA-Signature: Approximating Global Activation for Long-Context Understanding</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06614">SkillOS: Learning Skill Curation for Self-Evolving Agents</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06642">StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.05724">Auto Research with Specialist Agents Develops Effective and Non-Trivial Training Recipes</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06200">A^2TGPO: Agentic Turn-Group Policy Optimization with Adaptive Turn-level Clipping</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06638">Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key</a></li>
 <li><strong>Hacker News:</strong> <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06222">When to Trust Imagination: Adaptive Action Execution for World Action Models</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04962">TabEmbed: Benchmarking and Learning Generalist Embeddings for Tabular Understanding</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.05566">Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04045">Audio-Visual Intelligence in Large Foundation Models</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06651">AI Co-Mathematician: Accelerating Mathematicians with Agentic AI</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04962">TabEmbed: Benchmarking and Learning Generalist Embeddings for Tabular Understanding</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04956">KernelBench-X: A Comprehensive Benchmark for Evaluating LLM-Generated GPU Kernels</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.00623">Recovering Hidden Reward in Diffusion-Based Policies</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04077">Balanced Aggregation: Understanding and Fixing Aggregation Bias in GRPO</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06643">Are We Making Progress in Multimodal Domain Generalization? A Comprehensive Benchmark Study</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.05922">Think, then Score: Decoupled Reasoning and Scoring for Video Reward Modeling</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06477">GeoStack: A Framework for Quasi-Abelian Knowledge Composition in VLMs</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06651v1">AI Co-Mathematician: Accelerating Mathematicians with Agentic AI</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06641v1">GlazyBench: A Benchmark for Ceramic Glaze Property Prediction and Image Generation</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06654v1">Optimizer-Model Consistency: Full Finetuning with the Same Optimizer as Pretraining Forgets Less</a></li>
@@ -676,16 +676,16 @@
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06639v1">Recursive Agent Optimization</a></li>
 <li><strong>Hacker News:</strong> <a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06376">Continuous-Time Distribution Matching for Few-Step Diffusion Distillation</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.05566">Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04045">Audio-Visual Intelligence in Large Foundation Models</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06665">UniPool: A Globally Shared Expert Pool for Mixture-of-Experts</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06663">EMO: Pretraining Mixture of Experts for Emergent Modularity</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04647">ReflectDrive-2: Reinforcement-Learning-Aligned Self-Editing for Discrete Diffusion Driving</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06356">SwiftI2V: Efficient High-Resolution Image-to-Video Generation via Conditional Segment-wise Generation</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04451">RemoteZero: Geospatial Reasoning with Zero Human Annotations</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06356">SwiftI2V: Efficient High-Resolution Image-to-Video Generation via Conditional Segment-wise Generation</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06196">The Granularity Axis: A Micro-to-Macro Latent Direction for Social Roles in Language Models</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06216">TIDE: Every Layer Knows the Token Beneath the Context</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06627">PianoCoRe: Combined and Refined Piano MIDI Dataset</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.01640">Prescriptive Scaling Laws for Data Constrained Training</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04330">The Scaling Properties of Implicit Deductive Reasoning in Transformers</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06627">PianoCoRe: Combined and Refined Piano MIDI Dataset</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06656v1">Why Global LLM Leaderboards Are Misleading: Small Portfolios for Heterogeneous Supervised ML</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06666v1">The Kubo-Thermalization Correspondence</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.06640v1">Concept-Based Abductive and Contrastive Explanations for Behaviors of Vision Models</a></li>
