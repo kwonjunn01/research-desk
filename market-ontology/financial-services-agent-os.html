@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Research Radar</title>
+  <title>Financial Services Agent OS</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -165,33 +165,74 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>AI Research Radar</h1>
-<p>AI 연구/기술 생태계의 반복 signal, hype, adoption 가능성을 기록하는 공개 허브.</p>
-<h2>먼저 볼 것</h2>
+  <main><article><h1>Financial Services Agent OS</h1>
+<div class="home-hero">
+<div>
+<p class="home-kicker">ANTHROPIC FINANCIAL SERVICES → RESEARCH DESK</p>
+<div class="home-hero-title">증권사형 Agent OS로<br>리서치 팀 구조 업그레이드</div>
+<p class="home-hero-copy">Anthropic financial-services repo의 핵심은 “멋진 샘플”이 아니라 <b>plugin + managed-agent + quality gate</b> 구조다. Research Desk는 이걸 회사 리포트, 시장 리서치, Quant 검증에 맞춰 가져온다.</p>
+<div class="home-hero-actions">
+<a class="home-cta" href="/research-desk/market-ontology/company-reports/intc-us.html">Intel 리포트 예시</a>
+<a class="home-cta secondary" href="/research-desk/market-ontology/monthly-momentum-analyst-desk.html">Monthly Momentum Desk</a>
+<a class="home-cta secondary" href="/research-desk/quant/index.html">Quant Bot Hub</a>
+</div>
+</div>
+<div class="home-status-panel">
+<div class="home-command">
+<div class="home-command-top"><span class="home-dot"></span> MANAGED AGENT PATTERN</div>
+<div class="home-command-line"><b>Vertical Skills</b><small>financial-analysis · equity-research · quant-risk</small></div>
+<div class="home-command-line"><b>Named Agents</b><small>Market Researcher · Earnings Reviewer · Publisher</small></div>
+<div class="home-command-line"><b>Review Gates</b><small>source pack · red-team · publish/no-publish</small></div>
+</div>
+</div>
+</div>
+<h2>20초 요약</h2>
+<div class="home-bento">
+<div class="home-bento-card big home-primary-card"><span class="home-bento-eyebrow">WHAT WE COPY</span><h3>구조를 베낀다: plugin → agent → gate</h3><p>Anthropic repo처럼 금융 업무를 vertical skill bundle과 named workflow agent로 나누고, headless worker는 manifest/cookbook처럼 관리한다.</p><div class="home-mini-metric"><span>one source</span><span>two surfaces</span><span>human sign-off</span></div></div>
+<div class="home-bento-card compact"><span class="home-bento-eyebrow">WHAT WE DO NOT COPY</span><h3>투자추천·자동거래 아님</h3><p>모든 산출물은 관찰/검토용. Quant도 Validator + Risk 승인 전 live promotion 금지.</p></div>
+<div class="home-bento-card wide"><span class="home-bento-eyebrow">FIRST PASS</span><h3>회사 리포트 품질 게이트에 즉시 적용</h3><p>Source Pack, Financial Model, Company Analyst, Supply-chain, Valuation, Red-team, Publisher Reviewer를 명시 산출물로 분리한다.</p></div>
+<div class="home-bento-card wide"><span class="home-bento-eyebrow">DATA CONNECTORS</span><h3>기관 데이터 우선, 공개 proxy는 라벨링</h3><p>FactSet/CapIQ/Daloopa 같은 connector 철학을 가져오되, 지금은 SEC/DART/IR/Yahoo/Naver/Alpha/FMP 등 공개 proxy를 unverified로 표시한다.</p></div>
+</div>
+<h2>Research Desk 매핑</h2>
+<div class="home-map">
+<div class="home-map-node"><span>01 SOURCE</span><b>Canonical Source</b><small>09-prompts · 08-data · 04-ontology</small></div>
+<div class="home-map-node"><span>02 SKILLS</span><b>Vertical Bundles</b><small>financial-analysis · equity-research · market-research · quant-risk</small></div>
+<div class="home-map-node"><span>03 AGENTS</span><b>Named Workers</b><small>Market Researcher · Earnings Reviewer · Coverage Initiator</small></div>
+<div class="home-map-node"><span>04 GATES</span><b>Review Boundary</b><small>Red-team · Publisher · Risk Validator</small></div>
+<div class="home-map-node"><span>05 SURFACES</span><b>Dashboard + Cron</b><small>GitHub Pages와 Hermes worker가 같은 원천을 사용</small></div>
+</div>
+<h2>Agent cookbook 변환표</h2>
+<div class="home-purpose-grid">
+<div class="home-purpose"><b>Market Researcher</b><small>Anthropic: sector/theme primer. Research Desk: Daily Market + Cross-Ontology worker.</small><a href="/research-desk/reports/market/2026-05-09.html">Market Brief</a></div>
+<div class="home-purpose"><b>Earnings Reviewer</b><small>Anthropic: earnings call + filing → model update → note. Research Desk: EPS/guidance/source-pack 연결 상태 표시.</small><a href="/research-desk/market-ontology/company-reports/intc-us.html">Company Report</a></div>
+<div class="home-purpose"><b>Coverage Initiator</b><small>Anthropic: 5-task initiation. Research Desk: Monthly Momentum deep dive의 institutional report skeleton.</small><a href="/research-desk/market-ontology/monthly-momentum-analyst-desk.html">Monthly Momentum</a></div>
+<div class="home-purpose"><b>Publisher Reviewer</b><small>Anthropic guardrail: no distribution without review. Research Desk: raw draft, source caveat, mobile, link, base-path gate.</small><a href="/research-desk/market-ontology/stock-traffic-light.html">Published Dashboard</a></div>
+</div>
+<h2>품질 게이트 — 앞으로 리포트 상단에 더 명확히 보일 항목</h2>
 <ul>
-<li><a href="/research-desk/ai-research/signal-map.html">AI Research Signal Map</a> — 오늘 정보들을 한눈에 볼 research ontology 지도</li>
-<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html">Agent AI Specialist Map</a> — agent AI 세부분야·기술 stack·personal agent·병목 daily watch 지도</li>
-<li><a href="/research-desk/reports/ai-research/2026-05-05.html">2026-05-05 Daily Radar</a> — 최신 daily signal</li>
+<li>Source Pack: IR/SEC/DART/earnings/industry/brokerage attempt.</li>
+<li>Financial Model/Data Analyst: PER/PBR/revenue/margin/debt/ROE/EPS/consensus 상태.</li>
+<li>Company Analyst: 사업모델, 수요 전파, 시장이 이미 믿는 것, 다음 catalyst.</li>
+<li>Industry/Supply-chain Analyst: 병목, solver, 수혜 후보 lane.</li>
+<li>Valuation/Strategy Analyst: Base/Upside/Downside, 가격 반영 여부, peer context.</li>
+<li>Red-team Analyst: 반증 조건, bear case, contradiction map.</li>
+<li>Publisher/Supervisory Analyst: publish/no-publish, 부족한 근거 표시.</li>
 </ul>
-<h2>채울 축</h2>
-<div class="viz-card"><div class="mermaid">flowchart LR
-  Paper[Paper / Repo / News] --&gt; Topic[Topic Node]
-  Topic --&gt; Edge[Research Edge]
-  Edge --&gt; Lens[Signal Lens]
-  Lens --&gt; Weekly[Weekly Synthesis]</div></div>
+<h2>Quant Bot 적용</h2>
+<div class="home-lane-strip">
+<div class="home-lane"><b>Strategy</b><small>파라미터·진입/청산 제안만 가능</small></div>
+<div class="home-lane"><b>Validator</b><small>백테스트/라이브데이터 paper에서 독립 검증</small></div>
+<div class="home-lane"><b>Risk</b><small>레버리지·청산거리·손실한도·API 권한 확인</small></div>
+<div class="home-lane"><b>Publisher</b><small>Quant Alert 그룹에만 요약, private DM 금지</small></div>
+</div>
+<h2>현재 생성된 원천 파일</h2>
 <ul>
-<li><strong>Topic Node:</strong> Post-training, Agentic AI, Inference Stack, On-device LLM, Memory/RAG, RAG Security</li>
-<li><strong>Research Edge:</strong> 어떤 topic이 다른 topic을 밀어주는지</li>
-<li><strong>Signal Lens:</strong> hard signal / hype / bottleneck / adoption evidence</li>
-<li><strong>Weekly Synthesis:</strong> daily signal 중 반복되는 것만 승격</li>
+<li><code>04-ontology/Financial Services Agent OS.md</code></li>
+<li><code>08-data/financial-services-agent-operating-model.json</code></li>
+<li><code>09-prompts/financial-services-agent-os.md</code></li>
+<li>이 공개 페이지: <code>06-public/content/market-ontology/financial-services-agent-os.md</code></li>
 </ul>
-<h2>다음 공개 글 후보</h2>
-<ol>
-<li>Hermes + Codex로 개인 리서치 에이전트 만들기</li>
-<li>Telegram으로 매일 아침 AI research briefing 받기</li>
-<li>Hugging Face Daily Papers를 매일 보면 무엇이 보일까?</li>
-<li>LLM agent가 hype와 real signal을 구분할 수 있을까?</li>
-</ol></article></main>
+<div class="home-note"><b>판단 상태:</b> 1차 구조 반영 완료. 다음 단계는 실제 company report generator가 이 agent별 gate 출력을 더 강하게 강제하도록 코드 레벨로 연결하는 것.</div></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
