@@ -180,17 +180,16 @@
 <blockquote>자동 수집 기반 초안이다. 공개/블로그화 전 사람이 검토한다.</blockquote>
 <h2>0. 수집 요약</h2>
 <ul>
-<li><strong>Total items:</strong> 63</li>
+<li><strong>Total items:</strong> 77</li>
 <li><strong>HF Daily Papers:</strong> 30개 — 오늘 digest의 1순위 source</li>
-<li><strong>Collected at:</strong> 2026-05-11T23:02:47.881834+00:00 UTC — 최신성 점검용 수집 시각</li>
-<li><strong>Sources:</strong> Hugging Face Daily Papers 30, GitHub 18, Hacker News 15</li>
-<li><strong>Top topics:</strong> <span class="badge">AI Research</span> 32, <span class="badge">Agentic AI</span> 20, <span class="badge">Agent Evaluation</span> 5, <span class="badge">Inference Stack</span> 5, <span class="badge">LLM Orchestration</span> 2</li>
-<li><strong>Collector warnings:</strong> 6개</li>
+<li><strong>Collected at:</strong> 2026-05-11T23:31:09.792746+00:00 UTC — 최신성 점검용 수집 시각</li>
+<li><strong>Sources:</strong> Hugging Face Daily Papers 30, GitHub 18, Hacker News 15, arXiv 14</li>
+<li><strong>Top topics:</strong> <span class="badge">AI Research</span> 32, <span class="badge">Agentic AI</span> 29, <span class="badge">LLM Orchestration</span> 12, <span class="badge">Inference Stack</span> 11, <span class="badge">Agent Evaluation</span> 8</li>
 </ul>
 <hr>
 <h2>0-1. 20초 요약</h2>
 <ul>
-<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 32, <span class="badge">Agentic AI</span> 20, <span class="badge">Agent Evaluation</span> 5 쪽으로 attention이 몰렸다.</li>
+<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 32, <span class="badge">Agentic AI</span> 29, <span class="badge">LLM Orchestration</span> 12 쪽으로 attention이 몰렸다.</li>
 <li><strong>먼저 볼 논문:</strong> <strong>#1 Multimodal / Generation</strong> · 👍 101: <a href="https://huggingface.co/papers/2605.06169">Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers</a> — HF Daily 상위권 Multimodal / Generation 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
 <li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.07177">HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span></li>
 <li><strong>읽는 순서:</strong> HF Daily digest → 오늘의 지도/topic heat → Lens Radar → Agent AI Specialist Watch</li>
@@ -237,49 +236,53 @@
 <h3>오늘의 topic heat</h3>
 <blockquote>edge heat는 양쪽 topic의 동시 출현 또는 직접 evidence 기준이다. 한쪽 broad node만 뜨거운 경우는 과열 표시를 낮춘다.</blockquote>
 <ul>
-<li><span class="badge">Post-training</span> → <strong>improves</strong> → <span class="badge">Agentic AI</span> | heat: 중 (0/20, direct evidence 2)</li>
+<li><span class="badge">Post-training</span> → <strong>improves</strong> → <span class="badge">Agentic AI</span> | heat: 중 (2/29, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Post-training</span>(학습 이후 보상·검증·정렬로 모델 능력을 끌어올리는 영역)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>모델 능력을 끌어올림</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.07177">HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents</a> — 오늘 수집 항목 중 <span class="badge">Post-training</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
 <li><a href="https://huggingface.co/papers/2605.06139">Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex</a> — 오늘 올라온 RLVR/보상 기반 학습 항목이라, agent가 긴 reasoning/task를 더 안정적으로 수행할 수 있는지 확인할 가치가 있다.</li>
-<li><span class="badge">Agent Planning</span> → <strong>controls</strong> → <span class="badge">Agentic AI</span> | heat: 약 (1/20, direct evidence 1)</li>
+<li><span class="badge">Agent Planning</span> → <strong>controls</strong> → <span class="badge">Agentic AI</span> | heat: 약 (1/29, direct evidence 1)</li>
 <li>기본 해석: <span class="badge">Agent Planning</span>(goal을 단계/DAG로 쪼개고 실패 시 재계획하는 agent 제어 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>agent의 계획·실행을 제어함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.08043">SCOPE: Structured Decomposition and Conditional Skill Orchestration for Complex Image Generation</a> — 오늘 수집 항목 중 <span class="badge">Agent Planning</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Tool Use / MCP</span> → <strong>connects</strong> → <span class="badge">Agentic AI</span> | heat: 없음 (0/20, direct evidence 0)</li>
+<li><span class="badge">Tool Use / MCP</span> → <strong>connects</strong> → <span class="badge">Agentic AI</span> | heat: 중 (0/29, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Tool Use / MCP</span>(function calling, MCP, API connector로 agent를 외부 세계와 연결하는 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>외부 도구/API/데이터와 연결함</strong></li>
-<li>오늘 올라온 내용: 직접 연결되는 강한 항목은 적음. 구조적 관찰 edge로만 유지.</li>
-<li><span class="badge">Agentic AI</span> → <strong>becomes</strong> → <span class="badge">Personal Agent</span> | heat: 약 (20/1, direct evidence 1)</li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
+<li><a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a> — 오늘 수집 항목 중 <span class="badge">Tool Use / MCP</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><span class="badge">Agentic AI</span> → <strong>becomes</strong> → <span class="badge">Personal Agent</span> | heat: 약 (29/1, direct evidence 1)</li>
 <li>기본 해석: <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)가 <span class="badge">Personal Agent</span>(email/calendar/browser/files/local memory를 다루는 개인 업무 자동화 agent 영역)에 <strong>개인 업무/생활 agent 제품으로 내려옴</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a> — 오늘 수집 항목 중 <span class="badge">Agentic AI</span>와 <span class="badge">Personal Agent</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Agent Evaluation</span> → <strong>validates</strong> → <span class="badge">Agentic AI</span> | heat: 강 (5/20, direct evidence 2)</li>
+<li><span class="badge">Agent Evaluation</span> → <strong>validates</strong> → <span class="badge">Agentic AI</span> | heat: 강 (8/29, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Agent Evaluation</span>(SWE-bench, WebArena, GAIA, OSWorld 등 agent 성공률/실패 유형 평가 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>실제 성공률과 실패 유형을 검증함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.07510">InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</a> — 오늘 수집 항목 중 <span class="badge">Agent Evaluation</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://arxiv.org/abs/2605.08070v1">VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection</a> — 오늘 수집 항목 중 <span class="badge">Agent Evaluation</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
 <li><span class="badge">Agent Security</span> → <strong>constrains</strong> → <span class="badge">Personal Agent</span> | heat: 없음 (0/1, direct evidence 0)</li>
 <li>기본 해석: <span class="badge">Agent Security</span>(prompt injection, tool abuse, permission, secret leakage를 다루는 신뢰/보안 계층)가 <span class="badge">Personal Agent</span>(email/calendar/browser/files/local memory를 다루는 개인 업무 자동화 agent 영역)에 <strong>신뢰·권한·보안 병목으로 제약함</strong></li>
 <li>오늘 올라온 내용: 직접 연결되는 강한 항목은 적음. 구조적 관찰 edge로만 유지.</li>
-<li><span class="badge">LLM Orchestration</span> → <strong>turns_models_into</strong> → <span class="badge">Agentic AI</span> | heat: 중 (2/20, direct evidence 2)</li>
+<li><span class="badge">LLM Orchestration</span> → <strong>turns_models_into</strong> → <span class="badge">Agentic AI</span> | heat: 강 (12/29, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">LLM Orchestration</span>(여러 모델/도구/API를 workflow로 엮는 운영 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>모델을 실제 작업 흐름/agent로 바꿈</strong></li>
 <li>오늘 올라온 내용:</li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
 <li><a href="https://huggingface.co/papers/2605.07177">HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents</a> — 오늘 수집 항목 중 <span class="badge">LLM Orchestration</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><a href="https://huggingface.co/papers/2605.08083">LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling</a> — 오늘 수집 항목 중 <span class="badge">LLM Orchestration</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Inference Stack</span> → <strong>makes_feasible</strong> → <span class="badge">Agentic AI</span> | heat: 강 (5/20, direct evidence 2)</li>
+<li><span class="badge">Inference Stack</span> → <strong>makes_feasible</strong> → <span class="badge">Agentic AI</span> | heat: 강 (11/29, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Inference Stack</span>(serving, latency, throughput, memory/KV cache 같은 실행 비용 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>비용·속도 측면에서 실사용 가능하게 함</strong></li>
 <li>오늘 올라온 내용:</li>
-<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
-<li><a href="https://huggingface.co/papers/2605.07363">MISA: Mixture of Indexer Sparse Attention for Long-Context LLM Inference</a> — 오늘 수집 항목 중 <span class="badge">Inference Stack</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Inference Stack</span> → <strong>enables</strong> → <span class="badge">On-device LLM</span> | heat: 약 (5/1, direct evidence 1)</li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
+<li><a href="https://arxiv.org/abs/2605.08071v1">Vibe Econometrics and the Analysis Contract</a> — 오늘 수집 항목 중 <span class="badge">Inference Stack</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><span class="badge">Inference Stack</span> → <strong>enables</strong> → <span class="badge">On-device LLM</span> | heat: 중 (11/3, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Inference Stack</span>(serving, latency, throughput, memory/KV cache 같은 실행 비용 계층)가 <span class="badge">On-device LLM</span>(모델을 cloud가 아니라 local/mobile/edge에서 돌리는 흐름)에 <strong>가능하게 함</strong></li>
 <li>오늘 올라온 내용:</li>
+<li><a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a> — 오늘 수집 항목 중 <span class="badge">Inference Stack</span>와 <span class="badge">On-device LLM</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
 <li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
-<li><span class="badge">On-device LLM</span> → <strong>moves_workloads_to</strong> → <span class="badge">Edge AI</span> | heat: 약 (1/0, direct evidence 1)</li>
+<li><span class="badge">On-device LLM</span> → <strong>moves_workloads_to</strong> → <span class="badge">Edge AI</span> | heat: 중 (3/0, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">On-device LLM</span>(모델을 cloud가 아니라 local/mobile/edge에서 돌리는 흐름)가 <span class="badge">Edge AI</span>(로봇·모바일·기기 안에서 AI가 작동하는 영역)에 <strong>작업을 edge/device 쪽으로 이동시킴</strong></li>
 <li>오늘 올라온 내용:</li>
+<li><a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a> — 오늘 수집 항목 중 <span class="badge">On-device LLM</span>와 <span class="badge">Edge AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
 <li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
-<li><span class="badge">Agentic AI</span> → <strong>requires</strong> → <span class="badge">Memory / RAG</span> | heat: 중 (20/0, direct evidence 2)</li>
+<li><span class="badge">Agentic AI</span> → <strong>requires</strong> → <span class="badge">Memory / RAG</span> | heat: 중 (29/0, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)가 <span class="badge">Memory / RAG</span>(외부 지식 검색과 장기 기억으로 agent를 보강하는 계층)에 <strong>실사용을 위해 필요로 함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
@@ -289,13 +292,15 @@
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2511.07328">Q-RAG: Long Context Multi-step Retrieval via Value-based Embedder Training</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
 <li><a href="https://github.com/langgenius/dify">langgenius/dify</a> — 오늘 수집 항목 중 <span class="badge">Memory / RAG</span>와 <span class="badge">RAG Security</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">LLM Orchestration</span> → <strong>uses_protocols_like</strong> → <span class="badge">MCP</span> | heat: 없음 (2/0, direct evidence 0)</li>
+<li><span class="badge">LLM Orchestration</span> → <strong>uses_protocols_like</strong> → <span class="badge">MCP</span> | heat: 중 (12/0, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">LLM Orchestration</span>(여러 모델/도구/API를 workflow로 엮는 운영 계층)가 <span class="badge">MCP</span>(agent와 외부 tool/data source를 연결하는 protocol 계층)에 <strong>MCP 같은 연결 표준을 활용함</strong></li>
-<li>오늘 올라온 내용: 직접 연결되는 강한 항목은 적음. 구조적 관찰 edge로만 유지.</li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
+<li><a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a> — 오늘 수집 항목 중 <span class="badge">LLM Orchestration</span>와 <span class="badge">MCP</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
 </ul>
 <h3>TL;DR</h3>
 <ul>
-<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 32, <span class="badge">Agentic AI</span> 20, <span class="badge">Agent Evaluation</span> 5 쪽으로 attention이 몰렸다.</li>
+<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 32, <span class="badge">Agentic AI</span> 29, <span class="badge">LLM Orchestration</span> 12 쪽으로 attention이 몰렸다.</li>
 <li><strong>먼저 볼 것:</strong> HF Daily Papers 상위권 → <code>오늘의 강력 관찰 후보</code> → Lens Radar 순서로 훑는다.</li>
 <li><strong>더 읽을지 판단:</strong> agent/workload/bottleneck으로 번역되는 신호가 있으면 상세 signal을 본다.</li>
 <li><strong>승격 기준:</strong> 논문/레포가 실제 production stack, 비용/latency, 재현성, adoption 증거와 연결되면 weekly 후보로 올린다.</li>
@@ -305,8 +310,8 @@
 <li><a href="https://huggingface.co/papers/2605.07177">HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span></li>
 <li><a href="https://huggingface.co/papers/2605.06169">Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers</a> — Hugging Face Daily Papers, score 13, <span class="badge">AI Research</span></li>
 <li><a href="https://huggingface.co/papers/2512.18181">MACE-Dance: Motion-Appearance Cascaded Experts for Music-Driven Dance Video Generation</a> — Hugging Face Daily Papers, score 12, <span class="badge">AI Research</span></li>
-<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — Hacker News, score 9, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a> — Hacker News, score 7, <span class="badge">Agentic AI</span></li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — arXiv, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
 </ul>
 <hr>
 <h2>3. Lens Radar — signal / hype / 병목</h2>
@@ -317,8 +322,9 @@
 <li><strong>Why this lens matters:</strong> 도구 사용, workflow, 협업 agent가 실제 제품/업무로 이어지는지</li>
 <li><strong>Hard signal 후보:</strong></li>
 <li><a href="https://huggingface.co/papers/2605.07510">InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</a> — Hugging Face Daily Papers, score 11, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
-<li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://arxiv.org/abs/2605.08070v1">VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection</a> — arXiv, score 10, <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
+<li><a href="https://arxiv.org/abs/2605.08084v1">123D: Unifying Multi-Modal Autonomous Driving Data at Scale</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">LLM Orchestration</span></li>
 <li><a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a> — Hacker News, score 7, <span class="badge">Agentic AI</span></li>
 </ul>
 <h3><span class="badge">Post-training</span> — Post-training / RLVR</h3>
@@ -327,26 +333,29 @@
 <li><strong>Why this lens matters:</strong> 모델 능력 향상이 데이터/보상/검증 가능성으로 이동하는지</li>
 <li><strong>Hard signal 후보:</strong></li>
 <li><a href="https://huggingface.co/papers/2605.06139">Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex</a> — Hugging Face Daily Papers, score 11, <span class="badge">AI Research</span></li>
+<li><a href="https://arxiv.org/abs/2605.08063v1">Flow-OPD: On-Policy Distillation for Flow Matching Models</a> — arXiv, score 7, <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — Hacker News, score 9, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
 <li><a href="https://github.com/peeramid-labs/nsed">Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</a> — Hacker News, score 0, <span class="badge">AI Research</span></li>
 </ul>
 <h3><span class="badge">Inference Stack</span> — Inference 비용/메모리</h3>
 <ul>
-<li><strong>Status:</strong> signal 후보</li>
+<li><strong>Status:</strong> signal+hype 혼재</li>
 <li><strong>Why this lens matters:</strong> latency, throughput, memory cost가 adoption 병목인지</li>
 <li><strong>Hard signal 후보:</strong></li>
-<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — Hacker News, score 9, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><a href="https://huggingface.co/papers/2605.07363">MISA: Mixture of Indexer Sparse Attention for Long-Context LLM Inference</a> — Hugging Face Daily Papers, score 8, <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — arXiv, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08071v1">Vibe Econometrics and the Analysis Contract</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
-<li>뚜렷한 hype 후보 없음</li>
+<li><a href="https://arxiv.org/abs/2605.08083v1">LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling</a> — arXiv, score 7, <span class="badge">Agentic AI</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08061v1">Rubric-Grounded RL: Structured Judge Rewards for Generalizable Reasoning</a> — arXiv, score 7, <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span></li>
 </ul>
 <h3><span class="badge">On-device LLM</span> — On-device / Edge</h3>
 <ul>
 <li><strong>Status:</strong> signal 후보</li>
 <li><strong>Why this lens matters:</strong> cloud 의존을 줄이거나 새로운 edge workload를 만드는지</li>
 <li><strong>Hard signal 후보:</strong></li>
-<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — Hacker News, score 9, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — arXiv, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
 </ul>
@@ -355,8 +364,8 @@
 <li><strong>Status:</strong> signal 후보</li>
 <li><strong>Why this lens matters:</strong> agent memory와 retrieval이 실제 신뢰성/보안 문제를 해결하는지</li>
 <li><strong>Hard signal 후보:</strong></li>
-<li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Evaluation</span></li>
-<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — Hacker News, score 9, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — arXiv, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08084v1">123D: Unifying Multi-Modal Autonomous Driving Data at Scale</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">LLM Orchestration</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
 </ul>
@@ -371,10 +380,11 @@
 </ul>
 <h3><span class="badge">Tool Use / MCP</span> — Tool Use / MCP</h3>
 <ul>
-<li><strong>Status:</strong> 신호 약함</li>
+<li><strong>Status:</strong> signal 후보</li>
 <li><strong>Why this lens matters:</strong> tool protocol과 function calling이 agent 제품화의 연결 계층인지</li>
 <li><strong>Hard signal 후보:</strong></li>
-<li>뚜렷한 hard signal 없음</li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — arXiv, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
 </ul>
@@ -383,17 +393,17 @@
 <li><strong>Status:</strong> signal 후보</li>
 <li><strong>Why this lens matters:</strong> benchmark와 실제 사용 간 gap을 줄이는지</li>
 <li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://arxiv.org/abs/2605.08070v1">VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection</a> — arXiv, score 10, <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Evaluation</span></li>
-<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — Hacker News, score 9, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
 </ul>
 <h3><span class="badge">Agent Security</span> — Security / Permission</h3>
 <ul>
-<li><strong>Status:</strong> 신호 약함</li>
+<li><strong>Status:</strong> signal 후보</li>
 <li><strong>Why this lens matters:</strong> prompt injection, tool abuse, secret leakage, 승인 경계가 agent adoption 병목인지</li>
 <li><strong>Hard signal 후보:</strong></li>
-<li>뚜렷한 hard signal 없음</li>
+<li><a href="https://arxiv.org/abs/2605.08071v1">Vibe Econometrics and the Analysis Contract</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
 </ul>
@@ -438,29 +448,37 @@
 <li><strong>Priority score:</strong> 12</li>
 <li><strong>Tags:</strong> #signal</li>
 </ul>
-<h3>Signal 4: Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</h3>
+<h3>Signal 4: Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</h3>
 <ul>
-<li><strong>Source:</strong> Hacker News</li>
-<li><strong>URL:</strong> <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
-<li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><strong>Why it matters:</strong> HN points=5 comments=0</li>
+<li><strong>Source:</strong> arXiv</li>
+<li><strong>URL:</strong> <a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a></li>
+<li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Why it matters:</strong> Knowledge Graph Question Answering (KGQA) has shown promise for grounded and interpretable reasoning, yet existing approaches often fail to provide reliable coverage guarantees over retrieved answers. While Conformal Pre</li>
 <li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
-<li><strong>Priority score:</strong> 9</li>
+<li><strong>Priority score:</strong> 16</li>
 <li><strong>Tags:</strong> #signal</li>
 </ul>
-<h3>Signal 5: Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</h3>
+<h3>Signal 5: Multiscale Structure of Eigenstate Thermalization</h3>
 <ul>
-<li><strong>Source:</strong> Hacker News</li>
-<li><strong>URL:</strong> <a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a></li>
-<li><strong>Topic:</strong> <span class="badge">Agentic AI</span></li>
-<li><strong>Why it matters:</strong> HN points=109 comments=69</li>
+<li><strong>Source:</strong> arXiv</li>
+<li><strong>URL:</strong> <a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a></li>
+<li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
+<li><strong>Why it matters:</strong> The eigenstate thermalization hypothesis provides a framework for understanding thermalization in isolated quantum many-body systems by characterizing statistical properties of local observables in energy eigenstates. He</li>
 <li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
-<li><strong>Priority score:</strong> 7</li>
+<li><strong>Priority score:</strong> 13</li>
 <li><strong>Tags:</strong> #signal</li>
 </ul>
 <hr>
 <h2>5. 과열된 hype 3개</h2>
-<h3>Hype check 1: Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</h3>
+<h3>Hype check 1: 123D: Unifying Multi-Modal Autonomous Driving Data at Scale</h3>
+<ul>
+<li><strong>Claim:</strong> <a href="https://arxiv.org/abs/2605.08084v1">123D: Unifying Multi-Modal Autonomous Driving Data at Scale</a></li>
+<li><strong>Why it may be overhyped:</strong> 제목/커뮤니티 반응만으로는 실제 adoption을 판단하기 어렵다.</li>
+<li><strong>Missing evidence:</strong> production 사용 사례, 재현성, benchmark 조건, 비용/latency 정보</li>
+<li><strong>What to check next:</strong> 원문과 discussion을 확인하고 반복 signal인지 단발성 hype인지 분리</li>
+<li><strong>Tags:</strong> #hype #todo/check-next</li>
+</ul>
+<h3>Hype check 2: Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</h3>
 <ul>
 <li><strong>Claim:</strong> <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
 <li><strong>Why it may be overhyped:</strong> 제목/커뮤니티 반응만으로는 실제 adoption을 판단하기 어렵다.</li>
@@ -468,17 +486,9 @@
 <li><strong>What to check next:</strong> 원문과 discussion을 확인하고 반복 signal인지 단발성 hype인지 분리</li>
 <li><strong>Tags:</strong> #hype #todo/check-next</li>
 </ul>
-<h3>Hype check 2: Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</h3>
+<h3>Hype check 3: Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</h3>
 <ul>
 <li><strong>Claim:</strong> <a href="https://github.com/peeramid-labs/nsed">Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</a></li>
-<li><strong>Why it may be overhyped:</strong> 제목/커뮤니티 반응만으로는 실제 adoption을 판단하기 어렵다.</li>
-<li><strong>Missing evidence:</strong> production 사용 사례, 재현성, benchmark 조건, 비용/latency 정보</li>
-<li><strong>What to check next:</strong> 원문과 discussion을 확인하고 반복 signal인지 단발성 hype인지 분리</li>
-<li><strong>Tags:</strong> #hype #todo/check-next</li>
-</ul>
-<h3>Hype check 3: HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents</h3>
-<ul>
-<li><strong>Claim:</strong> <a href="https://huggingface.co/papers/2605.07177">HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents</a></li>
 <li><strong>Why it may be overhyped:</strong> 제목/커뮤니티 반응만으로는 실제 adoption을 판단하기 어렵다.</li>
 <li><strong>Missing evidence:</strong> production 사용 사례, 재현성, benchmark 조건, 비용/latency 정보</li>
 <li><strong>What to check next:</strong> 원문과 discussion을 확인하고 반복 signal인지 단발성 hype인지 분리</li>
@@ -524,16 +534,16 @@
 <hr>
 <h2>7. 내 업무와 연결되는 포인트</h2>
 <ul>
-<li><strong><span class="badge">Agentic AI</span>:</strong> <a href="https://huggingface.co/papers/2605.07177">HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents</a>, <a href="https://huggingface.co/papers/2605.08083">LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling</a>, <a href="https://huggingface.co/papers/2605.07510">InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</a></li>
+<li><strong><span class="badge">Agentic AI</span>:</strong> <a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a>, <a href="https://huggingface.co/papers/2605.07177">HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents</a>, <a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a></li>
 <li><strong><span class="badge">Agent Planning</span>:</strong> <a href="https://huggingface.co/papers/2605.08043">SCOPE: Structured Decomposition and Conditional Skill Orchestration for Complex Image Generation</a></li>
-<li><strong><span class="badge">Tool Use / MCP</span>:</strong> TBD</li>
+<li><strong><span class="badge">Tool Use / MCP</span>:</strong> <a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a>, <a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a>, <a href="https://arxiv.org/abs/2605.08084v1">123D: Unifying Multi-Modal Autonomous Driving Data at Scale</a></li>
 <li><strong><span class="badge">Personal Agent</span>:</strong> <a href="https://getattache.com/">Show HN: I built an AI executive assistant you use through iMessage</a></li>
-<li><strong><span class="badge">Agent Evaluation</span>:</strong> <a href="https://huggingface.co/papers/2605.07510">InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</a>, <a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a>, <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
+<li><strong><span class="badge">Agent Evaluation</span>:</strong> <a href="https://huggingface.co/papers/2605.07510">InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</a>, <a href="https://arxiv.org/abs/2605.08070v1">VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection</a>, <a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a></li>
 <li><strong><span class="badge">Agent Security</span>:</strong> TBD</li>
-<li><strong><span class="badge">On-device LLM</span>:</strong> <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
-<li><strong><span class="badge">LLM Orchestration</span>:</strong> <a href="https://huggingface.co/papers/2605.08043">SCOPE: Structured Decomposition and Conditional Skill Orchestration for Complex Image Generation</a>, <a href="https://huggingface.co/papers/2602.03473">Scaling Continual Learning to 300+ Tasks with Bi-Level Routing Mixture-of-Experts</a></li>
-<li><strong><span class="badge">Post-training</span>:</strong> TBD</li>
-<li><strong><span class="badge">Inference Stack</span>:</strong> <a href="https://huggingface.co/papers/2605.07363">MISA: Mixture of Indexer Sparse Attention for Long-Context LLM Inference</a>, <a href="https://github.com/vllm-project/vllm">vllm-project/vllm</a>, <a href="https://github.com/sponsors/vllm-project">sponsors/vllm-project</a></li>
+<li><strong><span class="badge">On-device LLM</span>:</strong> <a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a>, <a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a>, <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
+<li><strong><span class="badge">LLM Orchestration</span>:</strong> <a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a>, <a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a>, <a href="https://huggingface.co/papers/2605.08043">SCOPE: Structured Decomposition and Conditional Skill Orchestration for Complex Image Generation</a></li>
+<li><strong><span class="badge">Post-training</span>:</strong> <a href="https://arxiv.org/abs/2605.08063v1">Flow-OPD: On-Policy Distillation for Flow Matching Models</a>, <a href="https://arxiv.org/abs/2605.08061v1">Rubric-Grounded RL: Structured Judge Rewards for Generalizable Reasoning</a></li>
+<li><strong><span class="badge">Inference Stack</span>:</strong> <a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a>, <a href="https://arxiv.org/abs/2605.08071v1">Vibe Econometrics and the Analysis Contract</a>, <a href="https://arxiv.org/abs/2605.08070v1">VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection</a></li>
 </ul>
 <hr>
 <h2>8. 다음에 확인할 질문</h2>
@@ -548,26 +558,27 @@
 <h3>오늘의 layer heat</h3>
 <ul>
 <li><strong>Model &amp; Reasoning:</strong> 중 — 모델이 agent task 성공률을 실제로 올리는지</li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — arXiv, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><a href="https://huggingface.co/papers/2605.08063">Flow-OPD: On-Policy Distillation for Flow Matching Models</a> — Hugging Face Daily Papers, score 11, <span class="badge">AI Research</span></li>
-<li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Evaluation</span></li>
 <li><strong>Planning &amp; Control:</strong> 약 — goal 분해·재계획·human checkpoint가 있는지</li>
 <li><a href="https://huggingface.co/papers/2605.08043">SCOPE: Structured Decomposition and Conditional Skill Orchestration for Complex Image Generation</a> — Hugging Face Daily Papers, score 11, <span class="badge">Agent Planning</span> / <span class="badge">LLM Orchestration</span></li>
 <li><strong>Tool Use / MCP:</strong> 중 — 외부 tool/API 연결이 안정적인지</li>
-<li><a href="https://github.com/tstockham96/engram">Show HN: Engram update – 92% DMR, hosted API, lessons shipping agent memory</a> — Hacker News, score 3, <span class="badge">Agentic AI</span></li>
-<li><a href="https://gepa-ai.github.io/gepa/blog/2026/02/18/introducing-optimize-anything/">Show HN: Optimize_anything: A Universal API for Optimizing Any Text Parameter</a> — Hacker News, score 0, <span class="badge">AI Research</span></li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — arXiv, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
 <li><strong>Memory / RAG:</strong> 중 — memory가 정확도 개선인지 context pollution인지</li>
-<li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Evaluation</span></li>
-<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — Hacker News, score 9, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><strong>Browser / Computer Use:</strong> 없음 — 실제 웹/OS 조작이 견고한지</li>
-<li>직접 evidence 약함. 구조적 watch만 유지.</li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — arXiv, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08084v1">123D: Unifying Multi-Modal Autonomous Driving Data at Scale</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">LLM Orchestration</span></li>
+<li><strong>Browser / Computer Use:</strong> 중 — 실제 웹/OS 조작이 견고한지</li>
+<li><a href="https://arxiv.org/abs/2605.08054v1">Towards Highly-Constrained Human Motion Generation with Retrieval-Guided Diffusion Noise Optimization</a> — arXiv, score 7, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://arxiv.org/abs/2605.08040v1">ECNUClaw: A Learner-Profiled Intelligent Study Companion Framework for K-12 Personalized Education</a> — arXiv, score 4, <span class="badge">Agentic AI</span></li>
 <li><strong>Runtime / Ops:</strong> 중 — 장기 실행·resume·trace가 가능한지</li>
-<li><a href="https://huggingface.co/papers/2605.07755">Rethinking State Tracking in Recurrent Models Through Error Control Dynamics</a> — Hugging Face Daily Papers, score 7, <span class="badge">AI Research</span></li>
-<li><a href="https://github.com/seamus-brady/springdrift">Show HN: Springdrift – A persistent runtime for long-lived LLM agents</a> — Hacker News, score 3, <span class="badge">Agentic AI</span></li>
+<li><a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://arxiv.org/abs/2605.08071v1">Vibe Econometrics and the Analysis Contract</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Eval / Observability:</strong> 중 — 벤치마크와 실제 사용성 gap을 줄이는지</li>
 <li><a href="https://huggingface.co/papers/2605.07510">InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</a> — Hugging Face Daily Papers, score 11, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
-<li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Evaluation</span></li>
-<li><strong>Security / Trust:</strong> 없음 — 권한·보안·감사 경계가 명확한지</li>
-<li>직접 evidence 약함. 구조적 watch만 유지.</li>
+<li><a href="https://arxiv.org/abs/2605.08070v1">VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection</a> — arXiv, score 10, <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Security / Trust:</strong> 약 — 권한·보안·감사 경계가 명확한지</li>
+<li><a href="https://arxiv.org/abs/2605.08071v1">Vibe Econometrics and the Analysis Contract</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Personal Agent Product:</strong> 중 — chatbot이 아니라 recurring personal workflow인지</li>
 <li><a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a> — Hacker News, score 3, <span class="badge">Agentic AI</span></li>
 <li><a href="https://getattache.com/">Show HN: I built an AI executive assistant you use through iMessage</a> — Hacker News, score 3, <span class="badge">Personal Agent</span></li>
@@ -577,14 +588,17 @@
 <li><strong>long_horizon_reliability:</strong> evidence 1</li>
 <li><a href="https://huggingface.co/papers/2511.07328">Q-RAG: Long Context Multi-step Retrieval via Value-based Embedder Training</a> — Hugging Face Daily Papers, score 8, <span class="badge">Agent Evaluation</span></li>
 <li><strong>memory_precision:</strong> evidence 2</li>
-<li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Evaluation</span></li>
-<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — Hacker News, score 9, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
+<li><a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a> — arXiv, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08084v1">123D: Unifying Multi-Modal Autonomous Driving Data at Scale</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">LLM Orchestration</span></li>
+<li><strong>browser_ui_drift:</strong> evidence 2</li>
+<li><a href="https://arxiv.org/abs/2605.08054v1">Towards Highly-Constrained Human Motion Generation with Retrieval-Guided Diffusion Noise Optimization</a> — arXiv, score 7, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://arxiv.org/abs/2605.08040v1">ECNUClaw: A Learner-Profiled Intelligent Study Companion Framework for K-12 Personalized Education</a> — arXiv, score 4, <span class="badge">Agentic AI</span></li>
 <li><strong>eval_production_gap:</strong> evidence 2</li>
 <li><a href="https://huggingface.co/papers/2605.07510">InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</a> — Hugging Face Daily Papers, score 11, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
-<li><a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a> — Hugging Face Daily Papers, score 10, <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://arxiv.org/abs/2605.08070v1">VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection</a> — arXiv, score 10, <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>cost_latency:</strong> evidence 2</li>
-<li><a href="https://huggingface.co/papers/2605.07363">MISA: Mixture of Indexer Sparse Attention for Long-Context LLM Inference</a> — Hugging Face Daily Papers, score 8, <span class="badge">Inference Stack</span></li>
-<li><a href="https://github.com/vllm-project/vllm">vllm-project/vllm</a> — GitHub, score 4, <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08071v1">Vibe Econometrics and the Analysis Contract</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.08070v1">VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection</a> — arXiv, score 10, <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 </ul>
 <h3>오늘의 강력 관찰 후보 1~2개</h3>
 <blockquote>추천이 아니라 참고용 early narrative 후보. 며칠간 같은 후보가 반복돼도 강한 narrative inertia로 유지한다.</blockquote>
@@ -634,7 +648,9 @@
 <hr>
 <h2>11. 원본 링크 모음</h2>
 <ul>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08077v1">Conformal Path Reasoning: Trustworthy Knowledge Graph Question Answering via Path-Level Calibration</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.07177">HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08079v1">Multiscale Structure of Eigenstate Thermalization</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06169">Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2512.18181">MACE-Dance: Motion-Appearance Cascaded Experts for Music-Driven Dance Video Generation</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.08083">LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling</a></li>
@@ -642,6 +658,10 @@
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06139">Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.08043">SCOPE: Structured Decomposition and Conditional Skill Orchestration for Complex Image Generation</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.07510">InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08071v1">Vibe Econometrics and the Analysis Contract</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08070v1">VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08084v1">123D: Unifying Multi-Modal Autonomous Driving Data at Scale</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08078v1">Normalizing Trajectory Models</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04615">Beyond Retrieval: A Multitask Benchmark and Model for Code Search</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.04808">DecodingTrust-Agent Platform (DTap): A Controllable and Interactive Red-Teaming Platform for AI Agents</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.00425">AEM: Adaptive Entropy Modulation for Multi-Turn Agentic Reinforcement Learning</a></li>
@@ -653,6 +673,13 @@
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2602.03473">Scaling Continual Learning to 300+ Tasks with Bi-Level Routing Mixture-of-Experts</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06832">IntentGrasp: A Comprehensive Benchmark for Intent Understanding</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.03353">SkCC: Portable and Secure Skill Compilation for Cross-Framework LLM Agents</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08083v1">LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08060v1">The Memory Curse: How Expanded Recall Erodes Cooperative Intent in LLM Agents</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08054v1">Towards Highly-Constrained Human Motion Generation with Retrieval-Guided Diffusion Noise Optimization</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08069v1">Empirical Bayes Rebiasing</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08063v1">Flow-OPD: On-Policy Distillation for Flow Matching Models</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08061v1">Rubric-Grounded RL: Structured Judge Rewards for Generalizable Reasoning</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08057v1">CA-SQL: Complexity-Aware Inference Time Reasoning for Text-to-SQL via Exploration and Compute Budget Allocation</a></li>
 <li><strong>Hacker News:</strong> <a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.07825">Anisotropic Modality Align</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.07748">TextLDM: Language Modeling with Continuous Latent Diffusion</a></li>
@@ -662,10 +689,11 @@
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.05997">4DThinker: Thinking with 4D Imagery for Dynamic Spatial Understanding</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.06597">UniSD: Towards a Unified Self-Distillation Framework for Large Language Models</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.08078">Normalizing Trajectory Models</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.07915">What Matters for Diffusion-Friendly Latent Manifold? Prior-Aligned Autoencoders for Latent Diffusion</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.08029">STARFlow2: Bridging Language Models and Normalizing Flows for Unified Multimodal Generation</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.07896">What if AI systems weren&#x27;t chatbots?</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.07915">What Matters for Diffusion-Friendly Latent Manifold? Prior-Aligned Autoencoders for Latent Diffusion</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.07075">ModelLens: Finding the Best for Your Task from Myriads of Models</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.08040v1">ECNUClaw: A Learner-Profiled Intelligent Study Companion Framework for K-12 Personalized Education</a></li>
 <li><strong>GitHub:</strong> <a href="https://github.com/langflow-ai/langflow">langflow-ai/langflow</a></li>
 <li><strong>GitHub:</strong> <a href="https://github.com/langchain-ai/langchain">langchain-ai/langchain</a></li>
 <li><strong>GitHub:</strong> <a href="https://github.com/Shubhamsaboo/awesome-llm-apps">Shubhamsaboo/awesome-llm-apps</a></li>
@@ -697,15 +725,6 @@
 <li><strong>Hacker News:</strong> <a href="https://uselibrarian.dev/">Show HN: Librarian – Cut token costs by up to 85% for LangGraph and OpenClaw</a></li>
 <li><strong>Hacker News:</strong> <a href="https://gepa-ai.github.io/gepa/blog/2026/02/18/introducing-optimize-anything/">Show HN: Optimize_anything: A Universal API for Optimizing Any Text Parameter</a></li>
 <li><strong>Hacker News:</strong> <a href="https://github.com/peeramid-labs/nsed">Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</a></li>
-</ul>
-<h2>12. Collector warnings</h2>
-<ul>
-<li>arXiv failed: agentic AI: The read operation timed out</li>
-<li>arXiv failed: LLM orchestration: HTTP Error 429: Unknown Error</li>
-<li>arXiv failed: post-training LLM: The read operation timed out</li>
-<li>arXiv failed: on-device LLM: HTTP Error 429: Unknown Error</li>
-<li>arXiv failed: vLLM SGLang inference: The read operation timed out</li>
-<li>arXiv failed: MCP agent framework: HTTP Error 429: Unknown Error</li>
 </ul></article></main>
 </div>
 <script type="module">
