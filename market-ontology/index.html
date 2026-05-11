@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Market Ontology</title>
+  <title>Market Intelligence Hub</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -27,9 +27,8 @@
 <details class="nav-mid">
 <summary class="nav-mid-title">지도 / MOC</summary>
 <ul class="nav-list nav-small">
-<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">MOC</span> AI Research Radar</a></li>
-<li><a href="/research-desk/ai-research/signal-map.html"><span class="nav-badge">지도</span> AI Research Signal Map</a></li>
-<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html"><span class="nav-badge">전문</span> Agent AI Specialist Map</a></li>
+<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">허브</span> AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html"><span class="nav-badge">Agent</span> Agent AI Specialist Map</a></li>
 </ul>
 </details>
 <details class="nav-mid">
@@ -95,11 +94,8 @@
 <details class="nav-mid">
 <summary class="nav-mid-title">통합 지도</summary>
 <ul class="nav-list nav-small">
-<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">통합</span> Cross-Ontology Synthesizer</a></li>
-<li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">실제</span> Prediction Board</a></li>
-<li><a href="/research-desk/cross-ontology/prediction-feedback-loop.html"><span class="nav-badge">예측</span> Prediction Feedback Loop</a></li>
-<li><a href="/research-desk/cross-ontology/narrative-impact-transmission-model.html"><span class="nav-badge">전파</span> Narrative Impact Model</a></li>
-<li><a href="/research-desk/cross-ontology/inertia-gap-matrix.html"><span class="nav-badge">관성</span> Inertia Gap Matrix</a></li>
+<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">허브</span> Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">예측</span> Prediction Board</a></li>
 </ul>
 </details>
 <details class="nav-mid">
@@ -127,13 +123,10 @@
 <details class="nav-mid">
 <summary class="nav-mid-title">지도 / MOC</summary>
 <ul class="nav-list nav-small">
-<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">MOC</span> Market Ontology</a></li>
-<li><a href="/research-desk/market-ontology/stock-traffic-light.html"><span class="nav-badge">신호등</span> 주식 신호등</a></li>
-<li><a href="/research-desk/market-ontology/hyperscaler-capex-tracker.html"><span class="nav-badge">CAPEX</span> Hyperscaler CAPEX Tracker</a></li>
-<li><a href="/research-desk/market-ontology/contextual-valuation-radar.html"><span class="nav-badge">Valuation</span> Contextual Valuation Radar</a></li>
-<li><a href="/research-desk/market-ontology/reference-dashboard-registry.html"><span class="nav-badge">상세</span> Reference Dashboard Registry</a></li>
-<li><a href="/research-desk/market-ontology/industry-linkage-map.html"><span class="nav-badge">지도</span> AI Infra Industry Linkage Map</a></li>
+<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">허브</span> Market Intelligence Hub</a></li>
+<li><a href="/research-desk/market-ontology/stock-traffic-light.html"><span class="nav-badge">신호</span> 주식 신호등</a></li>
 <li><a href="/research-desk/market-ontology/securities-reports.html"><span class="nav-badge">리포트</span> Institutional Securities Desk</a></li>
+<li><a href="/research-desk/market-ontology/company-reports/index.html"><span class="nav-badge">회사</span> Company Reports</a></li>
 </ul>
 </details>
 <details class="nav-mid">
@@ -169,42 +162,36 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Market Ontology</h1>
-<p>주식/산업 흐름을 종목 리스트가 아니라 <strong>node-edge 관계와 narrative 변화</strong>로 기록하는 공개 허브.</p>
-<blockquote>투자 추천이 아니다. 산업 구조와 narrative 변화를 추적하기 위한 기록이다.</blockquote>
-<h2>먼저 볼 것</h2>
-<ul>
-<li><a href="/research-desk/market-ontology/industry-linkage-map.html">AI Infra Industry Linkage Map</a> — 산업 연결/병목/리스크를 한 장으로 보는 지도</li>
-<li><a href="/research-desk/market-ontology/stock-traffic-light.html">주식 신호등</a> — 섹터별 기업 신호등을 펼치기 방식으로 보는 daily-updated canonical page</li>
-<li><a href="/research-desk/market-ontology/hyperscaler-capex-tracker.html">Hyperscaler CAPEX Tracker</a> — MSFT/AMZN/GOOGL/META/ORCL의 AI infra CAPEX 압력을 주 1회 cache로 보는 upstream demand page</li>
-<li><a href="/research-desk/market-ontology/contextual-valuation-radar.html">Contextual Valuation Radar</a> — 현재가·52주 위치·사회/시장 맥락으로 노드별 저평가/고평가 후보 분류</li>
-<li><a href="/research-desk/reports/market/2026-05-07.html">2026-05-07 Market Narrative Brief</a> — 최신 market signal</li>
-</ul>
-<h2>채울 축</h2>
-<div class="viz-card"><div class="mermaid">flowchart LR
-  News[News / Price / Filing] --&gt; Node[Industry Node]
-  Price[Current Price / 52w Position / Momentum] --&gt; Valuation[Contextual Valuation Radar]
-  Social[Social / Policy / Market Context] --&gt; Valuation
-  Node --&gt; Edge[Supply-Demand Edge]
-  Edge --&gt; Bottleneck[Bottleneck Radar]
-  Bottleneck --&gt; Narrative[Market Narrative]
-  Narrative --&gt; Valuation
-  Valuation --&gt; Review[Human Review]</div></div>
-<ul>
-<li><strong>Industry Node:</strong> Cloud, Data Center, Semiconductor, HBM, Packaging, Power/Grid, On-device, Robotics</li>
-<li><strong>Supply-Demand Edge:</strong> capex, demand pull, supply constraint, risk transmission</li>
-<li><strong>Bottleneck Radar:</strong> 완화 후보 / 심화 후보 / 혼재 / 신호 약함</li>
-<li><strong>Contextual Valuation Radar:</strong> 현재가·52주 위치·모멘텀·노드 narrative·사회/시장 맥락을 결합해 저평가 후보/고평가 부담 후보/판단 보류로 분류</li>
-<li><strong>Human Review:</strong> 자동 생성된 signal을 사람이 ontology나 prediction ledger로 승격할지 판단</li>
-</ul>
-<h2>다음 공개 글 후보</h2>
+  <main><article><h1>Market Intelligence Hub</h1>
+<p>주식/산업 흐름을 페이지 여러 개로 흩뿌리지 않고 <strong>시장 지도 → 기업 신호 → 증권 리포트</strong> 3단계로 본다.</p>
+<blockquote>투자 추천이 아니다. 산업 구조, 기대치 변화, 근거 부족 지점을 추적하는 관찰용 대시보드다.</blockquote>
+<h2>먼저 볼 것 — 3개만</h2>
+<div class="home-bento-grid">
+<div class="home-bento-card"><b>1. 시장 지도</b><small>AI infra가 어디서 병목을 만들고 누가 영향을 받는지 본다. 세부 지도/CAPEX tracker는 이 허브의 하위 근거로만 둔다.</small><a href="/research-desk/market-ontology/industry-linkage-map.html">산업 연결 지도</a><a href="/research-desk/market-ontology/hyperscaler-capex-tracker.html">CAPEX 근거</a></div>
+<div class="home-bento-card"><b>2. 주식 신호등</b><small>가격 위치, 20D/60D 모멘텀, 내러티브, CAPEX/수요/병목/리스크를 한 화면에서 본다. Valuation 판단은 여기로 통합한다.</small><a href="/research-desk/market-ontology/stock-traffic-light.html">주식 신호등 보기</a></div>
+<div class="home-bento-card"><b>3. Institutional Securities Desk</b><small>관심 기업은 Source Pack, Analyst Pack, 기대치 revision, Base/Upside/Downside, red-team gate로 깊게 본다.</small><a href="/research-desk/market-ontology/securities-reports.html">증권 리포트 Desk</a><a href="/research-desk/market-ontology/company-reports/">회사 리포트</a></div>
+</div>
+<h2>읽는 순서</h2>
 <ol>
-<li>주식 리포트를 종목이 아니라 ontology로 보고 싶다</li>
-<li>AI 인프라 산업을 node와 edge로 그려보기</li>
-<li>NVIDIA-HBM-Data Center-Power Grid 연결 구조</li>
-<li>산업 narrative는 어떻게 주가와 연결되는가</li>
-<li>내가 모르는 것을 표시하는 투자 메모 시스템</li>
-</ol></article></main>
+<li><strong>20초:</strong> 오늘 강한 산업/회사 후보만 본다.</li>
+<li><strong>2분:</strong> 왜 움직였는지 — 기대치, CAPEX, 병목, 가격반영 여부를 확인한다.</li>
+<li><strong>10분:</strong> 회사 리포트에서 Source Pack, 숫자, 반대논리, 다음 촉매까지 본다.</li>
+</ol>
+<h2>통합 구조</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  News[News / Price / Filing] --&gt; Map[Market Map]
+  Map --&gt; Light[Stock Traffic Light]
+  Light --&gt; Desk[Institutional Securities Desk]
+  Desk --&gt; Hold[판단 보류 / 관찰 유지 / 리포트 승격]
+  Hold -. prediction feedback .-&gt; Map</div></div>
+<h2>운영 원칙</h2>
+<ul>
+<li>유사 페이지를 새로 늘리지 않는다.</li>
+<li>Valuation/traffic-light/company-lane은 <strong>주식 신호등</strong>으로 묶는다.</li>
+<li>증권사식 deep dive는 <strong>Institutional Securities Desk</strong>로 묶는다.</li>
+<li>리포트는 구조는 단순하게: <code>결론 → 근거 → 리스크 → 다음 확인 → 판단 상태</code>.</li>
+<li>내용은 얕게 줄이지 않는다: Source Pack, 숫자, 반대논리, 반증조건은 유지한다.</li>
+</ul></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';

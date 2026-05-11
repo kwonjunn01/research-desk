@@ -423,7 +423,13 @@ article::before { content:"⌘ Research command view · maps / signals / factors
 h1 { font-size: clamp(30px,4vw,52px); line-height:1.02; letter-spacing:-.055em; background:linear-gradient(180deg,#fff,#aeb4bd); -webkit-background-clip:text; background-clip:text; color:transparent; }
 h2 { border-top:1px solid rgba(255,255,255,.075); color:#f4f5f6; letter-spacing:-.035em; }
 h3 { color:#d7d8ff; }
-.desk-card, .lens-card, .prediction-card, .ref-node-card, .stock-hero-card, .stock-method-card, .stock-context, .stock-light-group, .stock-light-company { background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018)); border-color:rgba(255,255,255,.09); box-shadow:0 18px 70px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.035); }
+.desk-card, .lens-card, .prediction-card, .ref-node-card, .stock-hero-card, .stock-method-card, .stock-context, .stock-light-group, .stock-light-company, .report-guide { background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018)); border-color:rgba(255,255,255,.09); box-shadow:0 18px 70px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.035); }
+.report-guide { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 20px; padding:12px 14px; border:1px solid rgba(124,124,255,.22); border-radius:16px; color:#e8eaf0; }
+.report-guide b { color:#fff; margin-right:6px; }
+.report-guide span { font-size:12px; color:#d7d8ff; border:1px solid rgba(124,124,255,.22); background:rgba(124,124,255,.08); border-radius:999px; padding:5px 8px; }
+.report-guide small { flex-basis:100%; color:#9aa1ad; }
+article > h2 { margin-top:34px; padding:14px 0 8px; }
+article > h2 + p, article > h2 + ul { margin-top:10px; }
 .desk-card strong, .lens-card h3, .stock-method-card b, .prediction-card .label { color:#8b91ff; }
 .viz-card { background:radial-gradient(circle at 20% 0%,rgba(124,124,255,.18),transparent 35%),#08090a; border-color:rgba(124,124,255,.18); }
 code { color:#cfd0ff; background:rgba(124,124,255,.12); border:1px solid rgba(124,124,255,.20); }
