@@ -965,7 +965,7 @@ ${cmd}`;
       const raw = input.value.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;');
       const cmd = `python3 11-scripts/request_company_report.py "${raw.replace(/"/g, '\"')}" --provider fast --publish`;
       const action = `https://158.247.217.223.sslip.io/api/research-desk/company-create?query=${encodeURIComponent(raw)}&provider=fast`;
-      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 바로 Codex+Kimi fast intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><div class="kimi-create-actions"><a class="kimi-create-btn" href="${action}" data-kimi-create>생성 시작</a><button type="button" class="kimi-create-btn secondary" data-copy-cmd>명령 복사</button></div><span class="kimi-create-status" data-kimi-create-status>누르면 진행 상태 페이지로 이동한다.</span></div>`;
+      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 Codex 5.5 기반 intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><div class="kimi-create-actions"><a class="kimi-create-btn" href="${action}" data-kimi-create>생성 시작</a><button type="button" class="kimi-create-btn secondary" data-copy-cmd>명령 복사</button></div><span class="kimi-create-status" data-kimi-create-status>누르면 진행 상태 페이지로 이동한다.</span></div>`;
       const copyBtn = result.querySelector('[data-copy-cmd]');
       if (copyBtn) copyBtn.addEventListener('click', () => requestCreate(raw, cmd));
       return;
@@ -999,7 +999,7 @@ ${cmd}`;
   const indexUrl = `${base}/data/company-search-index.json?v=${Date.now()}`;
   fetch(indexUrl, {cache:'no-store'}).then(r => { if (!r.ok) throw new Error('index '+r.status); return r.json(); }).then(data => {
     rows = data.items || [];
-    if (count) count.textContent = `${rows.length} companies indexed · KR/US fast local search · fast intake: Codex + Kimi`;
+    if (count) count.textContent = `${rows.length} companies indexed · KR/US fast local search · intake: Codex 5.5`;
     const featured = rows.filter(x => ['NVIDIA','Vertiv','HD Hyundai Electric','SK Hynix','Microsoft','TSMC'].includes(x.company));
     render(featured.length ? featured : rows.slice(0,6));
   }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Company index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });
