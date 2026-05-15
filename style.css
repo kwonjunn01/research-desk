@@ -56,6 +56,12 @@ article h3 + blockquote + ol > li { border-color: rgba(124,124,255,.26); backgro
 blockquote { margin: 20px 0; padding: 12px 18px; border-left: 4px solid var(--accent); color: var(--muted); background: rgba(255,255,255,.03); }
 code { background: rgba(255,255,255,.08); padding: 2px 5px; border-radius: 5px; }
 pre { background: #080a0f; border: 1px solid var(--border); padding: 16px; border-radius: 12px; overflow-x: auto; max-width: 100%; }
+.table-scroll { max-width: 100%; overflow-x: auto; margin: 18px 0 24px; border: 1px solid rgba(255,255,255,.08); border-radius: 14px; background: rgba(255,255,255,.025); }
+.rd-table { width: 100%; min-width: 720px; border-collapse: collapse; font-size: 13px; line-height: 1.55; }
+.rd-table th, .rd-table td { padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,.07); vertical-align: top; text-align: left; }
+.rd-table th { color: var(--text); background: rgba(124,124,255,.12); font-weight: 800; }
+.rd-table td { color: var(--muted); }
+.rd-table tr:last-child td { border-bottom: 0; }
 pre, code { overflow-wrap: normal; }
 pre code { background: transparent; padding: 0; white-space: pre; }
 .viz-card { position: relative; background: radial-gradient(circle at 20% 0%, rgba(138,180,255,.12), transparent 35%), #0b0e14; border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin: 18px 0 24px; overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
