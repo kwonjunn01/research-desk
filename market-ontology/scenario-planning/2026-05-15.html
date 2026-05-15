@@ -255,6 +255,14 @@
 <p>다섯째, 지정학은 예측 가능성이 낮다. H200 승인, 판매 지연, 중국 자립, smuggling 단속은 모두 같은 주에 동시에 관찰됐다. 어느 하나만 골라 bull/bear로 단정하면 틀릴 확률이 높다. 다음 보고서에서는 실제 shipment, customer acceptance, export-license 처리 속도, 중국 대체 chip performance를 분리해서 다시 봐야 한다.</p>
 <h2>8. 8~12주 플래닝 전략</h2>
 <p>이번 시나리오는 다음 주 헤드라인 하나로 바꾸지 않는다. 8~12주 동안 유지할 root hypothesis는 <strong>agent와 long-context workload가 늘수록 병목이 모델 성능에서 runtime/memory/eval로, 다시 HBM·패키징·광인터커넥트·전력 인프라로 내려간다</strong>는 것이다. 주간 보고서는 이 가설을 매번 새로 쓰는 것이 아니라, 이번 주 신호가 이 인과 사슬의 어느 부분을 강화하거나 약화했는지 표시하는 방식으로 운영한다.</p>
+<ul>
+<li>Root hypothesis: agent/long-context workload 증가가 runtime·memory·eval 병목을 만들고, 이 병목이 HBM·advanced packaging·optical I/O·power/grid/cooling으로 내려가며 상장/비상장 수혜 레이어를 재편한다.</li>
+<li>Confirm trigger: paid agent deployment, production reference, CPO design win, HBM4 qualification, CoWoS/EMIB/FOPLP yield 개선, 전력설비 backlog가 동시에 강해질 때.</li>
+<li>Invalidation trigger: hyperscaler capex ROI 우려 공식화, agent adoption 지연, CPO/advanced packaging 상용화 지연, 전력설비 수주 둔화, 가격 상승 대비 EPS/revision 부재.</li>
+<li>Tier 상향 조건: 고객 채택, 수주/백로그, qualification/yield/throughput, production reference, security boundary 같은 실제 evidence가 붙을 때.</li>
+<li>Tier 하향 조건: 테마 단어와 가격만 있고 고객·수율·수주·revision·반복 매출 증거가 따라오지 않을 때.</li>
+<li>다음 4주 최우선 관찰 지표: hyperscaler utilization/inference margin, CPO 고객 채택, HBM4/CoWoS/EMIB yield, 전력설비 backlog, agent paid deployment와 보안 사고 부재.</li>
+</ul>
 <p>첫 4주는 선행지표를 본다. Agent software 쪽에서는 paid deployment, workflow retention, eval framework의 실제 제품 gate 채택, permission/security incident 부재를 본다. 물리 인프라 쪽에서는 hyperscaler capex의 총액보다 utilization, inference margin, data center power delay, CPO design win, HBM4 qualification, CoWoS/EMIB/FOPLP yield, 전력설비 backlog를 우선한다. 이 둘이 동시에 강해질 때만 base scenario의 확신도를 올린다.</p>
 <p>5~8주차에는 Tier를 조정한다. Tier S/A로 올리려면 단어가 아니라 증거가 붙어야 한다. 예를 들어 전력 기업은 신규 수주·백로그·납기·마진이 확인되어야 하고, optical 기업은 hyperscaler design win이나 capacity 증설이 확인되어야 하며, packaging/HBM 기업은 qualification·yield·throughput 개선이 확인되어야 한다. Agent software는 benchmark가 아니라 production reference와 security boundary가 확인되어야 한다. 반대로 가격만 오르고 EPS revision, 고객 채택, 수율, 수주가 따라오지 않으면 Tier B/C로 내린다.</p>
 <p>9~12주차에는 alternative scenario를 강제로 검토한다. 만약 hyperscaler가 capex ROI 우려를 공식화하거나, agent production adoption이 지연되거나, CPO/advanced packaging 상용화가 밀리면 base scenario를 “AI capex 피로와 인프라 과잉투자” 쪽으로 전환한다. 반대로 agent runtime/eval이 빠르게 안정화되고 물리 병목 주문이 동시에 확인되면, 다음 보고서에서는 전력·광학·패키징 중 <strong>가장 좁은 병목 하나</strong>를 골라 별도 deep-dive로 승격한다.</p>
