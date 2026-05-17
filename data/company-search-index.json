@@ -677,9 +677,9 @@
       "price_position_52w_pct": 84.51459201905897,
       "return_20d_pct": 56.32183908045978,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": -62.22,
+      "trailing_pe": -65.42,
       "forward_pe": null,
-      "price_to_book": 243.48,
+      "price_to_book": 256.01,
       "page": "/research-desk/market-ontology/company-reports/440110-kq.html",
       "summary": "HBM Memory · AI 데이터센터용 엔터프라이즈 SSD 컨트롤러·스토리지 반도체 팹리스 · 🟠 주황불"
     },
@@ -859,8 +859,8 @@
       "return_20d_pct": -8.172870003277023,
       "fundamentals_coverage": 90.0,
       "trailing_pe": null,
-      "forward_pe": -227.29085,
-      "price_to_book": 17.183502,
+      "forward_pe": -156.54863,
+      "price_to_book": 11.995529,
       "page": "/research-desk/market-ontology/company-reports/crwv-us.html",
       "summary": "Cloud Hyperscaler · AI GPU cloud / neocloud infrastructure provider · 🟢 초록불"
     },
@@ -1964,9 +1964,9 @@
       "price_position_52w_pct": 27.1280276816609,
       "return_20d_pct": 1.9023136246786532,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": -26.08,
+      "trailing_pe": -24.07,
       "forward_pe": null,
-      "price_to_book": 9.03,
+      "price_to_book": 8.33,
       "page": "/research-desk/market-ontology/company-reports/328130-kq.html",
       "summary": "Company Intake · AI 기반 암 진단·검진 및 정밀의료 소프트웨어 공급자 · 🟢 초록불"
     }

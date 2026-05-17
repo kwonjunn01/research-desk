@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12",
+  "generated_at": "2026-05-17",
   "method": "agent-based rule registry v0.2; analyst-agent edges are hypotheses and require filings/news verification",
   "rules_version": "0.2.0",
   "agents": [
@@ -337,17 +337,6 @@
       "bucket": "memory"
     },
     {
-      "id": "010130.KS",
-      "symbol": "010130.KS",
-      "company": "Korea Zinc",
-      "category": "HBM / Memory / Storage",
-      "node": "HBM Memory",
-      "role": "strategic materials / battery-metal adjacency",
-      "tier": "watch",
-      "region": "Korea",
-      "bucket": "memory"
-    },
-    {
       "id": "SNDK.US",
       "symbol": "SNDK.US",
       "company": "Sandisk Corporation",
@@ -368,6 +357,17 @@
       "tier": "watch",
       "region": "Korea",
       "bucket": "memory"
+    },
+    {
+      "id": "010130.KS",
+      "symbol": "010130.KS",
+      "company": "Korea Zinc",
+      "category": "Strategic Metals / Battery Materials",
+      "node": "Strategic Materials",
+      "role": "zinc/lead/gold/silver smelting, strategic metals recovery and battery-material adjacency",
+      "tier": "watch",
+      "region": "Korea",
+      "bucket": "other"
     },
     {
       "id": "MSFT.US",
@@ -4383,26 +4383,6 @@
     },
     {
       "source": "NVDA.US",
-      "target": "010130.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "product BOM/attach-rate evidence",
-        "memory/packaging allocation evidence",
-        "cycle/inventory contradiction check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "NVDA.US",
       "target": "SNDK.US",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -4482,6 +4462,26 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
+      "source": "NVDA.US",
+      "target": "051910.KS",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "product BOM/attach-rate evidence",
+        "memory/packaging allocation evidence",
+        "cycle/inventory contradiction check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
       "source": "AMD.US",
       "target": "MU.US",
       "relation": "attach_dependency",
@@ -4583,26 +4583,6 @@
     },
     {
       "source": "AMD.US",
-      "target": "010130.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "product BOM/attach-rate evidence",
-        "memory/packaging allocation evidence",
-        "cycle/inventory contradiction check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "AMD.US",
       "target": "SNDK.US",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -4682,6 +4662,26 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
+      "source": "AMD.US",
+      "target": "051910.KS",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "product BOM/attach-rate evidence",
+        "memory/packaging allocation evidence",
+        "cycle/inventory contradiction check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
       "source": "AVGO.US",
       "target": "MU.US",
       "relation": "attach_dependency",
@@ -4783,26 +4783,6 @@
     },
     {
       "source": "AVGO.US",
-      "target": "010130.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "product BOM/attach-rate evidence",
-        "memory/packaging allocation evidence",
-        "cycle/inventory contradiction check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "AVGO.US",
       "target": "SNDK.US",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -4882,6 +4862,26 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
+      "source": "AVGO.US",
+      "target": "051910.KS",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "product BOM/attach-rate evidence",
+        "memory/packaging allocation evidence",
+        "cycle/inventory contradiction check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
       "source": "MRVL.US",
       "target": "MU.US",
       "relation": "attach_dependency",
@@ -4983,26 +4983,6 @@
     },
     {
       "source": "MRVL.US",
-      "target": "010130.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "product BOM/attach-rate evidence",
-        "memory/packaging allocation evidence",
-        "cycle/inventory contradiction check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "MRVL.US",
       "target": "SNDK.US",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -5082,6 +5062,26 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
+      "source": "MRVL.US",
+      "target": "051910.KS",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "product BOM/attach-rate evidence",
+        "memory/packaging allocation evidence",
+        "cycle/inventory contradiction check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
       "source": "QCOM.US",
       "target": "MU.US",
       "relation": "attach_dependency",
@@ -5183,26 +5183,6 @@
     },
     {
       "source": "QCOM.US",
-      "target": "010130.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "product BOM/attach-rate evidence",
-        "memory/packaging allocation evidence",
-        "cycle/inventory contradiction check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "QCOM.US",
       "target": "SNDK.US",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -5264,6 +5244,26 @@
     {
       "source": "QCOM.US",
       "target": "006400.KS",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "product BOM/attach-rate evidence",
+        "memory/packaging allocation evidence",
+        "cycle/inventory contradiction check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "QCOM.US",
+      "target": "051910.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
       "strength": 0.8,
@@ -5383,26 +5383,6 @@
     },
     {
       "source": "ARM.US",
-      "target": "010130.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "product BOM/attach-rate evidence",
-        "memory/packaging allocation evidence",
-        "cycle/inventory contradiction check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "ARM.US",
       "target": "SNDK.US",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -5464,6 +5444,26 @@
     {
       "source": "ARM.US",
       "target": "006400.KS",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "product BOM/attach-rate evidence",
+        "memory/packaging allocation evidence",
+        "cycle/inventory contradiction check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "ARM.US",
+      "target": "051910.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
       "strength": 0.8,
@@ -5583,26 +5583,6 @@
     },
     {
       "source": "INTC.US",
-      "target": "010130.KS",
-      "relation": "attach_dependency",
-      "direction": "upstream",
-      "strength": 0.8,
-      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "product BOM/attach-rate evidence",
-        "memory/packaging allocation evidence",
-        "cycle/inventory contradiction check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "INTC.US",
       "target": "SNDK.US",
       "relation": "attach_dependency",
       "direction": "upstream",
@@ -5664,6 +5644,26 @@
     {
       "source": "INTC.US",
       "target": "006400.KS",
+      "relation": "attach_dependency",
+      "direction": "upstream",
+      "strength": 0.8,
+      "reason": "GPU/accelerator 출하는 HBM/DRAM 공급과 qualification에 영향받음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "product BOM/attach-rate evidence",
+        "memory/packaging allocation evidence",
+        "cycle/inventory contradiction check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "INTC.US",
+      "target": "051910.KS",
       "relation": "attach_dependency",
       "direction": "upstream",
       "strength": 0.8,
@@ -5783,26 +5783,6 @@
     },
     {
       "source": "MSFT.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Microsoft의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "MSFT.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -5864,6 +5844,26 @@
     {
       "source": "MSFT.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Microsoft의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "MSFT.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -5983,26 +5983,6 @@
     },
     {
       "source": "GOOGL.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Alphabet의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "GOOGL.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -6064,6 +6044,26 @@
     {
       "source": "GOOGL.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Alphabet의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "GOOGL.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -6183,26 +6183,6 @@
     },
     {
       "source": "AMZN.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Amazon의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "AMZN.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -6264,6 +6244,26 @@
     {
       "source": "AMZN.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Amazon의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "AMZN.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -6383,26 +6383,6 @@
     },
     {
       "source": "META.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Meta의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "META.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -6464,6 +6444,26 @@
     {
       "source": "META.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Meta의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "META.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -6583,26 +6583,6 @@
     },
     {
       "source": "ORCL.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Oracle의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "ORCL.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -6664,6 +6644,26 @@
     {
       "source": "ORCL.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Oracle의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "ORCL.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -6783,26 +6783,6 @@
     },
     {
       "source": "CRWV.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "CRWV.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -6864,6 +6844,26 @@
     {
       "source": "CRWV.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "CoreWeave의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -6983,26 +6983,6 @@
     },
     {
       "source": "SNOW.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Snowflake의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "SNOW.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -7064,6 +7044,26 @@
     {
       "source": "SNOW.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Snowflake의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "SNOW.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -7183,26 +7183,6 @@
     },
     {
       "source": "PLTR.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Palantir의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "PLTR.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -7264,6 +7244,26 @@
     {
       "source": "PLTR.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Palantir의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "PLTR.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -7383,26 +7383,6 @@
     },
     {
       "source": "035420.KS",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "NAVER의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "035420.KS",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -7464,6 +7444,26 @@
     {
       "source": "035420.KS",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "NAVER의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "035420.KS",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -7583,26 +7583,6 @@
     },
     {
       "source": "035720.KS",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Kakao의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "035720.KS",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -7664,6 +7644,26 @@
     {
       "source": "035720.KS",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Kakao의 AI workload 증가는 HBM/DRAM attach 수요로 전파될 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "035720.KS",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -7783,26 +7783,6 @@
     },
     {
       "source": "018260.KS",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "018260.KS",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -7864,6 +7844,26 @@
     {
       "source": "018260.KS",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "018260.KS",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -7983,26 +7983,6 @@
     },
     {
       "source": "NBIS.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "NBIS.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -8064,6 +8044,26 @@
     {
       "source": "NBIS.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -8183,26 +8183,6 @@
     },
     {
       "source": "DDOG.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Datadog의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "DDOG.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -8264,6 +8244,26 @@
     {
       "source": "DDOG.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Datadog의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "DDOG.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -8383,26 +8383,6 @@
     },
     {
       "source": "NET.US",
-      "target": "010130.KS",
-      "relation": "demand_pull",
-      "direction": "upstream",
-      "strength": 0.78,
-      "reason": "Cloudflare의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
-      "agent": "demand_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "hyperscaler CAPEX/AI workload statement",
-        "order/backlog or utilization evidence",
-        "price/volume reaction is supporting only, not primary"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "NET.US",
       "target": "SNDK.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -8464,6 +8444,26 @@
     {
       "source": "NET.US",
       "target": "006400.KS",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.78,
+      "reason": "Cloudflare의 AI CAPEX/cluster 증설은 memory 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "NET.US",
+      "target": "051910.KS",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.78,
@@ -14723,26 +14723,6 @@
     },
     {
       "source": "MU.US",
-      "target": "010130.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "competitive_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same customer/budget lane",
-        "margin/valuation context",
-        "red-team: not all same-sector companies are substitutes"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "MU.US",
       "target": "SNDK.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -14804,6 +14784,26 @@
     {
       "source": "MU.US",
       "target": "006400.KS",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "MU.US",
+      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -14883,26 +14883,6 @@
     },
     {
       "source": "000660.KS",
-      "target": "010130.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "competitive_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same customer/budget lane",
-        "margin/valuation context",
-        "red-team: not all same-sector companies are substitutes"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "000660.KS",
       "target": "SNDK.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -14964,6 +14944,26 @@
     {
       "source": "000660.KS",
       "target": "006400.KS",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "000660.KS",
+      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -15023,26 +15023,6 @@
     },
     {
       "source": "WDC.US",
-      "target": "010130.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "competitive_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same customer/budget lane",
-        "margin/valuation context",
-        "red-team: not all same-sector companies are substitutes"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "WDC.US",
       "target": "SNDK.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -15104,6 +15084,26 @@
     {
       "source": "WDC.US",
       "target": "006400.KS",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "WDC.US",
+      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -15143,26 +15143,6 @@
     },
     {
       "source": "STX.US",
-      "target": "010130.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "competitive_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same customer/budget lane",
-        "margin/valuation context",
-        "red-team: not all same-sector companies are substitutes"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "STX.US",
       "target": "SNDK.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -15242,8 +15222,8 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
-      "source": "402340.KS",
-      "target": "010130.KS",
+      "source": "STX.US",
+      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -15342,68 +15322,8 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
-      "source": "010130.KS",
-      "target": "SNDK.US",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "competitive_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same customer/budget lane",
-        "margin/valuation context",
-        "red-team: not all same-sector companies are substitutes"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "010130.KS",
-      "target": "440110.KQ",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "competitive_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same customer/budget lane",
-        "margin/valuation context",
-        "red-team: not all same-sector companies are substitutes"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "010130.KS",
-      "target": "373220.KS",
-      "relation": "peer_or_substitute",
-      "direction": "peer",
-      "strength": 0.5,
-      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
-      "agent": "competitive_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same customer/budget lane",
-        "margin/valuation context",
-        "red-team: not all same-sector companies are substitutes"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "010130.KS",
-      "target": "006400.KS",
+      "source": "402340.KS",
+      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -15464,6 +15384,26 @@
     {
       "source": "SNDK.US",
       "target": "006400.KS",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "SNDK.US",
+      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -15504,6 +15444,26 @@
     {
       "source": "440110.KQ",
       "target": "006400.KS",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "440110.KQ",
+      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
@@ -15524,6 +15484,46 @@
     {
       "source": "373220.KS",
       "target": "006400.KS",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "373220.KS",
+      "target": "051910.KS",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "memory lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "006400.KS",
+      "target": "051910.KS",
       "relation": "peer_or_substitute",
       "direction": "peer",
       "strength": 0.5,
