@@ -1,6 +1,6 @@
 {
   "manager": "Codex 5.5",
-  "generated_at": "2026-05-18",
+  "generated_at": "2026-05-19",
   "count": 78,
   "items": [
     {
@@ -648,9 +648,9 @@
       "price_position_52w_pct": 87.70050056497494,
       "return_20d_pct": 52.83662308227575,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 53.468174,
-      "forward_pe": 9.230573,
-      "price_to_book": 22.64031,
+      "trailing_pe": 45.222675,
+      "forward_pe": 7.7201815,
+      "price_to_book": 19.188198,
       "page": "/research-desk/market-ontology/company-reports/sndk-us.html",
       "summary": "HBM Memory · NAND flash and enterprise SSD storage supplier for AI/data-center infrastructure · 🟠 주황불"
     },
@@ -677,9 +677,9 @@
       "price_position_52w_pct": 89.37859837204685,
       "return_20d_pct": 73.78472222222223,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": -65.42,
+      "trailing_pe": -64.64,
       "forward_pe": null,
-      "price_to_book": 256.01,
+      "price_to_book": 252.94,
       "page": "/research-desk/market-ontology/company-reports/440110-kq.html",
       "summary": "HBM Memory · AI 데이터센터용 엔터프라이즈 SSD 컨트롤러·스토리지 반도체 팹리스 · 🟠 주황불"
     },
@@ -1083,9 +1083,9 @@
       "price_position_52w_pct": 69.53224186360185,
       "return_20d_pct": -5.3292640307758266,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 34.11765,
-      "forward_pe": 23.704596,
-      "price_to_book": 6.333349,
+      "trailing_pe": 32.766624,
+      "forward_pe": 22.712288,
+      "price_to_book": 6.0673294,
       "page": "/research-desk/market-ontology/company-reports/su-pa.html",
       "summary": "Power Infrastructure · energy management/data center electrical · 🟢 초록불"
     },
