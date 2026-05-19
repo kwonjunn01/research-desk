@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Agent AI Specialist Map</title>
+  <title>Cross-Ontology Synthesis — 2026-05-19</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -238,126 +238,106 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Agent AI Specialist Map</h1>
-<blockquote>Agent AI를 하나의 buzzword로 보지 않고, <strong>기술 stack → personal agent → 병목 → cross-market lane → 매일 점검 질문</strong>으로 쪼개 보는 전문 리서치 지도.</blockquote>
-<div class="desk-dashboard">
-<div class="desk-card hot"><strong>Specialist Layers</strong><p>9개 layer를 매일 추적: model, planning, tool, memory, browser, runtime, eval, security, personal product</p></div>
-<div class="desk-card warn"><strong>Bottlenecks</strong><p>8개 핵심 병목: reliability, tool error, memory, permission, eval gap, cost/latency</p></div>
-<div class="desk-card violet"><strong>Cross-Market Lanes</strong><p>5개 lane으로 inference/data center/security/edge/AI DevOps narrative와 연결</p></div>
+  <main><article>
+<div class="report-guide">
+  <b>읽는 순서</b>
+  <span>20초: 결론/후보</span>
+  <span>2분: 근거/가격반영</span>
+  <span>10분: 리스크/반증/원문</span>
+  <small>구조는 단순하게, 내용은 Source Pack·숫자·반대논리까지 깊게 유지한다.</small>
 </div>
-<h2>1. Stack overview</h2>
+<h1>Cross-Ontology Synthesis — 2026-05-19</h1>
+<p>tags: #cross-ontology #research-radar #market-narrative</p>
+<p><span class="badge">Home</span> / <span class="badge">Research Radar MOC</span> / <span class="badge">Market Ontology MOC</span></p>
+<blockquote>자동 생성 초안이다. 투자 추천이 아니라, AI research signal이 market narrative/industry ontology와 만나는 지점을 찾기 위한 연결 지도다.</blockquote>
+<h2>0. 오늘의 통합 지도</h2>
 <div class="viz-card"><div class="mermaid">flowchart LR
-  Model[&quot;Model &amp; Reasoning&quot;] --&gt; Planning[&quot;Planning / Control&quot;]
-  Planning --&gt; Tool[&quot;Tool Use / MCP&quot;]
-  Tool --&gt; Runtime[&quot;Workflow Runtime&quot;]
-  Runtime --&gt; Memory[&quot;Memory / RAG&quot;]
-  Memory --&gt; Eval[&quot;Eval / Observability&quot;]
-  Eval --&gt; Trust[&quot;Security / Trust&quot;]
-  Trust --&gt; Product[&quot;Personal Agent Product&quot;]
-  Browser[&quot;Browser / Computer Use&quot;] --&gt; Tool
-  Inference[&quot;Cost / Latency&quot;] --&gt; Product
-  Product --&gt; Market[&quot;Market / Industry Narrative&quot;]</div></div>
-<h2>2. Agent AI Layer Heatmap</h2>
-<p>각 layer는 매일 수집된 논문/레포/뉴스/제품 업데이트가 어느 위치에서 나왔는지 분류하는 기준이다.</p>
-<div class="ref-heat-cell high"><b>Model &amp; Reasoning</b><span>reasoning quality | tool/function calling | latency | model routing</span></div>
-<div class="ref-heat-cell high"><b>Planning &amp; Control</b><span>task decomposition | plan validation | replanning | long-horizon execution</span></div>
-<div class="ref-heat-cell high"><b>Tool Use / MCP</b><span>MCP ecosystem | tool discovery | schema validation | tool error recovery</span></div>
-<div class="ref-heat-cell high"><b>Memory / RAG</b><span>long-term memory | graph memory | retrieval precision | evidence trace</span></div>
-<div class="ref-heat-cell medium"><b>Browser / Computer Use</b><span>browser automation | computer use | UI drift | dangerous action approval</span></div>
-<div class="ref-heat-cell medium"><b>Runtime / Ops</b><span>state store | checkpoint | resume | task queue</span></div>
-<div class="ref-heat-cell high"><b>Eval / Observability</b><span>task success rate | step error rate | cost per task | benchmark gap</span></div>
-<div class="ref-heat-cell high"><b>Security / Trust</b><span>prompt injection | permission scope | secret leakage | audit log</span></div>
-<div class="ref-heat-cell high"><b>Personal Agent Product</b><span>email/calendar | files/notes | browser tasks | local-first memory</span></div>
-<h2>3. Specialist lens cards</h2>
-<div class="lens-grid">
-<div class="lens-card"><h3>Model &amp; Reasoning</h3><ul><li>reasoning model, structured output, function calling reliability가 agent task success의 출발점이다.</li><li>Daily watch: reasoning quality, tool/function calling, latency</li><li>Keywords: reasoning, function calling, structured output, o3, claude</li></ul></div>
-<div class="lens-card"><h3>Planning &amp; Control</h3><ul><li>agent가 demo를 넘어 장기 작업을 수행하려면 decomposition, validation, replanning이 필요하다.</li><li>Daily watch: task decomposition, plan validation, replanning</li><li>Keywords: planning, replanning, long-horizon, decomposition, react</li></ul></div>
-<div class="lens-card"><h3>Tool Use / MCP</h3><ul><li>MCP, function calling, tool registry가 agent를 실제 업무 시스템과 연결한다.</li><li>Daily watch: MCP ecosystem, tool discovery, schema validation</li><li>Keywords: mcp, model context protocol, tool server, function calling, tool registry</li></ul></div>
-<div class="lens-card"><h3>Memory / RAG</h3><ul><li>personal agent에는 장기 기억과 evidence trace가 필요하지만 context pollution과 privacy risk가 커진다.</li><li>Daily watch: long-term memory, graph memory, retrieval precision</li><li>Keywords: memory, rag, retrieval, graph memory, context</li></ul></div>
-<div class="lens-card"><h3>Browser / Computer Use</h3><ul><li>browser/computer use는 personal agent의 행동 범위를 넓히지만 UI drift와 승인 경계가 병목이다.</li><li>Daily watch: browser automation, computer use, UI drift</li><li>Keywords: browser, computer use, operator, gui, screen</li></ul></div>
-<div class="lens-card"><h3>Runtime / Ops</h3><ul><li>장기 실행 agent는 state persistence, checkpoint, trace, scheduler가 없으면 운영 시스템이 되지 못한다.</li><li>Daily watch: state store, checkpoint, resume</li><li>Keywords: workflow, runtime, state, checkpoint, scheduler</li></ul></div>
-<div class="lens-card"><h3>Eval / Observability</h3><ul><li>SWE-bench/WebArena/GAIA 같은 benchmark와 실제 사용성 gap을 계속 추적해야 한다.</li><li>Daily watch: task success rate, step error rate, cost per task</li><li>Keywords: eval, benchmark, swe-bench, webarena, gaia</li></ul></div>
-<div class="lens-card"><h3>Security / Trust</h3><ul><li>prompt injection, tool abuse, permission, secret leakage는 personal/enterprise agent adoption의 핵심 병목이다.</li><li>Daily watch: prompt injection, permission scope, secret leakage</li><li>Keywords: prompt injection, permission, sandbox, secret, audit</li></ul></div>
-<div class="lens-card"><h3>Personal Agent Product</h3><ul><li>사용자에게 중요한 것은 chatbot이 아니라 email/calendar/browser/files/local memory를 다루는 recurring workflow다.</li><li>Daily watch: email/calendar, files/notes, browser tasks</li><li>Keywords: personal agent, email, calendar, files, assistant</li></ul></div>
-</div>
-<h2>4. Bottleneck Heatmap</h2>
-<div class="ref-heat-cell high"><b>Long-horizon reliability</b><span>10단계 이상 작업에서 계획이 유지되고 실패 후 복구되는가? / 관련 layer: planning_control, runtime_ops, eval_observability</span></div>
-<div class="ref-heat-cell high"><b>Tool error recovery</b><span>tool 선택/인자/실행 실패를 agent가 설명하고 복구하는가? / 관련 layer: tool_mcp, runtime_ops</span></div>
-<div class="ref-heat-cell high"><b>Memory precision</b><span>memory가 도움인지 context pollution인지 evidence로 구분되는가? / 관련 layer: memory_rag, security_trust</span></div>
-<div class="ref-heat-cell medium"><b>Browser/UI drift</b><span>사이트 구조가 바뀌어도 browser agent가 견디는가? / 관련 layer: browser_computer, eval_observability</span></div>
-<div class="ref-heat-cell high"><b>Permission boundary</b><span>전송/구매/삭제/credential 접근 전에 approval이 있는가? / 관련 layer: security_trust, personal_product</span></div>
-<div class="ref-heat-cell high"><b>Prompt injection</b><span>외부 문서/웹페이지가 agent tool use를 오염시키지 않는가? / 관련 layer: security_trust, tool_mcp, memory_rag</span></div>
-<div class="ref-heat-cell high"><b>Eval-production gap</b><span>benchmark 상승이 실제 업무 성공률로 이어지는가? / 관련 layer: eval_observability, personal_product</span></div>
-<div class="ref-heat-cell medium"><b>Cost / latency</b><span>multi-step agent 비용과 지연이 daily UX를 허용하는가? / 관련 layer: model_reasoning, runtime_ops, personal_product</span></div>
-<h2>5. Bottleneck map</h2>
-<div class="viz-card"><div class="mermaid">flowchart LR
-  long_horizon_reliability[&quot;Long-horizon reliability&quot;]
-  long_horizon_reliability --&gt; planning_control[&quot;Planning &amp; Control&quot;]
-  long_horizon_reliability --&gt; runtime_ops[&quot;Runtime / Ops&quot;]
-  long_horizon_reliability --&gt; eval_observability[&quot;Eval / Observability&quot;]
-  tool_error_recovery[&quot;Tool error recovery&quot;]
-  tool_error_recovery --&gt; tool_mcp[&quot;Tool Use / MCP&quot;]
-  tool_error_recovery --&gt; runtime_ops[&quot;Runtime / Ops&quot;]
-  memory_precision[&quot;Memory precision&quot;]
-  memory_precision --&gt; memory_rag[&quot;Memory / RAG&quot;]
-  memory_precision --&gt; security_trust[&quot;Security / Trust&quot;]
-  browser_ui_drift[&quot;Browser/UI drift&quot;]
-  browser_ui_drift --&gt; browser_computer[&quot;Browser / Computer Use&quot;]
-  browser_ui_drift --&gt; eval_observability[&quot;Eval / Observability&quot;]
-  permission_boundary[&quot;Permission boundary&quot;]
-  permission_boundary --&gt; security_trust[&quot;Security / Trust&quot;]
-  permission_boundary --&gt; personal_product[&quot;Personal Agent Product&quot;]
-  prompt_injection[&quot;Prompt injection&quot;]
-  prompt_injection --&gt; security_trust[&quot;Security / Trust&quot;]
-  prompt_injection --&gt; tool_mcp[&quot;Tool Use / MCP&quot;]
-  prompt_injection --&gt; memory_rag[&quot;Memory / RAG&quot;]
-  eval_production_gap[&quot;Eval-production gap&quot;]
-  eval_production_gap --&gt; eval_observability[&quot;Eval / Observability&quot;]
-  eval_production_gap --&gt; personal_product[&quot;Personal Agent Product&quot;]
-  cost_latency[&quot;Cost / latency&quot;]
-  cost_latency --&gt; model_reasoning[&quot;Model &amp; Reasoning&quot;]
-  cost_latency --&gt; runtime_ops[&quot;Runtime / Ops&quot;]
-  cost_latency --&gt; personal_product[&quot;Personal Agent Product&quot;]</div></div>
-<h2>6. Personal Agent Product Map</h2>
-<p>개인 agent는 “chatbot”이 아니라 반복 workflow를 맡기는 제품이어야 한다. 아래는 매일 watch할 제품 유형과 필요한 layer다.</p>
-<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot"></span><span class="pred-pill">Product lane</span><span class="pred-pill">confidence Watch</span><span class="pred-pill">active</span></div><h3>Research / Knowledge Agent</h3><p class="thesis"><span class="label">Thesis</span><br>Jobs: 논문·뉴스 수집, memory 기반 주제 연결, weekly synthesis</p><p><span class="label">Inertia</span><br>Required layers: memory_rag, tool_mcp, eval_observability</p><p><span class="label">Check</span><br>Risk: source drift와 context pollution</p></div>
-<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot"></span><span class="pred-pill">Product lane</span><span class="pred-pill">confidence Watch</span><span class="pred-pill">active</span></div><h3>Email / Calendar Agent</h3><p class="thesis"><span class="label">Thesis</span><br>Jobs: 메일 triage, 일정 제안, 후속 reminder</p><p><span class="label">Inertia</span><br>Required layers: tool_mcp, security_trust, personal_product</p><p><span class="label">Check</span><br>Risk: permission boundary와 오발송</p></div>
-<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot"></span><span class="pred-pill">Product lane</span><span class="pred-pill">confidence Watch</span><span class="pred-pill">active</span></div><h3>Browser Task Agent</h3><p class="thesis"><span class="label">Thesis</span><br>Jobs: 웹 탐색, 폼 작성, 예약/구매 전 단계</p><p><span class="label">Inertia</span><br>Required layers: browser_computer, security_trust, eval_observability</p><p><span class="label">Check</span><br>Risk: UI drift와 dangerous action</p></div>
-<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot"></span><span class="pred-pill">Product lane</span><span class="pred-pill">confidence Watch</span><span class="pred-pill">active</span></div><h3>Coding Agent</h3><p class="thesis"><span class="label">Thesis</span><br>Jobs: repo 수정, test/debug, PR review</p><p><span class="label">Inertia</span><br>Required layers: planning_control, tool_mcp, runtime_ops, eval_observability</p><p><span class="label">Check</span><br>Risk: 테스트 없는 변경과 hidden side effect</p></div>
-<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot"></span><span class="pred-pill">Product lane</span><span class="pred-pill">confidence Watch</span><span class="pred-pill">active</span></div><h3>Local-first Life Admin Agent</h3><p class="thesis"><span class="label">Thesis</span><br>Jobs: 파일/노트 정리, 개인 memory, 반복 업무 자동화</p><p><span class="label">Inertia</span><br>Required layers: memory_rag, runtime_ops, security_trust</p><p><span class="label">Check</span><br>Risk: privacy와 local/cloud 경계</p></div>
-<h2>7. Agent AI → Market / Cross-Ontology Lanes</h2>
-<p>Agent AI 신호는 기술 뉴스로 끝나지 않고 inference, data center, security, SaaS, edge AI narrative로 이어질 수 있다.</p>
-<div class="viz-card"><div class="mermaid">flowchart LR
-  A1[&quot;Agent workload 증가&quot;] --&gt; M1[&quot;Inference Stack / Data Center&quot;]
-  A2[&quot;Memory/RAG 확산&quot;] --&gt; M2[&quot;Vector DB / Storage / Security&quot;]
-  A3[&quot;Browser/Computer Use 확산&quot;] --&gt; M3[&quot;SaaS workflow / RPA / Identity&quot;]
-  A4[&quot;On-device personal agent&quot;] --&gt; M4[&quot;Edge AI / Device / Privacy&quot;]
-  A5[&quot;Eval/Observability 중요도 상승&quot;] --&gt; M5[&quot;AI DevOps / Monitoring&quot;]</div></div>
+  Research[&quot;AI Research Signals&quot;] --&gt; Inference[&quot;Inference Stack&quot;]
+  Research --&gt; Agent[&quot;Agentic AI / Orchestration&quot;]
+  Research --&gt; Memory[&quot;Memory / RAG Security&quot;]
+  Research --&gt; Device[&quot;On-device / Edge AI&quot;]
+  Inference -- cost_and_latency_pressure --&gt; Cloud[&quot;Cloud Hyperscaler&quot;]
+  Cloud -- drives_capex_for --&gt; DataCenter[&quot;AI Data Center&quot;]
+  DataCenter -- pulls_demand_for --&gt; Chips[&quot;AI Semiconductor&quot;]
+  Chips -- depends_on --&gt; HBM[&quot;HBM / Advanced Packaging&quot;]
+  DataCenter -- constrained_by --&gt; Power[&quot;Power / Grid / Cooling&quot;]
+  Device -- creates_demand_for --&gt; Robotics[&quot;Robotics / Edge Devices&quot;]
+  Memory -- gates_adoption_for --&gt; Enterprise[&quot;Enterprise / Healthcare AI&quot;]
+  Agent -- increases_workload_for --&gt; Cloud</div></div>
+<h2>1. 오늘의 Cross Signal Heat</h2>
+<h3>강 · Inference Stack → AI Data Center / Cloud Hyperscaler / Power Infrastructure</h3>
 <ul>
-<li><strong>Agent workload 증가 → Inference Stack / Data Center:</strong> agent가 task당 token/tool/browser call을 늘리면 inference demand와 data center narrative가 강화되는가?</li>
-<li><strong>Memory/RAG 확산 → Vector DB / Storage / Security:</strong> enterprise agent memory가 storage, retrieval, security tooling 수요를 만드는가?</li>
-<li><strong>Browser/Computer Use 확산 → SaaS workflow / RPA / Identity:</strong> 기존 SaaS/RPA/ID permission layer와 경쟁·보완 관계가 어떻게 바뀌는가?</li>
-<li><strong>On-device personal agent → Edge AI / Device / Privacy:</strong> local inference와 privacy가 device/edge AI narrative로 이어지는가?</li>
-<li><strong>Eval/Observability 중요도 상승 → AI DevOps / Monitoring:</strong> agent production incident가 eval/observability tooling 수요를 당기는가?</li>
+<li><strong>Cross edge:</strong> <code>inference_cost_pressure_links_to_capex_and_power</code></li>
+<li><strong>왜 연결되는가:</strong> inference 비용·메모리 병목은 cloud serving margin, data center 증설, 전력/냉각 수요 narrative와 직접 연결된다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://arxiv.org/abs/2605.16217v1">Argus: Evidence Assembly for Scalable Deep Research Agents</a> — 오늘 수집 항목 중 Inference Stack와 Agentic AI를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li>[NextEra Energy to buy Dominion in deal that unites two key players in race to power AI data centers - CNBC](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMS1HSEhrTjM3VzItOGtDbXZOR1BVM2Rsemx4MnFmNTVqM1c0cTJ2WUZJMXBWTUc5bkF6aXpjUFYxU0xFemJhdGtINVdaUUhrZmF3SnJZQ2JUZjRoak83VkNaNHlWRXVRSEI0Q2RYeGRHQ0FDcjBZV3RYLWF5TlJfOXNUelRxN3Rw0gGOAUFVX3lxTE9Bck80aFdWNTVIMFR1aDdNNjZRMW0wZXA5NXQ1WkVIUEszZjM2cUZud0lHZUMzZk1LUmZl</li>
+<li><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQTUR4MkxMRG5VTjQycnBoQU1fWkN5RVFFSFJQRHRyazZ3ZkU1Q2pjdXd6c2RwaGNYcGVWV25UUDJtZlpoUEpUeTMwdU1sRlFEQVRjb045b084ZTl2cFFqWDFDU2NzTjBzY1ItZ1U4cHFSR0FfWEQwYTYyVENJQk04Z3l1Q3pZUC1vMFBrYUx5OWNGX3lCSVRqckQ0eFJhV1dkRlJueWYxckM4QjdyaUE?oc=5">AI could make power grid more efficient — if utilities can persuade regulators - E&amp;E News by POLITICO</a> — E&amp;E News by POLITICO / qualit</li>
 </ul>
-<h2>8. Daily Agent AI Specialist Watch</h2>
-<p>Daily AI Research Radar는 매일 아래 질문을 확인한다.</p>
-<ol>
-<li>오늘 신호는 어느 layer에서 나왔는가?</li>
-<li>실제 personal agent를 더 쓸모 있게 만드는가, 아니면 demo hype인가?</li>
-<li>어떤 병목을 직접 건드리는가?</li>
-<li>새 node/edge로 ontology에 추가해야 하는가?</li>
-<li>user-facing product 변화인가, infra/framework 변화인가?</li>
-<li>내가 모르고 있던 unknown은 무엇인가?</li>
-<li>market/cross ontology로 이어질 edge가 있는가?</li>
-<li>prediction ledger에 올릴 만한 timing-gap claim인가?</li>
-</ol>
-<h2>9. Canonical source files</h2>
+<h3>강 · On-device LLM / Edge AI → On-device AI / Robotics / AI Semiconductor</h3>
 <ul>
-<li><code>04-ontology/Agent AI Domain Ontology.md</code></li>
-<li><code>08-data/agent-ai-specialist-dashboard.json</code></li>
-<li><code>09-prompts/agent-ai-daily-research-protocol.md</code></li>
-<li><code>11-scripts/generate_daily_radar.py</code></li>
+<li><strong>Cross edge:</strong> <code>workload_shift_creates_edge_device_demand</code></li>
+<li><strong>왜 연결되는가:</strong> on-device inference가 가능해지면 일부 cloud workload는 줄 수 있지만, 로봇·모바일·edge device의 새 수요와 chip narrative를 만든다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://huggingface.co/papers/2605.05945">MobileEgo Anywhere: Open Infrastructure for long horizon egocentric data on commodity hardware</a> — 오늘 수집 항목 중 Inference Stack와 On-device LLM를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMENpT3BSSXNkS2dZZVlfVHpNQWxXSUlRNWRxdDc3TTlaVEV5Y2R6SlpPME9lMzUyNXZ3d0dJWHhJV2pGbWlxbmtUVklNOXFjclhQMzZ1ODFKeTJSRWRsMHlfUDNLSXBWd2h5MXgzeFBNczlGQ0VTMW5EVmV5dHBsSHFDM2dhU2JpSlJjdDFiSUZicjFsdVdQTFpJOTJSSjc1aEppYk4wYlA3UQ?oc=5">Accelerating on-device AI: A look at Arm and Google AI Edge optimization - blog.google</a></li>
+<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBSWE9NbF96YjNIbFN5RURYS1JoZDVrbDlWdjFWNUF4cUZhTm44Uy03Z0xkNkNheFByTnlheEdzYjFZMGhNU2hDZE92YkpyeDI0QkQ2dDUtNFplTU9TcmJ1WmZBbUtmemtZbnB3T3RtcXp3bzBiQmotbUczRGo?oc=5">Training a Humanoid Robot for Hard Work - Boston Dynamics</a></li>
+</ul>
+<h3>강 · Agentic AI / LLM Orchestration → Cloud Hyperscaler / Enterprise AI / Software Workflow</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>agent_workflows_drive_cloud_and_enterprise_adoption</code></li>
+<li><strong>왜 연결되는가:</strong> agent orchestration이 실제 workflow 제품으로 내려오면 cloud workload와 enterprise AI adoption narrative가 강화된다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>먼저 볼 논문:</strong> <strong>#1 General AI Research</strong> · 👍 161 · OpenDataLab · <a href="https://huggingface.co/papers/2605.12882">CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence</a> — HF Daily 상위권 General AI Research 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#2 General AI Research</strong> · 👍 129 · DeepCybo · <a href="https://huggingface.co/papers/2605.15298">PhysBrain 1.0 Technical Report</a> — HF Daily 상위권 General AI Research 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxONk5yQXJHbldIdnZzV2JVS1VXYl9Cb0M4VTdZS08yV3hGa3hNdkVuRUZMcDlPaEhwNGNVOWZJQ096YWdaVzk4MWZodkF4R3BWcTNLUmVDQXNMcUs1elVNT2ItNlpYeWpjWTgxX3l5X2NTanlIR3Y2MmZ1clVBUEVNNjgwVUM5ZlByeTZId25n?oc=5">AI Capex Megadeals: Microsoft, Anthropic Reshape Cloud - Gotrade</a> — Gotrade / quality 2 / hits: microsoft, cloud, capex</li>
+<li><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPTXR2eENtV1MyQ3JfS0RLR2xxN3F1Q1B4SzlLQ0ZudTdkZEdCOUpKNV9CMFlMaS10dk9tRzVaY3VJS0xnUEktSTZkUEhqZk1PdEphYlltdGVIcE5XZzM4VnhrOGtnTFNUWnhTVUo0dnJNaE1mMkZpSWU4d3JGU0pfdg?oc=5">Meta just bumped its 2026 capex forecast up to as much as $145 billion for the AI boom—and investors flinched - Fortune</a> — Fortune / quality 2 / hits: meta, capex</li>
+</ul>
+<h3>강 · Memory / RAG / RAG Security → Enterprise AI Risk / Healthcare AI / Security</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>retrieval_trust_risk_controls_enterprise_adoption</code></li>
+<li><strong>왜 연결되는가:</strong> RAG evidence 추적·오염·보안 문제가 커지면 regulated enterprise/healthcare AI adoption 속도와 governance narrative에 영향을 준다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>먼저 볼 논문:</strong> <strong>#1 General AI Research</strong> · 👍 161 · OpenDataLab · <a href="https://huggingface.co/papers/2605.12882">CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence</a> — HF Daily 상위권 General AI Research 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><a href="https://huggingface.co/papers/2605.14212">MetaAgent-X : Breaking the Ceiling of Automatic Multi-Agent Systems via End-to-End Reinforcement Learning</a> — 오늘 수집 항목 중 Post-training와 Agentic AI를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li>[CUHK and Diagens sign MoU to enhance women and children’s healthcare with medical imaging AI - BioSpectrum Asia](https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNC1Pb1l6R1FOaUtVM3RSa0tYYXh0SUVtQzE0N1RvbURfN0ZhSjZxelBIMGpFdzVYbGhRNHpFdF8xbmlpUDVEeldpQ0tkNVh3Y0YwZW1DTXhIT2ZreWR4Qk9IcmM1ZUdzUEwzZ0NHajZoQmw1bkJqRlRVZ1JMa3lHd3YzcmJCTzNRMUM3emlYR2Y3VWhieVdtaWZCNlM3M1ZlMHVhdGFJSS1uWWlhODNjY3lFWk9rX1dOOTZ5M1dkaDdIYlN</li>
+<li><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPbURQWGM4NC10YzVObndNQXEzRmtzUmZJS2hET2d0eUkxUjM0eTh3Z1BPVVRhdHpaWTBPVGJoQmQyMnFWZVY4ckpxQmNNcUFjYmtLY0JWX3hub3RFaWhySUdkczRBTF9HcG16MGxjbW5GeU5PTEIzMVhtRGkzZHB3SUMzQ1djc21oQTlZQ0taMGJWSmFOREE?oc=5">AI tools extract hidden health insights from routine chest imaging - healthcare-in-europe.com</a> — healthcare-in-europe.com / quality 2 / hits: healthcare, imaging</li>
+</ul>
+<h3>강 · Post-training / RLVR → AI Semiconductor / Cloud Capex ROI</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>model_capability_gains_raise_or_reprice_compute_demand</code></li>
+<li><strong>왜 연결되는가:</strong> post-training이 모델의 task 성공률을 높이면 agent 사용량과 compute demand를 늘릴 수 있고, 반대로 효율화는 capex ROI narrative를 재평가하게 만든다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>#5 Reasoning / Post-training</strong> · 👍 49 · Tencent Hunyuan · <a href="https://huggingface.co/papers/2605.11739">Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation</a> — HF Daily 상위권 Reasoning / Post-training 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>#7 Reasoning / Post-training</strong> · 👍 33 · Data Intelligence System Lab · <a href="https://huggingface.co/papers/2605.02290">Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding</a> — HF Daily 상위권 Reasoning / Post-training 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxONk5yQXJHbldIdnZzV2JVS1VXYl9Cb0M4VTdZS08yV3hGa3hNdkVuRUZMcDlPaEhwNGNVOWZJQ096YWdaVzk4MWZodkF4R3BWcTNLUmVDQXNMcUs1elVNT2ItNlpYeWpjWTgxX3l5X2NTanlIR3Y2MmZ1clVBUEVNNjgwVUM5ZlByeTZId25n?oc=5">AI Capex Megadeals: Microsoft, Anthropic Reshape Cloud - Gotrade</a> — Gotrade / quality 2 / hits: microsoft, cloud, capex</li>
+<li><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPTXR2eENtV1MyQ3JfS0RLR2xxN3F1Q1B4SzlLQ0ZudTdkZEdCOUpKNV9CMFlMaS10dk9tRzVaY3VJS0xnUEktSTZkUEhqZk1PdEphYlltdGVIcE5XZzM4VnhrOGtnTFNUWnhTVUo0dnJNaE1mMkZpSWU4d3JGU0pfdg?oc=5">Meta just bumped its 2026 capex forecast up to as much as $145 billion for the AI boom—and investors flinched - Fortune</a> — Fortune / quality 2 / hits: meta, capex</li>
+</ul>
+<hr>
+<h2>2. 오늘의 해석</h2>
+<ul>
+<li>Research signal은 단독으로 끝내지 않고 <code>compute cost</code>, <code>agent workload</code>, <code>RAG trust</code>, <code>on-device shift</code> 중 어디에 닿는지 본다.</li>
+<li>Market narrative는 가격 예측이 아니라 <code>어떤 산업 node/edge가 강해졌는지</code>로 읽는다.</li>
+<li>가장 중요한 질문은 ‘기술 signal이 실제 workload나 capex narrative를 바꾸는가?’다.</li>
+</ul>
+<h2>3. 다음 확인 질문</h2>
+<ul>
+<li>Inference memory/cost 개선이 cloud inference 비용을 실제로 낮추는가, 아니면 agent 사용량 증가로 총 compute demand를 키우는가?</li>
+<li>On-device LLM은 cloud 수요를 대체하는가, 아니면 robotics/edge workload를 새로 만들어 semiconductor 수요를 넓히는가?</li>
+<li>RAG security/evidence tracing은 enterprise/healthcare adoption의 병목인가, 아니면 governance 제품 기회인가?</li>
+<li>Hyperscaler capex 뉴스가 HBM/packaging/power bottleneck과 같은 방향으로 움직이는가?</li>
+</ul>
+<h2>4. 원본 리포트</h2>
+<ul>
+<li><span class="badge">Daily AI Research Radar — 2026-05-19</span></li>
+<li><span class="badge">Market Narrative Brief — 2026-05-19</span></li>
 </ul></article></main>
 </div>
 <script type="module">
