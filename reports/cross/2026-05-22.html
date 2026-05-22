@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quant Strategy Council</title>
+  <title>Cross-Ontology Synthesis — 2026-05-22</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -250,116 +250,107 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Quant Strategy Council</h1>
-<blockquote>목적: 단일 Strategy Bot이 혼자 판단하지 않고, 에이전트 팀이 <strong>전략 회의</strong>를 통해 현재 구조의 리스크를 줄이고 장세별 전략 스위치를 결정한다.</blockquote>
-<h2>1. 회의 원칙</h2>
-<p>Strategy Council은 매번 “무엇을 살까?”보다 먼저 “지금 이 전략을 켜도 되는 장인가?”를 묻는다.</p>
-<div class="desk-dashboard">
-<div class="desk-card hot"><strong>Risk First</strong><p>수익률보다 청산 확률, margin buffer, tail-risk를 먼저 검토</p></div>
-<div class="desk-card warn"><strong>Regime Switch</strong><p>횡보/추세/이벤트/유동성 장세별로 전략 모드를 다르게 선택</p></div>
-<div class="desk-card violet"><strong>Context Aware</strong><p>차트뿐 아니라 사회상황, 기술 이슈, 규제/매크로, 거래소 리스크를 함께 반영</p></div>
+  <main><article>
+<div class="report-guide">
+  <b>읽는 순서</b>
+  <span>20초: 결론/후보</span>
+  <span>2분: 근거/가격반영</span>
+  <span>10분: 리스크/반증/원문</span>
+  <small>구조는 단순하게, 내용은 Source Pack·숫자·반대논리까지 깊게 유지한다.</small>
 </div>
-<h2>2. 회의 참여 Agent</h2>
+<h1>Cross-Ontology Synthesis — 2026-05-22</h1>
+<p>tags: #cross-ontology #research-radar #market-narrative</p>
+<p><span class="badge">Home</span> / <span class="badge">Research Radar MOC</span> / <span class="badge">Market Ontology MOC</span></p>
+<blockquote>자동 생성 초안이다. 투자 추천이 아니라, AI research signal이 market narrative/industry ontology와 만나는 지점을 찾기 위한 연결 지도다.</blockquote>
+<h2>0. 오늘의 통합 지도</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  Research[&quot;AI Research Signals&quot;] --&gt; Inference[&quot;Inference Stack&quot;]
+  Research --&gt; Agent[&quot;Agentic AI / Orchestration&quot;]
+  Research --&gt; Memory[&quot;Memory / RAG Security&quot;]
+  Research --&gt; Device[&quot;On-device / Edge AI&quot;]
+  Inference -- cost_and_latency_pressure --&gt; Cloud[&quot;Cloud Hyperscaler&quot;]
+  Cloud -- drives_capex_for --&gt; DataCenter[&quot;AI Data Center&quot;]
+  DataCenter -- pulls_demand_for --&gt; Chips[&quot;AI Semiconductor&quot;]
+  Chips -- depends_on --&gt; HBM[&quot;HBM / Advanced Packaging&quot;]
+  DataCenter -- constrained_by --&gt; Power[&quot;Power / Grid / Cooling&quot;]
+  Device -- creates_demand_for --&gt; Robotics[&quot;Robotics / Edge Devices&quot;]
+  Memory -- gates_adoption_for --&gt; Enterprise[&quot;Enterprise / Healthcare AI&quot;]
+  Agent -- increases_workload_for --&gt; Cloud</div></div>
+<h2>1. 오늘의 Cross Signal Heat</h2>
+<h3>강 · Inference Stack → AI Data Center / Cloud Hyperscaler / Power Infrastructure</h3>
 <ul>
-<li><strong>Portfolio Manager Agent</strong></li>
-<li>현재 전략 자본, 손실 한도, exposure budget 결정</li>
-<li><strong>Strategy Bot</strong></li>
-<li>무한매수법 v2 기본 intent 생성</li>
-<li>전략 스위치 후보 제안</li>
-<li><strong>Risk Bot</strong></li>
-<li>margin, liquidation buffer, gap risk, kill-switch 조건 검토</li>
-<li><strong>Scenario Planning Agent</strong></li>
-<li>black swan, macro/social/technology issue, exchange risk 시나리오 제시</li>
-<li><strong>Research / Alpha Agent</strong></li>
-<li>뉴스, 정책, 기술, 온체인/시장 구조 변화 맥락 수집</li>
-<li><strong>Validator Agent</strong></li>
-<li>후보 전략이 과최적화인지, 백테스트/리플레이 근거가 충분한지 반박</li>
-<li><strong>Reporting Agent</strong></li>
-<li>결정과 근거를 Research Desk에 남김</li>
+<li><strong>Cross edge:</strong> <code>inference_cost_pressure_links_to_capex_and_power</code></li>
+<li><strong>왜 연결되는가:</strong> inference 비용·메모리 병목은 cloud serving margin, data center 증설, 전력/냉각 수요 narrative와 직접 연결된다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>5분 훑기 3. <a href="https://huggingface.co/papers/2605.19660">OScaR: The Occam&#x27;s Razor for Extreme KV Cache Quantization in LLMs and Beyond</a></strong></li>
+<li><a href="https://arxiv.org/abs/2605.21470v1">Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling</a> — arXiv, score 13, Agentic AI / Agent Planning / Tool Use / MCP / Inference Stack</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMirgJBVV95cUxNbnlsZ0tmUFNGcFNndTgzZnhCNXM1N05oaEt4SG9uUnhWM1J6MEZnUWR6Slk2cGRkQlVMS1MyMG9fZlE2ZDB2RjhJa1ltSVc2WTREeEl3bGlMMHFLeUtBTldVVnBwYlRYWERJal9yTFUteXY1aWprVVRRbThIZkMyTTVMbGxQUVZ4U3doNTRlWlltZ09JNVpzelNFRkZDaEc4ZGFWN3diZlZrZ0szYU5kUFlMNzZRY3B0c2M5dDFJeTVrX2wwbzRnWU9GMFFCU0MxRjJoeHZpSkl2VVdqTkl0aUhrYVdTaDkwRkp1aXNubDlnWDlfT3dWMXlxQThuRlF5SU1DUU8zbWRRVVlxd3J2N2o4SDJzR1U3Q3h1eG10RnctVENUNHJTeDRhQjJKdw?oc=5">Lambda Builds AI Factories with Supermicro NVIDIA Blackwell GPU Server Clusters to Deliver Production-ready Next-Gen…</a> — Supermicro / quality 2</li>
+<li><a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxOVmMyYml1YWJBTnJ0bEtRZ2UxbFBBQ2lKN3EyVFVJVE5tMVJ3Nk9fTXdMbjZqMy1zbmozYlZNVTh2dGNqZE1vVFBpaFhma3dyMS1icXd4OHM1bk0xbnZYZnVGVWVLVUllOTJ0c3dySmJzRUVFblVhNGprUzRueVJqc04tTmVxYVo2d1ZJcGlVMURGUW9EaGp2T3hkQmN4ZjA3Y25PdGlZMHpTTUpfcFlVZ0lOSFZNSERucnhxb2pZSkJJZkk5MWgwVWtLb1RzV3A4Z1Q2OTdvdzY5YVBXdU50WWJ0RTYxdkNSenhqTQ?oc=5">NANO Nuclear Signs Strategic MOU with Supermicro to Power the Next Generation of AI Data Centers with Advanced Nuclea…</a> — NANO Nuclear Energy Inc. / quality 2 / hits: power, nuclear</li>
 </ul>
-<h2>3. 회의 안건</h2>
-<p>각 회의는 아래 순서로 진행한다.</p>
-<pre><code>1. Current Position Review
-2. Market Regime Review
-3. External Context Review
-4. Scenario Planning
-5. Strategy Switch Decision
-6. Risk Budget / Margin Check
-7. Action Plan
-8. Rejected Alternatives 기록</code></pre>
-<h2>4. 현재 전략 기준</h2>
-<p>기본 전략은 <strong>BTC Futures 무한매수법 v2</strong>다.</p>
+<h3>강 · On-device LLM / Edge AI → On-device AI / Robotics / AI Semiconductor</h3>
 <ul>
-<li><code>20x</code> display leverage</li>
-<li>first notional: <code>capital × 20 × 0.5 / 31</code></li>
-<li><code>1-2-4-8-16</code> 5단계</li>
-<li><code>1%</code> 하락마다 다음 stage 1개만 pending</li>
-<li>평단 <code>+0.5%</code> 전체 익절</li>
-<li>Risk Bot은 추가매수만 중단/재개</li>
+<li><strong>Cross edge:</strong> <code>workload_shift_creates_edge_device_demand</code></li>
+<li><strong>왜 연결되는가:</strong> on-device inference가 가능해지면 일부 cloud workload는 줄 수 있지만, 로봇·모바일·edge device의 새 수요와 chip narrative를 만든다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — local GPU retrieval 기반 agent memory 구현 신호; on-device/runtime·Memory/RAG 양쪽에서 후속 검증 필요.</li>
+<li><a href="https://huggingface.co/papers/2605.21226">OCTOPUS: Optimized KV Cache for Transformers via Octahedral Parametrization Under optimal Squared error quantization</a> — Hugging Face Daily Papers, score 11, On-device LLM / Inference Stack</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNOEluY3cxN0ZCbjluTmtxQ04tTE4xaWhvMl9zT1FxX1lIQzE0T0hlZS12cmVmS2FibzJwQ1JxemhtOGotSGIzbEt1U20xSmRFWWpsTUpvN2UycVQtTXYzU0VhVGE0MnUzRnV3clJYZzZqeUNyZnl2ZVRLYXFJYXpIeklPMnQyQzQxWmxXVnlHd2ZLNE1ab0FXTGZVS09OSjZCdjIzekVkSFpucF9DU3pqVlI3VUtWVTjSAbcBQVVfeXFMTm9qZVN0LVBublNoRVhCZVdudEZsTW9HVFRISUxfV0dkQU1NLTgxdHA5NjBnazVxUEJrbm1IMXoweVVxaUlnUURqdjFoVEw0SWo3TlV6dHh0OXBQVDBZaDI2bzlxRnhfclpyMXBSSzNQWXBYZ3dPZjFBRGNCYjB5VnNhWGkxMkUwMU9Bckx6NDNac1NBOG1WSlYwWG50RGc3cHltVjhVUTVMYmxWWmgwT1cxckV3cUlj?oc=5">China unveils first humanoid robot for household chores, ready as early as 2027 - South China Morning Post</a> — South China Morning Post / quality 2 / hits: robot, humanoid</li>
+<li><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBIYlZCZm81Z21QZ2FMQWpTUndTZEREWXZNNjlidGZCR3hIVUdiSjNFQ1BkSkJ2ZzBneUlUY1lxb2l1U0paRmx4dzRkMG42OU9KUFdpTEhhQWlkOXFuR0h6NmxxUFh6NXd3Mi1sbk5ENmtVNFFkRTcxNWtoSdIBgAFBVV95cUxPdnByRTd6N2tXQmZyVXA0cUpJUTF6eHlPZ2M5MGh0aW01TmNmRjlHQ3MzYVZtUlJtSmlSRW9QYkdnRjVFY2JQeHVTWFJta3JYR3NpYVU4WEhOZmpzTjNMQ0duSnljX2o5cmdFS05xdGJRSXVjdGowN1pZVmhKQTlBdQ?oc=5">Job training for robots: How China is getting machines ready to join the workforce - CNBC</a> — CNBC / quality 3 / hits: robot</li>
 </ul>
-<p>이 기본 골격은 회의 없이 즉흥적으로 바꾸지 않는다.</p>
-<h2>5. Strategy Switch Matrix</h2>
-<p>장세별로 전략 모드를 다르게 선택한다.</p>
+<h3>강 · Agentic AI / LLM Orchestration → Cloud Hyperscaler / Enterprise AI / Software Workflow</h3>
 <ul>
-<li><strong>Range / Mean-Reversion Friendly</strong></li>
-<li>조건: ADX 낮음, lower breakdown 없음, funding/뉴스 리스크 낮음</li>
-<li>모드: 무한매수법 v2 <code>ACTIVE</code></li>
-<li>행동: stage1 진입, gate ON이면 다음 stage 1개 pending</li>
+<li><strong>Cross edge:</strong> <code>agent_workflows_drive_cloud_and_enterprise_adoption</code></li>
+<li><strong>왜 연결되는가:</strong> agent orchestration이 실제 workflow 제품으로 내려오면 cloud workload와 enterprise AI adoption narrative가 강화된다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>먼저 읽을 논문:</strong> <a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a> — GUI agent의 데이터 부족/실사용 일반화 문제를 직접 건드린다.</li>
+<li><strong>깊게 읽기 2. <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a></strong></li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNT0QxX0xxRXB2bjFKMjZoN0dtRFNiWHBUQi1lUHhUT0tCbzJ6bGtOb0lLeXJHZ2ZpRlVPTlFoOUIxck9YbUdHVE1EODFUdjVZUHlTQ21LZUUySTRxb0JJbU1tVDlCZWlvX2VwXzhhdXlQcUJIZTdzQU41ZmRFWlQ3MVhkZkxWYzRMZ3FCcC1pRHBSMFRsTXFB?oc=5">US Manufacturing Is Booming: Trump&#x27;s Tariffs Or AI Capex? - Amazon.com (NASDAQ:AMZN), Bloom Energy (NYSE - Benzinga</a> — Benzinga / quality 2 / hits: amazon, capex</li>
+<li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQSTRiaDFPQWg2cldvYUJKcVdpN3BDc2pOY0k5OFN0dUUtU2R5ZkJvaUNqY2FaWTNWVVhNTVFSak1jc2JvWXBpaVJZOXhkRkIzX3pIRG4tdE5oODRSc2pGdWt1eWI3X1cwSEtXbVktdld3YUp6c3RDSjR2MUVnWHRyVWJ4dzZ6TnhTaHF6b2dn?oc=5">Why Meta&#x27;s &#x27;Alarming&#x27; Capex Is Actually Bullish (NASDAQ:META) - Seeking Alpha</a> — Seeking Alpha / quality 2 / hits: meta, capex</li>
 </ul>
+<h3>강 · Memory / RAG / RAG Security → Enterprise AI Risk / Healthcare AI / Security</h3>
 <ul>
-<li><strong>Transition / Unclear</strong></li>
-<li>조건: 방향성 불확실, 이벤트 대기, 지표 혼재</li>
-<li>모드: <code>HOLD_EXISTING / NO_NEW_STAGE</code></li>
-<li>행동: 보유 포지션 TP 유지, 신규 추가매수 제한</li>
+<li><strong>Cross edge:</strong> <code>retrieval_trust_risk_controls_enterprise_adoption</code></li>
+<li><strong>왜 연결되는가:</strong> RAG evidence 추적·오염·보안 문제가 커지면 regulated enterprise/healthcare AI adoption 속도와 governance narrative에 영향을 준다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — local GPU retrieval 기반 agent memory 구현 신호; on-device/runtime·Memory/RAG 양쪽에서 후속 검증 필요.</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOakhxejVyMHJTXzc1UFZNTy11bHM2ZGZYRWRFcEFNVGlvamNaMHdIREpJaXVHTGp6UDhsOTRkaEEwUWF6SWlDaS1XMVFFY3owS29lVm8xai1xdnlJbDZiRExIMG5XU1NMenFIbFBfYlhnZlFWaWEwaVhhbVVzbW9PM3AtSkYyVmlTOTU4emowOHVmMF83N2FxbGdXWmRCdTZFY1BtVXlqYVRDOFd2VHc?oc=5">AI-enabled medical devices may fail on real-world patients, report cautions - Healthcare IT News</a> — Healthcare IT News / quality 2 / hits: healthcare, medical</li>
+<li><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1oWXV2TnUxME5XWWZodFlyN1JVWEpYQzY4QzRCaHZuRUZhRG5ZQWxaNGFtUHpQdFFkXzNfakhEQkJTSHFCQTIwR19SQWxfWjJIVTBfSHpXQ0R1Uy0zNlY3SWN3Q0ZIbEVjMW9j?oc=5">From Radiology to Drug Discovery, Survey Reveals AI Is Delivering Clear Return on Investment in Healthcare - NVIDIA Blog</a> — NVIDIA Blog / quality 2 / hits: healthcare, drug discovery</li>
 </ul>
+<h3>강 · Post-training / RLVR → AI Semiconductor / Cloud Capex ROI</h3>
 <ul>
-<li><strong>Trend Down / Breakdown Risk</strong></li>
-<li>조건: ADX rising, lower-band breakdown, 매크로/뉴스 악재</li>
-<li>모드: <code>ADD_BUY_OFF</code></li>
-<li>행동: 남은 pending buy 취소, 기존 TP만 유지</li>
+<li><strong>Cross edge:</strong> <code>model_capability_gains_raise_or_reprice_compute_demand</code></li>
+<li><strong>왜 연결되는가:</strong> post-training이 모델의 task 성공률을 높이면 agent 사용량과 compute demand를 늘릴 수 있고, 반대로 효율화는 capex ROI narrative를 재평가하게 만든다.</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>5분 훑기 2. <a href="https://huggingface.co/papers/2605.21468">You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories</a></strong></li>
+<li><a href="https://huggingface.co/papers/2605.21384">SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</a> — Hugging Face Daily Papers, score 17, Agentic AI / Agent Planning / Agent Evaluation / Post-training</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMirgJBVV95cUxNbnlsZ0tmUFNGcFNndTgzZnhCNXM1N05oaEt4SG9uUnhWM1J6MEZnUWR6Slk2cGRkQlVMS1MyMG9fZlE2ZDB2RjhJa1ltSVc2WTREeEl3bGlMMHFLeUtBTldVVnBwYlRYWERJal9yTFUteXY1aWprVVRRbThIZkMyTTVMbGxQUVZ4U3doNTRlWlltZ09JNVpzelNFRkZDaEc4ZGFWN3diZlZrZ0szYU5kUFlMNzZRY3B0c2M5dDFJeTVrX2wwbzRnWU9GMFFCU0MxRjJoeHZpSkl2VVdqTkl0aUhrYVdTaDkwRkp1aXNubDlnWDlfT3dWMXlxQThuRlF5SU1DUU8zbWRRVVlxd3J2N2o4SDJzR1U3Q3h1eG10RnctVENUNHJTeDRhQjJKdw?oc=5">Lambda Builds AI Factories with Supermicro NVIDIA Blackwell GPU Server Clusters to Deliver Production-ready Next-Gen…</a> — Supermicro / quality 2</li>
+<li><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNT0QxX0xxRXB2bjFKMjZoN0dtRFNiWHBUQi1lUHhUT0tCbzJ6bGtOb0lLeXJHZ2ZpRlVPTlFoOUIxck9YbUdHVE1EODFUdjVZUHlTQ21LZUUySTRxb0JJbU1tVDlCZWlvX2VwXzhhdXlQcUJIZTdzQU41ZmRFWlQ3MVhkZkxWYzRMZ3FCcC1pRHBSMFRsTXFB?oc=5">US Manufacturing Is Booming: Trump&#x27;s Tariffs Or AI Capex? - Amazon.com (NASDAQ:AMZN), Bloom Energy (NYSE - Benzinga</a> — Benzinga / quality 2 / hits: amazon, capex</li>
 </ul>
+<hr>
+<h2>2. 오늘의 해석</h2>
 <ul>
-<li><strong>Event / Black-Swan Watch</strong></li>
-<li>조건: 전쟁/규제/거래소 장애/ETF·금리·CPI/FOMC 등 이벤트</li>
-<li>모드: <code>PAUSE_OR_REDUCE</code></li>
-<li>행동: 신규 stage 금지, 필요시 manual review</li>
+<li>Research signal은 단독으로 끝내지 않고 <code>compute cost</code>, <code>agent workload</code>, <code>RAG trust</code>, <code>on-device shift</code> 중 어디에 닿는지 본다.</li>
+<li>Market narrative는 가격 예측이 아니라 <code>어떤 산업 node/edge가 강해졌는지</code>로 읽는다.</li>
+<li>가장 중요한 질문은 ‘기술 signal이 실제 workload나 capex narrative를 바꾸는가?’다.</li>
 </ul>
+<h2>3. 다음 확인 질문</h2>
 <ul>
-<li><strong>Data / Exchange Degradation</strong></li>
-<li>조건: stale data, last-mark divergence, API timeout</li>
-<li>모드: <code>DATA_NOT_READY</code></li>
-<li>행동: 신규 intent 금지, alert/report</li>
+<li>Inference memory/cost 개선이 cloud inference 비용을 실제로 낮추는가, 아니면 agent 사용량 증가로 총 compute demand를 키우는가?</li>
+<li>On-device LLM은 cloud 수요를 대체하는가, 아니면 robotics/edge workload를 새로 만들어 semiconductor 수요를 넓히는가?</li>
+<li>RAG security/evidence tracing은 enterprise/healthcare adoption의 병목인가, 아니면 governance 제품 기회인가?</li>
+<li>Hyperscaler capex 뉴스가 HBM/packaging/power bottleneck과 같은 방향으로 움직이는가?</li>
 </ul>
-<h2>6. Context Inputs</h2>
-<p>차트만 보지 않는다. Strategy Council은 아래 맥락을 같이 본다.</p>
+<h2>4. 원본 리포트</h2>
 <ul>
-<li>Macro:</li>
-<li>FOMC, CPI, 금리, 달러, 유동성</li>
-<li>Crypto market structure:</li>
-<li>funding, basis, open interest, liquidation cluster, ETF flow</li>
-<li>Social / geopolitical:</li>
-<li>전쟁, 규제, 대형 거래소 이슈, 법원/정책 이벤트</li>
-<li>Technology / security:</li>
-<li>체인 장애, 해킹, bridge exploit, L2/ETF/infrastructure 이슈</li>
-<li>Exchange / execution:</li>
-<li>OKX data health, mark/last divergence, funding abnormality, API degradation</li>
-<li>Narrative:</li>
-<li>BTC dominance, AI/tech risk-on/off, market sentiment shift</li>
-</ul>
-<h2>7. Decision Output</h2>
-<p>회의 결과는 아래 형태로 남긴다.</p>
-<pre><code>{
-  &quot;decision&quot;: &quot;ADD_BUY_OFF&quot;,
-  &quot;strategy_mode&quot;: &quot;infinite_buy_v2_hold_existing&quot;,
-  &quot;reason&quot;: [&quot;ADX rising&quot;, &quot;macro event within 24h&quot;, &quot;funding abnormal&quot;],
-  &quot;allowed_actions&quot;: [&quot;keep_tp&quot;, &quot;cancel_pending_buys&quot;],
-  &quot;blocked_actions&quot;: [&quot;new_stage&quot;, &quot;increase_leverage&quot;],
-  &quot;review_after&quot;: &quot;next_4h_or_event_resolution&quot;
-}</code></pre>
-<h2>8. Anti-Spaghetti Rule</h2>
-<p>회의에서 나온 아이디어는 바로 Strategy Bot 코드에 if문으로 추가하지 않는다.</p>
-<pre><code>scenario → hypothesis → replay/backtest → validator review → candidate → paper → promote/reject</code></pre>
-<p>전략 스위치는 agent team의 합의와 검증 로그를 따라야 한다.</p></article></main>
+<li><a href="/research-desk/reports/ai-research/2026-05-22.html">Daily AI Research Radar — 2026-05-22</a></li>
+<li><a href="/research-desk/reports/market/2026-05-22.html">Market Narrative Brief — 2026-05-22</a></li>
+</ul></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
