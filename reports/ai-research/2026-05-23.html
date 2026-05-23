@@ -270,57 +270,57 @@
 <li><strong>Collected at:</strong> 2026-05-22T23:31+00:00 UTC / 2026-05-23 08:31 KST — 최신성 점검용 수집 시각</li>
 <li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-05-23이 report date와 일치한다.</li>
 <li><strong>Sources:</strong> Hugging Face Daily Papers 30, GitHub 18, arXiv 16, Hacker News 15</li>
-<li><strong>Top topics:</strong> <span class="badge">Agentic AI</span> 26, <span class="badge">AI Research</span> 26, <span class="badge">Agent Evaluation</span> 15, <span class="badge">Inference Stack</span> 12, <span class="badge">LLM Orchestration</span> 9</li>
+<li><strong>Top topics:</strong> <span class="badge">AI Research</span> 26, <span class="badge">Agentic AI</span> 25, <span class="badge">Agent Evaluation</span> 15, <span class="badge">Inference Stack</span> 12, <span class="badge">On-device LLM</span> 7</li>
 </ul>
 <hr>
 <h2>0-1. 20초 요약</h2>
 <ul>
-<li><strong>오늘 한 문장:</strong> <span class="badge">Agentic AI</span> 26, <span class="badge">AI Research</span> 26, <span class="badge">Agent Evaluation</span> 15 쪽으로 attention이 몰렸다.</li>
-<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 4, Reasoning / Post-training 3, Inference / Efficiency 3가 핵심이고, 깊게 읽을 후보는 TransitLM: A Large-Scale Dataset and Benchmark for Ma… / DelTA: Discriminative Token Credit Assignment for Rei… / Perception or Prejudice: Can MLLMs Go Beyond First Im….</li>
-<li><strong>먼저 읽을 논문:</strong> <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다.</li>
-<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 26, <span class="badge">Agentic AI</span> 25, <span class="badge">Agent Evaluation</span> 15 쪽으로 attention이 몰렸다.</li>
+<li><strong>논문 결론:</strong> 오늘은 Reasoning / Post-training 4, Agent / Tool-use 3, Inference / Efficiency 3가 핵심이고, 깊게 읽을 후보는 DelTA: Discriminative Token Credit Assignment for Rei… / TransitLM: A Large-Scale Dataset and Benchmark for Ma… / π-Bench: Evaluating Proactive Personal Assistant Agen….</li>
+<li><strong>먼저 읽을 논문:</strong> <a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a> — reasoning 강화학습이 꼭 대규모 업데이트를 요구하는지, 작은 학습으로도 확장되는지 확인할 재료다.</li>
+<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a> — Hugging Face Daily Papers, score 16, <span class="badge">Post-training</span></li>
 <li><strong>읽는 순서:</strong> 오늘 읽을 2~3개 → 훑을 것 → 스킵 후보 → topic heat/Lens Radar</li>
 </ul>
 <hr>
 <h2>1. HF Daily digest — 먼저 볼 논문</h2>
 <blockquote>원순위 10개를 나열하지 않는다. HF popularity는 참고만 하고, 오늘 실제로 읽을지/훑을지/스킵할지를 먼저 정한다.</blockquote>
 <ul>
-<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 4, Reasoning / Post-training 2, Inference / Efficiency 2, Benchmark / Evaluation 1, Multimodal / Generation 1 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(4개).</li>
-<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 4, Reasoning / Post-training 3, Inference / Efficiency 3가 핵심이고, 깊게 읽을 후보는 TransitLM: A Large-Scale Dataset and Benchmark for Ma… / DelTA: Discriminative Token Credit Assignment for Rei… / Perception or Prejudice: Can MLLMs Go Beyond First Im….</li>
+<li><strong>Top 10 layer mix:</strong> Reasoning / Post-training 3, Agent / Tool-use 3, Inference / Efficiency 2, Benchmark / Evaluation 1, Multimodal / Generation 1 — 오늘 먼저 볼 축은 <code>Reasoning / Post-training</code>(3개).</li>
+<li><strong>논문 결론:</strong> 오늘은 Reasoning / Post-training 4, Agent / Tool-use 3, Inference / Efficiency 3가 핵심이고, 깊게 읽을 후보는 DelTA: Discriminative Token Credit Assignment for Rei… / TransitLM: A Large-Scale Dataset and Benchmark for Ma… / π-Bench: Evaluating Proactive Personal Assistant Agen….</li>
 </ul>
 <h3>오늘 읽을 2~3개</h3>
 <ul>
-<li><strong>깊게 읽기 1. <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a></strong></li>
-<li><strong>위치:</strong> HF #1 · 👍 162 · Agent / Tool-use · Hanyu Guo, Jiedong Yang · digest score 23</li>
-<li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Public transit route planning traditionally depends on structured map infrastructure and complex routing engines, and no existing dataset supports training models to bypass this dependency. We present TransitLM, a large-scale dataset of over 13 million transit route planning records from four Chinese cities covering 1…</li>
-<li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정</li>
-<li><strong>내 판단:</strong> Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
-<li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
-<li><strong>깊게 읽기 2. <a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a></strong></li>
+<li><strong>깊게 읽기 1. <a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a></strong></li>
 <li><strong>위치:</strong> HF #3 · 👍 124 · Reasoning / Post-training · Kaiyi Zhang, Wei Wu · digest score 22</li>
 <li><strong>쉽게 말하면:</strong> 정답 확인이 쉬운 문제로 LLM reasoning을 강화학습할 때, 생각보다 아주 작은 방향의 파라미터 변화만으로도 성능이 늘 수 있다는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Reinforcement learning from verifiable rewards (RLVR) has emerged as a central technique for improving the reasoning capabilities of large language models. Despite its effectiveness, how response-level rewards translate into token-level probability changes remains poorly understood.</li>
 <li><strong>핵심 용어:</strong> RL = 강화학습: 모델이 정답/보상 신호를 보며 행동을 더 잘하도록 조정하는 학습; RLVR = 검증 가능한 강화학습: 정답 확인이 쉬운 문제로 reasoning을 강화학습시키는 방식; verifiable rewards = 검증 가능한 보상: 수학/코드처럼 정답 확인이 쉬운 문제에서 보상을 주는 신호</li>
 <li><strong>내 판단:</strong> reasoning 강화학습이 꼭 대규모 업데이트를 요구하는지, 작은 학습으로도 확장되는지 확인할 재료다. 모델 능력 향상이 단순 benchmark가 아니라 검증 가능한 보상/긴 작업 안정성으로 이동하는지 보는 재료다.</li>
 <li><strong>확인할 것:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지.</li>
-<li><strong>깊게 읽기 3. <a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a></strong></li>
-<li><strong>위치:</strong> HF #2 · 👍 151 · Agent / Tool-use · Caixin Kang, Tianyu Yan · digest score 20</li>
-<li><strong>쉽게 말하면:</strong> 이미지·영상·소리 같은 비텍스트 데이터를 더 잘 이해하거나 생성하려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Multimodal Large Language Models (MLLMs) are increasingly deployed in human-facing roles where personality perception is critical, yet existing benchmarks evaluate this capability solely on numerical Big Five score prediction, leaving open whether models truly perceive personality through behavioral understanding or m…</li>
-<li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
+<li><strong>깊게 읽기 2. <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a></strong></li>
+<li><strong>위치:</strong> HF #1 · 👍 162 · Benchmark / Evaluation · Hanyu Guo, Jiedong Yang · digest score 20</li>
+<li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Public transit route planning traditionally depends on structured map infrastructure and complex routing engines, and no existing dataset supports training models to bypass this dependency. We present TransitLM, a large-scale dataset of over 13 million transit route planning records from four Chinese cities covering 1…</li>
+<li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정</li>
+<li><strong>내 판단:</strong> Benchmark / Evaluation 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
+<li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
+<li><strong>깊게 읽기 3. <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a></strong></li>
+<li><strong>위치:</strong> HF #4 · 👍 75 · Agent / Tool-use · Haoran Zhang, Luxin Xu · digest score 20</li>
+<li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
+<li><strong>핵심 내용:</strong> The rise of personal assistant agents, e.g., OpenClaw, highlights the growing potential of large language models to support users across everyday life and work. A core challenge in these settings is proactive assistance, since users often begin with underspecified requests and leave important needs, constraints, or pr…</li>
+<li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트</li>
 <li><strong>내 판단:</strong> Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
 <li><strong>확인할 것:</strong> 환경/benchmark가 장난감인지, 실제 browser·OS·tool 실패를 포함하는지.</li>
 </ul>
 <h3>훑고 넘어갈 것</h3>
 <ul>
-<li><strong>5분 훑기 1. <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a></strong></li>
-<li><strong>위치:</strong> HF #4 · 👍 75 · Benchmark / Evaluation · Haoran Zhang, Luxin Xu · digest score 17</li>
-<li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
-<li><strong>핵심 내용:</strong> The rise of personal assistant agents, e.g., OpenClaw, highlights the growing potential of large language models to support users across everyday life and work. A core challenge in these settings is proactive assistance, since users often begin with underspecified requests and leave important needs, constraints, or pr…</li>
-<li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트</li>
-<li><strong>내 판단:</strong> Benchmark / Evaluation 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
-<li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
+<li><strong>5분 훑기 1. <a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a></strong></li>
+<li><strong>위치:</strong> HF #2 · 👍 151 · Reasoning / Post-training · Caixin Kang, Tianyu Yan · digest score 19</li>
+<li><strong>쉽게 말하면:</strong> 이미지·영상·소리 같은 비텍스트 데이터를 더 잘 이해하거나 생성하려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Multimodal Large Language Models (MLLMs) are increasingly deployed in human-facing roles where personality perception is critical, yet existing benchmarks evaluate this capability solely on numerical Big Five score prediction, leaving open whether models truly perceive personality through behavioral understanding or m…</li>
+<li><strong>핵심 용어:</strong> multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
+<li><strong>내 판단:</strong> Reasoning / Post-training 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 인기는 있지만 우리 thesis와의 연결은 약할 수 있어, 먼저 초록 수준으로만 확인한다.</li>
+<li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
 <li><strong>5분 훑기 2. <a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a></strong></li>
 <li><strong>위치:</strong> HF #5 · 👍 71 · Inference / Efficiency · Yanke Zhou, Yiduo Li · digest score 18</li>
 <li><strong>쉽게 말하면:</strong> 검색 결과 중 진짜 쓸 만한 문서를 더 싸고 빠르게 골라내는 방법을 다루는 논문이다.</li>
@@ -395,39 +395,39 @@
 <h3>오늘의 topic heat</h3>
 <blockquote>edge heat는 양쪽 topic의 동시 출현 또는 직접 evidence 기준이다. 한쪽 broad node만 뜨거운 경우는 과열 표시를 낮춘다.</blockquote>
 <ul>
-<li><span class="badge">Post-training</span> → <strong>improves</strong> → <span class="badge">Agentic AI</span> | heat: 강 (5/26, direct evidence 2)</li>
+<li><span class="badge">Post-training</span> → <strong>improves</strong> → <span class="badge">Agentic AI</span> | heat: 강 (5/25, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Post-training</span>(학습 이후 보상·검증·정렬로 모델 능력을 끌어올리는 영역)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>모델 능력을 끌어올림</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a> — 오늘 올라온 RLVR/보상 기반 학습 항목이라, agent가 긴 reasoning/task를 더 안정적으로 수행할 수 있는지 확인할 가치가 있다.</li>
 <li><a href="https://huggingface.co/papers/2605.22642">Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning</a> — 오늘 수집 항목 중 <span class="badge">Post-training</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Agent Planning</span> → <strong>controls</strong> → <span class="badge">Agentic AI</span> | heat: 강 (6/26, direct evidence 2)</li>
+<li><span class="badge">Agent Planning</span> → <strong>controls</strong> → <span class="badge">Agentic AI</span> | heat: 강 (5/25, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Agent Planning</span>(goal을 단계/DAG로 쪼개고 실패 시 재계획하는 agent 제어 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>agent의 계획·실행을 제어함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — 오늘 수집 항목 중 <span class="badge">Agent Planning</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — 오늘 수집 항목 중 <span class="badge">Agent Planning</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Tool Use / MCP</span> → <strong>connects</strong> → <span class="badge">Agentic AI</span> | heat: 중 (0/26, direct evidence 2)</li>
+<li><a href="https://huggingface.co/papers/2605.20176">ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning</a> — 오늘 수집 항목 중 <span class="badge">Agent Planning</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><span class="badge">Tool Use / MCP</span> → <strong>connects</strong> → <span class="badge">Agentic AI</span> | heat: 중 (0/25, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Tool Use / MCP</span>(function calling, MCP, API connector로 agent를 외부 세계와 연결하는 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>외부 도구/API/데이터와 연결함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.21850">ACC: Compiling Agent Trajectories for Long-Context Training</a> — 오늘 수집 항목 중 <span class="badge">Tool Use / MCP</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
 <li><a href="https://huggingface.co/papers/2605.20176">ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning</a> — 오늘 수집 항목 중 <span class="badge">Tool Use / MCP</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Agentic AI</span> → <strong>becomes</strong> → <span class="badge">Personal Agent</span> | heat: 중 (26/2, direct evidence 1)</li>
+<li><span class="badge">Agentic AI</span> → <strong>becomes</strong> → <span class="badge">Personal Agent</span> | heat: 중 (25/2, direct evidence 1)</li>
 <li>기본 해석: <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)가 <span class="badge">Personal Agent</span>(email/calendar/browser/files/local memory를 다루는 개인 업무 자동화 agent 영역)에 <strong>개인 업무/생활 agent 제품으로 내려옴</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a> — 오늘 수집 항목 중 <span class="badge">Agentic AI</span>와 <span class="badge">Personal Agent</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Agent Evaluation</span> → <strong>validates</strong> → <span class="badge">Agentic AI</span> | heat: 강 (15/26, direct evidence 2)</li>
+<li><span class="badge">Agent Evaluation</span> → <strong>validates</strong> → <span class="badge">Agentic AI</span> | heat: 강 (15/25, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Agent Evaluation</span>(SWE-bench, WebArena, GAIA, OSWorld 등 agent 성공률/실패 유형 평가 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>실제 성공률과 실패 유형을 검증함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — 오늘 수집 항목 중 <span class="badge">Agent Evaluation</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — 오늘 수집 항목 중 <span class="badge">Agent Evaluation</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
 <li><span class="badge">Agent Security</span> → <strong>constrains</strong> → <span class="badge">Personal Agent</span> | heat: 없음 (0/2, direct evidence 0)</li>
 <li>기본 해석: <span class="badge">Agent Security</span>(prompt injection, tool abuse, permission, secret leakage를 다루는 신뢰/보안 계층)가 <span class="badge">Personal Agent</span>(email/calendar/browser/files/local memory를 다루는 개인 업무 자동화 agent 영역)에 <strong>신뢰·권한·보안 병목으로 제약함</strong></li>
 <li>오늘 올라온 내용: 직접 연결되는 강한 항목은 적음. 구조적 관찰 edge로만 유지.</li>
-<li><span class="badge">LLM Orchestration</span> → <strong>turns_models_into</strong> → <span class="badge">Agentic AI</span> | heat: 강 (9/26, direct evidence 2)</li>
+<li><span class="badge">LLM Orchestration</span> → <strong>turns_models_into</strong> → <span class="badge">Agentic AI</span> | heat: 강 (7/25, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">LLM Orchestration</span>(여러 모델/도구/API를 workflow로 엮는 운영 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>모델을 실제 작업 흐름/agent로 바꿈</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — 오늘 수집 항목 중 <span class="badge">LLM Orchestration</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a> — 오늘 수집 항목 중 <span class="badge">LLM Orchestration</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">Inference Stack</span> → <strong>makes_feasible</strong> → <span class="badge">Agentic AI</span> | heat: 강 (12/26, direct evidence 2)</li>
+<li><a href="https://huggingface.co/papers/2605.21850">ACC: Compiling Agent Trajectories for Long-Context Training</a> — 오늘 수집 항목 중 <span class="badge">LLM Orchestration</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><span class="badge">Inference Stack</span> → <strong>makes_feasible</strong> → <span class="badge">Agentic AI</span> | heat: 강 (12/25, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Inference Stack</span>(serving, latency, throughput, memory/KV cache 같은 실행 비용 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>비용·속도 측면에서 실사용 가능하게 함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
@@ -442,7 +442,7 @@
 <li>오늘 올라온 내용:</li>
 <li><a href="https://arxiv.org/abs/2605.22814v1">Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration</a> — 오늘 올라온 RLVR/보상 기반 학습 항목이라, agent가 긴 reasoning/task를 더 안정적으로 수행할 수 있는지 확인할 가치가 있다.</li>
 <li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
-<li><span class="badge">Agentic AI</span> → <strong>requires</strong> → <span class="badge">Memory / RAG</span> | heat: 중 (26/0, direct evidence 2)</li>
+<li><span class="badge">Agentic AI</span> → <strong>requires</strong> → <span class="badge">Memory / RAG</span> | heat: 중 (25/0, direct evidence 2)</li>
 <li>기본 해석: <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)가 <span class="badge">Memory / RAG</span>(외부 지식 검색과 장기 기억으로 agent를 보강하는 계층)에 <strong>실사용을 위해 필요로 함</strong></li>
 <li>오늘 올라온 내용:</li>
 <li><a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
@@ -452,22 +452,22 @@
 <li>오늘 올라온 내용:</li>
 <li><a href="https://github.com/langgenius/dify">langgenius/dify</a> — 오늘 수집 항목 중 <span class="badge">Memory / RAG</span>와 <span class="badge">RAG Security</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
 <li><a href="https://github.com/open-webui/open-webui">open-webui/open-webui</a> — 오늘 수집 항목 중 <span class="badge">Memory / RAG</span>와 <span class="badge">RAG Security</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
-<li><span class="badge">LLM Orchestration</span> → <strong>uses_protocols_like</strong> → <span class="badge">MCP</span> | heat: 없음 (9/0, direct evidence 0)</li>
+<li><span class="badge">LLM Orchestration</span> → <strong>uses_protocols_like</strong> → <span class="badge">MCP</span> | heat: 없음 (7/0, direct evidence 0)</li>
 <li>기본 해석: <span class="badge">LLM Orchestration</span>(여러 모델/도구/API를 workflow로 엮는 운영 계층)가 <span class="badge">MCP</span>(agent와 외부 tool/data source를 연결하는 protocol 계층)에 <strong>MCP 같은 연결 표준을 활용함</strong></li>
 <li>오늘 올라온 내용: 직접 연결되는 강한 항목은 적음. 구조적 관찰 edge로만 유지.</li>
 </ul>
 <h3>TL;DR</h3>
 <ul>
-<li><strong>오늘 한 문장:</strong> <span class="badge">Agentic AI</span> 26, <span class="badge">AI Research</span> 26, <span class="badge">Agent Evaluation</span> 15 쪽으로 attention이 몰렸다.</li>
+<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 26, <span class="badge">Agentic AI</span> 25, <span class="badge">Agent Evaluation</span> 15 쪽으로 attention이 몰렸다.</li>
 <li><strong>먼저 볼 것:</strong> <code>오늘 읽을 2~3개</code>의 요지/왜 지금/확인할 것만 먼저 보고, 나머지는 훑기·스킵으로 보낸다.</li>
 <li><strong>더 읽을지 판단:</strong> agent/workload/bottleneck으로 번역되는 신호가 있으면 상세 signal을 본다.</li>
 <li><strong>승격 기준:</strong> 논문/레포가 실제 production stack, 비용/latency, 재현성, adoption 증거와 연결되면 weekly 후보로 올린다.</li>
 </ul>
 <h3>5분 스캔</h3>
 <ul>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
 <li><a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a> — Hugging Face Daily Papers, score 16, <span class="badge">Post-training</span></li>
-<li><a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — Hugging Face Daily Papers, score 27, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
 <li><a href="https://arxiv.org/abs/2605.22814v1">Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">On-device LLM</span> / <span class="badge">Post-training</span></li>
 <li><a href="https://arxiv.org/abs/2605.22786v1">LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 </ul>
@@ -480,7 +480,7 @@
 <li><strong>Why this lens matters:</strong> 도구 사용, workflow, 협업 agent가 실제 제품/업무로 이어지는지</li>
 <li><strong>Hard signal 후보:</strong></li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — Hugging Face Daily Papers, score 27, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li><a href="https://huggingface.co/papers/2605.22177">Maestro: Reinforcement Learning to Orchestrate Hierarchical Model-Skill Ensembles</a> — Hugging Face Daily Papers, score 11, <span class="badge">Agentic AI</span> / <span class="badge">LLM Orchestration</span></li>
 <li><a href="https://huggingface.co/papers/2605.10158">Unsupervised Process Reward Models</a> — Hugging Face Daily Papers, score 8, <span class="badge">Post-training</span></li>
@@ -521,7 +521,7 @@
 <li><strong>Status:</strong> signal 후보</li>
 <li><strong>Why this lens matters:</strong> agent memory와 retrieval이 실제 신뢰성/보안 문제를 해결하는지</li>
 <li><strong>Hard signal 후보:</strong></li>
-<li><a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
@@ -532,7 +532,7 @@
 <li><strong>Why this lens matters:</strong> agent가 긴 작업을 계획·검증·복구할 수 있는지</li>
 <li><strong>Hard signal 후보:</strong></li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — Hugging Face Daily Papers, score 27, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
 </ul>
@@ -551,7 +551,7 @@
 <li><strong>Why this lens matters:</strong> benchmark와 실제 사용 간 gap을 줄이는지</li>
 <li><strong>Hard signal 후보:</strong></li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — Hugging Face Daily Papers, score 27, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><strong>Hype / weak-evidence 후보:</strong></li>
 <li>뚜렷한 hype 후보 없음</li>
 </ul>
@@ -575,17 +575,7 @@
 </ul>
 <hr>
 <h2>4. 오늘의 핵심 signal 5개</h2>
-<h3>Signal 1: TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</h3>
-<ul>
-<li><strong>Source:</strong> Hugging Face Daily Papers</li>
-<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a></li>
-<li><strong>Topic:</strong> <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><strong>Why it matters:</strong> Public transit route planning traditionally depends on structured map infrastructure and complex routing engines, and no existing dataset supports training models to bypass this dependency. We present TransitLM, a large-</li>
-<li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
-<li><strong>Priority score:</strong> 23</li>
-<li><strong>Tags:</strong> #signal</li>
-</ul>
-<h3>Signal 2: DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</h3>
+<h3>Signal 1: DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</h3>
 <ul>
 <li><strong>Source:</strong> Hugging Face Daily Papers</li>
 <li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a></li>
@@ -595,14 +585,24 @@
 <li><strong>Priority score:</strong> 16</li>
 <li><strong>Tags:</strong> #signal</li>
 </ul>
-<h3>Signal 3: Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</h3>
+<h3>Signal 2: TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</h3>
 <ul>
 <li><strong>Source:</strong> Hugging Face Daily Papers</li>
-<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a></li>
-<li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><strong>Why it matters:</strong> Multimodal Large Language Models (MLLMs) are increasingly deployed in human-facing roles where personality perception is critical, yet existing benchmarks evaluate this capability solely on numerical Big Five score predi</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a></li>
+<li><strong>Topic:</strong> <span class="badge">Agent Evaluation</span></li>
+<li><strong>Why it matters:</strong> Public transit route planning traditionally depends on structured map infrastructure and complex routing engines, and no existing dataset supports training models to bypass this dependency. We present TransitLM, a large-</li>
 <li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
 <li><strong>Priority score:</strong> 23</li>
+<li><strong>Tags:</strong> #signal</li>
+</ul>
+<h3>Signal 3: π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</h3>
+<ul>
+<li><strong>Source:</strong> Hugging Face Daily Papers</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a></li>
+<li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><strong>Why it matters:</strong> The rise of personal assistant agents, e.g., OpenClaw, highlights the growing potential of large language models to support users across everyday life and work. A core challenge in these settings is proactive assistance,</li>
+<li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
+<li><strong>Priority score:</strong> 27</li>
 <li><strong>Tags:</strong> #signal</li>
 </ul>
 <h3>Signal 4: Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration</h3>
@@ -691,14 +691,14 @@
 <hr>
 <h2>7. 내 업무와 연결되는 포인트</h2>
 <ul>
-<li><strong><span class="badge">Agentic AI</span>:</strong> <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a>, <a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a>, <a href="https://huggingface.co/papers/2605.21850">ACC: Compiling Agent Trajectories for Long-Context Training</a></li>
-<li><strong><span class="badge">Agent Planning</span>:</strong> <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a>, <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a>, <a href="https://arxiv.org/abs/2605.22814v1">Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration</a></li>
+<li><strong><span class="badge">Agentic AI</span>:</strong> <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a>, <a href="https://huggingface.co/papers/2605.21850">ACC: Compiling Agent Trajectories for Long-Context Training</a>, <a href="https://huggingface.co/papers/2605.22642">Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning</a></li>
+<li><strong><span class="badge">Agent Planning</span>:</strong> <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a>, <a href="https://arxiv.org/abs/2605.22814v1">Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration</a>, <a href="https://huggingface.co/papers/2605.22138">Efficient Agentic Reasoning Through Self-Regulated Simulative Planning</a></li>
 <li><strong><span class="badge">Tool Use / MCP</span>:</strong> TBD</li>
 <li><strong><span class="badge">Personal Agent</span>:</strong> <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a>, <a href="https://getattache.com/">Show HN: I built an AI executive assistant you use through iMessage</a></li>
 <li><strong><span class="badge">Agent Evaluation</span>:</strong> <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a>, <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a>, <a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a></li>
 <li><strong><span class="badge">Agent Security</span>:</strong> TBD</li>
 <li><strong><span class="badge">On-device LLM</span>:</strong> <a href="https://huggingface.co/papers/2605.22681">Forecasting Scientific Progress with Artificial Intelligence</a>, <a href="https://huggingface.co/papers/2605.20176">ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning</a>, <a href="https://arxiv.org/abs/2605.22814v1">Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration</a></li>
-<li><strong><span class="badge">LLM Orchestration</span>:</strong> <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a>, <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a>, <a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a></li>
+<li><strong><span class="badge">LLM Orchestration</span>:</strong> <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a>, <a href="https://huggingface.co/papers/2605.22642">Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning</a>, <a href="https://huggingface.co/papers/2605.20176">ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning</a></li>
 <li><strong><span class="badge">Post-training</span>:</strong> <a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a>, <a href="https://huggingface.co/papers/2605.21850">ACC: Compiling Agent Trajectories for Long-Context Training</a>, <a href="https://arxiv.org/abs/2605.22814v1">Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration</a></li>
 <li><strong><span class="badge">Inference Stack</span>:</strong> <a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a>, <a href="https://huggingface.co/papers/2605.22718">WorldKV: Efficient World Memory with World Retrieval and Compression</a>, <a href="https://huggingface.co/papers/2605.21072">Q-ARVD: Quantizing Autoregressive Video Diffusion Models</a></li>
 </ul>
@@ -716,15 +716,15 @@
 <ul>
 <li><strong>Model &amp; Reasoning:</strong> 중 — 모델이 agent task 성공률을 실제로 올리는지</li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — Hugging Face Daily Papers, score 27, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><strong>Planning &amp; Control:</strong> 중 — goal 분해·재계획·human checkpoint가 있는지</li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — Hugging Face Daily Papers, score 27, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><strong>Tool Use / MCP:</strong> 중 — 외부 tool/API 연결이 안정적인지</li>
 <li><a href="https://huggingface.co/papers/2605.21850">ACC: Compiling Agent Trajectories for Long-Context Training</a> — Hugging Face Daily Papers, score 15, <span class="badge">Agentic AI</span> / <span class="badge">Post-training</span></li>
 <li><a href="https://huggingface.co/papers/2605.20176">ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
 <li><strong>Memory / RAG:</strong> 중 — memory가 정확도 개선인지 context pollution인지</li>
-<li><a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>Browser / Computer Use:</strong> 중 — 실제 웹/OS 조작이 견고한지</li>
 <li><a href="https://huggingface.co/papers/2605.22668">SEGA: Spectral-Energy Guided Attention for Resolution Extrapolation in Diffusion Transformers</a> — Hugging Face Daily Papers, score 10, <span class="badge">Inference Stack</span></li>
@@ -734,7 +734,7 @@
 <li><a href="https://huggingface.co/papers/2605.22642">Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span> / <span class="badge">LLM Orchestration</span></li>
 <li><strong>Eval / Observability:</strong> 중 — 벤치마크와 실제 사용성 gap을 줄이는지</li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — Hugging Face Daily Papers, score 27, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><strong>Security / Trust:</strong> 없음 — 권한·보안·감사 경계가 명확한지</li>
 <li>직접 evidence 약함. 구조적 watch만 유지.</li>
 <li><strong>Personal Agent Product:</strong> 중 — chatbot이 아니라 recurring personal workflow인지</li>
@@ -745,7 +745,7 @@
 <ul>
 <li><strong>long_horizon_reliability:</strong> evidence 2</li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — Hugging Face Daily Papers, score 27, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><strong>tool_error_recovery:</strong> evidence 1</li>
 <li><a href="https://arxiv.org/abs/2605.22794v1">MOSS: Self-Evolution through Source-Level Rewriting in Autonomous Agent Systems</a> — arXiv, score 7, <span class="badge">Agentic AI</span> / <span class="badge">LLM Orchestration</span></li>
 <li><strong>memory_precision:</strong> evidence 2</li>
@@ -756,7 +756,7 @@
 <li><a href="https://huggingface.co/papers/2605.22344">Bernini: Latent Semantic Planning for Video Diffusion</a> — Hugging Face Daily Papers, score 8, <span class="badge">Agent Planning</span></li>
 <li><strong>eval_production_gap:</strong> evidence 2</li>
 <li><a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — Hugging Face Daily Papers, score 27, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agent Evaluation</span></li>
 <li><strong>cost_latency:</strong> evidence 2</li>
 <li><a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Inference Stack</span></li>
 <li><a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a> — Hugging Face Daily Papers, score 16, <span class="badge">Post-training</span></li>
@@ -796,9 +796,9 @@
 <hr>
 <h2>10. Weekly 후보</h2>
 <ul>
-<li>[ ] <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
 <li>[ ] <a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a> — <span class="badge">Post-training</span></li>
-<li>[ ] <a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a> — <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li>[ ] <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a> — <span class="badge">Agent Evaluation</span></li>
+<li>[ ] <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a> — <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
 </ul>
 <hr>
 <h2>11. 원본 링크 모음</h2>
