@@ -306,10 +306,10 @@
 <li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
 <li><strong>깊게 읽기 3. <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a></strong></li>
 <li><strong>위치:</strong> HF #4 · 👍 75 · Agent / Tool-use · Haoran Zhang, Luxin Xu · digest score 20</li>
-<li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> 개인 비서 agent가 애매한 요청을 오래 이어지는 workflow에서 먼저 알아차리고 도와줄 수 있는지 평가하는 벤치마크 논문이다.</li>
 <li><strong>핵심 내용:</strong> The rise of personal assistant agents, e.g., OpenClaw, highlights the growing potential of large language models to support users across everyday life and work. A core challenge in these settings is proactive assistance, since users often begin with underspecified requests and leave important needs, constraints, or pr…</li>
 <li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트</li>
-<li><strong>내 판단:</strong> Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
+<li><strong>내 판단:</strong> 개인 agent 제품에서 중요한 <code>모호한 요청 파악→선제 제안→긴 workflow 유지</code> 병목을 평가한다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
 <li><strong>확인할 것:</strong> 환경/benchmark가 장난감인지, 실제 browser·OS·tool 실패를 포함하는지.</li>
 </ul>
 <h3>훑고 넘어갈 것</h3>
@@ -323,17 +323,17 @@
 <li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
 <li><strong>5분 훑기 2. <a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a></strong></li>
 <li><strong>위치:</strong> HF #5 · 👍 71 · Inference / Efficiency · Yanke Zhou, Yiduo Li · digest score 18</li>
-<li><strong>쉽게 말하면:</strong> 검색 결과 중 진짜 쓸 만한 문서를 더 싸고 빠르게 골라내는 방법을 다루는 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> 긴 문맥에서 full attention 비용을 줄이기 위해 필요한 토큰/헤드만 sparse하게 쓰도록 바꾸는 추론·학습 효율화 논문이다.</li>
 <li><strong>핵심 내용:</strong> Long-context inference in large language models is bottlenecked by the quadratic cost of full attention. Existing efficient alternatives often rely either on native sparse training or on heuristic token eviction, creating an undesirable trade-off among efficiency, training cost, and accuracy.</li>
-<li><strong>핵심 용어:</strong> retrieval/RAG = 검색/RAG: 외부 문서나 기억을 찾아 모델 답변에 붙이는 방식; inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
-<li><strong>내 판단:</strong> RAG/search 품질을 좌우하는 reranking 비용·효율 문제와 연결된다. agent memory/RAG가 좋아지는지, 아니면 비용·정확도 병목이 남는지 판단하는 재료다.</li>
-<li><strong>확인할 것:</strong> 정확도 개선 대비 latency·비용이 production 검색에 맞는지.</li>
+<li><strong>핵심 용어:</strong> full attention = 전체 attention: 긴 문맥의 모든 토큰을 넓게 보는 방식이라 정확하지만 비용이 커질 수 있음; sparse attention = 희소 attention: 중요한 토큰/헤드만 골라 계산해 긴 문맥 비용을 줄이는 방식; long context = 긴 문맥: 매우 긴 문서/대화/작업 기록을 한 번에 다루는 능력; retrieval/RAG = 검색/RAG: 외부 문서나 기억을 찾아 모델 답변에 붙이는 방식</li>
+<li><strong>내 판단:</strong> 긴 문맥 attention 비용을 sparse 전환으로 줄이려는 시도라, agent memory/inference 비용 병목과 연결된다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
+<li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
 <li><strong>5분 훑기 3. <a href="https://huggingface.co/papers/2605.21850">ACC: Compiling Agent Trajectories for Long-Context Training</a></strong></li>
 <li><strong>위치:</strong> HF #6 · 👍 51 · Agent / Tool-use · Qisheng Su, Zhen Fang · digest score 19</li>
-<li><strong>쉽게 말하면:</strong> 검색 결과 중 진짜 쓸 만한 문서를 더 싸고 빠르게 골라내는 방법을 다루는 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> agent가 도구를 쓰며 남긴 긴 작업 기록을 학습 데이터로 압축해 long-context reasoning을 키우려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Recent development of agents has renewed demand for long-context reasoning capacity of LLMs. However, training LLMs for this capacity requires costly long-document curation or heuristic context synthesis.</li>
-<li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조</li>
-<li><strong>내 판단:</strong> RAG/search 품질을 좌우하는 reranking 비용·효율 문제와 연결된다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
+<li><strong>핵심 용어:</strong> long context = 긴 문맥: 매우 긴 문서/대화/작업 기록을 한 번에 다루는 능력; agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조</li>
+<li><strong>내 판단:</strong> agent 실행 로그를 long-context 학습 재료로 바꾸는 시도라, 개인 agent의 긴 작업 기억·도구 관찰 통합 병목과 직접 닿는다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
 <li><strong>확인할 것:</strong> 환경/benchmark가 장난감인지, 실제 browser·OS·tool 실패를 포함하는지.</li>
 <li><strong>5분 훑기 4. <a href="https://huggingface.co/papers/2605.21572">PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects</a></strong></li>
 <li><strong>위치:</strong> HF #7 · 👍 42 · Multimodal / Generation · Ziang Cao, Yinghao Liu · digest score 8</li>
