@@ -1,6 +1,6 @@
 {
   "manager": "Codex 5.5",
-  "generated_at": "2026-05-23",
+  "generated_at": "2026-05-24",
   "count": 78,
   "items": [
     {
@@ -388,9 +388,9 @@
       "price_position_52w_pct": 65.77868852459017,
       "return_20d_pct": -12.734864300626302,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 78.93,
-      "forward_pe": 49.0,
-      "price_to_book": 7.97,
+      "trailing_pe": 63.81,
+      "forward_pe": 50.0,
+      "price_to_book": 7.92,
       "page": "/research-desk/market-ontology/company-reports/095340-kq.html",
       "summary": "Advanced Packaging · semiconductor test socket / AI chip test exposure · ⚪ 회색"
     },
@@ -414,9 +414,9 @@
       "price_position_52w_pct": 69.42745969983324,
       "return_20d_pct": -15.557404326123125,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 50.9,
-      "forward_pe": 41.0,
-      "price_to_book": 10.53,
+      "trailing_pe": 49.79,
+      "forward_pe": 44.0,
+      "price_to_book": 11.37,
       "page": "/research-desk/market-ontology/company-reports/058470-kq.html",
       "summary": "Advanced Packaging · test pin/socket / semiconductor probe components · ⚪ 회색"
     },
@@ -1883,9 +1883,9 @@
       "price_position_52w_pct": 74.8046875,
       "return_20d_pct": -4.846938775510202,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": -16.05,
-      "forward_pe": 111.0,
-      "price_to_book": 0.89,
+      "trailing_pe": -15.1,
+      "forward_pe": 104.0,
+      "price_to_book": 0.84,
       "page": "/research-desk/market-ontology/company-reports/051910-ks.html",
       "summary": "Power Infrastructure · battery materials / chemicals · ⚪ 회색"
     },
