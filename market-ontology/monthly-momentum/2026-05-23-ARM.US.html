@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arm (ARM.US) — Monthly Momentum Deep Report</title>
+  <link rel="stylesheet" href="/research-desk/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1><a href="/research-desk/index.html">Research Desk</a></h1>
+    <div class="meta">Personal Research Radar</div>
+    <details class="nav-major">
+<summary class="nav-major-title">Home</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">Overview</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
+<li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
+<li><a href="/research-desk/agent-build-log/index.html"><span class="nav-badge">빌드</span> Agent Build Log</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">AI Research</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">허브</span> AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html"><span class="nav-badge">Agent</span> Agent AI Specialist Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-23</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-23.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-22.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-21.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-20.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-19</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-19.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-18</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-18.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-17</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-17.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-16</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-16.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-15</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-15.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-14</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-14.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-13</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-13.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-12</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-12.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-11</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-11.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-10</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-10.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Quant Bot</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">운영 허브</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/index.html"><span class="nav-badge">허브</span> Quant Bot Hub</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-spec.html"><span class="nav-badge">Spec</span> BTC Futures v2 Spec</a></li>
+<li><a href="/research-desk/quant/upgrade-roadmap.html"><span class="nav-badge">Upgrade</span> Quant Bot Upgrade Roadmap</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html"><span class="nav-badge">Daily</span> BTC Futures v2 Daily Report</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">전략 / 시스템</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/agent-team.html"><span class="nav-badge">팀</span> AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-council.html"><span class="nav-badge">회의</span> Quant Strategy Council</a></li>
+<li><a href="/research-desk/quant/strategy-evolution-charter.html"><span class="nav-badge">전략</span> Strategy Evolution Charter</a></li>
+<li><a href="/research-desk/quant/scenario-planning.html"><span class="nav-badge">위기</span> Scenario Planning</a></li>
+<li><a href="/research-desk/quant/feedback-system.html"><span class="nav-badge">피드백</span> Feedback System</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Cross-Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">통합 지도</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">허브</span> Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">예측</span> Prediction Board</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-22.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-21.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-20.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-19</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-19.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-18</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-18.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-15</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-15.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-14</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-14.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-13</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-13.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-12</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-12.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-08</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-08.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-07</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-07.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-06</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-06.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-05.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Market Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">허브</span> Market Intelligence Hub</a></li>
+<li><a href="/research-desk/market-ontology/stock-traffic-light.html"><span class="nav-badge">신호</span> 주식 신호등</a></li>
+<li><a href="/research-desk/market-ontology/securities-reports.html"><span class="nav-badge">리포트</span> Institutional Securities Desk</a></li>
+<li><a href="/research-desk/market-ontology/company-reports/index.html"><span class="nav-badge">회사</span> Company Reports</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-22.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-21.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-20.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-19</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-19.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-18</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-18.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-17</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-17.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-15</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-15.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-14</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-14.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-13</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-13.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-12</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-12.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-11</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-11.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-09</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-09.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-08</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-08.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-07</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-07.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+</details>
+</details>
+  </aside>
+  <main><article><h1>Arm (ARM.US) — Monthly Momentum Deep Report</h1>
+<blockquote>작성일: 2026-05-23 KST</blockquote>
+<blockquote>프로그램: KHJ Hermes Monthly Momentum Analyst Program</blockquote>
+<blockquote>성격: 관찰/분석/검증 보고서. <strong>매수/매도 추천 또는 목표가 제시가 아니다.</strong></blockquote>
+<blockquote>판단 상태: <strong>Crowded Re-rating candidate · Judgment hold / source incomplete</strong></blockquote>
+<blockquote>핵심 caveat: <strong>EPS/consensus revision 이력 확인 필요</strong> — Yahoo/yfinance public forward EPS proxy는 연결되어 있으나, FactSet/Bloomberg/Visible Alpha 같은 paid/verified 30/60/90일 consensus revision time-series와 sell-side model bridge는 연결되지 않았다.</blockquote>
+<h2>0. 20초 결론</h2>
+<p><strong>한 줄 결론 — Crowded Re-rating candidate · 판단 보류.</strong></p>
+<p>Arm은 이번 monthly momentum queue에서 단순 “AI 반도체 테마”가 아니라 <strong>agentic AI가 data-center CPU orchestration, edge/mobile inference, power-efficient compute 수요를 키울 때 IP royalty·license·CSS·신규 silicon 사업이 실제 revision으로 전환되는지</strong>를 검증해야 하는 회사다. 2026년 5월 회사가 SEC 6-K로 제공한 FY2026 Q4/FY 결과는 강하다. Q4 매출은 <strong>$1.49B, +20% YoY</strong>, license and other revenue는 <strong>$819M, +29% YoY</strong>, royalty revenue는 <strong>$671M, +11% YoY</strong>였고, data-center royalty는 회사 표현상 <strong>2배 이상 YoY</strong> 증가했다. FY2026 연간 매출은 <strong>$4.92B, +23% YoY</strong>, royalty revenue <strong>$2.613B, +21%</strong>, license and other revenue <strong>$2.307B, +25%</strong>, non-GAAP EPS <strong>$1.77</strong>로 제시됐다.</p>
+<p>그런데 결론은 “강한 확정”이 아니라 <strong>판단 보류</strong>다.</p>
+<ol>
+<li><strong>가격 반영이 매우 크다.</strong> Research Desk 2026-05-23 market cache 기준 ARM은 <strong>$306.51</strong>, 52주 범위 위치 <strong>96.1%</strong>, 20D <strong>+30.5%</strong>, 60D <strong>+137.1%</strong>, 52주 고점 대비 <strong>-2.7%</strong>다. 주가는 이미 “AI CPU/IP 희소성 + AGI CPU option”을 상당히 반영한 상태다.</li>
+<li><strong>Arm은 GPU/HBM 공급병목을 직접 해결하는 회사가 아니다.</strong> 핵심은 GPU 병목 해결이 아니라 CPU IP·royalty·CSS·data-center CPU attach·edge inference 확산이다. 그래서 Tier는 <strong>Indispensable Infrastructure</strong>가 기본이고, AGI CPU가 실제 출하·매출·margin으로 확인되기 전까지는 Bottleneck Breaker로 완전 승격하지 않는다.</li>
+<li><strong>AGI CPU narrative는 강하지만 일부는 회사 내부 추정이다.</strong> 회사는 agentic AI data center에서 CPU capacity per GW가 4배 이상 필요하고, 2030년 $100B+ market opportunity, fiscal 2027~2028 customer demand $2B+, 장기 $15B business 가능성을 제시했다. 이는 중요한 primary-company signal이지만 독립 산업 source와 고객별 order/revenue reconciliation은 아직 부족하다.</li>
+<li><strong>EPS/consensus revision 이력 확인 필요</strong> 상태다. Public forward EPS proxy는 있으나, verified sell-side revision history가 없어 “가격 상승을 EPS revision이 따라왔다/못 따라왔다”는 강한 결론은 보류한다.</li>
+</ol>
+<p>따라서 현재 가장 현실적인 판정은: <strong>Arm은 AI data-center CPU/IP 재평가의 실제 company-primary 근거가 생긴 crowded re-rating 후보지만, 가격은 이미 52주 상단권이고 AGI CPU·data-center royalty·license backlog가 EPS/consensus revision으로 전환되는지 아직 검증이 남아 있다. 관찰 우선, 강한 결론 보류.</strong></p>
+<hr>
+<h2>1. Active sector / scenario</h2>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>항목</th><th>판단</th></tr></thead><tbody><tr><td>Active sector</td><td>AI Semiconductor → CPU IP / data-center CPU / on-device &amp; edge AI architecture</td></tr><tr><td>Scenario</td><td>Agentic AI가 GPU만이 아니라 CPU orchestration, memory movement, security, workload coordination, edge inference를 확대하는 구간</td></tr><tr><td>Primary bottleneck</td><td>AI data center에서 <strong>CPU capacity per GW, power/performance, software ecosystem portability, data movement/orchestration, royalty-to-revenue lag</strong></td></tr><tr><td>Company role</td><td>Arm CPU IP, Armv9, Neoverse/CSS, Total Access/Flexible Access licensing, royalty layer, emerging Arm AGI CPU silicon option</td></tr><tr><td>Tier</td><td><strong>Indispensable Infrastructure</strong>. AGI CPU는 Bottleneck Breaker option이지만, 아직 core thesis를 완전 승격하려면 customer order → shipment → revenue/margin 증거가 더 필요</td></tr><tr><td>Market state</td><td>strong primary-company evidence + highly crowded price reflection</td></tr><tr><td>Judgment</td><td><strong>Crowded Re-rating candidate · Judgment hold / source incomplete</strong></td></tr></tbody></table></div>
+<h3>핵심 framing</h3>
+<p>Arm의 thesis는 “AI라서 오른다”가 아니다. 더 정확한 chain은 다음이다.</p>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  A[Agentic AI / inference workload growth] --&gt; B[CPU orchestration, data movement, memory, security]
+  B --&gt; C[Arm IP / Armv9 / Neoverse / CSS / AGI CPU]
+  C --&gt; D[License revenue / royalty per chip / data-center attach]
+  D --&gt; E[Revenue growth / non-GAAP EPS / FCF]
+  E --&gt; F[Consensus revision]
+  F --&gt; G[Price reflection or disappointment]</div></div>
+<p>여기서 가장 중요한 검증 질문은 <strong>AI workload가 Arm의 royalty rate, license ACV, data-center royalty, AGI CPU 수요, forward EPS revision으로 얼마나 빨리 번역되는가</strong>다. Arm은 HBM·CoWoS·GPU shortage를 직접 해결하지 않지만, agentic AI가 CPU와 software ecosystem의 중요성을 다시 끌어올리면 value capture 범위가 넓어진다.</p>
+<hr>
+<h2>2. Source Pack</h2>
+<h3>2.1 Source status table</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Source class</th><th>Status</th><th>What was checked</th><th>판단에 쓰는 방식</th></tr></thead><tbody><tr><td>Company primary — SEC 6-K FY2026 Q4/FY results</td><td><strong>checked</strong></td><td>SEC 6-K filed 2026-05-06, Exhibit 99.1 press release, Exhibit 99.2 shareholder letter</td><td>Q4/FY revenue, license/royalty growth, AGI CPU narrative, guidance, ACV/RPO, non-GAAP EPS 확인</td></tr><tr><td>Company primary — Q3 FY2026 6-K</td><td><strong>checked / supporting</strong></td><td>SEC 6-K filed 2026-02-04, quarterly financial statements</td><td>FY2026 run-rate와 Q4 acceleration 비교용 보조 근거</td></tr><tr><td>Company primary — FY2025 20-F</td><td><strong>attempted / partial</strong></td><td>SEC 20-F filed 2025-05-28</td><td>baseline risk: customer/end-market concentration, PRC/Arm China, architecture-license substitution, export controls. FY2026 annual 20-F full reconciliation은 아직 미완료</td></tr><tr><td>IR website</td><td><strong>attempted / blocked/timeout</strong></td><td>Arm investor relations quarterly/SEC pages</td><td>직접 IR 페이지는 timeout. SEC mirror로 primary documents 확보</td></tr><tr><td>Brokerage / sell-side</td><td><strong>attempted / blocked</strong></td><td>Google News public snippets: analyst/target/valuation commentary, Susquehanna/TIKR/Capital.com류 public headlines</td><td>원문 sell-side report, rating, target price, model은 paid/blocked 또는 미확인. 본 보고서는 목표가/투자의견을 사용하지 않음</td></tr><tr><td>Consensus / EPS revision</td><td><strong>public proxy only</strong></td><td><code>eps-consensus-cache.json</code>, Yahoo/yfinance public forward EPS proxy; Nasdaq API route attempted but timeout</td><td>forward EPS proxy는 보조 사용. <strong>EPS/consensus revision 이력 확인 필요</strong>이므로 strong conclusion 금지</td></tr><tr><td>Industry / ecosystem</td><td><strong>partial</strong></td><td>회사 shareholder letter의 ecosystem/customer claims, Google News RSS: Arm Newsroom, The Register, Futuriom, Reuters/Breakingviews/RISC-V risk snippets</td><td>independent Gartner/IDC/SemiAnalysis/paid market share dataset은 연결 전. 회사 추정은 caveat와 함께 사용</td></tr><tr><td>Market data</td><td><strong>checked</strong></td><td><code>market-sources-2026-05-23.json</code>, Yahoo Chart fallback, <code>market-fundamentals-cache.json</code></td><td>price reflection, 52W position, 20D/60D, valuation burden 확인</td></tr></tbody></table></div>
+<h3>2.2 Primary evidence links</h3>
+<ul>
+<li>SEC FY2026 Q4/FY results 6-K filing index: &lt;https://www.sec.gov/Archives/edgar/data/1973239/000197323926000062/&gt;  </li>
+<li>FY2026 Q4/FY press release, Exhibit 99.1: &lt;https://www.sec.gov/Archives/edgar/data/1973239/000197323926000062/exhibit991fye26q431-marx26.htm&gt;  </li>
+<li>FY2026 Q4/FY shareholder letter, Exhibit 99.2: &lt;https://www.sec.gov/Archives/edgar/data/1973239/000197323926000062/exhibit992fye26q431-marx26.htm&gt;  </li>
+<li>Q3 FY2026 6-K / quarterly financial statements: &lt;https://www.sec.gov/Archives/edgar/data/1973239/000197323926000006/arm-20251231.htm&gt;  </li>
+<li>FY2025 20-F baseline risk filing: &lt;https://www.sec.gov/Archives/edgar/data/1973239/000197323925000016/arm-20250331.htm&gt;  </li>
+<li>Yahoo Chart route: &lt;https://query1.finance.yahoo.com/v8/finance/chart/ARM?range=1y&amp;interval=1d&gt;  </li>
+<li>Yahoo Finance quote/analysis public routes: &lt;https://finance.yahoo.com/quote/ARM&gt; / &lt;https://finance.yahoo.com/quote/ARM/analysis/&gt;  </li>
+<li>Research Desk caches: <code>08-data/market-sources-2026-05-23.json</code>, <code>08-data/market-fundamentals-cache.json</code>, <code>08-data/eps-consensus-cache.json</code>, <code>08-data/company-thesis-registry.json</code>, <code>08-data/company-analysis-linkage-audit.json</code>  </li>
+</ul>
+<h3>2.3 Source boundary</h3>
+<ul>
+<li>이 보고서는 <strong>public SEC filings + company shareholder letter + public market data + public news snippets + Research Desk cache</strong> 기반이다.</li>
+<li>유료 증권사 리포트, 개별 sell-side model, verified 30/60/90일 consensus revision time-series, 독립 시장점유율/industry TAM paid dataset은 연결되지 않았다.</li>
+<li>따라서 문서 구조는 institutional-style이지만, 판단 상태는 <strong>reviewed institutional-grade가 아니라 provisional / judgment hold</strong>다.</li>
+</ul>
+<hr>
+<h2>3. What moved — 왜 지금 움직였나</h2>
+<h3>3.1 Direct company-primary driver</h3>
+<p>2026년 5월 6일 SEC 6-K에 첨부된 shareholder letter가 이번 Arm momentum의 직접 근거다.</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Metric</th><th>Q4 FY2026</th><th>YoY / 의미</th></tr></thead><tbody><tr><td>Total revenue</td><td><strong>$1.490B</strong></td><td><strong>+20% YoY</strong>, 회사 기준 record quarterly revenue, guidance midpoint 상회</td></tr><tr><td>License and other revenue</td><td><strong>$819M</strong></td><td><strong>+29% YoY</strong>, Arm platform/IP 수요와 high-value license timing/backlog contribution</td></tr><tr><td>Royalty revenue</td><td><strong>$671M</strong></td><td><strong>+11% YoY</strong>, Armv9/CSS higher royalty per chip, smartphones/Edge AI/Physical AI/Cloud AI, data-center royalty 2배 이상 언급</td></tr><tr><td>GAAP gross margin</td><td><strong>97.9%</strong></td><td>IP/platform model의 높은 gross margin 유지</td></tr><tr><td>Non-GAAP gross margin</td><td><strong>98.3%</strong></td><td>비용 증가보다 revenue quality가 우수</td></tr><tr><td>GAAP operating income</td><td><strong>$438M</strong></td><td>GAAP operating margin 29.4%</td></tr><tr><td>Non-GAAP operating income</td><td><strong>$731M</strong></td><td>Non-GAAP operating margin 49.1%, 전년 52.8%보다는 낮아 R&amp;D 투자 부담 존재</td></tr><tr><td>GAAP diluted EPS</td><td><strong>$0.29</strong></td><td>전년 $0.20 대비 개선</td></tr><tr><td>Non-GAAP diluted EPS</td><td><strong>$0.60</strong></td><td>전년 $0.55 대비 개선, Q4 guidance $0.58 ± $0.04 상단권</td></tr><tr><td>Operating cash flow / non-GAAP FCF</td><td><strong>$260M / $152M</strong></td><td>현금창출은 양호하나 Q4 FCF는 전년 $163M보다 소폭 낮음</td></tr></tbody></table></div>
+<p>연간 기준도 강하다.</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Metric</th><th>FY2026</th><th>YoY / 의미</th></tr></thead><tbody><tr><td>Total revenue</td><td><strong>$4.920B</strong></td><td><strong>+23% YoY</strong>, 상장 이후 3년 연속 20%+ revenue growth라고 회사가 설명</td></tr><tr><td>Royalty revenue</td><td><strong>$2.613B</strong></td><td><strong>+21% YoY</strong>, record royalty revenue</td></tr><tr><td>License and other revenue</td><td><strong>$2.307B</strong></td><td><strong>+25% YoY</strong>, record license revenue</td></tr><tr><td>GAAP gross margin</td><td><strong>97.5%</strong></td><td>IP-heavy model 유지</td></tr><tr><td>Non-GAAP operating income</td><td><strong>$2.115B</strong></td><td>Non-GAAP operating margin 43.0%; R&amp;D 투자 증가로 전년 46.7%보다 낮음</td></tr><tr><td>GAAP diluted EPS</td><td><strong>$0.85</strong></td><td>전년 $0.75 대비 개선</td></tr><tr><td>Non-GAAP diluted EPS</td><td><strong>$1.77</strong></td><td>전년 $1.63 대비 개선</td></tr><tr><td>Operating cash flow / non-GAAP FCF</td><td><strong>$1.524B / $882M</strong></td><td>FCF TTM이 전년 $99M에서 크게 개선됐다고 회사가 제시</td></tr></tbody></table></div>
+<p>핵심은 매출 성장 자체보다 <strong>license + royalty가 동시에 성장했고, 회사가 data-center royalty와 AGI CPU narrative를 숫자와 연결하기 시작했다</strong>는 점이다.</p>
+<h3>3.2 AGI CPU / agentic AI driver</h3>
+<p>이번 report에서 새로 봐야 할 부분은 Arm이 더 이상 “IP만 파는 회사”로만 머물지 않겠다는 신호다. 회사는 FY2026 Q4 letter에서 다음을 제시했다.</p>
+<ul>
+<li><strong>Arm AGI CPU</strong>: Arm-designed data-center chip으로 소개. agentic AI orchestration, data movement, memory, security, workload coordination에 CPU가 중요하다는 thesis.</li>
+<li><strong>CPU capacity per GW</strong>: agentic AI scale에서 data center가 현재보다 <strong>4배 이상 CPU capacity per GW</strong>를 요구할 수 있다고 회사가 주장.</li>
+<li><strong>Market opportunity</strong>: 2030년까지 <strong>$100B+ market opportunity</strong>라고 회사가 제시.</li>
+<li><strong>Performance / capex claim</strong>: x86-based platform 대비 rack당 2배 이상 performance, AI data center CAPEX를 GW당 최대 $10B 줄일 수 있다고 회사가 주장.</li>
+<li><strong>Meta lead partner</strong>: Meta가 lead partner/co-developer이며 multi-generation roadmap으로 언급.</li>
+<li><strong>Ecosystem support</strong>: AWS, Broadcom, Google Cloud, Marvell, Microsoft, Micron, NVIDIA, Oracle, Samsung, SK Hynix, TSMC 등 50개 이상 leading companies가 silicon expansion을 support한다고 회사가 언급.</li>
+<li><strong>Customer demand</strong>: fiscal 2027~2028에 <strong>$2B+ customer demand</strong>가 있으며 launch 당시 언급보다 2배 이상이라고 회사가 주장.</li>
+</ul>
+<p>이것은 단순 PR이 아니라 market narrative를 바꾸는 신호다. 이전까지 Arm의 핵심은 mobile/edge royalty와 IP licensing이었다면, 지금은 <strong>agentic AI data center의 CPU orchestration 병목을 직접 건드리는 silicon option</strong>을 제시했다. 다만 이 수치 중 상당수는 company internal estimate이므로, 고객별 order, shipment, revenue recognition, gross margin, cannibalization 여부를 확인하기 전까지는 “confirmed revenue breaker”로 보지 않는다.</p>
+<h3>3.3 Operating metrics driver</h3>
+<p>Arm의 operating metric은 license-to-royalty lag를 보는 데 중요하다.</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Operating metric</th><th>Q4 FY2026</th><th>YoY / 해석</th></tr></thead><tbody><tr><td>ACV</td><td><strong>$1.660B</strong></td><td><strong>+22% YoY</strong>. license normalization metric. future royalty potential의 leading indicator지만 GAAP revenue 대체 지표는 아님</td></tr><tr><td>RPO</td><td><strong>$2.071B</strong></td><td><strong>-7% YoY</strong>. timing of revenue conversion 영향. backlog가 늘었다는 단순 해석은 금물</td></tr><tr><td>Arm Total Access licenses</td><td><strong>56</strong></td><td>전년 44. top 30 customers 절반 이상 포함</td></tr><tr><td>Arm Flexible Access customers</td><td><strong>329</strong></td><td>전년 314</td></tr><tr><td>Employees / engineers</td><td><strong>9,584 / 8,058</strong></td><td>engineering headcount 증가. R&amp;D 투자 확대와 margin pressure를 동시에 의미</td></tr></tbody></table></div>
+<p>ACV +22%, Total Access 증가, Flexible Access 증가가 royalty runway를 지지한다. 반대로 RPO -7%는 “수요가 무조건 쌓인다”는 thesis와는 다르게 봐야 한다. Arm 모델은 licensing timing, contract conversion, royalty lag가 섞여 있으므로 <strong>license revenue spike와 royalty durability를 분리</strong>해야 한다.</p>
+<h3>3.4 Price/momentum driver</h3>
+<p>가격은 이미 강하게 반응했다.</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Source</th><th>Value</th><th>Note</th></tr></thead><tbody><tr><td>Research Desk latest price cache</td><td><strong>$306.51</strong></td><td>2026-05-23, Yahoo Chart fallback</td></tr><tr><td>52W high / low</td><td><strong>$315.00 / $100.02</strong></td><td>52주 상단권</td></tr><tr><td>52W position</td><td><strong>96.1%</strong></td><td>고점과 거의 붙어 있음</td></tr><tr><td>Drawdown from 52W high</td><td><strong>-2.7%</strong></td><td>고점 근접</td></tr><tr><td>20D / 60D return</td><td><strong>+30.5% / +137.1%</strong></td><td>monthly momentum이 매우 강함</td></tr><tr><td>Fundamentals cache market cap</td><td><strong>$237.43B</strong></td><td>2026-05-20 Yahoo public snapshot; 가격 시점 차이 있음</td></tr><tr><td>Trailing / forward P/E</td><td><strong>262.5x / 73.0x</strong></td><td>public snapshot. forward EPS proxy 검증 필요</td></tr><tr><td>P/B</td><td><strong>30.4x</strong></td><td>IP/platform premium 반영, 부담도 큼</td></tr><tr><td>EV/EBITDA</td><td><strong>207.9x</strong></td><td>public snapshot, SEC/IR와 시점 차이</td></tr></tbody></table></div>
+<p>현재 시장은 이미 “Arm이 AI CPU/IP platform으로 재평가된다”는 기대를 가격에 반영하고 있다. 그러므로 앞으로는 headline이 아니라 <strong>Q1 FY2027 guidance 달성, data-center royalty growth, AGI CPU order/revenue evidence, verified EPS revision</strong>이 필요하다.</p>
+<hr>
+<h2>4. Bottleneck-first thesis</h2>
+<h3>4.1 병목 → 시스템 한계 → breaker/enabler technology → 회사 edge</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Layer</th><th>Arm에 해당하는 내용</th></tr></thead><tbody><tr><td>Physical/system bottleneck</td><td>Agentic AI가 단발성 query에서 continuous workflow로 이동하면 GPU accelerator만으로는 충분하지 않다. CPU orchestration, memory movement, security, networking coordination, VM/container scheduling, edge inference가 병목이 된다.</td></tr><tr><td>Breaker/enabler technology</td><td>Armv9, Neoverse, CSS, Arm Total Access, Arm Flexible Access, Arm AGI CPU, common software ecosystem, power-efficient compute.</td></tr><tr><td>Company edge</td><td>350B+ shipped chips ecosystem, 22M+ developers, mobile/edge/auto/cloud architecture reach, royalty model, high gross margin IP economics, hyperscaler/cloud/customer relationships.</td></tr><tr><td>Money path</td><td>license agreements → ACV/RPO → chip design wins → unit shipment → royalty per chip/Armv9 mix → data-center/edge revenue → EPS revision. AGI CPU는 order → shipment → revenue/margin으로 별도 검증.</td></tr><tr><td>Key risk</td><td>AI value capture가 GPU/HBM/advanced packaging/ASIC/networking으로 더 집중되거나, customer 자체 IP/RISC-V/x86/merchant silicon이 Arm의 take rate를 압박할 수 있다.</td></tr></tbody></table></div>
+<h3>4.2 왜 “Bottleneck Breaker”로 바로 승격하지 않는가</h3>
+<p>Arm AGI CPU는 agentic AI data-center CPU bottleneck을 직접 겨냥한다. 하지만 현재 core company evidence는 아직 <strong>Indispensable Infrastructure</strong> 판정이 더 안전하다.</p>
+<ul>
+<li>Arm의 핵심 매출은 여전히 license + royalty이고, silicon 사업은 새로운 growth vector다.</li>
+<li>AGI CPU의 $2B+ customer demand는 회사 발표 기준이며, independent order/revenue/margin source는 아직 제한적이다.</li>
+<li>data-center royalty가 2배 이상 성장했다는 것은 강한 signal이지만, 절대 규모와 고객별 지속성은 더 확인해야 한다.</li>
+<li>HBM, GPU, advanced packaging 같은 현재 AI capex bottleneck을 직접 해결하지 않는다.</li>
+<li>다만 agentic AI가 CPU orchestration을 핵심 병목으로 끌어올리면 Arm의 Tier는 <strong>Indispensable Infrastructure → Bottleneck Breaker candidate</strong>로 올라갈 수 있다.</li>
+</ul>
+<p>따라서 본 보고서의 Tier는 <strong>Indispensable Infrastructure with emerging Bottleneck Breaker option</strong>이다.</p>
+<hr>
+<h2>5. Business model → money path</h2>
+<h3>5.1 Money path map</h3>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  A[AI workload / agentic inference] --&gt; B[CPU IP and data-center orchestration demand]
+  B --&gt; C[License contracts / ACV / Total Access]
+  C --&gt; D[Customer silicon design wins]
+  D --&gt; E[Unit shipments and Armv9/CSS mix]
+  E --&gt; F[Royalty revenue per chip]
+  B --&gt; G[Arm AGI CPU orders]
+  G --&gt; H[Shipment / revenue / gross margin]
+  F --&gt; I[EPS and FCF revision]
+  H --&gt; I
+  I --&gt; J[Price reflection]</div></div>
+<p>Arm의 money path는 크게 네 갈래다.</p>
+<ol>
+<li><strong>License and other revenue:</strong> Q4 FY2026 $819M, +29% YoY. 대형 license timing과 backlog contribution이 섞여 있으므로 반복성 확인이 필요하다.</li>
+<li><strong>Royalty revenue:</strong> Q4 FY2026 $671M, +11% YoY. royalty는 customer chip shipment의 후행 지표다. Armv9/CSS higher royalty per chip과 data-center deployment가 핵심이다.</li>
+<li><strong>Subscription/access model:</strong> Total Access 56, Flexible Access 329는 future design-in과 royalty runway의 leading indicator다.</li>
+<li><strong>Emerging AGI CPU silicon:</strong> company claim 기준 fiscal 2027~2028 $2B+ customer demand. IP/CSS foundation과 별도 growth vector지만, hardware/silicon execution과 margin profile은 아직 검증 필요하다.</li>
+</ol>
+<h3>5.2 Quality of revenue</h3>
+<p>Revenue quality는 매우 높아 보이지만, 좋은 숫자와 좋은 주가 판단은 다르다.</p>
+<ul>
+<li><strong>Gross margin quality:</strong> Q4 GAAP gross margin 97.9%, FY2026 97.5%. IP/platform economics는 강하다.</li>
+<li><strong>Operating leverage caveat:</strong> Q4 non-GAAP operating margin 49.1%는 높지만 전년 52.8%보다 낮다. FY2026 non-GAAP operating margin도 43.0%로 전년 46.7%보다 낮다. R&amp;D headcount/AGI CPU investment가 성장 option이지만 margin pressure이기도 하다.</li>
+<li><strong>License timing:</strong> license revenue는 계약 timing에 민감하다. Q4 +29%가 다음 분기 반복된다고 가정하면 안 된다.</li>
+<li><strong>Royalty durability:</strong> royalty는 unit shipment와 mix에 따라 안정성이 높을 수 있으나 smartphone/edge/auto/cloud cycle과 고객별 shipment lag를 탄다.</li>
+<li><strong>AGI CPU margin unknown:</strong> silicon business가 IP보다 낮은 gross margin을 가질 가능성, supply-chain risk, capex/working-capital needs, cannibalization 여부를 확인해야 한다.</li>
+</ul>
+<hr>
+<h2>6. Expectation revision path</h2>
+<h3>6.1 시장이 이미 믿는 것</h3>
+<p>현재 가격과 public commentary는 이미 다음을 상당히 믿고 있다.</p>
+<ol>
+<li>Agentic AI가 GPU뿐 아니라 CPU orchestration과 Arm architecture 수요를 키운다.</li>
+<li>Armv9/CSS/Neoverse가 royalty per chip과 premium mix를 올린다.</li>
+<li>Data-center royalty growth가 mobile 중심 Arm narrative를 바꾼다.</li>
+<li>Arm AGI CPU가 IP company multiple을 silicon/data-center option으로 확장한다.</li>
+<li>Meta, cloud providers, AI ecosystem support가 실제 customer demand로 이어진다.</li>
+<li>FY2026 +23% revenue growth와 non-GAAP EPS $1.77이 FY2027 EPS growth로 이어진다.</li>
+<li>Forward EPS proxy가 높은 valuation을 따라올 수 있다.</li>
+</ol>
+<p>이 기대가 맞아도 주가가 더 좋아진다고 단정할 수 없다. 이미 52W 상단권이기 때문에 <strong>새로운 숫자가 기대보다 더 빨리 올라가야</strong> 한다.</p>
+<h3>6.2 Public EPS proxy and revision caveat</h3>
+<p>Research Desk <code>eps-consensus-cache.json</code> 기준 ARM은 public estimate proxy만 연결되어 있다.</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Field</th><th>Public proxy</th><th>해석</th></tr></thead><tbody><tr><td>trailing EPS</td><td><strong>$0.85</strong></td><td>SEC FY2026 GAAP diluted EPS와 일치하는 public snapshot에 가까움</td></tr><tr><td>forward EPS</td><td><strong>$3.05516</strong></td><td>public forward EPS proxy. 실제 consensus table/revision history가 아님</td></tr><tr><td>forward P/E</td><td><strong>73.04x</strong></td><td>public snapshot 기준. 가격 시점 차이 있음</td></tr><tr><td>earnings growth</td><td><strong>+45.7%</strong></td><td>public snapshot, source reconciliation 필요</td></tr><tr><td>revision history</td><td><strong>확인 필요</strong></td><td><strong>EPS/consensus revision 이력 확인 필요</strong></td></tr></tbody></table></div>
+<p>이 proxy가 의미하는 바는 명확하다. 시장은 FY2027 이후 EPS가 크게 올라간다고 보고 있다. 그러나 <strong>30/60/90일 forward EPS change, revenue revision, operating income revision, sell-side model bridge</strong>가 없으므로 “revision이 price를 따라왔다”고 말할 수 없다.</p>
+<h3>6.3 Revision이 더 올라가려면 필요한 숫자</h3>
+<ol>
+<li><strong>Q1 FY2027 revenue guidance 달성/상회:</strong> 회사 Q1 FY2027 guidance는 revenue <strong>$1.26B ± $50M</strong>, non-GAAP EPS <strong>$0.40 ± $0.04</strong>, non-GAAP opex 약 <strong>$760M</strong>이다. 이 수치가 가격 상단권을 정당화할지 확인해야 한다.</li>
+<li><strong>Data-center royalty growth 지속:</strong> Q4에 “more than doubled YoY”라고 한 data-center royalty가 다음 분기에도 지속되는지, 절대 규모가 커지는지 확인.</li>
+<li><strong>License revenue 반복성:</strong> Q4 $819M license revenue가 대형 계약 timing인지, ACV +22%와 Total Access 증가가 recurring license base로 이어지는지 확인.</li>
+<li><strong>AGI CPU demand conversion:</strong> fiscal 2027~2028 $2B+ customer demand가 order, shipment, revenue, gross margin, customer concentration으로 어떻게 전환되는지 확인.</li>
+<li><strong>Operating margin:</strong> R&amp;D와 silicon investment가 커지는 중에도 non-GAAP operating margin 40%+가 유지되는지 확인.</li>
+<li><strong>Verified EPS revision:</strong> public forward EPS proxy가 아니라 verified sell-side/consensus time-series에서 FY2027/FY2028 EPS 상향이 확인되어야 한다.</li>
+</ol>
+<h3>6.4 Revision이 꺾이는 경로</h3>
+<ul>
+<li>Q1 FY2027 revenue가 $1.21B~$1.31B guidance range 하단 또는 이하로 나온다.</li>
+<li>license revenue가 Q4 대형 계약 timing 이후 둔화되고 ACV/RPO가 기대를 못 따라간다.</li>
+<li>data-center royalty growth는 좋지만 절대 규모가 전체 EPS revision을 충분히 바꾸지 못한다.</li>
+<li>AGI CPU가 customer demand headline은 강하나 shipment/revenue/margin은 지연된다.</li>
+<li>silicon expansion이 IP gross margin profile을 희석하거나 execution risk를 만든다.</li>
+<li>smartphone/edge/auto cycle이 둔화되어 royalty base가 흔들린다.</li>
+<li>RISC-V, 자체 IP, x86/merchant CPU, cloud internal architecture가 Arm take rate를 압박한다.</li>
+<li>EPS revisions가 정체되는데 주가는 52W 상단권에 머문다.</li>
+</ul>
+<hr>
+<h2>7. Price reflection and crowding risk</h2>
+<h3>7.1 Price and valuation data</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Source</th><th>Value</th><th>Note</th></tr></thead><tbody><tr><td>Research Desk 2026-05-23 price cache</td><td><strong>$306.51</strong></td><td>Yahoo Chart fallback</td></tr><tr><td>52W high / low</td><td><strong>$315.00 / $100.02</strong></td><td>high와 거의 붙어 있음</td></tr><tr><td>52W position</td><td><strong>96.1%</strong></td><td>상단권</td></tr><tr><td>Drawdown from 52W high</td><td><strong>-2.7%</strong></td><td>crowded price reflection</td></tr><tr><td>20D return</td><td><strong>+30.5%</strong></td><td>단기 re-rating 강함</td></tr><tr><td>60D return</td><td><strong>+137.1%</strong></td><td>monthly momentum queue rank 12이나 실제 가격 반영은 매우 큼</td></tr><tr><td>Public fundamentals snapshot market cap</td><td><strong>$237.43B</strong></td><td>2026-05-20 cache, price timing mismatch</td></tr><tr><td>Trailing P/E / forward P/E</td><td><strong>262.5x / 73.0x</strong></td><td>public proxy, verified consensus 필요</td></tr><tr><td>P/B</td><td><strong>30.4x</strong></td><td>IP/platform premium + 부담</td></tr><tr><td>Revenue growth / earnings growth snapshot</td><td><strong>+20.1% / +45.7%</strong></td><td>Yahoo public snapshot; SEC FY2026 revenue growth는 +23%</td></tr><tr><td>EV/EBITDA</td><td><strong>207.9x</strong></td><td>public snapshot; valuation burden very high</td></tr></tbody></table></div>
+<h3>7.2 가격 반영 해석</h3>
+<p>현재 가격은 이미 다음을 반영한다.</p>
+<ul>
+<li>FY2026 Q4 record revenue와 FY2026 +23% revenue growth.</li>
+<li>data-center royalty 2배 이상 growth.</li>
+<li>Arm AGI CPU launch와 Meta lead partner narrative.</li>
+<li>fiscal 2027~2028 $2B+ customer demand company claim.</li>
+<li>Armv9/CSS higher royalty per chip.</li>
+<li>agentic AI가 CPU orchestration 수요를 키운다는 thesis.</li>
+<li>IP business의 high gross margin과 broad ecosystem.</li>
+</ul>
+<p>남아 있는 질문은 “Arm이 좋은 회사인가?”가 아니다. 더 중요한 질문은 <strong>“현재 가격이 요구하는 FY2027/FY2028 EPS·revenue·margin revision 속도를 실제 숫자가 따라잡을 수 있는가?”</strong>다.</p>
+<h3>7.3 Crowding risk</h3>
+<p>Arm은 hidden bargain이 아니라 <strong>crowded but evidence-backed re-rating</strong>에 가깝다.</p>
+<ul>
+<li>가격은 52주 상단권이고 20D/60D momentum이 매우 강하다.</li>
+<li>public headlines에는 record results, AGI CPU excitement, target-price style commentary가 많다.</li>
+<li>fundamentals는 실제로 개선됐지만, forward P/E 73x와 EV/EBITDA 200x+ public snapshot은 long-duration expectation 부담을 만든다.</li>
+<li>AGI CPU narrative가 너무 빠르게 multiple에 반영되면, 실제 shipment/revenue가 늦을 때 multiple compression risk가 크다.</li>
+</ul>
+<hr>
+<h2>8. Base / Upside / Downside scenarios</h2>
+<h3>Base case — 가장 현실적인 현재 가정</h3>
+<p><strong>Thesis:</strong> Arm은 agentic AI/data-center CPU orchestration narrative가 실제 primary-company evidence로 연결되기 시작한 re-rating 후보이다. Q4 FY2026 매출 $1.49B, FY2026 매출 $4.92B, royalty +21%, license +25%, data-center royalty 2배 이상, ACV +22%, AGI CPU $2B+ customer demand claim은 강한 signal이다. 다만 가격은 이미 52W 상단권이고, AGI CPU revenue conversion, verified EPS revision, independent industry validation이 아직 남아 있다.</p>
+<p><strong>Evidence for Base:</strong></p>
+<ul>
+<li>Q4 FY2026 revenue <strong>$1.49B, +20% YoY</strong>.</li>
+<li>FY2026 revenue <strong>$4.92B, +23% YoY</strong>.</li>
+<li>FY2026 royalty revenue <strong>$2.613B, +21%</strong>, license and other revenue <strong>$2.307B, +25%</strong>.</li>
+<li>Q4 data-center royalty가 회사 표현 기준 <strong>2배 이상 YoY</strong>.</li>
+<li>ACV <strong>$1.660B, +22% YoY</strong>, Total Access licenses <strong>56</strong>, Flexible Access <strong>329</strong>.</li>
+<li>Non-GAAP FY2026 EPS <strong>$1.77</strong>, operating cash flow <strong>$1.524B</strong>, non-GAAP FCF <strong>$882M</strong>.</li>
+<li>Arm AGI CPU와 Meta lead partner narrative가 data-center CPU bottleneck을 직접 건드림.</li>
+</ul>
+<p><strong>Evidence against / limits:</strong></p>
+<ul>
+<li>Price: <strong>52W position 96.1%, 20D +30.5%, 60D +137.1%</strong>.</li>
+<li>Valuation: trailing P/E <strong>262.5x</strong>, forward P/E <strong>73.0x</strong>, P/B <strong>30.4x</strong>, EV/EBITDA <strong>207.9x</strong> public proxy.</li>
+<li>Q1 FY2027 guidance <strong>$1.26B ± $50M</strong>는 Q4 $1.49B보다 낮다. seasonality/timing일 수 있지만 price expectation에는 부담.</li>
+<li>RPO <strong>$2.071B, -7% YoY</strong>로 단순 backlog expansion thesis가 아니다.</li>
+<li>AGI CPU $2B+ demand, $15B business, $100B+ opportunity는 company claim이며 independent source verification 필요.</li>
+<li><strong>EPS/consensus revision 이력 확인 필요</strong>.</li>
+</ul>
+<p><strong>Base judgment:</strong> Crowded re-rating candidate. 관찰 지속, 강한 확정 결론 보류.</p>
+<h3>Upside case</h3>
+<p><strong>Thesis:</strong> Agentic AI inference가 CPU orchestration과 common software ecosystem의 중요성을 급격히 높인다. Armv9/CSS/Neoverse royalty가 늘고, AGI CPU가 customer demand에서 actual shipment/revenue로 전환된다. Data-center royalty가 mobile royalty보다 빠르게 성장하면서 시장은 Arm을 “mobile IP royalty company”가 아니라 “AI compute platform / data-center CPU architecture company”로 재평가한다.</p>
+<p><strong>Triggers:</strong></p>
+<ul>
+<li>Q1 FY2027 revenue가 <strong>$1.31B</strong> 이상 또는 Q2/FY outlook이 강하게 제시된다.</li>
+<li>Data-center royalty growth가 Q4의 2배 이상 YoY 언어에서 다음 분기에도 지속된다.</li>
+<li>AGI CPU $2B+ demand가 named customer orders, shipment schedule, revenue recognition, margin guidance로 연결된다.</li>
+<li>Meta 외 customer adoption이 F5, SK Telecom, SAP, Cloudflare, NVIDIA/Amazon/Google adjacent ecosystem 등에서 실제 deployment로 확인된다.</li>
+<li>Non-GAAP operating margin이 R&amp;D/AGI CPU 투자 확대에도 40%+ 수준을 유지한다.</li>
+<li>Verified consensus source에서 FY2027/FY2028 EPS/revenue revision이 상향된다.</li>
+<li>Armv9/CSS penetration과 royalty per chip이 상승한다.</li>
+</ul>
+<p><strong>What would prove it:</strong> Arm이 단순 IP licensor가 아니라 agentic AI data-center CPU bottleneck을 해결하는 architecture/silicon platform으로 확인되고, 그 증거가 revenue·margin·EPS revision에 동시에 나타나는 것.</p>
+<h3>Downside case</h3>
+<p><strong>Thesis:</strong> Arm은 좋은 회사지만, 주가가 AGI CPU와 agentic AI CPU bottleneck narrative를 너무 빨리 반영했다. Q4 실적은 강했으나 license revenue timing과 company-claim demand가 시장 기대를 계속 초과하지 못하면, 높은 multiple은 revenue/EPS revision보다 먼저 수축할 수 있다.</p>
+<p><strong>Triggers:</strong></p>
+<ul>
+<li>Q1 FY2027 revenue가 guidance midpoint <strong>$1.26B</strong>를 밑돌거나 non-GAAP EPS가 $0.40 ± $0.04 범위 하단으로 간다.</li>
+<li>License revenue가 high-value agreement timing 이후 둔화되고 ACV/RPO가 follow-through를 보이지 않는다.</li>
+<li>Data-center royalty growth가 headline보다 절대 규모가 작거나 다음 분기에 둔화된다.</li>
+<li>AGI CPU customer demand가 named orders/revenue/margin으로 전환되지 않는다.</li>
+<li>silicon expansion이 R&amp;D/opex와 gross margin dilution을 키운다.</li>
+<li>RISC-V, custom silicon, x86, cloud internal architecture, export controls/China exposure가 royalty take rate를 낮춘다.</li>
+<li>EPS revisions가 정체되거나 하향되는데 price는 52W 상단권에 머문다.</li>
+</ul>
+<p><strong>What would confirm downside:</strong> price는 고점권인데 verified EPS/revenue revision이 따라오지 않고, market narrative가 “Arm은 훌륭하지만 너무 비싸다 / AGI CPU option이 너무 일찍 반영됐다”로 이동하는 것.</p>
+<hr>
+<h2>9. Bull case / Bear case / Invalidation</h2>
+<h3>Bull case</h3>
+<ol>
+<li><strong>Primary-source growth is real.</strong> FY2026 revenue +23%, royalty +21%, license +25%.</li>
+<li><strong>Data-center royalty signal이 강하다.</strong> Q4 data-center royalty가 회사 표현 기준 2배 이상 YoY 성장했다.</li>
+<li><strong>AGI CPU narrative가 bottleneck-first다.</strong> Agentic AI에서 CPU orchestration, data movement, memory, security가 실제 병목이 될 수 있다.</li>
+<li><strong>Ecosystem breadth is unusual.</strong> 350B+ shipped chips, 22M+ developers, 50+ leading companies support 언급은 platform advantage를 지지한다.</li>
+<li><strong>High gross margin model.</strong> FY2026 GAAP gross margin 97.5%, Q4 97.9%.</li>
+<li><strong>Operating cash flow improved.</strong> FY2026 operating cash flow $1.524B, non-GAAP FCF $882M.</li>
+<li><strong>Access model strengthens design-in.</strong> Total Access 56, Flexible Access 329는 future royalty runway의 leading indicator다.</li>
+</ol>
+<h3>Bear case</h3>
+<ol>
+<li><strong>Price is crowded.</strong> 52W position 96.1%, 20D +30.5%, 60D +137.1%.</li>
+<li><strong>Valuation burden is high.</strong> Forward P/E 73x, trailing P/E 262x, P/B 30x, EV/EBITDA 200x+ public proxy.</li>
+<li><strong>Q1 FY2027 guidance step-down.</strong> Q4 revenue $1.49B 대비 Q1 FY2027 guide $1.26B ± $50M는 license timing/seasonality를 감안해도 hurdle을 만든다.</li>
+<li><strong>AGI CPU claims need verification.</strong> $2B+ demand, $15B business, $100B+ market opportunity는 company claim이며 independent verification이 필요하다.</li>
+<li><strong>IP-to-silicon risk.</strong> Silicon expansion은 IP gross margin과 다른 execution/supply-chain/margin risk를 가져올 수 있다.</li>
+<li><strong>Royalty lag.</strong> license/design win이 실제 royalty revenue로 전환되기까지 시간이 걸린다.</li>
+<li><strong>Competition/substitution.</strong> RISC-V, x86, custom CPU/IP, hyperscaler internal architecture가 장기 take rate를 압박할 수 있다.</li>
+<li><strong>Consensus quality incomplete.</strong> <strong>EPS/consensus revision 이력 확인 필요</strong> 상태다.</li>
+</ol>
+<h3>Invalidation conditions</h3>
+<p>This report’s constructive observation is downgraded if two or more occur:</p>
+<ul>
+<li>Q1 FY2027 revenue가 <strong>$1.21B</strong> 아래로 나오거나, non-GAAP EPS가 guidance 하단 아래로 간다.</li>
+<li>Q1/Q2 commentary에서 data-center royalty growth가 둔화되거나 절대 규모가 기대보다 작다는 신호가 나온다.</li>
+<li>AGI CPU $2B+ demand가 named customer purchase/order/shipment schedule로 전환되지 않는다.</li>
+<li>license revenue가 Q4 계약 timing 이후 크게 둔화되고 ACV/RPO가 회복되지 않는다.</li>
+<li>non-GAAP operating margin이 R&amp;D/silicon investment로 급격히 낮아진다.</li>
+<li>forward EPS/revenue revision이 verified source에서 하향 또는 정체된다.</li>
+<li>Armv9/CSS royalty per chip 상승이 확인되지 않는다.</li>
+<li>RISC-V/custom IP/export-control/China/Arm China risk가 customer adoption 또는 royalty collection에 부정적으로 작동한다.</li>
+<li>price가 52W 상단권에 머무는데 source quality와 revision evidence가 약해진다.</li>
+</ul>
+<hr>
+<h2>10. Risks and blind spots</h2>
+<h3>10.1 Source risks</h3>
+<ul>
+<li><strong>Brokerage source boundary:</strong> public snippets에는 target/analyst/bullish commentary가 보이지만, 원문 보고서와 model bridge는 연결되지 않았다. 이 보고서는 rating/target price를 사용하지 않는다.</li>
+<li><strong>Consensus source boundary:</strong> public forward EPS proxy는 있으나 <strong>EPS/consensus revision 이력 확인 필요</strong> 상태다. 30/60/90일 revision time-series가 없으면 price/reflection 판단은 제한적이다.</li>
+<li><strong>Industry source gap:</strong> $100B+ TAM, $15B AGI CPU business, $2B+ customer demand는 회사 primary claim이다. 독립 market-size/customer-order source는 아직 보강 필요.</li>
+<li><strong>IR route limitation:</strong> Arm IR page는 접근 timeout이 있었고, SEC mirror로 filings를 확인했다.</li>
+<li><strong>Market data timing:</strong> latest price cache와 fundamentals cache는 날짜/가격 시점이 다르다. valuation은 방향성 보조로만 사용한다.</li>
+</ul>
+<h3>10.2 Business risks</h3>
+<ul>
+<li><strong>License timing volatility:</strong> high-value license 계약 timing이 분기 실적을 크게 흔들 수 있다.</li>
+<li><strong>Royalty lag:</strong> design win에서 royalty revenue까지 lag가 길 수 있다.</li>
+<li><strong>Silicon execution:</strong> AGI CPU는 새로운 revenue vector이지만, supply-chain, customer concentration, product cycle, margin dilution risk가 있다.</li>
+<li><strong>R&amp;D/opex pressure:</strong> engineers 8,058명, R&amp;D investment 증가가 장기 성장에는 필요하지만 operating margin을 낮출 수 있다.</li>
+<li><strong>Customer/end-market concentration:</strong> mobile, China/Arm China, large customers, hyperscaler/cloud customer mix가 수익성을 좌우할 수 있다.</li>
+<li><strong>Competition:</strong> RISC-V, x86, custom in-house IP/CPU, merchant silicon, GPU/accelerator platform lock-in.</li>
+<li><strong>Regulation/export controls:</strong> high-performance compute, PRC exposure, export-license regimes가 일부 제품/고객 접근을 제한할 수 있다.</li>
+</ul>
+<h3>10.3 Analytical blind spots</h3>
+<ul>
+<li>No paid consensus revision time-series.</li>
+<li>No original sell-side model.</li>
+<li>No independent paid market share/TAM dataset.</li>
+<li>No full earnings-call Q&amp;A extraction beyond SEC shareholder letter.</li>
+<li>No customer-by-customer AGI CPU order/shipment schedule.</li>
+<li>No price target or buy/sell framework by design.</li>
+</ul>
+<hr>
+<h2>11. Next checks</h2>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Date / window</th><th>Check</th><th>Why it matters</th></tr></thead><tbody><tr><td>Next Q1 FY2027 results window</td><td>Revenue vs <strong>$1.26B ± $50M</strong> guidance</td><td>Q4 record revenue 이후 normal seasonality인지, demand fade인지 확인</td></tr><tr><td>Next Q1 FY2027 results window</td><td>Non-GAAP EPS vs <strong>$0.40 ± $0.04</strong></td><td>price가 요구하는 EPS path 확인</td></tr><tr><td>Next Q1/FY2027 commentary</td><td>data-center royalty growth 지속 여부</td><td>AI CPU/data-center thesis의 핵심 숫자</td></tr><tr><td>Next Q1/FY2027 commentary</td><td>AGI CPU $2B+ demand의 named order/shipment/revenue detail</td><td>company claim에서 revenue evidence로 전환되는지 확인</td></tr><tr><td>Monthly</td><td>ACV, RPO, Total Access, Flexible Access</td><td>license-to-royalty leading indicators</td></tr><tr><td>Monthly</td><td>Armv9/CSS penetration and royalty per chip</td><td>royalty mix quality 확인</td></tr><tr><td>Monthly</td><td>verified EPS/consensus revision source 연결</td><td><strong>EPS/consensus revision 이력 확인 필요</strong> 해소 전 strong conclusion 금지</td></tr><tr><td>Monthly</td><td>52W position, 20D/60D, forward P/E</td><td>crowding과 revision alignment 확인</td></tr><tr><td>Monthly</td><td>RISC-V/custom CPU/export-control/China/Arm China news</td><td>long-term take-rate risk 확인</td></tr><tr><td>Quarterly</td><td>AGI CPU margin profile and silicon economics</td><td>IP gross margin model이 훼손되는지 확인</td></tr></tbody></table></div>
+<hr>
+<h2>12. Publisher Review Gate</h2>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Gate</th><th>Result</th><th>Notes</th></tr></thead><tbody><tr><td>Source pack explicitly stated</td><td><strong>Pass with caveat</strong></td><td>SEC 6-K/20-F, Yahoo Chart/fundamentals/EPS proxy, Google News public snippets, Research Desk caches 명시</td></tr><tr><td>EPS/revision caveat</td><td><strong>Pass</strong></td><td><strong>EPS/consensus revision 이력 확인 필요</strong> 명시; public proxy와 verified source 분리</td></tr><tr><td>Price reflection</td><td><strong>Pass</strong></td><td>52W, 20D/60D, valuation/fundamentals cache 포함</td></tr><tr><td>Bull/Bear/Invalidation</td><td><strong>Pass</strong></td><td>별도 섹션 포함</td></tr><tr><td>Base/Upside/Downside</td><td><strong>Pass</strong></td><td>시나리오와 triggers 포함</td></tr><tr><td>No buy/sell recommendation</td><td><strong>Pass</strong></td><td>관찰/분석/검증 보고서로만 작성</td></tr><tr><td>No target price</td><td><strong>Pass</strong></td><td>public snippets의 target/rating은 사용하지 않음</td></tr><tr><td>blocked/attempted source labeling</td><td><strong>Pass</strong></td><td>IR timeout, Nasdaq timeout, brokerage/paid consensus blocked/attempted 표시</td></tr><tr><td>내부 초안/검토 메모 미노출</td><td><strong>Pass</strong></td><td>public version에는 정리된 보고서 본문만 포함</td></tr><tr><td>Mobile readability</td><td><strong>Pass</strong></td><td>Markdown sections, bullets, compact tables; 내부 초안·검토 메모 미노출</td></tr></tbody></table></div>
+<p><strong>Publisher judgment:</strong> public publish allowed as a <strong>provisional / judgment hold</strong> report. 단, verified sell-side/consensus revision history와 independent industry source pack이 미완료이므로 reviewed institutional-grade로 부르지 않는다.</p>
+<hr>
+<h2>13. Final judgment state</h2>
+<p><strong>Arm (ARM.US): Crowded Re-rating candidate · Judgment hold.</strong></p>
+<p>Arm의 monthly momentum은 근거가 있다. FY2026 +23% revenue growth, royalty +21%, license +25%, data-center royalty 2배 이상, AGI CPU launch, Meta lead partner, $2B+ customer demand claim은 agentic AI CPU/IP thesis를 강하게 만든다. 그러나 가격은 이미 52주 상단권이고, forward valuation은 FY2027/FY2028 EPS revision을 요구한다. Arm은 AI infrastructure에서 중요한 architecture layer이지만 GPU/HBM/advanced packaging 병목을 직접 깨는 회사는 아니며, AGI CPU도 아직 order → shipment → revenue/margin 검증이 남아 있다. 따라서 다음 판단의 핵심은 <strong>Q1 FY2027 결과와 이후 commentary에서 data-center royalty, AGI CPU demand conversion, verified EPS revision이 가격 반영을 따라오는지</strong>다. 그 전까지는 <strong>높은 우선순위 관찰 후보, 강한 결론 보류</strong>가 맞다.</p></article></main>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
+<script>
+(() => {
+  const root = document.querySelector('[data-kimi-company-search]');
+  if (!root) return;
+  const base = '/research-desk';
+  const input = root.querySelector('[data-kimi-input]');
+  const result = root.querySelector('[data-kimi-results]');
+  const count = root.querySelector('[data-kimi-count]');
+  const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 삼성전자, 한미반도체, 네이버, NVDA, 팔란티어, HD현대일렉</small></div>';
+  let rows = [];
+  const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9가-힣]+/g, ' ').trim();
+  const compact = (s) => norm(s).replace(/\s+/g, '');
+  const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '데이터 확인 중' : `${Number(v) >= 0 ? '+' : ''}${Number(v).toFixed(1)}%`;
+  const requestCreate = (raw, cmd) => {
+    const msg = `회사 생성 요청: ${raw}
+${cmd}`;
+    try { navigator.clipboard && navigator.clipboard.writeText(cmd); } catch(e) {}
+    localStorage.setItem('researchDeskCompanyCreateRequest', JSON.stringify({query: raw, command: cmd, ts: new Date().toISOString()}));
+    const status = root.querySelector('[data-kimi-create-status]');
+    if (status) status.textContent = '생성 요청 명령을 복사했어. Telegram/Hermes에 붙여넣으면 fast intake가 실행돼.';
+  };
+  const render = (items) => {
+    if (!items.length) {
+      const raw = input.value.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      const cmd = `python3 11-scripts/request_company_report.py "${raw.replace(/"/g, '\"')}" --provider fast --publish`;
+      const action = `https://158.247.217.223.sslip.io/api/research-desk/company-create?query=${encodeURIComponent(raw)}&provider=fast`;
+      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 Codex 5.5 기반 intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><div class="kimi-create-actions"><a class="kimi-create-btn" href="${action}" data-kimi-create>생성 시작</a><button type="button" class="kimi-create-btn secondary" data-copy-cmd>명령 복사</button></div><span class="kimi-create-status" data-kimi-create-status>누르면 진행 상태 페이지로 이동한다.</span></div>`;
+      const copyBtn = result.querySelector('[data-copy-cmd]');
+      if (copyBtn) copyBtn.addEventListener('click', () => requestCreate(raw, cmd));
+      return;
+    }
+    result.innerHTML = '<div class="kimi-results-title">검색 결과 / 관찰 후보</div>' + items.slice(0, 8).map(x => `
+      <a class="kimi-result" href="${x.page}">
+        <span class="kimi-light">${String(x.traffic_light || '⚪').trim().split(/\s+/)[0]}</span>
+        <b>${x.company} <em>${x.symbol}</em></b>
+        <small>${x.category} · ${x.role || 'role 미정'}</small>
+        <i>현재가 ${x.price == null ? '데이터 확인 중' : x.price} · 20D ${fmtPct(x.return_20d_pct)} · 52W ${x.price_position_52w_pct == null ? '데이터 확인 중' : Number(x.price_position_52w_pct).toFixed(0)+'%'}</i>
+      </a>`).join('');
+  };
+  const search = () => {
+    const q = norm(input.value);
+    const qc = compact(input.value);
+    if (!q) { result.innerHTML = empty; return; }
+    const terms = q.split(/\s+/).filter(Boolean);
+    const scored = rows.map(x => {
+      const fields = [x.company, x.symbol, x.category, x.node, x.role, ...(x.aliases || [])].join(' ');
+      const hay = norm(fields);
+      const hayc = compact(fields);
+      const symbolc = compact(x.symbol);
+      let score = 0;
+      if (qc && (symbolc === qc || symbolc.replace(/us$|ks$|kq$/,'') === qc)) score += 100;
+      if (qc && hayc.includes(qc)) score += qc.length + 15;
+      for (const t of terms) { if (hay.includes(t)) score += t.length + (hay.startsWith(t) ? 5 : 0); }
+      return [score, x];
+    }).filter(([s]) => s > 0).sort((a,b) => b[0]-a[0]).map(([,x]) => x);
+    render(scored);
+  };
+  const indexUrl = `${base}/data/company-search-index.json?v=${Date.now()}`;
+  fetch(indexUrl, {cache:'no-store'}).then(r => { if (!r.ok) throw new Error('index '+r.status); return r.json(); }).then(data => {
+    rows = data.items || [];
+    if (count) count.textContent = `${rows.length} companies indexed · KR/US fast local search · intake: Codex 5.5`;
+    const featured = rows.filter(x => ['NVIDIA','Vertiv','HD Hyundai Electric','SK Hynix','Microsoft','TSMC'].includes(x.company));
+    render(featured.length ? featured : rows.slice(0,6));
+  }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Company index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });
+  input.addEventListener('input', search);
+  root.querySelectorAll('[data-kimi-query]').forEach(btn => btn.addEventListener('click', () => { input.value = btn.dataset.kimiQuery; search(); input.focus(); }));
+})();
+</script>
+</body>
+</html>
