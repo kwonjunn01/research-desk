@@ -289,22 +289,26 @@
 <li><strong>논문 결론:</strong> 오늘은 Reasoning / Post-training 4, Agent / Tool-use 3, Inference / Efficiency 3가 핵심이고, 깊게 읽을 후보는 DelTA: Discriminative Token Credit Assignment for Rei… / π-Bench: Evaluating Proactive Personal Assistant Agen… / TransitLM: A Large-Scale Dataset and Benchmark for Ma….</li>
 </ul>
 <h3>오늘 읽을 2~3개</h3>
+<h4>깊게 읽기 1. <a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a></h4>
 <ul>
-<li><strong>깊게 읽기 1. <a href="https://huggingface.co/papers/2605.21467">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</a></strong></li>
 <li><strong>위치:</strong> HF #1 · 👍 181 · Reasoning / Post-training · Kaiyi Zhang, Wei Wu · digest score 22</li>
 <li><strong>쉽게 말하면:</strong> 정답 확인이 쉬운 문제로 LLM reasoning을 강화학습할 때, 생각보다 아주 작은 방향의 파라미터 변화만으로도 성능이 늘 수 있다는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Reinforcement learning from verifiable rewards (RLVR) has emerged as a central technique for improving the reasoning capabilities of large language models. Despite its effectiveness, how response-level rewards translate into token-level probability changes remains poorly understood.</li>
 <li><strong>핵심 용어:</strong> RL = 강화학습: 모델이 정답/보상 신호를 보며 행동을 더 잘하도록 조정하는 학습; RLVR = 검증 가능한 강화학습: 정답 확인이 쉬운 문제로 reasoning을 강화학습시키는 방식; verifiable rewards = 검증 가능한 보상: 수학/코드처럼 정답 확인이 쉬운 문제에서 보상을 주는 신호</li>
 <li><strong>내 판단:</strong> reasoning 강화학습이 꼭 대규모 업데이트를 요구하는지, 작은 학습으로도 확장되는지 확인할 재료다. 모델 능력 향상이 단순 benchmark가 아니라 검증 가능한 보상/긴 작업 안정성으로 이동하는지 보는 재료다.</li>
 <li><strong>확인할 것:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지.</li>
-<li><strong>깊게 읽기 2. <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a></strong></li>
+</ul>
+<h4>깊게 읽기 2. <a href="https://huggingface.co/papers/2605.14678">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</a></h4>
+<ul>
 <li><strong>위치:</strong> HF #4 · 👍 90 · Agent / Tool-use · Haoran Zhang, Luxin Xu · digest score 21</li>
 <li><strong>쉽게 말하면:</strong> 개인 비서 agent가 애매한 요청을 오래 이어지는 workflow에서 먼저 알아차리고 도와줄 수 있는지 평가하는 벤치마크 논문이다.</li>
 <li><strong>핵심 내용:</strong> The rise of personal assistant agents, e.g., OpenClaw, highlights the growing potential of large language models to support users across everyday life and work. A core challenge in these settings is proactive assistance, since users often begin with underspecified requests and leave important needs, constraints, or pr…</li>
 <li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트</li>
 <li><strong>내 판단:</strong> 개인 agent 제품에서 중요한 <code>모호한 요청 파악→선제 제안→긴 workflow 유지</code> 병목을 평가한다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
 <li><strong>확인할 것:</strong> 환경/benchmark가 장난감인지, 실제 browser·OS·tool 실패를 포함하는지.</li>
-<li><strong>깊게 읽기 3. <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a></strong></li>
+</ul>
+<h4>깊게 읽기 3. <a href="https://huggingface.co/papers/2605.22355">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</a></h4>
+<ul>
 <li><strong>위치:</strong> HF #2 · 👍 167 · Benchmark / Evaluation · Hanyu Guo, Jiedong Yang · digest score 20</li>
 <li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Public transit route planning traditionally depends on structured map infrastructure and complex routing engines, and no existing dataset supports training models to bypass this dependency. We present TransitLM, a large-scale dataset of over 13 million transit route planning records from four Chinese cities covering 1…</li>
@@ -313,29 +317,35 @@
 <li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
 </ul>
 <h3>훑고 넘어갈 것</h3>
+<h4>5분 훑기 1. <a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a></h4>
 <ul>
-<li><strong>5분 훑기 1. <a href="https://huggingface.co/papers/2605.22109">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</a></strong></li>
 <li><strong>위치:</strong> HF #3 · 👍 160 · Reasoning / Post-training · Caixin Kang, Tianyu Yan · digest score 19</li>
 <li><strong>쉽게 말하면:</strong> 이미지·영상·소리 같은 비텍스트 데이터를 더 잘 이해하거나 생성하려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Multimodal Large Language Models (MLLMs) are increasingly deployed in human-facing roles where personality perception is critical, yet existing benchmarks evaluate this capability solely on numerical Big Five score prediction, leaving open whether models truly perceive personality through behavioral understanding or m…</li>
 <li><strong>핵심 용어:</strong> multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
 <li><strong>내 판단:</strong> Reasoning / Post-training 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 인기는 있지만 우리 thesis와의 연결은 약할 수 있어, 먼저 초록 수준으로만 확인한다.</li>
 <li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
-<li><strong>5분 훑기 2. <a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a></strong></li>
+</ul>
+<h4>5분 훑기 2. <a href="https://huggingface.co/papers/2605.16928">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</a></h4>
+<ul>
 <li><strong>위치:</strong> HF #5 · 👍 83 · Inference / Efficiency · Yanke Zhou, Yiduo Li · digest score 19</li>
 <li><strong>쉽게 말하면:</strong> 긴 문맥에서 full attention 비용을 줄이기 위해 필요한 토큰/헤드만 sparse하게 쓰도록 바꾸는 추론·학습 효율화 논문이다.</li>
 <li><strong>핵심 내용:</strong> Long-context inference in large language models is bottlenecked by the quadratic cost of full attention. Existing efficient alternatives often rely either on native sparse training or on heuristic token eviction, creating an undesirable trade-off among efficiency, training cost, and accuracy.</li>
 <li><strong>핵심 용어:</strong> full attention = 전체 attention: 긴 문맥의 모든 토큰을 넓게 보는 방식이라 정확하지만 비용이 커질 수 있음; sparse attention = 희소 attention: 중요한 토큰/헤드만 골라 계산해 긴 문맥 비용을 줄이는 방식; long context = 긴 문맥: 매우 긴 문서/대화/작업 기록을 한 번에 다루는 능력; retrieval/RAG = 검색/RAG: 외부 문서나 기억을 찾아 모델 답변에 붙이는 방식</li>
 <li><strong>내 판단:</strong> 긴 문맥 attention 비용을 sparse 전환으로 줄이려는 시도라, agent memory/inference 비용 병목과 연결된다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
 <li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
-<li><strong>5분 훑기 3. <a href="https://huggingface.co/papers/2605.21850">ACC: Compiling Agent Trajectories for Long-Context Training</a></strong></li>
+</ul>
+<h4>5분 훑기 3. <a href="https://huggingface.co/papers/2605.21850">ACC: Compiling Agent Trajectories for Long-Context Training</a></h4>
+<ul>
 <li><strong>위치:</strong> HF #6 · 👍 56 · Agent / Tool-use · Qisheng Su, Zhen Fang · digest score 19</li>
 <li><strong>쉽게 말하면:</strong> agent가 도구를 쓰며 남긴 긴 작업 기록을 학습 데이터로 압축해 long-context reasoning을 키우려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Recent development of agents has renewed demand for long-context reasoning capacity of LLMs. However, training LLMs for this capacity requires costly long-document curation or heuristic context synthesis.</li>
 <li><strong>핵심 용어:</strong> long context = 긴 문맥: 매우 긴 문서/대화/작업 기록을 한 번에 다루는 능력; agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조</li>
 <li><strong>내 판단:</strong> agent 실행 로그를 long-context 학습 재료로 바꾸는 시도라, 개인 agent의 긴 작업 기억·도구 관찰 통합 병목과 직접 닿는다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
 <li><strong>확인할 것:</strong> 환경/benchmark가 장난감인지, 실제 browser·OS·tool 실패를 포함하는지.</li>
-<li><strong>5분 훑기 4. <a href="https://huggingface.co/papers/2605.21572">PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects</a></strong></li>
+</ul>
+<h4>5분 훑기 4. <a href="https://huggingface.co/papers/2605.21572">PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects</a></h4>
+<ul>
 <li><strong>위치:</strong> HF #7 · 👍 45 · Multimodal / Generation · Ziang Cao, Yinghao Liu · digest score 8</li>
 <li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Simulation-ready physical 3D assets have emerged as a promising direction owing to their broad applicability in downstream tasks. However, most existing 3D generation methods either neglect physical properties or are limited to a single asset category, e.g., rigid, deformable, or articulated objects.</li>
@@ -345,22 +355,26 @@
 </ul>
 <h3>스킵 후보</h3>
 <blockquote>완전 무시가 아니라, 오늘 레이더의 agent/병목 thesis와 직접 연결이 약해 뒤로 미룬다.</blockquote>
+<h4>오늘은 스킵 1. <a href="https://huggingface.co/papers/2605.22668">SEGA: Spectral-Energy Guided Attention for Resolution Extrapolation in Diffusion Transformers</a></h4>
 <ul>
-<li><strong>오늘은 스킵 1. <a href="https://huggingface.co/papers/2605.22668">SEGA: Spectral-Energy Guided Attention for Resolution Extrapolation in Diffusion Transformers</a></strong></li>
 <li><strong>위치:</strong> HF #12 · 👍 31 · Inference / Efficiency · Javad Rajabi, Kimia Shaban · digest score 11</li>
 <li><strong>쉽게 말하면:</strong> 큰 모델을 실제 서비스에서 더 싸고 빠르게 돌리기 위한 실행 최적화 논문이다.</li>
 <li><strong>핵심 내용:</strong> Diffusion transformers (DiTs) have emerged as a dominant architecture for text-to-image generation, yet their performance drops when generating at resolutions beyond their training range. Existing training-free approaches mitigate this by modifying inference-time attention behavior, often through Rotary Position Embed…</li>
 <li><strong>핵심 용어:</strong> inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
 <li><strong>내 판단:</strong> 모델을 실제로 싸고 빠르게 돌리는 inference 병목 쪽이다. 인기는 있지만 우리 thesis와의 연결은 약할 수 있어, 먼저 초록 수준으로만 확인한다.</li>
 <li><strong>확인할 것:</strong> 처리량/메모리 절감이 어떤 하드웨어와 batch 조건에서 나온 것인지.</li>
-<li><strong>오늘은 스킵 2. <a href="https://huggingface.co/papers/2605.22012">LatentOmni: Rethinking Omni-Modal Understanding via Unified Audio-Visual Latent Reasoning</a></strong></li>
+</ul>
+<h4>오늘은 스킵 2. <a href="https://huggingface.co/papers/2605.22012">LatentOmni: Rethinking Omni-Modal Understanding via Unified Audio-Visual Latent Reasoning</a></h4>
+<ul>
 <li><strong>위치:</strong> HF #8 · 👍 37 · Reasoning / Post-training · Yifan Dai, Zhenhua Wu · digest score 14</li>
 <li><strong>쉽게 말하면:</strong> 이미지·영상·소리 같은 비텍스트 데이터를 더 잘 이해하거나 생성하려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Joint audio-visual reasoning is essential for omnimodal understanding, yet current multimodal large language models (MLLMs) still struggle when reasoning requires fine-grained evidence from both modalities. A central limitation is that explicit text-based chain-of-thought (CoT) compresses continuous audio-visual signa…</li>
 <li><strong>핵심 용어:</strong> multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
 <li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. voice/multimodal agent가 현실 환경으로 나오면 음성 robustness가 곧 사용성 병목이 된다.</li>
 <li><strong>확인할 것:</strong> 잡음·억양·왜곡·현장 음성에서 hallucination/누락이 실제로 줄었는지.</li>
-<li><strong>오늘은 스킵 3. <a href="https://huggingface.co/papers/2605.22718">WorldKV: Efficient World Memory with World Retrieval and Compression</a></strong></li>
+</ul>
+<h4>오늘은 스킵 3. <a href="https://huggingface.co/papers/2605.22718">WorldKV: Efficient World Memory with World Retrieval and Compression</a></h4>
+<ul>
 <li><strong>위치:</strong> HF #10 · 👍 32 · Inference / Efficiency · Jung Yi, Minjae Kim · digest score 16</li>
 <li><strong>쉽게 말하면:</strong> 검색 결과 중 진짜 쓸 만한 문서를 더 싸고 빠르게 골라내는 방법을 다루는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Autoregressive video diffusion models have enabled real-time, action-conditioned world generation. However, sustaining a persistent world, where revisiting a previously seen viewpoint yields consistent content, remains an open problem.</li>

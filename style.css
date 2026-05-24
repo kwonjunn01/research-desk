@@ -45,13 +45,16 @@ summary::marker { content: ""; }
 .nav-badge { color: var(--muted); font-size: 11px; margin-right: 4px; }
 main { width: min(100%, 1160px); padding: clamp(22px, 4vw, 48px) clamp(16px, 4.5vw, 56px) 90px; }
 article { background: var(--panel); border: 1px solid var(--border); border-radius: 18px; padding: clamp(22px, 4vw, 42px); box-shadow: 0 20px 80px rgba(0,0,0,.25); overflow-wrap: break-word; }
-h1, h2, h3 { line-height: 1.25; }
+h1, h2, h3, h4 { line-height: 1.25; }
 h1 { font-size: 34px; margin-top: 0; }
 h2 { margin-top: 40px; padding-top: 12px; border-top: 1px solid var(--border); }
 h3 { color: var(--accent); }
 article h3 { border-left: 3px solid rgba(124,124,255,.65); padding: 8px 0 8px 12px; background: linear-gradient(90deg, rgba(124,124,255,.10), transparent 65%); border-radius: 10px; }
 article h3 + ul { display:grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap:10px; padding-left:0; list-style:none; margin:14px 0 22px; }
 article h3 + ul > li { border:1px solid rgba(124,124,255,.20); background:linear-gradient(145deg, rgba(124,124,255,.10), rgba(255,255,255,.025)); border-radius:14px; padding:12px 13px; box-shadow:0 14px 38px rgba(0,0,0,.16); }
+article h4 { margin:16px 0 0; padding:13px 15px 10px; color:#f7f8ff; border:1px solid rgba(124,124,255,.24); border-bottom:0; border-radius:16px 16px 0 0; background:radial-gradient(circle at 12% 0%,rgba(124,124,255,.16),transparent 40%),rgba(255,255,255,.040); }
+article h4 + ul { display:block; margin:0 0 18px; padding:0 15px 14px 32px; list-style:disc; border:1px solid rgba(124,124,255,.24); border-top:0; border-radius:0 0 16px 16px; background:rgba(255,255,255,.026); }
+article h4 + ul > li { margin:7px 0; padding:0; border:0; background:transparent; box-shadow:none; }
 article h3 + blockquote + ol > li { border-color: rgba(124,124,255,.26); background: radial-gradient(circle at top left, rgba(124,124,255,.16), transparent 42%), linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.022)); }
 blockquote { margin: 20px 0; padding: 12px 18px; border-left: 4px solid var(--accent); color: var(--muted); background: rgba(255,255,255,.03); }
 code { background: rgba(255,255,255,.08); padding: 2px 5px; border-radius: 5px; }
