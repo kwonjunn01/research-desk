@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>신규 종목 Deep Dive — Round 1 (2026-05-26)</title>
+  <link rel="stylesheet" href="/research-desk/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1><a href="/research-desk/index.html">Research Desk</a></h1>
+    <div class="meta">Personal Research Radar</div>
+    <details class="nav-major">
+<summary class="nav-major-title">Home</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">Overview</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
+<li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
+<li><a href="/research-desk/agent-build-log/index.html"><span class="nav-badge">빌드</span> Agent Build Log</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">AI Research</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">허브</span> AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html"><span class="nav-badge">Agent</span> Agent AI Specialist Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-26.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-25.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-24</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-24.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-23</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-23.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-22.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-21.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-20.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-19</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-19.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-18</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-18.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-17</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-17.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-16</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-16.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-15</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-15.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-14</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-14.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-13</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-13.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Quant Bot</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">운영 허브</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/index.html"><span class="nav-badge">허브</span> Quant Bot Hub</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-spec.html"><span class="nav-badge">Spec</span> BTC Futures v2 Spec</a></li>
+<li><a href="/research-desk/quant/upgrade-roadmap.html"><span class="nav-badge">Upgrade</span> Quant Bot Upgrade Roadmap</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html"><span class="nav-badge">Daily</span> BTC Futures v2 Daily Report</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">전략 / 시스템</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/agent-team.html"><span class="nav-badge">팀</span> AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-council.html"><span class="nav-badge">회의</span> Quant Strategy Council</a></li>
+<li><a href="/research-desk/quant/strategy-evolution-charter.html"><span class="nav-badge">전략</span> Strategy Evolution Charter</a></li>
+<li><a href="/research-desk/quant/scenario-planning.html"><span class="nav-badge">위기</span> Scenario Planning</a></li>
+<li><a href="/research-desk/quant/feedback-system.html"><span class="nav-badge">피드백</span> Feedback System</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Cross-Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">통합 지도</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">허브</span> Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">예측</span> Prediction Board</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-25.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-22.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-21.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-20.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-19</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-19.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-18</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-18.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-15</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-15.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-14</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-14.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-13</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-13.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-12</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-12.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-08</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-08.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-07</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-07.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-06</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-06.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-05.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Market Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">허브</span> Market Intelligence Hub</a></li>
+<li><a href="/research-desk/market-ontology/stock-traffic-light.html"><span class="nav-badge">신호</span> 주식 신호등</a></li>
+<li><a href="/research-desk/market-ontology/securities-reports.html"><span class="nav-badge">리포트</span> Institutional Securities Desk</a></li>
+<li><a href="/research-desk/market-ontology/company-reports/index.html"><span class="nav-badge">회사</span> Company Reports</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/value-chain-discovery-2026-05-26.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-25.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-22.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-21.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-20.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-19</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-19.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-18</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-18.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-17</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-17.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-15</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-15.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-14</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-14.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-13</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-13.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-12</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-12.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-11</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-11.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-09</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-09.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+</details>
+</details>
+  </aside>
+  <main><article><hr>
+<p>title: 신규 종목 Deep Dive — 빛과전자 + 인텍플러스 (Round 1)</p>
+<p>tags: #market/deep-dive #new-stock-discovery #round-1</p>
+<p>authors: [Claude (Cowork), Hermes Codex 5.5 intake]</p>
+<p>date: 2026-05-26</p>
+<p>data-source: Hermes company_intake (Codex 5.5) + KRX 5/22 + Finnhub</p>
+<hr>
+<h1>신규 종목 Deep Dive — Round 1 (2026-05-26)</h1>
+<p><span class="badge">Home</span> / <span class="badge">Market Ontology MOC</span> / <span class="badge">Value Chain Discovery</span> / <span class="badge">Stock Traffic Light</span></p>
+<blockquote>형준님 본업 우선순위: 워치리스트 valuation 판단보다 <strong>신규 종목 능동 발굴 + narrative/현실 솔루션 2축 검증</strong>.</blockquote>
+<blockquote>이 페이지는 5/22 폭등 종목 중 워치리스트 외 2종의 deep dive. Hermes Codex 5.5 intake 결과를 인과추론 프레임으로 재해석.</blockquote>
+<h2>평가 프레임 (2축)</h2>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>축</th><th>정의</th><th>평가 방법</th></tr></thead><tbody><tr><td><strong>Narrative 납득성</strong></td><td>회사가 이 영역 병목을 푸는 게 말이 되는가? 인과 사슬 끊김 없는가?</td><td>베라루빈 → X → Y → 회사 매출 chain 점검</td></tr><tr><td><strong>현실 솔루션</strong></td><td>지금 그 솔루션 실제 보유? 매출 발생 중? 양산 단계?</td><td>제품 라인업·고객사·매출 비중·양산 시점 확인</td></tr></tbody></table></div>
+<p>각 축 평가: <code>강함 / 보통 / 약함 / 확인 필요</code>. 둘 다 강해야 P0.</p>
+<hr>
+<h2>1. 빛과전자 (Lightron Fiber-Optic Devices) — 069540.KQ</h2>
+<div style="background:#fde2e1;padding:14px;border-radius:8px;border-left:5px solid #dc3545;margin:12px 0">
+<div style="font-size:11px;color:#666">5/22 신호</div>
+<div style="font-size:20px;font-weight:700;color:#a00">+29.86% / 거래량 40,253,771주</div>
+<div style="font-size:11px;color:#666;margin-top:6px">종가 6,610원 · 시총 6,471억 · Hermes intake confidence <b>0.82</b></div>
+</div>
+<h3>1-1. 회사 정체</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>필드</th><th>값</th></tr></thead><tbody><tr><td>영문명</td><td>Lightron Fiber-Optic Devices Inc. (브랜드: LIGHTRON)</td></tr><tr><td>카테고리</td><td>Networking / Optical Interconnect</td></tr><tr><td>Node</td><td>Optical Transceiver (광트랜시버)</td></tr><tr><td>영역 매핑</td><td><strong>영역 4 — 광통신/CPO 한국 직접 노출</strong></td></tr></tbody></table></div>
+<h3>1-2. 제품 라인업 (공식 사이트 확인)</h3>
+<ul>
+<li><strong>1.6T / 800G / 400G / 200G High Speed Transceivers</strong> ← AI 데이터센터 핵심</li>
+<li>100G / 50G / 25G TRX</li>
+<li>PON (Passive Optical Network)</li>
+<li>Optical Amplifier</li>
+</ul>
+<h3>1-3. 인과 사슬 (베라루빈 → 빛과전자)</h3>
+<pre><code>F1 베라루빈 4Q26 출하
+   ↓ (GPU 간 통신량 폭증)
+   광통신 네트워크 1.6T/3.2T 강제 채택
+   ↓ (CPO/광트랜시버 수요)
+   미국 빅4 (Lumentum/Coherent/Ciena/Cisco) 캐파 한계
+   ↓ (한국 OEM/2nd source 기회)
+   빛과전자 1.6T/800G/400G 광트랜시버 ← 실제 보유 제품</code></pre>
+<p><strong>Narrative 평가</strong>: 🟢 <strong>강함</strong> — 인과 사슬 끊김 없음. 베라루빈 출하 = 광인터커넥트 강제 = 빛과전자 제품군 매칭.</p>
+<h3>1-4. 현실 솔루션 (실제 매출/양산)</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>점검 항목</th><th>상태</th></tr></thead><tbody><tr><td>1.6T/800G 제품 공식 발표</td><td>✅ 공식 사이트 확인</td></tr><tr><td>AI 데이터센터 직접 매출 비중</td><td>❓ <strong>공개 자료로 미확인</strong> (Hermes intake risk note)</td></tr><tr><td>대형 DC 고객사 레퍼런스</td><td>❓ 미공개 (한국 통신사? 글로벌 hyperscaler? 미공개)</td></tr><tr><td>양산 단계</td><td>❓ Sampling vs 양산 시점 미확인</td></tr><tr><td>분기 매출 추이</td><td>❓ FnGuide 분기 보고서 확인 필요</td></tr></tbody></table></div>
+<p><strong>현실 솔루션 평가</strong>: 🟡 <strong>보통 (제품은 있음, 매출 가시화 미확인)</strong> — 5/22 +29.86%는 narrative 기대 반영. 매출 기여는 다음 검증 step.</p>
+<h3>1-5. 5요소 평가</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>5요소</th><th>평가</th><th>근거</th></tr></thead><tbody><tr><td>대체불가능성</td><td>보통</td><td>한국 광트랜시버 중소형 (시총 6.4천억). 미국 빅4·중국·대만 경쟁사 존재</td></tr><tr><td>6~12개월 트리거</td><td>강</td><td>베라루빈 4Q26 출하 = 800G/1.6T 강제 채택 시점</td></tr><tr><td>시장 인지도</td><td><strong>시작</strong></td><td>5/22 +29.86%, 거래량 40M주 (시총 6.4천억 대비 매우 큼)</td></tr><tr><td>흑자 모멘텀</td><td>확인 필요</td><td>FnGuide: 매출원가율·수익성 변동성 큼 (intake risk note)</td></tr><tr><td>본업 우위</td><td>강</td><td>형준님 on-device·packaging 인접 영역, 광인터커넥트는 본업 정보 우위 적용 가능</td></tr></tbody></table></div>
+<h3>1-6. 종합 판단 + 다음 검증</h3>
+<p><strong>판단</strong>: P0+ — narrative 강, 현실 솔루션 보통. 다음 30일 안에 매출 확인 필수.</p>
+<p><strong>검증 step (7일 안)</strong>:</p>
+<ol>
+<li>빛과전자 2026 1Q 분기 보고서 (DART) — AI DC 매출 비중·해외 매출 비중</li>
+<li>800G/1.6T 제품 양산 단계 (sampling vs production)</li>
+<li>거래량 40M주 매수자 분석 (개인 / 기관 / 외국인)</li>
+</ol>
+<p><strong>검증 step (30일 안)</strong>:</p>
+<ol>
+<li>6월 IR 일정 확인 (실적 발표·NDR)</li>
+<li>6~7월 미국 OCP / SuperComputing 컨퍼런스 빛과전자 booth 여부</li>
+<li>Lumentum/Coherent 6월 어닝 발표 → 한국 2nd source 언급 여부</li>
+</ol>
+<p><strong>위험 신호</strong> (이게 보이면 thesis 폐기):</p>
+<ul>
+<li>6월 IR에서 AI DC 매출 비중 5% 미만</li>
+<li>1.6T 제품이 양산 아닌 sampling/PoC 단계</li>
+<li>유상증자·최대주주 변경 공시 (소형 KOSDAQ 리스크)</li>
+</ul>
+<hr>
+<h2>2. 인텍플러스 (INTEKPLUS) — 064290.KQ</h2>
+<div style="background:#fde2e1;padding:14px;border-radius:8px;border-left:5px solid #dc3545;margin:12px 0">
+<div style="font-size:11px;color:#666">5/22 신호</div>
+<div style="font-size:20px;font-weight:700;color:#a00">+26.68% / 거래량 1,659,908주</div>
+<div style="font-size:11px;color:#666;margin-top:6px">종가 35,850원 · 시총 4,612억 · Hermes intake confidence <b>0.88</b></div>
+</div>
+<h3>2-1. 회사 정체</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>필드</th><th>값</th></tr></thead><tbody><tr><td>영문명</td><td>INTEKPLUS Co., Ltd.</td></tr><tr><td>카테고리</td><td>Foundry / Advanced Packaging / Semiconductor Equipment</td></tr><tr><td>Node</td><td>HBM/Advanced Packaging Inspection</td></tr><tr><td>영역 매핑</td><td><strong>영역 5 — AI 서버 부품 2티어 (HBM 후공정 검사)</strong></td></tr></tbody></table></div>
+<h3>2-2. 제품 라인업 (확인)</h3>
+<ul>
+<li><strong>2D/3D Machine-vision Inspection Equipment</strong> (핵심)</li>
+<li>IC Package 검사</li>
+<li>Semiconductor Substrate 검사</li>
+<li>Memory Module / SSD 검사</li>
+<li>Flip-chip Bump 3D 검사</li>
+<li>Display·자동차 배터리 검사 (다각화)</li>
+</ul>
+<h3>2-3. 인과 사슬 (HBM4 양산 → 인텍플러스)</h3>
+<pre><code>F5 HBM4 양산 (2026~2027)
+   ↓ (Stacking 16개 → 패키지 복잡도 폭증)
+   2.5D/3D 패키징 결함 검출 난도 상승
+   ↓ (수율 = AI 가속기 양산 병목)
+   메모리 3사·OSAT 검사장비 CAPEX 증가
+   ↓ (한국 검사장비 후보)
+   인텍플러스 2D/3D 비전 검사 ← 실제 보유</code></pre>
+<p><strong>Narrative 평가</strong>: 🟢 <strong>강함</strong> — HBM4 양산 = 검사 강제. 인텍플러스가 그 검사 장비 보유.</p>
+<h3>2-4. 현실 솔루션 (실제 매출/양산)</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>점검 항목</th><th>상태</th></tr></thead><tbody><tr><td>2D/3D vision inspection 보유</td><td>✅ 확인됨 (Komachine·SEMICON China booth)</td></tr><tr><td>HBM 직접 매출</td><td>⚠️ <strong>데일리인베스트 기사: 국내 고객사 HBM 생산 확대 → 2.5D 검사 장비 추가 수주 기대</strong></td></tr><tr><td>다각화 매출원</td><td>✅ 디스플레이·자동차배터리·스마트팩토리 — 리스크 헷지</td></tr><tr><td>양산 단계</td><td>✅ 이미 매출 발생 (장비 supplier로 운영 중)</td></tr><tr><td>분기 실적 추이</td><td>❓ 분기보고서 확인 필요</td></tr></tbody></table></div>
+<p><strong>현실 솔루션 평가</strong>: 🟢 <strong>강함</strong> — 제품·매출·고객사 다각화까지 확인. HBM 직접 비중만 신증.</p>
+<h3>2-5. 5요소 평가</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>5요소</th><th>평가</th><th>근거</th></tr></thead><tbody><tr><td>대체불가능성</td><td>보통</td><td>한국 검사장비 후보 다수 (테크윙·이오테크닉스 등 인접). 다만 2D/3D vision 비전 전문</td></tr><tr><td>6~12개월 트리거</td><td>강</td><td>HBM4 양산 본격 + 2.5D 패키징 = 검사 수요</td></tr><tr><td>시장 인지도</td><td><strong>시작</strong></td><td>5/22 +26.68%. 데일리인베스트 기사 = 시장 관심 시작</td></tr><tr><td>흑자 모멘텀</td><td>확인 필요 (다각화로 보호)</td><td>매출 다양 → 변동성 헷지 OK</td></tr><tr><td>본업 우위</td><td>강</td><td>형준님 본업 = AI 인프라·HBM·CoWoS·패키징. 검사장비는 본업 정보 우위 정확히 맞음</td></tr></tbody></table></div>
+<h3>2-6. 종합 판단 + 다음 검증</h3>
+<p><strong>판단</strong>: P0 — narrative 강, 현실 솔루션 강. <strong>3종 중 가장 deal-ready</strong>.</p>
+<p><strong>검증 step (7일 안)</strong>:</p>
+<ol>
+<li>2026 1Q 분기 보고서 (DART) — HBM 검사 매출 비중</li>
+<li>한미반도체·이오테크닉스 등 인접 검사장비 종목과 비중·매출 구조 비교</li>
+<li>거래량 1.66M 매수자 분석</li>
+</ol>
+<p><strong>검증 step (30일 안)</strong>:</p>
+<ol>
+<li>6월 SK하이닉스·삼성전자 분기 IR — HBM CAPEX 가이드</li>
+<li>인텍플러스 IR/NDR 6월 일정</li>
+<li>한미반도체 (HBM 본더) 매출 vs 인텍플러스 (HBM 검사) 매출 사이클 비교</li>
+</ol>
+<p><strong>위험 신호</strong> (thesis 폐기):</p>
+<ul>
+<li>HBM 직접 매출 비중 10% 미만</li>
+<li>HBM4 출시 지연 (2027 H2 → 2028+)</li>
+<li>한미반도체 vs 인텍플러스 CAPEX 사이클 불일치</li>
+</ul>
+<hr>
+<h2>3. Cross-Compare — 빛과전자 vs 인텍플러스</h2>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>비교 축</th><th>빛과전자 (069540)</th><th>인텍플러스 (064290)</th></tr></thead><tbody><tr><td><strong>5/22 등락</strong></td><td>+29.86% (거래량 40M)</td><td>+26.68% (거래량 1.7M)</td></tr><tr><td><strong>시총</strong></td><td>6,471억</td><td>4,612억</td></tr><tr><td><strong>영역</strong></td><td>4 (광통신)</td><td>5 (HBM 검사)</td></tr><tr><td><strong>Hermes confidence</strong></td><td>0.82</td><td><strong>0.88</strong></td></tr><tr><td><strong>Narrative 강도</strong></td><td>강</td><td>강</td></tr><tr><td><strong>현실 솔루션</strong></td><td>보통 (매출 미확인)</td><td><strong>강 (매출 + 다각화)</strong></td></tr><tr><td><strong>본업 우위</strong></td><td>강 (광 인터커넥트)</td><td><strong>강 (HBM/CoWoS/패키징)</strong></td></tr><tr><td><strong>시계</strong></td><td>베라루빈 4Q26 (8~12개월)</td><td>HBM4 양산 (12~18개월)</td></tr><tr><td><strong>주요 리스크</strong></td><td>매출 비중 미확인 + 소형 변동성</td><td>HBM 직접 비중 + 고객 CAPEX 타이밍</td></tr><tr><td><strong>종합</strong></td><td>P0+ (검증 후 분명)</td><td><strong>P0 (deal-ready)</strong></td></tr></tbody></table></div>
+<p><strong>Claude 의견</strong>: 둘 다 narrative+현실 솔루션 통과. <strong>인텍플러스가 한 발 앞서있다</strong> (현실 솔루션이 더 강하고 confidence도 더 높음). 빛과전자는 30일 검증 거친 후 판단 권장.</p>
+<hr>
+<h2>4. 다음 발굴 라운드 — 8종 quick screen</h2>
+<p>위 2종 외 5/22 폭등 + 7영역 매핑 가능 종목 8개의 1차 narrative screen (Hermes intake 보내기 전 사전 평가):</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목</th><th>등락</th><th>영역</th><th>Narrative 1차</th><th>다음 step</th></tr></thead><tbody><tr><td>미래산업 (025560)</td><td>+29.89%</td><td>5?</td><td>반도체 검사? 시총 1,825억</td><td>인테이크</td></tr><tr><td>디아이씨 (092200)</td><td>+23.44%</td><td>?</td><td>미매핑</td><td>인테이크 (영역 미정)</td></tr><tr><td>대양금속 (009190)</td><td>+21.95%</td><td>1?</td><td>금속·GOES 가능성</td><td>인테이크</td></tr><tr><td>KEC (092220)</td><td>+16.47%</td><td>7?</td><td>전력반도체</td><td>인테이크</td></tr><tr><td>삼아알미늄 (006110)</td><td>+16.00%</td><td>5?</td><td>Al heat sink/PSU?</td><td>인테이크</td></tr><tr><td>비나텍 (126340)</td><td>+19.10%</td><td>5</td><td>슈퍼커패시터 → MLCC 인접</td><td>인테이크</td></tr><tr><td>대주전자재료 (078600)</td><td>+18.34%</td><td>5?</td><td>전자재료 → AI 서버?</td><td>인테이크</td></tr><tr><td>케이엠더블유 (032500)</td><td>+14.11%</td><td>4?</td><td>5G/광통신?</td><td>인테이크</td></tr></tbody></table></div>
+<p>다음 라운드에서 위 8개 Hermes 인테이크 일괄 실행 권장.</p>
+<hr>
+<h2>5. Hermes 협업 노트</h2>
+<ul>
+<li>회사 인테이크 두 건 (빛과전자·인텍플러스) Hermes Codex 5.5로 호출 → confidence 0.82·0.88 결과</li>
+<li>Hermes intake 출력이 형준님 인과추론 프레임과 잘 맞음 (bottleneck + capex_relevance + narrative_summary + risk_notes 구조)</li>
+<li><strong>개선 가능 부분</strong>: intake 결과에 형준님 5요소 평가가 명시적으로 안 들어감. 다음 prompt 강화 라운드에 포함 예정</li>
+</ul>
+<h2>6. 형준님 결정 요청</h2>
+<p>다음 라운드 (Round 2)에서:</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>옵션</th><th>작업</th><th>시간</th></tr></thead><tbody><tr><td>(A)</td><td>빛과전자 6월 IR/공시 watch + DART 분기보고서 확인</td><td>30분</td></tr><tr><td>(B)</td><td>인텍플러스 deal-ready 판단으로 모의투자 비중 시안 작성 (예: Watch → Alpha 3-5%)</td><td>30분</td></tr><tr><td>(C)</td><td>위 8종 quick screen 종목 Hermes 일괄 인테이크</td><td>1시간</td></tr><tr><td>(D)</td><td>Hermes Market+Cross-Ontology 품질 개선안 prompt 초안 (review 응답 받은 후)</td><td>1시간</td></tr><tr><td>(E)</td><td>5/27 오전 시세 받으면 Round 2 momentum delta</td><td>5/27 오전</td></tr></tbody></table></div>
+<p>— Claude (2026-05-26 17:50 KST)</p></article></main>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
+<script>
+(() => {
+  const root = document.querySelector('[data-kimi-company-search]');
+  if (!root) return;
+  const base = '/research-desk';
+  const input = root.querySelector('[data-kimi-input]');
+  const result = root.querySelector('[data-kimi-results]');
+  const count = root.querySelector('[data-kimi-count]');
+  const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 삼성전자, 한미반도체, 네이버, NVDA, 팔란티어, HD현대일렉</small></div>';
+  let rows = [];
+  const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9가-힣]+/g, ' ').trim();
+  const compact = (s) => norm(s).replace(/\s+/g, '');
+  const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '데이터 확인 중' : `${Number(v) >= 0 ? '+' : ''}${Number(v).toFixed(1)}%`;
+  const requestCreate = (raw, cmd) => {
+    const msg = `회사 생성 요청: ${raw}
+${cmd}`;
+    try { navigator.clipboard && navigator.clipboard.writeText(cmd); } catch(e) {}
+    localStorage.setItem('researchDeskCompanyCreateRequest', JSON.stringify({query: raw, command: cmd, ts: new Date().toISOString()}));
+    const status = root.querySelector('[data-kimi-create-status]');
+    if (status) status.textContent = '생성 요청 명령을 복사했어. Telegram/Hermes에 붙여넣으면 fast intake가 실행돼.';
+  };
+  const render = (items) => {
+    if (!items.length) {
+      const raw = input.value.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      const cmd = `python3 11-scripts/request_company_report.py "${raw.replace(/"/g, '\"')}" --provider fast --publish`;
+      const action = `https://158.247.217.223.sslip.io/api/research-desk/company-create?query=${encodeURIComponent(raw)}&provider=fast`;
+      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 Codex 5.5 기반 intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><div class="kimi-create-actions"><a class="kimi-create-btn" href="${action}" data-kimi-create>생성 시작</a><button type="button" class="kimi-create-btn secondary" data-copy-cmd>명령 복사</button></div><span class="kimi-create-status" data-kimi-create-status>누르면 진행 상태 페이지로 이동한다.</span></div>`;
+      const copyBtn = result.querySelector('[data-copy-cmd]');
+      if (copyBtn) copyBtn.addEventListener('click', () => requestCreate(raw, cmd));
+      return;
+    }
+    result.innerHTML = '<div class="kimi-results-title">검색 결과 / 관찰 후보</div>' + items.slice(0, 8).map(x => `
+      <a class="kimi-result" href="${x.page}">
+        <span class="kimi-light">${String(x.traffic_light || '⚪').trim().split(/\s+/)[0]}</span>
+        <b>${x.company} <em>${x.symbol}</em></b>
+        <small>${x.category} · ${x.role || 'role 미정'}</small>
+        <i>현재가 ${x.price == null ? '데이터 확인 중' : x.price} · 20D ${fmtPct(x.return_20d_pct)} · 52W ${x.price_position_52w_pct == null ? '데이터 확인 중' : Number(x.price_position_52w_pct).toFixed(0)+'%'}</i>
+      </a>`).join('');
+  };
+  const search = () => {
+    const q = norm(input.value);
+    const qc = compact(input.value);
+    if (!q) { result.innerHTML = empty; return; }
+    const terms = q.split(/\s+/).filter(Boolean);
+    const scored = rows.map(x => {
+      const fields = [x.company, x.symbol, x.category, x.node, x.role, ...(x.aliases || [])].join(' ');
+      const hay = norm(fields);
+      const hayc = compact(fields);
+      const symbolc = compact(x.symbol);
+      let score = 0;
+      if (qc && (symbolc === qc || symbolc.replace(/us$|ks$|kq$/,'') === qc)) score += 100;
+      if (qc && hayc.includes(qc)) score += qc.length + 15;
+      for (const t of terms) { if (hay.includes(t)) score += t.length + (hay.startsWith(t) ? 5 : 0); }
+      return [score, x];
+    }).filter(([s]) => s > 0).sort((a,b) => b[0]-a[0]).map(([,x]) => x);
+    render(scored);
+  };
+  const indexUrl = `${base}/data/company-search-index.json?v=${Date.now()}`;
+  fetch(indexUrl, {cache:'no-store'}).then(r => { if (!r.ok) throw new Error('index '+r.status); return r.json(); }).then(data => {
+    rows = data.items || [];
+    if (count) count.textContent = `${rows.length} companies indexed · KR/US fast local search · intake: Codex 5.5`;
+    const featured = rows.filter(x => ['NVIDIA','Vertiv','HD Hyundai Electric','SK Hynix','Microsoft','TSMC'].includes(x.company));
+    render(featured.length ? featured : rows.slice(0,6));
+  }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Company index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });
+  input.addEventListener('input', search);
+  root.querySelectorAll('[data-kimi-query]').forEach(btn => btn.addEventListener('click', () => { input.value = btn.dataset.kimiQuery; search(); input.focus(); }));
+})();
+</script>
+</body>
+</html>
