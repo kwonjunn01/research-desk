@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quant Bot Upgrade Roadmap</title>
+  <title>Value Chain Discovery — 2026-05-26 (Round 1)</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -254,173 +254,194 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Quant Bot Upgrade Roadmap</h1>
-<blockquote>현재 Quant Bot의 다음 목표는 “수익 나는 규칙 하나”가 아니라, <strong>전략 회의·맥락 기반 시나리오·리스크 엔진·검증·운영 자동화가 분리된 시스템</strong>으로 업그레이드하는 것이다.</blockquote>
-<h2>Current Baseline</h2>
-<div class="desk-dashboard">
-<div class="desk-card hot"><strong>Canonical Strategy</strong><p>BTC Futures 무한매수법 v2: 20x, 1-2-4-8-16, 1% add-buy, avg+0.5% TP</p></div>
-<div class="desk-card warn"><strong>Paper Only</strong><p>OKX public data only. private/trading API 미사용. live_orders_allowed=false</p></div>
-<div class="desk-card violet"><strong>Next Goal</strong><p>Risk Engine 2.0 + Strategy Council + Context Scenario + Replay Validator</p></div>
-</div>
-<p>현재 기준:</p>
+  <main><article><hr>
+<p>title: Value Chain Discovery — 2026-05-26 (Claude × Hermes Round 1)</p>
+<p>tags: #market/value-chain #claude-hermes-collab #round-1</p>
+<p>authors: [Claude (Cowork), Hermes (Vultr)]</p>
+<p>date: 2026-05-26</p>
+<p>data-source: KRX OpenAPI 2026-05-22 (KOSPI 948종 + KOSDAQ 1822종)</p>
+<hr>
+<h1>Value Chain Discovery — 2026-05-26 (Round 1)</h1>
+<p><span class="badge">Home</span> / <span class="badge">Market Ontology MOC</span> / <span class="badge">Stock Traffic Light</span> / <span class="badge">Cross-Ontology Synthesizer</span></p>
+<blockquote>Claude (Cowork) × Hermes (Vultr) 첫 협업 산출물. 형준님 인과추론 프레임 + KRX 5/22 전수 스캔 + Hermes review.</blockquote>
+<blockquote>매수/매도 추천 아님. 시장 인지 시작 후보 발굴용 관찰 보드.</blockquote>
+<h2>20초 요약</h2>
 <ul>
-<li>Market: OKX public <code>BTC-USDT-SWAP</code></li>
-<li>Capital: <code>2035 USDT</code> paper</li>
-<li>Margin: strategy subaccount 내부 cross-margin model</li>
-<li>First notional: <code>capital × 20 × 0.5 / 31</code></li>
-<li>Stage: <code>1-2-4-8-16</code></li>
-<li>Add-buy: 1% 하락마다 다음 stage 1개만</li>
-<li>TP: avg entry <code>+0.5%</code> full close</li>
-<li>Safety: 실거래 off</li>
+<li><strong>오늘의 발견</strong>: 5/22 KOSDAQ에서 <strong>빛과전자 (069540)</strong> +29.86%, 거래량 40M주. 02_value_chain_map에서 비어있던 영역 4 (광통신/CPO 한국 직접 노출) 자리의 신규 후보.</li>
+<li><strong>숨은 패턴</strong>: KOSDAQ 30개 +15%+ 폭등 종목 중 <strong>워치리스트 매칭 0건</strong>. 5/22 폭등은 워치리스트 밖에서 더 강하게 일어남.</li>
+<li><strong>5요소 평가 도입</strong>: 다음 Market Brief부터 모든 종목 카드에 형준님 인과추론 프레임 5요소 평가 표 추가 (Claude ↔ Hermes 합의).</li>
+<li><strong>사각지대 7영역 모니터링 패널</strong> Market Brief 상단으로 승격.</li>
 </ul>
-<h2>Upgrade Pillars</h2>
-<h3>1. Risk Engine 2.0</h3>
-<p>목표: “언제 더 사면 안 되는가”를 더 정확하게 판단한다.</p>
-<p>구현할 것:</p>
+<hr>
+<h2>1. 형준님 인과추론 7영역 사각지대 status bar (Live Demo)</h2>
+<blockquote>이 위젯이 매일 Market Brief 상단에 와야 한다 — Claude/Hermes 합의.</blockquote>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>#</th><th>영역</th><th>5/22 신호</th><th>핵심 후보</th><th>상태</th></tr></thead><tbody><tr><td>1</td><td>GOES (방향성 전기강판)</td><td>약</td><td>포스코홀딩스 +0.90%</td><td>⚪</td></tr><tr><td>2</td><td>액침냉각</td><td>약</td><td>GST +2.61%</td><td>⚪</td></tr><tr><td>3</td><td>유리기판 TGV</td><td>보통</td><td>켐트로닉스 +5.43%, 쎄크 +5.13%</td><td>🟡</td></tr><tr><td>4</td><td>광통신/CPO 한국 직접</td><td><strong>🔥 강</strong></td><td><strong>빛과전자 +29.86% (NEW)</strong>, 오이솔루션 +6.41%</td><td>🟢</td></tr><tr><td>5</td><td>AI 서버 부품 2티어</td><td><strong>🔥 강</strong></td><td>삼화콘덴서 +29.94%, 비에이치 +17.06%, 삼화전기 +15.70%</td><td>🟢</td></tr><tr><td>6</td><td>SMR 인풋</td><td>약</td><td>우리기술 +0.60%, 한전기술 +2.81%</td><td>⚪</td></tr><tr><td>7</td><td>데이터센터 EPC</td><td>보통</td><td>두산에너빌리티 +2.95%, 두산퓨얼셀 +17.60% (?)</td><td>🟡</td></tr></tbody></table></div>
+<p><strong>해석</strong>: 5/22는 영역 4 (광통신)와 영역 5 (AI 서버 부품 2티어)에서 강한 시장 인지 신호. 영역 1·2·6은 아직 신호 없음 — &quot;신호 없음&quot;도 기록한다는 게 핵심.</p>
+<hr>
+<h2>2. 5/22 워치리스트 status — 인과추론 5요소 평가 (Live Demo)</h2>
+<blockquote>Claude × Hermes 합의 형식: Daily Brief는 compact table, 상세 페이지는 collapsible card.</blockquote>
+<h3>워치리스트 핵심 종목 5요소 평가</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목 (코드)</th><th>카테고리</th><th>5/22 등락</th><th>대체불가능성</th><th>6~12개월 트리거</th><th>시장 인지도</th><th>흑자 모멘텀</th><th>본업 우위</th><th>종합</th></tr></thead><tbody><tr><td><strong>삼화콘덴서</strong> (001820)</td><td>MLCC 2티어</td><td><strong>+29.94%</strong></td><td>강함 (한국 #2)</td><td>강함 (베라루빈 4Q26)</td><td>보통→<strong>강함</strong> (5/22 인지 시작)</td><td>강함 (OPM↑)</td><td>강함 (MLCC 본업)</td><td>🟢 보유 12%</td></tr><tr><td><strong>비에이치</strong> (090460)</td><td>FPCB</td><td><strong>+17.06%</strong></td><td>보통 (삼디·애플)</td><td>강함 (AI 서버 발열)</td><td>보통 (5/22 인지)</td><td>확인 필요</td><td>보통</td><td>🟡 검토 → Alpha 승격</td></tr><tr><td><strong>삼화전기</strong> (009470)</td><td>Al 콘덴서</td><td><strong>+15.70%</strong></td><td>강함 (서버 PSU)</td><td>강함 (서버 capex)</td><td>약함→<strong>보통</strong></td><td>확인 필요</td><td>강함 (콘덴서)</td><td>🟡 검토</td></tr><tr><td><strong>GST</strong> (083450)</td><td>액침냉각</td><td>+2.61%</td><td>강함 (한국 전문)</td><td>강함 (베라루빈 강제)</td><td><strong>약함</strong> (아직)</td><td>보통</td><td>보통</td><td>🟢 보유 10%, 추가 검토</td></tr><tr><td><strong>산일전기</strong> (062040)</td><td>변압기 2티어</td><td>+2.36%</td><td>강함 (ESS)</td><td>강함 (한국 ESS 2.1GW)</td><td>보통</td><td>강함</td><td>보통</td><td>🟢 보유 8%</td></tr><tr><td><strong>우리기술</strong> (032820)</td><td>SMR MMIS</td><td>+0.60%</td><td>강함 (국산화 유일)</td><td>약함 (매출 2027~)</td><td>약함</td><td>약함</td><td>약함</td><td>🟢 보유 7%, 시계 길음</td></tr><tr><td><strong>켐트로닉스</strong> (089890)</td><td>유리기판 TGV</td><td>+5.43%</td><td>보통</td><td>보통 (베라루빈 울트라 2027)</td><td>보통</td><td>보통</td><td>보통</td><td>🟢 보유 5%</td></tr></tbody></table></div>
+<p><strong>판독 가이드</strong>: <code>강함 / 보통 / 약함 / 확인 필요</code> 4단계. 칸이 비면 &quot;확인 필요&quot;로 표시 (추정으로 채우지 않음).</p>
+<hr>
+<h2>3. 신규 후보 — 워치리스트 외 5/22 폭등 종목</h2>
+<h3>KOSDAQ 핵심 신규 후보 3개</h3>
+<h4>🔥 후보 1 — 빛과전자 (069540)</h4>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>5/22 신호</th><th>5요소 평가</th><th>영역 매핑</th></tr></thead><tbody><tr><td>+29.86%, 종가 6,610원</td><td>대체불가능성: 확인 필요 (회사 IR 미확보)</td><td><strong>영역 4 (광통신/CPO 한국 직접 노출)</strong></td></tr><tr><td>거래량 <strong>40,253,771주</strong> (!)</td><td>6~12개월 트리거: 확인 필요</td><td>02_value_chain_map에서 비어있던 자리</td></tr><tr><td>시총 6,471억 (분산 적합)</td><td>시장 인지도: <strong>시작</strong> (5/22 거래량 폭증)</td><td>대한광통신 (+731% 이미 늦음)과 다른 회사</td></tr><tr><td></td><td>흑자 모멘텀: 확인 필요</td><td></td></tr><tr><td></td><td>본업 우위: 광/광통신 (Hyeongjun on-device 인접)</td><td></td></tr></tbody></table></div>
+<p><strong>진입 우선순위</strong>: P0 — 회사 인테이크 즉시 필요. Hermes에 <code>company_intake.py 빛과전자</code> 요청 예정.</p>
+<h4>🔥 후보 2 — 인텍플러스 (064290)</h4>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>5/22 신호</th><th>5요소 평가</th><th>영역 매핑</th></tr></thead><tbody><tr><td>+26.68%, 종가 35,850원</td><td>대체불가능성: 확인 필요</td><td>영역 5 인접 (반도체 검사)</td></tr><tr><td>거래량 1,659,908주</td><td>6~12개월 트리거: 강함? (HBM4 양산)</td><td>SOL AI반도체소부장 ETF 인접</td></tr><tr><td>시총 4,612억</td><td>시장 인지도: 시작</td><td></td></tr><tr><td></td><td>흑자 모멘텀: 확인 필요</td><td></td></tr><tr><td></td><td>본업 우위: 반도체 검사 (Hyeongjun 본업)</td><td></td></tr></tbody></table></div>
+<p><strong>진입 우선순위</strong>: P0 — 인테이크 필요. SOL ETF에 이미 들어있으면 별도 진입 불필요.</p>
+<h4>🔥 후보 3 — 두산퓨얼셀 (336260)</h4>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>5/22 신호</th><th>5요소 평가</th><th>영역 매핑</th></tr></thead><tbody><tr><td>+17.60%, 종가 98,200원</td><td>대체불가능성: 보통 (연료전지 한국 1위)</td><td>영역 7 (DC EPC) 인접</td></tr><tr><td>거래량: (확인 필요)</td><td>6~12개월 트리거: 확인 필요 (AI DC 분산발전?)</td><td>변압기 빅3와는 다른 발전 솔루션</td></tr><tr><td>시총 <strong>6.4조</strong> (큰 편)</td><td>시장 인지도: 보통</td><td></td></tr><tr><td></td><td>흑자 모멘텀: 확인 필요</td><td></td></tr><tr><td></td><td>본업 우위: 연료전지 (Hyeongjun 본업 약함)</td><td></td></tr></tbody></table></div>
+<p><strong>진입 우선순위</strong>: P1 — 시총 너무 큼, 4M원 분산에는 비효율. AI DC 매출 가시화 확인 후 재평가.</p>
+<h3>KOSPI 5/22 폭등 워치리스트 외 (참고)</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목</th><th>등락</th><th>시총</th><th>추정 카테고리</th></tr></thead><tbody><tr><td>미래산업 (025560)</td><td>+29.89%</td><td>1,825억</td><td>반도체 검사 (소형)</td></tr><tr><td>삼화전자 (011230)</td><td>+29.78%</td><td>514억</td><td>(확인 필요)</td></tr><tr><td>디아이씨 (092200)</td><td>+23.44%</td><td>3,543억</td><td>(확인 필요)</td></tr><tr><td>대양금속 (009190)</td><td>+21.95%</td><td>669억</td><td>금속 (GOES 가능성?)</td></tr><tr><td>KEC (092220)</td><td>+16.47%</td><td>2,726억</td><td>전력반도체</td></tr><tr><td>삼아알미늄 (006110)</td><td>+16.00%</td><td>1.46조</td><td>Al (heat sink?)</td></tr></tbody></table></div>
+<hr>
+<h2>4. 밸류체인 지도 업데이트 (Mermaid)</h2>
+<div class="viz-card"><div class="mermaid">graph TB
+    subgraph &quot;확정된 미래&quot;
+        F1[베라루빈 4Q26 출하]
+        F2[베라루빈 울트라 2027 HBM 16개]
+        F3[NERC 미국 24개 주 정전 경고]
+        F4[한국 데이터센터 49.4GW]
+        F5[HBM4 양산]
+    end
+
+    subgraph &quot;영역 4: 광통신/CPO 🟢&quot;
+        F1 --&gt; Lumentum[Lumentum]
+        F1 --&gt; Coherent[Coherent]
+        F2 --&gt; Cisco[Cisco]
+        Lumentum --&gt; KOREA4[&quot;🔥 빛과전자 069540 NEW&lt;br/&gt;+29.86% 5/22&quot;]
+        Cisco --&gt; KOREA4
+        Lumentum --&gt; OE[오이솔루션 138080]
+    end
+
+    subgraph &quot;영역 5: AI 서버 부품 2티어 🟢&quot;
+        F1 --&gt; MLCC[MLCC 수요 5배]
+        MLCC --&gt; SAMHWA[삼화콘덴서 001820&lt;br/&gt;+29.94% 보유 12%]
+        MLCC --&gt; SAMSUNG[삼성전기 009150]
+        F1 --&gt; FPCB[FPCB 서버 발열]
+        FPCB --&gt; BH[비에이치 090460&lt;br/&gt;+17.06% 검토]
+        F1 --&gt; PSU[서버 PSU]
+        PSU --&gt; SAMHWAE[삼화전기 009470&lt;br/&gt;+15.70% 검토]
+        F5 --&gt; HBM_INT[HBM 검사장비]
+        HBM_INT --&gt; INT[🔥 인텍플러스 064290 NEW&lt;br/&gt;+26.68% 5/22]
+    end
+
+    subgraph &quot;영역 3: 유리기판 TGV 🟡&quot;
+        F2 --&gt; TGV[TGV 강제 채택]
+        TGV --&gt; CHEM[켐트로닉스 089890&lt;br/&gt;+5.43% 보유 5%]
+        TGV --&gt; LAM[램테크놀러지 171010&lt;br/&gt;+3.32%]
+        TGV --&gt; PHIL[필옵틱스 161580]
+    end
+
+    subgraph &quot;영역 7: DC EPC 🟡&quot;
+        F3 --&gt; TRANS[변압기 빅3]
+        F4 --&gt; ESS[ESS 2.1GW]
+        ESS --&gt; SAN[산일전기 062040&lt;br/&gt;+2.36% 보유 8%]
+        F3 --&gt; POWER[AI DC 분산발전]
+        POWER --&gt; DOOSAN[🔥 두산퓨얼셀 336260 NEW?&lt;br/&gt;+17.60% 5/22]
+    end
+
+    subgraph &quot;영역 2: 액침냉각 ⚪ (대기)&quot;
+        F1 --&gt; COOL[발열 강제]
+        COOL --&gt; GST[GST 083450&lt;br/&gt;+2.61% 보유 10%]
+    end
+
+    subgraph &quot;영역 6: SMR MMIS ⚪ (대기)&quot;
+        F4 --&gt; SMR[SMR 2027]
+        SMR --&gt; URI[우리기술 032820&lt;br/&gt;+0.60% 보유 7%]
+    end
+
+    style KOREA4 fill:#ffe6e6,stroke:#f00,stroke-width:3px
+    style INT fill:#ffe6e6,stroke:#f00,stroke-width:3px
+    style DOOSAN fill:#fff5e6,stroke:#f80,stroke-width:2px
+    style SAMHWA fill:#e6ffe6,stroke:#0a0,stroke-width:2px
+    style BH fill:#fffae6,stroke:#aa0
+    style SAMHWAE fill:#fffae6,stroke:#aa0</div></div>
+<p><strong>범례</strong>:</p>
 <ul>
-<li>Mark Price 기반 liquidation/margin ratio 개선</li>
-<li>fee/funding/slippage 포함 equity tracking</li>
-<li>stage별 liquidation buffer 계산</li>
-<li>margin ladder: 50/60/70% warning/cancel/reduce candidate</li>
-<li>gap-down stress: <code>-3%</code>, <code>-5%</code>, <code>-8%</code>, <code>-12%</code></li>
-<li>pending buy cancellation latency simulation</li>
+<li>🔴 빨강 (3px): 신규 발굴 P0 (인테이크 필요)</li>
+<li>🟠 주황 (2px): 신규 발굴 P1 (검증 후 결정)</li>
+<li>🟢 초록 (2px): 보유 중 (비중 명시)</li>
+<li>🟡 노랑 (1px): Watch (검토 진행)</li>
 </ul>
-<p>성공 기준:</p>
+<hr>
+<h2>5. Day-over-Day Delta (vs 5/21)</h2>
+<blockquote>Hermes 합의: 매일 이 섹션 들어가야 한다.</blockquote>
+<p>이번 라운드는 5/22 단일일 분석이라 delta는 다음 라운드 (5/26 마감 데이터 들어오는 5/27 오전 8시 이후).</p>
+<p>다음 라운드부터 추적할 5요소:</p>
 <ul>
-<li>stage별 <code>liq_buffer_pct</code>, <code>free_equity</code>, <code>margin_proxy</code>, <code>max_add_allowed</code>가 ledger에 남는다.</li>
-<li>Risk Bot이 profitable candidate도 청산 리스크가 커지면 reject한다.</li>
+<li>🆕 새로 +15%+ 진입한 종목</li>
+<li>❌ 사라진 모멘텀 종목 (전일 폭등 후 -5%+ 페이드)</li>
+<li>📈 강화 (3일 연속 +5%+)</li>
+<li>📉 약화 (5/22 폭등 후 모멘텀 소실)</li>
+<li>💰 가격 반영 vs 펀더멘털 갭</li>
 </ul>
-<h3>2. Context-Aware Scenario Engine</h3>
-<p>목표: 차트만 보지 않고 시장 맥락을 같이 본다.</p>
-<p>입력:</p>
+<hr>
+<h2>6. Claude × Hermes 협업 합의 사항</h2>
+<h3>Q1: P1 (1)(2)(3) 이번 주 시작 — ✅ 양측 동의</h3>
+<ol>
+<li>5요소 평가 표 (이 페이지의 §2가 live demo)</li>
+<li>사각지대 7영역 status bar (이 페이지의 §1이 live demo)</li>
+<li>vs Yesterday delta 섹션</li>
+</ol>
+<h3>Q2: 5요소 렌더링 형식 — ✅ Hybrid</h3>
 <ul>
-<li>Macro: FOMC, CPI, rates, DXY, liquidity</li>
-<li>Crypto structure: funding, basis, OI, ETF flow, liquidation clusters</li>
-<li>Social/geopolitical: war, regulation, risk-off panic</li>
-<li>Tech/security: chain halt, exploit, bridge/custody issue</li>
-<li>Exchange health: OKX stale data, mark-last divergence, timeout</li>
-<li>Narrative: BTC dominance, AI/tech risk-on/off</li>
+<li>Daily Brief: compact table (4단계 라벨, 1줄 근거)</li>
+<li>상세 페이지 / Stock Traffic Light: collapsible card</li>
 </ul>
-<p>출력 예시:</p>
-<pre><code>{
-  &quot;scenario_mode&quot;: &quot;EVENT_PAUSE&quot;,
-  &quot;severity&quot;: &quot;medium_high&quot;,
-  &quot;context&quot;: [&quot;FOMC within 24h&quot;, &quot;funding abnormal&quot;],
-  &quot;allowed_actions&quot;: [&quot;keep_tp&quot;, &quot;no_new_stage&quot;],
-  &quot;blocked_actions&quot;: [&quot;new_stage&quot;, &quot;increase_leverage&quot;]
-}</code></pre>
-<h3>3. Strategy Council / Regime Switch</h3>
-<p>전략은 장마다 다르게 켜고 끈다. 이 결정은 단일 indicator가 아니라 agent team 회의 결과를 따른다.</p>
-<p>모드:</p>
+<h3>Q3: 수정할 prompt 파일 3+1층 구조</h3>
+<ol>
+<li><strong>Primary</strong>: <code>09-prompts/stock-traffic-light-research-team.md</code> — 모든 회사 카드에 5요소 강제</li>
+<li><strong>Daily Brief</strong>: <code>09-prompts/market-narrative-agent.md</code> — 상단 status bar + delta + 5요소</li>
+<li><strong>Quality Gate</strong>: <code>09-prompts/high-reasoning-and-publisher-review-policy.md</code> — publish 전 5요소 검증</li>
+<li><strong>Auxiliary</strong>: <code>09-prompts/company-intake-agent.md</code> — 신규 회사 intake에 5요소 초기값</li>
+</ol>
+<p>→ Claude가 강화 prompt 초안 작성, Hermes 반영·검증.</p>
+<h3>Q4: 6개 진단 — ✅ Hermes 큰 틀 동의, 1개 보정</h3>
+<p>Hermes 보정: &quot;미국주 제거가 아니라 <strong>미국 원천 신호 → 한국 supply chain proxy 변환층</strong> 추가&quot;. → 동의. 다음 Market Brief부터 &quot;Korean supply-chain mapping&quot; 섹션 추가.</p>
+<h3>Dialogue habit 제어</h3>
 <ul>
-<li><code>ACTIVE_INFINITE_BUY_V2</code></li>
-<li><code>HOLD_EXISTING_NO_NEW_STAGE</code></li>
-<li><code>ADD_BUY_OFF</code></li>
-<li><code>EVENT_PAUSE</code></li>
-<li><code>DATA_NOT_READY</code></li>
+<li><strong>Canonical</strong>: <code>12-dialogue/PROTOCOL.md</code></li>
+<li><strong>SKILL.md</strong>: mandatory reminder 추가 (현재 reference만 있어 누락 위험)</li>
+<li><strong>bot-router.md</strong>: task-start routing hook으로 자동 inbox check</li>
 </ul>
-<p>필요 구현:</p>
+<hr>
+<h2>7. 다음 단계</h2>
+<h3>이번 주 (P1)</h3>
 <ul>
-<li><code>scripts/run_strategy_council.py</code></li>
-<li>latest state + features + scenario context 입력</li>
-<li>council decision JSONL 출력</li>
-<li>rejected alternatives 기록</li>
+<li>[ ] Claude: strengthened prompt 3개 초안 작성 (<code>stock-traffic-light</code> / <code>market-narrative-agent</code> / <code>high-reasoning-policy</code>)</li>
+<li>[ ] Hermes: 초안 검토 후 반영</li>
+<li>[ ] Hermes: 빛과전자 / 인텍플러스 회사 인테이크 실행</li>
+<li>[ ] Claude: 5/26 시세 데이터 들어오면 momentum delta 라운드 2</li>
 </ul>
-<h3>4. Backtest / Replay / Validator Stack</h3>
-<p>목표: 전략 변경은 감이 아니라 replay와 독립 검증을 통과해야 한다.</p>
-<p>구현할 것:</p>
+<h3>다음 주 (P2)</h3>
 <ul>
-<li>paper ledger replay engine</li>
-<li>historical OKX candles/mark/funding storage</li>
-<li>stage fill simulator</li>
-<li>fee/funding/slippage model</li>
-<li>no-lookahead validator</li>
-<li>OOS/walk-forward runner</li>
-<li>rejected candidate ledger</li>
+<li>[ ] Korean small-cap discovery 모듈 (KRX ±15%+ 자동 매핑)</li>
+<li>[ ] AI Radar &quot;확인할 것&quot; per-paper customize</li>
+<li>[ ] 시각화 보강 (Stock Traffic Light에 5요소 카드 추가)</li>
 </ul>
-<p>승격 경로:</p>
-<pre><code>candidate → shadow → paper_canary → paper_primary → live_candidate → live_approved</code></pre>
-<p><code>live_approved</code>는 사용자 승인 전까지 불가능하다.</p>
-<h3>5. Rust Time-Series Forecast Core</h3>
-<p>Python은 orchestration, Rust는 무거운 시계열 계산을 담당한다.</p>
-<p>Rust 역할:</p>
+<h3>다음 2주 (P3)</h3>
 <ul>
-<li>rolling indicators</li>
-<li>volatility expansion probability</li>
-<li>lower-band breakdown risk</li>
-<li>tail move score</li>
-<li>funding/basis stress score</li>
-<li>walk-forward parameter sweep</li>
+<li>[ ] 모의투자 watchlist ↔ Stock Traffic Light 양방향 동기화</li>
+<li>[ ] 한국 종목 우선순위 default</li>
 </ul>
-<p>금지:</p>
+<hr>
+<h2>데이터 출처</h2>
 <ul>
-<li>forecast 단독 live order</li>
-<li>forecast 단독 leverage cap 완화</li>
-<li>검증 없는 profile 변경</li>
+<li>KRX OpenAPI 2026-05-22 (KOSPI <code>stk_bydd_trd</code>, KOSDAQ <code>ksq_bydd_trd</code>)</li>
+<li>모의투자 <code>02_value_chain_map.md</code> v2026-05-22</li>
+<li>모의투자 <code>03_watchlist.csv</code> v2026-05-22</li>
+<li>Hermes review-response v1 (<code>12-dialogue/from-hermes/2026-05-26-review-response.md</code>)</li>
 </ul>
-<h3>6. Operations / Reporting / Alert Upgrade</h3>
-<p>목표: 사용자가 봇 상태를 즉시 이해할 수 있게 한다.</p>
-<p>구현할 것:</p>
+<h2>Co-authors</h2>
 <ul>
-<li>live paper dashboard JSON export</li>
-<li>Research Desk current status 자동 업데이트</li>
-<li>stage ladder view</li>
-<li>Strategy Council decision board</li>
-<li>risk stress view</li>
-<li>Quant Alert는 mode/fill/risk event 중심</li>
-<li>heartbeat는 ledger/report에만 저장</li>
+<li><strong>Claude (Cowork)</strong> — KRX 전수 스캔, 신규 후보 발굴, 5요소 평가 초안, 시각화</li>
+<li><strong>Hermes (Vultr)</strong> — review 검증, format 결정, prompt 수정 경로 식별, 보정 의견</li>
 </ul>
-<h2>Priority Plan</h2>
-<h3>Phase U1 — Observability First</h3>
-<ul>
-<li>ledger schema 정리</li>
-<li>current stage/TP/next stage/liquidation buffer status export</li>
-<li>Research Desk Quant status 자동 생성</li>
-<li>Strategy Council decision schema 작성</li>
-</ul>
-<h3>Phase U2 — Risk Engine 2.0</h3>
-<ul>
-<li>funding/fee/slippage 누적</li>
-<li>liquidation/margin approximation 개선</li>
-<li>gap-down stress runner</li>
-<li>margin ladder alert/reject 강화</li>
-</ul>
-<h3>Phase U3 — Scenario + Council</h3>
-<ul>
-<li>context scenario input schema</li>
-<li>manual context notes ingestion</li>
-<li>council decision CLI</li>
-<li>mode switch ledger</li>
-<li>Research Desk council board</li>
-</ul>
-<h3>Phase U4 — Replay / Validator</h3>
-<ul>
-<li>paper ledger replay</li>
-<li>candidate comparison report</li>
-<li>no-lookahead/OOS checks</li>
-<li>rejected candidate ledger</li>
-</ul>
-<h3>Phase U5 — Rust Forecast Core</h3>
-<ul>
-<li>Rust crate scaffold</li>
-<li>feature parity test</li>
-<li>CLI forecast output</li>
-<li>Python integration as advisory guard</li>
-</ul>
-<h2>Next Executable Step</h2>
-<p>가장 먼저 만들 것:</p>
-<pre><code>scripts/generate_quant_status.py</code></pre>
-<p>역할:</p>
-<pre><code>latest state/events를 읽음
-→ current stage / TP price / next stage price / liq buffer / mode 계산
-→ JSON + Markdown 생성
-→ Research Desk Quant Hub에 자동 반영</code></pre>
-<p>그 다음:</p>
-<pre><code>scripts/run_risk_stress.py</code></pre>
-<p>역할:</p>
-<pre><code>현재 포지션 기준 -3/-5/-8/-12% stress
-→ stage별 margin/liquidation buffer 계산
-→ Risk Bot threshold 검증</code></pre></article></main>
+<p>— Round 1 산출물, 2026-05-26 16:00 KST</p></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
