@@ -270,7 +270,7 @@
 <ul>
 <li><strong>오늘 한 문장:</strong> <span class="badge">Agentic AI</span> 21, <span class="badge">AI Research</span> 19, <span class="badge">Agent Evaluation</span> 11 쪽으로 attention이 몰렸다.</li>
 <li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 4, Reasoning / Post-training 4, Multimodal / Generation 2가 핵심이고, 깊게 읽을 후보는 SkillOpt: Executive Strategy for Self-Evolving Agent… / SciAtlas: A Large-Scale Knowledge Graph for Automated… / PhotoFlow: Agentic 3D Virtual Photography Missions.</li>
-<li><strong>먼저 읽을 논문:</strong> <a href="https://huggingface.co/papers/2605.23904">SkillOpt: Executive Strategy for Self-Evolving Agent Skills</a> — 모델을 실제로 싸고 빠르게 돌리는 inference 병목 쪽이다.</li>
+<li><strong>먼저 읽을 논문:</strong> <a href="https://huggingface.co/papers/2605.23904">SkillOpt: Executive Strategy for Self-Evolving Agent Skills</a> — agent skill을 외부 상태처럼 관리·개선하는 접근이라, 개인 agent가 반복 업무를 누적 학습하는 방향과 직접 닿는다.</li>
 <li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.23904">SkillOpt: Executive Strategy for Self-Evolving Agent Skills</a> — Hugging Face Daily Papers, score 26, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 <li><strong>읽는 순서:</strong> 오늘 읽을 2~3개 → 훑을 것 → 스킵 후보 → topic heat/Lens Radar</li>
 </ul>
@@ -297,10 +297,10 @@
 <h4>깊게 읽기 1. <a href="https://huggingface.co/papers/2605.23904">SkillOpt: Executive Strategy for Self-Evolving Agent Skills</a></h4>
 <ul>
 <li><strong>위치:</strong> HF #1 · 👍 153 · Agent / Tool-use · digest score 23</li>
-<li><strong>쉽게 말하면:</strong> 큰 모델을 실제 서비스에서 더 싸고 빠르게 돌리기 위한 실행 최적화 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> agent가 일을 매번 처음부터 하지 않고 재사용 가능한 skill을 만들고, 피드백으로 그 skill을 계속 개선하게 하려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, none of which behaves like a deep-learning optimizer for the skill, and none of which reliably improves over its starting point under feedback. We argue the skill should instead be trained as the external stat…</li>
 <li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
-<li><strong>내 판단:</strong> 모델을 실제로 싸고 빠르게 돌리는 inference 병목 쪽이다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
+<li><strong>내 판단:</strong> agent skill을 외부 상태처럼 관리·개선하는 접근이라, 개인 agent가 반복 업무를 누적 학습하는 방향과 직접 닿는다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
 <li><strong>확인할 것:</strong> 환경/benchmark가 장난감인지, 실제 browser·OS·tool 실패를 포함하는지.</li>
 </ul>
 <h4>깊게 읽기 2. <a href="https://huggingface.co/papers/2605.22878">SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research</a></h4>
@@ -315,10 +315,10 @@
 <h4>깊게 읽기 3. <a href="https://huggingface.co/papers/2605.23771">PhotoFlow: Agentic 3D Virtual Photography Missions</a></h4>
 <ul>
 <li><strong>위치:</strong> HF #9 · 👍 20 · Agent / Tool-use · digest score 18</li>
-<li><strong>쉽게 말하면:</strong> 검색 결과 중 진짜 쓸 만한 문서를 더 싸고 빠르게 골라내는 방법을 다루는 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> 3D 장면 안에서 agent가 촬영 의도에 맞는 카메라 위치·구도·스타일을 스스로 찾고 평가하게 하는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Virtual photography asks an agent to enter a prepared 3D scene with no preselected camera pose or reference image, infer a suitable shot from scene information and a language intent, choose executable camera parameters , and render the final photograph. Recent progress in vision-language models makes this kind of spat…</li>
 <li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트</li>
-<li><strong>내 판단:</strong> RAG/search 품질을 좌우하는 reranking 비용·효율 문제와 연결된다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
+<li><strong>내 판단:</strong> 3D 공간 이해와 미적 판단을 닫힌 루프 agent로 평가하는 신호다. 범용 개인 agent보다는 embodied/creative agent 평가축으로 본다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
 <li><strong>확인할 것:</strong> 환경/benchmark가 장난감인지, 실제 browser·OS·tool 실패를 포함하는지.</li>
 </ul>
 <h3>훑고 넘어갈 것</h3>
