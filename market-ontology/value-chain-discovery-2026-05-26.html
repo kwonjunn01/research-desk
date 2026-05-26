@@ -255,11 +255,11 @@
 </details>
   </aside>
   <main><article><hr>
-<p>title: Value Chain Discovery — 2026-05-26 (Claude × Hermes Round 1)</p>
-<p>tags: #market/value-chain #claude-hermes-collab #round-1</p>
+<p>title: Value Chain Discovery — 2026-05-26 (Claude × Hermes Round 1, v3 + US)</p>
+<p>tags: #market/value-chain #claude-hermes-collab #round-1 #cross-country</p>
 <p>authors: [Claude (Cowork), Hermes (Vultr)]</p>
 <p>date: 2026-05-26</p>
-<p>data-source: KRX OpenAPI 2026-05-22 (KOSPI 948종 + KOSDAQ 1822종)</p>
+<p>data-source: KRX OpenAPI 2026-05-22 + Finnhub US 5/22</p>
 <hr>
 <h1>Value Chain Discovery — 2026-05-26 (Round 1)</h1>
 <p><span class="badge">Home</span> / <span class="badge">Market Ontology MOC</span> / <span class="badge">Stock Traffic Light</span> / <span class="badge">Cross-Ontology Synthesizer</span></p>
@@ -581,7 +581,140 @@
 <li>Claude: 5/26 데이터 들어오면 momentum delta Round 2</li>
 </ul>
 <p><strong>Co-authors</strong>: Claude (Cowork) — KRX 스캔·5요소·시각화 / Hermes (Vultr) — review·format·prompt 경로</p>
-<p>— Round 1 v2 (visualization 개선), 2026-05-26 16:25 KST</p></article></main>
+<hr>
+<h2>11. 🇺🇸 미국 주식 — 5/22 AI 인프라 밸류체인</h2>
+<blockquote>Finnhub API로 32개 미국 AI 인프라 종목 5/22 마감 데이터 수집. Korean side와 cross-mapping.</blockquote>
+<h3>US 5/22 등락률 시각화 (Top 20)</h3>
+<p>&lt;svg viewBox=&quot;0 0 800 540&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;width:100%;max-width:900px;height:auto;background:#fafafa;border-radius:8px;font-family:-apple-system,sans-serif&quot;&gt;</p>
+<p>&lt;text x=&quot;20&quot; y=&quot;24&quot; font-size=&quot;14&quot; font-weight=&quot;700&quot;&gt;US 5/22 AI 인프라 등락률&lt;/text&gt;</p>
+<p>&lt;text x=&quot;20&quot; y=&quot;42&quot; font-size=&quot;11&quot; fill=&quot;#666&quot;&gt;막대 길이 = 등락률, 색상 = 영역 매핑&lt;/text&gt;</p>
+<p>&lt;!-- Center line at 0% --&gt;</p>
+<p>&lt;line x1=&quot;320&quot; y1=&quot;60&quot; x2=&quot;320&quot; y2=&quot;510&quot; stroke=&quot;#888&quot; stroke-width=&quot;1.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;320&quot; y=&quot;528&quot; font-size=&quot;10&quot; fill=&quot;#666&quot; text-anchor=&quot;middle&quot;&gt;0%&lt;/text&gt;</p>
+<p>&lt;line x1=&quot;200&quot; y1=&quot;60&quot; x2=&quot;200&quot; y2=&quot;510&quot; stroke=&quot;#eee&quot; stroke-dasharray=&quot;2&quot;/&gt;</p>
+<p>&lt;line x1=&quot;440&quot; y1=&quot;60&quot; x2=&quot;440&quot; y2=&quot;510&quot; stroke=&quot;#eee&quot; stroke-dasharray=&quot;2&quot;/&gt;</p>
+<p>&lt;line x1=&quot;560&quot; y1=&quot;60&quot; x2=&quot;560&quot; y2=&quot;510&quot; stroke=&quot;#eee&quot; stroke-dasharray=&quot;2&quot;/&gt;</p>
+<p>&lt;line x1=&quot;680&quot; y1=&quot;60&quot; x2=&quot;680&quot; y2=&quot;510&quot; stroke=&quot;#eee&quot; stroke-dasharray=&quot;2&quot;/&gt;</p>
+<p>&lt;text x=&quot;200&quot; y=&quot;528&quot; font-size=&quot;10&quot; fill=&quot;#888&quot; text-anchor=&quot;middle&quot;&gt;-5%&lt;/text&gt;</p>
+<p>&lt;text x=&quot;440&quot; y=&quot;528&quot; font-size=&quot;10&quot; fill=&quot;#888&quot; text-anchor=&quot;middle&quot;&gt;+5%&lt;/text&gt;</p>
+<p>&lt;text x=&quot;560&quot; y=&quot;528&quot; font-size=&quot;10&quot; fill=&quot;#888&quot; text-anchor=&quot;middle&quot;&gt;+10%&lt;/text&gt;</p>
+<p>&lt;text x=&quot;680&quot; y=&quot;528&quot; font-size=&quot;10&quot; fill=&quot;#888&quot; text-anchor=&quot;middle&quot;&gt;+15%&lt;/text&gt;</p>
+<p>&lt;!-- 1 unit = 24px ; +1% = 24px width (scale: 24px = 1%) --&gt;</p>
+<p>&lt;!-- DELL +16.77% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;76&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;DELL (서버 OEM)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;65&quot; width=&quot;402&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.85&quot;/&gt;</p>
+<p>&lt;text x=&quot;730&quot; y=&quot;76&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+16.77% ⭐&lt;/text&gt;</p>
+<p>&lt;!-- QCOM +11.60% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;100&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;QCOM (엣지 AI)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;89&quot; width=&quot;278&quot; height=&quot;16&quot; fill=&quot;#a065d4&quot; opacity=&quot;0.85&quot;/&gt;</p>
+<p>&lt;text x=&quot;608&quot; y=&quot;100&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+11.60%&lt;/text&gt;</p>
+<p>&lt;!-- NNE +6.58% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;124&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;NNE (Nano SMR)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;113&quot; width=&quot;158&quot; height=&quot;16&quot; fill=&quot;#f08c00&quot; opacity=&quot;0.85&quot;/&gt;</p>
+<p>&lt;text x=&quot;488&quot; y=&quot;124&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+6.58%&lt;/text&gt;</p>
+<p>&lt;!-- SMCI +6.34% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;148&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;SMCI (서버 OEM)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;137&quot; width=&quot;152&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.8&quot;/&gt;</p>
+<p>&lt;text x=&quot;482&quot; y=&quot;148&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+6.34%&lt;/text&gt;</p>
+<p>&lt;!-- CLF +4.95% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;172&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;CLF (GOES 단독) ⭐&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;161&quot; width=&quot;119&quot; height=&quot;16&quot; fill=&quot;#e55039&quot; opacity=&quot;0.85&quot;/&gt;</p>
+<p>&lt;text x=&quot;449&quot; y=&quot;172&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+4.95% 영역1&lt;/text&gt;</p>
+<p>&lt;!-- AMD +3.99% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;196&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;AMD&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;185&quot; width=&quot;96&quot; height=&quot;16&quot; fill=&quot;#0d6efd&quot; opacity=&quot;0.7&quot;/&gt;</p>
+<p>&lt;text x=&quot;426&quot; y=&quot;196&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+3.99%&lt;/text&gt;</p>
+<p>&lt;!-- ANET +3.66% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;220&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;ANET (광/AI 라우팅)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;209&quot; width=&quot;88&quot; height=&quot;16&quot; fill=&quot;#28a745&quot; opacity=&quot;0.7&quot;/&gt;</p>
+<p>&lt;text x=&quot;418&quot; y=&quot;220&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+3.66% 영역4&lt;/text&gt;</p>
+<p>&lt;!-- MRVL +2.96% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;244&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;MRVL (ASIC)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;233&quot; width=&quot;71&quot; height=&quot;16&quot; fill=&quot;#0d6efd&quot; opacity=&quot;0.6&quot;/&gt;</p>
+<p>&lt;text x=&quot;401&quot; y=&quot;244&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+2.96%&lt;/text&gt;</p>
+<p>&lt;!-- CEG +2.88% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;268&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;CEG (원전)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;257&quot; width=&quot;69&quot; height=&quot;16&quot; fill=&quot;#f08c00&quot; opacity=&quot;0.7&quot;/&gt;</p>
+<p>&lt;text x=&quot;399&quot; y=&quot;268&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+2.88% 영역6&lt;/text&gt;</p>
+<p>&lt;!-- AAOI +2.65% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;292&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;AAOI (광 small)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;281&quot; width=&quot;64&quot; height=&quot;16&quot; fill=&quot;#28a745&quot; opacity=&quot;0.55&quot;/&gt;</p>
+<p>&lt;text x=&quot;394&quot; y=&quot;292&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+2.65% 영역4&lt;/text&gt;</p>
+<p>&lt;!-- ETN +2.58% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;316&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;ETN (전력관리)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;305&quot; width=&quot;62&quot; height=&quot;16&quot; fill=&quot;#fa8072&quot; opacity=&quot;0.6&quot;/&gt;</p>
+<p>&lt;text x=&quot;392&quot; y=&quot;316&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+2.58% 영역7&lt;/text&gt;</p>
+<p>&lt;!-- CSCO +1.87% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;340&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;CSCO&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;329&quot; width=&quot;45&quot; height=&quot;16&quot; fill=&quot;#28a745&quot; opacity=&quot;0.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;375&quot; y=&quot;340&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+1.87%&lt;/text&gt;</p>
+<p>&lt;!-- VRT +1.26% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;364&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;VRT (DC 전력)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;353&quot; width=&quot;30&quot; height=&quot;16&quot; fill=&quot;#fa8072&quot; opacity=&quot;0.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;360&quot; y=&quot;364&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+1.26% 영역7&lt;/text&gt;</p>
+<p>&lt;!-- OKLO +1.21% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;388&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;OKLO (SMR)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;377&quot; width=&quot;29&quot; height=&quot;16&quot; fill=&quot;#f08c00&quot; opacity=&quot;0.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;359&quot; y=&quot;388&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+1.21%&lt;/text&gt;</p>
+<p>&lt;!-- MSFT -0.12% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;412&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;MSFT&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;317&quot; y=&quot;401&quot; width=&quot;3&quot; height=&quot;16&quot; fill=&quot;#888&quot; opacity=&quot;0.4&quot;/&gt;</p>
+<p>&lt;text x=&quot;280&quot; y=&quot;412&quot; font-size=&quot;11&quot; fill=&quot;#888&quot;&gt;-0.12%&lt;/text&gt;</p>
+<p>&lt;!-- GOOGL -1.21% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;436&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;GOOGL&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;291&quot; y=&quot;425&quot; width=&quot;29&quot; height=&quot;16&quot; fill=&quot;#888&quot; opacity=&quot;0.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;281&quot; y=&quot;436&quot; font-size=&quot;11&quot; fill=&quot;#888&quot;&gt;-1.21%&lt;/text&gt;</p>
+<p>&lt;!-- MU -1.46% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;460&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;MU (HBM)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;285&quot; y=&quot;449&quot; width=&quot;35&quot; height=&quot;16&quot; fill=&quot;#e55039&quot; opacity=&quot;0.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;275&quot; y=&quot;460&quot; font-size=&quot;11&quot; fill=&quot;#888&quot;&gt;-1.46% 영역5&lt;/text&gt;</p>
+<p>&lt;!-- LITE -1.82% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;484&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;LITE (Lumentum)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;277&quot; y=&quot;473&quot; width=&quot;43&quot; height=&quot;16&quot; fill=&quot;#28a745&quot; opacity=&quot;0.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;267&quot; y=&quot;484&quot; font-size=&quot;11&quot; fill=&quot;#888&quot;&gt;-1.82% 영역4&lt;/text&gt;</p>
+<p>&lt;!-- NVDA -1.90% --&gt;</p>
+<p>&lt;text x=&quot;310&quot; y=&quot;508&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot; text-anchor=&quot;end&quot; fill=&quot;#066&quot;&gt;NVDA ⭐&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;275&quot; y=&quot;497&quot; width=&quot;45&quot; height=&quot;16&quot; fill=&quot;#0d6efd&quot; opacity=&quot;0.6&quot;/&gt;</p>
+<p>&lt;text x=&quot;265&quot; y=&quot;508&quot; font-size=&quot;11&quot; fill=&quot;#888&quot;&gt;-1.90%&lt;/text&gt;</p>
+<p>&lt;!-- Legend --&gt;</p>
+<p>&lt;g transform=&quot;translate(20,560)&quot;&gt;</p>
+<p>&lt;rect x=&quot;0&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#22aa66&quot;/&gt;&lt;text x=&quot;18&quot; y=&quot;10&quot; font-size=&quot;10&quot;&gt;서버 OEM&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;100&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#0d6efd&quot;/&gt;&lt;text x=&quot;118&quot; y=&quot;10&quot; font-size=&quot;10&quot;&gt;AI 인프라&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;200&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#28a745&quot;/&gt;&lt;text x=&quot;218&quot; y=&quot;10&quot; font-size=&quot;10&quot;&gt;영역4 광통신&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;320&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#e55039&quot;/&gt;&lt;text x=&quot;338&quot; y=&quot;10&quot; font-size=&quot;10&quot;&gt;영역1·5&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;420&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#f08c00&quot;/&gt;&lt;text x=&quot;438&quot; y=&quot;10&quot; font-size=&quot;10&quot;&gt;영역6 SMR&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;510&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#fa8072&quot;/&gt;&lt;text x=&quot;528&quot; y=&quot;10&quot; font-size=&quot;10&quot;&gt;영역7 전력&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;610&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#a065d4&quot;/&gt;&lt;text x=&quot;628&quot; y=&quot;10&quot; font-size=&quot;10&quot;&gt;엣지 AI&lt;/text&gt;</p>
+<p>&lt;/g&gt;</p>
+<p>&lt;/svg&gt;</p>
+<h3>5/22 Cross-Country 비교 (영역별)</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>영역</th><th>미국 (5/22)</th><th>한국 (5/22)</th><th>발견</th></tr></thead><tbody><tr><td>영역 1 GOES</td><td><strong>CLF +4.95%</strong> (1조 시총)</td><td>포스코홀딩스 +0.90% (시총 35조)</td><td>🔥 <strong>divergence</strong> — US 가격은 시장 인지, 한국 아직 미반영</td></tr><tr><td>영역 2 액침냉각</td><td>직접 노출 없음 (3M 단종)</td><td>GST +2.61%</td><td>KR 단독 영역</td></tr><tr><td>영역 3 유리기판 TGV</td><td>직접 없음 (아시아 OSAT)</td><td>켐트로닉스 +5.43%</td><td>KR 단독 영역</td></tr><tr><td>영역 4 광통신/CPO</td><td>ANET +3.66%, CSCO +1.87%, AAOI +2.65% — 빅4 평균 약</td><td><strong>빛과전자 +29.86%</strong> (신규)</td><td>🔥 <strong>divergence</strong> — 한국에서 강한 신호, 미국 빅4 약함</td></tr><tr><td>영역 5 AI 서버 부품</td><td><strong>DELL +16.77%, SMCI +6.34%</strong> (서버 OEM) / MU -1.46% (HBM)</td><td>삼화콘덴서 +29.94%, 비에이치 +17.06%</td><td>🔥 <strong>alignment</strong> — 양쪽 다 강함, 다른 layer</td></tr><tr><td>영역 6 SMR</td><td><strong>NNE +6.58%</strong> (small), CEG +2.88%, OKLO +1.21%</td><td>우리기술 +0.60%, 한전기술 +2.81%</td><td>US 모멘텀 더 강</td></tr><tr><td>영역 7 DC EPC/전력</td><td>ETN +2.58%, VRT +1.26%, GEV -0.49%</td><td>두산퓨얼셀 +17.60% (신규?), 산일전기 +2.36%</td><td>KR 두산퓨얼셀 vs US ETN/VRT</td></tr></tbody></table></div>
+<h3>🔥 핵심 cross-country 통찰</h3>
+<ol>
+<li><strong>영역 1 GOES</strong>: 미국 CLF +4.95% 모멘텀이 한국 포스코홀딩스 +0.90%로 안 흘렀음. <strong>시장 비대칭</strong> = 한국에서 늦게 인지될 가능성. 포스코홀딩스 비중 0%지만 관찰 우선순위 ↑.</li>
+</ol>
+<ol>
+<li><strong>영역 4 광통신</strong>: <strong>빛과전자 +29.86%(KR)</strong> &gt; LITE -1.82%, COHR -0.11%, CIEN -0.59% (US 빅4 평균 약). 빛과전자의 폭등이 글로벌 광통신 사이클 추종이 아니라 <strong>회사 고유 모멘텀</strong>일 가능성. 회사 IR/공시 확인 필요.</li>
+</ol>
+<ol>
+<li><strong>DELL +16.77% / SMCI +6.34%</strong>: 미국 서버 OEM이 강한 신호. 한국 직접 서버 OEM 부재 → 부품 (MLCC, FPCB, PSU) 영역 5 폭등으로 흐른 게 합리적 인과 매핑.</li>
+</ol>
+<ol>
+<li><strong>NNE +6.58%</strong>: 작은 SMR 종목 폭등. 한국 우리기술/한전기술은 부진. SMR 사이클은 미국 small-cap부터 인지 시작 중.</li>
+</ol>
+<ol>
+<li><strong>NVDA -1.90%, MU -1.46%</strong> 위안: 1티어 핵심은 5/22엔 차익 실현. 이게 자금이 2티어로 흘러갔다는 증거 (둘 측 5/22 폭등의 공통 패턴).</li>
+</ol>
+<h3>US side 행동 제안</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목</th><th>5/22</th><th>한국 대응 후보</th><th>의미</th></tr></thead><tbody><tr><td><strong>CLF +4.95%</strong></td><td>$11.23</td><td>포스코홀딩스 (지연)</td><td>GOES thesis 검증 신호</td></tr><tr><td><strong>DELL +16.77%</strong></td><td>$295.19</td><td>한국 서버 부품 (이미 매핑)</td><td>서버 OEM 어닝 콜 확인</td></tr><tr><td><strong>NNE +6.58%</strong></td><td>$26.73</td><td>우리기술 / 두산에너빌리티</td><td>SMR sector 시그널</td></tr><tr><td><strong>ANET +3.66%</strong></td><td>$154.03</td><td>빛과전자 (한국 광통신 NEW)</td><td>AI 라우팅 인접</td></tr></tbody></table></div>
+<h3>Hermes 추가 협업 요청</h3>
+<ul>
+<li>(1) Hermes의 기존 US 데이터 소스 확인 — 이미 Market Brief에 NVDA·QCOM 가격 있음. Finnhub와 중복 여부 점검</li>
+<li>(2) <code>08-data/industry-value-chain-registry.json</code>에 US ticker → 영역 매핑 추가 가능 여부</li>
+<li>(3) Cross-country bar chart를 stock-traffic-light.html에 component로 통합</li>
+</ul>
+<hr>
+<p>— Round 1 v3 (US 통합), 2026-05-26 16:50 KST</p></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
