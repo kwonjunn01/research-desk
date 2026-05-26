@@ -268,180 +268,320 @@
 <h2>20초 요약</h2>
 <ul>
 <li><strong>오늘의 발견</strong>: 5/22 KOSDAQ에서 <strong>빛과전자 (069540)</strong> +29.86%, 거래량 40M주. 02_value_chain_map에서 비어있던 영역 4 (광통신/CPO 한국 직접 노출) 자리의 신규 후보.</li>
-<li><strong>숨은 패턴</strong>: KOSDAQ 30개 +15%+ 폭등 종목 중 <strong>워치리스트 매칭 0건</strong>. 5/22 폭등은 워치리스트 밖에서 더 강하게 일어남.</li>
-<li><strong>5요소 평가 도입</strong>: 다음 Market Brief부터 모든 종목 카드에 형준님 인과추론 프레임 5요소 평가 표 추가 (Claude ↔ Hermes 합의).</li>
+<li><strong>숨은 패턴</strong>: KOSDAQ 30개 +15%+ 폭등 종목 중 <strong>워치리스트 매칭 0건</strong>.</li>
+<li><strong>5요소 평가 도입</strong>: 다음 Market Brief부터 모든 종목 카드에 인과추론 5요소 평가 표 추가 (Claude ↔ Hermes 합의).</li>
 <li><strong>사각지대 7영역 모니터링 패널</strong> Market Brief 상단으로 승격.</li>
 </ul>
 <hr>
-<h2>1. 형준님 인과추론 7영역 사각지대 status bar (Live Demo)</h2>
-<blockquote>이 위젯이 매일 Market Brief 상단에 와야 한다 — Claude/Hermes 합의.</blockquote>
-<div class="table-scroll"><table class="rd-table"><thead><tr><th>#</th><th>영역</th><th>5/22 신호</th><th>핵심 후보</th><th>상태</th></tr></thead><tbody><tr><td>1</td><td>GOES (방향성 전기강판)</td><td>약</td><td>포스코홀딩스 +0.90%</td><td>⚪</td></tr><tr><td>2</td><td>액침냉각</td><td>약</td><td>GST +2.61%</td><td>⚪</td></tr><tr><td>3</td><td>유리기판 TGV</td><td>보통</td><td>켐트로닉스 +5.43%, 쎄크 +5.13%</td><td>🟡</td></tr><tr><td>4</td><td>광통신/CPO 한국 직접</td><td><strong>🔥 강</strong></td><td><strong>빛과전자 +29.86% (NEW)</strong>, 오이솔루션 +6.41%</td><td>🟢</td></tr><tr><td>5</td><td>AI 서버 부품 2티어</td><td><strong>🔥 강</strong></td><td>삼화콘덴서 +29.94%, 비에이치 +17.06%, 삼화전기 +15.70%</td><td>🟢</td></tr><tr><td>6</td><td>SMR 인풋</td><td>약</td><td>우리기술 +0.60%, 한전기술 +2.81%</td><td>⚪</td></tr><tr><td>7</td><td>데이터센터 EPC</td><td>보통</td><td>두산에너빌리티 +2.95%, 두산퓨얼셀 +17.60% (?)</td><td>🟡</td></tr></tbody></table></div>
-<p><strong>해석</strong>: 5/22는 영역 4 (광통신)와 영역 5 (AI 서버 부품 2티어)에서 강한 시장 인지 신호. 영역 1·2·6은 아직 신호 없음 — &quot;신호 없음&quot;도 기록한다는 게 핵심.</p>
+<h2>1. 7영역 사각지대 시그널 히트맵 (5/22 기준)</h2>
+<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:16px 0;font-family:-apple-system,sans-serif">
+<div style="background:#f0f0f0;border-left:4px solid #aaa;padding:10px 8px;border-radius:6px">
+<div style="font-size:11px;color:#666">영역 1</div>
+<div style="font-weight:700;font-size:13px;margin:4px 0">GOES</div>
+<div style="font-size:11px">⚪ 약</div>
+<div style="font-size:10px;color:#888;margin-top:4px">포스코홀딩스<br/>+0.90%</div>
+</div>
+<div style="background:#f0f0f0;border-left:4px solid #aaa;padding:10px 8px;border-radius:6px">
+<div style="font-size:11px;color:#666">영역 2</div>
+<div style="font-weight:700;font-size:13px;margin:4px 0">액침냉각</div>
+<div style="font-size:11px">⚪ 약</div>
+<div style="font-size:10px;color:#888;margin-top:4px">GST<br/>+2.61%</div>
+</div>
+<div style="background:#fffbe6;border-left:4px solid #d4a400;padding:10px 8px;border-radius:6px">
+<div style="font-size:11px;color:#666">영역 3</div>
+<div style="font-weight:700;font-size:13px;margin:4px 0">유리기판 TGV</div>
+<div style="font-size:11px">🟡 보통</div>
+<div style="font-size:10px;color:#888;margin-top:4px">켐트로닉스<br/>+5.43%</div>
+</div>
+<div style="background:#e6ffea;border-left:4px solid #00a050;padding:10px 8px;border-radius:6px">
+<div style="font-size:11px;color:#666">영역 4 🔥</div>
+<div style="font-weight:700;font-size:13px;margin:4px 0">광통신/CPO</div>
+<div style="font-size:11px">🟢 강</div>
+<div style="font-size:10px;color:#066;margin-top:4px"><b>빛과전자 NEW</b><br/>+29.86%</div>
+</div>
+<div style="background:#e6ffea;border-left:4px solid #00a050;padding:10px 8px;border-radius:6px">
+<div style="font-size:11px;color:#666">영역 5 🔥</div>
+<div style="font-weight:700;font-size:13px;margin:4px 0">AI서버 2티어</div>
+<div style="font-size:11px">🟢 강</div>
+<div style="font-size:10px;color:#066;margin-top:4px">삼화콘덴서<br/>+29.94%</div>
+</div>
+<div style="background:#f0f0f0;border-left:4px solid #aaa;padding:10px 8px;border-radius:6px">
+<div style="font-size:11px;color:#666">영역 6</div>
+<div style="font-weight:700;font-size:13px;margin:4px 0">SMR 인풋</div>
+<div style="font-size:11px">⚪ 약</div>
+<div style="font-size:10px;color:#888;margin-top:4px">우리기술<br/>+0.60%</div>
+</div>
+<div style="background:#fffbe6;border-left:4px solid #d4a400;padding:10px 8px;border-radius:6px">
+<div style="font-size:11px;color:#666">영역 7</div>
+<div style="font-weight:700;font-size:13px;margin:4px 0">DC EPC</div>
+<div style="font-size:11px">🟡 보통</div>
+<div style="font-size:10px;color:#888;margin-top:4px">두산퓨얼셀 NEW<br/>+17.60%</div>
+</div>
+</div>
+<p><strong>해석</strong>: 5/22는 영역 4 (광통신)와 영역 5 (AI 서버 부품 2티어)에서 강한 시장 인지 신호. 영역 1·2·6은 신호 없음 — &quot;신호 없음&quot;도 기록한다는 게 핵심.</p>
 <hr>
-<h2>2. 5/22 워치리스트 status — 인과추론 5요소 평가 (Live Demo)</h2>
-<blockquote>Claude × Hermes 합의 형식: Daily Brief는 compact table, 상세 페이지는 collapsible card.</blockquote>
-<h3>워치리스트 핵심 종목 5요소 평가</h3>
-<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목 (코드)</th><th>카테고리</th><th>5/22 등락</th><th>대체불가능성</th><th>6~12개월 트리거</th><th>시장 인지도</th><th>흑자 모멘텀</th><th>본업 우위</th><th>종합</th></tr></thead><tbody><tr><td><strong>삼화콘덴서</strong> (001820)</td><td>MLCC 2티어</td><td><strong>+29.94%</strong></td><td>강함 (한국 #2)</td><td>강함 (베라루빈 4Q26)</td><td>보통→<strong>강함</strong> (5/22 인지 시작)</td><td>강함 (OPM↑)</td><td>강함 (MLCC 본업)</td><td>🟢 보유 12%</td></tr><tr><td><strong>비에이치</strong> (090460)</td><td>FPCB</td><td><strong>+17.06%</strong></td><td>보통 (삼디·애플)</td><td>강함 (AI 서버 발열)</td><td>보통 (5/22 인지)</td><td>확인 필요</td><td>보통</td><td>🟡 검토 → Alpha 승격</td></tr><tr><td><strong>삼화전기</strong> (009470)</td><td>Al 콘덴서</td><td><strong>+15.70%</strong></td><td>강함 (서버 PSU)</td><td>강함 (서버 capex)</td><td>약함→<strong>보통</strong></td><td>확인 필요</td><td>강함 (콘덴서)</td><td>🟡 검토</td></tr><tr><td><strong>GST</strong> (083450)</td><td>액침냉각</td><td>+2.61%</td><td>강함 (한국 전문)</td><td>강함 (베라루빈 강제)</td><td><strong>약함</strong> (아직)</td><td>보통</td><td>보통</td><td>🟢 보유 10%, 추가 검토</td></tr><tr><td><strong>산일전기</strong> (062040)</td><td>변압기 2티어</td><td>+2.36%</td><td>강함 (ESS)</td><td>강함 (한국 ESS 2.1GW)</td><td>보통</td><td>강함</td><td>보통</td><td>🟢 보유 8%</td></tr><tr><td><strong>우리기술</strong> (032820)</td><td>SMR MMIS</td><td>+0.60%</td><td>강함 (국산화 유일)</td><td>약함 (매출 2027~)</td><td>약함</td><td>약함</td><td>약함</td><td>🟢 보유 7%, 시계 길음</td></tr><tr><td><strong>켐트로닉스</strong> (089890)</td><td>유리기판 TGV</td><td>+5.43%</td><td>보통</td><td>보통 (베라루빈 울트라 2027)</td><td>보통</td><td>보통</td><td>보통</td><td>🟢 보유 5%</td></tr></tbody></table></div>
-<p><strong>판독 가이드</strong>: <code>강함 / 보통 / 약함 / 확인 필요</code> 4단계. 칸이 비면 &quot;확인 필요&quot;로 표시 (추정으로 채우지 않음).</p>
+<h2>2. 5/22 등락률 시각화 — Top 15 (워치리스트 + 신규)</h2>
+<p>&lt;svg viewBox=&quot;0 0 800 540&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;width:100%;max-width:900px;height:auto;background:#fafafa;border-radius:8px;font-family:-apple-system,sans-serif&quot;&gt;</p>
+<p>&lt;text x=&quot;20&quot; y=&quot;24&quot; font-size=&quot;14&quot; font-weight=&quot;700&quot;&gt;5/22 KRX 등락률 (워치리스트 ★ / 신규 후보 🔥)&lt;/text&gt;</p>
+<p>&lt;text x=&quot;20&quot; y=&quot;42&quot; font-size=&quot;11&quot; fill=&quot;#666&quot;&gt;막대 길이 = 등락률 %, 색상 = 영역&lt;/text&gt;</p>
+<p>&lt;!-- Scale line at 0, 10, 20, 30 --&gt;</p>
+<p>&lt;line x1=&quot;240&quot; y1=&quot;60&quot; x2=&quot;240&quot; y2=&quot;500&quot; stroke=&quot;#ddd&quot; stroke-width=&quot;1&quot;/&gt;</p>
+<p>&lt;line x1=&quot;430&quot; y1=&quot;60&quot; x2=&quot;430&quot; y2=&quot;500&quot; stroke=&quot;#eee&quot; stroke-width=&quot;1&quot; stroke-dasharray=&quot;2&quot;/&gt;</p>
+<p>&lt;line x1=&quot;620&quot; y1=&quot;60&quot; x2=&quot;620&quot; y2=&quot;500&quot; stroke=&quot;#eee&quot; stroke-width=&quot;1&quot; stroke-dasharray=&quot;2&quot;/&gt;</p>
+<p>&lt;text x=&quot;240&quot; y=&quot;528&quot; font-size=&quot;10&quot; fill=&quot;#888&quot; text-anchor=&quot;middle&quot;&gt;0%&lt;/text&gt;</p>
+<p>&lt;text x=&quot;430&quot; y=&quot;528&quot; font-size=&quot;10&quot; fill=&quot;#888&quot; text-anchor=&quot;middle&quot;&gt;+10%&lt;/text&gt;</p>
+<p>&lt;text x=&quot;620&quot; y=&quot;528&quot; font-size=&quot;10&quot; fill=&quot;#888&quot; text-anchor=&quot;middle&quot;&gt;+20%&lt;/text&gt;</p>
+<p>&lt;text x=&quot;810&quot; y=&quot;528&quot; font-size=&quot;10&quot; fill=&quot;#888&quot; text-anchor=&quot;middle&quot;&gt;+30%&lt;/text&gt;</p>
+<p>&lt;!-- Row helper: 각 종목 --&gt;</p>
+<p>&lt;!-- 삼화콘덴서 +29.94% (보유 12%) - 영역5 --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;76&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;★ 삼화콘덴서&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;65&quot; width=&quot;568&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.85&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;76&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+29.94% / 보유 12%&lt;/text&gt;</p>
+<p>&lt;!-- 빛과전자 +29.86% (NEW) - 영역4 --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;100&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot; text-anchor=&quot;end&quot; fill=&quot;#c00&quot;&gt;🔥 빛과전자 NEW&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;89&quot; width=&quot;567&quot; height=&quot;16&quot; fill=&quot;#e55039&quot; opacity=&quot;0.85&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;100&quot; font-size=&quot;11&quot; fill=&quot;#c00&quot;&gt;+29.86% / 영역4&lt;/text&gt;</p>
+<p>&lt;!-- 인텍플러스 +26.68% (NEW) - 영역5 --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;124&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot; text-anchor=&quot;end&quot; fill=&quot;#c00&quot;&gt;🔥 인텍플러스 NEW&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;113&quot; width=&quot;507&quot; height=&quot;16&quot; fill=&quot;#e55039&quot; opacity=&quot;0.85&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;124&quot; font-size=&quot;11&quot; fill=&quot;#c00&quot;&gt;+26.68% / 영역5&lt;/text&gt;</p>
+<p>&lt;!-- 심텍홀딩스 +20.39% --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;148&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; fill=&quot;#a60&quot;&gt;심텍홀딩스&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;137&quot; width=&quot;387&quot; height=&quot;16&quot; fill=&quot;#f08c00&quot; opacity=&quot;0.85&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;148&quot; font-size=&quot;11&quot; fill=&quot;#a60&quot;&gt;+20.39% / 영역5&lt;/text&gt;</p>
+<p>&lt;!-- 비나텍 +19.10% --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;172&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;비나텍 (콘덴서)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;161&quot; width=&quot;363&quot; height=&quot;16&quot; fill=&quot;#a065d4&quot; opacity=&quot;0.7&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;172&quot; font-size=&quot;11&quot; fill=&quot;#666&quot;&gt;+19.10%&lt;/text&gt;</p>
+<p>&lt;!-- 대주전자재료 +18.34% --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;196&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;대주전자재료&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;185&quot; width=&quot;348&quot; height=&quot;16&quot; fill=&quot;#a065d4&quot; opacity=&quot;0.7&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;196&quot; font-size=&quot;11&quot; fill=&quot;#666&quot;&gt;+18.34%&lt;/text&gt;</p>
+<p>&lt;!-- 두산퓨얼셀 +17.60% (NEW) - 영역7 --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;220&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot; text-anchor=&quot;end&quot; fill=&quot;#c80&quot;&gt;🔥 두산퓨얼셀 NEW&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;209&quot; width=&quot;334&quot; height=&quot;16&quot; fill=&quot;#f08c00&quot; opacity=&quot;0.85&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;220&quot; font-size=&quot;11&quot; fill=&quot;#c80&quot;&gt;+17.60% / 영역7?&lt;/text&gt;</p>
+<p>&lt;!-- 비에이치 +17.06% (Watch -&gt; Alpha?) - 영역5 --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;244&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot; text-anchor=&quot;end&quot;&gt;★ 비에이치 (Watch→?)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;233&quot; width=&quot;324&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.65&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;244&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+17.06% / 비중 0%&lt;/text&gt;</p>
+<p>&lt;!-- 선익시스템 +17.16% --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;268&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;선익시스템&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;257&quot; width=&quot;326&quot; height=&quot;16&quot; fill=&quot;#888&quot; opacity=&quot;0.6&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;268&quot; font-size=&quot;11&quot; fill=&quot;#666&quot;&gt;+17.16% / OLED&lt;/text&gt;</p>
+<p>&lt;!-- 삼화전기 +15.70% (Watch) - 영역5 --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;292&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot; text-anchor=&quot;end&quot;&gt;★ 삼화전기 (Watch→?)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;281&quot; width=&quot;298&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.65&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;292&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+15.70% / 비중 0%&lt;/text&gt;</p>
+<p>&lt;!-- 케이엠더블유 +14.11% --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;316&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;케이엠더블유 (5G)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;305&quot; width=&quot;268&quot; height=&quot;16&quot; fill=&quot;#e55039&quot; opacity=&quot;0.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;316&quot; font-size=&quot;11&quot; fill=&quot;#666&quot;&gt;+14.11%&lt;/text&gt;</p>
+<p>&lt;!-- SFA반도체 +14.53% --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;340&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;SFA반도체&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;329&quot; width=&quot;276&quot; height=&quot;16&quot; fill=&quot;#e55039&quot; opacity=&quot;0.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;340&quot; font-size=&quot;11&quot; fill=&quot;#666&quot;&gt;+14.53%&lt;/text&gt;</p>
+<p>&lt;!-- 삼성전기 +11.30% (이미 인지) - 영역5 --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;364&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;★ 삼성전기 (1티어)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;353&quot; width=&quot;215&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.55&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;364&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+11.30%&lt;/text&gt;</p>
+<p>&lt;!-- 파두 +9.94% --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;388&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;★ 파두 (eSSD)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;377&quot; width=&quot;189&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.5&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;388&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+9.94%&lt;/text&gt;</p>
+<p>&lt;!-- 오이솔루션 +6.41% (영역4) --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;412&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;★ 오이솔루션 (광)&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;401&quot; width=&quot;122&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.45&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;412&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+6.41% / 영역4&lt;/text&gt;</p>
+<p>&lt;!-- 켐트로닉스 +5.43% (보유 5%) --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;436&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;★ 켐트로닉스&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;425&quot; width=&quot;103&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.4&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;436&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+5.43% / 보유 5%&lt;/text&gt;</p>
+<p>&lt;!-- GST +2.61% (보유 10%) --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;460&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;★ GST&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;449&quot; width=&quot;50&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.35&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;460&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+2.61% / 보유 10%&lt;/text&gt;</p>
+<p>&lt;!-- 산일전기 +2.36% (보유 8%) --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;484&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;★ 산일전기&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;473&quot; width=&quot;45&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.35&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;484&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+2.36% / 보유 8%&lt;/text&gt;</p>
+<p>&lt;!-- 우리기술 +0.60% (보유 7%) --&gt;</p>
+<p>&lt;text x=&quot;230&quot; y=&quot;508&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot;&gt;★ 우리기술&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;240&quot; y=&quot;497&quot; width=&quot;12&quot; height=&quot;16&quot; fill=&quot;#22aa66&quot; opacity=&quot;0.3&quot;/&gt;</p>
+<p>&lt;text x=&quot;816&quot; y=&quot;508&quot; font-size=&quot;11&quot; fill=&quot;#066&quot;&gt;+0.60% / 보유 7%&lt;/text&gt;</p>
+<p>&lt;!-- Legend --&gt;</p>
+<p>&lt;g transform=&quot;translate(20,560)&quot;&gt;</p>
+<p>&lt;rect x=&quot;0&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#22aa66&quot;/&gt;&lt;text x=&quot;18&quot; y=&quot;10&quot; font-size=&quot;11&quot;&gt;워치리스트&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;100&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#e55039&quot;/&gt;&lt;text x=&quot;118&quot; y=&quot;10&quot; font-size=&quot;11&quot;&gt;신규 P0&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;190&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#f08c00&quot;/&gt;&lt;text x=&quot;208&quot; y=&quot;10&quot; font-size=&quot;11&quot;&gt;신규 P1&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;290&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#a065d4&quot;/&gt;&lt;text x=&quot;308&quot; y=&quot;10&quot; font-size=&quot;11&quot;&gt;콘덴서/소재 인접&lt;/text&gt;</p>
+<p>&lt;rect x=&quot;430&quot; y=&quot;0&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;#888&quot;/&gt;&lt;text x=&quot;448&quot; y=&quot;10&quot; font-size=&quot;11&quot;&gt;기타&lt;/text&gt;</p>
+<p>&lt;/g&gt;</p>
+<p>&lt;/svg&gt;</p>
 <hr>
-<h2>3. 신규 후보 — 워치리스트 외 5/22 폭등 종목</h2>
-<h3>KOSDAQ 핵심 신규 후보 3개</h3>
-<h4>🔥 후보 1 — 빛과전자 (069540)</h4>
-<div class="table-scroll"><table class="rd-table"><thead><tr><th>5/22 신호</th><th>5요소 평가</th><th>영역 매핑</th></tr></thead><tbody><tr><td>+29.86%, 종가 6,610원</td><td>대체불가능성: 확인 필요 (회사 IR 미확보)</td><td><strong>영역 4 (광통신/CPO 한국 직접 노출)</strong></td></tr><tr><td>거래량 <strong>40,253,771주</strong> (!)</td><td>6~12개월 트리거: 확인 필요</td><td>02_value_chain_map에서 비어있던 자리</td></tr><tr><td>시총 6,471억 (분산 적합)</td><td>시장 인지도: <strong>시작</strong> (5/22 거래량 폭증)</td><td>대한광통신 (+731% 이미 늦음)과 다른 회사</td></tr><tr><td></td><td>흑자 모멘텀: 확인 필요</td><td></td></tr><tr><td></td><td>본업 우위: 광/광통신 (Hyeongjun on-device 인접)</td><td></td></tr></tbody></table></div>
-<p><strong>진입 우선순위</strong>: P0 — 회사 인테이크 즉시 필요. Hermes에 <code>company_intake.py 빛과전자</code> 요청 예정.</p>
-<h4>🔥 후보 2 — 인텍플러스 (064290)</h4>
-<div class="table-scroll"><table class="rd-table"><thead><tr><th>5/22 신호</th><th>5요소 평가</th><th>영역 매핑</th></tr></thead><tbody><tr><td>+26.68%, 종가 35,850원</td><td>대체불가능성: 확인 필요</td><td>영역 5 인접 (반도체 검사)</td></tr><tr><td>거래량 1,659,908주</td><td>6~12개월 트리거: 강함? (HBM4 양산)</td><td>SOL AI반도체소부장 ETF 인접</td></tr><tr><td>시총 4,612억</td><td>시장 인지도: 시작</td><td></td></tr><tr><td></td><td>흑자 모멘텀: 확인 필요</td><td></td></tr><tr><td></td><td>본업 우위: 반도체 검사 (Hyeongjun 본업)</td><td></td></tr></tbody></table></div>
-<p><strong>진입 우선순위</strong>: P0 — 인테이크 필요. SOL ETF에 이미 들어있으면 별도 진입 불필요.</p>
-<h4>🔥 후보 3 — 두산퓨얼셀 (336260)</h4>
-<div class="table-scroll"><table class="rd-table"><thead><tr><th>5/22 신호</th><th>5요소 평가</th><th>영역 매핑</th></tr></thead><tbody><tr><td>+17.60%, 종가 98,200원</td><td>대체불가능성: 보통 (연료전지 한국 1위)</td><td>영역 7 (DC EPC) 인접</td></tr><tr><td>거래량: (확인 필요)</td><td>6~12개월 트리거: 확인 필요 (AI DC 분산발전?)</td><td>변압기 빅3와는 다른 발전 솔루션</td></tr><tr><td>시총 <strong>6.4조</strong> (큰 편)</td><td>시장 인지도: 보통</td><td></td></tr><tr><td></td><td>흑자 모멘텀: 확인 필요</td><td></td></tr><tr><td></td><td>본업 우위: 연료전지 (Hyeongjun 본업 약함)</td><td></td></tr></tbody></table></div>
-<p><strong>진입 우선순위</strong>: P1 — 시총 너무 큼, 4M원 분산에는 비효율. AI DC 매출 가시화 확인 후 재평가.</p>
-<h3>KOSPI 5/22 폭등 워치리스트 외 (참고)</h3>
-<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목</th><th>등락</th><th>시총</th><th>추정 카테고리</th></tr></thead><tbody><tr><td>미래산업 (025560)</td><td>+29.89%</td><td>1,825억</td><td>반도체 검사 (소형)</td></tr><tr><td>삼화전자 (011230)</td><td>+29.78%</td><td>514억</td><td>(확인 필요)</td></tr><tr><td>디아이씨 (092200)</td><td>+23.44%</td><td>3,543억</td><td>(확인 필요)</td></tr><tr><td>대양금속 (009190)</td><td>+21.95%</td><td>669억</td><td>금속 (GOES 가능성?)</td></tr><tr><td>KEC (092220)</td><td>+16.47%</td><td>2,726억</td><td>전력반도체</td></tr><tr><td>삼아알미늄 (006110)</td><td>+16.00%</td><td>1.46조</td><td>Al (heat sink?)</td></tr></tbody></table></div>
+<h2>3. 빅 픽처 — 확정된 미래 → 7영역 (Big Picture)</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+    F1[&quot;베라루빈 4Q26&lt;br/&gt;출하&quot;]:::future
+    F2[&quot;베라루빈 울트라&lt;br/&gt;2027 HBM 16개&quot;]:::future
+    F3[&quot;미국 NERC&lt;br/&gt;정전 경고&quot;]:::future
+    F4[&quot;한국 DC 49.4GW&lt;br/&gt;+ ESS 2.1GW&quot;]:::future
+    F5[&quot;HBM4 양산&quot;]:::future
+
+    F1 --&gt; A1[&quot;영역 1&lt;br/&gt;GOES ⚪&quot;]:::cold
+    F3 --&gt; A1
+    F1 --&gt; A2[&quot;영역 2&lt;br/&gt;액침냉각 ⚪&quot;]:::cold
+    F2 --&gt; A3[&quot;영역 3&lt;br/&gt;유리기판 TGV 🟡&quot;]:::warm
+    F1 --&gt; A4[&quot;영역 4&lt;br/&gt;광통신/CPO 🟢&quot;]:::hot
+    F2 --&gt; A4
+    F1 --&gt; A5[&quot;영역 5&lt;br/&gt;AI서버 2티어 🟢&quot;]:::hot
+    F5 --&gt; A5
+    F4 --&gt; A6[&quot;영역 6&lt;br/&gt;SMR 인풋 ⚪&quot;]:::cold
+    F4 --&gt; A7[&quot;영역 7&lt;br/&gt;DC EPC 🟡&quot;]:::warm
+    F3 --&gt; A7
+
+    classDef future fill:#0d6efd,stroke:#0a58ca,color:#fff,font-weight:700
+    classDef hot fill:#d4edda,stroke:#28a745,color:#155724,font-weight:700
+    classDef warm fill:#fff3cd,stroke:#ffc107,color:#856404
+    classDef cold fill:#e9ecef,stroke:#adb5bd,color:#495057</div></div>
 <hr>
-<h2>4. 밸류체인 지도 업데이트 (Mermaid)</h2>
-<div class="viz-card"><div class="mermaid">graph TB
-    subgraph &quot;확정된 미래&quot;
-        F1[베라루빈 4Q26 출하]
-        F2[베라루빈 울트라 2027 HBM 16개]
-        F3[NERC 미국 24개 주 정전 경고]
-        F4[한국 데이터센터 49.4GW]
-        F5[HBM4 양산]
-    end
+<h2>4. 영역 4 (광통신/CPO) ZOOM-IN</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+    A4[&quot;영역 4&lt;br/&gt;광통신/CPO&quot;]:::hot
 
-    subgraph &quot;영역 4: 광통신/CPO 🟢&quot;
-        F1 --&gt; Lumentum[Lumentum]
-        F1 --&gt; Coherent[Coherent]
-        F2 --&gt; Cisco[Cisco]
-        Lumentum --&gt; KOREA4[&quot;🔥 빛과전자 069540 NEW&lt;br/&gt;+29.86% 5/22&quot;]
-        Cisco --&gt; KOREA4
-        Lumentum --&gt; OE[오이솔루션 138080]
-    end
+    A4 --&gt; US[&quot;미국 핵심&lt;br/&gt;(Lumentum/Coherent/Ciena/Cisco)&quot;]:::us
+    A4 --&gt; KR[&quot;한국 직접 노출&quot;]:::root
 
-    subgraph &quot;영역 5: AI 서버 부품 2티어 🟢&quot;
-        F1 --&gt; MLCC[MLCC 수요 5배]
-        MLCC --&gt; SAMHWA[삼화콘덴서 001820&lt;br/&gt;+29.94% 보유 12%]
-        MLCC --&gt; SAMSUNG[삼성전기 009150]
-        F1 --&gt; FPCB[FPCB 서버 발열]
-        FPCB --&gt; BH[비에이치 090460&lt;br/&gt;+17.06% 검토]
-        F1 --&gt; PSU[서버 PSU]
-        PSU --&gt; SAMHWAE[삼화전기 009470&lt;br/&gt;+15.70% 검토]
-        F5 --&gt; HBM_INT[HBM 검사장비]
-        HBM_INT --&gt; INT[🔥 인텍플러스 064290 NEW&lt;br/&gt;+26.68% 5/22]
-    end
+    US --&gt; ETF[&quot;KODEX 미국AI광통신&lt;br/&gt;0173Y0 보유 15%&quot;]:::own
+    
+    KR --&gt; NEW1[&quot;🔥 빛과전자 069540&lt;br/&gt;&lt;b&gt;+29.86%&lt;/b&gt; 5/22&lt;br/&gt;거래량 40M주&lt;br/&gt;시총 6,471억&quot;]:::new
+    KR --&gt; OE[&quot;오이솔루션 138080&lt;br/&gt;+6.41% / 광트랜시버&quot;]:::watch
+    KR --&gt; LATE[&quot;대한광통신&lt;br/&gt;(+731% 이미 늦음)&quot;]:::late
 
-    subgraph &quot;영역 3: 유리기판 TGV 🟡&quot;
-        F2 --&gt; TGV[TGV 강제 채택]
-        TGV --&gt; CHEM[켐트로닉스 089890&lt;br/&gt;+5.43% 보유 5%]
-        TGV --&gt; LAM[램테크놀러지 171010&lt;br/&gt;+3.32%]
-        TGV --&gt; PHIL[필옵틱스 161580]
-    end
+    classDef hot fill:#d4edda,stroke:#28a745,color:#155724,font-weight:700
+    classDef us fill:#e7f1ff,stroke:#0d6efd,color:#084298
+    classDef root fill:#fff,stroke:#666,color:#333
+    classDef own fill:#d1ecf1,stroke:#0c5460,font-weight:700
+    classDef watch fill:#fff3cd,stroke:#856404
+    classDef new fill:#f8d7da,stroke:#dc3545,color:#721c24,font-weight:700
+    classDef late fill:#f5f5f5,stroke:#999,color:#999</div></div>
+<p><strong>진입 우선순위 P0</strong>: 빛과전자 회사 인테이크 즉시 필요. 광트랜시버? CPO? 자체 제품군? Lumentum/Coherent 납품?</p>
+<hr>
+<h2>5. 영역 5 (AI 서버 부품 2티어) ZOOM-IN</h2>
+<div class="viz-card"><div class="mermaid">flowchart LR
+    A5[&quot;영역 5&lt;br/&gt;AI서버 2티어&quot;]:::hot
 
-    subgraph &quot;영역 7: DC EPC 🟡&quot;
-        F3 --&gt; TRANS[변압기 빅3]
-        F4 --&gt; ESS[ESS 2.1GW]
-        ESS --&gt; SAN[산일전기 062040&lt;br/&gt;+2.36% 보유 8%]
-        F3 --&gt; POWER[AI DC 분산발전]
-        POWER --&gt; DOOSAN[🔥 두산퓨얼셀 336260 NEW?&lt;br/&gt;+17.60% 5/22]
-    end
+    A5 --&gt; MLCC[&quot;MLCC&lt;br/&gt;(서버 5배 사용)&quot;]:::sub
+    A5 --&gt; FPCB[&quot;FPCB&lt;br/&gt;(AI 발열)&quot;]:::sub
+    A5 --&gt; ALCAP[&quot;Al 콘덴서&lt;br/&gt;(서버 PSU)&quot;]:::sub
+    A5 --&gt; HBMQ[&quot;HBM 검사&quot;]:::sub
 
-    subgraph &quot;영역 2: 액침냉각 ⚪ (대기)&quot;
-        F1 --&gt; COOL[발열 강제]
-        COOL --&gt; GST[GST 083450&lt;br/&gt;+2.61% 보유 10%]
-    end
+    MLCC --&gt; SAMHWA[&quot;삼화콘덴서 001820&lt;br/&gt;&lt;b&gt;+29.94%&lt;/b&gt;&lt;br/&gt;보유 12% ✓&quot;]:::own
+    MLCC --&gt; SAMSUNG[&quot;삼성전기 009150&lt;br/&gt;+11.30% / 1티어&quot;]:::watch
+    MLCC --&gt; BINA[&quot;비나텍 126340&lt;br/&gt;+19.10% / 슈퍼커패시터&quot;]:::new2
 
-    subgraph &quot;영역 6: SMR MMIS ⚪ (대기)&quot;
-        F4 --&gt; SMR[SMR 2027]
-        SMR --&gt; URI[우리기술 032820&lt;br/&gt;+0.60% 보유 7%]
-    end
+    FPCB --&gt; BH[&quot;비에이치 090460&lt;br/&gt;&lt;b&gt;+17.06%&lt;/b&gt;&lt;br/&gt;비중 0% 검토 ⚠&quot;]:::reval
 
-    style KOREA4 fill:#ffe6e6,stroke:#f00,stroke-width:3px
-    style INT fill:#ffe6e6,stroke:#f00,stroke-width:3px
-    style DOOSAN fill:#fff5e6,stroke:#f80,stroke-width:2px
-    style SAMHWA fill:#e6ffe6,stroke:#0a0,stroke-width:2px
-    style BH fill:#fffae6,stroke:#aa0
-    style SAMHWAE fill:#fffae6,stroke:#aa0</div></div>
-<p><strong>범례</strong>:</p>
+    ALCAP --&gt; SHE[&quot;삼화전기 009470&lt;br/&gt;&lt;b&gt;+15.70%&lt;/b&gt;&lt;br/&gt;비중 0% 검토 ⚠&quot;]:::reval
+
+    HBMQ --&gt; NEW2[&quot;🔥 인텍플러스 064290&lt;br/&gt;&lt;b&gt;+26.68%&lt;/b&gt; 5/22&lt;br/&gt;시총 4,612억&quot;]:::new
+
+    A5 --&gt; SIMTEK[&quot;심텍홀딩스 036710&lt;br/&gt;+20.39% (지주사 +20%, 본주 +5%)&quot;]:::tracking
+
+    classDef hot fill:#d4edda,stroke:#28a745,color:#155724,font-weight:700
+    classDef sub fill:#fff,stroke:#666,color:#444
+    classDef own fill:#d1ecf1,stroke:#0c5460,font-weight:700,color:#0c5460
+    classDef watch fill:#fff3cd,stroke:#856404
+    classDef reval fill:#ffe5a0,stroke:#cc8800,color:#664400,font-weight:700
+    classDef new fill:#f8d7da,stroke:#dc3545,color:#721c24,font-weight:700
+    classDef new2 fill:#e8d8f0,stroke:#7b3fa0,color:#4a1d6d
+    classDef tracking fill:#fff,stroke:#999,color:#666</div></div>
+<p><strong>P1 비중 재평가</strong>: 비에이치 5~7%, 삼화전기 3~5% 검토 (5/26 데이터 확인 후 결정).</p>
+<hr>
+<h2>6. 워치리스트 5요소 평가 (compact table)</h2>
+<blockquote>Daily Brief는 compact table, 상세 페이지는 collapsible card (Claude × Hermes 합의).</blockquote>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목 (코드)</th><th>카테고리</th><th>5/22</th><th>대체불가</th><th>트리거</th><th>시장인지</th><th>흑자모멘텀</th><th>본업우위</th><th>종합</th></tr></thead><tbody><tr><td><strong>삼화콘덴서</strong> (001820)</td><td>MLCC 2티어</td><td><strong>+29.94%</strong></td><td>강</td><td>강 (베라루빈)</td><td>강 (인지 시작)</td><td>강</td><td>강</td><td>🟢 보유 12%</td></tr><tr><td><strong>비에이치</strong> (090460)</td><td>FPCB</td><td><strong>+17.06%</strong></td><td>보통</td><td>강 (서버 발열)</td><td>보통</td><td>확인</td><td>보통</td><td>🟡 검토 → Alpha</td></tr><tr><td><strong>삼화전기</strong> (009470)</td><td>Al 콘덴서</td><td><strong>+15.70%</strong></td><td>강 (PSU)</td><td>강 (capex)</td><td>약→보통</td><td>확인</td><td>강</td><td>🟡 검토</td></tr><tr><td><strong>GST</strong> (083450)</td><td>액침냉각</td><td>+2.61%</td><td>강</td><td>강 (베라루빈)</td><td>약 (아직)</td><td>보통</td><td>보통</td><td>🟢 보유 10%</td></tr><tr><td><strong>산일전기</strong> (062040)</td><td>변압기 2티어</td><td>+2.36%</td><td>강 (ESS)</td><td>강 (2.1GW)</td><td>보통</td><td>강</td><td>보통</td><td>🟢 보유 8%</td></tr><tr><td><strong>우리기술</strong> (032820)</td><td>SMR MMIS</td><td>+0.60%</td><td>강 (유일)</td><td>약 (2027~)</td><td>약</td><td>약</td><td>약</td><td>🟢 보유 7%</td></tr><tr><td><strong>켐트로닉스</strong> (089890)</td><td>유리기판 TGV</td><td>+5.43%</td><td>보통</td><td>보통 (2027)</td><td>보통</td><td>보통</td><td>보통</td><td>🟢 보유 5%</td></tr></tbody></table></div>
+<p><strong>판독 가이드</strong>: <code>강함 / 보통 / 약함 / 확인 필요</code>. 빈 칸은 추정 금지 — &quot;확인 필요&quot; 표시.</p>
+<hr>
+<h2>7. 신규 후보 3종 상세 카드</h2>
+<h3>🔥 P0 - 빛과전자 (069540)</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0;background:#fef5f5;padding:14px;border-radius:8px;border:1px solid #f8d7da">
+<div>
+<div style="font-size:11px;color:#666">5/22 신호</div>
+<div style="font-size:18px;font-weight:700;color:#c00">+29.86%</div>
+<div style="font-size:11px;color:#666;margin-top:6px">거래량 <b>40,253,771주</b> (!)</div>
+<div style="font-size:11px;color:#666">종가 6,610원 / 시총 6,471억</div>
+</div>
+<div>
+<div style="font-size:11px;color:#666">영역 매핑</div>
+<div style="font-size:14px;font-weight:600">영역 4 — 광통신/CPO 한국 직접</div>
+<div style="font-size:11px;color:#666;margin-top:6px">02_value_chain_map에서 비어있던 자리</div>
+<div style="font-size:11px;color:#666">대한광통신(+731% 늦음)과 다른 회사</div>
+</div>
+</div>
+<p><strong>5요소 초기 평가</strong>: 대체불가능성 확인 필요 · 트리거 확인 필요 · 시장인지도 <strong>시작</strong> (거래량 폭증) · 흑자모멘텀 확인 필요 · 본업우위 강함 (광/광통신, Hyeongjun on-device 인접).</p>
+<p><strong>P0 행동</strong>: Hermes에 회사 인테이크 (<code>company_intake.py 빛과전자</code>) 즉시 요청.</p>
+<h3>🔥 P0 - 인텍플러스 (064290)</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0;background:#fef5f5;padding:14px;border-radius:8px;border:1px solid #f8d7da">
+<div>
+<div style="font-size:11px;color:#666">5/22 신호</div>
+<div style="font-size:18px;font-weight:700;color:#c00">+26.68%</div>
+<div style="font-size:11px;color:#666;margin-top:6px">종가 35,850원 / 시총 4,612억</div>
+<div style="font-size:11px;color:#666">거래량 1,659,908주</div>
+</div>
+<div>
+<div style="font-size:11px;color:#666">영역 매핑</div>
+<div style="font-size:14px;font-weight:600">영역 5 — AI 서버 2티어 인접</div>
+<div style="font-size:11px;color:#666;margin-top:6px">반도체 검사 (HBM4 양산 수혜?)</div>
+<div style="font-size:11px;color:#666">SOL AI반도체소부장 ETF 중복 가능</div>
+</div>
+</div>
+<p><strong>5요소 초기</strong>: 대체불가 확인 필요 · 트리거 강 (HBM4) · 시장인지 시작 · 흑자모멘텀 확인 · 본업우위 강 (반도체 검사).</p>
+<p><strong>P0 행동</strong>: SOL ETF에 이미 들어있는지 확인 → 없으면 인테이크 진행.</p>
+<h3>🔥 P1 - 두산퓨얼셀 (336260)</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0;background:#fff8e6;padding:14px;border-radius:8px;border:1px solid #ffeaa6">
+<div>
+<div style="font-size:11px;color:#666">5/22 신호</div>
+<div style="font-size:18px;font-weight:700;color:#a60">+17.60%</div>
+<div style="font-size:11px;color:#666;margin-top:6px">종가 98,200원 / 시총 <b>6.4조</b></div>
+<div style="font-size:11px;color:#c00">⚠ 시총 큼, 4M원 분산 비효율</div>
+</div>
+<div>
+<div style="font-size:11px;color:#666">영역 매핑</div>
+<div style="font-size:14px;font-weight:600">영역 7 — DC EPC 인접</div>
+<div style="font-size:11px;color:#666;margin-top:6px">연료전지 → AI DC 분산발전?</div>
+<div style="font-size:11px;color:#666">변압기 빅3와 다른 발전 솔루션</div>
+</div>
+</div>
+<p><strong>5요소 초기</strong>: 대체불가 보통 (한국 1위) · 트리거 확인 필요 · 시장인지 보통 · 흑자모멘텀 확인 · 본업우위 약 (Hyeongjun 본업 멀음).</p>
+<p><strong>P1 행동</strong>: AI DC 매출 가시화 IR 확인 후 재평가. 우선순위 낮음.</p>
+<hr>
+<h2>8. Day-over-Day Delta (5/27 오전부터 추적 시작)</h2>
+<blockquote>다음 라운드부터 매일 이 섹션:</blockquote>
+<blockquote>- 🆕 새로 +15%+ 진입</blockquote>
+<blockquote>- ❌ 사라진 모멘텀 (전일 폭등 후 -5%+)</blockquote>
+<blockquote>- 📈 강화 (3일 연속 +5%+)</blockquote>
+<blockquote>- 📉 약화 (5/22 폭등 후 모멘텀 소실)</blockquote>
+<blockquote>- 💰 가격 반영 vs 펀더멘털 갭</blockquote>
+<hr>
+<h2>9. Claude × Hermes 협업 합의</h2>
 <ul>
-<li>🔴 빨강 (3px): 신규 발굴 P0 (인테이크 필요)</li>
-<li>🟠 주황 (2px): 신규 발굴 P1 (검증 후 결정)</li>
-<li>🟢 초록 (2px): 보유 중 (비중 명시)</li>
-<li>🟡 노랑 (1px): Watch (검토 진행)</li>
+<li><strong>Q1</strong> P1 (1)(2)(3) 이번 주 시작 — ✅</li>
+<li><strong>Q2</strong> Daily=compact table, 상세=collapsible card — ✅</li>
+<li><strong>Q3</strong> 수정 prompt 3+1: <code>stock-traffic-light-research-team.md</code> (primary) + <code>market-narrative-agent.md</code> + <code>high-reasoning-and-publisher-review-policy.md</code> + <code>company-intake-agent.md</code> (aux)</li>
+<li><strong>Q4</strong> 6개 진단 동의, 보정 = &quot;미국주 제거 아니라 한국 supply-chain 변환층 추가&quot;</li>
+<li><strong>Dialogue habit</strong>: PROTOCOL.md canonical + SKILL.md hard rule + bot-router.md task hook</li>
 </ul>
 <hr>
-<h2>5. Day-over-Day Delta (vs 5/21)</h2>
-<blockquote>Hermes 합의: 매일 이 섹션 들어가야 한다.</blockquote>
-<p>이번 라운드는 5/22 단일일 분석이라 delta는 다음 라운드 (5/26 마감 데이터 들어오는 5/27 오전 8시 이후).</p>
-<p>다음 라운드부터 추적할 5요소:</p>
+<h2>10. 다음 단계</h2>
+<p><strong>이번 주 (P1)</strong>:</p>
 <ul>
-<li>🆕 새로 +15%+ 진입한 종목</li>
-<li>❌ 사라진 모멘텀 종목 (전일 폭등 후 -5%+ 페이드)</li>
-<li>📈 강화 (3일 연속 +5%+)</li>
-<li>📉 약화 (5/22 폭등 후 모멘텀 소실)</li>
-<li>💰 가격 반영 vs 펀더멘털 갭</li>
+<li>Claude: 강화 prompt 3개 초안 작성</li>
+<li>Hermes: 초안 반영</li>
+<li>Hermes: 빛과전자 / 인텍플러스 회사 인테이크</li>
+<li>Claude: 5/26 데이터 들어오면 momentum delta Round 2</li>
 </ul>
-<hr>
-<h2>6. Claude × Hermes 협업 합의 사항</h2>
-<h3>Q1: P1 (1)(2)(3) 이번 주 시작 — ✅ 양측 동의</h3>
-<ol>
-<li>5요소 평가 표 (이 페이지의 §2가 live demo)</li>
-<li>사각지대 7영역 status bar (이 페이지의 §1이 live demo)</li>
-<li>vs Yesterday delta 섹션</li>
-</ol>
-<h3>Q2: 5요소 렌더링 형식 — ✅ Hybrid</h3>
-<ul>
-<li>Daily Brief: compact table (4단계 라벨, 1줄 근거)</li>
-<li>상세 페이지 / Stock Traffic Light: collapsible card</li>
-</ul>
-<h3>Q3: 수정할 prompt 파일 3+1층 구조</h3>
-<ol>
-<li><strong>Primary</strong>: <code>09-prompts/stock-traffic-light-research-team.md</code> — 모든 회사 카드에 5요소 강제</li>
-<li><strong>Daily Brief</strong>: <code>09-prompts/market-narrative-agent.md</code> — 상단 status bar + delta + 5요소</li>
-<li><strong>Quality Gate</strong>: <code>09-prompts/high-reasoning-and-publisher-review-policy.md</code> — publish 전 5요소 검증</li>
-<li><strong>Auxiliary</strong>: <code>09-prompts/company-intake-agent.md</code> — 신규 회사 intake에 5요소 초기값</li>
-</ol>
-<p>→ Claude가 강화 prompt 초안 작성, Hermes 반영·검증.</p>
-<h3>Q4: 6개 진단 — ✅ Hermes 큰 틀 동의, 1개 보정</h3>
-<p>Hermes 보정: &quot;미국주 제거가 아니라 <strong>미국 원천 신호 → 한국 supply chain proxy 변환층</strong> 추가&quot;. → 동의. 다음 Market Brief부터 &quot;Korean supply-chain mapping&quot; 섹션 추가.</p>
-<h3>Dialogue habit 제어</h3>
-<ul>
-<li><strong>Canonical</strong>: <code>12-dialogue/PROTOCOL.md</code></li>
-<li><strong>SKILL.md</strong>: mandatory reminder 추가 (현재 reference만 있어 누락 위험)</li>
-<li><strong>bot-router.md</strong>: task-start routing hook으로 자동 inbox check</li>
-</ul>
-<hr>
-<h2>7. 다음 단계</h2>
-<h3>이번 주 (P1)</h3>
-<ul>
-<li>[ ] Claude: strengthened prompt 3개 초안 작성 (<code>stock-traffic-light</code> / <code>market-narrative-agent</code> / <code>high-reasoning-policy</code>)</li>
-<li>[ ] Hermes: 초안 검토 후 반영</li>
-<li>[ ] Hermes: 빛과전자 / 인텍플러스 회사 인테이크 실행</li>
-<li>[ ] Claude: 5/26 시세 데이터 들어오면 momentum delta 라운드 2</li>
-</ul>
-<h3>다음 주 (P2)</h3>
-<ul>
-<li>[ ] Korean small-cap discovery 모듈 (KRX ±15%+ 자동 매핑)</li>
-<li>[ ] AI Radar &quot;확인할 것&quot; per-paper customize</li>
-<li>[ ] 시각화 보강 (Stock Traffic Light에 5요소 카드 추가)</li>
-</ul>
-<h3>다음 2주 (P3)</h3>
-<ul>
-<li>[ ] 모의투자 watchlist ↔ Stock Traffic Light 양방향 동기화</li>
-<li>[ ] 한국 종목 우선순위 default</li>
-</ul>
-<hr>
-<h2>데이터 출처</h2>
-<ul>
-<li>KRX OpenAPI 2026-05-22 (KOSPI <code>stk_bydd_trd</code>, KOSDAQ <code>ksq_bydd_trd</code>)</li>
-<li>모의투자 <code>02_value_chain_map.md</code> v2026-05-22</li>
-<li>모의투자 <code>03_watchlist.csv</code> v2026-05-22</li>
-<li>Hermes review-response v1 (<code>12-dialogue/from-hermes/2026-05-26-review-response.md</code>)</li>
-</ul>
-<h2>Co-authors</h2>
-<ul>
-<li><strong>Claude (Cowork)</strong> — KRX 전수 스캔, 신규 후보 발굴, 5요소 평가 초안, 시각화</li>
-<li><strong>Hermes (Vultr)</strong> — review 검증, format 결정, prompt 수정 경로 식별, 보정 의견</li>
-</ul>
-<p>— Round 1 산출물, 2026-05-26 16:00 KST</p></article></main>
+<p><strong>Co-authors</strong>: Claude (Cowork) — KRX 스캔·5요소·시각화 / Hermes (Vultr) — review·format·prompt 경로</p>
+<p>— Round 1 v2 (visualization 개선), 2026-05-26 16:25 KST</p></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
