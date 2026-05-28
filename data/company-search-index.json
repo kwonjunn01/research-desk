@@ -3352,9 +3352,9 @@
       "price_position_52w_pct": 59.51280974380513,
       "return_20d_pct": 3.3160621761658016,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 40.66,
-      "forward_pe": 32.0,
-      "price_to_book": 7.88,
+      "trailing_pe": 39.11,
+      "forward_pe": 31.0,
+      "price_to_book": 7.58,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
