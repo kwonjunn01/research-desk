@@ -257,20 +257,20 @@
 <div class="desk-card warn"><strong>Ontology Edges</strong><p>56개 supply/dependency/constraint edge</p></div>
 <div class="desk-card violet"><strong>Detailed Registry</strong><p>16개 theme · 38개 node · 11개 query seed</p></div>
 </div>
-<h2>0. 2026-05-22 Weekly QA 반영</h2>
-<p>이번 주 QA는 기준 registry 수치(16 theme · 38 node · 56 edge · 11 query seed)를 유지하면서, 2026-05-22 AI/Market/Cross 리포트에서 확인된 evidence 후보를 기존 node/edge에 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source review queue</strong>다. 기업명과 ticker는 산업 매핑 참고용이며 매수·매도 판단이 아니다.</p>
+<h2>0. 2026-05-29 Weekly QA 반영</h2>
+<p>이번 주 QA는 기준 registry 수치(16 theme · 38 node · 56 edge · 11 query seed)를 유지하면서, 2026-05-23~29 AI/Market/Cross/Monthly reports에서 확인된 evidence 후보를 기존 node/edge에 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source review queue</strong>다. 기업명과 ticker는 산업 매핑 참고용이며 매수·매도 판단이 아니다.</p>
 <h3>새로 연결된 evidence 후보</h3>
 <ul>
-<li><strong>전력/냉각/부지 · 원자력/SMR · 변압기</strong>: NANO Nuclear+Supermicro AI data center MOU, NextEra/Dominion AI data center 전력 맥락, AI-driven power shortages/gas turbine 보도 후보 → <code>dc_power</code>, <code>nuclear</code>, <code>transformer</code>, <code>liquid_cooling</code>, <code>datacenter_build</code>, <code>hyperscaler</code>에 연결 후보.</li>
-<li><strong>Robotics · On-device AI · Humanoid/Autonomous</strong>: Boston Dynamics humanoid hard-work training, humanoid tipping point 보도, 중국 household/workforce robot 보도, <code>Robotics → On-device AI</code> edge heat → <code>on_device</code>, <code>humanoid</code>, <code>autonomous</code>, <code>korean_ai_chip</code>, <code>opensource_llm</code>에 연결 후보.</li>
-<li><strong>AI Agent · GUI agent · Industrial agent · Memory/RAG · Inference</strong>: Video2GUI, IndusAgent, OScaR KV-cache quantization, Contextual Integrity, ClawMem, Agent JIT → <code>ai_agent</code>, <code>frontier_llm</code>, <code>opensource_llm</code>, <code>training_data</code>, <code>hyperscaler</code>, <code>datacenter_build</code>에 연결 후보.</li>
-<li><strong>HBM · GPU · AI factory / Data center buildout</strong>: Lambda/Supermicro NVIDIA Blackwell GPU cluster와 HBM 공급 <code>완화 후보</code> → <code>nvidia</code>, <code>hbm</code>, <code>datacenter_build</code>, <code>hyperscaler</code>에 연결 후보. <code>Advanced Packaging/CoWoS</code>는 오늘 직접 신호가 약해 watch 유지.</li>
-<li><strong>Enterprise/Healthcare AI trust</strong>: AI-enabled medical device real-world failure warning, healthcare ROI 보도 후보, Contextual Integrity privacy/trust 논문 → <code>enterprise_ai</code>, <code>frontier_llm</code>, <code>ai_agent</code>, <code>training_data</code>의 governance/evidence-tracing gate와 연결 후보.</li>
+<li><strong>CPO 광통신 · 광트랜시버 · AI 네트워크 스위치</strong>: COHR/LITE monthly reports와 value-chain discovery에서 800G/1.6T, optical interconnect, silicon photonics/InP laser, CPO/NPO, 한국 광통신/CPO 직접 노출 후보가 반복 → <code>cpo</code>, <code>optical_transceiver</code>, <code>switch_chip</code>, <code>fiber_material</code>, <code>datacenter_build</code>에 연결 후보.</li>
+<li><strong>Grid/EPC/load-center · DC 전력 인프라 · 변압기/송전</strong>: AI DC 전력 병목이 utility EPC, interconnect, substation, permitting, craft labor, backlog conversion으로 확장 → <code>dc_power</code>, <code>transformer</code>, <code>grid_cable</code>, <code>datacenter_build</code>, <code>hyperscaler</code>에 연결 후보.</li>
+<li><strong>Agent workload → memory/server/power 병목</strong>: π-Bench, ACC, Full Attention, Gamma-World, MemTrace 등 long-horizon agent, memory/KV/context cache, inference cost 신호 → <code>ai_agent</code>, <code>frontier_llm</code>, <code>opensource_llm</code>, <code>training_data</code>, <code>hbm</code>, <code>datacenter_build</code>, <code>dc_power</code>에 연결 후보.</li>
+<li><strong>Arm CPU/IP · data-center orchestration 후보 seed</strong>: Armv9/Neoverse/CSS, data-center royalty, edge/mobile inference 신호 → 기존 <code>custom_asic</code>, <code>on_device</code>, <code>hyperscaler</code>, <code>datacenter_build</code> 주변 <code>ai_cpu_ip</code> 후보 seed로 추적. 회사-primary narrative 비중이 커서 정식 node 승격은 보류.</li>
+<li><strong>Robotics · On-device AI · Edge demand</strong>: embodied VLM, multi-agent world model, on-device/edge inference topic heat → <code>on_device</code>, <code>humanoid</code>, <code>autonomous</code>, <code>korean_ai_chip</code>, <code>opensource_llm</code>에 연결 후보. 실제 deployment·반복 주문 확인 전까지 hype와 분리.</li>
 </ul>
 <h3>이번 주 부족한 UX / 데이터</h3>
 <ul>
 <li>현재 page는 KPI cards, 병목 heatmap, Mermaid 기반 supply/dependency network, node detail cards, edge strip, query seeds, risk/metrics 일부를 제공한다.</li>
-<li>아직 <strong>진짜 Sankey/flow interaction</strong>, 클릭형 node side panel, node별 최신 metric 자동 갱신, node card 안의 주가·뉴스·context panel, 모바일에서 긴 company/ticker list 압축은 backlog다.</li>
+<li>아직 <strong>진짜 Sankey/flow interaction</strong>, 클릭형 node side panel, node별 최신 metric 자동 갱신, node card 안의 주가·뉴스·context panel, query copy/freshness badge, 모바일에서 긴 company/ticker list 압축은 backlog다.</li>
 <li>상세 보강 기록은 <code>07-sources/reference-dashboard-weekly-qa.md</code>, <code>04-ontology/Reference Dashboard Node Seeds.md</code>, <code>07-sources/reference-dashboard-queries.yaml</code>의 candidate query section에 누적한다.</li>
 </ul>
 <h2>1. 병목 Heatmap</h2>
