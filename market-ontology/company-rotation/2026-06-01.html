@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BTC Futures v2 — Canonical Spec</title>
+  <title>Fresh Company Coverage Rotation — 2026-06-01</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -246,153 +246,112 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>BTC Futures v2 — Canonical Spec</h1>
-<blockquote>기준 전략: <strong>20x BTC futures 무한매수법 v2</strong>. 원본 골격을 보존하고, 추가매수 중단 gate와 margin 방어만 추가한다. 기본 모드는 <code>paper/backtest only</code>; 실거래 자동주문은 별도 승인 전까지 비활성화한다.</blockquote>
-<h2>1. 전략 철학</h2>
-<p>목표는 원본 무한매수법의 구조를 깨지 않으면서 청산 확률을 낮추는 것이다.</p>
-<p>보존:</p>
+  <main><article><h1>Fresh Company Coverage Rotation — 2026-06-01</h1>
+<div class="kimi-hub-note"><b>과노출 교정</b><small>빛과전자·인텍플러스는 DB에서 삭제하지 않고, 오늘 상단 후보/작업 큐에서는 cooldown 처리했다. 아래 회사들을 먼저 보강한다.</small></div>
+<h2>20초 결론</h2>
 <ul>
-<li>20x futures</li>
-<li>5단계 doubling</li>
-<li>1% 하락 추가매수</li>
-<li>평단 +0.5% 익절</li>
+<li><strong>오늘 교정:</strong> 반복 노출된 빛과전자/인텍플러스 대신 테스트 부품, 스토리지, 전력 인프라, AI 응용, GPU cloud 쪽으로 coverage를 넓혔다.</li>
+<li><strong>우선순위:</strong> ISC → 리노공업 → 파두 → HPSP → 원익IPS → LS ELECTRIC/HD현대일렉트릭/효성중공업/일진전기 → 삼성SDS/루닛/레인보우/코어위브 순서로 작업 큐에 올렸다.</li>
+<li><strong>판단 상태:</strong> 모두 매수/매도 추천이 아니라 source pack·EPS revision·가격반영 검증 전 <code>판단 보류</code> 후보로 둔다.</li>
 </ul>
-<p>보강:</p>
+<h2>먼저 볼 새 회사 묶음</h2>
+<h3>테스트/검증 병목</h3>
 <ul>
-<li>첫 매수 사이즈 역산</li>
-<li>서브계정/자본 격리</li>
-<li>ADX/Bollinger/Margin add-buy gate</li>
-<li>Mark Price 기반 백테스트</li>
-<li>fee/funding/slippage 반영</li>
+<li><strong>왜 보나:</strong> AI칩·HBM·고성능 패키징이 늘수록 양산 전 테스트 난이도와 반복 소모성 부품 수요가 커질 수 있는 축.</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/095340-kq.html">ISC (095340.KQ)</a></strong> — semiconductor test socket / AI chip test exposure</li>
+<li>현재: 240,000.0 / 14.3% · 52W 78.4%, 20D -1.6% · ⚪ 회색</li>
+<li>핵심 판단: ISC tick 결론: ISC는 AI chip test socket 수요를 소켓·소재 매출과 margin으로 번역해야 하는 semicap component company다. 오늘 판단은 AI 반도체 수혜 narrative가 고객 확대, 양산 전환, 제품 mix, margin, EPS/OP revision으로 확인되는지이며 원문 IR·컨센서스 revision 전에는 판단 보류다. 가격 210…</li>
+<li>다음 확인: DART/IR에서 test socket/material 매출, AI 고객 확대, gross/OP margin, 신사업 synergy 숫자 확인; 증권사 preview/review 2건 이상에서 EPS/OP revision과 AI socket demand assumption 비교</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/058470-kq.html">Leeno Industrial (058470.KQ)</a></strong> — test pin/socket / semiconductor probe components</li>
+<li>현재: 110,800.0 / 4.0% · 52W 79.8%, 20D -1.2% · ⚪ 회색</li>
+<li>핵심 판단: Leeno Industrial tick 결론: Leeno Industrial은 HBM 장비주가 아니라 AI/advanced semiconductor R&amp;D와 양산 ramp가 테스트 핀·IC socket 수요로 전환되는지 보는 고마진 test component company다. 오늘 판단은 AI 반도체 테스트 수요가 출하·제품 mix·margin·EPS revision으로 확인되는지이며 원문…</li>
+<li>다음 확인: DART/IR에서 테스트 핀·IC socket 매출, gross/OP margin, 고객/R&amp;D mix, 신공장 가동률 확인; 증권사 preview/review 2건 이상에서 EPS/OP revision과 AI 반도체 테스트 수요 assumption 비교</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
 </ul>
-<p>하지 않는 것:</p>
+<h3>스토리지/데이터 병목</h3>
 <ul>
-<li>사자마자 팔기</li>
-<li>split TP/trailing을 기본값으로 넣기</li>
-<li>stage2~5를 한 번에 전부 pending으로 깔기</li>
-<li>Strategy Bot 안에 예외 if문을 계속 덧붙이기</li>
+<li><strong>왜 보나:</strong> GPU/HBM만 보지 않고 checkpoint, RAG cache, eSSD I/O 병목으로 확장하는 축.</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/440110-kq.html">FADU Inc. (440110.KQ)</a></strong> — AI 데이터센터용 엔터프라이즈 SSD 컨트롤러·스토리지 반도체 팹리스</li>
+<li>현재: 98,900.0 / -1.2% · 52W 74.4%, 20D 21.3% · ⚪ 회색</li>
+<li>핵심 판단: FADU Inc.: 2025년 하반기 대형 수주와 AI 데이터센터 SSD 수요가 2026년 연간 매출·영업레버리지로 이어지는지다. 현재 public price proxy는 52W 89.38%, drawdown -9.7%, 20D +73.8%, 60D +91.8%이고, public fundamentals snapshot은 PER -64.64, Forward PER 확인 필요, PBR 252.…</li>
+<li>다음 확인: DART/IR에서 수주 잔고·고객·매출 인식 조건 확인; 최근 증권사/리서치 preview 2건 이상에서 2026 매출·OP revision 방향 확인</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
 </ul>
-<h2>2. 자본 구조</h2>
+<h3>선단공정/장비 사이클</h3>
 <ul>
-<li>총자본 예시: <code>10,000 USDT</code></li>
-<li>전략용 서브계정만 운용</li>
-<li>메인 계정 reserve는 격리</li>
-<li>서브계정 내 cross margin</li>
-<li>손실 한도는 서브계정 잔고로 제한</li>
+<li><strong>왜 보나:</strong> AI 수요가 메모리·파운드리 capex와 공정 복잡도로 번역되는지 보는 축.</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/403870-kq.html">HPSP (403870.KQ)</a></strong> — high-pressure annealing equipment</li>
+<li>현재: 52,200.0 / 5.5% · 52W 66.0%, 20D -2.2% · ⚪ 회색</li>
+<li>핵심 판단: HPSP: HPSP는 AI/선단공정 장비 노출이 있지만 현재 public cache 기준으로는 PER 60x·forwardPE 40x·PBR 13.7x의 valuation 부담이 먼저 보인다. “한국의 ASML”류 narrative는 수주·고객·기술장벽 숫자 전에는 근거가 약하므로 판단 보류다. Naver public snapshot: PER 60.0, Forward PER 40.0, PB…</li>
+<li>다음 확인: DART/IR에서 수주잔고·고객별 매출·제품별 margin 추출; Applied Materials/TEL 등 peer 대비 기술장벽 검증</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/240810-kq.html">Wonik IPS (240810.KQ)</a></strong> — deposition/semicap equipment</li>
+<li>현재: 103,500.0 / -2.4% · 52W 62.8%, 20D -14.3% · ⚪ 회색</li>
+<li>핵심 판단: Wonik IPS tick 결론: Wonik IPS는 AI/HBM headline을 직접 파는 회사가 아니라 DRAM/NAND/foundry capex가 deposition/thermal semicap 장비 수주와 margin으로 전환되는지 보는 한국 장비 회사다. 오늘 판단은 메모리·파운드리 WFE 회복이 수주·출하·margin·EPS/OP revision으로 확인되는지이며 원문 IR·컨…</li>
+<li>다음 확인: DART/IR에서 장비별 매출, 수주잔고, 고객 capex allocation, gross/OP margin, inventory 확인; 증권사 preview/review 2건 이상에서 WFE 회복과 EPS/OP revision 방향 비교</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
 </ul>
-<p>현재 paper:</p>
+<h3>전력 인프라</h3>
 <ul>
-<li>capital: <code>2035 USDT</code></li>
-<li>exchange data: OKX public <code>BTC-USDT-SWAP</code></li>
-<li>private/trading API: 미사용</li>
-<li>live orders: 금지</li>
+<li><strong>왜 보나:</strong> AI 데이터센터의 전력망·변압기·배전·전력 케이블 병목이 수주잔고와 마진으로 이어지는지 보는 축.</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/010120-ks.html">LS ELECTRIC (010120.KS)</a></strong> — switchgear / grid automation / power infra</li>
+<li>현재: 241,500.0 / -2.0% · 52W 67.4%, 20D -11.5% · ⚪ 회색</li>
+<li>핵심 판단: LS ELECTRIC tick 결론: LS ELECTRIC은 AI data-center 전력병목을 배전·개폐기·전력자동화 수주와 margin으로 번역할 수 있는 한국 power-infra core company다. 오늘 판단은 전력망/데이터센터 수요가 수주잔고·판가·margin·EPS revision으로 확인되는지이며 원문 수주/컨센서스 검증 전에는 판단 보류다. 가격 241,500.00,…</li>
+<li>다음 확인: DART/IR에서 전력기기·자동화 부문 매출, 수주잔고, margin, capacity 계획 확인; 증권사 preview/review 2건 이상에서 EPS/OP revision과 수주 assumption 확인</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/267260-ks.html">HD Hyundai Electric (267260.KS)</a></strong> — transformer / power equipment for grid &amp; data center demand</li>
+<li>현재: 1,189,000.0 / 1.4% · 52W 77.3%, 20D -5.6% · ⚪ 회색</li>
+<li>핵심 판단: HD Hyundai Electric tick 결론: HD Hyundai Electric은 AI data-center 전력병목을 변압기·전력기기 수주잔고와 margin으로 번역하는 한국 power-infra core company다. 오늘 판단은 backlog/lead-time/판가가 EPS/OP revision으로 확인되는지이며 원문 수주·컨센서스 검증 전에는 판단 보류다. 가격 1,173…</li>
+<li>다음 확인: DART/IR에서 수주잔고·book-to-bill·지역별 mix·margin·capacity 계획 확인; 증권사 preview/review 2건 이상에서 EPS/OP revision과 backlog assumption 확인</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/298040-ks.html">Hyosung Heavy Industries (298040.KS)</a></strong> — transformer / heavy electrical equipment</li>
+<li>현재: 4,007,000.0 / 2.0% · 52W 82.2%, 20D 0.6% · ⚪ 회색</li>
+<li>핵심 판단: Hyosung Heavy Industries tick 결론: Hyosung Heavy Industries는 AI data-center 전력병목을 변압기·전력기기 수주잔고와 margin으로 번역할 수 있는 한국 power-infra 핵심 관찰 회사다. 오늘 판단은 전력망 shortage narrative가 실제 수주, 가격, 납기, capacity, OP/EPS revision으로 확인되는지…</li>
+<li>다음 확인: DART/IR에서 초고압변압기·차단기 수주잔고, 납기, 지역/customer mix, capacity, gross/OP margin 확인; 증권사 preview/review 2건 이상에서 backlog와 EPS/OP revision 방향 비교</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/103590-ks.html">Iljin Electric (103590.KS)</a></strong> — power cable / transformer / grid equipment</li>
+<li>현재: 89,800.0 / -3.3% · 52W 51.1%, 20D -24.9% · ⚪ 회색</li>
+<li>핵심 판단: Iljin Electric tick 결론: Iljin Electric은 AI data-center 전력병목을 전선·변압기·전력기기 수주와 margin으로 번역할 수 있는 한국 power-infra 관찰 회사다. 오늘 판단은 수주잔고와 납기·판가가 매출 인식과 EPS/OP revision으로 확인되는지이며 원문 수주·컨센서스 revision 전에는 판단 보류다. 가격 92,900.00, 일간…</li>
+<li>다음 확인: DART/IR에서 전선·변압기·전력기기 수주잔고, 납기, 지역 mix, gross/OP margin 확인; 증권사 preview/review 2건 이상에서 backlog와 EPS/OP revision 방향 비교</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
 </ul>
-<h2>3. 첫 매수 사이즈</h2>
-<p>5단계 누적 배수:</p>
-<pre><code>1 + 2 + 4 + 8 + 16 = 31</code></pre>
-<p>공식:</p>
-<pre><code>first_buy_notional = capital × leverage × safety_buffer / 31</code></pre>
-<p>기본값:</p>
-<pre><code>leverage = 20
-safety_buffer = 0.5</code></pre>
-<p>현재 2035 USDT paper 기준:</p>
-<pre><code>first_buy_notional = 2035 × 20 × 0.5 / 31
-                   ≈ 656.45 USDT
-stage1_margin      ≈ 32.82 USDT
-account_eff_lev    ≈ 0.3226x at stage1</code></pre>
-<h2>4. 진입 / 추가매수 / 익절</h2>
-<p>Stage ladder:</p>
+<h3>AI 응용/서비스</h3>
 <ul>
-<li>Stage 1: market starter buy, size <code>1x</code></li>
-<li>Stage 2: Stage 1 기준 약 <code>-1%</code>, size <code>2x</code></li>
-<li>Stage 3: 다음 <code>-1%</code>, size <code>4x</code></li>
-<li>Stage 4: 다음 <code>-1%</code>, size <code>8x</code></li>
-<li>Stage 5: 다음 <code>-1%</code>, size <code>16x</code></li>
+<li><strong>왜 보나:</strong> 칩 밖에서 실제 업무/의료/로봇/GPU cloud 매출로 AI가 전환되는지 보는 축.</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/018260-ks.html">Samsung SDS (018260.KS)</a></strong> — enterprise cloud / AI transformation / data center services</li>
+<li>현재: 194,700.0 / 5.1% · 52W 25.3%, 20D 14.4% · ⚪ 회색</li>
+<li>핵심 판단: Samsung SDS tick 결론: Samsung SDS는 Agent/enterprise AI adoption을 클라우드·MSP·AI transformation 프로젝트로 번역하는 한국 platform/service 관찰 회사다. 오늘 판단은 AI/클라우드 narrative가 IT서비스 매출 성장, margin mix, backlog, EPS/OP revision으로 확인되는지이며 원문 …</li>
+<li>다음 확인: DART/IR에서 cloud/MSP/생성AI 프로젝트 매출, backlog, margin mix 분리 확인; 증권사 preview/review 2건 이상에서 IT서비스/클라우드 EPS·OP revision 방향 확인</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/328130-kq.html">Lunit Inc. (328130.KQ)</a></strong> — AI 기반 암 진단·검진 및 정밀의료 소프트웨어 공급자</li>
+<li>현재: 18,430.0 / 11.4% · 52W 23.9%, 20D -10.5% · ⚪ 회색</li>
+<li>핵심 판단: Lunit Inc. tick 결론: Lunit은 AI 기술 정당성보다 병원·제약·보험 workflow adoption과 규제/급여/파트너 매출 전환을 확인해야 하는 healthcare AI 관찰 회사다. 오늘 판단은 INSIGHT/SCOPE의 임상·파트너 narrative가 반복매출, 국가별 adoption, 손실 축소, EPS/FCF revision으로 확인되는지이며 원문 IR·verif…</li>
+<li>다음 확인: DART/IR에서 INSIGHT/SCOPE 제품별 매출, ARR/반복매출, 파트너 계약, 인허가·급여, cash runway 확인; 증권사 preview/review 2건 이상에서 매출 성장·손실 축소·자금조달 전망과 revision 방향 비교</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/277810-kq.html">Rainbow Robotics (277810.KQ)</a></strong> — humanoid/industrial robotics</li>
+<li>현재: 761,000.0 / 8.4% · 52W 70.1%, 20D 14.6% · ⚪ 회색</li>
+<li>핵심 판단: Rainbow Robotics tick 결론: Rainbow Robotics는 ‘삼성 로봇 option’ headline만으로 판단하면 위험한 한국 robotics 관찰 회사다. 오늘 판단은 기술/지분 narrative가 실제 협동로봇·휴머노이드 플랫폼 수주, 고객 채널, 매출 인식, margin, EPS revision으로 확인되는지이며 원문 IR·verified consensus rev…</li>
+<li>다음 확인: DART/IR에서 로봇 제품별 매출, 수주잔고, 고객/채널, R&amp;D·gross/OP margin, 현금소진 확인; 증권사 preview/review 2건 이상에서 삼성 협업·휴머노이드 option이 EPS/OP revision으로 반영되는지 비교</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
+<li><strong><a href="/research-desk/market-ontology/company-reports/crwv-us.html">CoreWeave (CRWV.US)</a></strong> — AI GPU cloud / neocloud infrastructure provider</li>
+<li>현재: 109.5 / 2.5% · 52W 37.1%, 20D -1.9% · ⚪ 회색</li>
+<li>핵심 판단: CoreWeave tick 결론: CoreWeave는 AI GPU cloud 수요를 매출로 직접 바꾸는 neocloud 후보지만, 핵심은 성장률 자체가 아니라 contracted backlog가 GPU utilization·gross margin·FCF로 번역되고 debt-funded capex 부담을 이기는지다. 원문 SEC/IR·verified consensus revision 전에는 …</li>
+<li>다음 확인: SEC/IR에서 RPO/backlog, top customer concentration, GPU fleet/capex, debt/interest, gross margin 확인; brokerage/consensus 2건 이상에서 revenue guide와 FCF/EPS revision 방향 비교</li>
+<li>작업 큐 gate: original_source_numeric_reconciliation, source_model_revision_traceability, revision_model_linkage</li>
 </ul>
-<p>Pending order rule:</p>
+<h2>오늘 반영한 운영 규칙</h2>
 <ul>
-<li>한 번에 <strong>다음 stage 1개만</strong> pending으로 둔다.</li>
-<li>stage2~5를 전부 미리 깔지 않는다.</li>
-<li>다음 stage가 체결되면 buy_stage를 올리고, 조건이 맞을 때 다음 stage 1개를 다시 둔다.</li>
+<li>빛과전자(069540.KQ), 인텍플러스(064290.KQ)는 <strong>상단 요약/강력 후보/작업 큐 1순위에서 cooldown</strong> 처리.</li>
+<li><code>company-analysis-work-queue.json</code>의 fresh-company rotation 1~13순위가 위 새 후보들로 재배치됨.</li>
+<li>Market Brief의 가격 mover / 수혜 후보 회사 계산에서도 두 종목이 headline을 반복 점유하지 않도록 조정.</li>
 </ul>
-<p>Take profit:</p>
-<pre><code>take_profit_price = avg_entry × 1.005</code></pre>
+<h2>링크</h2>
 <ul>
-<li>TP 도달 시 전체 포지션 익절</li>
-<li>TP 미충족이면 보유</li>
-<li>gate OFF여도 TP는 계속 작동</li>
-<li>기본 전략에는 split TP/trailing stop 없음</li>
-</ul>
-<h2>5. Add-Buy Gate</h2>
-<p>게이트는 원본 진입/익절을 바꾸지 않는다. <strong>남은 추가매수를 진행할지</strong>만 결정한다.</p>
-<p>ON — 모두 충족:</p>
-<ul>
-<li><code>ADX &lt; 22</code></li>
-<li>Bollinger squeeze lower breakdown 없음</li>
-<li>margin ratio proxy <code>&lt; 50%</code></li>
-</ul>
-<p>OFF — 하나라도 충족:</p>
-<ul>
-<li><code>ADX &gt; 25 and rising</code></li>
-<li>Bollinger squeeze lower breakdown</li>
-<li>margin ratio proxy <code>&gt; 60%</code></li>
-</ul>
-<p>REST:</p>
-<ul>
-<li>hard OFF는 아니지만 ON 조건도 부족한 중립 상태</li>
-<li>새 추가매수 주문을 적극적으로 깔지 않는다</li>
-<li>기존 포지션은 보유하고 TP를 기다린다</li>
-</ul>
-<p>OFF 행동:</p>
-<ul>
-<li>남은 pending buy 취소</li>
-<li>추가매수 중단</li>
-<li>보유 포지션의 avg+0.5% TP 유지</li>
-</ul>
-<h2>6. Margin 방어</h2>
-<p>내부 단계:</p>
-<ul>
-<li><code>50%</code>: 경고 / 다음 추가매수 skip 후보</li>
-<li><code>60%</code>: 남은 pending buy 취소</li>
-<li><code>70%</code>: 포지션 일부 축소 후보</li>
-</ul>
-<p>이건 손절 전략이 아니라 <strong>더 이상 못 사게 막는 장치</strong>다.</p>
-<h2>7. Backtest Requirements</h2>
-<p>캔들 종가만 보는 백테스트 금지.</p>
-<p>필수:</p>
-<ul>
-<li>Mark Price 기준 liquidation/margin ratio 계산</li>
-<li>round-trip fee</li>
-<li>funding rate</li>
-<li>partial fill simulation</li>
-<li>slippage simulation</li>
-<li>cross-margin equity tracking</li>
-<li>pending order cancellation logic</li>
-<li>stage별 fill/TP event ledger</li>
-</ul>
-<h2>8. Live Promotion Gate</h2>
-<p>live 승격 전 필수 조건:</p>
-<ul>
-<li>최소 며칠 이상의 public-data paper run</li>
-<li>stage별 fill/TP/reject ledger 검증</li>
-<li>fee/funding/slippage 포함 PnL 검증</li>
-<li>black-swan scenario replay</li>
-<li>Validator Agent 승인</li>
-<li>Risk Bot 승인</li>
-<li>사용자 명시 승인</li>
-</ul>
-<p>현재 상태:</p>
-<pre><code>live_orders_allowed = false
-private_api_used = false
-trading_api_used = false</code></pre>
-<h2>9. Operating Summary</h2>
-<pre><code>Start
-→ stage1 first buy
-→ if TP avg+0.5% hit: full close
-→ else if gate ON: place next stage only
-→ if next stage filled: update avg, increase stage
-→ if gate OFF/REST: stop new add-buys, keep TP active
-→ repeat until TP or max stage/risk intervention</code></pre></article></main>
+<li><a href="/research-desk/market-ontology/company-reports/index.html">Company Report Hub</a></li>
+<li><a href="/research-desk/market-ontology/securities-reports.html">Institutional Securities Desk</a></li>
+<li><a href="/research-desk/reports/market/2026-06-01.html">오늘 Market Brief</a></li>
+</ul></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
