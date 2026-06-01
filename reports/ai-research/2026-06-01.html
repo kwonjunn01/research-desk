@@ -272,7 +272,9 @@
 <li><strong>Collected at:</strong> 2026-06-01T01:02+00:00 UTC / 2026-06-01 10:02 KST</li>
 </ul>
 <hr>
-<h2>1. HF Daily digest — 먼저 볼 논문</h2>
+<h2>1. 5분 본문 — HF digest + Deep Card</h2>
+<blockquote>Hard Contract: HF Daily digest, Deep Card, 5분 스캔을 §1 안에 통합한다. 별도 specialist watch 섹션은 만들지 않고 layer/bottleneck metadata는 Deep Card에 흡수한다.</blockquote>
+<h3>HF Daily digest — 먼저 볼 논문</h3>
 <h3>20초 요약</h3>
 <ul>
 <li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 127 <a href="https://huggingface.co/papers/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framew…</a> / #2 👍 107 <a href="https://huggingface.co/papers/2605.30280">Qwen-VLA: Unifying Vision-Language-Action Modeling across…</a> / #3 👍 66 <a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Kno…</a></li>
@@ -374,7 +376,18 @@
 <li><strong>내 판단:</strong> agent가 길고 많은 요청을 처리할 때 터지는 메모리·prefill 비용 병목을 줄이는 쪽이다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
 <li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
 </ul>
-<h2>2. 한눈에 보는 오늘의 AI Research 지도</h2>
+<h3>Deep Card — today_one_paper</h3>
+<h4><a href="https://huggingface.co/papers/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security</a></h4>
+<ul>
+<li><strong>논문/자료:</strong> Hugging Face Daily Papers · Agent / Tool-use · score 20</li>
+<li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Modern open-world agents such as OpenClaw exhibit powerful cross-environment execution capabilities yet introduce broad new safety risk sources. Meanwhile, advanced frontier AI models drastically lower attack barriers, rendering current agent alignment framew…</li>
+<li><strong>왜 지금 중요한가:</strong> Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
+<li><strong>Deep Card metadata:</strong> signal_id=today_one_paper-2026-06-01-agentdog-1-5-a-lightweight-and-scalable-alignmen; source=Hugging Face Daily Papers; paper_id=2605.29801; layer=Agent / Tool-use; bottleneck=trust_security; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Agent / Tool-use; adoption evidence=abstract_enriched; workload/bottleneck=trust_security; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Invalidation:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
+</ul>
+<h3>한눈에 보는 오늘의 AI Research 지도</h3>
 <div class="viz-card"><div class="mermaid">flowchart LR
   PT[&quot;Post-training / RLVR&quot;] --&gt; AG[&quot;Agentic AI&quot;]
   ORCH[&quot;LLM Orchestration&quot;] --&gt; AG
@@ -390,20 +403,8 @@
 <li><strong><span class="badge">Inference Stack</span> 12:</strong> <a href="https://huggingface.co/papers/2605.30102">When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><strong><span class="badge">On-device LLM</span> 11:</strong> <a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources</a> — Hugging Face Daily Papers, score 20, <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
 </ul>
-<h2>3. 5분 본문</h2>
-<h3>Deep Card — today_one_paper</h3>
-<h4><a href="https://huggingface.co/papers/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security</a></h4>
-<ul>
-<li><strong>논문/자료:</strong> Hugging Face Daily Papers · Agent / Tool-use · score 20</li>
-<li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Modern open-world agents such as OpenClaw exhibit powerful cross-environment execution capabilities yet introduce broad new safety risk sources. Meanwhile, advanced frontier AI models drastically lower attack barriers, rendering current agent alignment framew…</li>
-<li><strong>왜 지금 중요한가:</strong> Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=today_one_paper-2026-06-01-agentdog-1-5-a-lightweight-and-scalable-alignmen; source=Hugging Face Daily Papers; paper_id=2605.29801; layer=Agent / Tool-use; bottleneck=trust_security; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Agent / Tool-use; adoption evidence=abstract_enriched; workload/bottleneck=trust_security; market recognition=아직 관찰; price/revision=연결 전</li>
-<li><strong>Invalidation:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
-</ul>
 <details><summary>아래는 archive입니다. 시간 없으면 여기서 멈춰도 됨.</summary>
-<h2>4. 훑을 것 3~5개</h2>
+<h2>2. 훑을 것 3~5개</h2>
 <h3>Skim 1. <a href="https://huggingface.co/papers/2605.25378">CollectionLoRA: Collecting 50 Effects in 1 LoRA via Multi-Teacher On-Policy Distillation</a></h3>
 <ul>
 <li><strong>Layer:</strong> Reasoning / Post-training · <strong>bottleneck:</strong> research_relevance_check · <strong>score:</strong> 14</li>
@@ -432,7 +433,7 @@
 <li><strong>판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
 <li><strong>다음 확인:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
 </ul>
-<h2>5. 스킵 표</h2>
+<h2>3. 스킵 표</h2>
 <h3>Skip 1. <a href="https://huggingface.co/papers/2605.30073">Native Audio-Visual Alignment for Generation</a></h3>
 <ul>
 <li><strong>Layer:</strong> Reasoning / Post-training · <strong>bottleneck:</strong> research_relevance_check · <strong>score:</strong> 10</li>
@@ -457,8 +458,8 @@
 <li><strong>skippable:</strong> 오늘 핵심 병목/시장 연결보다 우선순위가 낮아 archive로 보낸다.</li>
 <li><strong>다음 확인:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
 </ul>
-<h2>6. Today&#x27;s Active Lens</h2>
-<blockquote>전체 10 lens를 늘어놓지 않고 오늘 실제 evidence가 있는 3~5개만 유지한다. 위 §3/§4/§5 paper는 중복 카드로 재등장시키지 않는다.</blockquote>
+<h2>4. Today&#x27;s Active Lens</h2>
+<blockquote>전체 10 lens를 늘어놓지 않고 오늘 실제 evidence가 있는 3~5개만 유지한다. 위 §1/§2/§3 paper는 중복 카드로 재등장시키지 않는다.</blockquote>
 <h3>Agent 실사용 — signal+hype 혼재</h3>
 <ul>
 <li><strong>왜 봄:</strong> 도구 사용, workflow, 협업 agent가 실제 제품/업무로 이어지는지</li>
@@ -489,94 +490,7 @@
 <li><a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources</a> — Hugging Face Daily Papers, score 20, <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
 <li><a href="https://huggingface.co/papers/2605.30102">When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 </ul>
-<h2>7. Agent AI Specialist Watch</h2>
-<p>Agent AI를 하나의 키워드로 보지 않고, <code>model → planning → tool → memory → browser/runtime → eval/security → personal product</code> stack으로 나눠 본다.</p>
-<h3>오늘의 layer heat</h3>
-<ul>
-<li><strong>Model &amp; Reasoning:</strong> 중 — 모델이 agent task 성공률을 실제로 올리는지</li>
-<li><a href="https://huggingface.co/papers/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Post-training</span></li>
-<li><a href="https://huggingface.co/papers/2605.30102">When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
-<li><strong>Planning &amp; Control:</strong> 중 — goal 분해·재계획·human checkpoint가 있는지</li>
-<li><a href="https://huggingface.co/papers/2605.29861">Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.29534">UI-KOBE: Knowledge-Oriented Behavior Exploration for Lightweight Graph-Guided GUI Agents</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
-<li><strong>Tool Use / MCP:</strong> 중 — 외부 tool/API 연결이 안정적인지</li>
-<li><a href="https://huggingface.co/papers/2605.29861">Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.30248">GenClaw: Code-Driven Agentic Image Generation</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
-<li><strong>Memory / RAG:</strong> 중 — memory가 정확도 개선인지 context pollution인지</li>
-<li><a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources</a> — Hugging Face Daily Papers, score 20, <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><a href="https://huggingface.co/papers/2605.29861">Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><strong>Browser / Computer Use:</strong> 중 — 실제 웹/OS 조작이 견고한지</li>
-<li><a href="https://huggingface.co/papers/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Post-training</span></li>
-<li><a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources</a> — Hugging Face Daily Papers, score 20, <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><strong>Runtime / Ops:</strong> 중 — 장기 실행·resume·trace가 가능한지</li>
-<li><a href="https://huggingface.co/papers/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Post-training</span></li>
-<li><a href="https://huggingface.co/papers/2605.29861">Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><strong>Eval / Observability:</strong> 중 — 벤치마크와 실제 사용성 gap을 줄이는지</li>
-<li><a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources</a> — Hugging Face Daily Papers, score 20, <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><a href="https://huggingface.co/papers/2605.30102">When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
-<li><strong>Security / Trust:</strong> 약 — 권한·보안·감사 경계가 명확한지</li>
-<li><a href="https://huggingface.co/papers/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Post-training</span></li>
-<li><strong>Personal Agent Product:</strong> 중 — chatbot이 아니라 recurring personal workflow인지</li>
-<li><a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a> — Hacker News, score 3, <span class="badge">Agentic AI</span></li>
-<li><a href="https://getattache.com/">Show HN: I built an AI executive assistant you use through iMessage</a> — Hacker News, score 3, <span class="badge">Personal Agent</span></li>
-</ul>
-<h3>오늘의 Agent AI 병목</h3>
-<ul>
-<li><strong>long_horizon_reliability:</strong> evidence 2 — 긴 작업을 끝까지 수행·복구하는 신뢰성</li>
-<li><a href="https://huggingface.co/papers/2605.29861">Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><a href="https://huggingface.co/papers/2605.29534">UI-KOBE: Knowledge-Oriented Behavior Exploration for Lightweight Graph-Guided GUI Agents</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
-<li><strong>tool_error_recovery:</strong> evidence 2 — tool/function/API 실패 후 retry·fallback 복구력</li>
-<li><a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources</a> — Hugging Face Daily Papers, score 20, <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><a href="https://huggingface.co/papers/2605.27995">AsyncTool: Evaluating the Asynchronous Function Calling Capability under Multi-Task Scenarios</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">Inference Stack</span></li>
-<li><strong>memory_precision:</strong> evidence 2 — memory/RAG가 정확도를 올리는지 context pollution을 만드는지</li>
-<li><a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources</a> — Hugging Face Daily Papers, score 20, <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><a href="https://huggingface.co/papers/2605.29861">Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
-<li><strong>browser_ui_drift:</strong> evidence 2 — 웹/GUI 변화에도 browser/computer-use agent가 버티는지</li>
-<li><a href="https://huggingface.co/papers/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Post-training</span></li>
-<li><a href="https://huggingface.co/papers/2605.30248">GenClaw: Code-Driven Agentic Image Generation</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span></li>
-<li><strong>permission_boundary:</strong> 직접 evidence 약함 — 승인·권한·감사 경계가 product adoption을 막는지; watch 유지</li>
-<li><strong>prompt_injection:</strong> 직접 evidence 약함 — 간접 prompt injection/jailbreak가 tool·memory를 오염시키는지; watch 유지</li>
-<li><strong>eval_production_gap:</strong> evidence 2 — benchmark 개선이 production task 성공으로 이어지는지</li>
-<li><a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources</a> — Hugging Face Daily Papers, score 20, <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
-<li><a href="https://huggingface.co/papers/2605.30102">When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
-<li><strong>cost_latency:</strong> evidence 2 — token·latency·throughput 비용이 agent 사용량을 막는지</li>
-<li><a href="https://huggingface.co/papers/2605.30102">When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems</a> — Hugging Face Daily Papers, score 20, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
-<li><a href="https://huggingface.co/papers/2605.27995">AsyncTool: Evaluating the Asynchronous Function Calling Capability under Multi-Task Scenarios</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">Inference Stack</span></li>
-</ul>
-<h3>오늘의 강력 관찰 후보 1~2개</h3>
-<blockquote>추천이 아니라 참고용 early narrative 후보. 며칠간 같은 후보가 반복돼도 강한 narrative inertia로 유지한다.</blockquote>
-<ul>
-<li><strong>후보 1 — Agent workload → HBM/DRAM/AI server memory</strong></li>
-<li><strong>예상 전파:</strong> Agent workflow 인정 → multi-step inference/context/session 증가 → HBM·server DRAM·AI server 병목 → memory supplier/data center narrative</li>
-<li><strong>핵심 병목:</strong> HBM bandwidth, server DRAM content, KV/context cache, power/cooling</li>
-<li><strong>누가 해결 중인가:</strong> memory 공급자, AI server/OEM, hyperscaler infra team, inference serving stack</li>
-<li><strong>다음 확인:</strong> hyperscaler가 agent/inference workload를 capex·memory 수요와 같이 언급하는지</li>
-<li><strong>틀릴 조건:</strong> 실제 agent usage가 demo에 머물거나 efficiency/on-device/API 대체가 memory 증가를 압도</li>
-<li><strong>후보 2 — Agent browser/computer use → network/browser/proxy/observability 병목</strong></li>
-<li><strong>예상 전파:</strong> browser-use agent 확산 → task당 page load/request/screenshot/DOM extraction 증가 → proxy/CDN/anti-bot/browser runtime/observability 수요</li>
-<li><strong>핵심 병목:</strong> latency, bandwidth, anti-bot 차단, browser runtime cost, logging/monitoring</li>
-<li><strong>누가 해결 중인가:</strong> browser automation infra, proxy/CDN/security, agent observability, MCP/API data providers</li>
-<li><strong>다음 확인:</strong> Cloudflare/Akamai/Fastly/Zscaler/Datadog/Browserbase류가 AI agent traffic을 언급하는지</li>
-<li><strong>틀릴 조건:</strong> production agent가 일반 browsing 대신 API/MCP/cached search/structured data feed로 우회</li>
-</ul>
-<h3>Cross-market / prediction 후보</h3>
-<ul>
-<li>Agent workload 증가 → Inference Stack / Data Center: task당 token/tool/browser call이 늘어나는지 확인</li>
-<li>Memory/RAG 확산 → Storage / Retrieval / Security: enterprise agent memory가 tooling 수요를 만드는지 확인</li>
-<li>Browser/Computer Use 확산 → Network / Proxy / CDN / Observability: browser traffic과 anti-bot 병목이 생기는지 확인</li>
-<li>On-device personal agent → Edge AI / Device / Privacy: local inference narrative로 이어지는지 확인</li>
-<li>Eval/Observability 중요도 상승 → AI DevOps / Monitoring: production incident가 tooling 수요를 당기는지 확인</li>
-</ul>
-<h3>내가 모르는 것 점검</h3>
-<ol>
-<li>실패 원인이 모델 능력 부족인지, tool/runtime/state 문제인지 구분됐는가?</li>
-<li>benchmark 상승이 실제 personal agent 사용성으로 이어지는가?</li>
-<li>memory가 정확도를 올렸는가, context pollution을 만들었는가?</li>
-<li>browser/computer use는 비용 대비 실제 업무 이득이 있는가?</li>
-<li>permission/approval/audit boundary가 명확한가?</li>
-</ol>
-<hr>
-<h2>8. 시장·투자 연결 후보</h2>
+<h2>5. 시장·투자 연결 후보</h2>
 <p>투자 추천 아님. AI research signal이 workload/bottleneck/industry narrative로 번역될 수 있는지 보는 후보만 기록한다.</p>
 <ul>
 <li><strong>후보 1:</strong> personal/enterprise agent → privacy·security·governance tooling 후보</li>
@@ -584,13 +498,13 @@
 <li><strong>다음 확인:</strong> 같은 병목이 제품 release note, hyperscaler capex, infra vendor commentary에서 반복되는지</li>
 <li><strong>반증:</strong> 논문/데모가 benchmark 내부에만 머물고 실제 workload 증가 증거가 없으면 보류</li>
 </ul>
-<h2>9. 다음 확인</h2>
+<h2>6. 다음 확인</h2>
 <ul>
 <li><strong>7d:</strong> today_one_paper 원문·코드·benchmark 조건 확인, 같은 bottleneck 반복 여부 확인</li>
 <li><strong>30d:</strong> cross-ontology candidate가 실제 제품/수요/capex narrative로 이어지는지 확인</li>
 <li><strong>90d+:</strong> 장기 예측은 prediction-board로 이동하고 이 report에는 넣지 않는다.</li>
 </ul>
-<h2>10. 원본 링크</h2>
+<h2>7. 원본 링크</h2>
 <ul>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.29250">OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources</a></li>
