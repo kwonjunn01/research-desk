@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26",
+  "generated_at": "2026-06-01",
   "method": "agent-based rule registry v0.2; analyst-agent edges are hypotheses and require filings/news verification",
   "rules_version": "0.2.0",
   "agents": [
@@ -191,6 +191,17 @@
       "role": "process control/inspection",
       "tier": "core",
       "region": "US",
+      "bucket": "semicap_foundry"
+    },
+    {
+      "id": "064290.KQ",
+      "symbol": "064290.KQ",
+      "company": "IntekPlus",
+      "category": "Foundry / Advanced Packaging / Semiconductor Equipment",
+      "node": "Advanced Packaging",
+      "role": "semiconductor inspection/metrology equipment for advanced packaging and HBM-adjacent yield control",
+      "tier": "watch",
+      "region": "Korea",
       "bucket": "semicap_foundry"
     },
     {
@@ -631,6 +642,17 @@
       "role": "AI data center Ethernet switching",
       "tier": "core",
       "region": "US",
+      "bucket": "networking"
+    },
+    {
+      "id": "069540.KQ",
+      "symbol": "069540.KQ",
+      "company": "빛과전자",
+      "category": "Networking / Optical / Interconnect",
+      "node": "AI Data Center Networking",
+      "role": "optical module / telecom optical-networking supplier; AI data-center optical pivot unverified",
+      "tier": "watch",
+      "region": "Korea",
       "bucket": "networking"
     },
     {
@@ -2983,6 +3005,26 @@
     },
     {
       "source": "NVDA.US",
+      "target": "064290.KQ",
+      "relation": "supply_dependency",
+      "direction": "upstream",
+      "strength": 0.82,
+      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "filing/IR/customer concentration evidence",
+        "qualification/lead-time evidence",
+        "alternative supplier risk check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "NVDA.US",
       "target": "TER.US",
       "relation": "supply_dependency",
       "direction": "upstream",
@@ -3044,26 +3086,6 @@
     {
       "source": "NVDA.US",
       "target": "095340.KQ",
-      "relation": "supply_dependency",
-      "direction": "upstream",
-      "strength": 0.82,
-      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "filing/IR/customer concentration evidence",
-        "qualification/lead-time evidence",
-        "alternative supplier risk check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "NVDA.US",
-      "target": "058470.KQ",
       "relation": "supply_dependency",
       "direction": "upstream",
       "strength": 0.82,
@@ -3183,6 +3205,26 @@
     },
     {
       "source": "AMD.US",
+      "target": "064290.KQ",
+      "relation": "supply_dependency",
+      "direction": "upstream",
+      "strength": 0.82,
+      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "filing/IR/customer concentration evidence",
+        "qualification/lead-time evidence",
+        "alternative supplier risk check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "AMD.US",
       "target": "TER.US",
       "relation": "supply_dependency",
       "direction": "upstream",
@@ -3244,26 +3286,6 @@
     {
       "source": "AMD.US",
       "target": "095340.KQ",
-      "relation": "supply_dependency",
-      "direction": "upstream",
-      "strength": 0.82,
-      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "filing/IR/customer concentration evidence",
-        "qualification/lead-time evidence",
-        "alternative supplier risk check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "AMD.US",
-      "target": "058470.KQ",
       "relation": "supply_dependency",
       "direction": "upstream",
       "strength": 0.82,
@@ -3383,6 +3405,26 @@
     },
     {
       "source": "AVGO.US",
+      "target": "064290.KQ",
+      "relation": "supply_dependency",
+      "direction": "upstream",
+      "strength": 0.82,
+      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "filing/IR/customer concentration evidence",
+        "qualification/lead-time evidence",
+        "alternative supplier risk check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "AVGO.US",
       "target": "TER.US",
       "relation": "supply_dependency",
       "direction": "upstream",
@@ -3444,26 +3486,6 @@
     {
       "source": "AVGO.US",
       "target": "095340.KQ",
-      "relation": "supply_dependency",
-      "direction": "upstream",
-      "strength": 0.82,
-      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "filing/IR/customer concentration evidence",
-        "qualification/lead-time evidence",
-        "alternative supplier risk check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "AVGO.US",
-      "target": "058470.KQ",
       "relation": "supply_dependency",
       "direction": "upstream",
       "strength": 0.82,
@@ -3583,6 +3605,26 @@
     },
     {
       "source": "MRVL.US",
+      "target": "064290.KQ",
+      "relation": "supply_dependency",
+      "direction": "upstream",
+      "strength": 0.82,
+      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "filing/IR/customer concentration evidence",
+        "qualification/lead-time evidence",
+        "alternative supplier risk check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "MRVL.US",
       "target": "TER.US",
       "relation": "supply_dependency",
       "direction": "upstream",
@@ -3644,26 +3686,6 @@
     {
       "source": "MRVL.US",
       "target": "095340.KQ",
-      "relation": "supply_dependency",
-      "direction": "upstream",
-      "strength": 0.82,
-      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "filing/IR/customer concentration evidence",
-        "qualification/lead-time evidence",
-        "alternative supplier risk check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "MRVL.US",
-      "target": "058470.KQ",
       "relation": "supply_dependency",
       "direction": "upstream",
       "strength": 0.82,
@@ -3783,6 +3805,26 @@
     },
     {
       "source": "QCOM.US",
+      "target": "064290.KQ",
+      "relation": "supply_dependency",
+      "direction": "upstream",
+      "strength": 0.82,
+      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "filing/IR/customer concentration evidence",
+        "qualification/lead-time evidence",
+        "alternative supplier risk check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "QCOM.US",
       "target": "TER.US",
       "relation": "supply_dependency",
       "direction": "upstream",
@@ -3844,26 +3886,6 @@
     {
       "source": "QCOM.US",
       "target": "095340.KQ",
-      "relation": "supply_dependency",
-      "direction": "upstream",
-      "strength": 0.82,
-      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "filing/IR/customer concentration evidence",
-        "qualification/lead-time evidence",
-        "alternative supplier risk check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "QCOM.US",
-      "target": "058470.KQ",
       "relation": "supply_dependency",
       "direction": "upstream",
       "strength": 0.82,
@@ -3983,6 +4005,26 @@
     },
     {
       "source": "ARM.US",
+      "target": "064290.KQ",
+      "relation": "supply_dependency",
+      "direction": "upstream",
+      "strength": 0.82,
+      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "filing/IR/customer concentration evidence",
+        "qualification/lead-time evidence",
+        "alternative supplier risk check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "ARM.US",
       "target": "TER.US",
       "relation": "supply_dependency",
       "direction": "upstream",
@@ -4044,26 +4086,6 @@
     {
       "source": "ARM.US",
       "target": "095340.KQ",
-      "relation": "supply_dependency",
-      "direction": "upstream",
-      "strength": 0.82,
-      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "filing/IR/customer concentration evidence",
-        "qualification/lead-time evidence",
-        "alternative supplier risk check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "ARM.US",
-      "target": "058470.KQ",
       "relation": "supply_dependency",
       "direction": "upstream",
       "strength": 0.82,
@@ -4183,6 +4205,26 @@
     },
     {
       "source": "INTC.US",
+      "target": "064290.KQ",
+      "relation": "supply_dependency",
+      "direction": "upstream",
+      "strength": 0.82,
+      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "filing/IR/customer concentration evidence",
+        "qualification/lead-time evidence",
+        "alternative supplier risk check"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "INTC.US",
       "target": "TER.US",
       "relation": "supply_dependency",
       "direction": "upstream",
@@ -4262,26 +4304,6 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
-      "source": "INTC.US",
-      "target": "058470.KQ",
-      "relation": "supply_dependency",
-      "direction": "upstream",
-      "strength": 0.82,
-      "reason": "AI silicon scaling은 foundry/advanced packaging/equipment 병목에 민감",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "filing/IR/customer concentration evidence",
-        "qualification/lead-time evidence",
-        "alternative supplier risk check"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
       "source": "NVDA.US",
       "target": "MU.US",
       "relation": "attach_dependency",
@@ -10463,6 +10485,26 @@
     },
     {
       "source": "MSFT.US",
+      "target": "069540.KQ",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Microsoft의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "MSFT.US",
       "target": "CSCO.US",
       "relation": "demand_pull",
       "direction": "upstream",
@@ -10584,6 +10626,26 @@
     {
       "source": "GOOGL.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Alphabet의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "GOOGL.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -10724,6 +10786,26 @@
     {
       "source": "AMZN.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Amazon의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "AMZN.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -10864,6 +10946,26 @@
     {
       "source": "META.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Meta의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "META.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -11004,6 +11106,26 @@
     {
       "source": "ORCL.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Oracle의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "ORCL.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -11144,6 +11266,26 @@
     {
       "source": "CRWV.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "CoreWeave의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "CRWV.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -11284,6 +11426,26 @@
     {
       "source": "SNOW.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Snowflake의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "SNOW.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -11424,6 +11586,26 @@
     {
       "source": "PLTR.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Palantir의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "PLTR.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -11564,6 +11746,26 @@
     {
       "source": "035420.KS",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "NAVER의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "035420.KS",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -11704,6 +11906,26 @@
     {
       "source": "035720.KS",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Kakao의 AI cluster scale-out은 networking/optical interconnect 수요를 만들 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "035720.KS",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -11844,6 +12066,26 @@
     {
       "source": "018260.KS",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Samsung SDS의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "018260.KS",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -11984,6 +12226,26 @@
     {
       "source": "NBIS.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Nebius Group N.V.의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "NBIS.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -12124,6 +12386,26 @@
     {
       "source": "DDOG.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Datadog의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "DDOG.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -12264,6 +12546,26 @@
     {
       "source": "NET.US",
       "target": "ANET.US",
+      "relation": "demand_pull",
+      "direction": "upstream",
+      "strength": 0.72,
+      "reason": "Cloudflare의 AI CAPEX/cluster 증설은 networking 수요를 끌어올릴 수 있음",
+      "agent": "demand_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "hyperscaler CAPEX/AI workload statement",
+        "order/backlog or utilization evidence",
+        "price/volume reaction is supporting only, not primary"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "NET.US",
+      "target": "069540.KQ",
       "relation": "demand_pull",
       "direction": "upstream",
       "strength": 0.72,
@@ -12483,6 +12785,26 @@
     },
     {
       "source": "TSM.US",
+      "target": "064290.KQ",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "TSM.US",
       "target": "TER.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
@@ -12624,26 +12946,6 @@
     {
       "source": "TSM.US",
       "target": "005930.KS",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "TSM.US",
-      "target": "ETN.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -12723,6 +13025,26 @@
     },
     {
       "source": "ASML.US",
+      "target": "064290.KQ",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "ASML.US",
       "target": "TER.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
@@ -12864,26 +13186,6 @@
     {
       "source": "ASML.US",
       "target": "005930.KS",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "ASML.US",
-      "target": "ETN.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -12943,6 +13245,26 @@
     },
     {
       "source": "AMAT.US",
+      "target": "064290.KQ",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "AMAT.US",
       "target": "TER.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
@@ -13084,26 +13406,6 @@
     {
       "source": "AMAT.US",
       "target": "005930.KS",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "AMAT.US",
-      "target": "ETN.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -13143,6 +13445,26 @@
     },
     {
       "source": "LRCX.US",
+      "target": "064290.KQ",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "LRCX.US",
       "target": "TER.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
@@ -13302,8 +13624,8 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
-      "source": "LRCX.US",
-      "target": "ETN.US",
+      "source": "KLAC.US",
+      "target": "064290.KQ",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -13482,8 +13804,148 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
-      "source": "KLAC.US",
-      "target": "ETN.US",
+      "source": "064290.KQ",
+      "target": "TER.US",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "064290.KQ",
+      "target": "ASM.AS",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "064290.KQ",
+      "target": "042700.KQ",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "064290.KQ",
+      "target": "095340.KQ",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "064290.KQ",
+      "target": "058470.KQ",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "064290.KQ",
+      "target": "240810.KQ",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "064290.KQ",
+      "target": "403870.KQ",
+      "relation": "bottleneck_cluster",
+      "direction": "peer",
+      "strength": 0.55,
+      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
+      "agent": "supply_chain_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same bottleneck mentioned by at least two independent sources",
+        "CAPEX/order data for affected lane",
+        "red-team: avoid broad sector guilt-by-association"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "064290.KQ",
+      "target": "005930.KS",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -13642,26 +14104,6 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
-      "source": "TER.US",
-      "target": "ETN.US",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
       "source": "ASM.AS",
       "target": "042700.KQ",
       "relation": "bottleneck_cluster",
@@ -13782,26 +14224,6 @@
       "invalidation": "no source-linked demand/supply evidence within 30-90 days"
     },
     {
-      "source": "ASM.AS",
-      "target": "ETN.US",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
       "source": "042700.KQ",
       "target": "095340.KQ",
       "relation": "bottleneck_cluster",
@@ -13884,26 +14306,6 @@
     {
       "source": "042700.KQ",
       "target": "005930.KS",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "042700.KQ",
-      "target": "ETN.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -13984,26 +14386,6 @@
     {
       "source": "095340.KQ",
       "target": "005930.KS",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "095340.KQ",
-      "target": "ETN.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -14064,26 +14446,6 @@
     {
       "source": "058470.KQ",
       "target": "005930.KS",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "058470.KQ",
-      "target": "ETN.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -14124,26 +14486,6 @@
     {
       "source": "240810.KQ",
       "target": "005930.KS",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "240810.KQ",
-      "target": "ETN.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -14164,46 +14506,6 @@
     {
       "source": "403870.KQ",
       "target": "005930.KS",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "403870.KQ",
-      "target": "ETN.US",
-      "relation": "bottleneck_cluster",
-      "direction": "peer",
-      "strength": 0.55,
-      "reason": "같은 advanced manufacturing/packaging cycle 안에서 병목과 CAPEX 신호가 같이 움직일 수 있음",
-      "agent": "supply_chain_analyst",
-      "verification": "verify with filings/news/earnings calls",
-      "evidence_gates": [
-        "same bottleneck mentioned by at least two independent sources",
-        "CAPEX/order data for affected lane",
-        "red-team: avoid broad sector guilt-by-association"
-      ],
-      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
-      "verification_state": "needs_source_review",
-      "aging_status": "source_age_unknown",
-      "next_check": "next earnings/capex/backlog update",
-      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
-    },
-    {
-      "source": "005930.KS",
-      "target": "ETN.US",
       "relation": "bottleneck_cluster",
       "direction": "peer",
       "strength": 0.55,
@@ -16863,6 +17165,26 @@
     },
     {
       "source": "ANET.US",
+      "target": "069540.KQ",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "networking lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "ANET.US",
       "target": "CSCO.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
@@ -16963,6 +17285,126 @@
     },
     {
       "source": "ANET.US",
+      "target": "PANW.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "networking lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "069540.KQ",
+      "target": "CSCO.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "networking lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "069540.KQ",
+      "target": "CIEN.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "networking lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "069540.KQ",
+      "target": "COHR.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "networking lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "069540.KQ",
+      "target": "LITE.US",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "networking lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "069540.KQ",
+      "target": "011070.KS",
+      "relation": "peer_or_substitute",
+      "direction": "peer",
+      "strength": 0.5,
+      "reason": "networking lane 안에서 narrative/valuation 비교 대상",
+      "agent": "competitive_analyst",
+      "verification": "verify with filings/news/earnings calls",
+      "evidence_gates": [
+        "same customer/budget lane",
+        "margin/valuation context",
+        "red-team: not all same-sector companies are substitutes"
+      ],
+      "red_team": "keyword match alone is insufficient; verify with source-linked demand/supply evidence",
+      "verification_state": "needs_source_review",
+      "aging_status": "source_age_unknown",
+      "next_check": "next earnings/capex/backlog update",
+      "invalidation": "no source-linked demand/supply evidence within 30-90 days"
+    },
+    {
+      "source": "069540.KQ",
       "target": "PANW.US",
       "relation": "peer_or_substitute",
       "direction": "peer",
