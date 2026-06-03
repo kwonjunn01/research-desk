@@ -918,10 +918,10 @@
       "role": "ALD/equipment",
       "traffic_light": "⚪ 회색",
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
-      "price": 888.6,
-      "change_pct": -1.0908308267749731,
-      "price_position_52w_pct": 94.07007644083035,
-      "return_20d_pct": 7.474602457602608,
+      "price": 893.2,
+      "change_pct": 0.517671003876555,
+      "price_position_52w_pct": 94.95571367297897,
+      "return_20d_pct": 2.5017184961173333,
       "fundamentals_coverage": 100.0,
       "trailing_pe": 41.3472,
       "forward_pe": 30.930822,
@@ -959,7 +959,7 @@
         "demand_unit": "ALD/epi tool orders, backlog/order intake, advanced logic/foundry and memory node transitions, China/logic/customer mix, gross margin, operating leverage, forward EPS revision",
         "bottleneck_pressured": "Advanced packaging capacity wall, glass substrate, FOPLP, panel-level packaging",
         "company_pressure_path": "ALD/epi tool orders, backlog/order intake, advanced logic/foundry and memory node transitions, China/logic/customer mix, gross margin, operating leverage, forward EPS revision",
-        "already_priced": "가격 888.60, 일간 -1.1%, 52W +94.1%, 20D +7.5%/60D +23.9%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
+        "already_priced": "가격 893.20, 일간 +0.5%, 52W +95.0%, 20D +2.5%/60D +32.0%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 Q1 beat와 AI-driven semicap cycle을 일부 반영한다. 새 alpha는 매출 headline보다 2026 order intake·margin·customer capex가 기존 컨센서스보다 높아지는지에서 나온다.",
         "five_element_eval": "대체불가능성: 확인필요; 6~12개월 트리거: 확인필요; 시장 인지도: 확인필요; 흑자 모멘텀: 확인필요; 본업 정보 우위: 확인필요",
         "verification": "분기 order intake/backlog/book-to-bill과 gross margin guide 확인; GAA/advanced-node ALD/epi adoption을 foundry/customer capex source와 교차검증; 증권사/컨센서스 30–90일 EPS revision 방향 확인",
@@ -1315,7 +1315,7 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 1064.1,
       "change_pct": 2.761950748430701,
-      "price_position_52w_pct": 98.7321802553622,
+      "price_position_52w_pct": 98.72804636210498,
       "return_20d_pct": 84.59536429289376,
       "fundamentals_coverage": 100.0,
       "trailing_pe": 35.27187,
@@ -2246,40 +2246,40 @@
       "return_20d_pct": -4.911106027416312,
       "fundamentals_coverage": 90.0,
       "trailing_pe": null,
-      "forward_pe": -168.24025,
-      "price_to_book": 11.79318,
+      "forward_pe": -170.42953,
+      "price_to_book": 13.333706,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
-          "reason": "대체불가능성 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "Cloud Hyperscaler / AI Platform 안의 niche/고객 승인 장벽은 후보지만 경쟁·고객 concentration·제품별 share 검증 전에는 강 판정 불가.",
+          "verification_task": "7d: 제품/고객/수주 route 확인 · 30d: 경쟁사 share와 원문 segment 숫자 재검증"
         },
         "6~12개월 트리거": {
           "rating": "확인필요",
-          "reason": "6~12개월 트리거 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "6~12개월 트리거는 contracted backlog/RPO, GPU capacity utilization, AI cloud revenue, pricing and gross margin, depreciation/lease/interest cost, capex financing, customer concentration, FCF/EPS revision가 order/backlog/매출 인식/EPS revision으로 확인되는지에 달려 있다.",
+          "verification_task": "7d: 최근 공시·IR·뉴스 event 정리 · 30d: 수주/backlog/분기 실적 반영 확인"
         },
         "시장 인지도": {
           "rating": "확인필요",
-          "reason": "시장 인지도 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "CoreWeave는 관련 theme 인지도 후보이나 verified consensus revision과 기관 coverage 강도는 아직 확인 필요.",
+          "verification_task": "7d: 증권사/RSS/뉴스 coverage 확인 · 30d: 컨센서스 revision 지속성 점검"
         },
         "흑자 모멘텀": {
           "rating": "확인필요",
-          "reason": "흑자 모멘텀 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "public snapshot만으로 흑자/이익률 개선을 단정하지 않고 DART/SEC/IR·컨센서스 revision 확인 전 보류.",
+          "verification_task": "7d: 최신 분기 OP/EPS 확인 · 30d: margin/FCF 및 revision 방향 재검증"
         },
         "본업 정보 우위": {
           "rating": "확인필요",
-          "reason": "본업 정보 우위 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "산업 chain 인접성은 정보우위 후보지만 고객별 disclosure와 제품별 매출이 제한되어 원문 확인 필요.",
+          "verification_task": "7d: IR/DART/SEC route 확보 · 30d: 제품·고객·지역별 매출/수주 확인"
         }
       },
       "m1c2_common_block": {
-        "factor": "Cloud Hyperscaler / AI GPU cloud / neocloud infrastructure provider",
-        "mechanism": "AI/전력/데이터센터 demand → AI GPU cloud / neocloud infrastructure with debt-funded accelerated GPU capacity buildout → contracted backlog/RPO, GPU capacity utilization, AI cloud revenue, pricing and gross margin, depreciation/lease/interest cost, capex financing, customer concentration, FCF/EPS revision → EPS/revenue revision → price reflection 순서로 확인한다.",
+        "factor": "Contracted backlog to revenue",
+        "mechanism": "AI infra demand → Cloud Hyperscaler / AI Platform 수요 → contracted backlog/RPO, GPU capacity utilization, AI cloud revenue, pricing and gross margin, depreciation/lease/interest cost, capex financing, customer concentration, FCF/EPS revision → EPS/revenue revision → price reflection 순서로 확인한다.",
         "demand_unit": "contracted backlog/RPO, GPU capacity utilization, AI cloud revenue, pricing and gross margin, depreciation/lease/interest cost, capex financing, customer concentration, FCF/EPS revision",
-        "bottleneck_pressured": "Demand-side workload / CAPEX translator, 직접 breaker 아님, downstream bottleneck 수요 확인",
+        "bottleneck_pressured": "회사별 병목은 source pack과 원문 숫자로 확인 필요",
         "company_pressure_path": "contracted backlog/RPO, GPU capacity utilization, AI cloud revenue, pricing and gross margin, depreciation/lease/interest cost, capex financing, customer concentration, FCF/EPS revision",
         "already_priced": "가격 119.27, 일간 -4.4%, 52W +45.0%, 20D -4.9%/60D +63.4%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 CoreWeave에 AI backlog와 GPU capacity scarcity를 강하게 반영하지만, 약한 guide·차입·capex·고객 집중도도 같이 본다. 새 판단은 revenue growth headline이 아니라 unit economics와 financing risk의 방향이다.",
@@ -2571,41 +2571,41 @@
       "price_position_52w_pct": 25.346687211093993,
       "return_20d_pct": 17.14801444043321,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 19.83,
-      "forward_pe": 21.0,
-      "price_to_book": 1.52,
+      "trailing_pe": 36.31,
+      "forward_pe": 33.0,
+      "price_to_book": 2.34,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
-          "reason": "대체불가능성 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "Enterprise cloud / AI transformation / data-center services 안의 niche/고객 승인 장벽은 후보지만 경쟁·고객 concentration·제품별 share 검증 전에는 강 판정 불가.",
+          "verification_task": "7d: 제품/고객/수주 route 확인 · 30d: 경쟁사 share와 원문 segment 숫자 재검증"
         },
         "6~12개월 트리거": {
           "rating": "확인필요",
-          "reason": "6~12개월 트리거 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "6~12개월 트리거는 enterprise cloud/MSP revenue, generative-AI transformation projects, data-center services, IT services margin mix, logistics IT stability, backlog/order pipeline, EPS/OP revision가 order/backlog/매출 인식/EPS revision으로 확인되는지에 달려 있다.",
+          "verification_task": "7d: 최근 공시·IR·뉴스 event 정리 · 30d: 수주/backlog/분기 실적 반영 확인"
         },
         "시장 인지도": {
           "rating": "확인필요",
-          "reason": "시장 인지도 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "Samsung SDS는 관련 theme 인지도 후보이나 verified consensus revision과 기관 coverage 강도는 아직 확인 필요.",
+          "verification_task": "7d: 증권사/RSS/뉴스 coverage 확인 · 30d: 컨센서스 revision 지속성 점검"
         },
         "흑자 모멘텀": {
           "rating": "확인필요",
-          "reason": "흑자 모멘텀 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "public snapshot만으로 흑자/이익률 개선을 단정하지 않고 DART/SEC/IR·컨센서스 revision 확인 전 보류.",
+          "verification_task": "7d: 최신 분기 OP/EPS 확인 · 30d: margin/FCF 및 revision 방향 재검증"
         },
         "본업 정보 우위": {
           "rating": "확인필요",
-          "reason": "본업 정보 우위 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "산업 chain 인접성은 정보우위 후보지만 고객별 disclosure와 제품별 매출이 제한되어 원문 확인 필요.",
+          "verification_task": "7d: IR/DART/SEC route 확보 · 30d: 제품·고객·지역별 매출/수주 확인"
         }
       },
       "m1c2_common_block": {
-        "factor": "Cloud Hyperscaler / enterprise cloud / AI transformation / data center services",
+        "factor": "Cloud/MSP revenue conversion",
         "mechanism": "AI infra demand → Enterprise cloud / AI transformation / data-center services 수요 → enterprise cloud/MSP revenue, generative-AI transformation projects, data-center services, IT services margin mix, logistics IT stability, backlog/order pipeline, EPS/OP revision → EPS/revenue revision → price reflection 순서로 확인한다.",
         "demand_unit": "enterprise cloud/MSP revenue, generative-AI transformation projects, data-center services, IT services margin mix, logistics IT stability, backlog/order pipeline, EPS/OP revision",
-        "bottleneck_pressured": "Demand-side workload / CAPEX translator, 직접 breaker 아님, downstream bottleneck 수요 확인",
+        "bottleneck_pressured": "AI data-center 전력망·변압기·전선/전력기기 lead-time 병목",
         "company_pressure_path": "enterprise cloud/MSP revenue, generative-AI transformation projects, data-center services, IT services margin mix, logistics IT stability, backlog/order pipeline, EPS/OP revision",
         "already_priced": "가격 194,700.00, 일간 +5.1%, 52W +25.3%, 20D +17.1%/60D +16.7%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 Samsung SDS를 순수 GPU/전력 병목주가 아니라 기업 AI 전환과 클라우드 서비스 수혜 후보로 본다. 새 판단은 AI 서비스 언급이 recurring cloud revenue와 margin revision을 실제로 만드는지다.",
@@ -2636,7 +2636,7 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 260.58,
       "change_pct": -1.4857697707195614,
-      "price_position_52w_pct": 92.48934187722092,
+      "price_position_52w_pct": 92.48930704811464,
       "return_20d_pct": 47.704343444364184,
       "fundamentals_coverage": 100.0,
       "trailing_pe": 82.60385,
@@ -2825,10 +2825,10 @@
       "role": "energy management/data center electrical",
       "traffic_light": "⚪ 회색",
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
-      "price": 287.15,
-      "change_pct": 6.371545477011365,
-      "price_position_52w_pct": 98.92676763541354,
-      "return_20d_pct": 10.209178066884972,
+      "price": 284.6,
+      "change_pct": -0.8880355043307463,
+      "price_position_52w_pct": 95.6467022621713,
+      "return_20d_pct": 0.6720862083222423,
       "fundamentals_coverage": 100.0,
       "trailing_pe": 32.766624,
       "forward_pe": 22.712288,
@@ -2866,7 +2866,7 @@
         "demand_unit": "data center/order backlog, electrification revenue growth, margin, lead time, pricing, forward EPS revision",
         "bottleneck_pressured": "Rack power delivery wall, 48V direct conversion, vertical power delivery, high-density power modules",
         "company_pressure_path": "AI 데이터센터 CAPEX·grid upgrade → medium/low voltage electrical, power management, automation 수주 → backlog/price/mix → revenue growth·margin·FCF revision",
-        "already_priced": "가격 287.15, 일간 +6.4%, 52W +98.9%, 20D +10.2%/60D +11.3%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
+        "already_priced": "가격 284.60, 일간 -0.9%, 52W +95.6%, 20D +0.7%/60D +14.1%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 슈나이더를 전력/에너지관리 핵심 인프라로 보지만, 가격은 52W 중상단이고 20D는 약해졌다. AI data center wave가 이미 기대에 반영됐는지, 아니면 order/backlog revision이 추가로 남았는지 확인 전 판단 보류다. verified 30–90일 sell-side revision history는 아직 연결되지 않았으므로 판단 보류를 유지한다.",
         "five_element_eval": "대체불가능성: 확인필요; 6~12개월 트리거: 확인필요; 시장 인지도: 확인필요; 흑자 모멘텀: 확인필요; 본업 정보 우위: 확인필요",
         "verification": "IR Q1/반기 자료에서 data-center/order backlog·regional growth 숫자 확인; Reuters/IR 원문과 sell-side summary 2건 이상에서 EPS/order revision 방향 비교; VRT/ETN/Siemens peer 대비 margin·backlog·multiple 차이 확인",
@@ -3608,7 +3608,7 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 627.0,
       "change_pct": 10.075317519761608,
-      "price_position_52w_pct": 99.53832331405962,
+      "price_position_52w_pct": 99.53296374556261,
       "return_20d_pct": 16.432376117370296,
       "fundamentals_coverage": 100.0,
       "trailing_pe": 345.17197,
@@ -3672,7 +3672,7 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 426.89,
       "change_pct": 17.632958715829705,
-      "price_position_52w_pct": 98.09424832976389,
+      "price_position_52w_pct": 98.09422316007546,
       "return_20d_pct": 29.403734894775457,
       "fundamentals_coverage": 100.0,
       "trailing_pe": 169.20097,
@@ -4774,7 +4774,7 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 272.66,
       "change_pct": 0.6794153408239455,
-      "price_position_52w_pct": 98.29886456338551,
+      "price_position_52w_pct": 98.29878684724044,
       "return_20d_pct": 21.630906110152303,
       "fundamentals_coverage": 90.0,
       "trailing_pe": null,
@@ -5178,41 +5178,41 @@
       "price_position_52w_pct": 27.21133531330239,
       "return_20d_pct": -11.073582629674306,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": -17.16,
+      "trailing_pe": -14.02,
       "forward_pe": null,
-      "price_to_book": 9.25,
+      "price_to_book": 7.56,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
-          "reason": "대체불가능성 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "medical imaging AI / pathology / oncology decision-support software with regulated healthcare adoption risk 안의 niche/고객 승인 장벽은 후보지만 경쟁·고객 concentration·제품별 share 검증 전에는 강 판정 불가.",
+          "verification_task": "7d: 제품/고객/수주 route 확인 · 30d: 경쟁사 share와 원문 segment 숫자 재검증"
         },
         "6~12개월 트리거": {
           "rating": "확인필요",
-          "reason": "6~12개월 트리거 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "6~12개월 트리거는 INSIGHT imaging AI adoption, SCOPE pathology/oncology partnerships, hospital and pharma contracts, regulatory approvals and reimbursement, recurring SaaS/license revenue, gross margin, R&D/SG&A cash burn, EPS/FCF revision가 order/backlog/매출 인식/EPS revision으로 확인되는지에 달려 있다.",
+          "verification_task": "7d: 최근 공시·IR·뉴스 event 정리 · 30d: 수주/backlog/분기 실적 반영 확인"
         },
         "시장 인지도": {
           "rating": "확인필요",
-          "reason": "시장 인지도 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "Lunit Inc.는 관련 theme 인지도 후보이나 verified consensus revision과 기관 coverage 강도는 아직 확인 필요.",
+          "verification_task": "7d: 증권사/RSS/뉴스 coverage 확인 · 30d: 컨센서스 revision 지속성 점검"
         },
         "흑자 모멘텀": {
           "rating": "확인필요",
-          "reason": "흑자 모멘텀 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "public snapshot만으로 흑자/이익률 개선을 단정하지 않고 DART/SEC/IR·컨센서스 revision 확인 전 보류.",
+          "verification_task": "7d: 최신 분기 OP/EPS 확인 · 30d: margin/FCF 및 revision 방향 재검증"
         },
         "본업 정보 우위": {
           "rating": "확인필요",
-          "reason": "본업 정보 우위 근거 미등록 · 5요소/M1C2 검토 미완료",
-          "verification_task": "7d: source route 확인 · 30d: IR/공시/컨센서스 재검증"
+          "reason": "산업 chain 인접성은 정보우위 후보지만 고객별 disclosure와 제품별 매출이 제한되어 원문 확인 필요.",
+          "verification_task": "7d: IR/DART/SEC route 확보 · 30d: 제품·고객·지역별 매출/수주 확인"
         }
       },
       "m1c2_common_block": {
-        "factor": "Company Intake / AI 기반 암 진단·검진 및 정밀의료 소프트웨어 공급자",
+        "factor": "Regulatory/reimbursement adoption",
         "mechanism": "AI infra demand → medical imaging AI / pathology / oncology decision-support software with regulated healthcare adoption risk 수요 → INSIGHT imaging AI adoption, SCOPE pathology/oncology partnerships, hospital and pharma contracts, regulatory approvals and reimbursement, recurring SaaS/license revenue, gross margin, R&D/SG&A cash burn, EPS/FCF revision → EPS/revenue revision → price reflection 순서로 확인한다.",
         "demand_unit": "INSIGHT imaging AI adoption, SCOPE pathology/oncology partnerships, hospital and pharma contracts, regulatory approvals and reimbursement, recurring SaaS/license revenue, gross margin, R&D/SG&A cash burn, EPS/FCF revision",
-        "bottleneck_pressured": "시나리오별 병목 확인 필요, breaker technology 확인 필요",
+        "bottleneck_pressured": "회사별 병목은 source pack과 원문 숫자로 확인 필요",
         "company_pressure_path": "INSIGHT imaging AI adoption, SCOPE pathology/oncology partnerships, hospital and pharma contracts, regulatory approvals and reimbursement, recurring SaaS/license revenue, gross margin, R&D/SG&A cash burn, EPS/FCF revision",
         "already_priced": "가격 18,430.00, 일간 +11.4%, 52W +27.2%, 20D -11.1%/60D +9.2%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 의료AI 장기 TAM과 글로벌 파트너십을 높게 볼 수 있지만, 새 판단은 기술 데모가 아니라 병원 도입·급여·제약 계약·반복매출·손실 축소가 실제로 확인되는지다.",
