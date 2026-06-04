@@ -1,6 +1,6 @@
 {
   "manager": "Codex 5.5",
-  "generated_at": "2026-06-04",
+  "generated_at": "2026-06-05",
   "count": 80,
   "items": [
     {
@@ -796,9 +796,9 @@
       "price_position_52w_pct": 84.88562091503267,
       "return_20d_pct": 25.518341307814985,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": 2071.05,
+      "trailing_pe": 2181.58,
       "forward_pe": null,
-      "price_to_book": 10.74,
+      "price_to_book": 11.31,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3483,9 +3483,9 @@
       "price_position_52w_pct": 43.66009589770911,
       "return_20d_pct": -25.71976967370442,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": -12.13,
+      "trailing_pe": -13.12,
       "forward_pe": null,
-      "price_to_book": 4.75,
+      "price_to_book": 5.13,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "약",
