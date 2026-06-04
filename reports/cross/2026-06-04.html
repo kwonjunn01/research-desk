@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cross-Ontology Synthesis — 2026-05-14</title>
+  <title>Cross-Ontology Synthesis — 2026-06-04</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -124,6 +124,10 @@
 </details>
 <details class="nav-mid">
 <summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-04.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
 <div class="nav-date">2026-06-03</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/cross/2026-06-03.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
@@ -175,10 +179,6 @@
 <div class="nav-date">2026-05-15</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/cross/2026-05-15.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
-</ul>
-<div class="nav-date">2026-05-14</div>
-<ul class="nav-list nav-small">
-<li><a href="/research-desk/reports/cross/2026-05-14.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
 </ul>
 </details>
 </details>
@@ -254,99 +254,121 @@
   <span>10분: 리스크/반증/원문</span>
   <small>구조는 단순하게, 내용은 Source Pack·숫자·반대논리까지 깊게 유지한다.</small>
 </div>
-<h1>Cross-Ontology Synthesis — 2026-05-14</h1>
+<h1>Cross-Ontology Synthesis — 2026-06-04</h1>
 <p>tags: #cross-ontology #research-radar #market-narrative</p>
 <p><span class="badge">Home</span> / <span class="badge">Research Radar MOC</span> / <span class="badge">Market Ontology MOC</span></p>
 <blockquote>자동 생성 초안이다. 투자 추천이 아니라, AI research signal이 market narrative/industry ontology와 만나는 지점을 찾기 위한 연결 지도다.</blockquote>
-<h2>0. 오늘의 통합 지도</h2>
+<h2>0. 20초 결론</h2>
+<ul>
+<li><strong>오늘 한 문장:</strong> AI signal을 시장 결론으로 바로 바꾸지 않고, <code>edge_strength</code>와 <code>recognition_gap</code>을 분리해 검증 후보만 남긴다.</li>
+<li><strong>today_one_paper pick:</strong> today_one_paper-2026-06-04-automedbench-towards-medical-autoresearch-with-a · <a href="https://huggingface.co/papers/2606.01961">AutoMedBench: Towards Medical AutoResearch with Agentic AI Models</a> — 의료 vertical agent의 adoption signal이라기보다, agent 연구 자동화에서 <code>validation</code>이 병목인지 보여주는 평가축으로 본다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
+<li><strong>시장 연결 후보 1개:</strong> 7영역 destination 매칭 약함 — Market Brief/registry 재확인</li>
+<li><strong>최상위 edge:</strong> <code>retrieval_trust_risk_controls_enterprise_adoption</code> · edge_strength=4/5 · recognition_gap=5/5 · action_type=new_company_intake</li>
+</ul>
+<h2>1. 오늘의 통합 지도</h2>
+<ul>
+<li>AI signal → 영역 1-7 destination을 registry-driven으로 연결한다.</li>
+</ul>
 <div class="viz-card"><div class="mermaid">flowchart LR
-  Research[&quot;AI Research Signals&quot;] --&gt; Inference[&quot;Inference Stack&quot;]
-  Research --&gt; Agent[&quot;Agentic AI / Orchestration&quot;]
-  Research --&gt; Memory[&quot;Memory / RAG Security&quot;]
-  Research --&gt; Device[&quot;On-device / Edge AI&quot;]
-  Inference -- cost_and_latency_pressure --&gt; Cloud[&quot;Cloud Hyperscaler&quot;]
-  Cloud -- drives_capex_for --&gt; DataCenter[&quot;AI Data Center&quot;]
-  DataCenter -- pulls_demand_for --&gt; Chips[&quot;AI Semiconductor&quot;]
-  Chips -- depends_on --&gt; HBM[&quot;HBM / Advanced Packaging&quot;]
-  DataCenter -- constrained_by --&gt; Power[&quot;Power / Grid / Cooling&quot;]
-  Device -- creates_demand_for --&gt; Robotics[&quot;Robotics / Edge Devices&quot;]
-  Memory -- gates_adoption_for --&gt; Enterprise[&quot;Enterprise / Healthcare AI&quot;]
-  Agent -- increases_workload_for --&gt; Cloud</div></div>
-<h2>1. 오늘의 Cross Signal Heat</h2>
-<h3>강 · Inference Stack → AI Data Center / Cloud Hyperscaler / Power Infrastructure</h3>
-<ul>
-<li><strong>Cross edge:</strong> <code>inference_cost_pressure_links_to_capex_and_power</code></li>
-<li><strong>왜 연결되는가:</strong> inference 비용·메모리 병목은 cloud serving margin, data center 증설, 전력/냉각 수요 narrative와 직접 연결된다.</li>
-<li><strong>Research evidence 후보:</strong></li>
-<li><strong>먼저 볼 논문:</strong> <strong>#1 Agent / Tool-use</strong> · 👍 124 · MemTensor · <a href="https://huggingface.co/papers/2605.09530">MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents</a> — HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
-<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.09530">MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents</a> — Hugging Face Daily Papers, score 22, Agentic AI / On-device LLM / Inference Stack</li>
-<li><strong>Market evidence 후보:</strong></li>
-<li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPN1JCQ0lnR0t1elJTTDc3SFc0bnRTdElQWm8wUTV4ek5tZjVqN2dZeEpGRWNrenRQYUk0bHB5VERWeUxveEM1a180YkZvam1rb2dOdkcwZlFJdFBFMW4wLTRmNmtMX3E0T1haT2JKc0RXaGNINEVGdlJJdGZldlQ2LVR4VGJGTVE0TTVYM0RDYlZxWUpSOHEwcXhPWkpKanNuajk4?oc=5">United States China Tech Rivalry Delays Nvidia AI Chip Exports - Modern Diplomacy</a> — Modern Diplomacy / quality 2 / hits: nvidia, ai chip</li>
-<li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9VUGp4eXJRTU1nZTMxZk1wRzc3THctaGNSX1ZkcVpHcUxHUThBRFo1LVBZTlpBeElMZEFjSTZnS21fTlhjeTBZaXYwdHdqSktSbFdoNkRfd1JERWVETUxybUozUWYxbVNYZWRvdWFtcWpTdHVLXzlHdm8yaXpaWGM?oc=5">Nuclear Power Emerging as a Clean AI Data Center Energy Source - IO Fund</a> — IO Fund / quality 2 / hits: ai data center, data center</li>
-</ul>
-<h3>강 · On-device LLM / Edge AI → On-device AI / Robotics / AI Semiconductor</h3>
-<ul>
-<li><strong>Cross edge:</strong> <code>workload_shift_creates_edge_device_demand</code></li>
-<li><strong>왜 연결되는가:</strong> on-device inference가 가능해지면 일부 cloud workload는 줄 수 있지만, 로봇·모바일·edge device의 새 수요와 chip narrative를 만든다.</li>
-<li><strong>Research evidence 후보:</strong></li>
-<li><strong>먼저 볼 논문:</strong> <strong>#1 Agent / Tool-use</strong> · 👍 124 · MemTensor · <a href="https://huggingface.co/papers/2605.09530">MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents</a> — HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
-<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.09530">MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents</a> — Hugging Face Daily Papers, score 22, Agentic AI / On-device LLM / Inference Stack</li>
-<li><strong>Market evidence 후보:</strong></li>
-<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNYjV0WFdULWFTR1VwTlpoQlkyMGt2NTkzaFpMdkQ1Wk16TkMyeWhxTWljbzlTWjY1Z3NqVHE1eXpDSklZbnItd21iWmF4ekxSel80ZkVvY2NYMzdTeFh2aGp6SFFteHN0M0tUTUZRaDhjR2RLVnVpOTJJLWJoREQ5ZUFtcEpOTGxFRGgzLW1WdzRXV0hNakxxdTBaRE8tLXhKV2RleGo4UGVZTWFjTkpjWThQSkFodw?oc=5">Sony achieves ‘major breakthrough’ with tennis-playing robot - Robotics &amp; Automation News</a></li>
-<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNRGc5dWJpRWtZamoyczdMUXdlZm9tbnpJWTRFbVpHU1JEMFN4RDJXMDBUcDd0Y25wVFVHejIzdVZOVHFIcHVSdEQ1OW9aSjNZaHd3NEZONXdrM1RnWmM0aGFQYUpMb0dwcTdaX2tvU1hRWGFpdkRLcUpiX2lhdl9jSzg0Vy1fYzBCeHNQWC1HU3RhSWFyWXdsdQ?oc=5">On-device AI Market Outlook: Edge AI Processors Lead While Generative AI Integration Accelerates - openPR.com</a></li>
-</ul>
-<h3>강 · Agentic AI / LLM Orchestration → Cloud Hyperscaler / Enterprise AI / Software Workflow</h3>
-<ul>
-<li><strong>Cross edge:</strong> <code>agent_workflows_drive_cloud_and_enterprise_adoption</code></li>
-<li><strong>왜 연결되는가:</strong> agent orchestration이 실제 workflow 제품으로 내려오면 cloud workload와 enterprise AI adoption narrative가 강화된다.</li>
-<li><strong>Research evidence 후보:</strong></li>
-<li><strong>먼저 볼 논문:</strong> <strong>#1 Agent / Tool-use</strong> · 👍 124 · MemTensor · <a href="https://huggingface.co/papers/2605.09530">MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents</a> — HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
-<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.09530">MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents</a> — Hugging Face Daily Papers, score 22, Agentic AI / On-device LLM / Inference Stack</li>
-<li><strong>Market evidence 후보:</strong></li>
-<li><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNblpyb3BmRHZjNExmQlBIWWh2Q2JJUWV0V0JQMERScklGcmxDUmhvSE1tMVlVRVNJbGFyUU8yWGVaVjBTdDVKQThuV1l6aXJReEdBdnl1ZHMyRFVidE53UXd6YnRXMTdwV0NoNGhUWFVGamc0VUFEekNjZnh3b2RuZV85ZWh6UHpHUURCTWduTzBMSTdVNGdYWkpjb0o3bmlGU1AxQXdCRnRkc19J?oc=5">Nebius reports higher quarterly capex on AI cloud expansion - BNN Bloomberg</a> — BNN Bloomberg / quality 4 / hits: cloud, capex</li>
-<li><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9WRUk4TlpHWng4d1VMdzdwQ2JKdG16MmdXZlBfanlPVFZSQnZJTHJ4RDE3TzVlcUZoVzZBWXdfdzhTa2VwRlIyMEZnUm9qcVNKLTh0eldQVQ?oc=5">Meta AI Statistics 2026: Users, Capex, and Adoption Data - SQ Magazine</a> — SQ Magazine / quality 2 / hits: meta, capex</li>
-</ul>
-<h3>강 · Memory / RAG / RAG Security → Enterprise AI Risk / Healthcare AI / Security</h3>
+  Paper[&quot;today_one_paper&quot;] --&gt; Edge[&quot;Cross edge&quot;]
+  Edge --&gt; Review[&quot;7영역 매칭 재검토&quot;]
+  Edge --&gt; MarketBrief[&quot;Market Brief / 신규 산업 후보 큐&quot;]</div></div>
+<h2>2. Cross Signal Heat (edge_strength + recognition_gap 분리)</h2>
+<h3>edge_strength 4/5 · recognition_gap 5/5 · Memory / RAG / RAG Security → Enterprise AI Risk / Healthcare AI / Security</h3>
 <ul>
 <li><strong>Cross edge:</strong> <code>retrieval_trust_risk_controls_enterprise_adoption</code></li>
-<li><strong>왜 연결되는가:</strong> RAG evidence 추적·오염·보안 문제가 커지면 regulated enterprise/healthcare AI adoption 속도와 governance narrative에 영향을 준다.</li>
+<li><strong>action_type:</strong> new_company_intake</li>
 <li><strong>Research evidence 후보:</strong></li>
-<li><strong>먼저 볼 논문:</strong> <strong>#1 Agent / Tool-use</strong> · 👍 124 · MemTensor · <a href="https://huggingface.co/papers/2605.09530">MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents</a> — HF Daily 상위권 Agent / Tool-use 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
-<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.09530">MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents</a> — Hugging Face Daily Papers, score 22, Agentic AI / On-device LLM / Inference Stack</li>
+<li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 72 <a href="https://huggingface.co/papers/2606.00683">OCC-RAG: Optimal Cognitive Core for Faithful Question Ans…</a> / #2 👍 40 <a href="https://huggingface.co/papers/2605.23895">From Activation to Causality: Discovery of Causal Visual…</a> / #3 👍 33 <a href="https://huggingface.co/papers/2606.01249">Trust Region On-Policy Distillation</a></li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — local GPU retrieval 기반 agent memory 구현 신호; on-device/runtime·Memory/RAG 양쪽에서 후속 검증 필요.</li>
 <li><strong>Market evidence 후보:</strong></li>
-<li><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxPeUJ2eU52dnNzZzBFNHJLcENXMG1VajI0SDhseV9YclZVeTU4Q1VoZm9XaFJKcXhmQTZoNlVhS096TnhuSHBMbTFJMW0tcVIyX1NWVWdRRmcwWElUbzdqZUtmdFpnREdmTnV5U0t2MlVuMWhqX1RPbEMwM0gwdDR1c0Jjb05BQ1BYNnpzVFM0UHVNd0ZxVVh0anFwak9lV3JJa043OU1wWGVPUjBYSm1kb3d6TFlibEEzUkRlaQ?oc=5">Fortinet enhances FortiAIGate platform with NVIDIA accelerated AI security capabilities - Industrial Cyber</a> — Indus</li>
-<li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQcC1Wd1FXeE1vS1RfMDh0THJ2Z0xxYU5GS05VTGltUmpvMHJsenQ1VmNNNGJGb1g5cWw5OGlNN2hnY0J0UzdqdG1BS2ktREdQSS00ME9aSkpSZTlKQnlCTW9vWjBINFpfWWFzV1FiZ2xqZ2FZczg2NS1OQXl5dTFsYUpRTzNnU1NjRWM5RV9R?oc=5">GE HealthCare Showcases AI-Powered MRI Technologies - Imaging Technology News</a> — Imaging Technology News / quality 2 / hits: healthcare, imaging</li>
+<li><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPUnJrRGlzRG0tRjlKYWR3S3RVYjNQMEktXzB2SDd2c0JoMTV2TDdYdWtNa0NWVFFuSS16VTR3N3Q2YXFsWHdHUWVsNFZkaFRlSzM0NmlTbF9mTUczMHQ5QzdqSjh6WWdQeFMzNGlST21zMnFrYklydkoteUcxQzQyVmtpREtWSmFQZS1DV3BsbGpNR3ZvS0xRb0g5c2JscmNEaTZIUTcxNGFuVFZMYUhSNXozbTVaY05Gb0JrR1VrRQ?oc=5">AI brings new risks to smartphone, computer security - The American Legion</a> — The American Legion / quality 2 / hits: smartphone</li>
+<li><a href="https://news.google.com/rss/articles/CBMigwJBVV95cUxOTFZrX0RrS2FZREpmQWlTOXV0dl84LURaSUgzZ0JEMUh2LXd5UnpKTHFyWHZUNFZ2Y1IweFNnbE5jUzlaY2VWV2RoRWtVWnJxblFzZjc3Y2UxT0NhVk1kVUFSSGZFY1ZESmZzMllwdEJ1RlNSREFZdGxiT2pXVzFocXVsdllQRUFvakZ2b3IxSG9XTjluWDR2RlZoR0JQYTdvdzFRS0tKaXNPX0pRTmtUNkZzTmxyaEhsUWxsRG1vZm1tMTV6cDlFX0NRcUpSMVN4cmlscjlrMVpLT2lobllZVHhPVDRyQUpzQk93Nl8yOUJsZjJlcGQ0SmVhS0FUekJLeDBR?oc=5">GE HealthCare Focuses on Expanding Access to Nuclear Medicine Through AI, Radiopharmaceutical and Imaging Innovations…</a> — Business Wire / quality 2 / hits: healthcare, imaging</li>
+<li><strong>Missing evidence needed:</strong> RAG 보안·traceability·data governance 사건/제품 근거, regulated industry pilot/production adoption, compliance 요구와 구매 전환 근거.</li>
 </ul>
-<h3>강 · Post-training / RLVR → AI Semiconductor / Cloud Capex ROI</h3>
+<h3>edge_strength 3/5 · recognition_gap 4/5 · Inference Stack → AI Data Center / Cloud Hyperscaler / Power Infrastructure</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>inference_cost_pressure_links_to_capex_and_power</code></li>
+<li><strong>action_type:</strong> watchlist_review</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.29288">Diagnosing Harmful Continuation in Answer-Correct Long-CoT Training Traces</a> — Hugging Face Daily Papers, score 11, Post-training / Inference Stack</li>
+<li><a href="https://huggingface.co/papers/2606.01476">OmniOPD: Logit-Free On-Policy Distillation via Speculative Verification</a> — Hugging Face Daily Papers, score 11, Post-training / Inference Stack</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxQalA5aWFhc2EwSlBUSTgzT1p3SC1OU3liczlKcDBqWTg2Q3BNNG51dXRvWXdMcjdaaGttVmZSVy1QbGExSG51RnJjdGhTWjJxVktqYlBsaDdmeUZ0UkhhWTVReC1pQU5ubHo4bTh4Zy0yU2ducVg4cmtaNW5pUUNCaFRlaWJBQU81M1pkWjdmRGZHZVBONUxxNk80U3E2TUNGczRfUmJzdkJXNi16UGxSTXhYdllOZHVGMmo3WXZucDhTSER6eEhFRWM3RXdFSGJ3d0U1eTZQMjJBd1JzUXlOYTNSc18xYzBJUDB1M0FyZ1pqWjljWFE?oc=5">Why GPU-Powered AI Data Centers Need Liquid Cooling to Scale Efficiently? - Dailyhunt</a> — Dailyhunt / quality 2 / hits: ai data center, data center, cooling</li>
+<li><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxQYjdlTDg4NHZwUmcxUFNLX0gtdU5WSU45Z2xqaG5MNWRGbFJwazItcGgxQ3R6MmttcFZKWjhPLURJeFNwYUxGbkJUUzk2MVc2V3BSRHFHVlhoWUd1SUVyaG54MjBCQnlTSDJvWGZIcGE0Vnd4UVRGUF9naXB3WV9JekJkM0JYdUlRV045RVlpY2FJWjRiTnVLMXVrZUVqM2c?oc=5">NC House passes bill to crack down on data centers, fast-track nuclear power - WRAL</a> — WRAL / quality 2 / hits: power, nuclear</li>
+<li><strong>Missing evidence needed:</strong> 실제 serving cost/latency 변화, cloud usage 증가, capex·전력 주문/계약, IR/filing/실적발표의 반복 근거.</li>
+</ul>
+<h3>edge_strength 3/5 · recognition_gap 4/5 · On-device LLM / Edge AI → On-device AI / Robotics / AI Semiconductor</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>workload_shift_creates_edge_device_demand</code></li>
+<li><strong>action_type:</strong> watchlist_review</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>On-device LLM 11:</strong> <a href="https://huggingface.co/papers/2606.03458">KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks</a> — Hugging Face Daily Papers, score 19, Agent Planning / Agent Evaluation / On-device LLM</li>
+<li><a href="https://huggingface.co/papers/2606.03911">Bootstrap Your Generator: Unpaired Visual Editing with Flow Matching</a> — Hugging Face Daily Papers, score 10, On-device LLM</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5odXhVZTZxdldQX2VaVmJ5azlXbi10S3RqUHBzdFhoNXRfOTU0c0VKY1l6aWhKUEpLOVhJd3hDY1U0Zy1mNXdtdVp0cWpWNEhkUHBKczFvcDNXMEtWZ2dzN2Y4d1JEcnpyTnV6Y0JB?oc=5">China is training a robot future — one folded shirt at a time - Rest of World</a> — Rest of World / quality 2 / hits: robot</li>
+<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPb3YzODd0aFllSUd5aW1iSWd5Vm5KS0twRzdaYXQza2NlS3pJLVZWTEp1X1hNTFVpSWRKeW9jUnJJbTdKa3J6clZQQUNQdUc3MWdwc2E5MEhscFk4Umw4WjI4cF9TQXplaWllU3IxY0lObTM3NVBMSmdEWndiVHVqeDJPaV_SAYoBQVVfeXFMTXJQcTRqNVQ0X1lROEptVUQxNk8yWjBlT0RBb0puc2F4S3FTRklib29BaHRobWUxVXdLNVdTR0pTWWlwaUFVX2pWSGl5M05mMTEzdDJMS0dCNTRZVGh2ZGhrVGV4YlBZNUM3MG1udThBTndPQVhWMGI4S0xKcFlFV3hfYjZiOUpGWFBR?oc=5">Investors bet humanoid robots will transform industry and homes over the next decade - CNBC</a></li>
+<li><strong>Missing evidence needed:</strong> AI PC·mobile·robot 제품 출시/출하, on-device runtime 채택, edge semiconductor 주문/attach-rate, cloud 대체 또는 신규 workload 데이터.</li>
+</ul>
+<h3>edge_strength 3/5 · recognition_gap 3/5 · Agentic AI / LLM Orchestration → Cloud Hyperscaler / Enterprise AI / Software Workflow</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>agent_workflows_drive_cloud_and_enterprise_adoption</code></li>
+<li><strong>action_type:</strong> watchlist_review</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>오늘 paper 1개만 본다면:</strong> <a href="https://huggingface.co/papers/2606.01961">AutoMedBench: Towards Medical AutoResearch with Agentic AI Models</a> — 의료 vertical agent의 adoption signal이라기보다, agent 연구 자동화에서 <code>validation</code>이 병목인지 보여주는 평가축으로 본다.</li>
+<li><strong>On-device LLM 11:</strong> <a href="https://huggingface.co/papers/2606.03458">KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks</a> — Hugging Face Daily Papers, score 19, Agent Planning / Agent Evaluation / On-device LLM</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNMS1zUFdGQzA5VWdTYVRWbzlzZjF2WkZQMWRjeVVDb2NVM3llS0dZNXh1UzBsM1Z0cG9YY0d2bllMRUY4TjJLOUlja2ZkZjVfZmVrelZFckhPOFBwcEV0YmpXWDdkU0h0YlBSYklfWTJ0TDBaQ0FaOWdGX1dHTi1HZ0JKVG9aLVRsdHotYlBOcnN4ZDRDQ1QtT2JTbFVZLXlobWNIX2xXM3h5QkpqNWdpaEJ3?oc=5">AI CapEx Rush Seen as Continuing as Market Stresses Bubble Up - Bloomberg.com</a> — Bloomberg.com / quality 4 / hits: capex</li>
+<li><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPRm56YUk2cUw5VUYwTjV0YmhJQTFrMkZUaWlMdFhOR1BvVFhqNW5FVmlnbWVXQjR2OU56V0RlVXc2SUNiQ0E2a2xWa3BsMnF3MGJrMXphOTNmMmhTSVFVNGphdWJaM2stZFhBcURyQV9LeUdTZ0FUSkVMVzRBRUNwSk0xWVN2TVpkWHhqVC1ZLUhVWkJXcFQ4bnRKbXV3UHNQS0N5VU15US1wa05uMEdKZjJxc2c0TjA?oc=5">AI News You Need to Know — June Edition: Capex, Inference, &amp; Beyond - ETF Trends</a> — ETF Trends / quality 2 / hits: capex</li>
+<li><strong>Missing evidence needed:</strong> 실제 workflow agent 사용량, tool-call/log volume, enterprise 계약·seat expansion, cloud workload 지표, 보안/운영 gate 통과 근거.</li>
+</ul>
+<h3>edge_strength 3/5 · recognition_gap 3/5 · Post-training / RLVR → AI Semiconductor / Cloud Capex ROI</h3>
 <ul>
 <li><strong>Cross edge:</strong> <code>model_capability_gains_raise_or_reprice_compute_demand</code></li>
-<li><strong>왜 연결되는가:</strong> post-training이 모델의 task 성공률을 높이면 agent 사용량과 compute demand를 늘릴 수 있고, 반대로 효율화는 capex ROI narrative를 재평가하게 만든다.</li>
+<li><strong>action_type:</strong> watchlist_review</li>
 <li><strong>Research evidence 후보:</strong></li>
-<li><strong>#4 Reasoning / Post-training</strong> · 👍 65 · Google · <a href="https://huggingface.co/papers/2605.10899">RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards</a> — HF Daily 상위권 Reasoning / Post-training 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
-<li><strong>#5 Reasoning / Post-training</strong> · 👍 52 · ServiceNow-AI · <a href="https://huggingface.co/papers/2605.12178">Do Enterprise Systems Need Learned World Models? The Importance of Context to Infer Dynamics</a> — HF Daily 상위권 Reasoning / Post-training 후보. 실제 benchmark·데이터·agent 적용 가능성은 원문 확인 필요.</li>
+<li><strong>Post-training 14:</strong> <a href="https://huggingface.co/papers/2606.01249">Trust Region On-Policy Distillation</a> — Hugging Face Daily Papers, score 16, Agentic AI / Post-training</li>
+<li><a href="https://huggingface.co/papers/2606.01770">Adaptive Auto-Harness: Sustained Self-Improvement for Agentic System Deployment on Open-Ended Task Streams</a> — Hugging Face Daily Papers, score 14, Agentic AI / Agent Evaluation / Post-training</li>
 <li><strong>Market evidence 후보:</strong></li>
-<li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPN1JCQ0lnR0t1elJTTDc3SFc0bnRTdElQWm8wUTV4ek5tZjVqN2dZeEpGRWNrenRQYUk0bHB5VERWeUxveEM1a180YkZvam1rb2dOdkcwZlFJdFBFMW4wLTRmNmtMX3E0T1haT2JKc0RXaGNINEVGdlJJdGZldlQ2LVR4VGJGTVE0TTVYM0RDYlZxWUpSOHEwcXhPWkpKanNuajk4?oc=5">United States China Tech Rivalry Delays Nvidia AI Chip Exports - Modern Diplomacy</a> — Modern Diplomacy / quality 2 / hits: nvidia, ai chip</li>
-<li><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNblpyb3BmRHZjNExmQlBIWWh2Q2JJUWV0V0JQMERScklGcmxDUmhvSE1tMVlVRVNJbGFyUU8yWGVaVjBTdDVKQThuV1l6aXJReEdBdnl1ZHMyRFVidE53UXd6YnRXMTdwV0NoNGhUWFVGamc0VUFEekNjZnh3b2RuZV85ZWh6UHpHUURCTWduTzBMSTdVNGdYWkpjb0o3bmlGU1AxQXdCRnRkc19J?oc=5">Nebius reports higher quarterly capex on AI cloud expansion - BNN Bloomberg</a> — BNN Bloomberg / quality 4 / hits: cloud, capex</li>
+<li><a href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxQalA5aWFhc2EwSlBUSTgzT1p3SC1OU3liczlKcDBqWTg2Q3BNNG51dXRvWXdMcjdaaGttVmZSVy1QbGExSG51RnJjdGhTWjJxVktqYlBsaDdmeUZ0UkhhWTVReC1pQU5ubHo4bTh4Zy0yU2ducVg4cmtaNW5pUUNCaFRlaWJBQU81M1pkWjdmRGZHZVBONUxxNk80U3E2TUNGczRfUmJzdkJXNi16UGxSTXhYdllOZHVGMmo3WXZucDhTSER6eEhFRWM3RXdFSGJ3d0U1eTZQMjJBd1JzUXlOYTNSc18xYzBJUDB1M0FyZ1pqWjljWFE?oc=5">Why GPU-Powered AI Data Centers Need Liquid Cooling to Scale Efficiently? - Dailyhunt</a> — Dailyhunt / quality 2 / hits: ai data center, data center, cooling</li>
+<li><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNMS1zUFdGQzA5VWdTYVRWbzlzZjF2WkZQMWRjeVVDb2NVM3llS0dZNXh1UzBsM1Z0cG9YY0d2bllMRUY4TjJLOUlja2ZkZjVfZmVrelZFckhPOFBwcEV0YmpXWDdkU0h0YlBSYklfWTJ0TDBaQ0FaOWdGX1dHTi1HZ0JKVG9aLVRsdHotYlBOcnN4ZDRDQ1QtT2JTbFVZLXlobWNIX2xXM3h5QkpqNWdpaEJ3?oc=5">AI CapEx Rush Seen as Continuing as Market Stresses Bubble Up - Bloomberg.com</a> — Bloomberg.com / quality 4 / hits: capex</li>
+<li><strong>Missing evidence needed:</strong> post-training 개선이 inference volume, training/fine-tuning spend, GPU/HBM/packaging 수요, capex ROI debate로 연결되는 반복 근거.</li>
 </ul>
-<hr>
-<h2>2. 오늘의 해석</h2>
+<h2>3. paper picker — today_one_paper</h2>
 <ul>
-<li>Research signal은 단독으로 끝내지 않고 <code>compute cost</code>, <code>agent workload</code>, <code>RAG trust</code>, <code>on-device shift</code> 중 어디에 닿는지 본다.</li>
-<li>Market narrative는 가격 예측이 아니라 <code>어떤 산업 node/edge가 강해졌는지</code>로 읽는다.</li>
-<li>가장 중요한 질문은 ‘기술 signal이 실제 workload나 capex narrative를 바꾸는가?’다.</li>
+<li><strong>입력:</strong> <code>08-data/daily_ai_signals/YYYY-MM-DD.json</code>의 today_one_paper/deep_card.</li>
+<li><strong>picker 기준:</strong> 형준님 5요소 충족도, 병목 변화 가능성, 시장 recognition_gap, 7~30일 검증 가능성, 본업 정보 우위(Samsung Research SR-470M·GRPO·KV cache·on-device·multimodal).</li>
+<li><strong>결과:</strong> signal_id=today_one_paper-2026-06-04-automedbench-towards-medical-autoresearch-with-a · title=AutoMedBench: Towards Medical AutoResearch with Agentic AI Models</li>
+<li><strong>pick_reason:</strong> 의료 vertical agent의 adoption signal이라기보다, agent 연구 자동화에서 <code>validation</code>이 병목인지 보여주는 평가축으로 본다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
 </ul>
-<h2>3. 다음 확인 질문</h2>
+<h2>4. 7영역 destination (registry-driven)</h2>
 <ul>
-<li>Inference memory/cost 개선이 cloud inference 비용을 실제로 낮추는가, 아니면 agent 사용량 증가로 총 compute demand를 키우는가?</li>
-<li>On-device LLM은 cloud 수요를 대체하는가, 아니면 robotics/edge workload를 새로 만들어 semiconductor 수요를 넓히는가?</li>
-<li>RAG security/evidence tracing은 enterprise/healthcare adoption의 병목인가, 아니면 governance 제품 기회인가?</li>
-<li>Hyperscaler capex 뉴스가 HBM/packaging/power bottleneck과 같은 방향으로 움직이는가?</li>
+<li><strong>사용 registry:</strong> <code>08-data/industry-value-chain-registry.json</code>의 <code>korean_7area_mapping</code>.</li>
+<li>오늘 today_one_paper/market text에서 강한 7영역 destination 매칭 없음. registry keyword 보강 또는 수동 검토 필요.</li>
 </ul>
-<h2>4. 원본 리포트</h2>
+<h2>5. 다음 확인 (7d / 30d / 90d+ 분리)</h2>
+<h3>7d</h3>
 <ul>
-<li><span class="badge">Daily AI Research Radar — 2026-05-14</span></li>
-<li><span class="badge">Market Narrative Brief — 2026-05-14</span></li>
-</ul></article></main>
+<li>today_one_paper 원문/코드/벤치 확인 · signal_id=today_one_paper-2026-06-04-automedbench-towards-medical-autoresearch-with-a</li>
+<li>연결 edge가 제품/IR/공시/고품질 뉴스에서 반복되는지 확인 · signal_id=today_one_paper-2026-06-04-automedbench-towards-medical-autoresearch-with-a</li>
+</ul>
+<h3>30d</h3>
+<ul>
+<li>실적·conference·release note에서 workload/capex/order 언급 확인 · signal_id=today_one_paper-2026-06-04-automedbench-towards-medical-autoresearch-with-a</li>
+<li>Market Brief 신규 산업 큐와 같은 영역 반복 여부 확인 · signal_id=today_one_paper-2026-06-04-automedbench-towards-medical-autoresearch-with-a</li>
+</ul>
+<h3>90d+</h3>
+<ul>
+<li>prediction-board로 이동해 장기 thesis로 추적 · signal_id=today_one_paper-2026-06-04-automedbench-towards-medical-autoresearch-with-a</li>
+</ul>
+<h2>6. 원본 (collapsed default)</h2>
+<details><summary>원본 리포트 링크</summary>
+<ul>
+<li><a href="/research-desk/reports/ai-research/2026-06-04.html">Daily AI Research Radar — 2026-06-04</a></li>
+<li><a href="/research-desk/reports/market/2026-06-04.html">Market Narrative Brief — 2026-06-04</a></li>
+<li>Structured JSON: <code>08-data/daily_cross_signals/2026-06-04.json</code></li>
+</ul>
+</details></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
