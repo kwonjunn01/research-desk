@@ -250,25 +250,33 @@
 <blockquote>실제 예측이 쌓이고, 이후 실제 결과와 비교되어 다음 예측을 강하게 만드는 board. 투자 추천이 아니라 <strong>기술 signal ↔ 시장 narrative의 시간차와 관성</strong>을 추적한다.</blockquote>
 <div class="desk-dashboard">
 <div class="desk-card hot"><strong>Active Predictions</strong><p>3개 · short/mid/long horizon으로 분리 추적</p></div>
-<div class="desk-card warn"><strong>Main Gap</strong><p>시장 evidence가 아직 기술 signal보다 일반론적이다. source quality와 lag를 따로 추적해야 한다.</p></div>
-<div class="desk-card violet"><strong>Next Review</strong><p>Short: 2026-05-12 · Mid: 2026-06-05 · Long: 2026-08-05</p></div>
+<div class="desk-card warn"><strong>Last Review</strong><p>2026-06-05 · PRED-001 confidence 하향, PRED-002 공식 checkpoint 보류, PRED-003 장기 monitor</p></div>
+<div class="desk-card violet"><strong>Next Review</strong><p>Weekly light: 2026-06-12 · Official: PRED-002/PRED-003 2026-08-05</p></div>
 </div>
-<div class="ref-note">참고 대시보드에서 가져온 UX 방향: mobile-first dark intelligence dashboard, KPI cards, heatmap sections, tab-like scanning, stock/news/context panels. Research Desk에는 이를 static Markdown→HTML 방식으로 가볍게 이식한다.</div>
+<div class="ref-note">이 보드는 매수/매도 판단이 아니라 Research signal이 시장 narrative로 번역되는 속도와 gap을 추적한다. 2026-06-05 점검 기준으로 가장 큰 gap은 RAG/Memory trust 기술 신호가 enterprise procurement·security·compliance 근거로 아직 충분히 전환되지 않았다는 점이다.</div>
 <h2>실제 예측 카드</h2>
 <div class="prediction-grid">
-<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot">PRED-20260505-001</span><span class="pred-pill">Short · 1~2주</span><span class="pred-pill">confidence 0.63</span><span class="pred-pill">pending</span></div><h3>Agent Memory/RAG Trust becomes an enterprise adoption gate</h3><p class="thesis"><span class="label">Thesis</span><br>Agent 제품화가 진행될수록 memory, retrieval trust, poisoned evidence, traceability가 adoption gate로 부상한다.</p><p><span class="label">Inertia</span><br>Narrative mismatch · 기술 evidence가 먼저 움직이고 시장은 healthcare/enterprise AI 일반론으로만 반응 중</p><p><span class="label">Check</span><br>2026-05-12 / 2026-05-19</p></div>
-<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot">PRED-20260505-002</span><span class="pred-pill">Mid · 1개월~1분기</span><span class="pred-pill">confidence 0.58</span><span class="pred-pill">pending</span></div><h3>Inference memory/cost pressure reinforces data center and power narrative</h3><p class="thesis"><span class="label">Thesis</span><br>Inference 효율화는 cloud 수요를 바로 줄이기보다 agent workload 증가와 capex/power narrative 강화로 먼저 해석될 가능성이 높다.</p><p><span class="label">Inertia</span><br>Inertia reinforcer · 이미 형성된 hyperscaler capex/data center narrative를 강화</p><p><span class="label">Check</span><br>2026-06-05 / 2026-08-05</p></div>
-<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot">PRED-20260505-003</span><span class="pred-pill">Long · 6개월~2년</span><span class="pred-pill">confidence 0.55</span><span class="pred-pill">pending</span></div><h3>On-device/edge AI expands the industry surface rather than replacing cloud immediately</h3><p class="thesis"><span class="label">Thesis</span><br>On-device AI는 cloud를 단순 대체하기보다 robotics, mobile, privacy-sensitive workflow의 새 수요면을 넓힐 가능성이 높다.</p><p><span class="label">Inertia</span><br>Long-term resolution · latency/privacy bottleneck을 장기적으로 우회하지만 당장 market reaction은 제한적</p><p><span class="label">Check</span><br>2026-08-05 / 2026-11-05 / 2027-05-05</p></div>
+<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot">PRED-20260505-001</span><span class="pred-pill">Short · 1~2주</span><span class="pred-pill">confidence 0.58</span><span class="pred-pill">pending · confidence down</span></div><h3>Agent Memory/RAG Trust becomes an enterprise adoption gate</h3><p class="thesis"><span class="label">Thesis</span><br>Agent 제품화가 진행될수록 memory, retrieval trust, poisoned evidence, traceability가 adoption gate로 부상한다는 가설. 기술 attention은 누적됐지만 enterprise 구매·감사·컴플라이언스 근거는 아직 부족하다.</p><p><span class="label">Inertia</span><br>Narrative mismatch · 기술 evidence가 먼저 움직이고 시장은 healthcare/enterprise AI 일반론으로만 반응 중</p><p><span class="label">Check</span><br>2026-06-12 light check</p></div>
+<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot">PRED-20260505-002</span><span class="pred-pill">Mid · 1개월~1분기</span><span class="pred-pill">confidence 0.58</span><span class="pred-pill">pending · official checkpoint reviewed</span></div><h3>Inference memory/cost pressure reinforces data center and power narrative</h3><p class="thesis"><span class="label">Thesis</span><br>Inference 효율화는 cloud 수요를 바로 줄이기보다 agent workload 증가와 capex/power narrative 강화로 먼저 해석될 가능성이 높다. 2026-06-05 기준 infra narrative는 강하지만 agent/inference workload 직접 attribution은 아직 약하다.</p><p><span class="label">Inertia</span><br>Inertia reinforcer · hyperscaler capex, HBM, data center, power narrative는 강화됐지만 causal evidence는 분리 추적</p><p><span class="label">Check</span><br>2026-06-12 light · 2026-08-05 official</p></div>
+<div class="prediction-card"><div class="prediction-meta"><span class="pred-pill hot">PRED-20260505-003</span><span class="pred-pill">Long · 6개월~2년</span><span class="pred-pill">confidence 0.55</span><span class="pred-pill">pending · long monitor</span></div><h3>On-device/edge AI expands the industry surface rather than replacing cloud immediately</h3><p class="thesis"><span class="label">Thesis</span><br>On-device AI는 cloud를 단순 대체하기보다 robotics, mobile, privacy-sensitive workflow의 새 수요면을 넓힐 가능성이 높다. 현재는 headline/PR이 hard deployment보다 앞서 있다.</p><p><span class="label">Inertia</span><br>Long-term resolution · latency/privacy bottleneck을 장기적으로 우회하지만 당장 cloud replacement evidence는 제한적</p><p><span class="label">Check</span><br>2026-08-05 official</p></div>
 </div>
+<h2>2026-06-05 Review Snapshot</h2>
+<ul>
+<li><strong>업데이트된 예측:</strong> 3개. PRED-001은 short horizon overrun과 직접 enterprise evidence 부족 때문에 confidence를 0.63 → 0.58로 낮췄다. PRED-002/PRED-003은 confidence 유지.</li>
+<li><strong>가장 큰 gap:</strong> PRED-001 — Memory/RAG/eval/trust 기술 신호는 반복되지만, enterprise procurement·security requirement·audit/compliance source로의 전환 근거가 부족하다.</li>
+<li><strong>보조 gap:</strong> PRED-002 — HBM·power·data center·capex narrative는 강하지만, 이것이 agent/inference workload 증가 때문이라는 직접 attribution은 아직 약하다.</li>
+<li><strong>현재 timing gap:</strong> PRED-001은 <code>technical attention leads market narrative</code>, PRED-002는 <code>simultaneous reinforcement 후보 but causal gap</code>, PRED-003은 <code>market headline leads hard deployment evidence</code>.</li>
+<li><strong>다음 확인:</strong> 2026-06-12 light review에서 PRED-001 enterprise/security/procurement 근거와 PRED-002 workload/capex attribution을 재확인한다.</li>
+</ul>
 <h2>Signal → Forecast Map</h2>
 <div class="viz-card"><div class="mermaid">flowchart LR
-  A[&quot;Needle-in-RAG / ClawMem&quot;] --&gt; P1[&quot;PRED-001\nRAG Trust Gate&quot;]
-  B[&quot;Memory Cost Framework&quot;] --&gt; P2[&quot;PRED-002\nInference Cost → Capex/Power&quot;]
-  C[&quot;ClawMem / On-device signals&quot;] --&gt; P3[&quot;PRED-003\nEdge Expansion&quot;]
+  A[&quot;Agent memory / eval / trace papers&quot;] --&gt; P1[&quot;PRED-001\nRAG Trust Gate&quot;]
+  B[&quot;Inference / agent workload pressure&quot;] --&gt; P2[&quot;PRED-002\nInference Cost → Capex/Power&quot;]
+  C[&quot;On-device / robotics signals&quot;] --&gt; P3[&quot;PRED-003\nEdge Expansion&quot;]
 
-  M1[&quot;Healthcare / Enterprise AI News&quot;] --&gt; P1
-  M2[&quot;Hyperscaler Capex / Power Grid News&quot;] --&gt; P2
-  M3[&quot;Robotics / Device AI News&quot;] --&gt; P3
+  M1[&quot;Enterprise AI / Healthcare AI general news&quot;] --&gt; P1
+  M2[&quot;Hyperscaler Capex / HBM / Power Grid news&quot;] --&gt; P2
+  M3[&quot;Robotics / AI PC / Device AI news&quot;] --&gt; P3
 
   P1 --&gt; R[&quot;Review actual outcome&quot;]
   P2 --&gt; R
@@ -279,23 +287,27 @@
 <ul>
 <li><strong>기술 쪽 확인:</strong> agent framework/repo release에서 memory, provenance, traceback, eval, audit 기능 반복 등장 여부.</li>
 <li><strong>시장 쪽 확인:</strong> healthcare/legal/finance AI 뉴스에서 agent와 governance/security가 같이 묶이는지.</li>
-<li><strong>무효화 조건:</strong> 다음 2주간 agent news가 UI/demo 중심으로만 반복되고 RAG trust/security evidence가 늘지 않음.</li>
+<li><strong>무효화 조건:</strong> agent news가 UI/demo 중심으로만 반복되고 RAG trust/security evidence가 구매·감사·컴플라이언스 근거로 넘어가지 않음.</li>
+<li><strong>현재 판단:</strong> 방향은 부분 지지되지만 short horizon 안의 enterprise gate 증거는 부족해 confidence 하향.</li>
 </ul>
 <h3>PRED-20260505-002 — Mid</h3>
 <ul>
 <li><strong>기술 쪽 확인:</strong> inference/memory efficiency research가 실제 serving cost language와 연결되는지.</li>
 <li><strong>시장 쪽 확인:</strong> hyperscaler capex, data center, power/grid/cooling narrative가 inference/agent workload와 같이 언급되는지.</li>
 <li><strong>무효화 조건:</strong> cloud providers가 capex guidance를 낮추면서 inference efficiency를 이유로 제시.</li>
+<li><strong>현재 판단:</strong> AI infra 관성은 thesis에 우호적이지만 generic capex와 workload-growth attribution을 분리해야 한다.</li>
 </ul>
 <h3>PRED-20260505-003 — Long</h3>
 <ul>
 <li><strong>기술 쪽 확인:</strong> local/on-device model deployment가 repo/demo가 아니라 product shipment로 이어지는지.</li>
 <li><strong>시장 쪽 확인:</strong> robotics/device/semiconductor 뉴스에서 edge inference가 실제 제품/수요로 언급되는지.</li>
 <li><strong>무효화 조건:</strong> edge AI가 demo/marketing에 머물고 cloud API가 latency/privacy concerns를 흡수.</li>
+<li><strong>현재 판단:</strong> cloud replacement보다 expansion thesis가 여전히 더 적절하지만, shipment·field deployment·runtime adoption 확인 전까지 confidence 유지.</li>
 </ul>
 <h2>Ledger 원본</h2>
 <ul>
 <li>Markdown source: <code>03-reports/predictions/2026-05-05.md</code></li>
+<li>Latest weekly review: <code>02-weekly/2026-06-05-prediction-review.md</code></li>
 <li>연결 문서: <a href="/research-desk/cross-ontology/prediction-feedback-loop.html">Prediction Feedback Loop</a></li>
 <li>연결 문서: <a href="/research-desk/cross-ontology/inertia-gap-matrix.html">Inertia Gap Matrix</a></li>
 </ul></article></main>
