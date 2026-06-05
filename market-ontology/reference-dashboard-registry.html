@@ -89,6 +89,10 @@
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/ai-research/2026-05-23.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
 </ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-22.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
 </details>
 </details>
 <details class="nav-major">
@@ -253,8 +257,24 @@
 <div class="desk-card warn"><strong>Ontology Edges</strong><p>56개 supply/dependency/constraint edge</p></div>
 <div class="desk-card violet"><strong>Detailed Registry</strong><p>16개 theme · 38개 node · 11개 query seed</p></div>
 </div>
-<h2>0. 2026-05-29 Weekly QA 반영</h2>
-<p>이번 주 QA는 기준 registry 수치(16 theme · 38 node · 56 edge · 11 query seed)를 유지하면서, 2026-05-23~29 AI/Market/Cross/Monthly reports에서 확인된 evidence 후보를 기존 node/edge에 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source review queue</strong>다. 기업명과 ticker는 산업 매핑 참고용이며 매수·매도 판단이 아니다.</p>
+<h2>0. 2026-06-05 Weekly QA 반영</h2>
+<p>이번 주 QA는 기준 registry 수치(16 theme · 38 node · 56 edge · 11 query seed)를 유지하면서, 2026-06-01~05 AI/Market/Cross reports에서 확인된 evidence 후보를 기존 node/edge에 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source review queue</strong>다. 기업명과 ticker는 산업 매핑 참고용이며 매수·매도 판단이 아니다.</p>
+<h3>새로 연결된 evidence 후보</h3>
+<ul>
+<li><strong>AI Agent runtime · Memory/RAG · Agent Eval/Security</strong>: AgentDoG 1.5, GrepSeek, LongTraceRL, Trojan/backdoor 방어, AutoMedBench, RAMP, Deep-Research Agent failure analysis, KVarN/KV-cache → <code>ai_agent</code>, <code>training_data</code>, <code>frontier_llm</code>, <code>opensource_llm</code>, <code>enterprise_ai</code>에 연결 후보.</li>
+<li><strong>Physical AI · Robotics · On-device AI</strong>: Qwen-VLA, Cosmos 3, OVO-S-Bench, NVIDIA Isaac GR00T, humanoid 투자 보도, Rainbow Robotics 시장 맥락 → <code>on_device</code>, <code>humanoid</code>, <code>autonomous</code>, <code>korean_ai_chip</code>, <code>nvidia</code>에 연결 후보.</li>
+<li><strong>AI DC 전력·냉각·SMR / DC EPC·부지</strong>: Supermicro Vera Rubin 5MW~1GW blueprint, liquid cooling, nuclear/grid, DC EPC/부지 보도 후보 반복 → <code>dc_power</code>, <code>liquid_cooling</code>, <code>nuclear</code>, <code>transformer</code>, <code>datacenter_build</code>, <code>hyperscaler</code>에 연결 후보.</li>
+<li><strong>HBM / CoWoS·Advanced Packaging / AI server 2-tier</strong>: Advanced Packaging/CoWoS 심화 후보, HBM Memory 상위 theme, agent memory/KV/cache workload → <code>hbm</code>, <code>cowos</code>, <code>packaging_eq</code>, <code>inspection</code>, <code>etch_deposit</code>, <code>datacenter_build</code>에 연결 후보.</li>
+<li><strong>Hyperscaler capex ROI / custom silicon</strong>: Microsoft/Azure, Google/Alphabet, Meta, Amazon, Oracle의 capex·AI revenue conversion·custom silicon economics → <code>hyperscaler</code>, <code>custom_asic</code>, <code>datacenter_build</code>, <code>dc_power</code>에 연결 후보.</li>
+</ul>
+<h3>이번 주 부족한 UX / 데이터</h3>
+<ul>
+<li>현재 page는 KPI cards, 병목 heatmap, Mermaid 기반 supply/dependency network, node detail cards, edge strip, query seeds, risk/metrics 일부를 제공한다.</li>
+<li>아직 <strong>진짜 Sankey/flow interaction</strong>, 클릭형 node side panel, node별 최신 metric 자동 갱신, node card 안의 주가·뉴스·context panel, query copy/freshness badge, 모바일에서 긴 company/ticker list 압축, node freshness badge는 backlog다.</li>
+<li>상세 보강 기록은 <code>07-sources/reference-dashboard-weekly-qa.md</code>, <code>04-ontology/Reference Dashboard Node Seeds.md</code>, <code>07-sources/reference-dashboard-queries.yaml</code>의 candidate query section에 누적한다.</li>
+</ul>
+<h2>0.1. 2026-05-29 Weekly QA 반영</h2>
+<p>이전 QA는 기준 registry 수치(16 theme · 38 node · 56 edge · 11 query seed)를 유지하면서, 2026-05-23~29 AI/Market/Cross/Monthly reports에서 확인된 evidence 후보를 기존 node/edge에 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source review queue</strong>다. 기업명과 ticker는 산업 매핑 참고용이며 매수·매도 판단이 아니다.</p>
 <h3>새로 연결된 evidence 후보</h3>
 <ul>
 <li><strong>CPO 광통신 · 광트랜시버 · AI 네트워크 스위치</strong>: COHR/LITE monthly reports와 value-chain discovery에서 800G/1.6T, optical interconnect, silicon photonics/InP laser, CPO/NPO, 한국 광통신/CPO 직접 노출 후보가 반복 → <code>cpo</code>, <code>optical_transceiver</code>, <code>switch_chip</code>, <code>fiber_material</code>, <code>datacenter_build</code>에 연결 후보.</li>
@@ -502,6 +522,15 @@
 <li><code>training_data</code>: <code>(&quot;training data&quot; OR &quot;학습 데이터&quot;) (LLM OR 저작권 OR synthetic)</code></li>
 <li><code>transformer</code>: <code>(transformer OR 변압기) (AI 전력 OR HD현대일렉 OR 효성중공업)</code></li>
 <li><code>nuclear</code>: <code>(&quot;SMR&quot; OR &quot;small modular reactor&quot; OR 원전) (AI OR data center OR 데이터센터)</code></li>
+</ul>
+<h3>Candidate query queue — 2026-06-05</h3>
+<p>기준 registry의 원본 11개 query seed는 유지한다. 아래는 collector 정식 반영 전 source-review 후보이며 투자 판단/매수·매도 신호가 아니다.</p>
+<ul>
+<li><code>agent_eval_security_memory</code>: agent eval/security/memory runtime — AgentDoG, GrepSeek, LongTraceRL, AutoMedBench, RAMP, KV-cache, Trojan/backdoor.</li>
+<li><code>physical_ai_vla_humanoid</code>: Physical AI/VLA/humanoid deployment — Qwen-VLA, Cosmos 3, Isaac GR00T, humanoid factory/deployment.</li>
+<li><code>ai_dc_power_cooling_smr</code>: AI data center power/cooling/SMR/EPC — grid, interconnect, liquid cooling, nuclear/SMR, substation, permitting.</li>
+<li><code>hbm_cowos_agent_memory</code>: HBM/CoWoS tied to agent memory workload — HBM3E/HBM4, CoWoS, TC bonder, KV-cache, server memory.</li>
+<li><code>hyperscaler_capex_roi_custom_silicon</code>: hyperscaler capex ROI/custom silicon — AI revenue conversion, utilization, inference margin, TPU/Trainium/MTIA.</li>
 </ul>
 <h2>저장 위치</h2>
 <ul>

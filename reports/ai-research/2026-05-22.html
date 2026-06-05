@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI Research Radar — 2026-05-22</title>
+  <link rel="stylesheet" href="/research-desk/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1><a href="/research-desk/index.html">Research Desk</a></h1>
+    <div class="meta">Personal Research Radar</div>
+    <details class="nav-major">
+<summary class="nav-major-title">Home</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">Overview</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
+<li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
+<li><a href="/research-desk/agent-build-log/index.html"><span class="nav-badge">빌드</span> Agent Build Log</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">AI Research</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">허브</span> AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html"><span class="nav-badge">Agent</span> Agent AI Specialist Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-06-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-05.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-04.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-03</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-03.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-02</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-02.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-01</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-01.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-31</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-31.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-30</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-30.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-29</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-29.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-28</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-28.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-27</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-27.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-26.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-25.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-24</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-24.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-23</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-23.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-22.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Quant Bot</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">운영 허브</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/index.html"><span class="nav-badge">허브</span> Quant Bot Hub</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-spec.html"><span class="nav-badge">Spec</span> BTC Futures v2 Spec</a></li>
+<li><a href="/research-desk/quant/upgrade-roadmap.html"><span class="nav-badge">Upgrade</span> Quant Bot Upgrade Roadmap</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html"><span class="nav-badge">Daily</span> BTC Futures v2 Daily Report</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">전략 / 시스템</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/agent-team.html"><span class="nav-badge">팀</span> AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-council.html"><span class="nav-badge">회의</span> Quant Strategy Council</a></li>
+<li><a href="/research-desk/quant/strategy-evolution-charter.html"><span class="nav-badge">전략</span> Strategy Evolution Charter</a></li>
+<li><a href="/research-desk/quant/scenario-planning.html"><span class="nav-badge">위기</span> Scenario Planning</a></li>
+<li><a href="/research-desk/quant/feedback-system.html"><span class="nav-badge">피드백</span> Feedback System</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Cross-Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">통합 지도</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">허브</span> Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">예측</span> Prediction Board</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-06-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-05.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-04.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-03</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-03.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-02</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-02.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-01</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-01.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-29</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-29.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-28</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-28.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-26.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-25.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-22.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-21.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-20.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-19</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-19.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-18</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-18.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Market Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">허브</span> Market Intelligence Hub</a></li>
+<li><a href="/research-desk/market-ontology/stock-traffic-light.html"><span class="nav-badge">신호</span> 주식 신호등</a></li>
+<li><a href="/research-desk/market-ontology/securities-reports.html"><span class="nav-badge">리포트</span> Institutional Securities Desk</a></li>
+<li><a href="/research-desk/market-ontology/company-reports/index.html"><span class="nav-badge">회사</span> Company Reports</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-06-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-05.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-04.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-03</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-03.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-02</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-02.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-01</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-01.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-29</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-29.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-28</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-28.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-26.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-25.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-22.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-21.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-20.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+</details>
+</details>
+  </aside>
+  <main><article>
+<div class="report-guide">
+  <b>읽는 순서</b>
+  <span>20초: 결론/후보</span>
+  <span>2분: 근거/가격반영</span>
+  <span>10분: 리스크/반증/원문</span>
+  <small>구조는 단순하게, 내용은 Source Pack·숫자·반대논리까지 깊게 유지한다.</small>
+</div>
+<h1>Daily AI Research Radar — 2026-05-22</h1>
+<p>tags: #daily #research-radar</p>
+<p><span class="badge">Home</span> / <span class="badge">Research Radar MOC</span> / <span class="badge">Weekly Review MOC</span></p>
+<blockquote>자동 수집 기반 초안이다. 공개/블로그화 전 사람이 검토한다.</blockquote>
+<h2>0. 수집 요약</h2>
+<ul>
+<li><strong>Total items:</strong> 68</li>
+<li><strong>HF Daily Papers:</strong> 30개 — 오늘 digest의 1순위 source</li>
+<li><strong>HF Daily quality gate:</strong> 정상 — 제목 30/30, 순위 30/30, upvote 30/30, abstract 30/30 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
+<li><strong>Collected at:</strong> 2026-05-21T23:32+00:00 UTC / 2026-05-22 08:32 KST — 최신성 점검용 수집 시각</li>
+<li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-05-22이 report date와 일치한다.</li>
+<li><strong>Sources:</strong> Hugging Face Daily Papers 30, GitHub 18, Hacker News 15, arXiv 5</li>
+<li><strong>Top topics:</strong> <span class="badge">Agentic AI</span> 29, <span class="badge">Agent Evaluation</span> 19, <span class="badge">AI Research</span> 17, <span class="badge">Inference Stack</span> 15, <span class="badge">Post-training</span> 11</li>
+<li><strong>Collector warnings:</strong> 5개</li>
+</ul>
+<hr>
+<h2>0-1. 20초 요약</h2>
+<ul>
+<li><strong>오늘 한 문장:</strong> <span class="badge">Agentic AI</span> 29, <span class="badge">Agent Evaluation</span> 19, <span class="badge">AI Research</span> 17 쪽으로 attention이 몰렸다.</li>
+<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 3, Inference / Efficiency 3, Reasoning / Post-training 3가 핵심이고, 깊게 읽을 후보는 Video2GUI: Synthesizing Large-Scale Interaction Traje… / IndusAgent: Reinforcing Open-Vocabulary Industrial An… / Enhancing Train-Free Infinite-Frame Generation for Co….</li>
+<li><strong>먼저 읽을 논문:</strong> <a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a> — GUI agent의 데이터 부족/실사용 일반화 문제를 직접 건드린다.</li>
+<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><strong>읽는 순서:</strong> 오늘 읽을 2~3개 → 훑을 것 → 스킵 후보 → topic heat/Lens Radar</li>
+</ul>
+<hr>
+<h2>1. HF Daily digest — 먼저 볼 논문</h2>
+<blockquote>원순위 10개를 나열하지 않는다. HF popularity는 참고만 하고, 오늘 실제로 읽을지/훑을지/스킵할지를 먼저 정한다.</blockquote>
+<ul>
+<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 3, Reasoning / Post-training 3, Inference / Efficiency 2, Multimodal / Generation 1, Benchmark / Evaluation 1 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(3개).</li>
+<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 3, Inference / Efficiency 3, Reasoning / Post-training 3가 핵심이고, 깊게 읽을 후보는 Video2GUI: Synthesizing Large-Scale Interaction Traje… / IndusAgent: Reinforcing Open-Vocabulary Industrial An… / Enhancing Train-Free Infinite-Frame Generation for Co….</li>
+</ul>
+<h3>오늘 읽을 2~3개</h3>
+<ul>
+<li><strong>깊게 읽기 1. <a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a></strong></li>
+<li><strong>위치:</strong> HF #2 · 👍 86 · Agent / Tool-use · digest score 20</li>
+<li><strong>쉽게 말하면:</strong> AI agent가 실제 컴퓨터 화면/앱/소프트웨어 환경에서 일을 제대로 끝내는지 시험장을 만들거나 훈련 데이터를 만드는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Recent advances in multimodal large language models have driven growing interest in graphical user interface (GUI) agents, yet their generalization remains constrained by the scarcity of large-scale training data spanning diverse real-world applications. Existing datasets rely heavily on costly manual annotations and…</li>
+<li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; GUI agent = 화면 조작 에이전트: 버튼·창·앱 화면을 보고 행동하는 agent; multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
+<li><strong>내 판단:</strong> GUI agent의 데이터 부족/실사용 일반화 문제를 직접 건드린다. 우리 레이더의 핵심 질문인 <code>agent가 긴 실제 작업을 안정적으로 끝내는가</code>와 바로 연결된다.</li>
+<li><strong>확인할 것:</strong> 환경/benchmark가 장난감인지, 실제 browser·OS·tool 실패를 포함하는지.</li>
+<li><strong>깊게 읽기 2. <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a></strong></li>
+<li><strong>위치:</strong> HF #4 · 👍 42 · Agent / Tool-use · digest score 19</li>
+<li><strong>쉽게 말하면:</strong> 공장/제조 현장의 이상 징후를 이미지+언어+도구 사용으로 찾아내는 산업용 agent 논문이다.</li>
+<li><strong>핵심 내용:</strong> Multimodal large language models (MLLMs) have shown remarkable capability in bridging visual perception and textual reasoning, enabling zero-shot understanding across diverse industrial scenarios. However, their performance in open-vocabulary industrial anomaly detection (IAD) is often limited by domain-misaligned rea…</li>
+<li><strong>핵심 용어:</strong> RL = 강화학습: 모델이 정답/보상 신호를 보며 행동을 더 잘하도록 조정하는 학습; retrieval/RAG = 검색/RAG: 외부 문서나 기억을 찾아 모델 답변에 붙이는 방식; agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
+<li><strong>내 판단:</strong> 산업 현장 visual QA에 agent 도구 사용을 붙이는 흐름이라, 범용 개인 agent보다는 산업 vertical agent 신호로 읽는다. agent가 일반 웹작업을 넘어 산업 현장 QA/검사 업무로 번지는지 보는 vertical adoption 신호다.</li>
+<li><strong>확인할 것:</strong> 환경/benchmark가 장난감인지, 실제 browser·OS·tool 실패를 포함하는지.</li>
+<li><strong>깊게 읽기 3. <a href="https://huggingface.co/papers/2605.18233">Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos</a></strong></li>
+<li><strong>위치:</strong> HF #3 · 👍 80 · Inference / Efficiency · digest score 18</li>
+<li><strong>쉽게 말하면:</strong> 큰 모델을 실제 서비스에서 더 싸고 빠르게 돌리기 위한 실행 최적화 논문이다.</li>
+<li><strong>핵심 내용:</strong> Without incurring significant computational overhead, train-free long video generation aims to enable foundation video generation models to produce longer videos. Frame-level autoregressive frameworks , e.g., FIFO-diffusion , offer the advantage of generating infinitely long videos with constant memory consumption.</li>
+<li><strong>핵심 용어:</strong> inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
+<li><strong>내 판단:</strong> 모델을 실제로 싸고 빠르게 돌리는 inference 병목 쪽이다. agent memory/RAG가 좋아지는지, 아니면 비용·정확도 병목이 남는지 판단하는 재료다.</li>
+<li><strong>확인할 것:</strong> 정확도 개선 대비 latency·비용이 production 검색에 맞는지.</li>
+</ul>
+<h3>훑고 넘어갈 것</h3>
+<ul>
+<li><strong>5분 훑기 1. <a href="https://huggingface.co/papers/2605.19833">Mega-ASR: Towards In-the-wild^2 Speech Recognition via Scaling up Real-world Acoustic Simulation</a></strong></li>
+<li><strong>위치:</strong> HF #1 · 👍 110 · Multimodal / Generation · digest score 12</li>
+<li><strong>쉽게 말하면:</strong> 음성인식 모델이 조용한 녹음실이 아니라 시끄럽고 왜곡된 실제 환경에서도 말을 잘 알아듣게 하려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Despite rapid advances in automatic speech recognition (ASR) and large audio-language models, robust recognition in real-world environments remains limited by an &quot; acoustic robustness bottleneck &quot;: models often lose acoustic grounding and produce omissions or hallucinations under severe, compositional distortions. We…</li>
+<li><strong>핵심 용어:</strong> ASR = 자동 음성인식: 사람의 말을 텍스트로 바꾸는 기술; speech recognition = 음성인식: 소리 속 말을 텍스트로 읽어내는 기술</li>
+<li><strong>내 판단:</strong> 멀티모달/음성 agent가 실제 환경에서 hallucination 없이 듣는 능력과 연결된다. voice/multimodal agent가 현실 환경으로 나오면 음성 robustness가 곧 사용성 병목이 된다.</li>
+<li><strong>확인할 것:</strong> 잡음·억양·왜곡·현장 음성에서 hallucination/누락이 실제로 줄었는지.</li>
+<li><strong>5분 훑기 2. <a href="https://huggingface.co/papers/2605.21468">You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories</a></strong></li>
+<li><strong>위치:</strong> HF #5 · 👍 41 · Reasoning / Post-training · digest score 18</li>
+<li><strong>쉽게 말하면:</strong> 정답 확인이 쉬운 문제로 LLM reasoning을 강화학습할 때, 생각보다 아주 작은 방향의 파라미터 변화만으로도 성능이 늘 수 있다는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Reinforcement learning with verifiable rewards (RLVR) has become a dominant paradigm for improving reasoning in large language models (LLMs), yet the underlying geometry of the resulting parameter trajectories remains underexplored. In this work, we demonstrate that RLVR weight trajectories are extremely low-rank and…</li>
+<li><strong>핵심 용어:</strong> RL = 강화학습: 모델이 정답/보상 신호를 보며 행동을 더 잘하도록 조정하는 학습; RLVR = 검증 가능한 강화학습: 정답 확인이 쉬운 문제로 reasoning을 강화학습시키는 방식; verifiable rewards = 검증 가능한 보상: 수학/코드처럼 정답 확인이 쉬운 문제에서 보상을 주는 신호</li>
+<li><strong>내 판단:</strong> reasoning 강화학습이 꼭 대규모 업데이트를 요구하는지, 작은 학습으로도 확장되는지 확인할 재료다. 모델 능력 향상이 단순 benchmark가 아니라 검증 가능한 보상/긴 작업 안정성으로 이동하는지 보는 재료다.</li>
+<li><strong>확인할 것:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지.</li>
+<li><strong>5분 훑기 3. <a href="https://huggingface.co/papers/2605.19660">OScaR: The Occam&#x27;s Razor for Extreme KV Cache Quantization in LLMs and Beyond</a></strong></li>
+<li><strong>위치:</strong> HF #6 · 👍 37 · Inference / Efficiency · digest score 13</li>
+<li><strong>쉽게 말하면:</strong> 긴 문맥 LLM을 돌릴 때 GPU 메모리를 크게 잡아먹는 KV cache를 더 작게 만들어 비용과 속도 병목을 줄이려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> The rapid advancement toward long-context reasoning and multi-modal intelligence has made the memory footprint of the Key-Value (KV) cache a dominant memory bottleneck for efficient deployment. While the established per-channel quantization effectively accommodates intrinsic channel-wise outliers in Key tensors, its e…</li>
+<li><strong>핵심 용어:</strong> KV cache = KV 캐시: 긴 대화/문서를 처리할 때 이전 token 정보를 저장하는 메모리; quantization = 양자화: 모델 계산/메모리를 줄이려고 숫자 정밀도를 낮추는 기법</li>
+<li><strong>내 판단:</strong> agent가 길고 많은 요청을 처리할 때 터지는 메모리·prefill 비용 병목을 줄이는 쪽이다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
+<li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지.</li>
+<li><strong>5분 훑기 4. <a href="https://huggingface.co/papers/2605.20266">A Survey of Large Audio Language Models: Generalization, Trustworthiness, and Outlook</a></strong></li>
+<li><strong>위치:</strong> HF #7 · 👍 28 · Reasoning / Post-training · digest score 14</li>
+<li><strong>쉽게 말하면:</strong> 음성인식 모델이 조용한 녹음실이 아니라 시끄럽고 왜곡된 실제 환경에서도 말을 잘 알아듣게 하려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> The foundational capabilities established by Large Language Models (LLMs) have paved the way for Multimodal Large Language Models (MLLMs), within which Large Audio Language Models (LALMs) are essential for realizing universal auditory intelligence. Despite their remarkable performance, the escalation of LALMs&#x27; capabil…</li>
+<li><strong>핵심 용어:</strong> multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
+<li><strong>내 판단:</strong> 멀티모달/음성 agent가 실제 환경에서 hallucination 없이 듣는 능력과 연결된다. 개인 agent가 실제 업무 문맥을 다룰수록 privacy/trust가 제품화 병목이 되기 때문이다.</li>
+<li><strong>확인할 것:</strong> 개인정보 흐름 규칙을 실제 agent workflow에서 자동 평가할 수 있는지.</li>
+</ul>
+<h3>스킵 후보</h3>
+<blockquote>완전 무시가 아니라, 오늘 레이더의 agent/병목 thesis와 직접 연결이 약해 뒤로 미룬다.</blockquote>
+<ul>
+<li><strong>오늘은 스킵 1. <a href="https://huggingface.co/papers/2605.21487">Uni-Edit: Intelligent Editing Is A General Task For Unified Model Tuning</a></strong></li>
+<li><strong>위치:</strong> HF #11 · 👍 19 · Multimodal / Generation · digest score 4</li>
+<li><strong>쉽게 말하면:</strong> 이미지·영상·소리 같은 비텍스트 데이터를 더 잘 이해하거나 생성하려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Currently, enhancing Unified Multimodal Models (UMMs) with image understanding, generation, and editing capabilities mainly relies on mixed multi-task training . Due to inherent task conflicts, such strategy requires complex multi-stage pipelines, massive data mixing, and balancing tricks, merely resulting in a perfor…</li>
+<li><strong>핵심 용어:</strong> multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
+<li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 인기는 있지만 우리 thesis와의 연결은 약할 수 있어, 먼저 초록 수준으로만 확인한다.</li>
+<li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
+<li><strong>오늘은 스킵 2. <a href="https://huggingface.co/papers/2605.19376">Generative Recursive Reasoning</a></strong></li>
+<li><strong>위치:</strong> HF #12 · 👍 19 · Inference / Efficiency · digest score 10</li>
+<li><strong>쉽게 말하면:</strong> 큰 모델을 실제 서비스에서 더 싸고 빠르게 돌리기 위한 실행 최적화 논문이다.</li>
+<li><strong>핵심 내용:</strong> How should future neural reasoning systems implement extended computation? Recursive Reasoning Models (RRMs) offer a promising alternative to autoregressive sequence extension by performing iterative latent-state refinement with shared transition functions .</li>
+<li><strong>핵심 용어:</strong> inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
+<li><strong>내 판단:</strong> 모델을 실제로 싸고 빠르게 돌리는 inference 병목 쪽이다. 인기는 있지만 우리 thesis와의 연결은 약할 수 있어, 먼저 초록 수준으로만 확인한다.</li>
+<li><strong>확인할 것:</strong> 처리량/메모리 절감이 어떤 하드웨어와 batch 조건에서 나온 것인지.</li>
+<li><strong>오늘은 스킵 3. <a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a></strong></li>
+<li><strong>위치:</strong> HF #8 · 👍 27 · Reasoning / Post-training · digest score 14</li>
+<li><strong>쉽게 말하면:</strong> 개인 agent가 민감한 정보를 다룰 때, 정보가 상황에 맞게 흘렀는지 평가·훈련하려는 프라이버시/신뢰성 논문이다.</li>
+<li><strong>핵심 내용:</strong> Contextual Integrity (CI) defines privacy not merely as keeping information hidden, but as governing information flows according to the norms of a given context. As large language models are increasingly deployed as personal agents handling sensitive workflows, adhering to CI becomes critical.</li>
+<li><strong>핵심 용어:</strong> distillation = 증류: 큰 모델/기존 모델의 행동을 작은 모델이나 새 모델에 옮기는 학습; contextual integrity = 맥락 무결성: 개인정보가 상황의 규칙에 맞게 흐르는지 보는 프라이버시 개념</li>
+<li><strong>내 판단:</strong> 개인 agent가 개인정보/업무 문맥을 다룰 때 필요한 trust gate와 연결된다. 개인 agent가 실제 업무 문맥을 다룰수록 privacy/trust가 제품화 병목이 되기 때문이다.</li>
+<li><strong>확인할 것:</strong> 개인정보 흐름 규칙을 실제 agent workflow에서 자동 평가할 수 있는지.</li>
+</ul>
+<hr>
+<h2>2. 한눈에 보는 오늘의 AI Research 지도</h2>
+<blockquote>목적: 항목 나열 전에 <code>능력 향상 → agent화 → orchestration/inference 병목 → edge 이동 → 신뢰성 리스크</code> 흐름을 먼저 본다.</blockquote>
+<div class="viz-card"><div class="mermaid">flowchart LR
+  Post_training[&quot;Post-training&quot;] -- improves --&gt; Agentic_AI[&quot;Agentic AI&quot;]
+  Agent_Planning[&quot;Agent Planning&quot;] -- controls --&gt; Agentic_AI[&quot;Agentic AI&quot;]
+  Tool_Use___MCP[&quot;Tool Use / MCP&quot;] -- connects --&gt; Agentic_AI[&quot;Agentic AI&quot;]
+  Agentic_AI[&quot;Agentic AI&quot;] -- becomes --&gt; Personal_Agent[&quot;Personal Agent&quot;]
+  Agent_Evaluation[&quot;Agent Evaluation&quot;] -- validates --&gt; Agentic_AI[&quot;Agentic AI&quot;]
+  Agent_Security[&quot;Agent Security&quot;] -- constrains --&gt; Personal_Agent[&quot;Personal Agent&quot;]
+  LLM_Orchestration[&quot;LLM Orchestration&quot;] -- turns_models_into --&gt; Agentic_AI[&quot;Agentic AI&quot;]
+  Inference_Stack[&quot;Inference Stack&quot;] -- makes_feasible --&gt; Agentic_AI[&quot;Agentic AI&quot;]
+  Inference_Stack[&quot;Inference Stack&quot;] -- enables --&gt; On_device_LLM[&quot;On-device LLM&quot;]
+  On_device_LLM[&quot;On-device LLM&quot;] -- moves_workloads_to --&gt; Edge_AI[&quot;Edge AI&quot;]
+  Agentic_AI[&quot;Agentic AI&quot;] -- requires --&gt; Memory___RAG[&quot;Memory / RAG&quot;]
+  Memory___RAG[&quot;Memory / RAG&quot;] -- introduces_risk --&gt; RAG_Security[&quot;RAG Security&quot;]
+  LLM_Orchestration[&quot;LLM Orchestration&quot;] -- uses_protocols_like --&gt; MCP[&quot;MCP&quot;]</div></div>
+<h3>지도 읽는 법 — 한글 설명</h3>
+<ul>
+<li><strong>Post-training → Agentic AI:</strong> 보상/검증/정렬 방식이 좋아지면 agent가 더 긴 작업을 안정적으로 수행할 가능성이 커진다.</li>
+<li><strong>LLM Orchestration → Agentic AI:</strong> 모델 하나의 성능보다 도구 호출, routing, workflow 설계가 실제 agent 제품화의 핵심 병목이 된다.</li>
+<li><strong>Inference Stack → Agentic AI / On-device LLM:</strong> latency, memory, serving cost가 낮아져야 agent와 local AI가 일상적으로 쓰인다.</li>
+<li><strong>Agentic AI → Memory/RAG → RAG Security:</strong> agent가 기억과 검색을 쓰기 시작하면 정확성은 좋아질 수 있지만, 검색 오염과 evidence 추적 문제가 같이 커진다.</li>
+</ul>
+<h3>오늘의 topic heat</h3>
+<blockquote>edge heat는 양쪽 topic의 동시 출현 또는 직접 evidence 기준이다. 한쪽 broad node만 뜨거운 경우는 과열 표시를 낮춘다.</blockquote>
+<ul>
+<li><span class="badge">Post-training</span> → <strong>improves</strong> → <span class="badge">Agentic AI</span> | heat: 강 (11/29, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">Post-training</span>(학습 이후 보상·검증·정렬로 모델 능력을 끌어올리는 영역)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>모델 능력을 끌어올림</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
+<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><span class="badge">Agent Planning</span> → <strong>controls</strong> → <span class="badge">Agentic AI</span> | heat: 강 (7/29, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">Agent Planning</span>(goal을 단계/DAG로 쪼개고 실패 시 재계획하는 agent 제어 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>agent의 계획·실행을 제어함</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a> — 오늘 수집 항목 중 <span class="badge">Agent Planning</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><span class="badge">Tool Use / MCP</span> → <strong>connects</strong> → <span class="badge">Agentic AI</span> | heat: 중 (4/29, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">Tool Use / MCP</span>(function calling, MCP, API connector로 agent를 외부 세계와 연결하는 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>외부 도구/API/데이터와 연결함</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a> — 오늘 수집 항목 중 <span class="badge">Tool Use / MCP</span>와 <span class="badge">Agentic AI</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><span class="badge">Agentic AI</span> → <strong>becomes</strong> → <span class="badge">Personal Agent</span> | heat: 중 (29/2, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)가 <span class="badge">Personal Agent</span>(email/calendar/browser/files/local memory를 다루는 개인 업무 자동화 agent 영역)에 <strong>개인 업무/생활 agent 제품으로 내려옴</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
+<li><a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a> — 오늘 수집 항목 중 <span class="badge">Agentic AI</span>와 <span class="badge">Personal Agent</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><span class="badge">Agent Evaluation</span> → <strong>validates</strong> → <span class="badge">Agentic AI</span> | heat: 강 (19/29, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">Agent Evaluation</span>(SWE-bench, WebArena, GAIA, OSWorld 등 agent 성공률/실패 유형 평가 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>실제 성공률과 실패 유형을 검증함</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
+<li><span class="badge">Agent Security</span> → <strong>constrains</strong> → <span class="badge">Personal Agent</span> | heat: 약 (1/2, direct evidence 0)</li>
+<li>기본 해석: <span class="badge">Agent Security</span>(prompt injection, tool abuse, permission, secret leakage를 다루는 신뢰/보안 계층)가 <span class="badge">Personal Agent</span>(email/calendar/browser/files/local memory를 다루는 개인 업무 자동화 agent 영역)에 <strong>신뢰·권한·보안 병목으로 제약함</strong></li>
+<li>오늘 올라온 내용: 직접 연결되는 강한 항목은 적음. 구조적 관찰 edge로만 유지.</li>
+<li><span class="badge">LLM Orchestration</span> → <strong>turns_models_into</strong> → <span class="badge">Agentic AI</span> | heat: 중 (4/29, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">LLM Orchestration</span>(여러 모델/도구/API를 workflow로 엮는 운영 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>모델을 실제 작업 흐름/agent로 바꿈</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
+<li><span class="badge">Inference Stack</span> → <strong>makes_feasible</strong> → <span class="badge">Agentic AI</span> | heat: 강 (15/29, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">Inference Stack</span>(serving, latency, throughput, memory/KV cache 같은 실행 비용 계층)가 <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)에 <strong>비용·속도 측면에서 실사용 가능하게 함</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
+<li><span class="badge">Inference Stack</span> → <strong>enables</strong> → <span class="badge">On-device LLM</span> | heat: 강 (15/6, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">Inference Stack</span>(serving, latency, throughput, memory/KV cache 같은 실행 비용 계층)가 <span class="badge">On-device LLM</span>(모델을 cloud가 아니라 local/mobile/edge에서 돌리는 흐름)에 <strong>가능하게 함</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><span class="badge">On-device LLM</span> → <strong>moves_workloads_to</strong> → <span class="badge">Edge AI</span> | heat: 중 (6/0, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">On-device LLM</span>(모델을 cloud가 아니라 local/mobile/edge에서 돌리는 흐름)가 <span class="badge">Edge AI</span>(로봇·모바일·기기 안에서 AI가 작동하는 영역)에 <strong>작업을 edge/device 쪽으로 이동시킴</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><span class="badge">Agentic AI</span> → <strong>requires</strong> → <span class="badge">Memory / RAG</span> | heat: 중 (29/0, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">Agentic AI</span>(LLM이 도구를 쓰고 여러 단계 작업을 수행하는 agent 영역)가 <span class="badge">Memory / RAG</span>(외부 지식 검색과 장기 기억으로 agent를 보강하는 계층)에 <strong>실사용을 위해 필요로 함</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><span class="badge">Memory / RAG</span> → <strong>introduces_risk</strong> → <span class="badge">RAG Security</span> | heat: 중 (0/0, direct evidence 2)</li>
+<li>기본 해석: <span class="badge">Memory / RAG</span>(외부 지식 검색과 장기 기억으로 agent를 보강하는 계층)가 <span class="badge">RAG Security</span>(검색 결과 오염, prompt injection, evidence 추적 같은 신뢰성/보안 이슈)에 <strong>새로운 신뢰성/보안 리스크를 만듦</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20266">A Survey of Large Audio Language Models: Generalization, Trustworthiness, and Outlook</a> — 오늘 수집 항목 중 <span class="badge">Memory / RAG</span>와 <span class="badge">RAG Security</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><a href="https://github.com/langgenius/dify">langgenius/dify</a> — 오늘 수집 항목 중 <span class="badge">Memory / RAG</span>와 <span class="badge">RAG Security</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+<li><span class="badge">LLM Orchestration</span> → <strong>uses_protocols_like</strong> → <span class="badge">MCP</span> | heat: 약 (4/0, direct evidence 1)</li>
+<li>기본 해석: <span class="badge">LLM Orchestration</span>(여러 모델/도구/API를 workflow로 엮는 운영 계층)가 <span class="badge">MCP</span>(agent와 외부 tool/data source를 연결하는 protocol 계층)에 <strong>MCP 같은 연결 표준을 활용함</strong></li>
+<li>오늘 올라온 내용:</li>
+<li><a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a> — 오늘 수집 항목 중 <span class="badge">LLM Orchestration</span>와 <span class="badge">MCP</span>를 연결해 볼 후보. 원문에서 adoption evidence와 benchmark 조건 확인 필요.</li>
+</ul>
+<h3>TL;DR</h3>
+<ul>
+<li><strong>오늘 한 문장:</strong> <span class="badge">Agentic AI</span> 29, <span class="badge">Agent Evaluation</span> 19, <span class="badge">AI Research</span> 17 쪽으로 attention이 몰렸다.</li>
+<li><strong>먼저 볼 것:</strong> <code>오늘 읽을 2~3개</code>의 요지/왜 지금/확인할 것만 먼저 보고, 나머지는 훑기·스킵으로 보낸다.</li>
+<li><strong>더 읽을지 판단:</strong> agent/workload/bottleneck으로 번역되는 신호가 있으면 상세 signal을 본다.</li>
+<li><strong>승격 기준:</strong> 논문/레포가 실제 production stack, 비용/latency, 재현성, adoption 증거와 연결되면 weekly 후보로 올린다.</li>
+</ul>
+<h3>5분 스캔</h3>
+<ul>
+<li><a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — Hugging Face Daily Papers, score 22, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.18233">Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos</a> — Hugging Face Daily Papers, score 18, <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.21470v1">Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://arxiv.org/abs/2605.21482v1">DeepWeb-Bench: A Deep Research Benchmark Demanding Massive Cross-Source Evidence and Long-Horizon Derivation</a> — arXiv, score 10, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span></li>
+</ul>
+<hr>
+<h2>3. Lens Radar — signal / hype / 병목</h2>
+<p>상태 해석: <code>signal 후보</code>는 실제 adoption/구현 근거가 있는 후보, <code>hype 주의</code>는 주장 대비 근거가 약한 후보, <code>signal+hype 혼재</code>는 가능성은 있지만 검증이 필요한 상태다.</p>
+<h3><span class="badge">Agentic AI</span> — Agent 실사용</h3>
+<ul>
+<li><strong>Status:</strong> signal+hype 혼재</li>
+<li><strong>Why this lens matters:</strong> 도구 사용, workflow, 협업 agent가 실제 제품/업무로 이어지는지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li><a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a> — Hacker News, score 7, <span class="badge">Agentic AI</span></li>
+</ul>
+<h3><span class="badge">Post-training</span> — Post-training / RLVR</h3>
+<ul>
+<li><strong>Status:</strong> signal+hype 혼재</li>
+<li><strong>Why this lens matters:</strong> 모델 능력 향상이 데이터/보상/검증 가능성으로 이동하는지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.21384">SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span></li>
+<li><a href="https://huggingface.co/papers/2605.21468">You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.21226">OCTOPUS: Optimized KV Cache for Transformers via Octahedral Parametrization Under optimal Squared error quantization</a> — Hugging Face Daily Papers, score 11, <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — Hacker News, score 9, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span></li>
+</ul>
+<h3><span class="badge">Inference Stack</span> — Inference 비용/메모리</h3>
+<ul>
+<li><strong>Status:</strong> signal+hype 혼재</li>
+<li><strong>Why this lens matters:</strong> latency, throughput, memory cost가 adoption 병목인지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li><a href="https://arxiv.org/abs/2605.21470v1">Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Inference Stack</span></li>
+</ul>
+<h3><span class="badge">On-device LLM</span> — On-device / Edge</h3>
+<ul>
+<li><strong>Status:</strong> signal 후보</li>
+<li><strong>Why this lens matters:</strong> cloud 의존을 줄이거나 새로운 edge workload를 만드는지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — Hugging Face Daily Papers, score 22, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li>뚜렷한 hype 후보 없음</li>
+</ul>
+<h3><span class="badge">Memory / RAG</span> — RAG / Memory 신뢰성</h3>
+<ul>
+<li><strong>Status:</strong> signal 후보</li>
+<li><strong>Why this lens matters:</strong> agent memory와 retrieval이 실제 신뢰성/보안 문제를 해결하는지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li>뚜렷한 hype 후보 없음</li>
+</ul>
+<h3><span class="badge">Agent Planning</span> — Planning / long-horizon</h3>
+<ul>
+<li><strong>Status:</strong> signal 후보</li>
+<li><strong>Why this lens matters:</strong> agent가 긴 작업을 계획·검증·복구할 수 있는지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li>뚜렷한 hype 후보 없음</li>
+</ul>
+<h3><span class="badge">Tool Use / MCP</span> — Tool Use / MCP</h3>
+<ul>
+<li><strong>Status:</strong> signal 후보</li>
+<li><strong>Why this lens matters:</strong> tool protocol과 function calling이 agent 제품화의 연결 계층인지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li>뚜렷한 hype 후보 없음</li>
+</ul>
+<h3><span class="badge">Agent Evaluation</span> — Eval / Observability</h3>
+<ul>
+<li><strong>Status:</strong> signal 후보</li>
+<li><strong>Why this lens matters:</strong> benchmark와 실제 사용 간 gap을 줄이는지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li>뚜렷한 hype 후보 없음</li>
+</ul>
+<h3><span class="badge">Agent Security</span> — Security / Permission</h3>
+<ul>
+<li><strong>Status:</strong> signal 후보</li>
+<li><strong>Why this lens matters:</strong> prompt injection, tool abuse, secret leakage, 승인 경계가 agent adoption 병목인지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20266">A Survey of Large Audio Language Models: Generalization, Trustworthiness, and Outlook</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Agent Security</span> / <span class="badge">Post-training</span></li>
+<li><a href="https://huggingface.co/papers/2605.19597">LLMEval-Logic: A Solver-Verified Chinese Benchmark for Logical Reasoning of LLMs with Adversarial Hardening</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li>뚜렷한 hype 후보 없음</li>
+</ul>
+<h3><span class="badge">Personal Agent</span> — Personal Agent Product</h3>
+<ul>
+<li><strong>Status:</strong> signal 후보</li>
+<li><strong>Why this lens matters:</strong> browser/email/calendar/files/local memory가 실제 반복 workflow로 내려오는지</li>
+<li><strong>Hard signal 후보:</strong></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a> — Hacker News, score 3, <span class="badge">Agentic AI</span></li>
+<li><strong>Hype / weak-evidence 후보:</strong></li>
+<li>뚜렷한 hype 후보 없음</li>
+</ul>
+<hr>
+<h2>4. 오늘의 핵심 signal 5개</h2>
+<h3>Signal 1: Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</h3>
+<ul>
+<li><strong>Source:</strong> Hugging Face Daily Papers</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a></li>
+<li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><strong>Why it matters:</strong> Recent advances in multimodal large language models have driven growing interest in graphical user interface (GUI) agents, yet their generalization remains constrained by the scarcity of large-scale training data spannin</li>
+<li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
+<li><strong>Priority score:</strong> 18</li>
+<li><strong>Tags:</strong> #signal</li>
+</ul>
+<h3>Signal 2: IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</h3>
+<ul>
+<li><strong>Source:</strong> Hugging Face Daily Papers</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a></li>
+<li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Why it matters:</strong> Multimodal large language models (MLLMs) have shown remarkable capability in bridging visual perception and textual reasoning, enabling zero-shot understanding across diverse industrial scenarios. However, their performa</li>
+<li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
+<li><strong>Priority score:</strong> 22</li>
+<li><strong>Tags:</strong> #signal</li>
+</ul>
+<h3>Signal 3: Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos</h3>
+<ul>
+<li><strong>Source:</strong> Hugging Face Daily Papers</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.18233">Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos</a></li>
+<li><strong>Topic:</strong> <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Why it matters:</strong> Without incurring significant computational overhead, train-free long video generation aims to enable foundation video generation models to produce longer videos. Frame-level autoregressive frameworks , e.g., FIFO-diffus</li>
+<li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
+<li><strong>Priority score:</strong> 18</li>
+<li><strong>Tags:</strong> #signal</li>
+</ul>
+<h3>Signal 4: Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling</h3>
+<ul>
+<li><strong>Source:</strong> arXiv</li>
+<li><strong>URL:</strong> <a href="https://arxiv.org/abs/2605.21470v1">Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling</a></li>
+<li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Why it matters:</strong> Computer-use agents (CUA) automate tasks specified with natural language such as &quot;order the cheapest item from Taco Bell&quot; by generating sequences of calls to tools such as click, type, and scroll on a browser. Current im</li>
+<li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
+<li><strong>Priority score:</strong> 13</li>
+<li><strong>Tags:</strong> #signal</li>
+</ul>
+<h3>Signal 5: DeepWeb-Bench: A Deep Research Benchmark Demanding Massive Cross-Source Evidence and Long-Horizon Derivation</h3>
+<ul>
+<li><strong>Source:</strong> arXiv</li>
+<li><strong>URL:</strong> <a href="https://arxiv.org/abs/2605.21482v1">DeepWeb-Bench: A Deep Research Benchmark Demanding Massive Cross-Source Evidence and Long-Horizon Derivation</a></li>
+<li><strong>Topic:</strong> <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span></li>
+<li><strong>Why it matters:</strong> Deep research, in which an agent searches the open web, collects evidence, and derives an answer through extended reasoning, is a prominent use case for frontier language models. Frontier deep research products score hig</li>
+<li><strong>Connection to my work:</strong> 원문 확인 후 <span class="badge">Agentic AI</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span> 중 연결 표시</li>
+<li><strong>Priority score:</strong> 10</li>
+<li><strong>Tags:</strong> #signal</li>
+</ul>
+<hr>
+<h2>5. 과열된 hype 후보</h2>
+<h3>Hype check 1: OCTOPUS: Optimized KV Cache for Transformers via Octahedral Parametrization Under optimal Squared error quantization</h3>
+<ul>
+<li><strong>Claim:</strong> <a href="https://huggingface.co/papers/2605.21226">OCTOPUS: Optimized KV Cache for Transformers via Octahedral Parametrization Under optimal Squared error quantization</a></li>
+<li><strong>Why it may be overhyped:</strong> 제목/커뮤니티 반응만으로는 실제 adoption을 판단하기 어렵다.</li>
+<li><strong>Missing evidence:</strong> production 사용 사례, 재현성, benchmark 조건, 비용/latency 정보</li>
+<li><strong>What to check next:</strong> 원문과 discussion을 확인하고 반복 signal인지 단발성 hype인지 분리</li>
+<li><strong>Tags:</strong> #hype #todo/check-next</li>
+</ul>
+<h3>Hype check 2: Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</h3>
+<ul>
+<li><strong>Claim:</strong> <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
+<li><strong>Why it may be overhyped:</strong> 제목/커뮤니티 반응만으로는 실제 adoption을 판단하기 어렵다.</li>
+<li><strong>Missing evidence:</strong> production 사용 사례, 재현성, benchmark 조건, 비용/latency 정보</li>
+<li><strong>What to check next:</strong> 원문과 discussion을 확인하고 반복 signal인지 단발성 hype인지 분리</li>
+<li><strong>Tags:</strong> #hype #todo/check-next</li>
+</ul>
+<h3>Hype check 3: Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</h3>
+<ul>
+<li><strong>Claim:</strong> <a href="https://github.com/peeramid-labs/nsed">Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</a></li>
+<li><strong>Why it may be overhyped:</strong> 제목/커뮤니티 반응만으로는 실제 adoption을 판단하기 어렵다.</li>
+<li><strong>Missing evidence:</strong> production 사용 사례, 재현성, benchmark 조건, 비용/latency 정보</li>
+<li><strong>What to check next:</strong> 원문과 discussion을 확인하고 반복 signal인지 단발성 hype인지 분리</li>
+<li><strong>Tags:</strong> #hype #todo/check-next</li>
+</ul>
+<hr>
+<h2>6. 읽어볼 만한 논문/레포 5개</h2>
+<h3>Item 1: Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</h3>
+<ul>
+<li><strong>Type:</strong> HF Daily Paper</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a></li>
+<li><strong>One-line summary:</strong> LLM agents have recently emerged as a powerful paradigm for solving complex tasks through planning, tool use, memory retrieval, and multi-step interaction. However, these agentic workflows often introduce substantial inp</li>
+<li><strong>Priority:</strong> High</li>
+</ul>
+<h3>Item 2: It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</h3>
+<ul>
+<li><strong>Type:</strong> HF Daily Paper</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a></li>
+<li><strong>One-line summary:</strong> Contextual Integrity (CI) defines privacy not merely as keeping information hidden, but as governing information flows according to the norms of a given context. As large language models are increasingly deployed as pers</li>
+<li><strong>Priority:</strong> High</li>
+</ul>
+<h3>Item 3: Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</h3>
+<ul>
+<li><strong>Type:</strong> HF Daily Paper</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a></li>
+<li><strong>One-line summary:</strong> Industrial asset operations workflows are latency-sensitive because a single user query may require coordination over sensor data, work orders, failure modes, forecasting tools, and domain-specific agents. We evaluate th</li>
+<li><strong>Priority:</strong> High</li>
+</ul>
+<h3>Item 4: IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</h3>
+<ul>
+<li><strong>Type:</strong> HF Daily Paper</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a></li>
+<li><strong>One-line summary:</strong> Multimodal large language models (MLLMs) have shown remarkable capability in bridging visual perception and textual reasoning, enabling zero-shot understanding across diverse industrial scenarios. However, their performa</li>
+<li><strong>Priority:</strong> High</li>
+</ul>
+<h3>Item 5: Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</h3>
+<ul>
+<li><strong>Type:</strong> HF Daily Paper</li>
+<li><strong>URL:</strong> <a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a></li>
+<li><strong>One-line summary:</strong> Recent advances in multimodal large language models have driven growing interest in graphical user interface (GUI) agents, yet their generalization remains constrained by the scarcity of large-scale training data spannin</li>
+<li><strong>Priority:</strong> High</li>
+</ul>
+<hr>
+<h2>7. 내 업무와 연결되는 포인트</h2>
+<ul>
+<li><strong><span class="badge">Agentic AI</span>:</strong> <a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a>, <a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a>, <a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a></li>
+<li><strong><span class="badge">Agent Planning</span>:</strong> <a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a>, <a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a>, <a href="https://huggingface.co/papers/2605.21384">SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</a></li>
+<li><strong><span class="badge">Tool Use / MCP</span>:</strong> <a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a>, <a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a>, <a href="https://huggingface.co/papers/2605.21463">Mem-π: Adaptive Memory through Learning When and What to Generate</a></li>
+<li><strong><span class="badge">Personal Agent</span>:</strong> <a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a>, <a href="https://getattache.com/">Show HN: I built an AI executive assistant you use through iMessage</a></li>
+<li><strong><span class="badge">Agent Evaluation</span>:</strong> <a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a>, <a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a>, <a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a></li>
+<li><strong><span class="badge">Agent Security</span>:</strong> <a href="https://huggingface.co/papers/2605.20266">A Survey of Large Audio Language Models: Generalization, Trustworthiness, and Outlook</a></li>
+<li><strong><span class="badge">On-device LLM</span>:</strong> <a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a>, <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a>, <a href="https://huggingface.co/papers/2605.19660">OScaR: The Occam&#x27;s Razor for Extreme KV Cache Quantization in LLMs and Beyond</a></li>
+<li><strong><span class="badge">LLM Orchestration</span>:</strong> <a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a>, <a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a>, <a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a></li>
+<li><strong><span class="badge">Post-training</span>:</strong> <a href="https://huggingface.co/papers/2605.18233">Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos</a>, <a href="https://huggingface.co/papers/2605.20266">A Survey of Large Audio Language Models: Generalization, Trustworthiness, and Outlook</a>, <a href="https://huggingface.co/papers/2605.21384">SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</a></li>
+<li><strong><span class="badge">Inference Stack</span>:</strong> <a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a>, <a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a>, <a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a></li>
+</ul>
+<hr>
+<h2>8. 다음에 확인할 질문</h2>
+<ol>
+<li>오늘 수집된 항목 중 실제 production stack으로 이어질 가능성이 있는 것은 무엇인가?</li>
+<li>커뮤니티에서 반복되는 논쟁과 단발성 hype를 어떻게 구분할 수 있는가?</li>
+<li>내 업무와 직접 연결되는 항목 중 이번 주 블로그 글감으로 승격할 것은 무엇인가?</li>
+</ol>
+<hr>
+<h2>9. Agent AI Specialist Watch</h2>
+<p>Agent AI를 하나의 키워드로 보지 않고, <code>model → planning → tool → memory → browser/runtime → eval/security → personal product</code> stack으로 나눠 본다.</p>
+<h3>오늘의 layer heat</h3>
+<ul>
+<li><strong>Model &amp; Reasoning:</strong> 중 — 모델이 agent task 성공률을 실제로 올리는지</li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — Hugging Face Daily Papers, score 22, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Planning &amp; Control:</strong> 중 — goal 분해·재계획·human checkpoint가 있는지</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Tool Use / MCP:</strong> 중 — 외부 tool/API 연결이 안정적인지</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Memory / RAG:</strong> 중 — memory가 정확도 개선인지 context pollution인지</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Browser / Computer Use:</strong> 중 — 실제 웹/OS 조작이 견고한지</li>
+<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — Hugging Face Daily Papers, score 22, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><strong>Runtime / Ops:</strong> 중 — 장기 실행·resume·trace가 가능한지</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Eval / Observability:</strong> 중 — 벤치마크와 실제 사용성 gap을 줄이는지</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>Security / Trust:</strong> 중 — 권한·보안·감사 경계가 명확한지</li>
+<li><a href="https://huggingface.co/papers/2605.20266">A Survey of Large Audio Language Models: Generalization, Trustworthiness, and Outlook</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Agent Security</span> / <span class="badge">Post-training</span></li>
+<li><a href="https://huggingface.co/papers/2605.19597">LLMEval-Logic: A Solver-Verified Chinese Benchmark for Logical Reasoning of LLMs with Adversarial Hardening</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span></li>
+<li><strong>Personal Agent Product:</strong> 중 — chatbot이 아니라 recurring personal workflow인지</li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a> — Hacker News, score 3, <span class="badge">Agentic AI</span></li>
+</ul>
+<h3>오늘의 Agent AI 병목</h3>
+<ul>
+<li><strong>long_horizon_reliability:</strong> evidence 2</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>memory_precision:</strong> evidence 2</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>browser_ui_drift:</strong> evidence 2</li>
+<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — Hugging Face Daily Papers, score 22, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a> — Hugging Face Daily Papers, score 18, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><strong>prompt_injection:</strong> evidence 1</li>
+<li><a href="https://huggingface.co/papers/2605.20266">A Survey of Large Audio Language Models: Generalization, Trustworthiness, and Outlook</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Agent Security</span> / <span class="badge">Post-training</span></li>
+<li><strong>eval_production_gap:</strong> evidence 2</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong>cost_latency:</strong> evidence 2</li>
+<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — Hugging Face Daily Papers, score 28, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — Hugging Face Daily Papers, score 23, <span class="badge">Agentic AI</span> / <span class="badge">Personal Agent</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+</ul>
+<h3>오늘의 강력 관찰 후보 1~2개</h3>
+<blockquote>추천이 아니라 참고용 early narrative 후보. 며칠간 같은 후보가 반복돼도 강한 narrative inertia로 유지한다.</blockquote>
+<ol>
+<li><strong>Agent workload → HBM/DRAM/AI server memory</strong></li>
+</ol>
+<ul>
+<li><strong>예상 전파:</strong> Agent workflow 인정 → multi-step inference/context/session 증가 → HBM·server DRAM·AI server 병목 → memory supplier/data center narrative</li>
+<li><strong>핵심 병목:</strong> HBM bandwidth, server DRAM content, KV/context cache, power/cooling</li>
+<li><strong>누가 해결 중인가:</strong> memory 공급자, AI server/OEM, hyperscaler infra team, inference serving stack</li>
+<li><strong>다음 확인:</strong> hyperscaler가 agent/inference workload를 capex·memory 수요와 같이 언급하는지</li>
+<li><strong>틀릴 조건:</strong> 실제 agent usage가 demo에 머물거나 efficiency/on-device/API 대체가 memory 증가를 압도</li>
+</ul>
+<ol>
+<li><strong>Agent browser/computer use → network/browser/proxy/observability 병목</strong></li>
+</ol>
+<ul>
+<li><strong>예상 전파:</strong> browser-use agent 확산 → task당 page load/request/screenshot/DOM extraction 증가 → proxy/CDN/anti-bot/browser runtime/observability 수요</li>
+<li><strong>핵심 병목:</strong> latency, bandwidth, anti-bot 차단, browser runtime cost, logging/monitoring</li>
+<li><strong>누가 해결 중인가:</strong> browser automation infra, proxy/CDN/security, agent observability, MCP/API data providers</li>
+<li><strong>다음 확인:</strong> Cloudflare/Akamai/Fastly/Zscaler/Datadog/Browserbase류가 AI agent traffic을 언급하는지</li>
+<li><strong>틀릴 조건:</strong> production agent가 일반 browsing 대신 API/MCP/cached search/structured data feed로 우회</li>
+</ul>
+<h3>Cross-market / prediction 후보</h3>
+<ul>
+<li>Agent workload 증가 → Inference Stack / Data Center: task당 token/tool/browser call이 늘어나는지 확인</li>
+<li>Memory/RAG 확산 → Storage / Retrieval / Security: enterprise agent memory가 tooling 수요를 만드는지 확인</li>
+<li>Browser/Computer Use 확산 → Network / Proxy / CDN / Observability: browser traffic과 anti-bot 병목이 생기는지 확인</li>
+<li>On-device personal agent → Edge AI / Device / Privacy: local inference narrative로 이어지는지 확인</li>
+<li>Eval/Observability 중요도 상승 → AI DevOps / Monitoring: production incident가 tooling 수요를 당기는지 확인</li>
+</ul>
+<h3>내가 모르는 것 점검</h3>
+<ol>
+<li>실패 원인이 모델 능력 부족인지, tool/runtime/state 문제인지 구분됐는가?</li>
+<li>benchmark 상승이 실제 personal agent 사용성으로 이어지는가?</li>
+<li>memory가 정확도를 올렸는가, context pollution을 만들었는가?</li>
+<li>browser/computer use는 비용 대비 실제 업무 이득이 있는가?</li>
+<li>permission/approval/audit boundary가 명확한가?</li>
+</ol>
+<hr>
+<h2>10. Weekly 후보</h2>
+<ul>
+<li>[ ] <a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a> — <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li>[ ] <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li>[ ] <a href="https://huggingface.co/papers/2605.18233">Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos</a> — <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
+</ul>
+<hr>
+<h2>11. 원본 링크 모음</h2>
+<ul>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.20630">Evaluating Temporal Semantic Caching and Workflow Optimization in Agentic Plan-Execute Pipelines</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.18233">Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.20266">A Survey of Large Audio Language Models: Generalization, Trustworthiness, and Outlook</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.21384">SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.19833">Mega-ASR: Towards In-the-wild^2 Speech Recognition via Scaling up Real-world Acoustic Simulation</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.21468">You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.19597">LLMEval-Logic: A Solver-Verified Chinese Benchmark for Logical Reasoning of LLMs with Adversarial Hardening</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.19660">OScaR: The Occam&#x27;s Razor for Extreme KV Cache Quantization in LLMs and Beyond</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.20668">On the limits and opportunities of AI reviewers: Reviewing the reviews of Nature-family papers with 45 expert scientists</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.21463">Mem-π: Adaptive Memory through Learning When and What to Generate</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.18565">MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.21470v1">Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.19484">CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.20119">Toto 2.0: Time Series Forecasting Enters the Scaling Era</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.17991">Stable Audio 3</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.21226">OCTOPUS: Optimized KV Cache for Transformers via Octahedral Parametrization Under optimal Squared error quantization</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.15113">Learning from Language Feedback via Variational Policy Distillation</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.21482v1">DeepWeb-Bench: A Deep Research Benchmark Demanding Massive Cross-Source Evidence and Long-Horizon Derivation</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.19376">Generative Recursive Reasoning</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.20613">HRM-Text: Efficient Pretraining Beyond Scaling</a></li>
+<li><strong>Hacker News:</strong> <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.21343">OcclusionFormer: Arranging Z-Order for Layout-Grounded Image Generation</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.19804">Stitched Value Model for Diffusion Alignment</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.19330">MOCHA: Multi-Objective Chebyshev Annealing for Agent Skill Optimization</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.17916">PanoWorld: A Generative Spatial World Model for Consistent Whole-House Panorama Synthesis</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.16787">The Unlearnability Phenomenon in RLVR for Language Models</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.20834">Conditional Equivalence of DPO and RLHF: Implicit Assumption, Failure Modes, and Provable Alignment</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.21131">UniT: Unified Geometry Learning with Group Autoregressive Transformer</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.21463v1">Mem-$π$: Adaptive Memory through Learning When and What to Generate</a></li>
+<li><strong>Hacker News:</strong> <a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2605.21487">Uni-Edit: Intelligent Editing Is A General Task For Unified Model Tuning</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.21453v1">Quality and Security Signals in AI-Generated Python Refactoring Pull Requests</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/langflow-ai/langflow">langflow-ai/langflow</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/langchain-ai/langchain">langchain-ai/langchain</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/Shubhamsaboo/awesome-llm-apps">Shubhamsaboo/awesome-llm-apps</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/vllm-project/vllm">vllm-project/vllm</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/sponsors/vllm-project">sponsors/vllm-project</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/ggml-org/whisper.cpp">ggml-org/whisper.cpp</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/deepspeedai/DeepSpeed">deepspeedai/DeepSpeed</a></li>
+<li><strong>Hacker News:</strong> <a href="https://github.com/seamus-brady/springdrift">Show HN: Springdrift – A persistent runtime for long-lived LLM agents</a></li>
+<li><strong>Hacker News:</strong> <a href="https://news.ycombinator.com/item?id=47765871">Show HN: OpenParallax: OS-level privilege separation for AI agent execution</a></li>
+<li><strong>Hacker News:</strong> <a href="https://news.ycombinator.com/item?id=47439115">Show HN: P2PCLAW – I built a decentralized research network where AI agents</a></li>
+<li><strong>Hacker News:</strong> <a href="https://github.com/tstockham96/engram">Show HN: Engram update – 92% DMR, hosted API, lessons shipping agent memory</a></li>
+<li><strong>Hacker News:</strong> <a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a></li>
+<li><strong>Hacker News:</strong> <a href="https://vett.sh">Show HN: Vett – Scan, sign, and verify AI agent skills before installing</a></li>
+<li><strong>Hacker News:</strong> <a href="https://getattache.com/">Show HN: I built an AI executive assistant you use through iMessage</a></li>
+<li><strong>Hacker News:</strong> <a href="https://github.com/NevaMind-AI/memU">Show HN: A file-based agent memory framework that works like skill</a></li>
+<li><strong>Hacker News:</strong> <a href="https://news.ycombinator.com/item?id=46442841">KernelEvolve: Agentic kernel coding for heterogeneous AI accelerators (Meta)</a></li>
+<li><strong>Hacker News:</strong> <a href="https://github.com/rowboatlabs/rowboat">Show HN: RowboatX – open-source Claude Code for everyday automations</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2605.21481v1">AiraXiv: An AI-Driven Open-Access Platform for Human and AI Scientists</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/sponsors/explore">sponsors/explore</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/sponsors/affaan-m">sponsors/affaan-m</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/Significant-Gravitas/AutoGPT">Significant-Gravitas/AutoGPT</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/ollama/ollama">ollama/ollama</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/langgenius/dify">langgenius/dify</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/open-webui/open-webui">open-webui/open-webui</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/tensorflow/tensorflow">tensorflow/tensorflow</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/f/prompts.chat">f/prompts.chat</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/sponsors/f">sponsors/f</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/huggingface/transformers">huggingface/transformers</a></li>
+<li><strong>Hacker News:</strong> <a href="https://uselibrarian.dev/">Show HN: Librarian – Cut token costs by up to 85% for LangGraph and OpenClaw</a></li>
+<li><strong>Hacker News:</strong> <a href="https://gepa-ai.github.io/gepa/blog/2026/02/18/introducing-optimize-anything/">Show HN: Optimize_anything: A Universal API for Optimizing Any Text Parameter</a></li>
+<li><strong>Hacker News:</strong> <a href="https://github.com/peeramid-labs/nsed">Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</a></li>
+</ul>
+<h2>12. Collector warnings</h2>
+<ul>
+<li>arXiv failed: LLM orchestration: HTTP Error 429: Unknown Error</li>
+<li>arXiv failed: post-training LLM: HTTP Error 429: Unknown Error</li>
+<li>arXiv failed: on-device LLM: HTTP Error 429: Unknown Error</li>
+<li>arXiv failed: vLLM SGLang inference: The read operation timed out</li>
+<li>arXiv failed: MCP agent framework: HTTP Error 429: Unknown Error</li>
+</ul></article></main>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
+<script>
+(() => {
+  const root = document.querySelector('[data-kimi-company-search]');
+  if (!root) return;
+  const base = '/research-desk';
+  const input = root.querySelector('[data-kimi-input]');
+  const result = root.querySelector('[data-kimi-results]');
+  const count = root.querySelector('[data-kimi-count]');
+  const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 삼성전자, 한미반도체, 네이버, NVDA, 팔란티어, HD현대일렉</small></div>';
+  let rows = [];
+  const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9가-힣]+/g, ' ').trim();
+  const compact = (s) => norm(s).replace(/\s+/g, '');
+  const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '데이터 확인 중' : `${Number(v) >= 0 ? '+' : ''}${Number(v).toFixed(1)}%`;
+  const requestCreate = (raw, cmd) => {
+    const msg = `회사 생성 요청: ${raw}
+${cmd}`;
+    try { navigator.clipboard && navigator.clipboard.writeText(cmd); } catch(e) {}
+    localStorage.setItem('researchDeskCompanyCreateRequest', JSON.stringify({query: raw, command: cmd, ts: new Date().toISOString()}));
+    const status = root.querySelector('[data-kimi-create-status]');
+    if (status) status.textContent = '생성 요청 명령을 복사했어. Telegram/Hermes에 붙여넣으면 fast intake가 실행돼.';
+  };
+  const render = (items) => {
+    if (!items.length) {
+      const raw = input.value.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      const cmd = `python3 11-scripts/request_company_report.py "${raw.replace(/"/g, '\"')}" --provider fast --publish`;
+      const action = `https://158.247.217.223.sslip.io/api/research-desk/company-create?query=${encodeURIComponent(raw)}&provider=fast`;
+      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 Codex 5.5 기반 intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><div class="kimi-create-actions"><a class="kimi-create-btn" href="${action}" data-kimi-create>생성 시작</a><button type="button" class="kimi-create-btn secondary" data-copy-cmd>명령 복사</button></div><span class="kimi-create-status" data-kimi-create-status>누르면 진행 상태 페이지로 이동한다.</span></div>`;
+      const copyBtn = result.querySelector('[data-copy-cmd]');
+      if (copyBtn) copyBtn.addEventListener('click', () => requestCreate(raw, cmd));
+      return;
+    }
+    result.innerHTML = '<div class="kimi-results-title">검색 결과 / 관찰 후보</div>' + items.slice(0, 8).map(x => `
+      <a class="kimi-result" href="${x.page}">
+        <span class="kimi-light">${String(x.traffic_light || '⚪').trim().split(/\s+/)[0]}</span>
+        <b>${x.company} <em>${x.symbol}</em></b>
+        <small>${x.category} · ${x.role || 'role 미정'}</small>
+        <i>현재가 ${x.price == null ? '데이터 확인 중' : x.price} · 20D ${fmtPct(x.return_20d_pct)} · 52W ${x.price_position_52w_pct == null ? '데이터 확인 중' : Number(x.price_position_52w_pct).toFixed(0)+'%'}</i>
+      </a>`).join('');
+  };
+  const search = () => {
+    const q = norm(input.value);
+    const qc = compact(input.value);
+    if (!q) { result.innerHTML = empty; return; }
+    const terms = q.split(/\s+/).filter(Boolean);
+    const scored = rows.map(x => {
+      const fields = [x.company, x.symbol, x.category, x.node, x.role, ...(x.aliases || [])].join(' ');
+      const hay = norm(fields);
+      const hayc = compact(fields);
+      const symbolc = compact(x.symbol);
+      let score = 0;
+      if (qc && (symbolc === qc || symbolc.replace(/us$|ks$|kq$/,'') === qc)) score += 100;
+      if (qc && hayc.includes(qc)) score += qc.length + 15;
+      for (const t of terms) { if (hay.includes(t)) score += t.length + (hay.startsWith(t) ? 5 : 0); }
+      return [score, x];
+    }).filter(([s]) => s > 0).sort((a,b) => b[0]-a[0]).map(([,x]) => x);
+    render(scored);
+  };
+  const indexUrl = `${base}/data/company-search-index.json?v=${Date.now()}`;
+  fetch(indexUrl, {cache:'no-store'}).then(r => { if (!r.ok) throw new Error('index '+r.status); return r.json(); }).then(data => {
+    rows = data.items || [];
+    if (count) count.textContent = `${rows.length} companies indexed · KR/US fast local search · intake: Codex 5.5`;
+    const featured = rows.filter(x => ['NVIDIA','Vertiv','HD Hyundai Electric','SK Hynix','Microsoft','TSMC'].includes(x.company));
+    render(featured.length ? featured : rows.slice(0,6));
+  }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Company index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });
+  input.addEventListener('input', search);
+  root.querySelectorAll('[data-kimi-query]').forEach(btn => btn.addEventListener('click', () => { input.value = btn.dataset.kimiQuery; search(); input.focus(); }));
+})();
+</script>
+</body>
+</html>
