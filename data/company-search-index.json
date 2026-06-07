@@ -763,7 +763,7 @@
         "factor": "Advanced Packaging / process control/inspection",
         "mechanism": "AI infra demand → process control / inspection metrology for advanced semiconductor manufacturing 수요 → foundry/logic and memory WFE capex, process control intensity, inspection/metrology tools, advanced packaging yield control, services revenue, gross margin, EPS/revenue revision → EPS/revenue revision → price reflection 순서로 확인한다.",
         "demand_unit": "foundry/logic and memory WFE capex, process control intensity, inspection/metrology tools, advanced packaging yield control, services revenue, gross margin, EPS/revenue revision",
-        "bottleneck_pressured": "Battery/ESS materials cycle bottleneck, LFP/ESS cathode cost curve, anode material yield/capacity, recycling/precursor supply discipline",
+        "bottleneck_pressured": "Sub-μm bonding inspection wall, advanced packaging metrology, hybrid bonding inspection, AI defect classification",
         "company_pressure_path": "foundry/logic and memory WFE capex, process control intensity, inspection/metrology tools, advanced packaging yield control, services revenue, gross margin, EPS/revenue revision",
         "already_priced": "가격 1,929.20, 일간 -9.5%, 52W +83.2%, 20D +9.4%/60D +31.7%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 KLA를 AI semiconductor capex와 advanced-node complexity의 고품질 장비 수혜주로 본다. 새 판단은 capex cycle과 China/export risk를 감안해 process-control intensity가 실제 주문·backlog·margin revision을 만드는지다.",
