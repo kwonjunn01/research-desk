@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>On-Policy Distillation (OPD) — 연구 집대성</title>
+  <link rel="stylesheet" href="/research-desk/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1><a href="/research-desk/index.html">Research Desk</a></h1>
+    <div class="meta">Personal Research Radar</div>
+    <details class="nav-major">
+<summary class="nav-major-title">Home</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">Overview</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
+<li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
+<li><a href="/research-desk/agent-build-log/index.html"><span class="nav-badge">빌드</span> Agent Build Log</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">AI Research</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">허브</span> AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html"><span class="nav-badge">Agent</span> Agent AI Specialist Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-06-09</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-09.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-08</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-08.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-07</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-07.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-06</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-06.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-05.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-04.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-03</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-03.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-02</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-02.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-01</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-01.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-31</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-31.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-30</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-30.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-29</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-29.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-28</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-28.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-27</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-27.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-26.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-25.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-22.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Quant Bot</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">운영 허브</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/index.html"><span class="nav-badge">허브</span> Quant Bot Hub</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-spec.html"><span class="nav-badge">Spec</span> BTC Futures v2 Spec</a></li>
+<li><a href="/research-desk/quant/upgrade-roadmap.html"><span class="nav-badge">Upgrade</span> Quant Bot Upgrade Roadmap</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html"><span class="nav-badge">Daily</span> BTC Futures v2 Daily Report</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">전략 / 시스템</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/agent-team.html"><span class="nav-badge">팀</span> AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-council.html"><span class="nav-badge">회의</span> Quant Strategy Council</a></li>
+<li><a href="/research-desk/quant/strategy-evolution-charter.html"><span class="nav-badge">전략</span> Strategy Evolution Charter</a></li>
+<li><a href="/research-desk/quant/scenario-planning.html"><span class="nav-badge">위기</span> Scenario Planning</a></li>
+<li><a href="/research-desk/quant/feedback-system.html"><span class="nav-badge">피드백</span> Feedback System</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Cross-Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">통합 지도</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">허브</span> Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">예측</span> Prediction Board</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-06-09</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-09.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-08</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-08.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-05.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-04.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-03</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-03.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-02</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-02.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-01</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-01.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-29</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-29.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-28</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-28.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-26.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-25.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-22.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-21.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-20.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Market Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">허브</span> Market Intelligence Hub</a></li>
+<li><a href="/research-desk/market-ontology/stock-traffic-light.html"><span class="nav-badge">신호</span> 주식 신호등</a></li>
+<li><a href="/research-desk/market-ontology/securities-reports.html"><span class="nav-badge">리포트</span> Institutional Securities Desk</a></li>
+<li><a href="/research-desk/market-ontology/company-reports/index.html"><span class="nav-badge">회사</span> Company Reports</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-06-09</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-09.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-08</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-08.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-05.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-04.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-03</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-03.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-02</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-02.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-01</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-01.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-29</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-29.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-28</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-28.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-26.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-25.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-22.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+</details>
+</details>
+  </aside>
+  <main><article><hr>
+<p>title: &quot;On-Policy Distillation (OPD) — 연구 집대성&quot;</p>
+<p>date: 2026-06-10</p>
+<p>author: Claude (for Hyeongjun Kwon, Samsung Research AI System Team)</p>
+<p>tags:</p>
+<ul>
+<li>LLM</li>
+<li>distillation</li>
+<li>RL</li>
+<li>post-training</li>
+<li>on-device</li>
+<li>GRPO</li>
+<li>SLM</li>
+</ul>
+<hr>
+<h1>On-Policy Distillation (OPD) — 연구 집대성</h1>
+<blockquote>2020 ImitKD → 2026 ExOPD. 5년 만에 small/specialized model 학습의 indispensable post-training paradigm으로 정착.</blockquote>
+<p>&gt;</p>
+<blockquote>본 페이지는 Samsung Research AI System Team의 본업 (GRPO · SR-470M · on-device · KV cache · multimodal) 관점에서 OPD 연구를 집대성. 학계 추세 + production adoption + 한국 적용 가능성을 한 곳에서 추적.</blockquote>
+<hr>
+<h2>0. TL;DR (1분)</h2>
+<p><strong>OPD = on-policy + distillation 결합 post-training</strong>.</p>
+<ul>
+<li><strong>On-policy</strong>: student가 자신이 생성한 sequence를 학습 (off-policy의 teacher-generated 학습과 반대)</li>
+<li><strong>Distillation</strong>: teacher의 dense per-token feedback 사용 (RL의 sparse sequence-level reward와 반대)</li>
+</ul>
+<p>= <strong>RL의 state realism + Distillation의 dense supervision</strong> 결합.</p>
+<p><strong>왜 중요한가</strong>:</p>
+<ol>
+<li><strong>Small/Specialized model 학습의 default</strong>: Qwen3, DeepSeek-V4, Gemma 2, MiMo-V2-Flash, Nemotron 모두 채택</li>
+<li><strong>Compute 효율</strong>: Qwen3 결과를 Tinker로 재현 시 <strong>RL 대비 약 10× cheaper</strong> (Thinking Machines 보고)</li>
+<li><strong>Train-inference mismatch 해결</strong>: student가 deployment에서 마주칠 distribution을 학습 시점에 미리 본 (= 누적 오차 회피)</li>
+<li><strong>GRPO의 small model 실패 보완</strong>: GRPO 단독은 SLM에서 sparse reward로 불안정 → OPD가 dense supervision 보완</li>
+</ol>
+<p><strong>Samsung Research 관점</strong>:</p>
+<ul>
+<li>GRPO + OPD 결합 (CoDistill-GRPO, SOD) = SR-470M 같은 SLM 학습에 직접 적용 가능</li>
+<li>KV cache / inference cost 절감과 정합 (작은 model을 잘 학습하는 게 inference layer optimization과 직결)</li>
+<li>on-device 채택 시 teacher (cloud) ↔ student (device) 학습 cycle 자연스러움</li>
+</ul>
+<hr>
+<h2>1. 정의 — Off-policy vs On-policy distillation</h2>
+<h3>Off-policy distillation (전통적 KD)</h3>
+<ul>
+<li>학습 데이터: <strong>teacher가 생성</strong>한 sequence (또는 정답 corpus)</li>
+<li>학습 방식: student가 teacher의 token distribution을 imitate</li>
+<li>문제: student가 deployment에서 자기 자신이 생성한 sequence를 보는데, 학습 시는 teacher&#x27;s clean prefix만 봐서 <strong>exposure bias</strong> 발생. 누적 오차 (compounding errors) 발생.</li>
+</ul>
+<h3>On-policy distillation (OPD)</h3>
+<ul>
+<li>학습 데이터: <strong>student가 생성</strong>한 sequence</li>
+<li>학습 방식: teacher가 student&#x27;s trajectory의 각 token에서 dense per-token feedback (logit / KL) 제공</li>
+<li>효과: student가 deployment에서 보는 distribution을 학습 시 그대로 경험 → exposure bias 회피</li>
+</ul>
+<p><strong>핵심 insight (Thinking Machines 2025-10)</strong>: &quot;Sparse sequence-level reward is most useful for strong models that can explore and discover better behavior, while dense token-level teacher supervision is better suited for compressing that behavior into a smaller student.&quot;</p>
+<p>→ <strong>GRPO 같은 RL은 frontier model에 유리, OPD는 SLM compression에 유리</strong>.</p>
+<hr>
+<h2>2. Timeline — 핵심 paper 16개 연대순</h2>
+<h3>2020 — 시작</h3>
+<ul>
+<li><strong>ImitKD</strong> (Lin et al., 2020) — on-policy distillation 시초. Student가 self-generated + fixed sequence 혼합 학습.</li>
+</ul>
+<h3>2023~2024 — Foundations</h3>
+<ul>
+<li><strong>On-Policy Distillation of Language Models</strong> (Agarwal et al., arxiv 2306.13649, ICLR 2024) — Google DeepMind. <strong>GKD framework 정립</strong>.</li>
+<li><strong>GKD: Generalized Knowledge Distillation for Auto-regressive Sequence Models</strong> (Agarwal et al., 2024) — student-generated outputs 전용 학습, JSD divergence 기본값.</li>
+<li><strong>DistiLLM</strong> (Ko et al., ICML 2024) — <strong>Skew-KL divergence</strong> 도입 (Forward + Reverse 변형). 표준 KL의 gradient instability 해결.</li>
+</ul>
+<h3>2025 — 산업 적용 시작</h3>
+<ul>
+<li><strong>DistiLLM-2</strong> (Ko et al., arxiv 2503.07067) — Contrastive 확장. Student-generated outputs을 epoch마다 collect.</li>
+<li><strong>On LLM Knowledge Distillation: Forward KL vs Reverse KL</strong> (ICLR 2025 blog) — divergence 선택의 task-dependent 최적 분석.</li>
+<li><strong>Thinking Machines Lab blog</strong> (Mira Murati, 2025-10-27) — Tinker API로 Qwen3 재현. <strong>RL 대비 ~10× cheaper</strong>. Per-token reverse KL over short rollouts.</li>
+<li><strong>Rethinking LLM Distillation</strong> (2025) — Task reward 최대화 with hard KL constraint. Manual Lagrangian tuning 회피.</li>
+<li><strong>SOD: Step-wise On-policy Distillation for SLM Agents</strong> (arxiv 2605.07725) — Tool-use SLM agent에 step-wise OPD. GRPO removing → -2.4%, SOD removing → -17.7% (OPD가 더 critical).</li>
+</ul>
+<h3>2026 — Frontier 연구</h3>
+<ul>
+<li><strong>A Survey of On-Policy Distillation for LLMs</strong> (arxiv 2604.00626) — comprehensive survey. <strong>이 분야 1순위 reading</strong>.</li>
+<li><strong>ExOPD: Generalized On-Policy Distillation with Reward Extrapolation</strong> (arxiv 2602.12125) — OPD를 dense KL-constrained RL로 cast. <strong>Teacher-surpassing behavior</strong> 달성.</li>
+<li><strong>Asymmetric On-Policy Distillation</strong> (arxiv 2605.06387) — token-level exploitation vs imitation balance.</li>
+<li><strong>X-OPD: Cross-Modal OPD for Speech LLMs</strong> (arxiv 2603.24596) — multimodal 확장.</li>
+<li><strong>CORD: Audio-Text Reasoning Gap via OPD</strong> (arxiv 2601.16547) — cross-modal 응용.</li>
+<li><strong>Hindsight-Guided On-Policy Distillation</strong> (HF Daily Papers) — failure case에서 hindsight signal 활용.</li>
+<li><strong>Early Stopping Rollout for OPD</strong> (arxiv 2605.27028) — rollout 길이 최적화로 compute 절감.</li>
+<li><strong>Stable OPD through Adaptive Target Reformulation</strong> (arxiv 2601.07155) — 학습 안정성 개선.</li>
+<li><strong>CoDistill-GRPO</strong> (2026) — <strong>GRPO 단독은 SLM에서 실패하는 문제 해결</strong>. Large model이 small model의 OPD reward 제공. Qwen2.5-Math-1.5B에서 <strong>GRPO 대비 +6.0%, base 대비 +11.6%</strong> 향상.</li>
+<li><strong>Beyond GRPO and OPD: Sparse-to-Dense Reward Principle</strong> (arxiv 2605.12483) — sparse vs dense reward의 task-dependent 최적 분석.</li>
+<li><strong>Self-Supervised OPD for Reasoning</strong> (arxiv 2605.17497) — self-generated reward signal.</li>
+<li><strong>Scaling Reasoning via Relaxed OPD</strong> (arxiv 2603.11137) — long-CoT reasoning에 OPD relaxation.</li>
+</ul>
+<hr>
+<h2>3. 알고리즘 분류 (3축)</h2>
+<h3>3.1 Token-level OPD</h3>
+<p><strong>Granularity</strong>: 각 token에서 teacher distribution 비교</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>방법</th><th>Divergence</th><th>특징</th></tr></thead><tbody><tr><td>GKD (Agarwal 2024)</td><td>JSD (Jensen-Shannon)</td><td>bounded, symmetric gradient</td></tr><tr><td>DistiLLM (Ko 2024)</td><td>Skew-KL (F/R)</td><td>표준 KL gradient instability 회피</td></tr><tr><td>DistiLLM-2 (2025)</td><td>Contrastive skew-KL</td><td>epoch-wise rollout collection</td></tr><tr><td>Thinking Machines (2025)</td><td>Per-token reverse KL</td><td>RL script 위 1-line 추가로 구현</td></tr><tr><td>ExOPD (2026)</td><td>KL-constrained RL</td><td>teacher 초과 성능</td></tr></tbody></table></div>
+<h3>3.2 Sequence-level OPD</h3>
+<p><strong>Granularity</strong>: full sequence-level reward / loss</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>방법</th><th>특징</th></tr></thead><tbody><tr><td>ImitKD (2020)</td><td>student + fixed sequence 혼합</td></tr><tr><td>OPD of LMs (Agarwal 2023)</td><td>self-generated mistake 학습</td></tr><tr><td>Distribution-Aligned Sequence Distillation</td><td>long-CoT 특화</td></tr></tbody></table></div>
+<h3>3.3 RL-augmented OPD</h3>
+<p><strong>Granularity</strong>: RL + OPD 결합</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>방법</th><th>특징</th></tr></thead><tbody><tr><td>ExOPD (2026)</td><td>dense KL-constrained RL</td></tr><tr><td>CoDistill-GRPO (2026)</td><td>GRPO + co-trained large/small model</td></tr><tr><td>SOD (2026)</td><td>Tool-use agent step-wise OPD</td></tr><tr><td>Rethinking LLM Distillation (2025)</td><td>Task reward + hard KL constraint</td></tr><tr><td>Beyond GRPO/OPD (2026)</td><td>Sparse-to-dense empirical principle</td></tr></tbody></table></div>
+<hr>
+<h2>4. KL Divergence 선택 — task-dependent 최적</h2>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Divergence</th><th>장점</th><th>단점</th><th>적합 task</th><th></th><th></th></tr></thead><tbody><tr><td><strong>Forward KL</strong> (P</td><td></td><td>Q)</td><td>mode covering, exploration</td><td>high-variance gradient</td><td>다양한 출력 필요 (creative)</td></tr><tr><td><strong>Reverse KL</strong> (Q</td><td></td><td>P)</td><td>mode seeking, exploit</td><td>mode collapse 위험</td><td>정확성 필요 (math, code)</td></tr><tr><td><strong>JSD</strong></td><td>bounded gradient, symmetric</td><td>추가 compute</td><td>일반 fine-tuning</td><td></td><td></td></tr><tr><td><strong>Skew-KL</strong></td><td>gradient instability 해결</td><td>hyperparameter tuning</td><td>large prob mismatch</td><td></td><td></td></tr><tr><td><strong>Generalized JSD</strong> (α-JSD)</td><td>tunable</td><td>tuning 부담</td><td>GKD framework</td><td></td><td></td></tr></tbody></table></div>
+<p><strong>Thinking Machines (2025)</strong>: per-token <strong>Reverse KL</strong> over short rollouts → <strong>Qwen3 RL parity at 10× cheaper</strong>.</p>
+<p><strong>DistiLLM-2 (2025)</strong>: contrastive <strong>Skew-KL</strong> → student-generated outputs을 epoch마다 collect.</p>
+<hr>
+<h2>5. Production Adoption — 누가 OPD를 채택했나</h2>
+<h3>5.1 Frontier model 채택 (2025-2026)</h3>
+<ul>
+<li><strong>Qwen3</strong> (Alibaba) — OPD를 핵심 post-training으로. Thinking Machines blog 38회 인용.</li>
+<li><strong>DeepSeek-V4</strong> — multi-teacher + curriculum + OPD 결합.</li>
+<li><strong>Gemma 2</strong> (Google) — GKD framework 산업화.</li>
+<li><strong>MiMo-V2-Flash</strong> — small reasoning model OPD.</li>
+<li><strong>Nemotron</strong> (NVIDIA) — post-training 핵심.</li>
+</ul>
+<h3>5.2 OPD가 핵심 ingredient인 이유</h3>
+<ol>
+<li><strong>RL cost 절감</strong> — Thinking Machines 보고: Qwen3 reasoning parity at <strong>~10× cheaper than RL</strong></li>
+<li><strong>Small model 안정 학습</strong> — GRPO 단독은 SLM에서 sparse reward로 불안정</li>
+<li><strong>Train-inference distribution match</strong> — Exposure bias 해결</li>
+<li><strong>Continuous learning</strong> — Mira Murati: &quot;강한 domain 성능 + 지속적 학습 능력&quot;</li>
+</ol>
+<h3>5.3 인프라 — Thinking Machines Tinker API</h3>
+<ul>
+<li><strong>Tinker training API</strong> (https://thinkingmachines.ai/tinker)</li>
+<li>OPD가 RL script 위 <strong>1-line 추가로 구현 가능</strong></li>
+<li>Open source cookbook: https://github.com/thinking-machines-lab/tinker-cookbook</li>
+<li>형준님 본업 (Samsung Research)에서 활용 가능성 검토 가치 ★★★★★</li>
+</ul>
+<hr>
+<h2>6. OPD vs GRPO — Samsung Research 본업 직접 연결</h2>
+<h3>6.1 형준님 본업 컨텍스트</h3>
+<ul>
+<li><strong>GRPO</strong> (Group Relative Policy Optimization) — Samsung Research RL 핵심 method</li>
+<li><strong>SR-470M</strong> — Samsung Research 470M parameter model</li>
+<li><strong>On-device</strong> — Galaxy AI / 차세대 device 적용</li>
+</ul>
+<h3>6.2 GRPO 단독의 SLM 실패 — OPD가 해결</h3>
+<p><strong>Empirical finding (CoDistill-GRPO 2026)</strong>:</p>
+<ul>
+<li>Qwen2.5-Math-1.5B baseline GRPO → +0% over base</li>
+<li>CoDistill-GRPO (GRPO + OPD reward from large model) → <strong>+11.6% over base, +6.0% over standard GRPO</strong></li>
+</ul>
+<p><strong>SOD 2026 ablation</strong>:</p>
+<ul>
+<li>GRPO 제거 → -2.4% performance drop</li>
+<li>OPD 제거 → <strong>-17.7% drop</strong> (훨씬 critical)</li>
+<li>= SLM에서 sparse reward 단독은 불안정, <strong>dense token-level teacher supervision이 primary guidance</strong></li>
+</ul>
+<h3>6.3 SR-470M에 직접 적용 가능성</h3>
+<p><strong>Pipeline 제안</strong>:</p>
+<ol>
+<li><strong>Teacher</strong>: GPT-5 / Claude Opus / Gemini Ultra (frontier model) 사용</li>
+<li><strong>Student</strong>: SR-470M (Samsung 자체)</li>
+<li><strong>학습</strong>: Tinker-style on-policy reverse KL over short rollouts</li>
+<li><strong>결합</strong>: GRPO sparse reward (frontier behavior exploration) + OPD dense reward (SR-470M compression)</li>
+<li><strong>Domain</strong>: math / code / tool-use / Korean reasoning 등 specialized</li>
+</ol>
+<p><strong>예상 효과 (extrapolation from CoDistill-GRPO)</strong>:</p>
+<ul>
+<li>Baseline SR-470M 대비 +10~15% reasoning accuracy</li>
+<li>RL 대비 ~10× compute 절감</li>
+<li>On-device deployment에 적합한 size 유지</li>
+</ul>
+<h3>6.4 KV cache / inference cost와의 정합</h3>
+<ul>
+<li>Small student model = inference time + memory 절감 = KV cache 부담 ↓</li>
+<li>OPD로 SLM 성능 압축 → on-device 채택 가속화</li>
+<li>= 형준님 본업 thesis (small + cheap inference + on-device personal agent)와 직접 정렬</li>
+</ul>
+<hr>
+<h2>7. 한계 + 미래 연구 방향</h2>
+<h3>7.1 현재 한계</h3>
+<ol>
+<li><strong>Reward hacking</strong>: OPD에서 student가 teacher distribution을 game할 위험. Hindsight-Guided OPD (2026)가 일부 해결.</li>
+<li><strong>Catastrophic forgetting</strong>: specialized domain OPD 후 general capability 손실. Curriculum + multi-teacher 결합 필요.</li>
+<li><strong>Teacher dependency</strong>: teacher 품질이 student ceiling 결정. ExOPD가 reward extrapolation으로 teacher 초과 시도.</li>
+<li><strong>Compute cost</strong>: RL보다 싸지만 SFT보다는 비쌈. Early Stopping Rollout (2605.27028)가 rollout 길이 최적화.</li>
+<li><strong>Long sequence</strong>: long-CoT reasoning에서 stable training 어려움. Stable OPD (2601.07155)가 일부 해결.</li>
+</ol>
+<h3>7.2 미래 연구 방향</h3>
+<ol>
+<li><strong>Multi-teacher OPD</strong>: 여러 teacher logit ensemble (DeepSeek-V4 패턴)</li>
+<li><strong>Cross-modal OPD</strong>: speech, vision 확장 (X-OPD, CORD)</li>
+<li><strong>Self-supervised OPD</strong>: external teacher 없이 self-generated reward (arxiv 2605.17497)</li>
+<li><strong>Continuous OPD</strong>: deployment 후 user feedback으로 지속 학습</li>
+<li><strong>Privacy-preserving OPD</strong>: on-device teacher 압축 후 federated OPD</li>
+<li><strong>GRPO+OPD unified</strong>: sparse + dense reward 자동 balance (Beyond GRPO/OPD 2605.12483)</li>
+</ol>
+<hr>
+<h2>8. 시장 / 산업 인접 — 한국 + 미장 종목 매핑</h2>
+<h3>8.1 OPD 적용 가능한 한국 산업</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>산업</th><th>OPD 활용</th><th>관련 종목</th></tr></thead><tbody><tr><td>Samsung Research (Galaxy AI)</td><td>SR-470M + GRPO + OPD</td><td>삼성전자 005930</td></tr><tr><td>Naver HyperCLOVA X (~50B)</td><td>OPD post-training</td><td>네이버 035420</td></tr><tr><td>Kakao KoGPT</td><td>small model distillation</td><td>카카오 035720</td></tr><tr><td>Upstage Solar</td><td>OPD-based fine-tuning</td><td>(비상장)</td></tr><tr><td>LG AI Research (Exaone)</td><td>LLM ↔ SLM distillation</td><td>LG전자 066570</td></tr></tbody></table></div>
+<h3>8.2 OPD가 indirectly 수혜 주는 미장</h3>
+<ul>
+<li><strong>NVIDIA (NVDA)</strong>: OPD training은 여전히 GPU intensive (단 RL 대비 10× cheaper → 시장 축소 우려)</li>
+<li><strong>MU</strong>: HBM 수요는 training compute가 줄어도 inference에서 유지 (긍정)</li>
+<li><strong>STX</strong>: model distillation pipeline → 학습 data archival (HDD cold storage 수요 +)</li>
+<li><strong>NVT/SPXC/POWL</strong>: AI data center cooling/power (OPD training cluster 인접)</li>
+<li><strong>CRWV (CoreWeave) / VRT / GEV</strong>: AI infra 직접 수혜 (단 이미 멀티플 폭등 = Wald 비대칭 작음)</li>
+</ul>
+<h3>8.3 Samsung Research가 OPD를 채택할 경우</h3>
+<ul>
+<li><strong>삼성전자 005930</strong> 상승 narrative 추가 (Galaxy AI 채택 → 차별화)</li>
+<li>한국 GPU/HBM 수요 영구적 증가 (training + inference 양면)</li>
+<li>LG AI / Naver 등 한국 plays 동반 상승 가능</li>
+</ul>
+<hr>
+<h2>9. 추천 Reading Order (형준님 20-30분 budget)</h2>
+<h3>1순위 (필수, 20분)</h3>
+<ol>
+<li><strong>Thinking Machines Lab blog</strong> (15분) — https://thinkingmachines.ai/blog/on-policy-distillation/</li>
+</ol>
+<ul>
+<li>Why OPD matters + 실전 example</li>
+</ul>
+<ol>
+<li><strong>Survey paper TL;DR</strong> (5분) — arxiv 2604.00626 section 1-2</li>
+</ol>
+<ul>
+<li>전체 그림</li>
+</ul>
+<h3>2순위 (선택, 10~15분)</h3>
+<ol>
+<li><strong>GKD original</strong> (10분) — arxiv 2306.13649 section 3-4</li>
+</ol>
+<ul>
+<li>Foundational framework</li>
+</ul>
+<ol>
+<li><strong>CoDistill-GRPO</strong> (5분) — 형준님 본업 GRPO 직접 연결</li>
+</ol>
+<h3>3순위 (시간 있을 때, 추가 10~15분)</h3>
+<ol>
+<li><strong>DistiLLM</strong> (Ko 2024) — Skew-KL implementation</li>
+<li><strong>ExOPD</strong> (2026) — Teacher-surpassing case</li>
+<li><strong>Tinker cookbook</strong> — implementation guide</li>
+</ol>
+<h3>Skip (현 시점)</h3>
+<ul>
+<li>ImitKD (2020) — historical only</li>
+<li>X-OPD / CORD — cross-modal 관심 시</li>
+<li>Stable OPD / Asymmetric OPD — 학습 instability 만났을 때</li>
+</ul>
+<hr>
+<h2>10. Open Questions (형준님 본업 추적용)</h2>
+<ol>
+<li><strong>Samsung Research 내부에 OPD pipeline이 이미 있나?</strong></li>
+</ol>
+<ul>
+<li>없다면 → Tinker cookbook 참고 후 SR-470M PoC 제안 가능</li>
+<li>있다면 → CoDistill-GRPO 패턴으로 reward 보강 검토</li>
+</ul>
+<ol>
+<li><strong>GRPO + OPD 결합 시 SR-470M 성능 향상은?</strong></li>
+</ol>
+<ul>
+<li>CoDistill-GRPO 결과로 추정: math task +11.6%, GRPO 대비 +6.0%</li>
+</ul>
+<ol>
+<li><strong>On-device deployment를 위한 OPD teacher 선택은?</strong></li>
+</ol>
+<ul>
+<li>Cloud teacher (GPT-5.5 / Claude Opus) vs On-device teacher (SR-7B size) 비교 필요</li>
+</ul>
+<ol>
+<li><strong>Korean domain OPD는?</strong></li>
+</ol>
+<ul>
+<li>영어 OPD literature 대부분, Korean reasoning 영역 빈 공간 = Samsung Research advantage</li>
+</ul>
+<ol>
+<li><strong>NVDA의 OPD 영향 — bullish or bearish?</strong></li>
+</ol>
+<ul>
+<li>Bull: training compute 절감되어도 model 수가 늘면 total demand 증가</li>
+<li>Bear: RL 대비 10× cheaper = GPU 시장 축소 압력</li>
+<li>인과추론: OPD가 SLM 생산성 ↑ → SLM 채택 확산 → on-device + inference 시장 확장</li>
+</ul>
+<hr>
+<h2>11. 인접 영역 cross-reference</h2>
+<h3>11.1 본 페이지와 연결된 research-desk 페이지들</h3>
+<ul>
+<li>AI Research Radar (daily) — OPD 관련 paper 매일 추적 필요</li>
+<li>Cross-Ontology — OPD 채택 회사가 자본 시장에 미치는 영향</li>
+<li>Market Ontology — Samsung 005930, 네이버 035420 watchlist 연결</li>
+<li>US Wald Discovery — NVDA / MU / STX OPD 영향 평가</li>
+</ul>
+<h3>11.2 형준님 본업 7영역 매핑</h3>
+<ul>
+<li>영역5 <strong>AI 서버 2티어</strong> ↔ OPD training compute (MU HBM, MRVL Custom ASIC, AVGO)</li>
+<li>영역7 <strong>DC EPC</strong> ↔ OPD training cluster cooling/power (NVT, SPXC, POWL)</li>
+<li>영역2 <strong>액침냉각</strong> ↔ OPD training GPU thermal (GST, immersion cooling)</li>
+<li>= OPD가 발달하면 영역5/7/2 모두 indirectly 수혜</li>
+</ul>
+<hr>
+<h2>12. Sources</h2>
+<h3>핵심 paper</h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/2306.13649">On-Policy Distillation of Language Models (Agarwal 2023, ICLR 2024)</a></li>
+<li><a href="https://www.researchgate.net/publication/371855560_GKD">GKD: Generalized Knowledge Distillation (Agarwal 2024)</a></li>
+<li><a href="https://arxiv.org/abs/2402.03898">DistiLLM (Ko ICML 2024)</a></li>
+<li><a href="https://arxiv.org/html/2503.07067">DistiLLM-2 Contrastive Approach (2025)</a></li>
+<li><a href="https://arxiv.org/html/2604.00626v3">Survey of OPD for LLMs (2604.00626)</a></li>
+<li><a href="https://arxiv.org/pdf/2602.12125">ExOPD with Reward Extrapolation (2602.12125)</a></li>
+<li><a href="https://arxiv.org/html/2605.07725v1">SOD: Step-wise OPD for SLM Agents (2605.07725)</a></li>
+<li><a href="https://arxiv.org/abs/2605.12483">CoDistill-GRPO + OPD (2605.12483)</a></li>
+<li><a href="https://arxiv.org/html/2605.06387">Asymmetric On-Policy Distillation (2605.06387)</a></li>
+<li><a href="https://arxiv.org/pdf/2603.24596">X-OPD Cross-Modal Speech LLM (2603.24596)</a></li>
+<li><a href="https://arxiv.org/abs/2605.17497">Self-Supervised OPD for Reasoning (2605.17497)</a></li>
+<li><a href="https://arxiv.org/html/2605.27028v1">Early Stopping Rollout for OPD (2605.27028)</a></li>
+<li><a href="https://arxiv.org/html/2601.07155v1">Stable OPD through Adaptive Target Reformulation (2601.07155)</a></li>
+<li><a href="https://huggingface.co/papers?q=Hindsight-Guided+On-Policy+Distillation">Hindsight-Guided OPD (HF Daily)</a></li>
+<li><a href="https://arxiv.org/pdf/2601.16547">CORD Audio-Text OPD (2601.16547)</a></li>
+</ul>
+<h3>Production references</h3>
+<ul>
+<li><a href="https://thinkingmachines.ai/blog/on-policy-distillation/">Thinking Machines Lab — OPD blog (2025-10-27)</a></li>
+<li><a href="https://deepwiki.com/thinking-machines-lab/tinker-cookbook/3.4.2-on-policy-distillation">Tinker Cookbook OPD implementation</a></li>
+<li><a href="https://github.com/chrisliu298/awesome-on-policy-distillation">Awesome OPD repo (chrisliu298)</a></li>
+<li><a href="https://github.com/nick7nlp/Awesome-LLM-On-Policy-Distillation">Awesome OPD repo (nick7nlp)</a></li>
+</ul>
+<h3>Conceptual</h3>
+<ul>
+<li><a href="https://d2jud02ci9yv69.cloudfront.net/2025-04-28-llm-knowledge-distil-157/blog/llm-knowledge-distil/">ICLR 2025 Blog — Forward KL vs Reverse KL</a></li>
+<li><a href="https://medium.com/@maheshlambe/mira-murati-thiking-machines-on-policy-distillation-cheap-accuracy-real-gains-85ac523b20f7">Medium — Mira Murati OPD summary</a></li>
+<li><a href="https://champaignmagazine.com/2025/10/29/aikipedia-on-policy-distillation/">Aikipedia OPD overview</a></li>
+<li><a href="https://news.aibase.com/news/22303">Champaign Magazine OPD news</a></li>
+</ul>
+<hr>
+<p>*이 페이지는 매주 갱신됩니다. 새 OPD paper / 산업 채택 사례 / Samsung Research 본업 적용 시 다음 review 사이클에 추가.*</p>
+<p>— Last updated: 2026-06-10 (Claude · research-desk)</p></article></main>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
+<script>
+(() => {
+  const root = document.querySelector('[data-kimi-company-search]');
+  if (!root) return;
+  const base = '/research-desk';
+  const input = root.querySelector('[data-kimi-input]');
+  const result = root.querySelector('[data-kimi-results]');
+  const count = root.querySelector('[data-kimi-count]');
+  const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 삼성전자, 한미반도체, 네이버, NVDA, 팔란티어, HD현대일렉</small></div>';
+  let rows = [];
+  const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9가-힣]+/g, ' ').trim();
+  const compact = (s) => norm(s).replace(/\s+/g, '');
+  const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '데이터 확인 중' : `${Number(v) >= 0 ? '+' : ''}${Number(v).toFixed(1)}%`;
+  const requestCreate = (raw, cmd) => {
+    const msg = `회사 생성 요청: ${raw}
+${cmd}`;
+    try { navigator.clipboard && navigator.clipboard.writeText(cmd); } catch(e) {}
+    localStorage.setItem('researchDeskCompanyCreateRequest', JSON.stringify({query: raw, command: cmd, ts: new Date().toISOString()}));
+    const status = root.querySelector('[data-kimi-create-status]');
+    if (status) status.textContent = '생성 요청 명령을 복사했어. Telegram/Hermes에 붙여넣으면 fast intake가 실행돼.';
+  };
+  const render = (items) => {
+    if (!items.length) {
+      const raw = input.value.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      const cmd = `python3 11-scripts/request_company_report.py "${raw.replace(/"/g, '\"')}" --provider fast --publish`;
+      const action = `https://158.247.217.223.sslip.io/api/research-desk/company-create?query=${encodeURIComponent(raw)}&provider=fast`;
+      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 Codex 5.5 기반 intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><div class="kimi-create-actions"><a class="kimi-create-btn" href="${action}" data-kimi-create>생성 시작</a><button type="button" class="kimi-create-btn secondary" data-copy-cmd>명령 복사</button></div><span class="kimi-create-status" data-kimi-create-status>누르면 진행 상태 페이지로 이동한다.</span></div>`;
+      const copyBtn = result.querySelector('[data-copy-cmd]');
+      if (copyBtn) copyBtn.addEventListener('click', () => requestCreate(raw, cmd));
+      return;
+    }
+    result.innerHTML = '<div class="kimi-results-title">검색 결과 / 관찰 후보</div>' + items.slice(0, 8).map(x => `
+      <a class="kimi-result" href="${x.page}">
+        <span class="kimi-light">${String(x.traffic_light || '⚪').trim().split(/\s+/)[0]}</span>
+        <b>${x.company} <em>${x.symbol}</em></b>
+        <small>${x.category} · ${x.role || 'role 미정'}</small>
+        <i>현재가 ${x.price == null ? '데이터 확인 중' : x.price} · 20D ${fmtPct(x.return_20d_pct)} · 52W ${x.price_position_52w_pct == null ? '데이터 확인 중' : Number(x.price_position_52w_pct).toFixed(0)+'%'}</i>
+      </a>`).join('');
+  };
+  const search = () => {
+    const q = norm(input.value);
+    const qc = compact(input.value);
+    if (!q) { result.innerHTML = empty; return; }
+    const terms = q.split(/\s+/).filter(Boolean);
+    const scored = rows.map(x => {
+      const fields = [x.company, x.symbol, x.category, x.node, x.role, ...(x.aliases || [])].join(' ');
+      const hay = norm(fields);
+      const hayc = compact(fields);
+      const symbolc = compact(x.symbol);
+      let score = 0;
+      if (qc && (symbolc === qc || symbolc.replace(/us$|ks$|kq$/,'') === qc)) score += 100;
+      if (qc && hayc.includes(qc)) score += qc.length + 15;
+      for (const t of terms) { if (hay.includes(t)) score += t.length + (hay.startsWith(t) ? 5 : 0); }
+      return [score, x];
+    }).filter(([s]) => s > 0).sort((a,b) => b[0]-a[0]).map(([,x]) => x);
+    render(scored);
+  };
+  const indexUrl = `${base}/data/company-search-index.json?v=${Date.now()}`;
+  fetch(indexUrl, {cache:'no-store'}).then(r => { if (!r.ok) throw new Error('index '+r.status); return r.json(); }).then(data => {
+    rows = data.items || [];
+    if (count) count.textContent = `${rows.length} companies indexed · KR/US fast local search · intake: Codex 5.5`;
+    const featured = rows.filter(x => ['NVIDIA','Vertiv','HD Hyundai Electric','SK Hynix','Microsoft','TSMC'].includes(x.company));
+    render(featured.length ? featured : rows.slice(0,6));
+  }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Company index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });
+  input.addEventListener('input', search);
+  root.querySelectorAll('[data-kimi-query]').forEach(btn => btn.addEventListener('click', () => { input.value = btn.dataset.kimiQuery; search(); input.focus(); }));
+})();
+</script>
+</body>
+</html>
