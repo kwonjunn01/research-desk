@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Twin Deep Dive — Omniverse DSX, Cosmos, 그리고 삼성 AI 자율공장</title>
+  <link rel="stylesheet" href="/research-desk/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1><a href="/research-desk/index.html">Research Desk</a></h1>
+    <div class="meta">Personal Research Radar</div>
+    <details class="nav-major">
+<summary class="nav-major-title">Home</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">Overview</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/index.html"><span class="nav-badge">홈</span> Public Research Garden</a></li>
+<li><a href="/research-desk/weekly-reviews/index.html"><span class="nav-badge">주간</span> Weekly Reviews</a></li>
+<li><a href="/research-desk/agent-build-log/index.html"><span class="nav-badge">빌드</span> Agent Build Log</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">AI Research</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/ai-research/index.html"><span class="nav-badge">허브</span> AI Research Radar</a></li>
+<li><a href="/research-desk/ai-research/agent-ai-specialist-map.html"><span class="nav-badge">Agent</span> Agent AI Specialist Map</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-06-09</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-09.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-08</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-08.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-07</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-07.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-06</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-06.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-05.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-04.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-03</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-03.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-02</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-02.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-06-01</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-06-01.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-31</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-31.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-30</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-30.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-29</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-29.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-28</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-28.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-27</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-27.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-26.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-25.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/ai-research/2026-05-22.html"><span class="nav-badge">리서치</span> Daily AI Research Radar</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Quant Bot</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">운영 허브</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/index.html"><span class="nav-badge">허브</span> Quant Bot Hub</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-spec.html"><span class="nav-badge">Spec</span> BTC Futures v2 Spec</a></li>
+<li><a href="/research-desk/quant/upgrade-roadmap.html"><span class="nav-badge">Upgrade</span> Quant Bot Upgrade Roadmap</a></li>
+<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html"><span class="nav-badge">Daily</span> BTC Futures v2 Daily Report</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">전략 / 시스템</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/quant/agent-team.html"><span class="nav-badge">팀</span> AI Quant Agent Team</a></li>
+<li><a href="/research-desk/quant/strategy-council.html"><span class="nav-badge">회의</span> Quant Strategy Council</a></li>
+<li><a href="/research-desk/quant/strategy-evolution-charter.html"><span class="nav-badge">전략</span> Strategy Evolution Charter</a></li>
+<li><a href="/research-desk/quant/scenario-planning.html"><span class="nav-badge">위기</span> Scenario Planning</a></li>
+<li><a href="/research-desk/quant/feedback-system.html"><span class="nav-badge">피드백</span> Feedback System</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Cross-Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">통합 지도</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/cross-ontology/index.html"><span class="nav-badge">허브</span> Cross-Ontology Synthesizer</a></li>
+<li><a href="/research-desk/cross-ontology/prediction-board.html"><span class="nav-badge">예측</span> Prediction Board</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-06-09</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-09.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-08</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-08.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-05.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-04.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-03</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-03.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-02</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-02.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-06-01</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-06-01.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-29</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-29.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-28</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-28.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-26.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-25.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-22.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-21</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-21.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+<div class="nav-date">2026-05-20</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-05-20.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
+</details>
+</details>
+<details class="nav-major">
+<summary class="nav-major-title">Market Ontology</summary>
+<details class="nav-mid">
+<summary class="nav-mid-title">지도 / MOC</summary>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/market-ontology/index.html"><span class="nav-badge">허브</span> Market Intelligence Hub</a></li>
+<li><a href="/research-desk/market-ontology/stock-traffic-light.html"><span class="nav-badge">신호</span> 주식 신호등</a></li>
+<li><a href="/research-desk/market-ontology/securities-reports.html"><span class="nav-badge">리포트</span> Institutional Securities Desk</a></li>
+<li><a href="/research-desk/market-ontology/company-reports/index.html"><span class="nav-badge">회사</span> Company Reports</a></li>
+</ul>
+</details>
+<details class="nav-mid">
+<summary class="nav-mid-title">날짜별 리포트</summary>
+<div class="nav-date">2026-06-09</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-09.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-08</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-08.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-05</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-05.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-04</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-04.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-03</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-03.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-02</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-02.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-06-01</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-06-01.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-29</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-29.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-28</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-28.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-26</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-26.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-25</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-25.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+<div class="nav-date">2026-05-22</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/market/2026-05-22.html"><span class="nav-badge">마켓</span> Market Narrative Brief</a></li>
+</ul>
+</details>
+</details>
+  </aside>
+  <main><article><hr>
+<p>title: &quot;Digital Twin Deep Dive — Omniverse DSX, Cosmos, 삼성 AI 자율공장&quot;</p>
+<p>date: 2026-06-15</p>
+<p>author: Claude (for Hyeongjun Kwon, Samsung Research AI System Team)</p>
+<p>tags:</p>
+<ul>
+<li>digital-twin</li>
+<li>NVIDIA-Omniverse</li>
+<li>Cosmos</li>
+<li>physical-AI</li>
+<li>Samsung-AI-factory</li>
+<li>world-model</li>
+<li>capital-markets</li>
+</ul>
+<hr>
+<h1>Digital Twin Deep Dive — Omniverse DSX, Cosmos, 그리고 삼성 AI 자율공장</h1>
+<blockquote>2026 디지털 트윈 시장의 두 축 — <strong>NVIDIA Omniverse DSX Blueprint (글로벌 자본 흐름)</strong> + <strong>삼성 AI 자율공장 (한국 + 형준님 본업 직접)</strong> + 자본 시장 매핑.</blockquote>
+<p>&gt;</p>
+<blockquote>자매 페이지: <a href="/research-desk/ai-research/ai-2026-trend-map.html">AI 2026 Trend Map</a> · <a href="/research-desk/ai-research/opd-research-overview.html">OPD 연구 집대성</a></blockquote>
+<hr>
+<h2>0. TL;DR (1분)</h2>
+<p><strong>디지털 트윈 = AI 인프라 설계·시뮬레이션의 default substrate</strong>. 5년 전 &quot;스마트 팩토리&quot;의 buzz였던 게 2026년 <strong>physical AI training 데이터 생성 + AI factory 사전 검증의 필수 layer</strong>로 정착.</p>
+<p><strong>3가지 macro shift</strong>:</p>
+<ol>
+<li><strong>From visualization → physical AI training data generation</strong> (Cosmos foundation model)</li>
+<li><strong>From per-factory tool → AI factory reference design</strong> (DSX Blueprint, Vertiv SmartRun)</li>
+<li><strong>From operations layer → manufacturing 전 가치사슬 자율화</strong> (삼성 2030, agentic AI + humanoid)</li>
+</ol>
+<p><strong>자본 흐름의 핵심 hub</strong>:</p>
+<ul>
+<li><strong>글로벌 hub</strong>: NVIDIA Omniverse DSX Blueprint (14개 partner ecosystem)</li>
+<li><strong>한국 hub</strong>: 삼성 AI 자율공장 2030 전환 (DX 부문 HPC + Samsung Research AI System Team)</li>
+<li><strong>Bottleneck</strong>: physical AI 학습 데이터 (Cosmos가 해결 시도), AI factory 전력·냉각 사전 검증</li>
+</ul>
+<p><strong>형준님 본업 관점</strong>: World model (Cosmos) + 디지털 트윈 + Samsung 2030 자율공장 + 형준님 본업 HPC 활용 흐름이 <strong>하나의 그림으로 정렬</strong>됨. OPD/VLA 페이지와 직접 연결.</p>
+<hr>
+<h2>1. 글로벌 디지털 트윈 stack — 4 Tier 매트릭스</h2>
+<h3>Tier 1: 플랫폼·시뮬레이션 코어 (시장 share 60%+)</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목</th><th>시장 위치</th><th>2026 핵심 move</th></tr></thead><tbody><tr><td><strong>Siemens (SIE.DE)</strong></td><td>#1 industrial 트윈</td><td>Altair 인수 완료 (2025/3) + Omniverse DSX 통합</td></tr><tr><td><strong>Dassault Systèmes (DSY.PA)</strong></td><td>#2 (CATIA, 3DEXPERIENCE)</td><td>AI Factory Virtual Twin 직접 빌드</td></tr><tr><td><strong>ANSYS (Synopsys 인수 SNPS)</strong></td><td>Twin Builder, 항공·반도체 강세</td><td>Synopsys+ANSYS 합병 후 chip-to-factory 트윈</td></tr><tr><td><strong>PTC (PTC)</strong></td><td>ThingWorx 실시간 데이터 통합</td><td>Microsoft 파트너십 강화</td></tr><tr><td><strong>Autodesk (ADSK)</strong></td><td>건설 BIM 트윈</td><td>Bentley와 인프라 영역 경쟁</td></tr><tr><td><strong>Bentley Systems (BSY)</strong></td><td>인프라 트윈 (BIM)</td><td>1순위 Buy 시장 평가 (DB 시작)</td></tr></tbody></table></div>
+<h3>Tier 2: 클라우드 / 하이퍼스케일러</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목</th><th>디지털 트윈 자산</th><th>2026 차별화</th></tr></thead><tbody><tr><td><strong>Microsoft (MSFT)</strong></td><td>Azure Digital Twins + Fabric Digital Twin Builder</td><td>PTC/Honeywell/SAP 파트너십 + Copilot 통합</td></tr><tr><td><strong>AWS (AMZN)</strong></td><td>IoT TwinMaker</td><td>산업 IoT + 자율차 시뮬레이션</td></tr><tr><td><strong>IBM (IBM)</strong></td><td>Watson IoT + Siemens Simcenter 통합</td><td>산업 AI 노하우</td></tr><tr><td><strong>Oracle (ORCL), Cisco (CSCO)</strong></td><td>엔터프라이즈 + 네트워킹</td><td>인프라 layer</td></tr></tbody></table></div>
+<h3>Tier 3: AI Factory + Physical AI 생태계 (가장 hot)</h3>
+<p><strong>NVIDIA Omniverse DSX Blueprint</strong> (GTC 2026, 3/16 발표) — physical AI 시대의 표준 reference:</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>파트너</th><th>역할</th></tr></thead><tbody><tr><td><strong>NVIDIA (NVDA)</strong></td><td>Hub. Vera Rubin DSX AI Factory 레퍼런스 디자인</td></tr><tr><td><strong>Dassault Systèmes (DSY.PA)</strong></td><td>3DEXPERIENCE + CATIA, MBSE platform</td></tr><tr><td><strong>Cadence (CDNS)</strong></td><td>GB300 NVL72 thermal/fluid simulation, Reality Data Center Digital Twin</td></tr><tr><td><strong>Schneider Electric (SU.PA)</strong></td><td>ETAP platform — 전력 distribution simulation</td></tr><tr><td><strong>Siemens (SIE.DE)</strong></td><td>High-density compute + 전력·냉각·자동화 balance framework</td></tr><tr><td><strong>Vertiv (VRT)</strong></td><td>OneCore Rubin DSX — prefabricated 데이터센터 인프라</td></tr><tr><td><strong>Eaton (ETN)</strong></td><td>전력 protection / management</td></tr><tr><td><strong>Trane Technologies (TT)</strong></td><td>데이터센터 cooling</td></tr><tr><td><strong>PTC</strong></td><td>ThingWorx 실시간 데이터</td></tr><tr><td><strong>Jacobs (J)</strong></td><td>Engineering 서비스</td></tr><tr><td><strong>Procore (PCOR)</strong></td><td>건설 management</td></tr><tr><td><strong>NScale, Phaidra, Switch</strong></td><td>AI 인프라 운영자</td></tr></tbody></table></div>
+<p><strong>Vertiv SmartRun 디지털 트윈</strong> (6/1 발표) — Computex 2026 공개. 3DEXPERIENCE 기반 + Omniverse DSX workflow 통합. <strong>production-grade</strong>.</p>
+<h3>Tier 4: 산업 특화 / 신흥 영역</h3>
+<ul>
+<li><strong>에너지/그리드</strong>: GE Vernova (GEV), Emerson (EMR)</li>
+<li><strong>DTN (5G/6G 네트워크 트윈)</strong>: 통신 장비사 영역, world model 융합 연구 단계</li>
+<li><strong>자율주행 트윈</strong>: Cosmos-Drive-Dreams, Gaia-2, DrivingWorld</li>
+<li><strong>로봇 manipulation</strong>: ABot-PhysWorld, NVIDIA Isaac</li>
+</ul>
+<hr>
+<h2>2. NVIDIA Omniverse DSX Blueprint — Deep Dive</h2>
+<h3>2.1 무엇인가</h3>
+<p><strong>AI 공장의 디지털 트윈을 사전 설계·시뮬레이션·검증할 수 있는 reference architecture</strong>. GTC 2026 (3/16) 발표. Vera Rubin DSX AI Factory 레퍼런스 디자인과 함께.</p>
+<h3>2.2 파트너별 Specific Integration</h3>
+<ul>
+<li><strong>Dassault</strong>: 3DEXPERIENCE의 MBSE (Model-Based Systems Engineering) platform에 reference design 통합. CATIA software로 Virtual Twin 빌드</li>
+<li><strong>Cadence</strong>: NVIDIA <strong>GB300 NVL72</strong> 시스템의 simulation-ready model을 Reality Data Center Digital Twin Platform에 통합. <strong>열·유체 simulation</strong></li>
+<li><strong>Schneider Electric</strong>: ETAP platform 통해 power distribution simulation/optimization</li>
+<li><strong>Siemens</strong>: high-density compute와 power/cooling/automation 균형 잡는 framework</li>
+<li><strong>Vertiv</strong>: Omniverse DSX Blueprint 위에 <strong>OneCore Rubin DSX</strong> (prefab 데이터센터 인프라) 빌드</li>
+</ul>
+<h3>2.3 의미</h3>
+<ul>
+<li>AI factory 건설 사이클 = 설계→시뮬레이션→사전 검증→건설→운영의 <strong>single source of truth</strong></li>
+<li>모든 component (GPU, 냉각, 전력, control) 가상에서 먼저 verified</li>
+<li>Hyperscaler / colocation operator 입장에서 <strong>건설 기간 단축 + 비용 절감</strong> 명확</li>
+</ul>
+<h3>2.4 자본 시장 관점</h3>
+<ul>
+<li><strong>NVIDIA (NVDA)</strong>: 디지털 트윈 + AI factory 표준화의 hub. 핵심 catalyst 인지된 상태</li>
+<li><strong>Vertiv (VRT)</strong>: Omniverse DSX 1st mover (SmartRun production-grade). 멀티플 50x로 부분 인지</li>
+<li><strong>Cadence (CDNS), Synopsys (SNPS)</strong>: chip-to-factory 디지털 트윈 확대. Synopsys+ANSYS 합병 후 frontier</li>
+<li><strong>Dassault (DSY.PA), Siemens (SIE.DE)</strong>: 유럽 디지털 트윈 양강. 시총 200조 + 환율 분산</li>
+</ul>
+<hr>
+<h2>3. NVIDIA Cosmos — Physical AI의 데이터 layer</h2>
+<h3>3.1 무엇인가</h3>
+<p><strong>Physical AI 학습 / 평가를 위한 world foundation model platform</strong>. arxiv 2501.03575 (DeepMind 패턴 따라 NVIDIA가 공개).</p>
+<h3>3.2 Cosmos 3 (COMPUTEX 2026, May 발표)</h3>
+<ul>
+<li><strong>Omnimodel</strong>: text + image + video + ambient sound + action 통합</li>
+<li><strong>Physics accuracy</strong>: leading-edge</li>
+<li><strong>학습 cycle 단축</strong>: 몇 달 → 며칠</li>
+<li><strong>Open frontier foundation model</strong> (open source)</li>
+</ul>
+<h3>3.3 왜 중요한가</h3>
+<p><strong>Physical AI 학습의 병목 = 학습 데이터</strong>.</p>
+<ul>
+<li>Robot manipulation, 자율주행, 산업 vision system 학습 시 real-world 데이터 수집 비용 매우 큼</li>
+<li>Cosmos가 디지털 트윈 + 합성 데이터 생성 → 학습 데이터 부담 해결</li>
+<li><strong>결국 디지털 트윈 = physical AI 학습 인프라</strong></li>
+</ul>
+<h3>3.4 Physical AI Data Factory Blueprint</h3>
+<p><strong>open reference architecture</strong>:</p>
+<ul>
+<li>Compute → 대규모 high-quality 학습 데이터</li>
+<li>Cosmos open world foundation model 기반</li>
+<li>Data curation + augmentation + evaluation 통합 pipeline</li>
+</ul>
+<h3>3.5 자매 페이지 연결</h3>
+<ul>
+<li><a href="/research-desk/ai-research/ai-2026-trend-map.html">AI 2026 Trend Map</a> Macro Shift #4 (Text→Multimodal+World Models) 직접 연결</li>
+<li><a href="/research-desk/ai-research/opd-research-overview.html">OPD 연구 집대성</a> — Cosmos 학습된 모델의 SLM compression에 OPD 적용 가능</li>
+</ul>
+<hr>
+<h2>4. 삼성 AI 자율공장 2030 — 형준님 본업 직접 인접</h2>
+<h3>4.1 발표 흐름</h3>
+<ul>
+<li><strong>2026/2/28</strong>: Samsung Electronics official 발표 — 2030년까지 글로벌 전 공장 AI 자율공장 전환</li>
+<li><strong>MWC 2026 (Barcelona)</strong>: industrial AI vision 공개</li>
+<li><strong>2026/4/12</strong>: Robot AI tripling computational efficiency 발표 (Seoul Economic Daily)</li>
+<li><strong>2026/6/14</strong>: 한국어 보도 (어제) — 자재 입고→생산→출하 전 공정 디지털 트윈 + AI 에이전트</li>
+</ul>
+<h3>4.2 4가지 핵심 component</h3>
+<ol>
+<li><strong>디지털 트윈 기반 simulation 전 공정 도입</strong></li>
+</ol>
+<ul>
+<li>자재 warehousing → 생산 → 출하 = end-to-end simulation</li>
+<li>Quality control + production + logistics 각각의 AI agent</li>
+</ul>
+<ol>
+<li><strong>Agentic AI</strong> (자율 의사결정)</li>
+</ol>
+<ul>
+<li>Quality control agent</li>
+<li>Production optimization agent</li>
+<li>Logistics coordination agent</li>
+<li>= 디지털 트윈 + LLM agent 결합</li>
+</ul>
+<ol>
+<li><strong>Humanoid manufacturing robots</strong></li>
+</ol>
+<ul>
+<li>단계별 도입 (phased deployment)</li>
+<li>산업용 robot AI = NVIDIA Isaac 패턴</li>
+</ul>
+<ol>
+<li><strong>DX부문 HPC 인프라 활용</strong></li>
+</ol>
+<ul>
+<li><strong>MX 검증</strong>: 스마트폰 낙하시험 simulation</li>
+<li><strong>VD 검증</strong>: TV 발열 simulation</li>
+<li><strong>생활가전 + 네트워크 RU</strong>: 방열 검증</li>
+<li>= 형준님 DX 부문 HPC를 디지털 트윈에 결합</li>
+</ul>
+<h3>4.3 형준님 본업 (Samsung Research AI System Team) 직접 연결</h3>
+<p><strong>Samsung Research AI System Team의 본업</strong> (OPD/GRPO/SR-470M/KV cache/multimodal/on-device) <strong>이 모두 자율공장 backbone</strong>:</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>본업 keyword</th><th>자율공장 적용</th></tr></thead><tbody><tr><td>OPD + GRPO</td><td>Agentic AI quality/production/logistics agent 학습</td></tr><tr><td>SR-470M</td><td>On-device factory edge AI (machine 단위 SLM)</td></tr><tr><td>KV cache 최적화</td><td>Inference cost ↓ → 공장 내 동시 agent 다수 운영</td></tr><tr><td>Multimodal</td><td>Vision + sensor + audio 통합 quality inspection</td></tr><tr><td>World models</td><td>공장 시뮬레이션 = physical AI 학습 데이터 생성</td></tr></tbody></table></div>
+<p><strong>= 형준님 본업 5가지 모두 Samsung 2030 자율공장의 핵심 layer</strong>. Samsung Research의 IP가 산업 실제 응용으로 직결되는 그림.</p>
+<h3>4.4 추가 과거 흐름</h3>
+<ul>
+<li><strong>2022 AI 포럼</strong>: 삼성전자 반도체 분야 디지털 트윈을 &quot;초격차 핵심기술&quot;로 선언</li>
+<li><strong>GE 출신 임원 영입</strong>: 디지털 트윈 TF장으로 — 생산 라인 인프라 구축 투자</li>
+<li>= 4년 전부터 누적된 movement가 2026 화룡점정</li>
+</ul>
+<h3>4.5 자본 시장 의미</h3>
+<ul>
+<li><strong>삼성전자 (005930)</strong>: 본업 (반도체) 제조 효율 + 가전 품질 = 한 자릿수 % EBITDA margin 개선 가능 → 시총 2,000조에 단순 4-5% 마진 개선만 해도 50조+ 가치 증가</li>
+<li><strong>삼성SDS (018260)</strong>: 디지털 트윈 SI / 클라우드 (삼성 그룹 내부 transition 직접 수주)</li>
+<li><strong>레인보우로보틱스 (277810)</strong>: Samsung 자회사화 진행, humanoid manufacturing robot 직접 수혜</li>
+</ul>
+<hr>
+<h2>5. 한국 디지털 트윈 생태계 — 비상장 + 상장 매트릭스</h2>
+<h3>5.1 상장사</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목</th><th>시총</th><th>디지털 트윈 포지션</th><th>Wald 평가</th></tr></thead><tbody><tr><td><strong>삼성전자 (005930)</strong></td><td>1,885조</td><td>자율공장 hub, 모든 stack 직접 활용</td><td>★★★ (이미 인지)</td></tr><tr><td><strong>삼성SDS (018260)</strong></td><td>10조+</td><td>그룹 내부 트윈 SI, 자체 데이터센터</td><td>★★★ (mid-cap 안정)</td></tr><tr><td><strong>LG CNS (066270)</strong></td><td>8조+</td><td>AI/Cloud 매출 58%, AX 시장 경쟁</td><td>★★★★ (1Q +20% 영업익)</td></tr><tr><td><strong>네이버 (035420)</strong></td><td>-</td><td><strong>아크버스 (Arcverse)</strong> — 도시 트윈 + Naver Labs</td><td>★★★★ (시장 미인지)</td></tr><tr><td><strong>한컴인스페이스 (393890)</strong></td><td>4,450억</td><td>위성 + 디지털 트윈 + AI = <strong>한국형 팔란티어</strong> narrative</td><td>★★★★★ (small cap + catalyst)</td></tr><tr><td><strong>솔트룩스 (304100)</strong></td><td>1,999억</td><td>Korean LLM + Knowledge Graph (트윈 데이터 layer)</td><td>★★★★</td></tr><tr><td><strong>자이언트스텝 (289220)</strong></td><td>384억</td><td>VFX + Visual AI (트윈 시각화)</td><td>★★ (시총 너무 작음)</td></tr><tr><td><strong>알체라 (347860)</strong></td><td>713억</td><td>영상 AI + 얼굴 인식 (트윈 인접)</td><td>★★ (시총 작음)</td></tr><tr><td><strong>한컴 (030520)</strong></td><td>4,812억</td><td>한컴 디지털 트윈 platform</td><td>★★★ (모회사 효과)</td></tr></tbody></table></div>
+<h3>5.2 비상장 (직접 매수 불가, 형준님 모니터링용)</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>회사</th><th>영역</th><th>주목 사항</th></tr></thead><tbody><tr><td><strong>큐픽스 (Cubox)</strong></td><td>동영상 → 3D 가상공간 자동 생성</td><td>건설 공정기록 + 시설관리 트윈 솔루션, AI computer vision</td></tr><tr><td><strong>메이사 (Meissa)</strong></td><td>국내 유일 3D 매핑 엔진</td><td>DL이엔씨와 드론 기반 디지털 트윈 플랫폼 MOU</td></tr><tr><td><strong>네이버랩스 (NAVER 자회사)</strong></td><td>아크버스 = 도시 트윈</td><td>시청·강원도 등 적용. NAVER 주식이 간접 노출</td></tr></tbody></table></div>
+<h3>5.3 한컴인스페이스 — Deep Dive (한국형 팔란티어 narrative)</h3>
+<ul>
+<li>세종 1호 (2022) → 세종 2호 (2025/6) → 세종 4호 (2025/11) 발사</li>
+<li><strong>세종 4호</strong>: 시스템 설계 → 통합 → 운영 전 과정 <strong>완전 자체 수행</strong> = 위성 value chain 완성</li>
+<li>상용 판매 시작: 세종 시리즈 위성 영상 글로벌 platform 통해 판매</li>
+<li><strong>40조 시장 (Grand View Research, by 2030)</strong> 공략</li>
+<li>&quot;한국형 팔란티어&quot; narrative = 위성 + 데이터 + AI 통합 모델</li>
+<li>시장 인지 매우 부족 (시총 4,450억)</li>
+</ul>
+<hr>
+<h2>6. 자본 시장 매핑 — Wald Frame 적용</h2>
+<h3>6.1 &quot;살아 돌아온 비행기&quot; (이미 인지)</h3>
+<ul>
+<li>NVDA — 디지털 트윈 hub</li>
+<li>VRT — Omniverse DSX 1st mover</li>
+<li>MSFT, GOOGL — Azure / Google Cloud 트윈</li>
+<li>SIE.DE, DSY.PA — 글로벌 코어</li>
+<li>ADSK, BSY — BIM 트윈</li>
+</ul>
+<p>→ 이 종목들은 디지털 트윈 narrative 인지 완료. Marginal upside 적음.</p>
+<h3>6.2 &quot;분류 가려진&quot; / &quot;잊혀진&quot; (Wald gap 큼)</h3>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목</th><th>Recognition gap 이유</th></tr></thead><tbody><tr><td><strong>CDNS</strong></td><td>&quot;chip design EDA&quot;로만 인식, 실제로는 Reality Data Center Digital Twin 직접 보유</td></tr><tr><td><strong>SNPS</strong></td><td>Synopsys+ANSYS 인수로 chip-to-factory 트윈 SOTA. 시장 평가 아직 chip EDA만</td></tr><tr><td><strong>PTC</strong></td><td>ThingWorx 디지털 트윈 leader. Bentley/Autodesk 대비 멀티플 압축</td></tr><tr><td><strong>삼성SDS (018260)</strong></td><td>&quot;구식 SI&quot;로 인지, 실제 Samsung 2030 자율공장 직접 수주</td></tr><tr><td><strong>LG CNS (066270)</strong></td><td>&quot;SI 기업&quot;으로 인지, 실제 AI/Cloud 58% + AX 시장 점유 경쟁</td></tr><tr><td><strong>한컴인스페이스 (393890)</strong></td><td>시총 4,450억 = micro cap. 위성 + 데이터 비즈니스 catalyst 미인지</td></tr><tr><td><strong>레인보우로보틱스 (277810)</strong></td><td>Samsung 자회사화 + 휴머노이드 + 자율공장 직접 수혜. 시장 인지 시작 단계</td></tr></tbody></table></div>
+<h3>6.3 형준님 본업 frame에서의 Top picks</h3>
+<p><strong>Tier S (본업 직결 + Wald gap 큼)</strong>:</p>
+<ol>
+<li><strong>한컴인스페이스 (393890)</strong> — 위성 + 데이터 + AI (한국형 팔란티어). small cap micro 비대칭</li>
+<li><strong>레인보우로보틱스 (277810)</strong> — Samsung 자율공장 humanoid robot 직접 수혜. 본업 (VLA/World Models) 직접 검증 가능</li>
+<li><strong>삼성SDS (018260)</strong> — Samsung 그룹 내부 자율공장 transition 직접 수주</li>
+</ol>
+<p><strong>Tier A (자본 시장 매핑 우수)</strong>:</p>
+<ol>
+<li><strong>CDNS (Cadence)</strong> — Reality Data Center Digital Twin + GB300 NVL72 simulation</li>
+<li><strong>PTC</strong> — ThingWorx 디지털 트윈, 압축 멀티플</li>
+<li><strong>솔트룩스 (304100)</strong> — Korean LLM + Knowledge Graph (트윈 데이터 layer)</li>
+</ol>
+<p><strong>Tier B (이미 인지 but momentum 강함)</strong>:</p>
+<ol>
+<li><strong>VRT, NVDA, SNPS</strong> — Omniverse DSX 직접 수혜</li>
+</ol>
+<hr>
+<h2>7. 700만원 분할 (디지털 트윈 deep dive 반영)</h2>
+<p>기존 추천 (게임 + 디지털 트윈 50:50)을 디지털 트윈 깊이 분석 후 재구성:</p>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>#</th><th>종목</th><th>금액</th><th>영역</th><th>이유</th></tr></thead><tbody><tr><td>1</td><td><strong>한컴인스페이스 (393890)</strong></td><td><strong>200만원</strong></td><td>위성+트윈 데이터</td><td>한국형 팔란티어 narrative, 시총 4,450억 = micro cap 비대칭</td></tr><tr><td>2</td><td><strong>레인보우로보틱스 (277810)</strong></td><td><strong>200만원</strong></td><td>Humanoid manufacturing</td><td>Samsung 자회사화 + 2030 자율공장 humanoid 직접 수혜 + 본업 VLA 검증 가능</td></tr><tr><td>3</td><td><strong>솔트룩스 (304100)</strong></td><td><strong>100만원</strong></td><td>Korean LLM + KG</td><td>트윈 데이터 layer. 본업 OPD/Korean LLM 인접</td></tr><tr><td>4</td><td><strong>삼성SDS (018260)</strong></td><td><strong>100만원</strong></td><td>그룹 내부 트윈 SI</td><td>Samsung 자율공장 transition 직접 수주</td></tr><tr><td>5</td><td><strong>펄어비스 (263750)</strong></td><td><strong>50만원</strong></td><td>게임 (Wald 정확한 catalyst)</td><td>Crimson Desert AAA 출시 임박, Wald 비대칭 명확</td></tr><tr><td>6</td><td><strong>현금</strong></td><td><strong>50만원</strong></td><td>-</td><td>6/22 MRVL 청산 자금 + 분할 진입 reserve</td></tr></tbody></table></div>
+<p><strong>합계</strong>: 700만원.</p>
+<h3>분배 근거</h3>
+<ul>
+<li><strong>디지털 트윈 600만원</strong> (한컴 200 + 레인보우 200 + 솔트룩스 100 + 삼성SDS 100) — Samsung 2030 자율공장 + 한국 디지털 트윈 종합 노출</li>
+<li><strong>게임 50만원</strong> — 펄어비스만 유지 (Crimson Desert AAA Wald catalyst, 게임 섹터 noise reduce)</li>
+<li><strong>현금 50만원</strong> — MRVL 청산 (6/22 S&amp;P500 편입 후) + 한미반도체 갭다운 대기</li>
+</ul>
+<h3>미장 cross-trade (선택, 환헤지)</h3>
+<p>6/22 MRVL 청산 자금 ($100~200K 예상) → 미장 디지털 트윈 인접:</p>
+<ul>
+<li><strong>CDNS</strong> — Reality Data Center Digital Twin</li>
+<li><strong>PTC</strong> — ThingWorx 압축 멀티플</li>
+<li><strong>SNPS</strong> — Chip-to-factory 트윈 SOTA</li>
+</ul>
+<hr>
+<h2>8. 형준님 본업 5요소 적용 — 디지털 트윈 Top picks</h2>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>종목</th><th>대체불가능성</th><th>6~12개월 catalyst</th><th>시장 인지도</th><th>흑자 모멘텀</th><th>본업 검증</th><th>종합</th></tr></thead><tbody><tr><td>한컴인스페이스</td><td>★★★★</td><td>★★★★ (세종 5호 + 데이터 monetization)</td><td>★</td><td>★★★</td><td>★★ (위성·트윈)</td><td>14/20</td></tr><tr><td>레인보우로보틱스</td><td>★★★★★ (한국 유일 휴머노이드)</td><td>★★★★★ (Samsung 통합 + 2030 자율공장)</td><td>★★</td><td>★★★</td><td>★★★★★ (VLA 직접)</td><td><strong>19/20</strong></td></tr><tr><td>솔트룩스</td><td>★★★</td><td>★★★</td><td>★★</td><td>★★★</td><td>★★★★ (Korean LLM)</td><td>15/20</td></tr><tr><td>삼성SDS</td><td>★★★</td><td>★★★★ (그룹 자율공장 수주)</td><td>★★</td><td>★★★★</td><td>★★★</td><td>16/20</td></tr><tr><td>CDNS</td><td>★★★★ (Reality DC Twin moat)</td><td>★★★★ (GB300 NVL72)</td><td>★★★</td><td>★★★★</td><td>★★★</td><td>18/20</td></tr><tr><td>PTC</td><td>★★★ (ThingWorx)</td><td>★★★</td><td>★ (압축)</td><td>★★★</td><td>★★★</td><td>13/20</td></tr></tbody></table></div>
+<p><strong>Top 종합</strong>: <strong>레인보우로보틱스 19/20</strong>, CDNS 18/20, 삼성SDS 16/20.</p>
+<hr>
+<h2>9. Open Questions (모니터링)</h2>
+<ol>
+<li><strong>Samsung 2030 자율공장이 NVIDIA Omniverse 채택?</strong> 자체 stack? Hybrid?</li>
+<li><strong>Samsung Research가 Cosmos 같은 world model을 자체 빌드 중인지</strong> (가능성 매우 높음)</li>
+<li><strong>한컴인스페이스 vs 큐픽스 vs 메이사</strong> — 한국 디지털 트윈 winner take all 가능성</li>
+<li><strong>레인보우로보틱스 → 삼성전자 인수 100%</strong> 시점은?</li>
+<li><strong>삼성SDS 자율공장 transition 매출 인식 시점</strong>? Q3 2026? FY 2027?</li>
+<li><strong>NVDA Cosmos 3 한국 채택</strong>: 삼성 외 LG / 현대차 채택 흐름?</li>
+</ol>
+<hr>
+<h2>10. 추천 reading priority (20-30분 budget)</h2>
+<h3>1순위 (필수, 10분)</h3>
+<ol>
+<li>이 페이지 <strong>TL;DR + 삼성 AI 자율공장 + 700만원 분할</strong> 섹션 (5분)</li>
+<li><a href="https://www.nvidia.com/en-us/ai/cosmos/">NVIDIA Cosmos 공식</a> (3분)</li>
+<li><a href="https://www.prnewswire.com/news-releases/vertiv-introduces-first-converged-physical-infrastructure-digital-twin-for-nvidia-omniverse-dsx-302787314.html">Vertiv SmartRun 6/1 발표</a> (2분)</li>
+</ol>
+<h3>2순위 (선택, 10분)</h3>
+<ol>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-releases-vera-rubin-dsx-ai-factory-reference-design-and-omniverse-dsx-digital-twin-blueprint-with-broad-industry-support">NVIDIA Omniverse DSX Blueprint 공식</a> (5분)</li>
+<li><a href="https://arxiv.org/abs/2501.03575">Cosmos arxiv paper section 1-2</a> (5분)</li>
+</ol>
+<h3>3순위 (시간 있을 때)</h3>
+<ol>
+<li>한컴인스페이스 사업보고서 (&quot;한국형 팔란티어&quot;)</li>
+<li>Samsung Newsroom 2030 자율공장 공식 (영문)</li>
+</ol>
+<hr>
+<h2>11. 자매 페이지와의 cross-reference</h2>
+<ul>
+<li><strong><a href="/research-desk/ai-research/ai-2026-trend-map.html">AI 2026 Trend Map</a></strong> Macro Shift #4 (Text→Multimodal+World Models) → Cosmos가 정확히 해당. Sub-trend #5 (World Models)</li>
+<li><strong><a href="/research-desk/ai-research/opd-research-overview.html">OPD 연구 집대성</a></strong> — Cosmos 학습된 world model의 SLM compression에 OPD 직접 적용. Samsung Research에서 결합 가능성</li>
+<li>다음 deep dive 후보: <strong>KV Cache 2026 (MLA/FP8)</strong>, <strong>Korean LLM scene</strong>, <strong>Robotics + VLA + Embodied AI</strong></li>
+</ul>
+<hr>
+<h2>12. Sources</h2>
+<h3>NVIDIA Omniverse DSX + Cosmos</h3>
+<ul>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-releases-vera-rubin-dsx-ai-factory-reference-design-and-omniverse-dsx-digital-twin-blueprint-with-broad-industry-support">NVIDIA Releases Vera Rubin DSX + Omniverse DSX Blueprint (GTC 2026/3/16)</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/dsx-infrastructure-ai-factory">NVIDIA DSX Infrastructure Builder Playbook</a></li>
+<li><a href="https://www.nvidia.com/en-us/ai/cosmos/">NVIDIA Cosmos 공식</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai">NVIDIA Cosmos 3 launch (COMPUTEX 2026)</a></li>
+<li><a href="https://arxiv.org/abs/2501.03575">Cosmos World Foundation Model arxiv</a></li>
+<li><a href="https://blogs.nvidia.com/blog/gtc-2026-virtual-worlds-physical-ai/">GTC 2026 Virtual Worlds Physical AI Era</a></li>
+<li><a href="https://technologymagazine.com/news/how-nvidia-vera-rubin-dsx-redefines-ai-infrastructure-design">How NVIDIA Vera Rubin DSX Redefines AI Infrastructure (Technology Magazine)</a></li>
+</ul>
+<h3>Vertiv + Foxconn + Industry</h3>
+<ul>
+<li><a href="https://www.prnewswire.com/news-releases/vertiv-introduces-first-converged-physical-infrastructure-digital-twin-for-nvidia-omniverse-dsx-302787314.html">Vertiv SmartRun Digital Twin for NVIDIA Omniverse DSX (PRNewswire 6/1)</a></li>
+<li><a href="https://www.engineering.com/vertiv-advances-smartrun-digital-twin-for-ai-factories/">Vertiv advances SmartRun digital twin (Engineering.com)</a></li>
+<li><a href="https://itbrief.asia/story/vertiv-launches-ai-factory-digital-twin-with-nvidia">Vertiv launches AI factory digital twin with NVIDIA (ITBrief Asia)</a></li>
+</ul>
+<h3>Samsung AI 자율공장 2030</h3>
+<ul>
+<li><a href="https://news.samsung.com/global/samsung-electronics-announces-strategy-to-transition-global-manufacturing-into-ai-driven-factories-by-2030">Samsung Electronics Strategy AI-Driven Factories 2030 (Newsroom)</a></li>
+<li><a href="https://en.sedaily.com/politics/2026/04/12/samsung-accelerates-ai-fab-push-with-robot-ai-tripling">Samsung Accelerates AI Fab Push Robot AI (Seoul Economic Daily 4/12)</a></li>
+<li><a href="https://www.bizzbuzz.news/industry/electronics/samsung-to-shift-to-ai-driven-autonomous-factories-by-2030-1386500">Samsung shift autonomous factories 2030 (BizzBuzz)</a></li>
+<li><a href="https://www.sammobile.com/news/samsung-next-ai-ambition-factories-that-run-themselves-by-2030/">Samsung next AI ambition factories run themselves (SamMobile)</a></li>
+<li><a href="https://www.assemblymag.com/articles/99888-samsung-electronics-to-adopt-ai-driven-factories">Samsung AI-Driven Factories (Assembly Magazine)</a></li>
+</ul>
+<h3>한국 디지털 트윈</h3>
+<ul>
+<li><a href="https://www.inspace.co.kr/post/한컴인스페이스-세종-위성-영상-상용-판매-40조-시장-공략">한컴인스페이스 세종 위성 영상 상용판매 40조 시장 공략</a></li>
+<li><a href="https://www.etnews.com/20250829000186">전자신문 한컴인스페이스 한국형 팔란티어</a></li>
+<li><a href="https://www.market-ink.co.kr/news/articleView.html?idxno=6069">LG CNS 1분기 매출 1조 3150억 (마켓잉크)</a></li>
+<li><a href="https://zdnet.co.kr/view/?no=20260529174304">삼성SDS LG CNS AX 시장 (ZDNet)</a></li>
+</ul>
+<hr>
+<p>*이 페이지는 분기별로 갱신됩니다. Cosmos 4 / Samsung Robotics IPO / 한컴인스페이스 catalyst 시 즉시 update.*</p>
+<p>— Last updated: 2026-06-15 (Claude · research-desk)</p></article></main>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis', useMaxWidth: true, htmlLabels: true },
+    themeVariables: {
+      background: '#171a21',
+      primaryColor: '#1f2937',
+      primaryTextColor: '#e8eaf0',
+      primaryBorderColor: '#8ab4ff',
+      lineColor: '#b4f8c8',
+      secondaryColor: '#111827',
+      tertiaryColor: '#0f1115'
+    }
+  });
+</script>
+<script>
+(() => {
+  const root = document.querySelector('[data-kimi-company-search]');
+  if (!root) return;
+  const base = '/research-desk';
+  const input = root.querySelector('[data-kimi-input]');
+  const result = root.querySelector('[data-kimi-results]');
+  const count = root.querySelector('[data-kimi-count]');
+  const empty = '<div class="kimi-result empty"><b>검색어를 입력해줘</b><small>예: 삼성전자, 한미반도체, 네이버, NVDA, 팔란티어, HD현대일렉</small></div>';
+  let rows = [];
+  const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9가-힣]+/g, ' ').trim();
+  const compact = (s) => norm(s).replace(/\s+/g, '');
+  const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '데이터 확인 중' : `${Number(v) >= 0 ? '+' : ''}${Number(v).toFixed(1)}%`;
+  const requestCreate = (raw, cmd) => {
+    const msg = `회사 생성 요청: ${raw}
+${cmd}`;
+    try { navigator.clipboard && navigator.clipboard.writeText(cmd); } catch(e) {}
+    localStorage.setItem('researchDeskCompanyCreateRequest', JSON.stringify({query: raw, command: cmd, ts: new Date().toISOString()}));
+    const status = root.querySelector('[data-kimi-create-status]');
+    if (status) status.textContent = '생성 요청 명령을 복사했어. Telegram/Hermes에 붙여넣으면 fast intake가 실행돼.';
+  };
+  const render = (items) => {
+    if (!items.length) {
+      const raw = input.value.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      const cmd = `python3 11-scripts/request_company_report.py "${raw.replace(/"/g, '\"')}" --provider fast --publish`;
+      const action = `https://158.247.217.223.sslip.io/api/research-desk/company-create?query=${encodeURIComponent(raw)}&provider=fast`;
+      result.innerHTML = `<div class="kimi-result empty"><b>DB에 아직 없음 · 생성 가능</b><small>생성 버튼을 누르면 서버가 Codex 5.5 기반 intake를 백그라운드로 실행하고, 완료 후 DB/리포트/상호작용 지도를 재빌드·배포한다.</small><div class="kimi-create-actions"><a class="kimi-create-btn" href="${action}" data-kimi-create>생성 시작</a><button type="button" class="kimi-create-btn secondary" data-copy-cmd>명령 복사</button></div><span class="kimi-create-status" data-kimi-create-status>누르면 진행 상태 페이지로 이동한다.</span></div>`;
+      const copyBtn = result.querySelector('[data-copy-cmd]');
+      if (copyBtn) copyBtn.addEventListener('click', () => requestCreate(raw, cmd));
+      return;
+    }
+    result.innerHTML = '<div class="kimi-results-title">검색 결과 / 관찰 후보</div>' + items.slice(0, 8).map(x => `
+      <a class="kimi-result" href="${x.page}">
+        <span class="kimi-light">${String(x.traffic_light || '⚪').trim().split(/\s+/)[0]}</span>
+        <b>${x.company} <em>${x.symbol}</em></b>
+        <small>${x.category} · ${x.role || 'role 미정'}</small>
+        <i>현재가 ${x.price == null ? '데이터 확인 중' : x.price} · 20D ${fmtPct(x.return_20d_pct)} · 52W ${x.price_position_52w_pct == null ? '데이터 확인 중' : Number(x.price_position_52w_pct).toFixed(0)+'%'}</i>
+      </a>`).join('');
+  };
+  const search = () => {
+    const q = norm(input.value);
+    const qc = compact(input.value);
+    if (!q) { result.innerHTML = empty; return; }
+    const terms = q.split(/\s+/).filter(Boolean);
+    const scored = rows.map(x => {
+      const fields = [x.company, x.symbol, x.category, x.node, x.role, ...(x.aliases || [])].join(' ');
+      const hay = norm(fields);
+      const hayc = compact(fields);
+      const symbolc = compact(x.symbol);
+      let score = 0;
+      if (qc && (symbolc === qc || symbolc.replace(/us$|ks$|kq$/,'') === qc)) score += 100;
+      if (qc && hayc.includes(qc)) score += qc.length + 15;
+      for (const t of terms) { if (hay.includes(t)) score += t.length + (hay.startsWith(t) ? 5 : 0); }
+      return [score, x];
+    }).filter(([s]) => s > 0).sort((a,b) => b[0]-a[0]).map(([,x]) => x);
+    render(scored);
+  };
+  const indexUrl = `${base}/data/company-search-index.json?v=${Date.now()}`;
+  fetch(indexUrl, {cache:'no-store'}).then(r => { if (!r.ok) throw new Error('index '+r.status); return r.json(); }).then(data => {
+    rows = data.items || [];
+    if (count) count.textContent = `${rows.length} companies indexed · KR/US fast local search · intake: Codex 5.5`;
+    const featured = rows.filter(x => ['NVIDIA','Vertiv','HD Hyundai Electric','SK Hynix','Microsoft','TSMC'].includes(x.company));
+    render(featured.length ? featured : rows.slice(0,6));
+  }).catch(() => { result.innerHTML = '<div class="kimi-result empty"><b>Company index 로딩 실패</b><small>잠시 후 다시 시도.</small></div>'; });
+  input.addEventListener('input', search);
+  root.querySelectorAll('[data-kimi-query]').forEach(btn => btn.addEventListener('click', () => { input.value = btn.dataset.kimiQuery; search(); input.focus(); }));
+})();
+</script>
+</body>
+</html>
