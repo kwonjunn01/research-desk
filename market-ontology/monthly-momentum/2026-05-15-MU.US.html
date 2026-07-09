@@ -271,7 +271,7 @@
 <li>Fundamentals: <code>market-fundamentals-cache.json</code> public Yahoo snapshot 연결. SEC/IR 재검증 필요.</li>
 <li>Industry: TrendForce/Google News 공개 headline 수준 확인. 원문 전문·유료 DRAMeXchange/TrendForce 데이터는 일부 <code>blocked/attempted</code>.</li>
 <li>Brokerage/consensus: CNBC/Yahoo/Seeking Alpha/공개 headline 수준만 확인. sell-side 모델·revision table·FactSet/Bloomberg/Visible Alpha/Refinitiv time-series는 <code>접근 제한/확인 필요</code>.</li>
-<li><strong>EPS/consensus revision source 미연결</strong>: forward EPS proxy는 있으나 검증된 컨센서스 revision history가 없어 strong conclusion은 보류.</li>
+<li><strong>EPS/consensus revision source 확인 필요</strong>: forward EPS proxy는 있으나 검증된 컨센서스 revision history가 없어 strong conclusion은 보류.</li>
 </ul>
 <hr>
 <h2>1. Active sector/scenario</h2>
@@ -353,7 +353,7 @@
 <ol>
 <li><strong>Q3 guide가 consensus reset을 강제한다는 믿음</strong>  </li>
 </ol>
-<p>Q3 revenue $33.5B ± $0.75B와 non-GAAP EPS $19.15 ± $0.40은 매우 강한 guide다. 하지만 <strong>EPS/consensus revision source 미연결</strong> 때문에 컨센서스가 얼마나 상향됐고, 주가가 그 상향을 얼마나 선반영했는지는 아직 판단 보류다.</p>
+<p>Q3 revenue $33.5B ± $0.75B와 non-GAAP EPS $19.15 ± $0.40은 매우 강한 guide다. 하지만 <strong>EPS/consensus revision source 확인 필요</strong> 때문에 컨센서스가 얼마나 상향됐고, 주가가 그 상향을 얼마나 선반영했는지는 아직 판단 보류다.</p>
 <p><strong>Caveat:</strong> 시장 기대가 강해질수록 이후 필요한 evidence hurdle도 높아진다. “좋은 실적”이 아니라 <strong>높아진 guide를 또 초과하거나 FY2027 수치가 계속 올라가는지</strong>가 핵심이다.</p>
 <hr>
 <h2>5. Expectation revision path</h2>
@@ -408,7 +408,7 @@
 </ul>
 <h3>5-2. 현재 미충족 조건</h3>
 <ul>
-<li><strong>EPS/consensus revision source 미연결</strong>: FactSet/Bloomberg/Visible Alpha/Refinitiv 등 검증된 revision time-series 없음.</li>
+<li><strong>EPS/consensus revision source 확인 필요</strong>: FactSet/Bloomberg/Visible Alpha/Refinitiv 등 검증된 revision time-series 없음.</li>
 <li>Public Yahoo forward EPS proxy는 있으나, 산출 모델·기간·revision history가 불명확하다.</li>
 <li>Sell-side 원문 모델, 추정치 table, rating/estimate revision history는 <code>blocked/attempted</code>.</li>
 <li>HBM4 고객별 share/yield/가격/계약 조건은 제한 공개다.</li>
@@ -452,7 +452,7 @@
 <h3>7-1. Company primary</h3>
 <div class="table-scroll"><table class="rd-table"><thead><tr><th>Source</th><th>접근 상태</th><th>확인 내용</th><th>URL</th></tr></thead><tbody><tr><td>SEC ticker mapping</td><td>verified</td><td>CIK 0000723125, ticker MU, MICRON TECHNOLOGY INC</td><td>https://www.sec.gov/files/company_tickers.json</td></tr><tr><td>SEC submissions</td><td>verified</td><td>2026-03-18 8-K, 2026-03-19 10-Q, 2026-03-25/04-01 tender offer 8-K 등 확인</td><td>https://data.sec.gov/submissions/CIK0000723125.json</td></tr><tr><td>2026-03-18 8-K Exhibit 99.1 earnings release</td><td>verified</td><td>Q2 revenue/EPS/GM/cash flow/Q3 guidance/business-unit metrics</td><td>https://www.sec.gov/Archives/edgar/data/723125/000072312526000004/a2026q2ex991-pressrelease.htm</td></tr><tr><td>2026-03-19 10-Q</td><td>verified / partial</td><td>segment definitions, financial statements, risk factors, capex, customer/supply risks</td><td>https://www.sec.gov/Archives/edgar/data/723125/000072312526000006/mu-20260226.htm</td></tr><tr><td>Micron Q2 2026 earnings deck</td><td>verified</td><td>HBM4, data-center demand, capex, Q3 guide, technology roadmap</td><td>https://investors.micron.com/static-files/9c0becf5-df56-4eec-bd67-453dda68b273</td></tr><tr><td>Micron Q2 2026 prepared remarks</td><td>verified</td><td>AI memory narrative, HBM4 shipment, data-center NAND/KV cache, SCAs, supply constraints</td><td>https://investors.micron.com/static-files/e089f8c0-065d-47b8-9d02-bfa863cdb357</td></tr></tbody></table></div>
 <h3>7-2. Brokerage / consensus / public snippets</h3>
-<div class="table-scroll"><table class="rd-table"><thead><tr><th>Source type</th><th>상태</th><th>메모</th></tr></thead><tbody><tr><td>FactSet / Bloomberg / Refinitiv / Visible Alpha</td><td>접근 제한 / 확인 필요</td><td><strong>EPS/consensus revision source 미연결</strong></td></tr><tr><td>Sell-side reports</td><td>attempted / blocked</td><td>원문 모델·추정치 table·revision history 미확인</td></tr><tr><td>CNBC/Yahoo/Seeking Alpha/MSN/public articles</td><td>attempted / public headline only</td><td>rally와 AI memory demand narrative는 보강하지만 institutional-grade estimate evidence는 아님</td></tr><tr><td>TrendForce/DRAMeXchange</td><td>attempted / partial public headlines</td><td>HBM supply booked, cleanroom/capex, memory pricing 관련 headline 확인. 전문/가격 데이터는 제한 가능</td></tr><tr><td>Company guidance proxy</td><td>partial</td><td>Q3 guide는 강한 primary source이나 consensus revision 자체는 아님</td></tr></tbody></table></div>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Source type</th><th>상태</th><th>메모</th></tr></thead><tbody><tr><td>FactSet / Bloomberg / Refinitiv / Visible Alpha</td><td>접근 제한 / 확인 필요</td><td><strong>EPS/consensus revision source 확인 필요</strong></td></tr><tr><td>Sell-side reports</td><td>attempted / blocked</td><td>원문 모델·추정치 table·revision history 미확인</td></tr><tr><td>CNBC/Yahoo/Seeking Alpha/MSN/public articles</td><td>attempted / public headline only</td><td>rally와 AI memory demand narrative는 보강하지만 institutional-grade estimate evidence는 아님</td></tr><tr><td>TrendForce/DRAMeXchange</td><td>attempted / partial public headlines</td><td>HBM supply booked, cleanroom/capex, memory pricing 관련 headline 확인. 전문/가격 데이터는 제한 가능</td></tr><tr><td>Company guidance proxy</td><td>partial</td><td>Q3 guide는 강한 primary source이나 consensus revision 자체는 아님</td></tr></tbody></table></div>
 <h3>7-3. Market / fundamentals cache</h3>
 <div class="table-scroll"><table class="rd-table"><thead><tr><th>Source</th><th>상태</th><th>확인 내용</th></tr></thead><tbody><tr><td><code>market-sources-2026-05-15.json</code></td><td>connected</td><td>price 776.01, 20D +69.7%, 60D +84.3%, 52W position 94.1%</td></tr><tr><td>Yahoo Chart live check</td><td>connected / intraday caveat</td><td>2026-05-15 장중 734.97, day range 730.01–749.59, volume 8.97M 시점 확인</td></tr><tr><td>Stooq delayed CSV</td><td>connected</td><td>2026-05-14 close 776.01</td></tr><tr><td><code>market-fundamentals-cache.json</code></td><td>connected / public snapshot</td><td>trailing PE 35.2x, forward PE 7.3x, PBR 11.6x, market cap $842.2B, revenue $58.1B, profit margin 41.5%, ROE 39.8%</td></tr><tr><td><code>company-analysis-linkage-audit.json</code></td><td>connected</td><td>missing: <code>eps_revision_history</code></td></tr><tr><td><code>company-thesis-registry.json</code></td><td>connected / provisional</td><td>HBM/DRAM/NAND thesis exists; source review incomplete</td></tr></tbody></table></div>
 <hr>
@@ -467,7 +467,7 @@
 <h3>8-2. Valuation/fundamental burden</h3>
 <p>Public Yahoo fundamentals snapshot 기준:</p>
 <div class="table-scroll"><table class="rd-table"><thead><tr><th>지표</th><th>값</th><th>해석</th></tr></thead><tbody><tr><td>Trailing PE</td><td>35.2x</td><td>cycle peak가 아니라면 부담 가능. normalized EPS 확인 필요</td></tr><tr><td>Forward PE</td><td>7.3x</td><td>forward EPS가 크게 상향된 것으로 보이나 consensus source 미검증</td></tr><tr><td>PBR</td><td>11.6x</td><td>자본집약 memory business 기준으로 높은 재평가</td></tr><tr><td>Market cap</td><td>$842.2B</td><td>AI-memory premium이 상당히 반영된 규모</td></tr><tr><td>Revenue growth</td><td>+196.3%</td><td>Q2 실적 방향과 일치하나 public snapshot 재검증 필요</td></tr><tr><td>Earnings growth</td><td>+756.0%</td><td>cycle leverage가 극대화된 구간일 수 있음</td></tr><tr><td>Profit margin</td><td>41.5%</td><td>peak margin 여부 확인 필요</td></tr><tr><td>Debt/equity</td><td>14.9</td><td>balance sheet risk는 상대적으로 낮아 보이나 capex ramp 지속 확인 필요</td></tr></tbody></table></div>
-<p><strong>해석:</strong> forward PE만 보면 싸 보일 수 있지만, 이는 forward EPS가 유지된다는 가정에 민감하다. memory cycle에서는 peak EPS가 valuation 착시를 만들 수 있다. 따라서 <strong>EPS/consensus revision source 미연결</strong> 상태에서는 “저평가” 또는 “과대평가” 결론을 내리지 않는다.</p>
+<p><strong>해석:</strong> forward PE만 보면 싸 보일 수 있지만, 이는 forward EPS가 유지된다는 가정에 민감하다. memory cycle에서는 peak EPS가 valuation 착시를 만들 수 있다. 따라서 <strong>EPS/consensus revision source 확인 필요</strong> 상태에서는 “저평가” 또는 “과대평가” 결론을 내리지 않는다.</p>
 <h3>8-3. Price-data caveat</h3>
 <p>Yahoo/Stooq/Research Desk cache가 2026-05-14 close 776.01을 일치 확인했고, Yahoo live chart는 2026-05-15 장중 734.97을 제시했다. 본 보고서는 cache close와 장중 체크를 구분한다. intraday 값은 최종 종가가 아니며, public page에서는 price reflection 참고값으로만 사용한다.</p>
 <hr>
@@ -514,7 +514,7 @@
 <li>HBM4 qualification/share/yield는 headline보다 실제 고객 allocation과 margin이 중요하다.</li>
 <li>HBM/DRAM/NAND capex가 공급 부족을 완화하는 순간 narrative가 margin pressure로 바뀔 수 있다.</li>
 <li>geopolitical/export control/China CAC 리스크가 여전히 존재한다.</li>
-<li><strong>EPS/consensus revision source 미연결</strong>로 시장 기대치 대비 surprise 지속성을 판단할 수 없다.</li>
+<li><strong>EPS/consensus revision source 확인 필요</strong>로 시장 기대치 대비 surprise 지속성을 판단할 수 없다.</li>
 </ul>
 <h3>Invalidation</h3>
 <p>다음 중 2개 이상 확인되면 thesis를 낮춰야 한다.</p>
@@ -531,7 +531,7 @@
 <hr>
 <h2>11. Risks and blind spots</h2>
 <ul>
-<li><strong>Consensus blind spot:</strong> EPS/consensus revision source 미연결. 본 보고서의 최대 약점.</li>
+<li><strong>Consensus blind spot:</strong> EPS/consensus revision source 확인 필요. 본 보고서의 최대 약점.</li>
 <li><strong>Price crowding:</strong> 52W 상단권과 20D/60D 급등. 좋은 실적이 이미 가격에 많이 반영됐을 수 있다.</li>
 <li><strong>Peak-margin risk:</strong> Q2/Q3 gross margin이 구조적 수준인지 cycle peak인지 아직 불확실하다.</li>
 <li><strong>HBM share risk:</strong> SK hynix, Samsung과의 HBM4/HBM4E 경쟁, customer allocation, yield, advanced packaging capacity가 관건이다.</li>
@@ -542,10 +542,10 @@
 </ul>
 <hr>
 <h2>12. Next checks</h2>
-<div class="table-scroll"><table class="rd-table"><thead><tr><th>우선순위</th><th>확인 항목</th><th>왜 중요한가</th><th>상태</th></tr></thead><tbody><tr><td>1</td><td>Q3 FY2026 actual vs guide: revenue $33.5B ± $0.75B, GM ~81%, non-GAAP EPS $19.15 ± $0.40</td><td>current price 정당화 1차 조건</td><td>next earnings 필요</td></tr><tr><td>2</td><td>FY2027 consensus revenue/EPS/margin revision</td><td>strong re-rating 판단 핵심</td><td><strong>EPS/consensus revision source 미연결</strong></td></tr><tr><td>3</td><td>HBM4 12H/16-high ramp, yield, customer qualification</td><td>Bottleneck Breaker tier 유지 조건</td><td>IR/earnings call follow-up 필요</td></tr><tr><td>4</td><td>CMBU/CDBU revenue and margin persistence</td><td>AI data-center translation 검증</td><td>다음 10-Q/earnings deck 필요</td></tr><tr><td>5</td><td>Data-center NAND growth, SSD design wins, KV cache/vector DB demand</td><td>NAND thesis가 일회성인지 구조적인지 확인</td><td>company/industry source 필요</td></tr><tr><td>6</td><td>DRAM/NAND ASP and bit shipment bridge</td><td>price vs volume vs mix 분리</td><td>TrendForce/DRAMeXchange/public source 추가 필요</td></tr><tr><td>7</td><td>SCA economics</td><td>pricing floor/visibility인지 flexibility 제한인지 확인</td><td>제한 공개 · 다음 call 질문 필요</td></tr><tr><td>8</td><td>SK hynix/Samsung/Sandisk/WDC peer response</td><td>share, supply, pricing pressure 확인</td><td>peer review 필요</td></tr><tr><td>9</td><td>Yahoo/Stooq/Nasdaq close cross-check</td><td>가격 캐시/장중 차이 정리</td><td>다음 market cache 필요</td></tr></tbody></table></div>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>우선순위</th><th>확인 항목</th><th>왜 중요한가</th><th>상태</th></tr></thead><tbody><tr><td>1</td><td>Q3 FY2026 actual vs guide: revenue $33.5B ± $0.75B, GM ~81%, non-GAAP EPS $19.15 ± $0.40</td><td>current price 정당화 1차 조건</td><td>next earnings 필요</td></tr><tr><td>2</td><td>FY2027 consensus revenue/EPS/margin revision</td><td>strong re-rating 판단 핵심</td><td><strong>EPS/consensus revision source 확인 필요</strong></td></tr><tr><td>3</td><td>HBM4 12H/16-high ramp, yield, customer qualification</td><td>Bottleneck Breaker tier 유지 조건</td><td>IR/earnings call follow-up 필요</td></tr><tr><td>4</td><td>CMBU/CDBU revenue and margin persistence</td><td>AI data-center translation 검증</td><td>다음 10-Q/earnings deck 필요</td></tr><tr><td>5</td><td>Data-center NAND growth, SSD design wins, KV cache/vector DB demand</td><td>NAND thesis가 일회성인지 구조적인지 확인</td><td>company/industry source 필요</td></tr><tr><td>6</td><td>DRAM/NAND ASP and bit shipment bridge</td><td>price vs volume vs mix 분리</td><td>TrendForce/DRAMeXchange/public source 추가 필요</td></tr><tr><td>7</td><td>SCA economics</td><td>pricing floor/visibility인지 flexibility 제한인지 확인</td><td>제한 공개 · 다음 call 질문 필요</td></tr><tr><td>8</td><td>SK hynix/Samsung/Sandisk/WDC peer response</td><td>share, supply, pricing pressure 확인</td><td>peer review 필요</td></tr><tr><td>9</td><td>Yahoo/Stooq/Nasdaq close cross-check</td><td>가격 캐시/장중 차이 정리</td><td>다음 market cache 필요</td></tr></tbody></table></div>
 <hr>
 <h2>13. Publisher Review Gate</h2>
-<div class="table-scroll"><table class="rd-table"><thead><tr><th>Gate</th><th>상태</th><th>판정</th></tr></thead><tbody><tr><td>Source pack 명시</td><td>PASS</td><td>SEC 8-K, 10-Q, IR deck/remarks, market/fundamentals cache, public snippets 구분</td></tr><tr><td>EPS/revision caveat</td><td>PASS</td><td><strong>EPS/consensus revision source 미연결</strong> 및 judgment hold 명시</td></tr><tr><td>Price reflection</td><td>PASS</td><td>20D/60D/52W, valuation burden, intraday/cache caveat 포함</td></tr><tr><td>Bull/Bear/Invalidation</td><td>PASS</td><td>별도 섹션 포함</td></tr><tr><td>Base/Upside/Downside</td><td>PASS</td><td>별도 섹션 포함</td></tr><tr><td>No trade-direction / price-objective language</td><td>PASS</td><td>거래 방향 제안과 가격 목표 산정 없음</td></tr><tr><td>Blocked/attempted source 표시</td><td>PASS</td><td>brokerage/consensus/industry paid source access gap 명시</td></tr><tr><td>내부 초안 노출 점검</td><td>PASS</td><td>내부 반대검토 초안 미포함</td></tr><tr><td>Mobile readability</td><td>PASS</td><td>짧은 문단, 표/불릿 중심</td></tr></tbody></table></div>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Gate</th><th>상태</th><th>판정</th></tr></thead><tbody><tr><td>Source pack 명시</td><td>PASS</td><td>SEC 8-K, 10-Q, IR deck/remarks, market/fundamentals cache, public snippets 구분</td></tr><tr><td>EPS/revision caveat</td><td>PASS</td><td><strong>EPS/consensus revision source 확인 필요</strong> 및 judgment hold 명시</td></tr><tr><td>Price reflection</td><td>PASS</td><td>20D/60D/52W, valuation burden, intraday/cache caveat 포함</td></tr><tr><td>Bull/Bear/Invalidation</td><td>PASS</td><td>별도 섹션 포함</td></tr><tr><td>Base/Upside/Downside</td><td>PASS</td><td>별도 섹션 포함</td></tr><tr><td>No trade-direction / price-objective language</td><td>PASS</td><td>거래 방향 제안과 가격 목표 산정 없음</td></tr><tr><td>Blocked/attempted source 표시</td><td>PASS</td><td>brokerage/consensus/industry paid source access gap 명시</td></tr><tr><td>내부 초안 노출 점검</td><td>PASS</td><td>내부 반대검토 초안 미포함</td></tr><tr><td>Mobile readability</td><td>PASS</td><td>짧은 문단, 표/불릿 중심</td></tr></tbody></table></div>
 <p><strong>Publisher Review Gate 결과:</strong> <code>PASS for public observational publication</code></p>
 <p>단, 최종 판단은 <code>source incomplete / judgment hold</code>이며 strong re-rating conclusion은 보류한다.</p>
 <hr>
