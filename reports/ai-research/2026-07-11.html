@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily AI Research Radar — 2026-07-10</title>
+  <title>Daily AI Research Radar — 2026-07-11</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -274,18 +274,18 @@
   <span>10분: 리스크/반증/원문</span>
   <small>구조는 단순하게, 내용은 Source Pack·숫자·반대논리까지 깊게 유지한다.</small>
 </div>
-<h1>Daily AI Research Radar — 2026-07-10</h1>
+<h1>Daily AI Research Radar — 2026-07-11</h1>
 <p>tags: #daily #research-radar</p>
 <p><span class="badge">Home</span> / <span class="badge">Research Radar MOC</span> / <span class="badge">Weekly Review MOC</span></p>
 <blockquote>자동 수집 기반 초안이다. 공개/블로그화 전 사람이 검토한다.</blockquote>
 <h2>0. 20초 요약</h2>
 <ul>
-<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 27, <span class="badge">Agentic AI</span> 19, <span class="badge">Agent Evaluation</span> 14 쪽 attention이 강하다.</li>
+<li><strong>오늘 한 문장:</strong> <span class="badge">Agentic AI</span> 16, <span class="badge">AI Research</span> 16, <span class="badge">Agent Evaluation</span> 15 쪽 attention이 강하다.</li>
 <li><strong>오늘 paper 1개만 본다면:</strong> <a href="https://huggingface.co/papers/2603.29616">Video-Oasis: Rethinking Evaluation of Video Understanding</a> — 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다.</li>
 <li><strong>시장 연결 후보 1개:</strong> agent/inference workload → HBM·server memory·AI server/power 병목 후보</li>
 <li><strong>오늘은 AI Radar 스킵해도 됨 여부:</strong> 아니오 — today_one_paper와 skim 후보만 보면 된다.</li>
-<li><strong>수집 품질:</strong> Total 72, HF Daily 20; HF gate 정상 — 제목 20/20, 순위 20/20, upvote 18/20(일부 누락은 비차단), abstract 20/20 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
-<li><strong>Collected at:</strong> 2026-07-10T14:30+00:00 UTC / 2026-07-10 23:30 KST</li>
+<li><strong>수집 품질:</strong> Total 53, HF Daily 20; HF gate 정상 — 제목 20/20, 순위 20/20, upvote 20/20, abstract 20/20 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
+<li><strong>Collected at:</strong> 2026-07-10T23:17+00:00 UTC / 2026-07-11 08:17 KST</li>
 </ul>
 <hr>
 <h2>1. 5분 본문 — HF digest + Deep Card</h2>
@@ -293,56 +293,56 @@
 <h3>HF Daily digest — 먼저 볼 논문</h3>
 <h4>20초 요약</h4>
 <ul>
-<li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 103 <a href="https://huggingface.co/papers/2607.03118">Vidu S1: A Real-Time Interactive Video Generation Model</a> / #2 👍 40 <a href="https://huggingface.co/papers/2603.29616">Video-Oasis: Rethinking Evaluation of Video Understanding</a> / #3 👍 40 <a href="https://huggingface.co/papers/2601.16211">Why Can&#x27;t I Open My Drawer? Mitigating Object-Driven Shor…</a></li>
-<li><strong>HF Daily quality gate:</strong> 정상 — 제목 20/20, 순위 20/20, upvote 18/20(일부 누락은 비차단), abstract 20/20 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
-<li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-07-10이 report date와 일치한다.</li>
+<li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 108 <a href="https://huggingface.co/papers/2607.03118">Vidu S1: A Real-Time Interactive Video Generation Model</a> / #2 👍 43 <a href="https://huggingface.co/papers/2603.29616">Video-Oasis: Rethinking Evaluation of Video Understanding</a> / #3 👍 42 <a href="https://huggingface.co/papers/2601.16211">Why Can&#x27;t I Open My Drawer? Mitigating Object-Driven Shor…</a></li>
+<li><strong>HF Daily quality gate:</strong> 정상 — 제목 20/20, 순위 20/20, upvote 20/20, abstract 20/20 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
+<li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-07-11이 report date와 일치한다.</li>
 <li><strong>Top 10 layer mix:</strong> Reasoning / Post-training 4, Agent / Tool-use 3, General AI Research 2, Inference / Efficiency 1 — 오늘 먼저 볼 축은 <code>Reasoning / Post-training</code>(4개).</li>
 <li><strong>논문 결론:</strong> 오늘은 Reasoning / Post-training 5, Agent / Tool-use 3, Inference / Efficiency 2가 핵심이고, 깊게 읽을 후보는 Video-Oasis: Rethinking Evaluation of Video Understan… / Vidu S1: A Real-Time Interactive Video Generation Mod… / UniClawBench: A Universal Benchmark for Proactive Age….</li>
 </ul>
 <h4>Decision routing — 먼저 볼/훑을/스킵 후보</h4>
 <ul>
-<li><strong>오늘 읽을 2~3개:</strong> HF #2 · 👍 40 <a href="https://huggingface.co/papers/2603.29616">Video-Oasis: Rethinking Evaluation of Video Und…</a> / HF #1 · 👍 103 <a href="https://huggingface.co/papers/2607.03118">Vidu S1: A Real-Time Interactive Video Generati…</a> / HF #4 · 👍 21 <a href="https://huggingface.co/papers/2607.08768">UniClawBench: A Universal Benchmark for Proacti…</a> — 상세 카드는 아래 <code>Deep Card</code>.</li>
-<li><strong>훑고 넘어갈 것:</strong> HF #3 · 👍 40 <a href="https://huggingface.co/papers/2601.16211">Why Can&#x27;t I Open My Drawer? Mitigating Object-D…</a> / HF #5 · 👍 19 <a href="https://huggingface.co/papers/2607.08770">LongE2V: Long-Horizon Event-based Video Reconst…</a> / HF #6 · 👍 19 <a href="https://huggingface.co/papers/2607.08758">Ideas Have Genomes: Benchmarking Scientific Lin…</a> / HF #7 · 👍 14 <a href="https://huggingface.co/papers/2607.08765">Enhancing In-context Panoramic Generation via G…</a> — 상세 카드는 §2 archive.</li>
-<li><strong>스킵 후보:</strong> HF #12 · 👍 3 <a href="https://huggingface.co/papers/2607.08404">DrugGen 2: A disease-aware language model for e…</a> / HF #8 · 👍 8 <a href="https://huggingface.co/papers/2607.03803">CineMobile: On-Device Image-to-Video Diffusion…</a> / HF #9 · 👍 6 <a href="https://huggingface.co/papers/2607.08763">OpenCoF: Learning to Reason Through Video Gener…</a> — 상세 카드는 §3 archive.</li>
+<li><strong>오늘 읽을 2~3개:</strong> HF #2 · 👍 43 <a href="https://huggingface.co/papers/2603.29616">Video-Oasis: Rethinking Evaluation of Video Und…</a> / HF #1 · 👍 108 <a href="https://huggingface.co/papers/2607.03118">Vidu S1: A Real-Time Interactive Video Generati…</a> / HF #4 · 👍 22 <a href="https://huggingface.co/papers/2607.08768">UniClawBench: A Universal Benchmark for Proacti…</a> — 상세 카드는 아래 <code>Deep Card</code>.</li>
+<li><strong>훑고 넘어갈 것:</strong> HF #3 · 👍 42 <a href="https://huggingface.co/papers/2601.16211">Why Can&#x27;t I Open My Drawer? Mitigating Object-D…</a> / HF #5 · 👍 20 <a href="https://huggingface.co/papers/2607.08758">Ideas Have Genomes: Benchmarking Scientific Lin…</a> / HF #6 · 👍 19 <a href="https://huggingface.co/papers/2607.08770">LongE2V: Long-Horizon Event-based Video Reconst…</a> / HF #7 · 👍 14 <a href="https://huggingface.co/papers/2607.08765">Enhancing In-context Panoramic Generation via G…</a> — 상세 카드는 §2 archive.</li>
+<li><strong>스킵 후보:</strong> HF #11 · 👍 6 <a href="https://huggingface.co/papers/2607.08763">OpenCoF: Learning to Reason Through Video Gener…</a> / HF #8 · 👍 12 <a href="https://huggingface.co/papers/2607.08404">DrugGen 2: A disease-aware language model for e…</a> / HF #9 · 👍 8 <a href="https://huggingface.co/papers/2607.03803">CineMobile: On-Device Image-to-Video Diffusion…</a> — 상세 카드는 §3 archive.</li>
 <li><strong>중복 없는 카드 배치:</strong> deep 3, skim 4, skip 3; 같은 paper는 세 bucket 중 하나에만 둔다.</li>
 </ul>
 <h3>Deep Card — today_one_paper + deep candidates</h3>
 <h4><a href="https://huggingface.co/papers/2603.29616">Video-Oasis: Rethinking Evaluation of Video Understanding</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #2 · 👍 40 · Reasoning / Post-training · digest score 20 · today_one_paper</li>
+<li><strong>위치:</strong> HF #2 · 👍 43 · Reasoning / Post-training · digest score 20 · today_one_paper</li>
 <li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 16</li>
 <li><strong>쉽게 말하면:</strong> 영상을 만들 때 원하는 장면/의도대로 더 잘 제어하려는 생성 모델 논문이다.</li>
 <li><strong>핵심 내용:</strong> The inherent complexity of video understanding makes it difficult to determine whether Video-LLM benchmark performance stems from visual perception, linguistic reasoning, or knowledge priors. While many benchmarks have emerged to assess high-level reasoning,…</li>
 <li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
 <li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
 <li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=today_one_paper-2026-07-10-video-oasis-rethinking-evaluation-of-video-under; source=Hugging Face Daily Papers; paper_id=2603.29616; layer=Reasoning / Post-training; bottleneck=research_relevance_check; evidence_class=abstract_enriched</li>
+<li><strong>Deep Card metadata:</strong> signal_id=today_one_paper-2026-07-11-video-oasis-rethinking-evaluation-of-video-under; source=Hugging Face Daily Papers; paper_id=2603.29616; layer=Reasoning / Post-training; bottleneck=research_relevance_check; evidence_class=abstract_enriched</li>
 <li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Reasoning / Post-training; adoption evidence=abstract_enriched; workload/bottleneck=research_relevance_check; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h4><a href="https://huggingface.co/papers/2607.03118">Vidu S1: A Real-Time Interactive Video Generation Model</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #1 · 👍 103 · Inference / Efficiency · digest score 18 · deep_candidate_2</li>
+<li><strong>위치:</strong> HF #1 · 👍 108 · Inference / Efficiency · digest score 18 · deep_candidate_2</li>
 <li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 16</li>
 <li><strong>쉽게 말하면:</strong> 사용자가 음성으로 디지털 캐릭터/영상 생성을 실시간 제어할 수 있게 하려는 interactive video generation 논문이다.</li>
 <li><strong>핵심 내용:</strong> We introduce Vidu S1, a real-time interactive video generation model supporting voice control of digital characters. Users can control video generation content at any moment through voice instructions.</li>
 <li><strong>핵심 용어:</strong> inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
 <li><strong>내 판단:</strong> 실시간 제어형 영상 생성 신호다. agent/infra 직접 수혜라기보다 latency·control 품질·interactive workload가 실제 제품 요구로 이어지는지 봐야 한다. 오늘 핵심 병목과의 연결은 아직 약해 원문 근거를 확인한 뒤 archive 우선순위를 정한다.</li>
 <li><strong>확인할 것:</strong> 실시간 제어가 실제 latency·일관성·사용자 개입 조건에서 유지되는지, 단순 demo가 아니라 반복 가능한 제품 UX인지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-10-vidu-s1-a-real-time-interactive-video-generation; source=Hugging Face Daily Papers; paper_id=2607.03118; layer=Inference / Efficiency; bottleneck=cost_latency; evidence_class=abstract_enriched</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-11-vidu-s1-a-real-time-interactive-video-generation; source=Hugging Face Daily Papers; paper_id=2607.03118; layer=Inference / Efficiency; bottleneck=cost_latency; evidence_class=abstract_enriched</li>
 <li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Inference / Efficiency; adoption evidence=abstract_enriched; workload/bottleneck=cost_latency; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> 실시간 제어가 실제 latency·일관성·사용자 개입 조건에서 유지되는지, 단순 demo가 아니라 반복 가능한 제품 UX인지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h4><a href="https://huggingface.co/papers/2607.08768">UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #4 · 👍 21 · Agent / Tool-use · digest score 18 · deep_candidate_3</li>
+<li><strong>위치:</strong> HF #4 · 👍 22 · Agent / Tool-use · digest score 18 · deep_candidate_3</li>
 <li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 18</li>
 <li><strong>쉽게 말하면:</strong> 이미지·영상·소리 같은 비텍스트 데이터를 더 잘 이해하거나 생성하려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benchmarks struggle to…</li>
 <li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정; multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
 <li><strong>내 판단:</strong> Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
 <li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-10-uniclawbench-a-universal-benchmark-for-proactive; source=Hugging Face Daily Papers; paper_id=2607.08768; layer=Agent / Tool-use; bottleneck=research_relevance_check; evidence_class=abstract_enriched</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-11-uniclawbench-a-universal-benchmark-for-proactive; source=Hugging Face Daily Papers; paper_id=2607.08768; layer=Agent / Tool-use; bottleneck=research_relevance_check; evidence_class=abstract_enriched</li>
 <li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Agent / Tool-use; adoption evidence=abstract_enriched; workload/bottleneck=research_relevance_check; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
@@ -356,40 +356,40 @@
   MEM --&gt; TRUST[&quot;RAG Security / Trust&quot;]</div></div>
 <h3>오늘의 topic heat / 5분 스캔</h3>
 <ul>
-<li><strong><span class="badge">AI Research</span> 27:</strong> <a href="https://huggingface.co/papers/2601.16211">Why Can&#x27;t I Open My Drawer? Mitigating Object-Driven Shortcuts in Zero-Shot Compositional Action Recognition</a> — Hugging Face Daily Papers, score 10, <span class="badge">AI Research</span></li>
-<li><strong><span class="badge">Agentic AI</span> 19:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
-<li><strong><span class="badge">Agent Evaluation</span> 14:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
-<li><strong><span class="badge">Inference Stack</span> 13:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong><span class="badge">Agentic AI</span> 16:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong><span class="badge">AI Research</span> 16:</strong> <a href="https://huggingface.co/papers/2601.16211">Why Can&#x27;t I Open My Drawer? Mitigating Object-Driven Shortcuts in Zero-Shot Compositional Action Recognition</a> — Hugging Face Daily Papers, score 10, <span class="badge">AI Research</span></li>
+<li><strong><span class="badge">Agent Evaluation</span> 15:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 <li><strong><span class="badge">On-device LLM</span> 10:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
+<li><strong><span class="badge">Inference Stack</span> 8:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
 </ul>
 <details><summary>아래는 archive입니다. 시간 없으면 여기서 멈춰도 됨.</summary>
 <h2>2. 훑을 것 3~5개</h2>
 <h4>5분 훑기 1. <a href="https://huggingface.co/papers/2601.16211">Why Can&#x27;t I Open My Drawer? Mitigating Object-Driven Shortcuts in Zero-Shot Compositional Action Recognition</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #3 · 👍 40 · General AI Research · Geo Ahn, Inwoong Lee · digest score 11</li>
+<li><strong>위치:</strong> HF #3 · 👍 42 · General AI Research · Geo Ahn, Inwoong Lee · digest score 11</li>
 <li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Zero-Shot Compositional Action Recognition (ZS-CAR) requires recognizing novel verb-object combinations composed of previously observed primitives. In this work, we tackle a key failure mode: models predict verbs via object-driven shortcuts (i.e., relying on the labeled object class) rather than temporal evidence.</li>
 <li><strong>핵심 용어:</strong> sparse attention = 희소 attention: 중요한 토큰/헤드만 골라 계산해 긴 문맥 비용을 줄이는 방식</li>
 <li><strong>내 판단:</strong> General AI Research 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 오늘 핵심 병목과의 연결은 아직 약해 원문 근거를 확인한 뒤 archive 우선순위를 정한다.</li>
 <li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
 </ul>
-<h4>5분 훑기 2. <a href="https://huggingface.co/papers/2607.08770">LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with Video Diffusion Models</a></h4>
+<h4>5분 훑기 2. <a href="https://huggingface.co/papers/2607.08758">Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #5 · 👍 19 · Agent / Tool-use · Cheng-De Fan, Chun-Wei Tuan Mu · digest score 14</li>
-<li><strong>쉽게 말하면:</strong> 영상을 만들 때 원하는 장면/의도대로 더 잘 제어하려는 생성 모델 논문이다.</li>
-<li><strong>핵심 내용:</strong> Recovering high-quality video from sparse event streams is a challenging task. Regression methods often blur textures, while existing generative models struggle with long-term stability.</li>
-<li><strong>핵심 용어:</strong> sparse attention = 희소 attention: 중요한 토큰/헤드만 골라 계산해 긴 문맥 비용을 줄이는 방식; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
-<li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
-<li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
-</ul>
-<h4>5분 훑기 3. <a href="https://huggingface.co/papers/2607.08758">Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation</a></h4>
-<ul>
-<li><strong>위치:</strong> HF #6 · 👍 19 · Reasoning / Post-training · Yifan Zhou, Qihao Yang · digest score 16</li>
+<li><strong>위치:</strong> HF #5 · 👍 20 · Reasoning / Post-training · Yifan Zhou, Qihao Yang · digest score 17</li>
 <li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes.</li>
 <li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트</li>
 <li><strong>내 판단:</strong> Reasoning / Post-training 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
 <li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
+</ul>
+<h4>5분 훑기 3. <a href="https://huggingface.co/papers/2607.08770">LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with Video Diffusion Models</a></h4>
+<ul>
+<li><strong>위치:</strong> HF #6 · 👍 19 · Agent / Tool-use · Cheng-De Fan, Chun-Wei Tuan Mu · digest score 14</li>
+<li><strong>쉽게 말하면:</strong> 영상을 만들 때 원하는 장면/의도대로 더 잘 제어하려는 생성 모델 논문이다.</li>
+<li><strong>핵심 내용:</strong> Recovering high-quality video from sparse event streams is a challenging task. Regression methods often blur textures, while existing generative models struggle with long-term stability.</li>
+<li><strong>핵심 용어:</strong> sparse attention = 희소 attention: 중요한 토큰/헤드만 골라 계산해 긴 문맥 비용을 줄이는 방식; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
+<li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
+<li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
 </ul>
 <h4>5분 훑기 4. <a href="https://huggingface.co/papers/2607.08765">Enhancing In-context Panoramic Generation via Geometric-aware Pretraining</a></h4>
 <ul>
@@ -401,32 +401,32 @@
 <li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
 </ul>
 <h2>3. 스킵 표</h2>
-<h4>오늘은 스킵 1. <a href="https://huggingface.co/papers/2607.08404">DrugGen 2: A disease-aware language model for enhancing drug discovery</a></h4>
+<h4>오늘은 스킵 1. <a href="https://huggingface.co/papers/2607.08763">OpenCoF: Learning to Reason Through Video Generation</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #12 · 👍 3 · Reasoning / Post-training · Ali Motahharynia, Mohammadreza Ghaffarzadeh-Esfahani · digest score 11</li>
+<li><strong>위치:</strong> HF #11 · 👍 6 · Reasoning / Post-training · Xinyan Chen, Ziyu Guo · digest score 11</li>
+<li><strong>쉽게 말하면:</strong> 영상을 만들 때 원하는 장면/의도대로 더 잘 제어하려는 생성 모델 논문이다.</li>
+<li><strong>핵심 내용:</strong> Reasoning has become a core capability for large models, especially when reliable decisions require understanding logical consequences. Recent video generation models offer a reasoning path distinct from previous Chain-of-Thought (CoT): reasoning can unfold through temporally connected frames, known as Chain-of-Frame…</li>
+<li><strong>핵심 용어:</strong> video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
+<li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 오늘 핵심 병목과의 연결은 아직 약해 원문 근거를 확인한 뒤 archive 우선순위를 정한다.</li>
+<li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
+</ul>
+<h4>오늘은 스킵 2. <a href="https://huggingface.co/papers/2607.08404">DrugGen 2: A disease-aware language model for enhancing drug discovery</a></h4>
+<ul>
+<li><strong>위치:</strong> HF #8 · 👍 12 · Reasoning / Post-training · Ali Motahharynia, Mohammadreza Ghaffarzadeh-Esfahani · digest score 13</li>
 <li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Current computational approaches for drug design typically focus on generating molecules conditioned on specific targets or general molecular properties, often neglecting the influence of disease context on target behavior and therapeutic outcomes. To address this gap, we introduce DrugGen-2, a novel generative model…</li>
 <li><strong>핵심 용어:</strong> RL = 강화학습: 모델이 정답/보상 신호를 보며 행동을 더 잘하도록 조정하는 학습; reward = 보상: 모델 답이나 풀이 과정이 좋은지 점수화하는 신호</li>
 <li><strong>내 판단:</strong> Reasoning / Post-training 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 모델 능력 향상이 단순 benchmark가 아니라 검증 가능한 보상/긴 작업 안정성으로 이동하는지 보는 재료다.</li>
 <li><strong>확인할 것:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지.</li>
 </ul>
-<h4>오늘은 스킵 2. <a href="https://huggingface.co/papers/2607.03803">CineMobile: On-Device Image-to-Video Diffusion for Cinematic Camera Motion Generation</a></h4>
+<h4>오늘은 스킵 3. <a href="https://huggingface.co/papers/2607.03803">CineMobile: On-Device Image-to-Video Diffusion for Cinematic Camera Motion Generation</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #8 · 👍 8 · Reasoning / Post-training · Xuyao Huang, Zelai Deng · digest score 13</li>
+<li><strong>위치:</strong> HF #9 · 👍 8 · Reasoning / Post-training · Xuyao Huang, Zelai Deng · digest score 13</li>
 <li><strong>쉽게 말하면:</strong> 영상을 만들 때 원하는 장면/의도대로 더 잘 제어하려는 생성 모델 논문이다.</li>
 <li><strong>핵심 내용:</strong> The growing demand for image-to-video creation on mobile devices has increasingly focused on cinematic motion effects like bullet time, dolly zoom, slow motion, etc. While Diffusion Transformers (DiTs) exhibit strong performance in video generation, their large parameter sizes and multi-step iterative denoising proces…</li>
 <li><strong>핵심 용어:</strong> distillation = 증류: 큰 모델/기존 모델의 행동을 작은 모델이나 새 모델에 옮기는 학습; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
 <li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 오늘 핵심 병목과의 연결은 아직 약해 원문 근거를 확인한 뒤 archive 우선순위를 정한다.</li>
 <li><strong>확인할 것:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지.</li>
-</ul>
-<h4>오늘은 스킵 3. <a href="https://huggingface.co/papers/2607.08763">OpenCoF: Learning to Reason Through Video Generation</a></h4>
-<ul>
-<li><strong>위치:</strong> HF #9 · 👍 6 · Reasoning / Post-training · Xinyan Chen, Ziyu Guo · digest score 13</li>
-<li><strong>쉽게 말하면:</strong> 영상을 만들 때 원하는 장면/의도대로 더 잘 제어하려는 생성 모델 논문이다.</li>
-<li><strong>핵심 내용:</strong> Reasoning has become a core capability for large models, especially when reliable decisions require understanding logical consequences. Recent video generation models offer a reasoning path distinct from previous Chain-of-Thought (CoT): reasoning can unfold through temporally connected frames, known as Chain-of-Frame…</li>
-<li><strong>핵심 용어:</strong> video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
-<li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 오늘 핵심 병목과의 연결은 아직 약해 원문 근거를 확인한 뒤 archive 우선순위를 정한다.</li>
-<li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
 </ul>
 <h2>4. Today&#x27;s Active Lens</h2>
 <blockquote>전체 10 lens를 늘어놓지 않고 오늘 실제 evidence가 있는 3~5개만 유지한다. 위 §1/§2/§3 paper는 중복 카드로 재등장시키지 않는다.</blockquote>
@@ -434,7 +434,7 @@
 <ul>
 <li><strong>왜 봄:</strong> latency, throughput, memory cost가 adoption 병목인지</li>
 <li><a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Tool Use / MCP</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">On-device LLM</span> / <span class="badge">LLM Orchestration</span> / <span class="badge">Inference Stack</span></li>
-<li><a href="https://arxiv.org/abs/2607.08766v1">OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators</a> — arXiv, score 13, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2607.08716">Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span></li>
 </ul>
 <h3>Agent 실사용 — signal+hype 혼재</h3>
 <ul>
@@ -457,8 +457,8 @@
 <h3>Planning / long-horizon — signal 후보</h3>
 <ul>
 <li><strong>왜 봄:</strong> agent가 긴 작업을 계획·검증·복구할 수 있는지</li>
+<li><a href="https://huggingface.co/papers/2607.08716">Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span></li>
 <li><a href="https://arxiv.org/abs/2607.08766v1">OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators</a> — arXiv, score 13, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
-<li><a href="https://huggingface.co/papers/2607.08741">ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation</a> — Hugging Face Daily Papers, score 11, <span class="badge">Agent Planning</span> / <span class="badge">Inference Stack</span></li>
 </ul>
 <h2>5. 시장·투자 연결 후보</h2>
 <p>투자 추천 아님. AI research signal이 workload/bottleneck/industry narrative로 번역될 수 있는지 보는 후보만 기록한다.</p>
@@ -483,21 +483,21 @@
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08093">CausalDS: Benchmarking Causal Reasoning in Data-Science Agents</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.03118">Vidu S1: A Real-Time Interactive Video Generation Model</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2603.29616">Video-Oasis: Rethinking Evaluation of Video Understanding</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08770">LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with Video Diffusion Models</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08716">Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08766v1">OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08734v1">The Illusion of Equivalency: Statistical Characterization of Quantization Effects in LLMs</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08770">LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with Video Diffusion Models</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.07953">Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08758">Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.04461">Flash-BoN: Instant Drafts for Inference-Time Scaling in Diffusion Models</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08741">ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08768v1">UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2601.16211">Why Can&#x27;t I Open My Drawer? Mitigating Object-Driven Shortcuts in Zero-Shot Compositional Action Recognition</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08758">Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08404">DrugGen 2: A disease-aware language model for enhancing drug discovery</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.03803">CineMobile: On-Device Image-to-Video Diffusion for Cinematic Camera Motion Generation</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08763">OpenCoF: Learning to Reason Through Video Generation</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08404">DrugGen 2: A disease-aware language model for enhancing drug discovery</a></li>
 <li><strong>Hacker News:</strong> <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08526">A Quantized Native Runtime for On-Device Semantic Audio Generation</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.03936">Can Dialects Be Steered Like Languages? Sparse Neurons and Distributed Directions in Arabic LLMs</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08741v1">ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation</a></li>
 <li><strong>Hacker News:</strong> <a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.08765">Enhancing In-context Panoramic Generation via Geometric-aware Pretraining</a></li>
@@ -510,14 +510,6 @@
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08733v1">Super Weights in LLMs and the Failure of Selective Training</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08771v1">ZipDepth: Bringing Lightweight Zero-Shot Monocular Depth Anywhere, on Any Device</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08769v1">Geometry and Gradient-based Partitioning for Panoramic Outdoor Reconstruction</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/langflow-ai/langflow">langflow-ai/langflow</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/langchain-ai/langchain">langchain-ai/langchain</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/Shubhamsaboo/awesome-llm-apps">Shubhamsaboo/awesome-llm-apps</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/vllm-project/vllm">vllm-project/vllm</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/sponsors/vllm-project">sponsors/vllm-project</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/ggml-org/whisper.cpp">ggml-org/whisper.cpp</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/deepspeedai/DeepSpeed">deepspeedai/DeepSpeed</a></li>
 <li><strong>Hacker News:</strong> <a href="https://github.com/seamus-brady/springdrift">Show HN: Springdrift – A persistent runtime for long-lived LLM agents</a></li>
 <li><strong>Hacker News:</strong> <a href="https://news.ycombinator.com/item?id=47765871">Show HN: OpenParallax: OS-level privilege separation for AI agent execution</a></li>
 <li><strong>Hacker News:</strong> <a href="https://news.ycombinator.com/item?id=47439115">Show HN: P2PCLAW – I built a decentralized research network where AI agents</a></li>
@@ -535,17 +527,6 @@
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08731v1">Validity of LLMs as data annotators: AMALIA on authority</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08772v1">Wat3R: Underwater 3D Geometry Learning without Annotations</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.08765v1">Enhancing In-context Panoramic Generation via Geometric-aware Pretraining</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/sponsors/explore">sponsors/explore</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/sponsors/affaan-m">sponsors/affaan-m</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/Significant-Gravitas/AutoGPT">Significant-Gravitas/AutoGPT</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/langgenius/dify">langgenius/dify</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/open-webui/open-webui">open-webui/open-webui</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/sponsors/open-webui">sponsors/open-webui</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/tensorflow/tensorflow">tensorflow/tensorflow</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/f/prompts.chat">f/prompts.chat</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/sponsors/f">sponsors/f</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/huggingface/transformers">huggingface/transformers</a></li>
 <li><strong>Hacker News:</strong> <a href="https://uselibrarian.dev/">Show HN: Librarian – Cut token costs by up to 85% for LangGraph and OpenClaw</a></li>
 <li><strong>Hacker News:</strong> <a href="https://gepa-ai.github.io/gepa/blog/2026/02/18/introducing-optimize-anything/">Show HN: Optimize_anything: A Universal API for Optimizing Any Text Parameter</a></li>
 <li><strong>Hacker News:</strong> <a href="https://github.com/peeramid-labs/nsed">Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</a></li>
