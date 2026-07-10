@@ -269,7 +269,24 @@
 <div class="desk-card warn"><strong>Ontology Edges</strong><p>56개 supply/dependency/constraint edge</p></div>
 <div class="desk-card violet"><strong>Detailed Registry</strong><p>16개 theme · 38개 node · 11개 query seed</p></div>
 </div>
-<h2>0. 2026-06-05 Weekly QA 반영</h2>
+<h2>0. 2026-07-10 Weekly QA 반영</h2>
+<p>이번 QA는 상세 registry baseline(16 theme · 38 node · 56 edge · 11 query seed)을 바꾸지 않고, 2026-06-06~2026-07-10 AI/Market/Cross/Scenario reports에서 확인된 evidence 후보를 기존 reference node와 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source-review queue</strong>다. 개별 회사·ticker는 산업 mapping 참고용이며 매수·매도 판단이 아니다.</p>
+<h3>새로 연결된 evidence 후보</h3>
+<ul>
+<li><strong>Agent runtime · trajectory eval · Memory/RAG · security</strong>: AgentLens, Agent Delivery Engineering, Institutional Red-Teaming, ClawMem, KV/RAG 비용 신호 → <code>ai_agent</code>, <code>training_data</code>, <code>frontier_llm</code>, <code>opensource_llm</code>, <code>enterprise_ai</code>, <code>hbm</code>, <code>datacenter_build</code>, <code>dc_power</code>에 연결 후보.</li>
+<li><strong>Physical AI · Robotics · On-device AI</strong>: Dual Latent Memory VLA, MoE video pretraining, RoboDojo, WildCity, NVIDIA Isaac GR00T, humanoid/robotics 보도 → <code>on_device</code>, <code>humanoid</code>, <code>autonomous</code>, <code>korean_ai_chip</code>, <code>nvidia</code>에 연결 후보.</li>
+<li><strong>HBM · DRAM/NAND · CoWoS/Advanced Packaging · AI Semiconductor</strong>: Micron memory/storage report, HBM Memory 상위 theme, SK Hynix·Samsung memory output, HBM qualification·CoWoS/inspection gate → <code>hbm</code>, <code>dram_nand</code>, <code>cowos</code>, <code>packaging_eq</code>, <code>inspection</code>, <code>tsmc</code>, <code>nvidia</code>, <code>custom_asic</code>에 연결 후보.</li>
+<li><strong>AI DC 전력·냉각·그리드·SMR / DC EPC</strong>: AI data center 전력, nuclear/SMR, liquid cooling, transformer/grid interconnect, site permitting → <code>dc_power</code>, <code>liquid_cooling</code>, <code>nuclear</code>, <code>transformer</code>, <code>grid_cable</code>, <code>datacenter_build</code>, <code>hyperscaler</code>에 연결 후보.</li>
+<li><strong>Hyperscaler capex ROI · custom silicon · neocloud capacity</strong>: Meta capex, Big Tech AI spending, custom AI chip, AI cloud utilization/capacity risk → <code>hyperscaler</code>, <code>custom_asic</code>, <code>neocloud</code>, <code>datacenter_build</code>, <code>dc_power</code>에 연결 후보.</li>
+<li><strong>Optical/networking/CPO watch 유지</strong>: 2026-06-07 Scenario Planning에서 optical/networking/interconnect, 800G/1.6T, CPO, photonic fabric이 병목 후보로 정리됐다. 2026-07-10 daily 신호는 약하므로 <code>cpo</code>, <code>optical_transceiver</code>, <code>switch_chip</code>, <code>fiber_material</code>은 design win·shipment evidence 대기 상태로 둔다.</li>
+</ul>
+<h3>이번 주 부족한 UX / 데이터</h3>
+<ul>
+<li>현재 page는 KPI cards, 병목 heatmap, Mermaid 기반 supply/dependency network, node detail cards, edge strip, query seeds, risk/metrics 일부를 제공한다.</li>
+<li>아직 <strong>진짜 Sankey/flow interaction</strong>, 클릭형 node side panel, node별 최신 metric 자동 갱신, node card 내부 주가·뉴스·context panel, query copy/freshness badge, 모바일에서 긴 company/ticker list 압축, node freshness badge는 backlog다.</li>
+<li>상세 보강 기록은 <code>07-sources/reference-dashboard-weekly-qa.md</code>, <code>04-ontology/Reference Dashboard Node Seeds.md</code>, <code>07-sources/reference-dashboard-queries.yaml</code>의 candidate query section에 누적한다.</li>
+</ul>
+<h2>0.1. 2026-06-05 Weekly QA 반영</h2>
 <p>이번 주 QA는 기준 registry 수치(16 theme · 38 node · 56 edge · 11 query seed)를 유지하면서, 2026-06-01~05 AI/Market/Cross reports에서 확인된 evidence 후보를 기존 node/edge에 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source review queue</strong>다. 기업명과 ticker는 산업 매핑 참고용이며 매수·매도 판단이 아니다.</p>
 <h3>새로 연결된 evidence 후보</h3>
 <ul>
@@ -285,7 +302,7 @@
 <li>아직 <strong>진짜 Sankey/flow interaction</strong>, 클릭형 node side panel, node별 최신 metric 자동 갱신, node card 안의 주가·뉴스·context panel, query copy/freshness badge, 모바일에서 긴 company/ticker list 압축, node freshness badge는 backlog다.</li>
 <li>상세 보강 기록은 <code>07-sources/reference-dashboard-weekly-qa.md</code>, <code>04-ontology/Reference Dashboard Node Seeds.md</code>, <code>07-sources/reference-dashboard-queries.yaml</code>의 candidate query section에 누적한다.</li>
 </ul>
-<h2>0.1. 2026-05-29 Weekly QA 반영</h2>
+<h2>0.2. 2026-05-29 Weekly QA 반영</h2>
 <p>이전 QA는 기준 registry 수치(16 theme · 38 node · 56 edge · 11 query seed)를 유지하면서, 2026-05-23~29 AI/Market/Cross/Monthly reports에서 확인된 evidence 후보를 기존 node/edge에 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source review queue</strong>다. 기업명과 ticker는 산업 매핑 참고용이며 매수·매도 판단이 아니다.</p>
 <h3>새로 연결된 evidence 후보</h3>
 <ul>
@@ -535,8 +552,16 @@
 <li><code>transformer</code>: <code>(transformer OR 변압기) (AI 전력 OR HD현대일렉 OR 효성중공업)</code></li>
 <li><code>nuclear</code>: <code>(&quot;SMR&quot; OR &quot;small modular reactor&quot; OR 원전) (AI OR data center OR 데이터센터)</code></li>
 </ul>
-<h3>Candidate query queue — 2026-06-05</h3>
+<h3>Candidate query queue — 2026-07-10</h3>
 <p>기준 registry의 원본 11개 query seed는 유지한다. 아래는 collector 정식 반영 전 source-review 후보이며 투자 판단/매수·매도 신호가 아니다.</p>
+<ul>
+<li><code>agent_trajectory_eval_memory_security</code>: agent trajectory eval / memory / security runtime — AgentLens, Agent Delivery Engineering, Institutional Red-Teaming, ClawMem, KV-cache.</li>
+<li><code>physical_ai_robotics_deployment</code>: Physical AI / VLA / robotics deployment — Dual Latent Memory VLA, RoboDojo, WildCity, Isaac GR00T, humanoid/robotics.</li>
+<li><code>hbm_packaging_memory_output</code>: HBM / DRAM-NAND / advanced packaging output — HBM3E/HBM4, DRAM/NAND, CoWoS, qualification, yield, memory output.</li>
+<li><code>ai_dc_power_nuclear_grid</code>: AI data center power / nuclear / grid interconnect — power, nuclear/SMR, transformer, liquid cooling, permitting, substation.</li>
+<li><code>capex_roi_custom_silicon_neocloud</code>: hyperscaler capex ROI / custom silicon / neocloud capacity — AI revenue conversion, utilization, custom AI chip, capacity booking.</li>
+</ul>
+<h3>Candidate query queue — 2026-06-05</h3>
 <ul>
 <li><code>agent_eval_security_memory</code>: agent eval/security/memory runtime — AgentDoG, GrepSeek, LongTraceRL, AutoMedBench, RAMP, KV-cache, Trojan/backdoor.</li>
 <li><code>physical_ai_vla_humanoid</code>: Physical AI/VLA/humanoid deployment — Qwen-VLA, Cosmos 3, Isaac GR00T, humanoid factory/deployment.</li>
