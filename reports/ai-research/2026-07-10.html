@@ -320,14 +320,14 @@
 <ul>
 <li><strong>위치:</strong> HF #1 · 👍 103 · Inference / Efficiency · digest score 18 · deep_candidate_2</li>
 <li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 16</li>
-<li><strong>쉽게 말하면:</strong> 큰 모델을 실제 서비스에서 더 싸고 빠르게 돌리기 위한 실행 최적화 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> 사용자가 음성으로 디지털 캐릭터/영상 생성을 실시간 제어할 수 있게 하려는 interactive video generation 논문이다.</li>
 <li><strong>핵심 내용:</strong> We introduce Vidu S1, a real-time interactive video generation model supporting voice control of digital characters. Users can control video generation content at any moment through voice instructions.</li>
 <li><strong>핵심 용어:</strong> inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
-<li><strong>내 판단:</strong> 모델을 실제로 싸고 빠르게 돌리는 inference 병목 쪽이다. 오늘 핵심 병목과의 연결은 아직 약해 원문 근거를 확인한 뒤 archive 우선순위를 정한다.</li>
-<li><strong>확인할 것:</strong> 처리량/메모리 절감이 어떤 하드웨어와 batch 조건에서 나온 것인지.</li>
+<li><strong>내 판단:</strong> 실시간 제어형 영상 생성 신호다. agent/infra 직접 수혜라기보다 latency·control 품질·interactive workload가 실제 제품 요구로 이어지는지 봐야 한다. 오늘 핵심 병목과의 연결은 아직 약해 원문 근거를 확인한 뒤 archive 우선순위를 정한다.</li>
+<li><strong>확인할 것:</strong> 실시간 제어가 실제 latency·일관성·사용자 개입 조건에서 유지되는지, 단순 demo가 아니라 반복 가능한 제품 UX인지.</li>
 <li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-10-vidu-s1-a-real-time-interactive-video-generation; source=Hugging Face Daily Papers; paper_id=2607.03118; layer=Inference / Efficiency; bottleneck=cost_latency; evidence_class=abstract_enriched</li>
 <li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Inference / Efficiency; adoption evidence=abstract_enriched; workload/bottleneck=cost_latency; market recognition=아직 관찰; price/revision=연결 전</li>
-<li><strong>Invalidation:</strong> 처리량/메모리 절감이 어떤 하드웨어와 batch 조건에서 나온 것인지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
+<li><strong>Invalidation:</strong> 실시간 제어가 실제 latency·일관성·사용자 개입 조건에서 유지되는지, 단순 demo가 아니라 반복 가능한 제품 UX인지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h4><a href="https://huggingface.co/papers/2607.08768">UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks</a></h4>
 <ul>
