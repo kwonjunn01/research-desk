@@ -316,8 +316,8 @@
 <li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
 <li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
 <li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=today_one_paper-2026-07-11-video-oasis-rethinking-evaluation-of-video-under; source=Hugging Face Daily Papers; paper_id=2603.29616; layer=Reasoning / Post-training; bottleneck=research_relevance_check; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Reasoning / Post-training; adoption evidence=abstract_enriched; workload/bottleneck=research_relevance_check; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Deep Card metadata:</strong> signal_id=today_one_paper-2026-07-11-video-oasis-rethinking-evaluation-of-video-under; source=Hugging Face Daily Papers; paper_id=2603.29616; layer=Reasoning / Post-training; agent_layer=Eval / Observability; bottleneck=research_relevance_check; agent_bottleneck=eval_production_gap; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Eval / Observability; adoption evidence=abstract_enriched; workload/bottleneck=eval_production_gap; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h4><a href="https://huggingface.co/papers/2607.03118">Vidu S1: A Real-Time Interactive Video Generation Model</a></h4>
@@ -329,8 +329,8 @@
 <li><strong>핵심 용어:</strong> inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
 <li><strong>내 판단:</strong> 실시간 제어형 영상 생성 신호다. agent/infra 직접 수혜라기보다 latency·control 품질·interactive workload가 실제 제품 요구로 이어지는지 봐야 한다. 오늘 핵심 병목과의 연결은 아직 약해 원문 근거를 확인한 뒤 archive 우선순위를 정한다.</li>
 <li><strong>확인할 것:</strong> 실시간 제어가 실제 latency·일관성·사용자 개입 조건에서 유지되는지, 단순 demo가 아니라 반복 가능한 제품 UX인지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-11-vidu-s1-a-real-time-interactive-video-generation; source=Hugging Face Daily Papers; paper_id=2607.03118; layer=Inference / Efficiency; bottleneck=cost_latency; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Inference / Efficiency; adoption evidence=abstract_enriched; workload/bottleneck=cost_latency; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-11-vidu-s1-a-real-time-interactive-video-generation; source=Hugging Face Daily Papers; paper_id=2607.03118; layer=Inference / Efficiency; agent_layer=Runtime / Ops; bottleneck=cost_latency; agent_bottleneck=cost_latency; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Runtime / Ops; adoption evidence=abstract_enriched; workload/bottleneck=cost_latency; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> 실시간 제어가 실제 latency·일관성·사용자 개입 조건에서 유지되는지, 단순 demo가 아니라 반복 가능한 제품 UX인지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h4><a href="https://huggingface.co/papers/2607.08768">UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks</a></h4>
@@ -342,8 +342,8 @@
 <li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정; multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
 <li><strong>내 판단:</strong> Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
 <li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-11-uniclawbench-a-universal-benchmark-for-proactive; source=Hugging Face Daily Papers; paper_id=2607.08768; layer=Agent / Tool-use; bottleneck=research_relevance_check; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Agent / Tool-use; adoption evidence=abstract_enriched; workload/bottleneck=research_relevance_check; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-11-uniclawbench-a-universal-benchmark-for-proactive; source=Hugging Face Daily Papers; paper_id=2607.08768; layer=Agent / Tool-use; agent_layer=Eval / Observability; bottleneck=research_relevance_check; agent_bottleneck=eval_production_gap; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Eval / Observability; adoption evidence=abstract_enriched; workload/bottleneck=eval_production_gap; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h3>한눈에 보는 오늘의 AI Research 지도</h3>
