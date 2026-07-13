@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quant Bot Hub</title>
+  <title>US Wald Discovery — 2026-07-14</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -274,171 +274,33 @@
 </details>
 </details>
   </aside>
-  <main><article><h1>Quant Bot Hub</h1>
-<blockquote>OKX <code>BTC-USDT-SWAP</code> public data 기반 20x futures paper trading 운영 허브. 현재 기준 전략은 <strong>무한매수법 v2</strong> — 원본 진입/익절 골격은 보존하고, 추가매수 중단 gate와 margin 방어만 얹는다.</blockquote>
-<h2>현재 상태</h2>
-<div class="desk-dashboard">
-<div class="desk-card hot"><strong>Paper Trading Running</strong><p>15초 간격 OKX public data. private/trading API 미사용. 모든 BUY/SELL은 paper signal</p></div>
-<div class="desk-card warn"><strong>Infinite Buy v2</strong><p>20x, 1-2-4-8-16, 1% 하락 추가매수, 평단 +0.5% 전체 익절</p></div>
-<div class="desk-card violet"><strong>Risk Gate Only</strong><p>Risk Bot은 진입/익절을 바꾸지 않고 남은 추가매수만 중단/재개</p></div>
-</div>
-<h2>Live Paper Snapshot</h2>
+  <main><article><h1>US Wald Discovery — 2026-07-14</h1>
+<blockquote>Stage 1-3 quantitative scoring (Hermes/Codex). Stages 4-5 LLM qualitative review (Claude 09:00 KST).</blockquote>
+<p>Universe: 72 tickers / Stage-1 passed: 2 / Top candidates: 2</p>
+<h2>1. Top Candidates (Multiple Compression Score)</h2>
+<div class="table-scroll"><table class="rd-table"><thead><tr><th>Rank</th><th>Ticker</th><th>Sector</th><th>Score</th><th>Price</th><th>Fwd P/E</th><th>EV/EBITDA</th><th>FCF yield</th><th>Thesis</th></tr></thead><tbody><tr><td>1</td><td><strong>MOS</strong></td><td>specialty_chem</td><td>14</td><td>$22.31</td><td>13.1</td><td>5.1</td><td>19.5%</td><td>Cycle bottom + decarbonization (blue ammonia, etc)</td></tr><tr><td>2</td><td><strong>ZIM</strong></td><td>cycle_shipping</td><td>12</td><td>$23.80</td><td>6.0</td><td>3.6</td><td>28.1%</td><td>Container shipping cycle</td></tr></tbody></table></div>
+<h2>2. Survivor Portfolio Triggers</h2>
+<h3>🟡 MRVL — Marvell Technology</h3>
+<p>Total trigger weight: 1 → <strong>hold</strong></p>
 <ul>
-<li>updated: <code>2026-05-05T22:57:46+00:00</code></li>
-<li>run file: <code>20260505T171754Z-state.jsonl</code></li>
-<li>latest event: <strong>HOLD / REST</strong> — <code>conditions not ON; no hard OFF</code></li>
-<li>capital: <code>2035 USDT</code></li>
-<li>equity: <code>2033.9233 USDT</code></li>
-<li>realized PnL: <code>+3.2823 USDT</code></li>
-<li>unrealized PnL: <code>-4.3589 USDT</code></li>
-<li>position: <code>0.008040828 BTC</code></li>
-<li>avg entry: <code>81639.8</code></li>
-<li>stage: <code>1 / 5</code></li>
-<li>pending buy orders: <code>0</code></li>
-<li>gate state: <code>REST</code></li>
-<li>display leverage: <code>20x</code></li>
-<li>account effective leverage: <code>0.3206x</code></li>
-<li>margin proxy: <code>0.16%</code></li>
-<li>liquidation buffer estimate: <code>3.86%</code></li>
+<li>Trigger fired: ps_ratio_cap (value=23.43, weight=1)</li>
 </ul>
-<h2>Quick Links</h2>
+<h3>🟡 CSCO — Cisco Systems</h3>
+<p>Total trigger weight: 1 → <strong>hold</strong></p>
 <ul>
-<li><a href="/research-desk/quant/btc-futures-v2-spec.html">BTC Futures v2 Canonical Spec</a></li>
-<li><a href="/research-desk/quant/btc-futures-v2-2026-05-05.html">BTC Futures v2 Daily Report — 2026-05-05</a></li>
-<li><a href="/research-desk/quant/upgrade-roadmap.html">Quant Bot Upgrade Roadmap</a></li>
-<li><a href="/research-desk/quant/agent-team.html">AI Quant Agent Team</a></li>
-<li><a href="/research-desk/quant/strategy-council.html">Quant Strategy Council</a></li>
-<li><a href="/research-desk/quant/strategy-evolution-charter.html">Strategy Evolution Charter</a></li>
-<li><a href="/research-desk/quant/scenario-planning.html">Scenario Planning Playbook</a></li>
-<li><a href="/research-desk/quant/feedback-system.html">Feedback System</a></li>
+<li>Trigger fired: pe_cap (value=46.97, weight=1)</li>
 </ul>
-<h2>Strategy Core</h2>
-<div class="desk-dashboard">
-<div class="desk-card hot"><strong>Entry</strong><p>첫 매수는 X × 20 × 0.5 / 31. 현재 2035 USDT 기준 first notional ≈ 656.45 USDT</p></div>
-<div class="desk-card warn"><strong>Ladder</strong><p>1-2-4-8-16, 총 5단계. 1% 하락마다 다음 stage 1개만 pending</p></div>
-<div class="desk-card violet"><strong>Take Profit</strong><p>평단 +0.5% 도달 시 전체 익절. TP 미충족이면 사자마자 팔지 않음</p></div>
-</div>
-<p>핵심 원칙:</p>
+<h3>🟡 RKLB — Rocket Lab</h3>
+<p>Total trigger weight: 1 → <strong>hold</strong></p>
 <ul>
-<li>원본 보존:</li>
-<li><code>20x</code> fixed display leverage</li>
-<li><code>1-2-4-8-16</code> 5단계 doubling</li>
-<li><code>1%</code> 하락마다 다음 단계 추가매수</li>
-<li><code>avg entry +0.5%</code> 전체 익절</li>
-<li>변경/보강:</li>
-<li>첫 매수 사이즈를 5단계 doubling 전체를 버틸 수 있게 역산</li>
-<li>pending buy는 <strong>다음 stage 1개만</strong> 둠</li>
-<li>stage2~5를 한 번에 전부 미리 깔지 않음</li>
-<li>Risk Bot은 남은 추가매수만 통제</li>
+<li>Trigger fired: ps_ratio_cap (value=80.55, weight=1)</li>
 </ul>
-<h2>Add-Buy Gate</h2>
-<p>게이트는 <strong>포지션 청산/익절 로직이 아니라 추가매수 허용 장치</strong>다.</p>
-<p>ON 조건:</p>
+<h2>3. Next Steps</h2>
 <ul>
-<li><code>ADX &lt; 22</code></li>
-<li>Bollinger squeeze lower breakdown 없음</li>
-<li>margin ratio proxy <code>&lt; 50%</code></li>
+<li>Claude 09:00 KST: Stages 4-5 (recognition gap LLM + 5-factor + value trap)</li>
+<li>Telegram alert: Top 3 + survivor triggers + GitHub Pages link</li>
 </ul>
-<p>OFF 조건:</p>
-<ul>
-<li><code>ADX &gt; 25 and rising</code></li>
-<li>Bollinger squeeze lower breakdown</li>
-<li>margin ratio proxy <code>&gt; 60%</code></li>
-</ul>
-<p>OFF/REST 시 행동:</p>
-<ul>
-<li>남은 pending buy 취소 또는 신규 추가매수 중단</li>
-<li>이미 보유한 포지션은 계속 보유</li>
-<li><code>avg +0.5%</code> TP는 계속 활성</li>
-<li>즉시 trailing/split sell 없음</li>
-</ul>
-<h2>Stage Ladder — 현재 2035 USDT 기준</h2>
-<ul>
-<li>Stage 1:</li>
-<li>notional: <code>656.45 USDT</code></li>
-<li>status: active position</li>
-<li>Stage 2:</li>
-<li>trigger: 현재 avg 기준 <code>-1%</code></li>
-<li>notional: <code>1,312.90 USDT</code></li>
-<li>pending: gate ON일 때 다음 stage 1개만</li>
-<li>Stage 3:</li>
-<li>trigger: stage2 체결 후 다음 <code>-1%</code></li>
-<li>notional: <code>2,625.81 USDT</code></li>
-<li>Stage 4:</li>
-<li>trigger: stage3 체결 후 다음 <code>-1%</code></li>
-<li>notional: <code>5,251.61 USDT</code></li>
-<li>Stage 5:</li>
-<li>trigger: stage4 체결 후 다음 <code>-1%</code></li>
-<li>notional: <code>10,503.23 USDT</code></li>
-</ul>
-<p>주의: 위 stage notional은 원본 <code>1-2-4-8-16</code> 구조를 설명하기 위한 값이다. 실제 운영에서는 gate, margin proxy, free equity, liquidation buffer가 우선한다.</p>
-<h2>Strategy Council / Regime Switch</h2>
-<p>전략은 장마다 다르게 켜고 끈다. 단, 그 결정은 단일 지표나 단일 봇이 아니라 <a href="/research-desk/quant/strategy-council.html">Quant Strategy Council</a>의 결정을 따른다.</p>
-<pre><code>chart regime + external context + risk state
-→ Strategy Council
-→ strategy_mode
-→ Risk overlay
-→ paper/live candidate action</code></pre>
-<p>전략 모드:</p>
-<ul>
-<li><code>ACTIVE_INFINITE_BUY_V2</code>: 횡보/평균회귀 친화 장세</li>
-<li><code>HOLD_EXISTING_NO_NEW_STAGE</code>: 애매한 장세, 기존 TP만 유지</li>
-<li><code>ADD_BUY_OFF</code>: 하락추세/브레이크다운 위험, pending buy 취소</li>
-<li><code>EVENT_PAUSE</code>: CPI/FOMC/규제/해킹/사회 이슈 등 외부 이벤트</li>
-<li><code>DATA_NOT_READY</code>: 데이터 품질 문제</li>
-</ul>
-<p>차트만 보지 않고 함께 보는 맥락:</p>
-<ul>
-<li>macro: FOMC, CPI, 금리, 달러, 유동성</li>
-<li>crypto structure: funding, basis, OI, ETF flow, liquidation cluster</li>
-<li>social/geopolitical: 전쟁, 규제, 사회적 panic/risk-off</li>
-<li>technology/security: chain halt, bridge exploit, custody 이슈</li>
-<li>exchange health: OKX data stale, mark-last divergence, API timeout</li>
-</ul>
-<h2>Agent Responsibilities</h2>
-<pre><code>OKX public data
-→ Data Quality Agent
-→ Scenario Planning Agent: 외부 맥락/위기 시나리오
-→ Strategy Council: 장세별 strategy_mode 결정
-→ Strategy Bot: 무한매수법 v2 intent 생성
-→ Risk Bot: add-buy gate / margin 방어
-→ Paper Broker Agent: paper fill / avg+0.5% TP simulation
-→ Ledger
-→ Feedback Recorder
-→ Validator / Optimizer / Reporting
-→ Quant Alert group + Research Desk</code></pre>
-<p>운영 원칙:</p>
-<ul>
-<li>Strategy Bot은 원본 전략 골격을 마음대로 바꾸지 않는다.</li>
-<li>Risk Bot은 “추가매수 계속/중단”만 우선 통제한다.</li>
-<li>Optimizer는 후보만 만든다.</li>
-<li>Validator/Risk가 독립 검증한다.</li>
-<li>live 승격은 사용자 승인 없이는 불가능하다.</li>
-<li>전략 변경은 <a href="/research-desk/quant/strategy-evolution-charter.html">Strategy Evolution Charter</a>를 통과해야 한다.</li>
-</ul>
-<h2>Implementation Status</h2>
-<p>완료:</p>
-<ul>
-<li>OKX public data paper loop</li>
-<li>20x display leverage paper model</li>
-<li>first notional 공식: <code>capital × 20 × 0.5 / 31</code></li>
-<li><code>1-2-4-8-16</code> stage model</li>
-<li>next-stage-only pending order</li>
-<li>avg <code>+0.5%</code> full TP</li>
-<li>ADX/Squeeze/Margin add-buy gate</li>
-<li>Quant Alert group-only alert policy</li>
-</ul>
-<p>다음 보강:</p>
-<p>다음 보강의 기준은 <a href="/research-desk/quant/upgrade-roadmap.html">Quant Bot Upgrade Roadmap</a>에 둔다.</p>
-<ul>
-<li>fee/funding/slippage 누적 PnL</li>
-<li>Mark Price liquidation/margin ratio 정교화</li>
-<li>stage별 event ledger view</li>
-<li>Scenario runner + context-aware scenario ledger</li>
-<li>Strategy Council decision ledger</li>
-<li>장세별 strategy switch backtest/replay</li>
-<li>high-watermark withdrawal scheduler</li>
-</ul></article></main>
+<p>— Hermes Wald pipeline · 2026-07-14</p></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
