@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cross-Ontology Synthesis — 2026-05-21</title>
+  <title>Cross-Ontology Synthesis — 2026-07-13</title>
   <link rel="stylesheet" href="/research-desk/style.css">
 </head>
 <body>
@@ -144,6 +144,10 @@
 </details>
 <details class="nav-mid">
 <summary class="nav-mid-title">날짜별 Cross Signal</summary>
+<div class="nav-date">2026-07-13</div>
+<ul class="nav-list nav-small">
+<li><a href="/research-desk/reports/cross/2026-07-13.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
+</ul>
 <div class="nav-date">2026-07-10</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/cross/2026-07-10.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
@@ -195,10 +199,6 @@
 <div class="nav-date">2026-05-22</div>
 <ul class="nav-list nav-small">
 <li><a href="/research-desk/reports/cross/2026-05-22.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
-</ul>
-<div class="nav-date">2026-05-21</div>
-<ul class="nav-list nav-small">
-<li><a href="/research-desk/reports/cross/2026-05-21.html"><span class="nav-badge">Cross</span> Cross-Ontology Synthesis</a></li>
 </ul>
 </details>
 </details>
@@ -282,99 +282,120 @@
   <span>10분: 리스크/반증/원문</span>
   <small>구조는 단순하게, 내용은 Source Pack·숫자·반대논리까지 깊게 유지한다.</small>
 </div>
-<h1>Cross-Ontology Synthesis — 2026-05-21</h1>
+<h1>Cross-Ontology Synthesis — 2026-07-13</h1>
 <p>tags: #cross-ontology #research-radar #market-narrative</p>
 <p><span class="badge">Home</span> / <span class="badge">Research Radar MOC</span> / <span class="badge">Market Ontology MOC</span></p>
 <blockquote>자동 생성 초안이다. 투자 추천이 아니라, AI research signal이 market narrative/industry ontology와 만나는 지점을 찾기 위한 연결 지도다.</blockquote>
-<h2>0. 오늘의 통합 지도</h2>
+<h2>0. 20초 결론</h2>
+<ul>
+<li><strong>오늘 한 문장:</strong> AI signal을 시장 결론으로 바로 바꾸지 않고, <code>edge_strength</code>와 <code>recognition_gap</code>을 분리해 검증 후보만 남긴다.</li>
+<li><strong>today_one_paper pick:</strong> today_one_paper-2026-07-13-video-oasis-rethinking-evaluation-of-video-under · <a href="https://huggingface.co/papers/2603.29616">Video-Oasis: Rethinking Evaluation of Video Understanding</a> — 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
+<li><strong>시장 연결 후보 1개:</strong> 7영역 destination 매칭 약함 — Market Brief/registry 재확인</li>
+<li><strong>최상위 edge:</strong> <code>retrieval_trust_risk_controls_enterprise_adoption</code> · edge_strength=4/5 · recognition_gap=5/5 · action_type=new_company_intake</li>
+</ul>
+<h2>1. 오늘의 통합 지도</h2>
+<ul>
+<li>AI signal → 영역 1-7 destination을 registry-driven으로 연결한다.</li>
+</ul>
 <div class="viz-card"><div class="mermaid">flowchart LR
-  Research[&quot;AI Research Signals&quot;] --&gt; Inference[&quot;Inference Stack&quot;]
-  Research --&gt; Agent[&quot;Agentic AI / Orchestration&quot;]
-  Research --&gt; Memory[&quot;Memory / RAG Security&quot;]
-  Research --&gt; Device[&quot;On-device / Edge AI&quot;]
-  Inference -- cost_and_latency_pressure --&gt; Cloud[&quot;Cloud Hyperscaler&quot;]
-  Cloud -- drives_capex_for --&gt; DataCenter[&quot;AI Data Center&quot;]
-  DataCenter -- pulls_demand_for --&gt; Chips[&quot;AI Semiconductor&quot;]
-  Chips -- depends_on --&gt; HBM[&quot;HBM / Advanced Packaging&quot;]
-  DataCenter -- constrained_by --&gt; Power[&quot;Power / Grid / Cooling&quot;]
-  Device -- creates_demand_for --&gt; Robotics[&quot;Robotics / Edge Devices&quot;]
-  Memory -- gates_adoption_for --&gt; Enterprise[&quot;Enterprise / Healthcare AI&quot;]
-  Agent -- increases_workload_for --&gt; Cloud</div></div>
-<h2>1. 오늘의 Cross Signal Heat</h2>
-<h3>강 · Inference Stack → AI Data Center / Cloud Hyperscaler / Power Infrastructure</h3>
-<ul>
-<li><strong>Cross edge:</strong> <code>inference_cost_pressure_links_to_capex_and_power</code></li>
-<li><strong>왜 연결되는가:</strong> inference 비용·메모리 병목은 cloud serving margin, data center 증설, 전력/냉각 수요 narrative와 직접 연결된다.</li>
-<li><strong>Research evidence 후보:</strong></li>
-<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — Hugging Face Daily Papers, score 21, Agentic AI / Agent Evaluation / On-device LLM / Inference Stack</li>
-<li><strong>5분 훑기 2. <a href="https://huggingface.co/papers/2605.19660">OScaR: The Occam&#x27;s Razor for Extreme KV Cache Quantization in LLMs and Beyond</a></strong></li>
-<li><strong>Market evidence 후보:</strong></li>
-<li><a href="https://news.google.com/rss/articles/CBMiwgJBVV95cUxNckFNTUZVR3VnOFBFdHB0LU5xZktGMWhfclRvWnYyb2ZkX0JIZHVvQ05BUlJHMzdBS3piQng5dEdENTMtM2xyOUNTVzlLeTFycGoyVF9XYTFLY2VrRHNoM3RKaThOMTEtN0ZrOUZCOUxFdTZZRDd5NmRndENEYXd0RmZPMlA0MTNMUXlLY1JnSU1qTFRWMlBuRWhybm8yMDd5a3RaeXNrM3hqaTRoM3h2Q1pYZjlsakVFQV9SbVIyWDJ6ZFhFMWlia1ZvZ1J4MGJkZVZwNi1qMFRrUmNNTXYyckM4MWVzS3l0TDNvLTlRN0s2U3JoOVpNRzVHaEk4UXV5MGM4QUJLc2hKWHBzVzlWSXlYWkRteC1iVlM0OTdzbVE4UmVXY2tXM2pnbFRKT3hwTlRxYnd3OEZuVHNQc2ZlVnB3?oc=5">Supermicro Announces Support for Upcoming NVIDIA Vera Rubin NVL72, HGX Rubin NVL8 and Expanded Rack-Scale Manufacturi…</a> — Supermicro / quality 2</li>
-<li><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPRjM2RE9UN3ZTQWJBY0R1cW5UUm94eTdoeWgxdzBudUlqOUNKS3Q2NlhYUnl1cllpcEpHbElPamxpeWF4NzJxZldOdFFMMUlrNVNOdzcwdnhFWDN4aEdCV0lSTXRuY3hJQ0tnRUxrbWp0Uk91TDJzVXFxbzhIaWRIYWlpeUFQVmVtT1FPUTNjX1piMTF6VkY1Nnpta3ZDY0RIc29na0RiVGp6OEFNc2FReGN1dW1GMW9jUG43eVR3RmFQb3gx?oc=5">The Nuclear Option: Data Centers and the Responsible Provision of Power - Data Center Knowledge</a> — Data Center Knowledge / quality 2 / hits: power, nuclear</li>
-</ul>
-<h3>강 · On-device LLM / Edge AI → On-device AI / Robotics / AI Semiconductor</h3>
-<ul>
-<li><strong>Cross edge:</strong> <code>workload_shift_creates_edge_device_demand</code></li>
-<li><strong>왜 연결되는가:</strong> on-device inference가 가능해지면 일부 cloud workload는 줄 수 있지만, 로봇·모바일·edge device의 새 수요와 chip narrative를 만든다.</li>
-<li><strong>Research evidence 후보:</strong></li>
-<li><strong>5분 스캔 1순위:</strong> <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — Hugging Face Daily Papers, score 21, Agentic AI / Agent Evaluation / On-device LLM / Inference Stack</li>
-<li><a href="https://huggingface.co/papers/2605.20315">Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
-<li><strong>Market evidence 후보:</strong></li>
-<li><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPRjM2RE9UN3ZTQWJBY0R1cW5UUm94eTdoeWgxdzBudUlqOUNKS3Q2NlhYUnl1cllpcEpHbElPamxpeWF4NzJxZldOdFFMMUlrNVNOdzcwdnhFWDN4aEdCV0lSTXRuY3hJQ0tnRUxrbWp0Uk91TDJzVXFxbzhIaWRIYWlpeUFQVmVtT1FPUTNjX1piMTF6VkY1Nnpta3ZDY0RIc29na0RiVGp6OEFNc2FReGN1dW1GMW9jUG43eVR3RmFQb3gx?oc=5">The Nuclear Option: Data Centers and the Responsible Provision of Power - Data Center Knowledge</a> — Data Center Knowledge / quality 2 / hits: power, nuclear</li>
-<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQdGFzRFJYY0tpZkdYa3I4QzViVEs5a3Brd21WVGx1S0NlWlE0S3QweENqWjNuc0tYWWRhSklOOHVDOE50UzcxWTY1YXBYWGNZQjNCNV9GSjdOeU1ISnlwRTV3cEQzUVhhUUt0ZmcwR3VwVks2a3JWYlFzVVlMWFF3YVRlZVpRM2l2VDlVcWduVGJCQTR6aDFDc2R2b1QzbXA3T2tPbmdab0k4TW5ENWdJT0daOW96QW1BUlE?oc=5">One in three Japan firms using or considering AI robots: Reuters poll - Reuters</a></li>
-</ul>
-<h3>강 · Agentic AI / LLM Orchestration → Cloud Hyperscaler / Enterprise AI / Software Workflow</h3>
-<ul>
-<li><strong>Cross edge:</strong> <code>agent_workflows_drive_cloud_and_enterprise_adoption</code></li>
-<li><strong>왜 연결되는가:</strong> agent orchestration이 실제 workflow 제품으로 내려오면 cloud workload와 enterprise AI adoption narrative가 강화된다.</li>
-<li><strong>Research evidence 후보:</strong></li>
-<li><strong>먼저 읽을 논문:</strong> <a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — 산업 현장 visual QA에 agent 도구 사용을 붙이는 흐름이라, 범용 개인 agent보다는 산업 vertical agent 신호로 읽는다.</li>
-<li><strong>깊게 읽기 2. <a href="https://huggingface.co/papers/2605.14747">Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining</a></strong></li>
-<li><strong>Market evidence 후보:</strong></li>
-<li><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNRUtOVWhTV3VoaHpJakxzRGd1Nm5sWlBNbjQ2RTIwSjFZOVFRX2d3VWdaUHZqWVE0LUpmNUE3NkZ6ZnBaX1BhLUJrSVVuREV3clQyTnhQVU9zbU9wd2M2Q3IwSE5RSlZBSl9PM3dKaG9aUnB3X1Zza29fWWRSaUlKZ3dTTzV5dw?oc=5">AI Capex Surge: Meta, NextEra, Armada Reshape Buildout - Gotrade</a> — Gotrade / quality 2 / hits: meta, capex</li>
-<li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ3ZoQS1HTnhPNE04YW1Oa2pfZUlUU3U0SmRKSUJoUTFfZnNvbGpOaDg4ZUJOakptVERocGVpUkNBS0JTaHJqQ3VvOXB6amFWaHpXVk9kbVNxbTZVZDZDNklwV0JBVFNXUzl5THNVUFp3RTlvYjFyWVpWeHROMjh4VkRMaGdfQlNwM3NTQ2x3?oc=5">Data-Center Capex Hikes Positive For These AI Stocks - Investor&#x27;s Business Daily</a> — Investor&#x27;s Business Daily / quality 3 / hits: capex</li>
-</ul>
-<h3>강 · Memory / RAG / RAG Security → Enterprise AI Risk / Healthcare AI / Security</h3>
+  Paper[&quot;today_one_paper&quot;] --&gt; Edge[&quot;Cross edge&quot;]
+  Edge --&gt; Review[&quot;7영역 매칭 재검토&quot;]
+  Edge --&gt; MarketBrief[&quot;Market Brief / 신규 산업 후보 큐&quot;]</div></div>
+<h2>2. Cross Signal Heat (edge_strength + recognition_gap 분리)</h2>
+<h3>edge_strength 4/5 · recognition_gap 5/5 · Memory / RAG / RAG Security → Enterprise AI Risk / Healthcare AI / Security</h3>
 <ul>
 <li><strong>Cross edge:</strong> <code>retrieval_trust_risk_controls_enterprise_adoption</code></li>
-<li><strong>왜 연결되는가:</strong> RAG evidence 추적·오염·보안 문제가 커지면 regulated enterprise/healthcare AI adoption 속도와 governance narrative에 영향을 준다.</li>
+<li><strong>action_type:</strong> new_company_intake</li>
 <li><strong>Research evidence 후보:</strong></li>
-<li><a href="https://huggingface.co/papers/2605.20258">It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs</a> — RAG evidence 오염/추적 문제를 다루므로, agent memory와 retrieval을 붙일 때 생기는 신뢰성 리스크를 보여준다.</li>
-<li><a href="https://huggingface.co/papers/2605.20682">IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection with Agentic Tools</a> — agent memory와 local retrieval 신호라, memory/RAG 계층이 agent 제품의 하부 인프라가 되는지 확인할 만하다.</li>
+<li><a href="https://huggingface.co/papers/2607.08716">Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents</a> — Hugging Face Daily Papers, score 16, Agentic AI / Agent Planning / Agent Evaluation</li>
+<li><a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a> — local GPU retrieval 기반 agent memory 구현 신호; on-device/runtime·Memory/RAG 양쪽에서 후속 검증 필요.</li>
 <li><strong>Market evidence 후보:</strong></li>
-<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxPd2h6S2dQZnlYSWpNREZIclVJTzJlOGh5ZjBlZy1DQWtkX2Zkak5kVkZTcGNQUXpkSEJ1TUJVLTZQcW1ZOXB3TEJRZFVsWGxrd2NPbXFhckM0TnpYU2hvTFhZTjNqcGk1VkpoY1M0dG5MdGFSV01BTUFGQk42SXpzVkRBWlMxTk9YU1ljUG9OOHRGV0ZBc2Y1LUwzbHZCQUFfcGtRRF91VXNlVXlwUFhGQTNUVHRQNlNMbUREZFNWZmxwbURwdmNJUThsYXcxZE5SdzlwVWlDczNmUQ?oc=5">CUHK and Diagens sign MoU to enhance women and children’s healthcare with medical imaging AI - BioSpectrum Asia</a></li>
-<li><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1oWXV2TnUxME5XWWZodFlyN1JVWEpYQzY4QzRCaHZuRUZhRG5ZQWxaNGFtUHpQdFFkXzNfakhEQkJTSHFCQTIwR19SQWxfWjJIVTBfSHpXQ0R1Uy0zNlY3SWN3Q0ZIbEVjMW9j?oc=5">From Radiology to Drug Discovery, Survey Reveals AI Is Delivering Clear Return on Investment in Healthcare - NVIDIA Blog</a> — NVIDIA Blog / quality 2 / hits: healthcare, drug discovery</li>
+<li><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZEN1YmE3cUdTMzlBakRtUnp1VkI1dWkyMENHcFo3ZVkyalZiWXhkUTYzaDlVQ1Bma1ZIaFA4U3loaEVsNWNmS2FkQ2tNejhuZEJJM1RNTi14Z2ZIUFV5LTR6ZllFSmFYbUhUUFNWaEdWaTQ0NldjUldVQW9CbnM5S3l3TWRXdFFI?oc=5">Korea&#x27;s Energy Security Demands Nuclear-Renewables Integration - 조선일보</a> — 조선일보 / quality 2 / hits: nuclear</li>
+<li><a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUzlHM1U1b21mS3hLek1ucl9GUV8zbzZsTVYtUmFqel9BUmZVcFcta1lpRGNXc1FFMHdleElrcFVJUjFVUWxMOUdjYk9uNl9tT0Myd3JXblY0MzFmMWxWUXJaTXZIQXc4UmF3VVNqTldVZWxaRExWdVZ5MzVmcDZsbmhfTGtQZHljRWxjdnJ6anBvblBoaVV4eG1Ob09HWWtJTU5zYlFqSGMtdnhUU0hxRG5acnI2Z1NheG90NFJnZ2ZuWl9MZFl4ei1kZmwxcnZmaTVtaktIb3laNGx3MVdGSWc2NXlRa3dWYnlPN3ZscjdWYTA?oc=5">Generative AI Drives Revolutionary Changes in Healthcare: Key Trends and Opportunities - GlobeNewswire</a> — GlobeNewswire / quality 2 / hits: healthcare</li>
+<li><strong>Missing evidence needed:</strong> RAG 보안·traceability·data governance 사건/제품 근거, regulated industry pilot/production adoption, compliance 요구와 구매 전환 근거.</li>
 </ul>
-<h3>강 · Post-training / RLVR → AI Semiconductor / Cloud Capex ROI</h3>
+<h3>edge_strength 3/5 · recognition_gap 4/5 · Inference Stack → AI Data Center / Cloud Hyperscaler / Power Infrastructure</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>inference_cost_pressure_links_to_capex_and_power</code></li>
+<li><strong>action_type:</strong> watchlist_review</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>Agentic AI 16:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, Agentic AI / Tool Use / MCP / Agent Evaluation / On-device LLM / LLM Orchestration / Inference Stack</li>
+<li><a href="https://arxiv.org/abs/2607.08766v1">OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators</a> — arXiv, score 13, Agent Planning / Agent Evaluation / Post-training / Inference Stack</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1tV2hDM1JxOE5lLXFBN3lxM3ZVMk5xekpPcUJMVzJoLWJkSjg3LXAwel9aMlVxQ2F3REFhY3dQYWdhb0RvZVlhNWxobEtLZzRqNHp0bVJabmFGdTREMUpmT2dZWF9Gc3F5cEpPVjBlNTNhLWJXZXExWGlB?oc=5">From Backup Power to Critical Infrastructure, AIDC Is Rewriting the Energy Storage Playbook - TrendForce</a> — TrendForce / quality 4 / hits: power</li>
+<li><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQbHlPNnRFRUJ1Qnh5azFRSVRfdmx2YjNXakw0UUFQTTJhM2VLMTlRcERENlRycTFVRWgzNTNZUlpvRklJWFBvSW1BZU5XeUtzTG8zLU5wTWJHOHk1NndIYWJwWjZpWWoxYVBWdFZCVnZVUWR3Q3M4NlI2cTB0Z2N4T2Z6aWIwck03Y09RZmlwYmg?oc=5">How Trump and AI Data Centers Are Boosting Nuclear Power - EnergyNow.com</a> — EnergyNow.com / quality 2 / hits: power, nuclear</li>
+<li><strong>Missing evidence needed:</strong> 실제 serving cost/latency 변화, cloud usage 증가, capex·전력 주문/계약, IR/filing/실적발표의 반복 근거.</li>
+</ul>
+<h3>edge_strength 3/5 · recognition_gap 4/5 · On-device LLM / Edge AI → On-device AI / Robotics / AI Semiconductor</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>workload_shift_creates_edge_device_demand</code></li>
+<li><strong>action_type:</strong> watchlist_review</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>스킵 후보:</strong> HF #11 · 👍 12 <a href="https://huggingface.co/papers/2607.03803">CineMobile: On-Device Image-to-Video Diffusion…</a> / HF #8 · 👍 16 <a href="https://huggingface.co/papers/2607.08404">DrugGen 2: A disease-aware language model for e…</a> / HF #10 · 👍 13 <a href="https://huggingface.co/papers/2607.08763">OpenCoF: Learning to Reason Through Video Gener…</a> — 상세 카드는 §3 archive.</li>
+<li><strong>Agentic AI 16:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, Agentic AI / Tool Use / MCP / Agent Evaluation / On-device LLM / LLM Orchestration / Inference Stack</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPMElKaEJDandITTJfMDdTa3FVVlVybFItSVAzaHVuaFRpV3lVbE1vNHZYYzNFTVY5eXFacUt1cm14M1YzbGhIYVVBOHh6U3U3RDVsYkRRWUl2cmlXU0Y4blp3RUJJek05Qldrc3BCUWs5ZW93QXI4VUFOWW1pYWVHMm9MWERaZEN0emxpNkY2OHBjRkRDZ092S3owUXVodFFiQjgyYVZTcTlSNm5WbjROMmUwNktXaUV1MUozUm5UMUFSbkVjNDBtNERwT0NXOUR6RU4tRmMzdkFpTlZpcnc?oc=5">Meta Acquires Robotics AI Company To Fast-track Humanoid Robot Development: Report - Stocktwits</a></li>
+<li><strong>Top evidence:</strong> <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQbXFjQmw3WF9aT0NaMFhNSzJuSUlmWnZtSjlldmdpTnN5WXA4ZFctaFlJUDk4YVJvYmN4OC02a1ZIM1JLYXZjZTZMNkh4MHNRVFJCbzZNTWFIQXRQV21GZVBMT3hWbjNaeVlDYm5QOS1VTlZwSU1pWEMyN19kU0NIOHAtZU9fb0Jxa202c3FDWGdVMEtp?oc=5">Apple&#x27;s On-Device AI Path Gets Clearer - Yahoo Finance</a></li>
+<li><strong>Missing evidence needed:</strong> AI PC·mobile·robot 제품 출시/출하, on-device runtime 채택, edge semiconductor 주문/attach-rate, cloud 대체 또는 신규 workload 데이터.</li>
+</ul>
+<h3>edge_strength 3/5 · recognition_gap 3/5 · Agentic AI / LLM Orchestration → Cloud Hyperscaler / Enterprise AI / Software Workflow</h3>
+<ul>
+<li><strong>Cross edge:</strong> <code>agent_workflows_drive_cloud_and_enterprise_adoption</code></li>
+<li><strong>action_type:</strong> watchlist_review</li>
+<li><strong>Research evidence 후보:</strong></li>
+<li><strong>오늘 paper 1개만 본다면:</strong> <a href="https://huggingface.co/papers/2603.29616">Video-Oasis: Rethinking Evaluation of Video Understanding</a> — 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다.</li>
+<li><strong>Agentic AI 16:</strong> <a href="https://arxiv.org/abs/2607.08740v1">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</a> — arXiv, score 19, Agentic AI / Tool Use / MCP / Agent Evaluation / On-device LLM / LLM Orchestration / Inference Stack</li>
+<li><strong>Market evidence 후보:</strong></li>
+<li><a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxQQTJ3YVlrWUZvMk9WRGVSYXVDM0NTSE9fajlyVVFtVXJqcW9lSkkzOGltdXVGOTFpcmNfeEtGak1zTXowZEx4SzRVelpMUC1mbC13aHFjb2JWUFg4RmtCcHFHTFFxbkxTSjZrWUhiaUJjRXlLbFJXbVJPSERPbVMxUW1ucncyZHNjVWNIYlJnMmhxTlNzSnc1NDFWMXNoMVhQczFEdk1RcURCSHJwTmh2ejJzNGVlMXF3QnVfRnhKU3FoNGZ1WktTUkpOQzFZelFPWnRSdWdVREpqeFJiYUJJWU96akxwOW9DSWx4TEJoRld3cFJ5UWNncVJn?oc=5">Morgan Stanley warns AI capex slowdown could stall S&amp;P 500 rally - MSN</a> — MSN / quality 2 / hits: capex</li>
+<li><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPbEpuZ0p6UnRvTkNDanRxM3A2VjNYMm9QOVpWa0ozdWFEM1BFYzc2YlhxVFRqYzY3WGh2cmh1Y3ZwbkROTWVBY1JTalBlRzU3d0hJWllUanBiVjRpb3JJejJXaVRwOHZxdHZHZ2puRTVQSlhmVUxqMmpCNjJNQ3pVNWdWbUxwUE9JekxsZFN3YjlienRTVTA4Y1loMHdQd2hIQmxjN1l6N3pYdzQwMkxjTWlBV3c4cnpQcFpCdkZDQ1NQQURvR1NR?oc=5">Microsoft Stock Is Falling but AI Spending Still Points to Long Term Upside - simplywall.st</a> — simplywall.st / quality 2 / hits: microsoft</li>
+<li><strong>Missing evidence needed:</strong> 실제 workflow agent 사용량, tool-call/log volume, enterprise 계약·seat expansion, cloud workload 지표, 보안/운영 gate 통과 근거.</li>
+</ul>
+<h3>edge_strength 2/5 · recognition_gap 1/5 · Post-training / RLVR → AI Semiconductor / Cloud Capex ROI</h3>
 <ul>
 <li><strong>Cross edge:</strong> <code>model_capability_gains_raise_or_reprice_compute_demand</code></li>
-<li><strong>왜 연결되는가:</strong> post-training이 모델의 task 성공률을 높이면 agent 사용량과 compute demand를 늘릴 수 있고, 반대로 효율화는 capex ROI narrative를 재평가하게 만든다.</li>
+<li><strong>action_type:</strong> monitor</li>
 <li><strong>Research evidence 후보:</strong></li>
-<li><strong>깊게 읽기 3. <a href="https://huggingface.co/papers/2605.21468">You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories</a></strong></li>
-<li><a href="https://huggingface.co/papers/2605.21384">SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</a> — Hugging Face Daily Papers, score 17, Agentic AI / Agent Planning / Agent Evaluation / Post-training</li>
+<li><a href="https://arxiv.org/abs/2607.08766v1">OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators</a> — arXiv, score 13, Agent Planning / Agent Evaluation / Post-training / Inference Stack</li>
 <li><strong>Market evidence 후보:</strong></li>
-<li><a href="https://news.google.com/rss/articles/CBMiwgJBVV95cUxNckFNTUZVR3VnOFBFdHB0LU5xZktGMWhfclRvWnYyb2ZkX0JIZHVvQ05BUlJHMzdBS3piQng5dEdENTMtM2xyOUNTVzlLeTFycGoyVF9XYTFLY2VrRHNoM3RKaThOMTEtN0ZrOUZCOUxFdTZZRDd5NmRndENEYXd0RmZPMlA0MTNMUXlLY1JnSU1qTFRWMlBuRWhybm8yMDd5a3RaeXNrM3hqaTRoM3h2Q1pYZjlsakVFQV9SbVIyWDJ6ZFhFMWlia1ZvZ1J4MGJkZVZwNi1qMFRrUmNNTXYyckM4MWVzS3l0TDNvLTlRN0s2U3JoOVpNRzVHaEk4UXV5MGM4QUJLc2hKWHBzVzlWSXlYWkRteC1iVlM0OTdzbVE4UmVXY2tXM2pnbFRKT3hwTlRxYnd3OEZuVHNQc2ZlVnB3?oc=5">Supermicro Announces Support for Upcoming NVIDIA Vera Rubin NVL72, HGX Rubin NVL8 and Expanded Rack-Scale Manufacturi…</a> — Supermicro / quality 2</li>
-<li><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNRUtOVWhTV3VoaHpJakxzRGd1Nm5sWlBNbjQ2RTIwSjFZOVFRX2d3VWdaUHZqWVE0LUpmNUE3NkZ6ZnBaX1BhLUJrSVVuREV3clQyTnhQVU9zbU9wd2M2Q3IwSE5RSlZBSl9PM3dKaG9aUnB3X1Zza29fWWRSaUlKZ3dTTzV5dw?oc=5">AI Capex Surge: Meta, NextEra, Armada Reshape Buildout - Gotrade</a> — Gotrade / quality 2 / hits: meta, capex</li>
+<li><a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxQQTJ3YVlrWUZvMk9WRGVSYXVDM0NTSE9fajlyVVFtVXJqcW9lSkkzOGltdXVGOTFpcmNfeEtGak1zTXowZEx4SzRVelpMUC1mbC13aHFjb2JWUFg4RmtCcHFHTFFxbkxTSjZrWUhiaUJjRXlLbFJXbVJPSERPbVMxUW1ucncyZHNjVWNIYlJnMmhxTlNzSnc1NDFWMXNoMVhQczFEdk1RcURCSHJwTmh2ejJzNGVlMXF3QnVfRnhKU3FoNGZ1WktTUkpOQzFZelFPWnRSdWdVREpqeFJiYUJJWU96akxwOW9DSWx4TEJoRld3cFJ5UWNncVJn?oc=5">Morgan Stanley warns AI capex slowdown could stall S&amp;P 500 rally - MSN</a> — MSN / quality 2 / hits: capex</li>
+<li><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPbEpuZ0p6UnRvTkNDanRxM3A2VjNYMm9QOVpWa0ozdWFEM1BFYzc2YlhxVFRqYzY3WGh2cmh1Y3ZwbkROTWVBY1JTalBlRzU3d0hJWllUanBiVjRpb3JJejJXaVRwOHZxdHZHZ2puRTVQSlhmVUxqMmpCNjJNQ3pVNWdWbUxwUE9JekxsZFN3YjlienRTVTA4Y1loMHdQd2hIQmxjN1l6N3pYdzQwMkxjTWlBV3c4cnpQcFpCdkZDQ1NQQURvR1NR?oc=5">Microsoft Stock Is Falling but AI Spending Still Points to Long Term Upside - simplywall.st</a> — simplywall.st / quality 2 / hits: microsoft</li>
+<li><strong>Missing evidence needed:</strong> post-training 개선이 inference volume, training/fine-tuning spend, GPU/HBM/packaging 수요, capex ROI debate로 연결되는 반복 근거.</li>
 </ul>
-<hr>
-<h2>2. 오늘의 해석</h2>
+<h2>3. paper picker — today_one_paper</h2>
 <ul>
-<li>Research signal은 단독으로 끝내지 않고 <code>compute cost</code>, <code>agent workload</code>, <code>RAG trust</code>, <code>on-device shift</code> 중 어디에 닿는지 본다.</li>
-<li>Market narrative는 가격 예측이 아니라 <code>어떤 산업 node/edge가 강해졌는지</code>로 읽는다.</li>
-<li>가장 중요한 질문은 ‘기술 signal이 실제 workload나 capex narrative를 바꾸는가?’다.</li>
+<li><strong>입력:</strong> <code>08-data/daily_ai_signals/YYYY-MM-DD.json</code>의 today_one_paper/deep_card.</li>
+<li><strong>picker 기준:</strong> 형준님 5요소 충족도, 병목 변화 가능성, 시장 recognition_gap, 7~30일 검증 가능성, 본업 정보 우위(Samsung Research SR-470M·GRPO·KV cache·on-device·multimodal).</li>
+<li><strong>결과:</strong> signal_id=today_one_paper-2026-07-13-video-oasis-rethinking-evaluation-of-video-under · title=Video-Oasis: Rethinking Evaluation of Video Understanding</li>
+<li><strong>pick_reason:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
 </ul>
-<h2>3. 다음 확인 질문</h2>
+<h2>4. 7영역 destination (registry-driven)</h2>
 <ul>
-<li>Inference memory/cost 개선이 cloud inference 비용을 실제로 낮추는가, 아니면 agent 사용량 증가로 총 compute demand를 키우는가?</li>
-<li>On-device LLM은 cloud 수요를 대체하는가, 아니면 robotics/edge workload를 새로 만들어 semiconductor 수요를 넓히는가?</li>
-<li>RAG security/evidence tracing은 enterprise/healthcare adoption의 병목인가, 아니면 governance 제품 기회인가?</li>
-<li>Hyperscaler capex 뉴스가 HBM/packaging/power bottleneck과 같은 방향으로 움직이는가?</li>
+<li><strong>사용 registry:</strong> <code>08-data/industry-value-chain-registry.json</code>의 <code>korean_7area_mapping</code>.</li>
+<li>오늘 today_one_paper/market text에서 강한 7영역 destination 매칭 없음. registry keyword 보강 또는 수동 검토 필요.</li>
 </ul>
-<h2>4. 원본 리포트</h2>
+<h2>5. 다음 확인 (7d / 30d / 90d+ 분리)</h2>
+<h3>7d</h3>
 <ul>
-<li><span class="badge">Daily AI Research Radar — 2026-05-21</span></li>
-<li><span class="badge">Market Narrative Brief — 2026-05-21</span></li>
-</ul></article></main>
+<li>today_one_paper 원문/코드/벤치 확인 · signal_id=today_one_paper-2026-07-13-video-oasis-rethinking-evaluation-of-video-under</li>
+<li>연결 edge가 제품/IR/공시/고품질 뉴스에서 반복되는지 확인 · signal_id=today_one_paper-2026-07-13-video-oasis-rethinking-evaluation-of-video-under</li>
+</ul>
+<h3>30d</h3>
+<ul>
+<li>실적·conference·release note에서 workload/capex/order 언급 확인 · signal_id=today_one_paper-2026-07-13-video-oasis-rethinking-evaluation-of-video-under</li>
+<li>Market Brief 신규 산업 큐와 같은 영역 반복 여부 확인 · signal_id=today_one_paper-2026-07-13-video-oasis-rethinking-evaluation-of-video-under</li>
+</ul>
+<h3>90d+</h3>
+<ul>
+<li>prediction-board로 이동해 장기 thesis로 추적 · signal_id=today_one_paper-2026-07-13-video-oasis-rethinking-evaluation-of-video-under</li>
+</ul>
+<h2>6. 원본 (collapsed default)</h2>
+<details><summary>원본 리포트 링크</summary>
+<ul>
+<li><a href="/research-desk/reports/ai-research/2026-07-13.html">Daily AI Research Radar — 2026-07-13</a></li>
+<li><a href="/research-desk/reports/market/2026-07-13.html">Market Narrative Brief — 2026-07-13</a></li>
+<li>Structured JSON: <code>08-data/daily_cross_signals/2026-07-13.json</code></li>
+</ul>
+</details></article></main>
 </div>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
