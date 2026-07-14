@@ -1254,9 +1254,9 @@
       "price_position_52w_pct": 49.34782608695652,
       "return_20d_pct": -36.5034965034965,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 46.04,
-      "forward_pe": 32.0,
-      "price_to_book": 12.6,
+      "trailing_pe": 42.75,
+      "forward_pe": 29.0,
+      "price_to_book": 11.7,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3156,9 +3156,9 @@
       "price_position_52w_pct": 58.95104895104895,
       "return_20d_pct": -25.398230088495577,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 38.63,
-      "forward_pe": 31.0,
-      "price_to_book": 14.59,
+      "trailing_pe": 35.1,
+      "forward_pe": 28.0,
+      "price_to_book": 13.26,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3222,9 +3222,9 @@
       "price_position_52w_pct": 61.791044776119406,
       "return_20d_pct": -6.966292134831464,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 92.08,
-      "forward_pe": 61.0,
-      "price_to_book": 14.88,
+      "trailing_pe": 80.65,
+      "forward_pe": 53.0,
+      "price_to_book": 13.04,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3256,7 +3256,7 @@
         "factor": "AI data-center power bottleneck + switchgear/grid automation demand",
         "mechanism": "AI data-center load growth가 전력망·배전·개폐기·자동화 장비 수요를 키울 때 LS ELECTRIC은 수주잔고→매출 인식→margin→EPS revision 경로로 검증해야 한다.",
         "demand_unit": "switchgear/power-equipment orders, grid automation projects, data-center/utility capex, backlog/book-to-bill, pricing/lead time, OP margin, EPS/OP revision",
-        "bottleneck_pressured": "전력망/배전·개폐기 lead time 병목 후보. 대형 변압기 직접 수혜와 자동화/배전 장비 수혜를 분리해야 한다.",
+        "bottleneck_pressured": "AI data-center 전력망·변압기·전선/전력기기 lead-time 병목",
         "company_pressure_path": "AI DC 전력수요 → utility/data-center capex → 개폐기·배전·자동화 수주 → backlog shipment/판가 → OP margin/EPS revision → 가격반영 검증",
         "already_priced": "가격 207,000.00, 일간 +2.2%, 52W +61.8%, 20D -7.0%/60D +15.5%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "순수 변압기 대비 배전/자동화 niche가 덜 인식될 수 있으나, 수주와 margin conversion 전에는 gap이 아니라 검증 후보로 본다.",
