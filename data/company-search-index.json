@@ -796,9 +796,9 @@
       "price_position_52w_pct": 76.5897212543554,
       "return_20d_pct": 6.119951040391669,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": 2281.58,
+      "trailing_pe": 1944.74,
       "forward_pe": null,
-      "price_to_book": 11.83,
+      "price_to_book": 10.08,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -830,7 +830,7 @@
         "factor": "HBM/advanced packaging inspection and metrology demand",
         "mechanism": "HBM/chiplet 패키징 난이도 상승이 yield-control·inspection step 증가로 이어질 때, 인텍플러스는 고객 qualification→장비 수주/backlog→매출 인식→OP/EPS revision 경로를 확인해야 한다.",
         "demand_unit": "primary: 검사·계측 장비 order/backlog, 고객 qualification, repeat order · secondary: package/wafer inspection tool ASP, line 증설, customer capex allocation · financial: OP margin, 흑자 전환 시점, EPS/OP revision",
-        "bottleneck_pressured": "HBM/advanced packaging yield-control·검사 step 증가 병목 후보. 다만 slow-factor/수주 원문 evidence가 약하므로 병목 breaker가 아니라 확인필요 niche로 둔다.",
+        "bottleneck_pressured": "HBM/advanced packaging yield-control·검사/계측·WFE capex 병목",
         "company_pressure_path": "primary: 삼성/SK/OSAT/foundry capex → 검사·계측 장비 qualification/order → backlog shipment → 매출·OP margin · secondary: HBM/chiplet 복잡도 상승 → yield-control 검사 step 증가 → repeat order/ASP 개선 · korean_proxy: 국내 HBM 생태계 장비 lane 후보이나 고객·제품별 disclosure 전에는 보류",
         "already_priced": "가격 43,350.00, 일간 -3.7%, 52W +76.6%, 20D +6.1%/60D +76.9%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "recognition_gap 2~3/5: HBM 장비를 TC bonder 중심으로만 볼 때 검사/계측 niche gap은 가능하나, 20D/60D 급등·높은 PBR·적자 margin 때문에 partially recognized/already_chasing 위험이 크다.",
@@ -3483,9 +3483,9 @@
       "price_position_52w_pct": 22.61587639850826,
       "return_20d_pct": -37.94037940379403,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": -6.74,
+      "trailing_pe": -7.01,
       "forward_pe": null,
-      "price_to_book": 2.91,
+      "price_to_book": 3.03,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "약",
@@ -3517,7 +3517,7 @@
         "factor": "AI infra optical networking theme + 방산/특수망 diversification",
         "mechanism": "AI cluster scale-out가 optical interconnect 관심을 키우지만, 빛과전자 판단은 고속 AI DC 광모듈 SKU·고객 qualification·수주가 제품별 매출과 손실 축소로 이어지는지다.",
         "demand_unit": "primary: AI DC용 광모듈 SKU·샘플·qualification·order/backlog · secondary: PON/기지국·방산/특수망 광모듈 매출, 제품별 gross/OP margin · financial: 영업손실 축소, 현금흐름, CB/희석, EPS/OP revision",
-        "bottleneck_pressured": "AI cluster optical bottleneck breaker가 아니라 narrative beta. 직접 병목 소유 여부는 AI DC 고속 광모듈 SKU·고객 qualification·order/backlog 원문으로 확인해야 한다.",
+        "bottleneck_pressured": "AI cluster scale-out optical interconnect·광모듈/부품 병목",
         "company_pressure_path": "primary: 통신사/PON·기지국 광모듈 매출 둔화 → 방산/특수망 수주 보완 → 손실 축소/현금흐름 확인 · secondary: AI DC optical SKU·고객 qualification → order/backlog → 제품별 매출 → EPS/OP revision · korean_proxy: KOSDAQ 소형 광모듈/방산 테마 민감도는 있으나, 원문 고객·제품·수주 전에는 판단 보류",
         "already_priced": "가격 2,290.00, 일간 -1.5%, 52W +22.6%, 20D -37.9%/60D -64.2%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "recognition_gap 2/5: 광통신·방산·3.2T headline은 있으나 직접 실적 연결 전에는 recognition gap보다 hype/선반영·희석 위험이 더 크다.",
