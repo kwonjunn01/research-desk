@@ -215,9 +215,9 @@
       "price_position_52w_pct": 58.1470711278312,
       "return_20d_pct": -22.507211491682433,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 61.045753,
-      "forward_pe": 34.246952,
-      "price_to_book": 11.061764,
+      "trailing_pe": 75.010345,
+      "forward_pe": 35.187813,
+      "price_to_book": 10.4561615,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
@@ -1386,9 +1386,9 @@
       "price_position_52w_pct": 63.383434601854816,
       "return_20d_pct": -24.19825072886297,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 21.02,
+      "trailing_pe": 21.14,
       "forward_pe": 6.0,
-      "price_to_book": 3.62,
+      "price_to_book": 3.64,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -1420,7 +1420,7 @@
         "factor": "HBM catch-up + DRAM/DDR5 ASP + NAND/foundry drag balance",
         "mechanism": "AI memory demand는 DS Memory margin을 밀어올릴 수 있지만, 삼성은 HBM catch-up 속도와 foundry/System LSI drag가 EPS revision을 좌우한다.",
         "demand_unit": "HBM shipment·yield·share, DRAM/DDR5 ASP·bit shipment, enterprise SSD/NAND margin, foundry/System LSI loss, MX mix, capital return/foreign flow, EPS/OP revision",
-        "bottleneck_pressured": "HBM supply와 DRAM upcycle에는 노출되지만 현재 병목 breaker 지위는 SK하이닉스 대비 catch-up 검증이 필요하다.",
+        "bottleneck_pressured": "AI data-center eSSD·스토리지 컨트롤러 adoption/revenue-conversion 병목",
         "company_pressure_path": "AI memory demand → HBM qualification/share catch-up + DRAM ASP 상승 → DS margin 개선 → foundry/System LSI drag 상쇄 → EPS/OP revision → 가격반영 검증",
         "already_priced": "가격 260,000.00, 일간 -8.8%, 52W +63.4%, 20D -24.2%/60D +23.2%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "gap은 “삼성도 AI 수혜”가 아니라 HBM catch-up 속도와 foundry drag 축소가 아직 보수적으로 반영됐는지다.",
@@ -1454,9 +1454,9 @@
       "price_position_52w_pct": 60.10211524434719,
       "return_20d_pct": -20.52896725440806,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 18.29,
+      "trailing_pe": 18.38,
       "forward_pe": 6.0,
-      "price_to_book": 7.96,
+      "price_to_book": 8.0,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -1488,7 +1488,7 @@
         "factor": "HBM/DRAM memory bottleneck + AI accelerator memory attach",
         "mechanism": "AI accelerator 증설은 HBM attach·서버 DRAM bit growth·premium margin으로 번역된다. SK하이닉스 판단은 출하/수율/share가 OP/EPS revision으로 실제 연결되는지다.",
         "demand_unit": "HBM3E/HBM4 shipment·ASP·yield, NVIDIA/AI accelerator allocation, server DRAM bit/ASP, NAND 회복, OP/EPS revision",
-        "bottleneck_pressured": "HBM capacity/yield와 high-bandwidth memory supply가 직접 병목이다. 단, 병목 소유가 가격에 이미 크게 반영됐는지 분리해야 한다.",
+        "bottleneck_pressured": "HBM/DRAM/NAND 공급·가격·margin cycle 병목",
         "company_pressure_path": "AI accelerator demand → HBM allocation/qualification → HBM shipment·premium margin → DRAM/NAND cycle support → OP/EPS revision → 가격반영 검증",
         "already_priced": "가격 1,893,000.00, 일간 -13.2%, 52W +60.1%, 20D -20.5%/60D +66.6%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장 인지도는 이미 강함. 남은 gap은 HBM4/3E premium margin과 DRAM ASP가 consensus를 다시 올리는지 여부다.",
@@ -2246,8 +2246,8 @@
       "return_20d_pct": -12.983077231165641,
       "fundamentals_coverage": 90.0,
       "trailing_pe": null,
-      "forward_pe": -76.11349,
-      "price_to_book": 9.936277,
+      "forward_pe": -71.343544,
+      "price_to_book": 9.313583,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
