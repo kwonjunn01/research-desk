@@ -1,6 +1,6 @@
 {
   "manager": "Codex 5.5",
-  "generated_at": "2026-07-23",
+  "generated_at": "2026-07-24",
   "count": 80,
   "items": [
     {
@@ -796,9 +796,9 @@
       "price_position_52w_pct": 58.452093839070386,
       "return_20d_pct": -14.163614163614168,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": 1873.68,
+      "trailing_pe": 1886.84,
       "forward_pe": null,
-      "price_to_book": 9.71,
+      "price_to_book": 9.78,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
