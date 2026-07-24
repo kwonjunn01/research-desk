@@ -304,17 +304,17 @@
 <li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 103 <a href="https://huggingface.co/papers/2607.21461">AREX: Towards a Recursively Self-Improving Agent for Deep…</a> / #2 👍 40 <a href="https://huggingface.co/papers/2607.20061">ReferTrack: Referring Then Tracking for Embodied Visual T…</a> / #3 👍 38 <a href="https://huggingface.co/papers/2605.09635">K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benc…</a></li>
 <li><strong>HF Daily quality gate:</strong> 정상 — 제목 20/20, 순위 20/20, upvote 20/20, abstract 20/20 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
 <li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-07-24이 report date와 일치한다.</li>
-<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 5, Benchmark / Evaluation 2, Reasoning / Post-training 2, Multimodal / Generation 1 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(5개).</li>
-<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 6, Benchmark / Evaluation 2, Reasoning / Post-training 2가 핵심이고, 깊게 읽을 후보는 Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent… / AREX: Towards a Recursively Self-Improving Agent for… / ReferTrack: Referring Then Tracking for Embodied Visu….</li>
+<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 4, Benchmark / Evaluation 2, Reasoning / Post-training 2, Robotics / Embodied 1, Multimodal / Generation 1 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(4개).</li>
+<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 5, Benchmark / Evaluation 2, Reasoning / Post-training 2가 핵심이고, 깊게 읽을 후보는 Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent… / AREX: Towards a Recursively Self-Improving Agent for… / K12-KGraph: A Curriculum-Aligned Knowledge Graph for….</li>
 </ul>
 <h4>Decision routing — 먼저 볼/훑을/스킵 후보</h4>
 <ul>
 <li><strong>오늘 읽을 2~3개:</strong> 상세 카드는 아래 <code>Deep Card</code>.</li>
 <li>↳ HF #6 · 👍 17 <a href="https://huggingface.co/papers/2607.20911">Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmar…</a></li>
 <li>↳ HF #1 · 👍 103 <a href="https://huggingface.co/papers/2607.21461">AREX: Towards a Recursively Self-Improving Agent for Deep Res…</a></li>
-<li>↳ HF #2 · 👍 40 <a href="https://huggingface.co/papers/2607.20061">ReferTrack: Referring Then Tracking for Embodied Visual Track…</a></li>
-<li><strong>훑고 넘어갈 것:</strong> 상세 카드는 §2 archive.</li>
 <li>↳ HF #3 · 👍 38 <a href="https://huggingface.co/papers/2605.09635">K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmar…</a></li>
+<li><strong>훑고 넘어갈 것:</strong> 상세 카드는 §2 archive.</li>
+<li>↳ HF #2 · 👍 40 <a href="https://huggingface.co/papers/2607.20061">ReferTrack: Referring Then Tracking for Embodied Visual Track…</a></li>
 <li>↳ HF #4 · 👍 38 <a href="https://huggingface.co/papers/2607.21556">Visual Contrastive Self-Distillation</a></li>
 <li>↳ HF #5 · 👍 34 <a href="https://huggingface.co/papers/2607.21072">Show, Don&#x27;t Tell: Evaluating Spatial Cognition in Generative…</a></li>
 <li>↳ HF #7 · 👍 17 <a href="https://huggingface.co/papers/2607.12746">Color Pass-Through via Camera-Display Coupling</a></li>
@@ -351,18 +351,18 @@
 <li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Runtime / Ops; adoption evidence=abstract_enriched; workload/bottleneck=research_relevance_check; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
-<h4><a href="https://huggingface.co/papers/2607.20061">ReferTrack: Referring Then Tracking for Embodied Visual Tracking</a></h4>
+<h4><a href="https://huggingface.co/papers/2605.09635">K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #2 · 👍 40 · Agent / Tool-use · digest score 18 · deep_candidate_3</li>
-<li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 19</li>
-<li><strong>쉽게 말하면:</strong> agent가 도구를 쓰며 남긴 긴 작업 기록을 학습 데이터로 압축해 long-context reasoning을 키우려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Embodied visual tracking (EVT) requires a mobile agent to continuously follow a specific target described in natural language using only onboard vision. While recent vision-language-action (VLA) policies unify target identification and trajectory planning, th…</li>
-<li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조</li>
-<li><strong>내 판단:</strong> agent 실행 로그를 long-context 학습 재료로 바꾸는 시도라, 개인 agent의 긴 작업 기억·도구 관찰 통합 병목과 직접 닿는다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
-<li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-24-refertrack-referring-then-tracking-for-embodied-; source=Hugging Face Daily Papers; paper_id=2607.20061; layer=Agent / Tool-use; agent_layer=Model &amp; Reasoning; bottleneck=research_relevance_check; agent_bottleneck=long_horizon_reliability; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Model &amp; Reasoning; adoption evidence=abstract_enriched; workload/bottleneck=long_horizon_reliability; market recognition=아직 관찰; price/revision=연결 전</li>
-<li><strong>Invalidation:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
+<li><strong>위치:</strong> HF #3 · 👍 38 · Benchmark / Evaluation · digest score 17 · deep_candidate_3</li>
+<li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 16</li>
+<li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Large language models are increasingly used in K-12 education, but existing benchmarks mainly test exam question answering rather than understanding how curriculum knowledge is structured and visually presented. We call this capability curriculum cognition.</li>
+<li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트</li>
+<li><strong>내 판단:</strong> Benchmark / Evaluation 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
+<li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-07-24-k12-kgraph-a-curriculum-aligned-knowledge-graph-; source=Hugging Face Daily Papers; paper_id=2605.09635; layer=Benchmark / Evaluation; agent_layer=Eval / Observability; bottleneck=eval_production_gap; agent_bottleneck=eval_production_gap; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Eval / Observability; adoption evidence=abstract_enriched; workload/bottleneck=eval_production_gap; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Invalidation:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h3>한눈에 보는 오늘의 AI Research 지도</h3>
 <div class="viz-card"><div class="mermaid">flowchart LR
@@ -382,14 +382,14 @@
 </ul>
 <details><summary>아래는 archive입니다. 시간 없으면 여기서 멈춰도 됨.</summary>
 <h2>2. 훑을 것 3~5개</h2>
-<h4>5분 훑기 1. <a href="https://huggingface.co/papers/2605.09635">K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs</a></h4>
+<h4>5분 훑기 1. <a href="https://huggingface.co/papers/2607.20061">ReferTrack: Referring Then Tracking for Embodied Visual Tracking</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #3 · 👍 38 · Benchmark / Evaluation · Hao Liang, Qihan Lin · digest score 17</li>
-<li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Large language models are increasingly used in K-12 education, but existing benchmarks mainly test exam question answering rather than understanding how curriculum knowledge is structured and visually presented. We call this capability curriculum cognition.</li>
-<li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트</li>
-<li><strong>내 판단:</strong> Benchmark / Evaluation 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
-<li><strong>확인할 것:</strong> 코드/데이터/benchmark 공개 여부와 실제 사용 조건.</li>
+<li><strong>위치:</strong> HF #2 · 👍 40 · Robotics / Embodied · Hanjing Ye, Tianle Zeng · digest score 15</li>
+<li><strong>쉽게 말하면:</strong> 언어로 지정한 대상을 mobile agent가 onboard vision만으로 계속 따라가도록, 지칭(referring)과 추적(tracking)을 분리해 안정성을 높이려는 embodied visual tracking 논문이다.</li>
+<li><strong>핵심 내용:</strong> Embodied visual tracking (EVT) requires a mobile agent to continuously follow a specific target described in natural language using only onboard vision. While recent vision-language-action (VLA) policies unify target identification and trajectory planning, their chain-of-thought (CoT) reasoning often operates in abstr…</li>
+<li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; VLA = 시각-언어-행동 모델: 시각 관찰과 언어 지시를 행동으로 연결하는 embodied AI 모델; visual tracking = 시각 추적: 카메라 관찰만으로 특정 대상을 계속 찾아 따라가는 문제</li>
+<li><strong>내 판단:</strong> 범용 browser/tool agent 신호가 아니라, 물리 환경 agent의 <code>대상 식별→지속 추적→경로 계획</code> 체인이 실제로 안정적인지 보는 embodied control 신호로 읽는다. 물리 agent는 말로 지정된 목표를 놓치지 않고 추적·재계획해야 하므로, perception과 control 사이의 안정성이 실제 adoption 병목이 되기 때문이다.</li>
+<li><strong>확인할 것:</strong> 언어 지시가 바뀌거나 target이 가려지는 상황에서 추적 실패·재식별·경로 재계획을 실제/시뮬레이터 환경으로 검증했는지.</li>
 </ul>
 <h4>5분 훑기 2. <a href="https://huggingface.co/papers/2607.21556">Visual Contrastive Self-Distillation</a></h4>
 <ul>
@@ -482,7 +482,7 @@
 <p>투자 추천 아님. AI research signal이 workload/bottleneck/industry narrative로 번역될 수 있는지 보는 후보만 기록한다.</p>
 <ul>
 <li><strong>후보 1:</strong> agent eval-production gap → observability·evaluation·workflow QA tooling 후보</li>
-<li><strong>근거 signal:</strong> <a href="https://huggingface.co/papers/2607.20911">Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction</a> · bottleneck=eval_production_gap</li>
+<li><strong>근거 signal:</strong> <a href="https://huggingface.co/papers/2605.09635">K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs</a> · bottleneck=eval_production_gap</li>
 <li><strong>전파 사슬:</strong> technical legitimacy → workflow adoption → workload/bottleneck → buyer/capex recognition → market narrative</li>
 <li><strong>다음 확인:</strong> 같은 병목이 제품 release note, hyperscaler capex, infra vendor commentary에서 반복되는지</li>
 <li><strong>반증:</strong> 논문/데모가 benchmark 내부에만 머물고 실제 workload 증가 증거가 없으면 보류</li>
