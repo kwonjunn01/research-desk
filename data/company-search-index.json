@@ -1254,9 +1254,9 @@
       "price_position_52w_pct": 16.999260901699927,
       "return_20d_pct": -29.70588235294118,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 36.36,
+      "trailing_pe": 36.16,
       "forward_pe": 25.0,
-      "price_to_book": 9.95,
+      "price_to_book": 9.89,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3156,9 +3156,9 @@
       "price_position_52w_pct": 36.57802308078274,
       "return_20d_pct": -16.000000000000004,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 36.61,
+      "trailing_pe": 37.12,
       "forward_pe": 30.0,
-      "price_to_book": 13.83,
+      "price_to_book": 14.02,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3222,9 +3222,9 @@
       "price_position_52w_pct": 52.883263009845294,
       "return_20d_pct": -8.21917808219178,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 89.41,
+      "trailing_pe": 89.86,
       "forward_pe": 57.0,
-      "price_to_book": 14.45,
+      "price_to_book": 14.52,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -4585,9 +4585,9 @@
       "price_position_52w_pct": 80.36470286263241,
       "return_20d_pct": 10.474599626633685,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 140.51111,
-      "forward_pe": 63.549175,
-      "price_to_book": 18.92972,
+      "trailing_pe": 286.53983,
+      "forward_pe": 78.49493,
+      "price_to_book": 9.51428,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
