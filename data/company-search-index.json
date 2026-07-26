@@ -22,9 +22,9 @@
       "price_position_52w_pct": 59.0175258185625,
       "return_20d_pct": 5.670784814207841,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 33.43425,
-      "forward_pe": 17.275133,
-      "price_to_book": 33.785538,
+      "trailing_pe": 31.626911,
+      "forward_pe": 16.072695,
+      "price_to_book": 25.630732,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -56,7 +56,7 @@
         "factor": "Blackwell revenue conversion",
         "mechanism": "AI infra demand → AI accelerator / inference infrastructure 수요 → Data Center GPU/accelerator revenue, networking attach, software/support, gross margin, HBM/CoWoS allocation, forward EPS/revenue revision → EPS/revenue revision → price reflection 순서로 확인한다.",
         "demand_unit": "Data Center GPU/accelerator revenue, networking attach, software/support, gross margin, HBM/CoWoS allocation, forward EPS/revenue revision",
-        "bottleneck_pressured": "HBM/advanced packaging yield-control·검사/계측·WFE capex 병목",
+        "bottleneck_pressured": "HBM/DRAM/NAND 공급·가격·margin cycle 병목",
         "company_pressure_path": "Data Center GPU/accelerator revenue, networking attach, software/support, gross margin, HBM/CoWoS allocation, forward EPS/revenue revision",
         "already_priced": "가격 206.84, 일간 -0.9%, 52W +59.0%, 20D +5.7%/60D -3.0%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 Blackwell ramp와 AI data-center demand를 이미 강하게 믿고 있다. 새 정보는 매출 성장률 자체보다 공급 allocation, gross margin, hyperscaler capex 지속성, EPS revision이 가격 상단 부담을 정당화하는지다.",
@@ -474,9 +474,9 @@
       "price_position_52w_pct": 70.39169639779622,
       "return_20d_pct": -7.259934928010525,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 38.02735,
-      "forward_pe": 22.782671,
-      "price_to_book": 68.05812,
+      "trailing_pe": 35.574074,
+      "forward_pe": 18.947647,
+      "price_to_book": 84.03323,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
