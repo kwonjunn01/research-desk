@@ -320,8 +320,8 @@
 <li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 287 <a href="https://huggingface.co/papers/2607.28618">AskChem: Claim-Centered Infrastructure for Chemistry Lite…</a> / #2 👍 277 <a href="https://huggingface.co/papers/2607.28227">Qwen-UI-Agent Technical Report: Toward Next-Generation Re…</a> / #3 👍 252 <a href="https://huggingface.co/papers/2607.26760">Metis: Memory Foundation Model</a></li>
 <li><strong>HF Daily quality gate:</strong> 정상 — 제목 30/30, 순위 30/30, upvote 30/30, abstract 30/30 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
 <li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-08-01이 report date와 일치한다.</li>
-<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 6, RAG / Memory 3, Reasoning / Post-training 1 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(6개).</li>
-<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 6, RAG / Memory 3, Reasoning / Post-training 1가 핵심이고, 깊게 읽을 후보는 Qwen-UI-Agent Technical Report: Toward Next-Generatio… / AskChem: Claim-Centered Infrastructure for Chemistry… / Frontis-MA1: Training an AI4AI Model towards Recursiv….</li>
+<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 5, RAG / Memory 4, Reasoning / Post-training 1 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(5개).</li>
+<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 5, RAG / Memory 4, Reasoning / Post-training 1가 핵심이고, 깊게 읽을 후보는 Qwen-UI-Agent Technical Report: Toward Next-Generatio… / AskChem: Claim-Centered Infrastructure for Chemistry… / Frontis-MA1: Training an AI4AI Model towards Recursiv….</li>
 </ul>
 <h4>Decision routing — 먼저 볼/훑을/스킵 후보</h4>
 <ul>
@@ -400,12 +400,12 @@
 <h2>2. 훑을 것 3~5개</h2>
 <h4>5분 훑기 1. <a href="https://huggingface.co/papers/2607.26760">Metis: Memory Foundation Model</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #3 · 👍 252 · Agent / Tool-use · Zeyu Zhang, Ziliang Guo · digest score 20</li>
-<li><strong>쉽게 말하면:</strong> 이미지·영상·소리 같은 비텍스트 데이터를 더 잘 이해하거나 생성하려는 논문이다.</li>
+<li><strong>위치:</strong> HF #3 · 👍 252 · RAG / Memory · Zeyu Zhang, Ziliang Guo · digest score 18</li>
+<li><strong>쉽게 말하면:</strong> agent가 대화기록·tool 출력·긴 prompt를 무작정 context에 쌓지 않고, 무엇을 기억/삭제/불러올지 lifecycle로 관리하려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Recent advances in AI agents have increasingly internalized native capabilities into their underlying foundation models, giving rise to multimodal foundation models and large reasoning models. However, agent memory is still primarily implemented through external modules, leaving the native memory capability largely un…</li>
 <li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
-<li><strong>내 판단:</strong> Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
-<li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
+<li><strong>내 판단:</strong> agent memory를 단순 저장소/RAG 문제가 아니라 <code>선별→구조화→저장소 선택→망각→현재 context 조립</code> lifecycle 문제로 재정의한다. 개인 agent의 비용·recall·provenance 병목과 직접 닿는다. agent 실패 원인이 reasoning 부족보다 context 과잉·recall 누락·token 비용으로 이동하고 있는지 확인할 수 있기 때문이다.</li>
+<li><strong>확인할 것:</strong> context lifecycle 정책이 memory 저장·망각·provenance·현재 task relevance·token cost를 실제 agent workflow에서 함께 줄이는지.</li>
 </ul>
 <h4>5분 훑기 2. <a href="https://huggingface.co/papers/2607.28624">PhiZero: A World Model Built Around Physical Language</a></h4>
 <ul>
@@ -428,11 +428,11 @@
 <h4>5분 훑기 4. <a href="https://huggingface.co/papers/2607.27919">Memory Decoder at Scale: A Pretrained, Parametric Long-Term Memory</a></h4>
 <ul>
 <li><strong>위치:</strong> HF #7 · 👍 48 · RAG / Memory · Rubin Wei, Jiaqi Cao · digest score 17</li>
-<li><strong>쉽게 말하면:</strong> LLM/agent가 검색 결과를 그대로 먹지 않고, 문서 묶음의 중복·충돌·보완성을 따져 RAG 근거 품질을 높이려는 retrieval/reranking 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> agent가 대화기록·tool 출력·긴 prompt를 무작정 context에 쌓지 않고, 무엇을 기억/삭제/불러올지 lifecycle로 관리하려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Decoder-only language models entangle long-term memory and reasoning in a single parameter set, making it difficult to scale memory capacity independently. Memory Decoder introduces a parametric long-term memory module but only studies it at a relatively small scale.</li>
 <li><strong>핵심 용어:</strong> retrieval/RAG = 검색/RAG: 외부 문서나 기억을 찾아 모델 답변에 붙이는 방식</li>
-<li><strong>내 판단:</strong> agent 답변의 상한이 retrieval set 품질에 묶인다는 점을 직접 겨냥한다. 단일 문서 점수보다 문서 묶음의 다양성·충돌·보완성을 보는 쪽이라 RAG/검색 품질 병목으로 읽는다. agent와 long-context workflow가 늘수록 답변 품질은 모델 자체보다 검색 근거 묶음의 품질·비용·감사 가능성에 막히기 때문이다.</li>
-<li><strong>확인할 것:</strong> 정확도 개선이 단일 benchmark가 아니라 실제 RAG/search pipeline의 latency·중복 제거·상충 근거 처리까지 개선하는지.</li>
+<li><strong>내 판단:</strong> agent memory를 단순 저장소/RAG 문제가 아니라 <code>선별→구조화→저장소 선택→망각→현재 context 조립</code> lifecycle 문제로 재정의한다. 개인 agent의 비용·recall·provenance 병목과 직접 닿는다. agent 실패 원인이 reasoning 부족보다 context 과잉·recall 누락·token 비용으로 이동하고 있는지 확인할 수 있기 때문이다.</li>
+<li><strong>확인할 것:</strong> context lifecycle 정책이 memory 저장·망각·provenance·현재 task relevance·token cost를 실제 agent workflow에서 함께 줄이는지.</li>
 </ul>
 <h2>3. 스킵 표</h2>
 <h4>오늘은 스킵 1. <a href="https://huggingface.co/papers/2607.28625">ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine</a></h4>
