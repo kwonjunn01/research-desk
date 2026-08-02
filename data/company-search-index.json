@@ -86,9 +86,9 @@
       "price_position_52w_pct": 75.06831401286725,
       "return_20d_pct": -8.047199168596098,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 185.34552,
-      "forward_pe": 42.005203,
-      "price_to_book": 14.107012,
+      "trailing_pe": 158.71666,
+      "forward_pe": 34.45045,
+      "price_to_book": 12.040104,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -120,7 +120,7 @@
         "factor": "Instinct ramp conversion",
         "mechanism": "AI infra demand → AI accelerator challenger / CPU-GPU platform 수요 → Instinct GPU shipment, MI350/MI400 ramp, EPYC data-center CPU attach, HBM/supply allocation, data-center revenue mix, gross margin, FCF/EPS revision → EPS/revenue revision → price reflection 순서로 확인한다.",
         "demand_unit": "Instinct GPU shipment, MI350/MI400 ramp, EPYC data-center CPU attach, HBM/supply allocation, data-center revenue mix, gross margin, FCF/EPS revision",
-        "bottleneck_pressured": "HBM/advanced packaging yield-control·검사/계측·WFE capex 병목",
+        "bottleneck_pressured": "HBM/DRAM/NAND 공급·가격·margin cycle 병목",
         "company_pressure_path": "Instinct GPU shipment, MI350/MI400 ramp, EPYC data-center CPU attach, HBM/supply allocation, data-center revenue mix, gross margin, FCF/EPS revision",
         "already_priced": "가격 476.15, 일간 -1.9%, 52W +75.1%, 20D -8.0%/60D +34.0%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 AMD를 NVIDIA 대체/보완 GPU 후보로 보지만, 이미 기대가 주가에 반영될 수 있다. 새 판단은 accelerator 수주·출하·마진이 실제 EPS/revenue revision을 만드는지다.",
@@ -990,9 +990,9 @@
       "price_position_52w_pct": 35.7225769007545,
       "return_20d_pct": -6.833712984054674,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": 109.53,
+      "trailing_pe": 114.89,
       "forward_pe": null,
-      "price_to_book": 30.5,
+      "price_to_book": 32.0,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -2703,9 +2703,9 @@
       "price_position_52w_pct": 47.0342805384743,
       "return_20d_pct": -19.618673350009196,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 81.38694,
-      "forward_pe": 36.655846,
-      "price_to_book": 31.439386,
+      "trailing_pe": 54.653847,
+      "forward_pe": 26.652472,
+      "price_to_book": 21.849676,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
