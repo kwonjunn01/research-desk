@@ -308,12 +308,12 @@
 <blockquote>자동 수집 기반 초안이다. 공개/블로그화 전 사람이 검토한다.</blockquote>
 <h2>0. 20초 요약</h2>
 <ul>
-<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 31, <span class="badge">Agentic AI</span> 21, <span class="badge">Agent Evaluation</span> 12 쪽 attention이 강하다.</li>
+<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 31, <span class="badge">Agentic AI</span> 22, <span class="badge">Agent Evaluation</span> 12 쪽 attention이 강하다.</li>
 <li><strong>오늘 paper 1개만 본다면:</strong> <a href="https://huggingface.co/papers/2607.23802">From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement</a> — reasoning 강화학습이 꼭 대규모 업데이트를 요구하는지, 작은 학습으로도 확장되는지 확인할 재료다.</li>
 <li><strong>시장 연결 후보 1개:</strong> agent/inference workload → HBM·server memory·AI server/power 병목 후보</li>
 <li><strong>오늘은 AI Radar 스킵해도 됨 여부:</strong> 아니오 — today_one_paper와 skim 후보만 보면 된다.</li>
-<li><strong>수집 품질:</strong> Total 76, HF Daily 24; HF gate 정상 — 제목 24/24, 순위 24/24, upvote 22/24(일부 누락은 비차단), abstract 24/24 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
-<li><strong>Collected at:</strong> 2026-08-03T14:01+00:00 UTC / 2026-08-03 23:01 KST</li>
+<li><strong>수집 품질:</strong> Total 77, HF Daily 25; HF gate 정상 — 제목 25/25, 순위 25/25, upvote 22/25(일부 누락은 비차단), abstract 25/25 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
+<li><strong>Collected at:</strong> 2026-08-03T14:30+00:00 UTC / 2026-08-03 23:30 KST</li>
 </ul>
 <hr>
 <h2>1. 5분 본문 — HF digest + Deep Card</h2>
@@ -321,21 +321,21 @@
 <h3>HF Daily digest — 먼저 볼 논문</h3>
 <h4>20초 요약</h4>
 <ul>
-<li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 64 <a href="https://huggingface.co/papers/2607.23802">From RLVR to RLSVR: Task Transformation Induces Self-Veri…</a> / #2 👍 46 <a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model wi…</a> / #3 👍 39 <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></li>
-<li><strong>HF Daily quality gate:</strong> 정상 — 제목 24/24, 순위 24/24, upvote 22/24(일부 누락은 비차단), abstract 24/24 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
+<li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 64 <a href="https://huggingface.co/papers/2607.23802">From RLVR to RLSVR: Task Transformation Induces Self-Veri…</a> / #2 👍 46 <a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model wi…</a> / #3 👍 40 <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></li>
+<li><strong>HF Daily quality gate:</strong> 정상 — 제목 25/25, 순위 25/25, upvote 22/25(일부 누락은 비차단), abstract 25/25 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
 <li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-08-03이 report date와 일치한다.</li>
 <li><strong>Top 10 layer mix:</strong> Inference / Efficiency 2, Agent / Tool-use 2, General AI Research 2, Robotics / Embodied 1, Multimodal / Generation 1, Reasoning / Post-training 1, RAG / Memory 1 — 오늘 먼저 볼 축은 <code>Inference / Efficiency</code>(2개).</li>
-<li><strong>논문 결론:</strong> 오늘은 Inference / Efficiency 3, Agent / Tool-use 3, General AI Research 2가 핵심이고, 깊게 읽을 후보는 From RLVR to RLSVR: Task Transformation Induces Self-… / SAF-OPD: Stable Advantage Fusion for On-Policy Distil… / N_0-VTLA: Scaling Vision-Tactile-Language-Action Mode….</li>
+<li><strong>논문 결론:</strong> 오늘은 Inference / Efficiency 3, Agent / Tool-use 3, General AI Research 2가 핵심이고, 깊게 읽을 후보는 From RLVR to RLSVR: Task Transformation Induces Self-… / SAF-OPD: Stable Advantage Fusion for On-Policy Distil… / Meshy T2: Fast Native Mesh Generation with Flow Match….</li>
 </ul>
 <h4>Decision routing — 먼저 볼/훑을/스킵 후보</h4>
 <ul>
 <li><strong>오늘 읽을 2~3개:</strong> 상세 카드는 아래 <code>Deep Card</code>.</li>
 <li>↳ HF #1 · 👍 64 <a href="https://huggingface.co/papers/2607.23802">From RLVR to RLSVR: Task Transformation Induces Self-Verifiab…</a></li>
 <li>↳ HF #9 · 👍 21 <a href="https://huggingface.co/papers/2607.29209">SAF-OPD: Stable Advantage Fusion for On-Policy Distillation</a></li>
-<li>↳ HF #2 · 👍 46 <a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with L…</a></li>
+<li>↳ HF #3 · 👍 40 <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></li>
 <li><strong>훑고 넘어갈 것:</strong> 상세 카드는 §2 archive.</li>
-<li>↳ HF #3 · 👍 39 <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></li>
-<li>↳ HF #4 · 👍 31 <a href="https://huggingface.co/papers/2607.27201">Mental World Modeling</a></li>
+<li>↳ HF #2 · 👍 46 <a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with L…</a></li>
+<li>↳ HF #4 · 👍 37 <a href="https://huggingface.co/papers/2607.27201">Mental World Modeling</a></li>
 <li>↳ HF #5 · 👍 29 <a href="https://huggingface.co/papers/2607.28617">AISPA: User-Centric System Prompt Auditing for Large Language…</a></li>
 <li>↳ HF #6 · 👍 24 <a href="https://huggingface.co/papers/2607.23783">N_0-TWAM: Scaling Tactile-Native World-Action Model for Conta…</a></li>
 <li><strong>스킵 후보:</strong> 상세 카드는 §3 archive.</li>
@@ -371,18 +371,18 @@
 <li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Model &amp; Reasoning; adoption evidence=abstract_enriched; workload/bottleneck=cost_latency; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
-<h4><a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens</a></h4>
+<h4><a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #2 · 👍 46 · Robotics / Embodied · digest score 15 · deep_candidate_3</li>
+<li><strong>위치:</strong> HF #3 · 👍 40 · Inference / Efficiency · digest score 16 · deep_candidate_3</li>
 <li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 16</li>
-<li><strong>쉽게 말하면:</strong> Physical AI/로봇 agent가 언어·이미지·영상·소리·행동을 하나의 world model로 묶어 쓰려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> We present $N_0$-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-grained contact-rich manipulation with tactile perception and tactile-feedback control, and (2) offline policy improvement from stored deployment data. Buildin…</li>
-<li><strong>핵심 용어:</strong> benchmark = 논문의 주장을 비교·검증하기 위한 시험 세트</li>
-<li><strong>내 판단:</strong> Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
-<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-08-03-n-0-vtla-scaling-vision-tactile-language-action-; source=Hugging Face Daily Papers; paper_id=2607.23782; layer=Robotics / Embodied; agent_layer=Planning &amp; Control; bottleneck=post_training_verification; agent_bottleneck=long_horizon_reliability; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Planning &amp; Control; adoption evidence=abstract_enriched; workload/bottleneck=long_horizon_reliability; market recognition=아직 관찰; price/revision=연결 전</li>
-<li><strong>Invalidation:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
+<li><strong>쉽게 말하면:</strong> 긴 문맥 LLM을 돌릴 때 GPU 메모리를 크게 잡아먹는 KV cache를 더 작게 만들어 비용과 속도 병목을 줄이려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high-quality meshes with artist-style topology is essential for film, gaming, and interactive 3D applications. Mainstream approaches serialize a mesh into a token…</li>
+<li><strong>핵심 용어:</strong> quantization = 양자화: 모델 계산/메모리를 줄이려고 숫자 정밀도를 낮추는 기법; inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
+<li><strong>내 판단:</strong> agent가 길고 많은 요청을 처리할 때 터지는 메모리·prefill 비용 병목을 줄이는 쪽이다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
+<li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-08-03-meshy-t2-fast-native-mesh-generation-with-flow-m; source=Hugging Face Daily Papers; paper_id=2607.28675; layer=Inference / Efficiency; agent_layer=Runtime / Ops; bottleneck=cost_latency; agent_bottleneck=cost_latency; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Runtime / Ops; adoption evidence=abstract_enriched; workload/bottleneck=cost_latency; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Invalidation:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h3>한눈에 보는 오늘의 AI Research 지도</h3>
 <div class="viz-card"><div class="mermaid">flowchart LR
@@ -394,26 +394,26 @@
   MEM --&gt; TRUST[&quot;RAG Security / Trust&quot;]</div></div>
 <h3>오늘의 topic heat / 5분 스캔</h3>
 <ul>
-<li><strong><span class="badge">AI Research</span> 31:</strong> <a href="https://huggingface.co/papers/2607.29684">Toward Robust and 3D-Aware RGB-NIR Imaging in the Dark</a> — Hugging Face Daily Papers, score 10, <span class="badge">AI Research</span></li>
-<li><strong><span class="badge">Agentic AI</span> 21:</strong> <a href="https://huggingface.co/papers/2607.29677">ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</a> — Hugging Face Daily Papers, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><strong><span class="badge">AI Research</span> 31:</strong> <a href="https://huggingface.co/papers/2607.29684">Toward Robust and 3D-Aware RGB-NIR Imaging in the Dark</a> — Hugging Face Daily Papers, score 8, <span class="badge">AI Research</span></li>
+<li><strong><span class="badge">Agentic AI</span> 22:</strong> <a href="https://huggingface.co/papers/2607.29677">ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</a> — Hugging Face Daily Papers, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><strong><span class="badge">Agent Evaluation</span> 12:</strong> <a href="https://huggingface.co/papers/2607.29677">ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</a> — Hugging Face Daily Papers, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
 <li><strong><span class="badge">Inference Stack</span> 11:</strong> <a href="https://huggingface.co/papers/2607.26991">RL^2-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models</a> — Hugging Face Daily Papers, score 8, <span class="badge">Inference Stack</span></li>
 <li><strong><span class="badge">Post-training</span> 6:</strong> <a href="https://huggingface.co/papers/2607.29025">Evaluation-Verification Reward for Consistent Multi-Reference Image Editing</a> — Hugging Face Daily Papers, score 13, <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span></li>
 </ul>
 <details><summary>아래는 archive입니다. 시간 없으면 여기서 멈춰도 됨.</summary>
 <h2>2. 훑을 것 3~5개</h2>
-<h4>5분 훑기 1. <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></h4>
+<h4>5분 훑기 1. <a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #3 · 👍 39 · Inference / Efficiency · Jiale Xu, Rendong Liang · digest score 15</li>
-<li><strong>쉽게 말하면:</strong> 긴 문맥 LLM을 돌릴 때 GPU 메모리를 크게 잡아먹는 KV cache를 더 작게 만들어 비용과 속도 병목을 줄이려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high-quality meshes with artist-style topology is essential for film, gaming, and interactive 3D applications. Mainstream approaches serialize a mesh into a token sequence and decode it autoregressively, which is slow at in…</li>
-<li><strong>핵심 용어:</strong> quantization = 양자화: 모델 계산/메모리를 줄이려고 숫자 정밀도를 낮추는 기법; inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
-<li><strong>내 판단:</strong> agent가 길고 많은 요청을 처리할 때 터지는 메모리·prefill 비용 병목을 줄이는 쪽이다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
-<li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
+<li><strong>위치:</strong> HF #2 · 👍 46 · Robotics / Embodied · NeoteAI Team, Fudan TEAI Team · digest score 15</li>
+<li><strong>쉽게 말하면:</strong> Physical AI/로봇 agent가 언어·이미지·영상·소리·행동을 하나의 world model로 묶어 쓰려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> We present $N_0$-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-grained contact-rich manipulation with tactile perception and tactile-feedback control, and (2) offline policy improvement from stored deployment data. Building on current vision-based backbones, we propose a training r…</li>
+<li><strong>핵심 용어:</strong> benchmark = 논문의 주장을 비교·검증하기 위한 시험 세트</li>
+<li><strong>내 판단:</strong> Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
+<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
 </ul>
 <h4>5분 훑기 2. <a href="https://huggingface.co/papers/2607.27201">Mental World Modeling</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #4 · 👍 31 · Agent / Tool-use · Hao Fei, Yiran Zhao · digest score 15</li>
+<li><strong>위치:</strong> HF #4 · 👍 37 · Agent / Tool-use · Hao Fei, Yiran Zhao · digest score 15</li>
 <li><strong>쉽게 말하면:</strong> 새 모델/방법을 제안하지만 우리 레이더 관점에서는 실제 병목과 연결되는지 먼저 확인해야 하는 논문이다.</li>
 <li><strong>핵심 내용:</strong> World models enable a predictive substrate for planning and action, yet existing formulations merely answer a physical question: what/where it is, and how will it evolve. Human behavior, however, is driven by hidden mental state (what a person believes, wants, intends, feels, and considers socially permissible), so a…</li>
 <li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조</li>
@@ -478,7 +478,7 @@
 <ul>
 <li><strong>왜 봄:</strong> benchmark와 실제 사용 간 gap을 줄이는지</li>
 <li><a href="https://huggingface.co/papers/2607.29677">ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</a> — Hugging Face Daily Papers, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
-<li><a href="https://arxiv.org/abs/2607.29677v1">ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2607.28229">EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span></li>
 </ul>
 <h3>Post-training / RLVR — signal+hype 혼재</h3>
 <ul>
@@ -496,7 +496,7 @@
 <ul>
 <li><strong>왜 봄:</strong> cloud 의존을 줄이거나 새로운 edge workload를 만드는지</li>
 <li><a href="https://huggingface.co/papers/2607.29677">ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</a> — Hugging Face Daily Papers, score 19, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
-<li><a href="https://arxiv.org/abs/2607.29677v1">ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</a> — arXiv, score 13, <span class="badge">Agentic AI</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2607.28229">EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span></li>
 </ul>
 <h2>5. 시장·투자 연결 후보</h2>
 <p>투자 추천 아님. AI research signal이 workload/bottleneck/industry narrative로 번역될 수 있는지 보는 후보만 기록한다.</p>
@@ -520,6 +520,7 @@
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.27201">Mental World Modeling</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.28229">EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents</a></li>
 <li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.29677v1">ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.28617">AISPA: User-Centric System Prompt Auditing for Large Language Model Applications</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.23783">N_0-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulation</a></li>
@@ -533,9 +534,9 @@
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.28415">QQWorld: Quantile-Quantile Matching for World Model Regularization</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.29209">SAF-OPD: Stable Advantage Fusion for On-Policy Distillation</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.18082">Enhancing Rubric-based RL via Self-Distillation</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.29684">Toward Robust and 3D-Aware RGB-NIR Imaging in the Dark</a></li>
 <li><strong>Hacker News:</strong> <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.26991">RL^2-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.29684">Toward Robust and 3D-Aware RGB-NIR Imaging in the Dark</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.27888">Not All Tokens Deserve Equal Credit: Counterfactual Sensitivity Credit Reallocation for Long-CoT Reasoning</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.27851">Beyond Feeling Better: Capability-Sustaining Emotional Dialogue as a Longitudinal Research Paradigm</a></li>
 <li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2607.27951">Safeguards Based on Copyable Context Cannot Provide Reliable Safety for LLMs</a></li>
