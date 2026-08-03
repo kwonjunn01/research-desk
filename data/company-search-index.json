@@ -1386,9 +1386,9 @@
       "price_position_52w_pct": 63.51791530944625,
       "return_20d_pct": -15.18578352180937,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 21.22,
-      "forward_pe": 6.0,
-      "price_to_book": 3.65,
+      "trailing_pe": 19.36,
+      "forward_pe": 5.0,
+      "price_to_book": 3.33,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -1454,9 +1454,9 @@
       "price_position_52w_pct": 53.7199124726477,
       "return_20d_pct": -29.154639175257735,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 16.6,
+      "trailing_pe": 15.14,
       "forward_pe": 5.0,
-      "price_to_book": 7.41,
+      "price_to_book": 6.76,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
