@@ -324,17 +324,17 @@
 <li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 64 <a href="https://huggingface.co/papers/2607.23802">From RLVR to RLSVR: Task Transformation Induces Self-Veri…</a> / #2 👍 46 <a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model wi…</a> / #3 👍 40 <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></li>
 <li><strong>HF Daily quality gate:</strong> 정상 — 제목 25/25, 순위 25/25, upvote 22/25(일부 누락은 비차단), abstract 25/25 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
 <li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-08-03이 report date와 일치한다.</li>
-<li><strong>Top 10 layer mix:</strong> Inference / Efficiency 2, Agent / Tool-use 2, General AI Research 2, Robotics / Embodied 1, Multimodal / Generation 1, Reasoning / Post-training 1, RAG / Memory 1 — 오늘 먼저 볼 축은 <code>Inference / Efficiency</code>(2개).</li>
-<li><strong>논문 결론:</strong> 오늘은 Inference / Efficiency 3, Agent / Tool-use 3, General AI Research 2가 핵심이고, 깊게 읽을 후보는 From RLVR to RLSVR: Task Transformation Induces Self-… / SAF-OPD: Stable Advantage Fusion for On-Policy Distil… / Meshy T2: Fast Native Mesh Generation with Flow Match….</li>
+<li><strong>Top 10 layer mix:</strong> Robotics / Embodied 2, Multimodal / Generation 2, General AI Research 2, Inference / Efficiency 1, Agent / Tool-use 1, Reasoning / Post-training 1, RAG / Memory 1 — 오늘 먼저 볼 축은 <code>Robotics / Embodied</code>(2개).</li>
+<li><strong>논문 결론:</strong> 오늘은 Inference / Efficiency 2, Robotics / Embodied 2, Multimodal / Generation 2가 핵심이고, 깊게 읽을 후보는 From RLVR to RLSVR: Task Transformation Induces Self-… / SAF-OPD: Stable Advantage Fusion for On-Policy Distil… / N_0-VTLA: Scaling Vision-Tactile-Language-Action Mode….</li>
 </ul>
 <h4>Decision routing — 먼저 볼/훑을/스킵 후보</h4>
 <ul>
 <li><strong>오늘 읽을 2~3개:</strong> 상세 카드는 아래 <code>Deep Card</code>.</li>
 <li>↳ HF #1 · 👍 64 <a href="https://huggingface.co/papers/2607.23802">From RLVR to RLSVR: Task Transformation Induces Self-Verifiab…</a></li>
 <li>↳ HF #9 · 👍 21 <a href="https://huggingface.co/papers/2607.29209">SAF-OPD: Stable Advantage Fusion for On-Policy Distillation</a></li>
-<li>↳ HF #3 · 👍 40 <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></li>
-<li><strong>훑고 넘어갈 것:</strong> 상세 카드는 §2 archive.</li>
 <li>↳ HF #2 · 👍 46 <a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with L…</a></li>
+<li><strong>훑고 넘어갈 것:</strong> 상세 카드는 §2 archive.</li>
+<li>↳ HF #3 · 👍 40 <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></li>
 <li>↳ HF #4 · 👍 37 <a href="https://huggingface.co/papers/2607.27201">Mental World Modeling</a></li>
 <li>↳ HF #5 · 👍 29 <a href="https://huggingface.co/papers/2607.28617">AISPA: User-Centric System Prompt Auditing for Large Language…</a></li>
 <li>↳ HF #6 · 👍 24 <a href="https://huggingface.co/papers/2607.23783">N_0-TWAM: Scaling Tactile-Native World-Action Model for Conta…</a></li>
@@ -371,18 +371,18 @@
 <li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Model &amp; Reasoning; adoption evidence=abstract_enriched; workload/bottleneck=cost_latency; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
-<h4><a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></h4>
+<h4><a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #3 · 👍 40 · Inference / Efficiency · digest score 16 · deep_candidate_3</li>
+<li><strong>위치:</strong> HF #2 · 👍 46 · Robotics / Embodied · digest score 15 · deep_candidate_3</li>
 <li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 16</li>
-<li><strong>쉽게 말하면:</strong> 긴 문맥 LLM을 돌릴 때 GPU 메모리를 크게 잡아먹는 KV cache를 더 작게 만들어 비용과 속도 병목을 줄이려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high-quality meshes with artist-style topology is essential for film, gaming, and interactive 3D applications. Mainstream approaches serialize a mesh into a token…</li>
-<li><strong>핵심 용어:</strong> quantization = 양자화: 모델 계산/메모리를 줄이려고 숫자 정밀도를 낮추는 기법; inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
-<li><strong>내 판단:</strong> agent가 길고 많은 요청을 처리할 때 터지는 메모리·prefill 비용 병목을 줄이는 쪽이다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
-<li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-08-03-meshy-t2-fast-native-mesh-generation-with-flow-m; source=Hugging Face Daily Papers; paper_id=2607.28675; layer=Inference / Efficiency; agent_layer=Runtime / Ops; bottleneck=cost_latency; agent_bottleneck=cost_latency; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Runtime / Ops; adoption evidence=abstract_enriched; workload/bottleneck=cost_latency; market recognition=아직 관찰; price/revision=연결 전</li>
-<li><strong>Invalidation:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
+<li><strong>쉽게 말하면:</strong> Physical AI/로봇 agent가 언어·이미지·영상·소리·행동을 하나의 world model로 묶어 쓰려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> We present $N_0$-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-grained contact-rich manipulation with tactile perception and tactile-feedback control, and (2) offline policy improvement from stored deployment data. Buildin…</li>
+<li><strong>핵심 용어:</strong> benchmark = 논문의 주장을 비교·검증하기 위한 시험 세트</li>
+<li><strong>내 판단:</strong> Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
+<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-08-03-n-0-vtla-scaling-vision-tactile-language-action-; source=Hugging Face Daily Papers; paper_id=2607.23782; layer=Robotics / Embodied; agent_layer=Planning &amp; Control; bottleneck=post_training_verification; agent_bottleneck=long_horizon_reliability; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Planning &amp; Control; adoption evidence=abstract_enriched; workload/bottleneck=long_horizon_reliability; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Invalidation:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h3>한눈에 보는 오늘의 AI Research 지도</h3>
 <div class="viz-card"><div class="mermaid">flowchart LR
@@ -402,14 +402,14 @@
 </ul>
 <details><summary>아래는 archive입니다. 시간 없으면 여기서 멈춰도 됨.</summary>
 <h2>2. 훑을 것 3~5개</h2>
-<h4>5분 훑기 1. <a href="https://huggingface.co/papers/2607.23782">N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens</a></h4>
+<h4>5분 훑기 1. <a href="https://huggingface.co/papers/2607.28675">Meshy T2: Fast Native Mesh Generation with Flow Matching</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #2 · 👍 46 · Robotics / Embodied · NeoteAI Team, Fudan TEAI Team · digest score 15</li>
-<li><strong>쉽게 말하면:</strong> Physical AI/로봇 agent가 언어·이미지·영상·소리·행동을 하나의 world model로 묶어 쓰려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> We present $N_0$-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-grained contact-rich manipulation with tactile perception and tactile-feedback control, and (2) offline policy improvement from stored deployment data. Building on current vision-based backbones, we propose a training r…</li>
-<li><strong>핵심 용어:</strong> benchmark = 논문의 주장을 비교·검증하기 위한 시험 세트</li>
-<li><strong>내 판단:</strong> Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
-<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
+<li><strong>위치:</strong> HF #3 · 👍 40 · Multimodal / Generation · Jiale Xu, Rendong Liang · digest score 10</li>
+<li><strong>쉽게 말하면:</strong> 텍스트/조건에서 바로 쓸 수 있는 3D mesh 자산을 더 빠르게 만들려는 생성 모델 논문이다. LLM KV cache가 아니라 3D 제작 latency·품질 병목 신호로 본다.</li>
+<li><strong>핵심 내용:</strong> Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high-quality meshes with artist-style topology is essential for film, gaming, and interactive 3D applications. Mainstream approaches serialize a mesh into a token sequence and decode it autoregressively, which is slow at in…</li>
+<li><strong>핵심 용어:</strong> mesh = 3D 표면망: 게임·영화·3D 제작에서 쓰는 물체 표면 구조; flow matching = 생성 경로 학습: 노이즈에서 목표 형태로 가는 흐름을 배우는 생성 방법; VAE = 압축 표현 모델: 복잡한 3D 구조를 잠재공간으로 줄였다가 다시 복원하는 모델</li>
+<li><strong>내 판단:</strong> LLM 추론비용 신호가 아니라 3D asset creation의 속도·토폴로지 품질 개선 신호로 읽는다. agent/infra 직접 연결은 약하고 creative tooling/workflow 쪽 후보로 낮춰 본다. 3D 제작 workflow에서는 품질 좋은 mesh를 빠르게 얻는 것이 반복 제작 비용을 좌우하므로, creative tool adoption 후보로만 확인할 가치가 있다.</li>
+<li><strong>확인할 것:</strong> 생성 mesh의 topology가 실제 DCC/game/film pipeline에서 수정 가능하게 유지되는지, 속도 개선이 품질 손상 없이 반복 제작에 유효한지.</li>
 </ul>
 <h4>5분 훑기 2. <a href="https://huggingface.co/papers/2607.27201">Mental World Modeling</a></h4>
 <ul>
@@ -431,12 +431,12 @@
 </ul>
 <h4>5분 훑기 4. <a href="https://huggingface.co/papers/2607.23783">N_0-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulation</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #6 · 👍 24 · Agent / Tool-use · NeoteAI Team, Fudan TEAI Team · digest score 15</li>
-<li><strong>쉽게 말하면:</strong> AI agent가 긴 터미널 작업을 끝까지 수행하는지, 중간 진행·부분 성공까지 촘촘히 평가하는 agent evaluation 논문이다.</li>
+<li><strong>위치:</strong> HF #6 · 👍 24 · Robotics / Embodied · NeoteAI Team, Fudan TEAI Team · digest score 12</li>
+<li><strong>쉽게 말하면:</strong> Physical AI/로봇 agent가 언어·이미지·영상·소리·행동을 하나의 world model로 묶어 쓰려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> We present $N_0$-TWAM, a tactile-native world-action model for contact-rich manipulation that predicts both future vision and future contact. To our knowledge, it is the first tactile world-action model trained at large scale, and it shows strong capability on contact-rich tasks.</li>
-<li><strong>핵심 용어:</strong> agent = 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조</li>
-<li><strong>내 판단:</strong> Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
-<li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
+<li><strong>핵심 용어:</strong> benchmark = 논문의 주장을 비교·검증하기 위한 시험 세트</li>
+<li><strong>내 판단:</strong> Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
+<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
 </ul>
 <h2>3. 스킵 표</h2>
 <h4>오늘은 스킵 1. <a href="https://huggingface.co/papers/2607.29679">Scaling Properties of Text Conditioning in Visual Generation</a></h4>
