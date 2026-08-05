@@ -2439,9 +2439,9 @@
       "price_position_52w_pct": 21.887713588283155,
       "return_20d_pct": 5.476673427991896,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 18.05,
-      "forward_pe": 17.0,
-      "price_to_book": 1.06,
+      "trailing_pe": 19.88,
+      "forward_pe": 19.0,
+      "price_to_book": 1.16,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
