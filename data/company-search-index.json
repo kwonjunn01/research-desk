@@ -1386,9 +1386,9 @@
       "price_position_52w_pct": 56.188925081433226,
       "return_20d_pct": -18.918918918918916,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 19.4,
+      "trailing_pe": 20.07,
       "forward_pe": 5.0,
-      "price_to_book": 3.34,
+      "price_to_book": 3.45,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -1454,9 +1454,9 @@
       "price_position_52w_pct": 48.57768052516411,
       "return_20d_pct": -28.3507496592458,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 15.23,
+      "trailing_pe": 16.31,
       "forward_pe": 5.0,
-      "price_to_book": 6.8,
+      "price_to_book": 7.28,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -2246,8 +2246,8 @@
       "return_20d_pct": 10.020353577184116,
       "fundamentals_coverage": 90.0,
       "trailing_pe": null,
-      "forward_pe": -53.53342,
-      "price_to_book": 9.58748,
+      "forward_pe": -57.366154,
+      "price_to_book": 10.273896,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
@@ -2764,7 +2764,7 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 444.77,
       "change_pct": 1.4923644774925948,
-      "price_position_52w_pct": 94.86914846275583,
+      "price_position_52w_pct": 94.86575793829799,
       "return_20d_pct": 12.406492173700311,
       "fundamentals_coverage": 100.0,
       "trailing_pe": 39.839733,
@@ -3413,7 +3413,7 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 190.51,
       "change_pct": 3.039645534590339,
-      "price_position_52w_pct": 95.18989856610595,
+      "price_position_52w_pct": 95.18977120324892,
       "return_20d_pct": 14.447910799062402,
       "fundamentals_coverage": 90.0,
       "trailing_pe": 53.013744,
@@ -4774,7 +4774,7 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 301.33,
       "change_pct": 6.5749488603345245,
-      "price_position_52w_pct": 98.3301131447857,
+      "price_position_52w_pct": 98.32332185704284,
       "return_20d_pct": 12.089430142123625,
       "fundamentals_coverage": 90.0,
       "trailing_pe": null,
