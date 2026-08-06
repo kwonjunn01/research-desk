@@ -356,7 +356,7 @@
 <li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 51 <a href="https://huggingface.co/papers/2608.05102">ABSeeker: Training Long-Horizon Search Agents via Answer-…</a> / #2 👍 45 <a href="https://huggingface.co/papers/2608.04436">ToolArtist: Tool-Using Unified Multimodal Models for Agen…</a> / #3 👍 36 <a href="https://huggingface.co/papers/2608.05000">Towards Physics of Multimodal Pretraining: Knowledge Flow…</a></li>
 <li><strong>HF Daily quality gate:</strong> 정상 — 제목 29/29, 순위 29/29, upvote 28/29(일부 누락은 비차단), abstract 29/29 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
 <li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-08-06이 report date와 일치한다.</li>
-<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 5, Multimodal / Generation 1, Inference / Efficiency 1, Reasoning / Post-training 1, Robotics / Embodied 1, Benchmark / Evaluation 1 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(5개).</li>
+<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 5, Multimodal / Generation 1, RAG / Memory 1, Reasoning / Post-training 1, Robotics / Embodied 1, Benchmark / Evaluation 1 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(5개).</li>
 <li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 6, Benchmark / Evaluation 2, Multimodal / Generation 1가 핵심이고, 깊게 읽을 후보는 ToolArtist: Tool-Using Unified Multimodal Models for… / ABSeeker: Training Long-Horizon Search Agents via Ans… / OneDayAgent: Towards a Long-Horizon Harness for Auton….</li>
 </ul>
 <h4>Decision routing — 먼저 볼/훑을/스킵 후보</h4>
@@ -445,12 +445,12 @@
 </ul>
 <h4>5분 훑기 2. <a href="https://huggingface.co/papers/2608.04570">The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #4 · 👍 35 · Inference / Efficiency · Yushi Sun, Yanjie Zhang · digest score 13</li>
-<li><strong>쉽게 말하면:</strong> 큰 모델을 실제 서비스에서 더 싸고 빠르게 돌리기 위한 실행 최적화 논문이다.</li>
+<li><strong>위치:</strong> HF #4 · 👍 35 · RAG / Memory · Yushi Sun, Yanjie Zhang · digest score 13</li>
+<li><strong>쉽게 말하면:</strong> agent가 대화기록·tool 출력·긴 prompt를 무작정 context에 쌓지 않고, 무엇을 기억/삭제/불러올지 lifecycle로 관리하려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Personalized LLMs with persistent memory are increasingly deployed, yet the faithfulness of their user models remains unexamined. We study over-inference (OI): the phenomenon where LLMs fabricate user attributes beyond what evidence supports.</li>
-<li><strong>핵심 용어:</strong> inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
-<li><strong>내 판단:</strong> 모델을 실제로 싸고 빠르게 돌리는 inference 병목 쪽이다. agent memory/RAG가 좋아지는지, 아니면 비용·정확도 병목이 남는지 판단하는 재료다.</li>
-<li><strong>확인할 것:</strong> 정확도 개선 대비 latency·비용이 production 검색에 맞는지.</li>
+<li><strong>핵심 용어:</strong> over-inference = 과잉 추론: 근거보다 더 많은 사용자 속성·의도를 모델이 지어내는 현상; persistent memory = 지속 기억: 대화가 끝난 뒤에도 사용자 정보·선호를 저장해 다음 작업에 쓰는 기능; user profile = 사용자 프로필: 모델이 사용자에 대해 저장하거나 추정한 속성·선호 정보; inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
+<li><strong>내 판단:</strong> agent memory를 단순 저장소/RAG 문제가 아니라 <code>선별→구조화→저장소 선택→망각→현재 context 조립</code> lifecycle 문제로 재정의한다. 개인 agent의 비용·recall·provenance 병목과 직접 닿는다. agent 실패 원인이 reasoning 부족보다 context 과잉·recall 누락·token 비용으로 이동하고 있는지 확인할 수 있기 때문이다.</li>
+<li><strong>확인할 것:</strong> context lifecycle 정책이 memory 저장·망각·provenance·현재 task relevance·token cost를 실제 agent workflow에서 함께 줄이는지.</li>
 </ul>
 <h4>5분 훑기 3. <a href="https://huggingface.co/papers/2608.03764">GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks</a></h4>
 <ul>
