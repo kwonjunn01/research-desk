@@ -1,6 +1,6 @@
 {
   "manager": "Codex 5.5",
-  "generated_at": "2026-08-07",
+  "generated_at": "2026-08-08",
   "count": 80,
   "items": [
     {
@@ -1189,9 +1189,9 @@
       "price_position_52w_pct": 39.401654996817314,
       "return_20d_pct": -11.725452812202096,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 41.03,
-      "forward_pe": 26.0,
-      "price_to_book": 4.59,
+      "trailing_pe": 39.12,
+      "forward_pe": 24.0,
+      "price_to_book": 4.37,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3352,9 +3352,9 @@
       "price_position_52w_pct": 22.202797202797203,
       "return_20d_pct": -5.45746388443018,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 24.02,
-      "forward_pe": 18.0,
-      "price_to_book": 4.66,
+      "trailing_pe": 23.78,
+      "forward_pe": 17.0,
+      "price_to_book": 4.61,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -4457,9 +4457,9 @@
       "price_position_52w_pct": 32.899246058944485,
       "return_20d_pct": 13.573085846867738,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": 7648.44,
+      "trailing_pe": 7265.62,
       "forward_pe": null,
-      "price_to_book": 71.45,
+      "price_to_book": 67.87,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
