@@ -334,6 +334,24 @@
 <div class="desk-card warn"><strong>Ontology Edges</strong><p>56개 supply/dependency/constraint edge</p></div>
 <div class="desk-card violet"><strong>Detailed Registry</strong><p>16개 theme · 38개 node · 11개 query seed</p></div>
 </div>
+<h2>0. 2026-08-07 Weekly QA 반영</h2>
+<p>이번 QA는 상세 registry baseline(16 theme · 38 node · 56 edge/link · 11 query seed)을 바꾸지 않고, 2026-08-01~2026-08-07 AI/Market/Cross reports에서 확인된 evidence 후보를 기존 reference node와 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source-review queue</strong>다. 개별 회사·ticker는 산업 mapping 참고용이며 매수·매도 판단이 아니다.</p>
+<h3>새로 연결된 evidence 후보</h3>
+<ul>
+<li><strong>Agent tool/runtime · long-horizon eval · GUI/workflow agent</strong>: Qwen-UI-Agent, LongHorizon-Harness, MerchantBench, ToolArtist, ABSeeker, OneDayAgent 반복 → <code>ai_agent</code>, <code>enterprise_ai</code>, <code>training_data</code>, <code>frontier_llm</code>, <code>opensource_llm</code>에 연결 후보. 실제 workflow log·계약·유료 사용량 전까지 adoption 결론 보류.</li>
+<li><strong>Agent memory/RAG · personalization/provenance trust</strong>: Personalization Mirage, When Memory Lies, ClawMem/FocusMem 계열 → <code>ai_agent</code>, <code>enterprise_ai</code>, <code>training_data</code>, <code>frontier_llm</code>, <code>opensource_llm</code>에 연결 후보. compliance·pilot·production failure evidence 필요.</li>
+<li><strong>Agent/inference workload → HBM·DRAM/NAND·AI DC power</strong>: agent/inference workload → HBM/server memory/power cross candidate, Samsung next-generation AI memory, Samsung/SK Hynix 중국 장비 hedge, AMD Taalas inference, HBM shortage/payout narrative → <code>hbm</code>, <code>dram_nand</code>, <code>cowos</code>, <code>packaging_eq</code>, <code>nvidia</code>, <code>custom_asic</code>, <code>datacenter_build</code>, <code>dc_power</code>에 연결 후보. EPS/consensus revision과 industry source 전까지 판단 보류.</li>
+<li><strong>AI DC power equipment · gas turbine/grid/order backlog</strong>: Reuters Siemens Energy record quarter, Texas AI data center grid rule, Microsoft India datacenter region 후보 → <code>dc_power</code>, <code>transformer</code>, <code>grid_cable</code>, <code>gas_power</code>, <code>nuclear</code>, <code>datacenter_build</code>, <code>hyperscaler</code>에 연결 후보. order/backlog·grid interconnect 확인 queue.</li>
+<li><strong>Robotics / On-device / Physical AI</strong>: Gemini Robotics ER 2, Unitree/China humanoid supply-chain, Ego2Robot, BridgeVLA++, VLA/robotics top-theme → <code>on_device</code>, <code>humanoid</code>, <code>autonomous</code>, <code>korean_ai_chip</code>, <code>nvidia</code>, <code>opensource_llm</code>에 연결 후보. field deployment·반복 주문·safety evidence 전까지 hype와 adoption 분리.</li>
+<li><strong>Optical/CPO/Korea watch 유지</strong>: 빛과전자·오이솔루션·대한광통신 신규 산업 큐와 Memory &amp; Photonics 보조 근거 → <code>cpo</code>, <code>optical_transceiver</code>, <code>switch_chip</code>, <code>fiber_material</code>, <code>datacenter_build</code> watch. fresh 고품질 source가 약해 design win·shipment evidence 대기.</li>
+</ul>
+<h3>이번 주 부족한 UX / 데이터</h3>
+<ul>
+<li>현재 page는 KPI cards, 병목 heatmap, Mermaid 기반 supply/dependency network, node detail cards, edge strip, query seeds, risk/metrics 일부를 제공한다.</li>
+<li>아직 <strong>진짜 Sankey/flow interaction</strong>, 클릭형 node side panel, node별 최신 metric/freshness 자동 갱신, node card 내부 주가·뉴스·context panel, query copy/freshness badge, 모바일 company/ticker 압축은 backlog다.</li>
+<li>상세 보강 기록은 <code>07-sources/reference-dashboard-weekly-qa.md</code>, <code>04-ontology/Reference Dashboard Node Seeds.md</code>, <code>07-sources/reference-dashboard-queries.yaml</code>의 candidate query section에 누적한다.</li>
+<li>이번 주 candidate query IDs: <code>agent_tool_runtime_long_horizon_eval</code>, <code>agent_memory_personalization_trust</code>, <code>hbm_nextgen_memory_supply_hedge</code>, <code>ai_dc_power_equipment_backlog</code>, <code>humanoid_robotics_supply_chain_edge</code>, <code>optical_photonics_ai_dc_korea</code>.</li>
+</ul>
 <h2>0. 2026-07-31 Weekly QA 반영</h2>
 <p>이번 QA는 상세 registry baseline(16 theme · 38 node · 56 edge · 11 query seed)을 바꾸지 않고, 2026-07-25~2026-07-31 AI/Market/Cross reports에서 확인된 evidence 후보를 기존 reference node와 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source-review queue</strong>다. 개별 회사·ticker는 산업 mapping 참고용이며 매수·매도 판단이 아니다.</p>
 <h3>새로 연결된 evidence 후보</h3>
@@ -506,8 +524,8 @@
 <div class="ref-node-grid">
 <div class="ref-node-card high"><h3>EUV 노광장비</h3><div class="ref-tags"><span class="ref-tag">반도체 장비</span><span class="ref-tag hot">bottleneck high</span><span class="ref-tag warn">policy</span></div><p class="ref-desc">ASML 100% 독점. High-NA EUV는 연 10대 미만 생산. 중국 수출금지.</p><p><b>Korea</b><br>수입 의존. 삼성·SK 최대 고객사 중 하나</p><p><b>Risk</b><br>공급제한 95, 가격 40</p><p><b>Companies</b><br>🇳🇱 ASML Holding (ASML), 🇯🇵 Canon (7751.T), 🇯🇵 Nikon (7731.T)</p></div>
 <div class="ref-node-card none"><h3>식각·증착 장비</h3><div class="ref-tags"><span class="ref-tag">반도체 장비</span></div><p class="ref-desc">AMAT·LAM·TEL 과점. 국내 장비업체 틈새 점유.</p><p><b>Korea</b><br>원익IPS·주성엔지니어링·세메스</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Applied Materials (AMAT), 🇺🇸 Lam Research (LRCX), 🇯🇵 Tokyo Electron (8035.T), 🇰🇷 원익IPS (240810.KQ)</p></div>
-<div class="ref-node-card medium"><h3>검사·계측</h3><div class="ref-tags"><span class="ref-tag">반도체 장비</span><span class="ref-tag hot">bottleneck medium</span></div><p class="ref-desc">KLA 독점적 지위. 국내 일부 특화 분야 경쟁.</p><p><b>Korea</b><br>-</p><p><b>Risk</b><br>병목 medium</p><p><b>Companies</b><br>🇺🇸 KLA Corporation (KLAC), 🇺🇸 Onto Innovation (ONTO), 🇰🇷 에이피티씨 (089970.KQ)</p></div>
-<div class="ref-node-card high"><h3>패키징 장비</h3><div class="ref-tags"><span class="ref-tag">반도체 장비</span><span class="ref-tag hot">bottleneck high</span></div><p class="ref-desc">BE Semi, ASM Pacific. HBM·CoWoS용 본더 공급 부족. 한미반도체 급부상.</p><p><b>Korea</b><br>-</p><p><b>Risk</b><br>공급부족 80</p><p><b>Companies</b><br>🇳🇱 BE Semiconductor (BESI.AS), 🇭🇰 ASM Pacific (0522.HK), 🇰🇷 한미반도체 (042700.KS), 🇺🇸 Kulicke &amp; Soffa (KLIC)</p></div>
+<div class="ref-node-card medium"><h3>검사·계측</h3><div class="ref-tags"><span class="ref-tag">반도체 장비</span><span class="ref-tag hot">bottleneck medium</span></div><p class="ref-desc">KLA 독점적 지위. 국내 일부 특화 분야 경쟁.</p><p><b>Korea</b><br>국내 직접 노출 확인 필요</p><p><b>Risk</b><br>병목 medium</p><p><b>Companies</b><br>🇺🇸 KLA Corporation (KLAC), 🇺🇸 Onto Innovation (ONTO), 🇰🇷 에이피티씨 (089970.KQ)</p></div>
+<div class="ref-node-card high"><h3>패키징 장비</h3><div class="ref-tags"><span class="ref-tag">반도체 장비</span><span class="ref-tag hot">bottleneck high</span></div><p class="ref-desc">BE Semi, ASM Pacific. HBM·CoWoS용 본더 공급 부족. 한미반도체 급부상.</p><p><b>Korea</b><br>국내 직접 노출 확인 필요</p><p><b>Risk</b><br>공급부족 80</p><p><b>Companies</b><br>🇳🇱 BE Semiconductor (BESI.AS), 🇭🇰 ASM Pacific (0522.HK), 🇰🇷 한미반도체 (042700.KS), 🇺🇸 Kulicke &amp; Soffa (KLIC)</p></div>
 </div>
 <h3>칩 설계</h3>
 <div class="ref-node-grid">
@@ -530,13 +548,13 @@
 <div class="ref-node-grid">
 <div class="ref-node-card high"><h3>CPO 광통신</h3><div class="ref-tags"><span class="ref-tag">네트워크·광통신</span><span class="ref-tag hot">bottleneck high</span><span class="ref-tag violet">hub</span></div><p class="ref-desc">Co-Packaged Optics. GPU 간 통신 병목 해결. 2026 본격 상용화.</p><p><b>Korea</b><br>RSC·옵티코어 초기. TSMC COUPE 의존</p><p><b>Risk</b><br>기술전환 75, 공급초기 50</p><p><b>Companies</b><br>🇺🇸 Coherent (COHR), 🇺🇸 Lumentum (LITE), 🇹🇭 Fabrinet (FN), 🇺🇸 Lightmatter (private)</p></div>
 <div class="ref-node-card none"><h3>광트랜시버</h3><div class="ref-tags"><span class="ref-tag">네트워크·광통신</span></div><p class="ref-desc">Coherent, Lumentum, Innolight, Fabrinet. AI 수요로 폭증.</p><p><b>Korea</b><br>라이트론·오이솔루션 중급 경쟁</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Coherent (COHR), 🇺🇸 Lumentum (LITE), 🇨🇳 Innolight (300308.SZ), 🇰🇷 오이솔루션 (138080.KQ)</p></div>
-<div class="ref-node-card none"><h3>AI 네트워크 스위치</h3><div class="ref-tags"><span class="ref-tag">네트워크·광통신</span></div><p class="ref-desc">Broadcom Tomahawk, NVIDIA Quantum/Spectrum, Arista.</p><p><b>Korea</b><br>-</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Broadcom (AVGO), 🇺🇸 Arista Networks (ANET), 🇺🇸 Cisco (CSCO), 🇺🇸 Marvell (MRVL)</p></div>
+<div class="ref-node-card none"><h3>AI 네트워크 스위치</h3><div class="ref-tags"><span class="ref-tag">네트워크·광통신</span></div><p class="ref-desc">Broadcom Tomahawk, NVIDIA Quantum/Spectrum, Arista.</p><p><b>Korea</b><br>국내 직접 노출 확인 필요</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Broadcom (AVGO), 🇺🇸 Arista Networks (ANET), 🇺🇸 Cisco (CSCO), 🇺🇸 Marvell (MRVL)</p></div>
 </div>
 <h3>발전 (전력생산)</h3>
 <div class="ref-node-grid">
 <div class="ref-node-card none"><h3>원자력·SMR</h3><div class="ref-tags"><span class="ref-tag">발전 (전력생산)</span><span class="ref-tag warn">policy</span></div><p class="ref-desc">AI DC 전용 SMR 주목. Constellation, Vistra 폭등.</p><p><b>Korea</b><br>두산에너빌리티·현대건설 글로벌 탑티어. K-SMR.</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Constellation Energy (CEG), 🇺🇸 Vistra (VST), 🇺🇸 NuScale (SMR), 🇺🇸 Oklo (OKLO)</p></div>
 <div class="ref-node-card none"><h3>재생에너지</h3><div class="ref-tags"><span class="ref-tag">발전 (전력생산)</span></div><p class="ref-desc">태양광·풍력. AI DC PPA 수요 급증. 미국 IRA 세제지원.</p><p><b>Korea</b><br>한화솔루션 셀·모듈, HD현대 풍력</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 First Solar (FSLR), 🇺🇸 NextEra Energy (NEE), 🇩🇰 Vestas (VWS.CO), 🇰🇷 한화솔루션 (009830.KS)</p></div>
-<div class="ref-node-card none"><h3>LNG·가스발전</h3><div class="ref-tags"><span class="ref-tag">발전 (전력생산)</span></div><p class="ref-desc">원전 건설 지연 대응. 빠른 증설 가능. 미국 DC 인근 발전소.</p><p><b>Korea</b><br>-</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 GE Vernova (GEV), 🇩🇪 Siemens Energy (ENR.DE), 🇰🇷 두산에너빌리티 (034020.KS)</p></div>
+<div class="ref-node-card none"><h3>LNG·가스발전</h3><div class="ref-tags"><span class="ref-tag">발전 (전력생산)</span></div><p class="ref-desc">원전 건설 지연 대응. 빠른 증설 가능. 미국 DC 인근 발전소.</p><p><b>Korea</b><br>국내 직접 노출 확인 필요</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 GE Vernova (GEV), 🇩🇪 Siemens Energy (ENR.DE), 🇰🇷 두산에너빌리티 (034020.KS)</p></div>
 </div>
 <h3>송전·변전</h3>
 <div class="ref-node-grid">
@@ -558,7 +576,7 @@
 <h3>클라우드</h3>
 <div class="ref-node-grid">
 <div class="ref-node-card none"><h3>하이퍼스케일러</h3><div class="ref-tags"><span class="ref-tag">클라우드</span><span class="ref-tag violet">hub</span></div><p class="ref-desc">AWS, Azure, GCP, Oracle. AI 인프라 소비의 80%.</p><p><b>Korea</b><br>네이버·카카오엔터프라이즈 국내 중심</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Microsoft (MSFT), 🇺🇸 Amazon (AWS) (AMZN), 🇺🇸 Alphabet (GCP) (GOOGL), 🇺🇸 Oracle (ORCL)</p></div>
-<div class="ref-node-card none"><h3>AI 전용 클라우드</h3><div class="ref-tags"><span class="ref-tag">클라우드</span></div><p class="ref-desc">CoreWeave, Lambda, Crusoe. GPU 임대 특화.</p><p><b>Korea</b><br>-</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 CoreWeave (CRWV), 🇳🇱 Nebius Group (NBIS), 🇺🇸 Applied Digital (APLD)</p></div>
+<div class="ref-node-card none"><h3>AI 전용 클라우드</h3><div class="ref-tags"><span class="ref-tag">클라우드</span></div><p class="ref-desc">CoreWeave, Lambda, Crusoe. GPU 임대 특화.</p><p><b>Korea</b><br>국내 직접 노출 확인 필요</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 CoreWeave (CRWV), 🇳🇱 Nebius Group (NBIS), 🇺🇸 Applied Digital (APLD)</p></div>
 </div>
 <h3>AI 모델</h3>
 <div class="ref-node-grid">
@@ -569,7 +587,7 @@
 <h3>응용·서비스</h3>
 <div class="ref-node-grid">
 <div class="ref-node-card none"><h3>AI 에이전트</h3><div class="ref-tags"><span class="ref-tag">응용·서비스</span><span class="ref-tag violet">hub</span></div><p class="ref-desc">Claude Code, Devin, Manus. 2026 핵심 테마.</p><p><b>Korea</b><br>뤼튼, 업스테이지 등. 글로벌 경쟁 시급.</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Microsoft (Copilot) (MSFT), 🇺🇸 ServiceNow (NOW), 🇺🇸 Palantir (PLTR), 🇺🇸 Salesforce (Agentforce) (CRM)</p></div>
-<div class="ref-node-card none"><h3>기업용 AI</h3><div class="ref-tags"><span class="ref-tag">응용·서비스</span></div><p class="ref-desc">Glean, Harvey, Copilot. 생산성 혁명.</p><p><b>Korea</b><br>-</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Salesforce (CRM), 🇺🇸 ServiceNow (NOW), 🇺🇸 Palantir (PLTR), 🇰🇷 삼성SDS (018260.KS)</p></div>
+<div class="ref-node-card none"><h3>기업용 AI</h3><div class="ref-tags"><span class="ref-tag">응용·서비스</span></div><p class="ref-desc">Glean, Harvey, Copilot. 생산성 혁명.</p><p><b>Korea</b><br>국내 직접 노출 확인 필요</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Salesforce (CRM), 🇺🇸 ServiceNow (NOW), 🇺🇸 Palantir (PLTR), 🇰🇷 삼성SDS (018260.KS)</p></div>
 </div>
 <h3>온디바이스</h3>
 <div class="ref-node-grid">
@@ -578,7 +596,7 @@
 <h3>로봇·자율주행</h3>
 <div class="ref-node-grid">
 <div class="ref-node-card none"><h3>휴머노이드</h3><div class="ref-tags"><span class="ref-tag">로봇·자율주행</span></div><p class="ref-desc">Figure, Optimus, Unitree. VLA 모델 기반.</p><p><b>Korea</b><br>보스턴다이내믹스(현대), 레인보우로보틱스(삼성)</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Tesla (TSLA), 🇰🇷 현대차 (005380.KS), 🇰🇷 레인보우로보틱스 (277810.KQ)</p></div>
-<div class="ref-node-card none"><h3>자율주행</h3><div class="ref-tags"><span class="ref-tag">로봇·자율주행</span></div><p class="ref-desc">Tesla FSD, Waymo, Mobileye.</p><p><b>Korea</b><br>-</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Tesla (TSLA), 🇺🇸 Alphabet (Waymo) (GOOGL), 🇮🇱 Mobileye (MBLY)</p></div>
+<div class="ref-node-card none"><h3>자율주행</h3><div class="ref-tags"><span class="ref-tag">로봇·자율주행</span></div><p class="ref-desc">Tesla FSD, Waymo, Mobileye.</p><p><b>Korea</b><br>국내 직접 노출 확인 필요</p><p><b>Risk</b><br>원본 기준 특이 리스크 없음 · 추적 필요</p><p><b>Companies</b><br>🇺🇸 Tesla (TSLA), 🇺🇸 Alphabet (Waymo) (GOOGL), 🇮🇱 Mobileye (MBLY)</p></div>
 </div>
 <h2>4. Edge Strip — 56개 연결</h2>
 <div class="ref-edge-list">
@@ -652,6 +670,16 @@
 <li><code>training_data</code>: <code>(&quot;training data&quot; OR &quot;학습 데이터&quot;) (LLM OR 저작권 OR synthetic)</code></li>
 <li><code>transformer</code>: <code>(transformer OR 변압기) (AI 전력 OR HD현대일렉 OR 효성중공업)</code></li>
 <li><code>nuclear</code>: <code>(&quot;SMR&quot; OR &quot;small modular reactor&quot; OR 원전) (AI OR data center OR 데이터센터)</code></li>
+</ul>
+<h3>Candidate query queue — 2026-08-07</h3>
+<p>기준 registry의 원본 11개 query seed는 유지한다. 아래는 collector 정식 반영 전 source-review 후보이며 투자 판단/매수·매도 신호가 아니다.</p>
+<ul>
+<li><code>agent_tool_runtime_long_horizon_eval</code>: agent tool runtime / long-horizon workflow eval — Qwen-UI-Agent, LongHorizon-Harness, MerchantBench, ToolArtist, ABSeeker, OneDayAgent, GUI/computer-use workflow reliability.</li>
+<li><code>agent_memory_personalization_trust</code>: agent memory / personalization / provenance trust — When Memory Lies, Personalization Mirage, ClawMem/FocusMem, persistent memory, RAG provenance, compliance/production.</li>
+<li><code>hbm_nextgen_memory_supply_hedge</code>: HBM / next-gen memory / supply hedge — HBM4/HBM3E, next-generation AI memory, 3D memory, qualification, yield, Samsung/SK Hynix/Micron/NVIDIA.</li>
+<li><code>ai_dc_power_equipment_backlog</code>: AI data-center power equipment / grid backlog — Siemens Energy, turbine, transformer, grid, order/backlog, nuclear/SMR, interconnect.</li>
+<li><code>humanoid_robotics_supply_chain_edge</code>: humanoid robotics / VLA / edge deployment — Gemini Robotics, Unitree, VLA, robotics supply chain, deployment/safety/edge.</li>
+<li><code>optical_photonics_ai_dc_korea</code>: Optical / CPO / Korea AI data-center watch — CPO, co-packaged optics, photonics, transceiver, 800G/1.6T, 오이솔루션, 빛과전자, 대한광통신.</li>
 </ul>
 <h3>Candidate query queue — 2026-07-31</h3>
 <p>기준 registry의 원본 11개 query seed는 유지한다. 아래는 collector 정식 반영 전 source-review 후보이며 투자 판단/매수·매도 신호가 아니다.</p>
