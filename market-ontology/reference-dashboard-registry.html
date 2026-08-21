@@ -354,6 +354,23 @@
 <div class="desk-card warn"><strong>Ontology Edges</strong><p>56개 supply/dependency/constraint edge</p></div>
 <div class="desk-card violet"><strong>Detailed Registry</strong><p>16개 theme · 38개 node · 11개 query seed</p></div>
 </div>
+<h2>0. 2026-08-21 Weekly QA 반영</h2>
+<p>이번 QA는 상세 registry baseline(16 theme · 38 node · 56 edge/link · 11 query seed)을 바꾸지 않고, 2026-08-08~2026-08-21 AI/Market/Cross reports에서 확인된 evidence 후보를 기존 reference node와 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source-review queue</strong>다. 개별 회사·ticker는 산업 mapping 참고용이며 매수·매도 판단이 아니다.</p>
+<h3>새로 연결된 evidence 후보</h3>
+<ul>
+<li><strong>Agent runtime / eval / security / workflow harness</strong>: AgentOPSD, OSReward, SWE-Bench ProMax, Ouroboros, OpenART, SemaPLC, SPADE, Bounded Agents, Looped Language Models 반복 → <code>ai_agent</code>, <code>enterprise_ai</code>, <code>training_data</code>, <code>frontier_llm</code>, <code>opensource_llm</code>에 연결 후보. 실제 workflow log·계약·ops gate 전까지 adoption 결론 보류.</li>
+<li><strong>Physical AI / Robotics / On-device AI</strong>: Zetta ζ, ComBodied Agents, SoftVTBench, 중국 humanoid/Unitree, robot useful-work 보도 → <code>on_device</code>, <code>humanoid</code>, <code>autonomous</code>, <code>korean_ai_chip</code>, <code>nvidia</code>, <code>opensource_llm</code>에 연결 후보. field deployment·반복 주문·safety evidence 전까지 hype와 adoption 분리.</li>
+<li><strong>Agent/inference workload → HBM·DRAM/NAND·AI DC power</strong>: Looped tool-calling, ClawMem/MindCache/Librarian, memory/KV/cache factor, Micron AI memory research lab·CEO commentary → <code>hbm</code>, <code>dram_nand</code>, <code>cowos</code>, <code>packaging_eq</code>, <code>nvidia</code>, <code>custom_asic</code>, <code>datacenter_build</code>, <code>dc_power</code>에 연결 후보. EPS/consensus revision 전까지 회사 판단 보류.</li>
+<li><strong>Hyperscaler capex ROI / off-grid power / AI DC site</strong>: data-center power materialization, hyperscaler off-grid power risk, Nordics AI data-center deals, capex guidance → <code>hyperscaler</code>, <code>datacenter_build</code>, <code>dc_power</code>, <code>nuclear</code>, <code>transformer</code>, <code>grid_cable</code>, <code>liquid_cooling</code>에 연결 후보. IR/PPA/grid interconnect/order-backlog 확인 queue.</li>
+<li><strong>Optical/CPO watch 유지</strong>: 2026-08-10~21 fresh daily evidence는 약했고 status bar에서도 광통신 신호 없음/약함이 반복됐다. <code>cpo</code>, <code>optical_transceiver</code>, <code>switch_chip</code>, <code>fiber_material</code>은 design win·shipment·800G/1.6T evidence 대기 상태로 둔다.</li>
+</ul>
+<h3>이번 주 부족한 UX / 데이터</h3>
+<ul>
+<li>현재 page는 KPI cards, 병목 heatmap, Mermaid 기반 supply/dependency network, node detail cards, edge strip, query seeds, risk/metrics 일부를 제공한다.</li>
+<li>아직 <strong>진짜 Sankey/flow interaction</strong>, 클릭형 node side panel, node별 최신 metric/freshness 자동 갱신, node card 내부 주가·뉴스·context panel, query copy/freshness badge, 모바일 company/ticker 압축은 backlog다.</li>
+<li>상세 보강 기록은 <code>07-sources/reference-dashboard-weekly-qa.md</code>, <code>04-ontology/Reference Dashboard Node Seeds.md</code>, <code>07-sources/reference-dashboard-queries.yaml</code>의 candidate query section에 누적한다.</li>
+<li>이번 주 candidate query IDs: <code>physical_ai_embodied_deployment</code>, <code>agent_security_runtime_verification</code>, <code>memory_kv_hbm_inference</code>, <code>offgrid_power_capex_roi</code>.</li>
+</ul>
 <h2>0. 2026-08-07 Weekly QA 반영</h2>
 <p>이번 QA는 상세 registry baseline(16 theme · 38 node · 56 edge/link · 11 query seed)을 바꾸지 않고, 2026-08-01~2026-08-07 AI/Market/Cross reports에서 확인된 evidence 후보를 기존 reference node와 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source-review queue</strong>다. 개별 회사·ticker는 산업 mapping 참고용이며 매수·매도 판단이 아니다.</p>
 <h3>새로 연결된 evidence 후보</h3>
@@ -690,6 +707,14 @@
 <li><code>training_data</code>: <code>(&quot;training data&quot; OR &quot;학습 데이터&quot;) (LLM OR 저작권 OR synthetic)</code></li>
 <li><code>transformer</code>: <code>(transformer OR 변압기) (AI 전력 OR HD현대일렉 OR 효성중공업)</code></li>
 <li><code>nuclear</code>: <code>(&quot;SMR&quot; OR &quot;small modular reactor&quot; OR 원전) (AI OR data center OR 데이터센터)</code></li>
+</ul>
+<h3>Candidate query queue — 2026-08-21</h3>
+<p>기준 registry의 원본 11개 query seed는 유지한다. 아래는 collector 정식 반영 전 source-review 후보이며 투자 판단/매수·매도 신호가 아니다.</p>
+<ul>
+<li><code>physical_ai_embodied_deployment</code>: Physical AI / embodied deployment evidence — Zetta ζ, closed-loop embodied harness, world model, humanoid/Unitree, field deployment/safety.</li>
+<li><code>agent_security_runtime_verification</code>: Agent runtime / eval / security verification — SPADE, AgentOPSD, OSReward, SWE-Bench ProMax, Ouroboros, OpenART, SemaPLC, Bounded Agents, Looped Language Models.</li>
+<li><code>memory_kv_hbm_inference</code>: Agent/inference memory pressure → HBM/DRAM/power — KV cache, ClawMem, MindCache, Librarian, server memory, HBM4/HBM3E, inference.</li>
+<li><code>offgrid_power_capex_roi</code>: Hyperscaler capex ROI / off-grid power / AI data-center site — capex ROI, off-grid power, PPA, interconnect, grid, nuclear/SMR, cooling/site.</li>
 </ul>
 <h3>Candidate query queue — 2026-08-07</h3>
 <p>기준 registry의 원본 11개 query seed는 유지한다. 아래는 collector 정식 반영 전 source-review 후보이며 투자 판단/매수·매도 신호가 아니다.</p>
