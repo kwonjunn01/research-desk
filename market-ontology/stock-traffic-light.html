@@ -355,8 +355,8 @@
 <div class="stock-hero-card"><span>느린 factor cache</span><b>79</b><em>updated 2026-08-21 · 7d cadence</em></div>
 <div class="stock-hero-card"><span>Valuation cache</span><b>79</b><em>updated 2026-08-21 · 30d cadence</em></div>
 <div class="stock-hero-card"><span>실적/가이던스 cache</span><b>70</b><em>updated 2026-05-08 · 90d cadence</em></div>
-<div class="stock-hero-card"><span>Institutional gates</span><b>26</b><em>source/model/revision gate 기준</em></div>
-<div class="stock-hero-card"><span>Source pack schemas</span><b>11</b><em>core company별 reference/model/revision schema</em></div>
+<div class="stock-hero-card"><span>Institutional gates</span><b>27</b><em>source/model/revision gate 기준</em></div>
+<div class="stock-hero-card"><span>Source pack schemas</span><b>12</b><em>core company별 reference/model/revision schema</em></div>
 <div class="stock-hero-card"><span>Analyst queue</span><b>80</b><em>source pack / role output 검토 대상</em></div>
 </div>
 <div class="stock-light-strip">
@@ -375,90 +375,42 @@
 <div class="stock-context-grid">
 <div class="stock-context warn"><b>판단 보류</b><span>79/79개 · 증권사/컨센서스/원문 숫자 검토 전</span></div>
 <div class="stock-context muted"><b>Source class coverage</b><span>78/79개가 4대 source class 보유</span></div>
-<div class="stock-context warn"><b>Source pack schema</b><span>11/79개에 회사별 source/reference/model/revision schema 등록</span></div>
+<div class="stock-context warn"><b>Source pack schema</b><span>12/79개에 회사별 source/reference/model/revision schema 등록</span></div>
 <div class="stock-context muted"><b>Reference→Model→Revision matrix</b><span>26/79개 시작 · 미완료 79개</span></div>
 <div class="stock-context warn"><b>Role output gap</b><span>역할 산출물 미완료 76개 · 주요 role: Financial Model/Data Analyst 75, Coverage Lead/Sector PM 74</span></div>
-<div class="stock-context warn"><b>Freshness watch</b><span>7일 초과/날짜확인 필요 77개</span></div>
-<div class="stock-context warn"><b>Source lane SLA</b><span>lane별 stale/미등록 77개 · daily/weekly/monthly 경계 표시</span></div>
+<div class="stock-context warn"><b>Freshness watch</b><span>7일 초과/날짜확인 필요 74개</span></div>
+<div class="stock-context warn"><b>Source lane SLA</b><span>lane별 stale/미등록 74개 · daily/weekly/monthly 경계 표시</span></div>
 <div class="stock-context muted"><b>다음 gate</b><span>증권사/컨센서스 참조 78, reference pack 최소 78, 회사 1차 자료 77</span></div>
 </div>
 <h2>Analyst Work Queue 80개 검토 게이트</h2>
-<blockquote><code>company-analysis-work-queue.json</code> 순서 그대로 표시한다. 첫 항목은 <strong>103590.KS Iljin Electric</strong>이며, source/reference/model/revision과 role output write boundary가 닫히기 전에는 모두 판단 보류다.</blockquote>
+<blockquote><code>company-analysis-work-queue.json</code> 순서 그대로 표시한다. 첫 항목은 <strong>095340.KQ ISC</strong>이며, source/reference/model/revision과 role output write boundary가 닫히기 전에는 모두 판단 보류다.</blockquote>
 <div class="stock-context-grid">
 <div class="stock-context warn"><b>Queue items</b><span>80개 · unique 79개 · 중복 TER.US</span></div>
 <div class="stock-context warn"><b>검토 미완료</b><span>80/80개 · reviewed publish 금지</span></div>
 <div class="stock-context warn"><b>Reference/Model/Revision</b><span>matrix 미완료 80/80개</span></div>
-<div class="stock-context warn"><b>Source pack schema</b><span>회사별 schema 등록 11/80개 · 없으면 reviewed claim 금지</span></div>
-<div class="stock-context warn"><b>Source lane SLA</b><span>stale/미등록 lane 보유 78/80개</span></div>
+<div class="stock-context warn"><b>Source pack schema</b><span>회사별 schema 등록 12/80개 · 없으면 reviewed claim 금지</span></div>
+<div class="stock-context warn"><b>Source lane SLA</b><span>stale/미등록 lane 보유 75/80개</span></div>
 <div class="stock-context warn"><b>Role outputs</b><span>역할 산출물 보류 77/80개 · write boundary 누락 55/80개 · public boundary 누락 55/80개</span></div>
 <div class="stock-context muted"><b>Public boundary</b><span>paywalled 자료와 내부 분석/Red-team 초안은 노출하지 않고 접근 한계만 표시</span></div>
 </div>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#01 <strong>Iljin Electric</strong> <code>103590.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
-<div class="stock-company-dashboard">
-<div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 189건</span></div>
-<div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · power cable / transformer / grid equipment · priority 266</span></div>
-<div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · company-specific source/model/revision checklist 필요</span></div>
-<div class="stock-company-thesis warn"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자 reconciliation 전 판단 보류</span></div>
-<div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing 1</span></div>
-<div class="stock-company-thesis warn"><b>Role output write boundary</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
-<div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계 · 누락 role 없음</span></div>
-<div class="stock-company-thesis warn"><b>누락 role/gate</b><span>role: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst · gate: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage</span></div>
-<div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, 회사별 source pack schema, public reference link/body-term 검증 외 8개 · next_action source_model_revision_reconciliation</span></div>
-<div class="stock-company-thesis"><b>Write boundary 누락 role</b><span>없음 · 내부 분석 초안/비공개 자료 유출 금지</span></div>
-<div class="stock-company-thesis"><b>가격 보조 정보</b><span>현재가 72,500.00 · 20D +8.86% · 60D -31.54% · 가격은 판단 보조 신호</span></div>
-</div>
-</details>
-<details class="stock-light-company">
-<summary><span class="stock-company-title">#02 <strong>Wonik IPS</strong> <code>240810.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
-<div class="stock-company-dashboard">
-<div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 185건</span></div>
-<div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · deposition/semicap equipment · priority 266</span></div>
-<div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · company-specific source/model/revision checklist 필요</span></div>
-<div class="stock-company-thesis warn"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자 reconciliation 전 판단 보류</span></div>
-<div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing 1</span></div>
-<div class="stock-company-thesis warn"><b>Role output write boundary</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
-<div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계 · 누락 role 없음</span></div>
-<div class="stock-company-thesis warn"><b>누락 role/gate</b><span>role: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst · gate: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage</span></div>
-<div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, 회사별 source pack schema, public reference link/body-term 검증 외 8개 · next_action source_model_revision_reconciliation</span></div>
-<div class="stock-company-thesis"><b>Write boundary 누락 role</b><span>없음 · 내부 분석 초안/비공개 자료 유출 금지</span></div>
-<div class="stock-company-thesis"><b>가격 보조 정보</b><span>현재가 111,500.00 · 20D -1.59% · 60D -8.61% · 가격은 판단 보조 신호</span></div>
-</div>
-</details>
-<details class="stock-light-company">
-<summary><span class="stock-company-title">#03 <strong>Rainbow Robotics</strong> <code>277810.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
-<div class="stock-company-dashboard">
-<div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 185건</span></div>
-<div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · humanoid/industrial robotics · priority 266</span></div>
-<div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · company-specific source/model/revision checklist 필요</span></div>
-<div class="stock-company-thesis warn"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자 reconciliation 전 판단 보류</span></div>
-<div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing 1</span></div>
-<div class="stock-company-thesis warn"><b>Role output write boundary</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
-<div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계 · 누락 role 없음</span></div>
-<div class="stock-company-thesis warn"><b>누락 role/gate</b><span>role: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst · gate: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage</span></div>
-<div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, 회사별 source pack schema, public reference link/body-term 검증 외 8개 · next_action source_model_revision_reconciliation</span></div>
-<div class="stock-company-thesis"><b>Write boundary 누락 role</b><span>없음 · 내부 분석 초안/비공개 자료 유출 금지</span></div>
-<div class="stock-company-thesis"><b>가격 보조 정보</b><span>현재가 490,000.00 · 20D -3.54% · 60D -36.53% · 가격은 판단 보조 신호</span></div>
-</div>
-</details>
-<details class="stock-light-company">
-<summary><span class="stock-company-title">#04 <strong>ISC</strong> <code>095340.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#01 <strong>ISC</strong> <code>095340.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 161건</span></div>
-<div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · semiconductor test socket / AI chip test exposure · priority 266</span></div>
-<div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · company-specific source/model/revision checklist 필요</span></div>
+<div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · semiconductor test socket / AI chip test exposure · priority 258</span></div>
+<div class="stock-company-thesis warn"><b>Source pack schema</b><span>company-source-pack-v1-role-boundary · metrics 5 · revision links 4 · 핵심 metric: 테스트 소켓·실리콘 러버/소재 제품별 매출, ASP, gross/OP margin · revision bridge: AI chip/HBM test step 증가 → high-end socket demand/qualification → order/revenue recognition → revenue/OP revision</span></div>
 <div class="stock-company-thesis warn"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자 reconciliation 전 판단 보류</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing 1</span></div>
 <div class="stock-company-thesis warn"><b>Role output write boundary</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
 <div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계 · 누락 role 없음</span></div>
 <div class="stock-company-thesis warn"><b>누락 role/gate</b><span>role: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst · gate: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage</span></div>
-<div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, 회사별 source pack schema, public reference link/body-term 검증 외 8개 · next_action source_model_revision_reconciliation</span></div>
+<div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, public reference link/body-term 검증, revision model linkage 외 8개 · next_action source_model_revision_reconciliation</span></div>
 <div class="stock-company-thesis"><b>Write boundary 누락 role</b><span>없음 · 내부 분석 초안/비공개 자료 유출 금지</span></div>
 <div class="stock-company-thesis"><b>가격 보조 정보</b><span>현재가 148,600.00 · 20D +0.95% · 60D -38.08% · 가격은 판단 보조 신호</span></div>
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#05 <strong>Leeno Industrial</strong> <code>058470.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#02 <strong>Leeno Industrial</strong> <code>058470.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 161건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · test pin/socket / semiconductor probe components · priority 266</span></div>
@@ -474,7 +426,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#06 <strong>FADU Inc.</strong> <code>440110.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#03 <strong>FADU Inc.</strong> <code>440110.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 159건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>HBM / Memory / Storage · AI 데이터센터용 엔터프라이즈 SSD 컨트롤러·스토리지 반도체 팹리스 · priority 266</span></div>
@@ -490,7 +442,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#07 <strong>HPSP</strong> <code>403870.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#04 <strong>HPSP</strong> <code>403870.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 157건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · high-pressure annealing equipment · priority 258</span></div>
@@ -506,7 +458,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#08 <strong>LS ELECTRIC</strong> <code>010120.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#05 <strong>LS ELECTRIC</strong> <code>010120.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 205건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · switchgear / grid automation / power infra · priority 308</span></div>
@@ -522,7 +474,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#09 <strong>HD Hyundai Electric</strong> <code>267260.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#06 <strong>HD Hyundai Electric</strong> <code>267260.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 198건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · transformer / power equipment for grid &amp; data center demand · priority 308</span></div>
@@ -538,7 +490,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#10 <strong>Hyosung Heavy Industries</strong> <code>298040.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#07 <strong>Hyosung Heavy Industries</strong> <code>298040.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 152건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · transformer / heavy electrical equipment · priority 258</span></div>
@@ -554,7 +506,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#11 <strong>Samsung SDS</strong> <code>018260.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#08 <strong>Samsung SDS</strong> <code>018260.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 188건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · enterprise cloud / AI transformation / data center services · priority 308</span></div>
@@ -570,7 +522,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#12 <strong>Lunit Inc.</strong> <code>328130.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#09 <strong>Lunit Inc.</strong> <code>328130.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 154건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Company Intake / Observation · AI 기반 암 진단·검진 및 정밀의료 소프트웨어 공급자 · priority 266</span></div>
@@ -586,7 +538,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#13 <strong>CoreWeave</strong> <code>CRWV.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#10 <strong>CoreWeave</strong> <code>CRWV.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 118건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · AI GPU cloud / neocloud infrastructure provider · priority 250</span></div>
@@ -602,7 +554,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#14 <strong>Hanmi Semiconductor</strong> <code>042700.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#11 <strong>Hanmi Semiconductor</strong> <code>042700.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 102건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · HBM TC bonder / advanced packaging equipment · priority 276</span></div>
@@ -618,7 +570,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#15 <strong>SK Hynix</strong> <code>000660.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#12 <strong>SK Hynix</strong> <code>000660.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 162건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>HBM / Memory / Storage · HBM/DRAM leader / NVIDIA supply chain · priority 268</span></div>
@@ -634,7 +586,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#16 <strong>Samsung Electronics</strong> <code>005930.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#13 <strong>Samsung Electronics</strong> <code>005930.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 147건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>HBM / Memory / Storage · HBM/DRAM/NAND/foundry/device AI · priority 268</span></div>
@@ -650,7 +602,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#17 <strong>NAVER</strong> <code>035420.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#14 <strong>NAVER</strong> <code>035420.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 110건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · Korean AI platform / cloud / search / sovereign AI · priority 268</span></div>
@@ -666,7 +618,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#18 <strong>AMD</strong> <code>AMD.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#15 <strong>AMD</strong> <code>AMD.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 86건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Semiconductor / GPU / Accelerator · GPU/CPU accelerator challenger · priority 268</span></div>
@@ -682,7 +634,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#19 <strong>Broadcom</strong> <code>AVGO.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#16 <strong>Broadcom</strong> <code>AVGO.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 78건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Semiconductor / GPU / Accelerator · custom ASIC/network silicon · priority 268</span></div>
@@ -698,7 +650,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#20 <strong>Eaton</strong> <code>ETN.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#17 <strong>Eaton</strong> <code>ETN.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 62건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · electrical equipment · priority 268</span></div>
@@ -714,7 +666,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#21 <strong>NVIDIA</strong> <code>NVDA.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#18 <strong>NVIDIA</strong> <code>NVDA.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 61건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Semiconductor / GPU / Accelerator · GPU/accelerator leader · priority 268</span></div>
@@ -730,7 +682,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#22 <strong>TSMC</strong> <code>TSM.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#19 <strong>TSMC</strong> <code>TSM.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 58건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · leading foundry/CoWoS · priority 268</span></div>
@@ -746,7 +698,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#23 <strong>Vertiv</strong> <code>VRT.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#20 <strong>Vertiv</strong> <code>VRT.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 63건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · data center power/cooling · priority 268</span></div>
@@ -762,7 +714,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#24 <strong>Amazon</strong> <code>AMZN.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#21 <strong>Amazon</strong> <code>AMZN.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 5건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · AWS/Trainium/retail cloud cashflow · priority 250</span></div>
@@ -778,7 +730,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#25 <strong>POSCO Future M</strong> <code>003670.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#22 <strong>POSCO Future M</strong> <code>003670.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 15건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Battery / ESS / Power Storage · cathode/anode materials · priority 242</span></div>
@@ -794,7 +746,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#26 <strong>Hyundai Motor</strong> <code>005380.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#23 <strong>Hyundai Motor</strong> <code>005380.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · mobility autonomy / robotics adjacency · priority 242</span></div>
@@ -810,7 +762,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#27 <strong>Samsung SDI</strong> <code>006400.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#24 <strong>Samsung SDI</strong> <code>006400.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Battery / ESS / Power Storage · battery cells / ESS / high-density storage · priority 242</span></div>
@@ -826,7 +778,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#28 <strong>Korea Zinc</strong> <code>010130.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#25 <strong>Korea Zinc</strong> <code>010130.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Strategic Metals / Battery Materials · zinc/lead/gold/silver smelting, strategic metals recovery and battery-material adjacency · priority 242</span></div>
@@ -842,7 +794,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#29 <strong>LG Innotek</strong> <code>011070.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#26 <strong>LG Innotek</strong> <code>011070.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Networking / Optical / Interconnect · optical/electronics components / camera &amp; substrate adjacency · priority 242</span></div>
@@ -858,7 +810,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#30 <strong>Hyundai Mobis</strong> <code>012330.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#27 <strong>Hyundai Mobis</strong> <code>012330.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · ADAS / automotive electronics / robotics supply chain · priority 242</span></div>
@@ -874,7 +826,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#31 <strong>Kakao</strong> <code>035720.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#28 <strong>Kakao</strong> <code>035720.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · Korean consumer AI/platform ecosystem · priority 242</span></div>
@@ -890,7 +842,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#32 <strong>LG Chem</strong> <code>051910.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#29 <strong>LG Chem</strong> <code>051910.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 16건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Battery / ESS / Power Storage · battery materials / chemicals · priority 242</span></div>
@@ -906,7 +858,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#33 <strong>SK Innovation</strong> <code>096770.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#30 <strong>SK Innovation</strong> <code>096770.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Battery / ESS / Power Storage · battery / energy / refining transition · priority 242</span></div>
@@ -922,7 +874,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#34 <strong>LG Energy Solution</strong> <code>373220.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#31 <strong>LG Energy Solution</strong> <code>373220.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Battery / ESS / Power Storage · battery cells / ESS / global EV-storage supply · priority 242</span></div>
@@ -938,7 +890,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#35 <strong>SK Square</strong> <code>402340.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#32 <strong>SK Square</strong> <code>402340.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>HBM / Memory / Storage · SK Hynix holding-company exposure · priority 242</span></div>
@@ -954,7 +906,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#36 <strong>Doosan Robotics</strong> <code>454910.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#33 <strong>Doosan Robotics</strong> <code>454910.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · collaborative robots · priority 242</span></div>
@@ -970,7 +922,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#37 <strong>Apple</strong> <code>AAPL.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#34 <strong>Apple</strong> <code>AAPL.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 5건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · on-device AI ecosystem · priority 242</span></div>
@@ -986,7 +938,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#38 <strong>Applied Materials</strong> <code>AMAT.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#35 <strong>Applied Materials</strong> <code>AMAT.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 5건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · deposition/materials equipment · priority 242</span></div>
@@ -1002,7 +954,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#39 <strong>Cisco</strong> <code>CSCO.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#36 <strong>Cisco</strong> <code>CSCO.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Networking / Optical / Interconnect · networking/security · priority 242</span></div>
@@ -1018,7 +970,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#40 <strong>GE Vernova</strong> <code>GEV.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#37 <strong>GE Vernova</strong> <code>GEV.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · grid/gas turbine/electrification · priority 242</span></div>
@@ -1034,7 +986,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#41 <strong>Alphabet</strong> <code>GOOGL.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#38 <strong>Alphabet</strong> <code>GOOGL.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · Google Cloud/TPU/Gemini · priority 242</span></div>
@@ -1050,7 +1002,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#42 <strong>Intel</strong> <code>INTC.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#39 <strong>Intel</strong> <code>INTC.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Semiconductor / GPU / Accelerator · CPU/foundry/AI accelerator turnaround · priority 242</span></div>
@@ -1066,7 +1018,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#43 <strong>Intuitive Surgical</strong> <code>ISRG.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#40 <strong>Intuitive Surgical</strong> <code>ISRG.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · robotic surgery · priority 242</span></div>
@@ -1082,7 +1034,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#44 <strong>KLA</strong> <code>KLAC.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#41 <strong>KLA</strong> <code>KLAC.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · process control/inspection · priority 242</span></div>
@@ -1098,7 +1050,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#45 <strong>Lumentum</strong> <code>LITE.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#42 <strong>Lumentum</strong> <code>LITE.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Networking / Optical / Interconnect · optical components · priority 242</span></div>
@@ -1114,7 +1066,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#46 <strong>Lam Research</strong> <code>LRCX.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#43 <strong>Lam Research</strong> <code>LRCX.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · etch/deposition equipment · priority 242</span></div>
@@ -1130,7 +1082,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#47 <strong>MongoDB</strong> <code>MDB.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#44 <strong>MongoDB</strong> <code>MDB.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Security / Observability / Data Layer · developer data platform · priority 242</span></div>
@@ -1146,7 +1098,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#48 <strong>Arm</strong> <code>ARM.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#45 <strong>Arm</strong> <code>ARM.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Semiconductor / GPU / Accelerator · CPU IP ecosystem · priority 234</span></div>
@@ -1162,7 +1114,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#49 <strong>ASM International</strong> <code>ASM.AS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#46 <strong>ASM International</strong> <code>ASM.AS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · ALD/equipment · priority 234</span></div>
@@ -1178,7 +1130,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#50 <strong>ASML</strong> <code>ASML.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#47 <strong>ASML</strong> <code>ASML.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · EUV lithography · priority 234</span></div>
@@ -1194,7 +1146,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#51 <strong>Constellation Energy</strong> <code>CEG.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#48 <strong>Constellation Energy</strong> <code>CEG.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · nuclear/power supply · priority 234</span></div>
@@ -1210,7 +1162,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#52 <strong>Ciena</strong> <code>CIEN.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#49 <strong>Ciena</strong> <code>CIEN.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Networking / Optical / Interconnect · optical networking · priority 234</span></div>
@@ -1226,7 +1178,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#53 <strong>Coherent</strong> <code>COHR.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#50 <strong>Coherent</strong> <code>COHR.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Networking / Optical / Interconnect · optical components · priority 234</span></div>
@@ -1242,7 +1194,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#54 <strong>Meta</strong> <code>META.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#51 <strong>Meta</strong> <code>META.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · AI capex/open models/social platform · priority 234</span></div>
@@ -1258,7 +1210,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#55 <strong>Marvell</strong> <code>MRVL.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#52 <strong>Marvell</strong> <code>MRVL.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Semiconductor / GPU / Accelerator · custom silicon/DSP/networking · priority 234</span></div>
@@ -1274,7 +1226,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#56 <strong>Microsoft</strong> <code>MSFT.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#53 <strong>Microsoft</strong> <code>MSFT.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · Azure/OpenAI/enterprise AI · priority 234</span></div>
@@ -1290,7 +1242,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#57 <strong>Micron</strong> <code>MU.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#54 <strong>Micron</strong> <code>MU.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>HBM / Memory / Storage · HBM/DRAM/NAND · priority 234</span></div>
@@ -1306,7 +1258,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#58 <strong>Nebius Group N.V.</strong> <code>NBIS.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#55 <strong>Nebius Group N.V.</strong> <code>NBIS.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · AI GPU 클라우드 및 데이터센터 인프라 공급자 · priority 234</span></div>
@@ -1322,7 +1274,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#59 <strong>Cloudflare</strong> <code>NET.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#56 <strong>Cloudflare</strong> <code>NET.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Security / Observability / Data Layer · edge/network/security · priority 234</span></div>
@@ -1338,7 +1290,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#60 <strong>Oracle</strong> <code>ORCL.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#57 <strong>Oracle</strong> <code>ORCL.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · OCI/cloud AI infra · priority 234</span></div>
@@ -1354,7 +1306,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#61 <strong>Palo Alto Networks</strong> <code>PANW.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#58 <strong>Palo Alto Networks</strong> <code>PANW.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Security / Observability / Data Layer · security platform · priority 234</span></div>
@@ -1370,7 +1322,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#62 <strong>Palantir</strong> <code>PLTR.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#59 <strong>Palantir</strong> <code>PLTR.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · AI operations platform · priority 234</span></div>
@@ -1386,7 +1338,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#63 <strong>Quanta Services</strong> <code>PWR.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#60 <strong>Quanta Services</strong> <code>PWR.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · grid/infrastructure contractor · priority 234</span></div>
@@ -1402,7 +1354,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#64 <strong>Qualcomm</strong> <code>QCOM.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#61 <strong>Qualcomm</strong> <code>QCOM.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Semiconductor / GPU / Accelerator · edge/mobile AI silicon · priority 234</span></div>
@@ -1418,7 +1370,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#65 <strong>Rockwell Automation</strong> <code>ROK.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#62 <strong>Rockwell Automation</strong> <code>ROK.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · industrial automation · priority 234</span></div>
@@ -1434,7 +1386,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#66 <strong>NuScale Power</strong> <code>SMR.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#63 <strong>NuScale Power</strong> <code>SMR.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · SMR/nuclear option · priority 234</span></div>
@@ -1450,7 +1402,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#67 <strong>Sandisk Corporation</strong> <code>SNDK.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#64 <strong>Sandisk Corporation</strong> <code>SNDK.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>HBM / Memory / Storage · NAND flash and enterprise SSD storage supplier for AI/data-center infrastructure · priority 234</span></div>
@@ -1466,7 +1418,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#68 <strong>Snowflake</strong> <code>SNOW.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#65 <strong>Snowflake</strong> <code>SNOW.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Cloud Hyperscaler / AI Platform · data cloud/enterprise AI · priority 234</span></div>
@@ -1482,7 +1434,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#69 <strong>Seagate</strong> <code>STX.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#66 <strong>Seagate</strong> <code>STX.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>HBM / Memory / Storage · HDD/data storage · priority 234</span></div>
@@ -1498,7 +1450,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#70 <strong>Schneider Electric</strong> <code>SU.PA</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#67 <strong>Schneider Electric</strong> <code>SU.PA</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · energy management/data center electrical · priority 234</span></div>
@@ -1514,7 +1466,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#71 <strong>Stryker</strong> <code>SYK.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#68 <strong>Stryker</strong> <code>SYK.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · medical robotics/devices · priority 234</span></div>
@@ -1530,7 +1482,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#72 <strong>Teradyne</strong> <code>TER.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#69 <strong>Teradyne</strong> <code>TER.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · semiconductor test/robotics · priority 234</span></div>
@@ -1546,7 +1498,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#73 <strong>Teradyne</strong> <code>TER.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#70 <strong>Teradyne</strong> <code>TER.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · collaborative robots/test · priority 234</span></div>
@@ -1562,7 +1514,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#74 <strong>Tesla</strong> <code>TSLA.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#71 <strong>Tesla</strong> <code>TSLA.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · robotics/autonomy AI · priority 234</span></div>
@@ -1578,7 +1530,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#75 <strong>Western Digital</strong> <code>WDC.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#72 <strong>Western Digital</strong> <code>WDC.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>HBM / Memory / Storage · storage/NAND · priority 234</span></div>
@@ -1594,7 +1546,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#76 <strong>Arista Networks</strong> <code>ANET.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#73 <strong>Arista Networks</strong> <code>ANET.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 11건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>Networking / Optical / Interconnect · AI data center Ethernet switching · priority 226</span></div>
@@ -1610,7 +1562,7 @@
 </div>
 </details>
 <details class="stock-light-company">
-<summary><span class="stock-company-title">#77 <strong>Datadog</strong> <code>DDOG.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<summary><span class="stock-company-title">#74 <strong>Datadog</strong> <code>DDOG.US</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
 <div class="stock-company-dashboard">
 <div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 3/4 · source 9건</span></div>
 <div class="stock-company-thesis"><b>Queue role</b><span>AI Security / Observability / Data Layer · observability/cloud monitoring · priority 226</span></div>
@@ -1623,6 +1575,54 @@
 <div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, 회사별 source pack schema, public reference link/body-term 검증 외 8개 · next_action source_model_revision_reconciliation</span></div>
 <div class="stock-company-thesis"><b>Write boundary 누락 role</b><span>Coverage, Company, Model, Supply · 내부 분석 초안/비공개 자료 유출 금지</span></div>
 <div class="stock-company-thesis"><b>가격 보조 정보</b><span>현재가 232.55 · 20D -4.84% · 60D +3.98% · 가격은 판단 보조 신호</span></div>
+</div>
+</details>
+<details class="stock-light-company">
+<summary><span class="stock-company-title">#75 <strong>Iljin Electric</strong> <code>103590.KS</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<div class="stock-company-dashboard">
+<div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 193건</span></div>
+<div class="stock-company-thesis"><b>Queue role</b><span>Data Center Power / Cooling / Grid · power cable / transformer / grid equipment · priority 202</span></div>
+<div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · company-specific source/model/revision checklist 필요</span></div>
+<div class="stock-company-thesis warn"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자 reconciliation 전 판단 보류</span></div>
+<div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:0d / sell-side:0d / consensus:0d / industry-specialist:0d · stale/missing 0</span></div>
+<div class="stock-company-thesis warn"><b>Role output write boundary</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
+<div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계 · 누락 role 없음</span></div>
+<div class="stock-company-thesis warn"><b>누락 role/gate</b><span>role: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst · gate: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage</span></div>
+<div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, 회사별 source pack schema, public reference link/body-term 검증 외 8개 · next_action source_model_revision_reconciliation</span></div>
+<div class="stock-company-thesis"><b>Write boundary 누락 role</b><span>없음 · 내부 분석 초안/비공개 자료 유출 금지</span></div>
+<div class="stock-company-thesis"><b>가격 보조 정보</b><span>현재가 72,500.00 · 20D +8.86% · 60D -31.54% · 가격은 판단 보조 신호</span></div>
+</div>
+</details>
+<details class="stock-light-company">
+<summary><span class="stock-company-title">#76 <strong>Wonik IPS</strong> <code>240810.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<div class="stock-company-dashboard">
+<div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 189건</span></div>
+<div class="stock-company-thesis"><b>Queue role</b><span>Foundry / Advanced Packaging / Semiconductor Equipment · deposition/semicap equipment · priority 202</span></div>
+<div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · company-specific source/model/revision checklist 필요</span></div>
+<div class="stock-company-thesis warn"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자 reconciliation 전 판단 보류</span></div>
+<div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:0d / sell-side:0d / consensus:0d / industry-specialist:0d · stale/missing 0</span></div>
+<div class="stock-company-thesis warn"><b>Role output write boundary</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
+<div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계 · 누락 role 없음</span></div>
+<div class="stock-company-thesis warn"><b>누락 role/gate</b><span>role: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst · gate: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage</span></div>
+<div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, 회사별 source pack schema, public reference link/body-term 검증 외 8개 · next_action source_model_revision_reconciliation</span></div>
+<div class="stock-company-thesis"><b>Write boundary 누락 role</b><span>없음 · 내부 분석 초안/비공개 자료 유출 금지</span></div>
+<div class="stock-company-thesis"><b>가격 보조 정보</b><span>현재가 111,500.00 · 20D -1.59% · 60D -8.61% · 가격은 판단 보조 신호</span></div>
+</div>
+</details>
+<details class="stock-light-company">
+<summary><span class="stock-company-title">#77 <strong>Rainbow Robotics</strong> <code>277810.KQ</code></span><span class="stock-bucket">검토 미완료 · 판단 보류</span></summary>
+<div class="stock-company-dashboard">
+<div class="stock-company-thesis warn"><b>검토 상태</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 189건</span></div>
+<div class="stock-company-thesis"><b>Queue role</b><span>Edge / Robotics / Healthcare AI · humanoid/industrial robotics · priority 202</span></div>
+<div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · company-specific source/model/revision checklist 필요</span></div>
+<div class="stock-company-thesis warn"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자 reconciliation 전 판단 보류</span></div>
+<div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:0d / sell-side:0d / consensus:0d / industry-specialist:0d · stale/missing 0</span></div>
+<div class="stock-company-thesis warn"><b>Role output write boundary</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
+<div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계 · 누락 role 없음</span></div>
+<div class="stock-company-thesis warn"><b>누락 role/gate</b><span>role: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst · gate: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage</span></div>
+<div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, 회사별 source pack schema, public reference link/body-term 검증 외 8개 · next_action source_model_revision_reconciliation</span></div>
+<div class="stock-company-thesis"><b>Write boundary 누락 role</b><span>없음 · 내부 분석 초안/비공개 자료 유출 금지</span></div>
+<div class="stock-company-thesis"><b>가격 보조 정보</b><span>현재가 490,000.00 · 20D -3.54% · 60D -36.53% · 가격은 판단 보조 신호</span></div>
 </div>
 </details>
 <details class="stock-light-company">
@@ -1667,7 +1667,7 @@
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:93d&gt;30d / sell-side:93d&gt;14d / consensus:93d&gt;7d / industry-specialist:93d&gt;14d · stale/missing 4</span></div>
 <div class="stock-company-thesis warn"><b>Role output write boundary</b><span>0/7 완료 · write boundary 누락 7 · Coverage:연결+경계미등록 / Company:연결+경계미등록 / Model:연결+경계미등록 / Supply:연결+경계미등록 / Valuation:연결+경계미등록 / Red-team:연결+경계미등록 / Publisher:연결+경계미등록</span></div>
 <div class="stock-company-thesis warn"><b>Role output public boundary</b><span>0/7 public boundary 등록 · 누락 7 · 내부 분석/반대논리 초안 비노출 경계 · 누락 role Coverage, Company, Model, Supply</span></div>
-<div class="stock-company-thesis warn"><b>누락 role/gate</b><span>role: 없음 · gate: source lane freshness SLA, public reference link/body-term 검증, role output write boundary, role output public boundary</span></div>
+<div class="stock-company-thesis warn"><b>누락 role/gate</b><span>role: 없음 · gate: source lane freshness SLA, 회사별 source pack schema, public reference link/body-term 검증, role output write boundary</span></div>
 <div class="stock-company-thesis"><b>Queue missing</b><span>원문 숫자 reconciliation, source→model→revision 추적성, 회사별 source pack schema, public reference link/body-term 검증 외 8개 · next_action source_model_revision_reconciliation</span></div>
 <div class="stock-company-thesis"><b>Write boundary 누락 role</b><span>Coverage, Company, Model, Supply · 내부 분석 초안/비공개 자료 유출 금지</span></div>
 <div class="stock-company-thesis"><b>가격 보조 정보</b><span>현재가 190.34 · 20D +3.77% · 60D +13.37% · 가격은 판단 보조 신호</span></div>
@@ -1748,7 +1748,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>GPU/CPU accelerator challenger</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>가격 약세와 bear/context risk가 같이 관찰됨</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 86건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 86건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
@@ -1793,7 +1793,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>GPU/accelerator leader</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 61건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 61건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
@@ -1838,7 +1838,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>custom ASIC/network silicon</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 78건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 78건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
@@ -1883,7 +1883,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>CPU/foundry/AI accelerator turnaround</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 23 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -1928,7 +1928,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>CPU IP ecosystem</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-20 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:93d&gt;30d / sell-side:93d&gt;14d / consensus:93d&gt;7d / industry-specialist:93d&gt;14d · stale/missing lane 4</span></div>
@@ -1972,7 +1972,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>custom silicon/DSP/networking</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -2014,7 +2014,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>edge/mobile AI silicon</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-22 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:91d&gt;30d / sell-side:91d&gt;14d / consensus:91d&gt;7d / industry-specialist:91d&gt;14d · stale/missing lane 4</span></div>
@@ -2083,7 +2083,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>process control/inspection</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>가격 약세와 bear/context risk가 같이 관찰됨</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 23 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -2125,7 +2125,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>leading foundry/CoWoS</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 58건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 58건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-07-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:26d / sell-side:26d&gt;14d / consensus:26d&gt;7d / industry-specialist:26d&gt;14d · stale/missing lane 3</span></div>
@@ -2167,7 +2167,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>EUV lithography</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-20 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:93d&gt;30d / sell-side:93d&gt;14d / consensus:93d&gt;7d / industry-specialist:93d&gt;14d · stale/missing lane 4</span></div>
@@ -2209,7 +2209,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>deposition/materials equipment</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 5건 · 미완료 gate 22 · 미완료 role 6</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 5건 · 미완료 gate 23 · 미완료 role 6</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-19 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:94d&gt;30d / sell-side:94d&gt;14d / consensus:94d&gt;7d / industry-specialist:94d&gt;14d · stale/missing lane 4</span></div>
@@ -2251,7 +2251,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>etch/deposition equipment</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 23 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -2334,7 +2334,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>ALD/equipment</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-20 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:93d&gt;30d / sell-side:93d&gt;14d / consensus:93d&gt;7d / industry-specialist:93d&gt;14d · stale/missing lane 4</span></div>
@@ -2375,7 +2375,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>HBM TC bonder / advanced packaging equipment</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 102건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 102건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
@@ -2418,7 +2418,7 @@
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
 <div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 161건 · 미완료 gate 19 · 미완료 role 7</span></div>
-<div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
+<div class="stock-company-thesis warn"><b>Source pack schema</b><span>company-source-pack-v1-role-boundary · metrics 5 · revision links 4 · 핵심 metric: 테스트 소켓·실리콘 러버/소재 제품별 매출, ASP, gross/OP margin · revision bridge: AI chip/HBM test step 증가 → high-end socket demand/qualification → order/revenue recognition → revenue/OP revision</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
 <div class="stock-company-thesis"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자와 revision 연결 전 reviewed 금지</span></div>
@@ -2459,7 +2459,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>test pin/socket / semiconductor probe components</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 161건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 161건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
@@ -2501,17 +2501,17 @@
 <div class="stock-company-thesis"><b>역할</b><span>deposition/semicap equipment</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 185건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 189건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
-<div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
-<div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
+<div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
+<div class="stock-company-thesis muted"><b>Source freshness SLA</b><span>company-primary:0d / sell-side:0d / consensus:0d / industry-specialist:0d · stale/missing lane 0</span></div>
 <div class="stock-company-thesis"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자와 revision 연결 전 reviewed 금지</span></div>
 <div class="stock-company-thesis"><b>다음 검토 큐</b><span>gate 보완: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage · role 보완: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst</span></div>
 <div class="stock-company-thesis warn"><b>Role output 상태</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
 <div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계</span></div>
 <div class="stock-company-thesis"><b>검토 경계</b><span>public source pack 일부 확인 · verified consensus revision 확인 필요 · 판단 보류 · 내부 원자료는 비공개</span></div>
-<div class="stock-company-thesis"><b>느린 자료 cache</b><span>2026-08-09 · 12일 경과 · weekly_medium</span></div>
-<div class="stock-company-thesis"><b>Valuation cache</b><span>2026-08-09 · 12일 경과 · monthly_slow</span></div>
+<div class="stock-company-thesis"><b>느린 자료 cache</b><span>2026-08-21 · 0일 경과 · weekly_medium</span></div>
+<div class="stock-company-thesis"><b>Valuation cache</b><span>2026-08-21 · 0일 경과 · monthly_slow</span></div>
 <div class="stock-company-thesis"><b>실적/가이던스 cache</b><span>2026-05-08 · 105일 경과 · quarterly_slow</span></div>
 </div>
 <div class="stock-metric-row">
@@ -2656,7 +2656,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>storage/NAND</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>가격 약세와 bear/context risk가 같이 관찰됨</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-23 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:90d&gt;30d / sell-side:90d&gt;14d / consensus:90d&gt;7d / industry-specialist:90d&gt;14d · stale/missing lane 4</span></div>
@@ -2698,7 +2698,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>HBM/DRAM/NAND</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-22 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:91d&gt;30d / sell-side:91d&gt;14d / consensus:91d&gt;7d / industry-specialist:91d&gt;14d · stale/missing lane 4</span></div>
@@ -2787,7 +2787,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>HDD/data storage</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-23 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:90d&gt;30d / sell-side:90d&gt;14d / consensus:90d&gt;7d / industry-specialist:90d&gt;14d · stale/missing lane 4</span></div>
@@ -2829,7 +2829,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>SK Hynix holding-company exposure</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 21 · 미완료 role 4</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 22 · 미완료 role 4</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-18 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:95d&gt;30d / sell-side:95d&gt;14d / consensus:95d&gt;7d / industry-specialist:95d&gt;14d · stale/missing lane 4</span></div>
@@ -2871,7 +2871,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>NAND flash and enterprise SSD storage supplier for AI/data-center infrastructure</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 22 · 미완료 role 0</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 23 · 미완료 role 0</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-19 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:94d&gt;30d / sell-side:94d&gt;14d / consensus:94d&gt;7d / industry-specialist:94d&gt;14d · stale/missing lane 4</span></div>
@@ -2912,7 +2912,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>AI 데이터센터용 엔터프라이즈 SSD 컨트롤러·스토리지 반도체 팹리스</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 159건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 159건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
@@ -2979,7 +2979,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>zinc/lead/gold/silver smelting, strategic metals recovery and battery-material adjacency</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:87d&gt;30d / sell-side:87d&gt;14d / consensus:87d&gt;7d / industry-specialist:87d&gt;14d · stale/missing lane 4</span></div>
@@ -3050,7 +3050,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>AI capex/open models/social platform</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -3095,7 +3095,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>Google Cloud/TPU/Gemini</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 23 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -3140,7 +3140,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>AWS/Trainium/retail cloud cashflow</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 5건 · 미완료 gate 23 · 미완료 role 6</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 5건 · 미완료 gate 24 · 미완료 role 6</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-19 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:94d&gt;30d / sell-side:94d&gt;14d / consensus:94d&gt;7d / industry-specialist:94d&gt;14d · stale/missing lane 4</span></div>
@@ -3185,7 +3185,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>Azure/OpenAI/enterprise AI</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -3274,7 +3274,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>OCI/cloud AI infra</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-25 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:88d&gt;30d / sell-side:88d&gt;14d / consensus:88d&gt;7d / industry-specialist:88d&gt;14d · stale/missing lane 4</span></div>
@@ -3399,7 +3399,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>Korean consumer AI/platform ecosystem</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:87d&gt;30d / sell-side:87d&gt;14d / consensus:87d&gt;7d / industry-specialist:87d&gt;14d · stale/missing lane 4</span></div>
@@ -3441,7 +3441,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>AI GPU 클라우드 및 데이터센터 인프라 공급자</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-25 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:88d&gt;30d / sell-side:88d&gt;14d / consensus:88d&gt;7d / industry-specialist:88d&gt;14d · stale/missing lane 4</span></div>
@@ -3482,7 +3482,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>data cloud/enterprise AI</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-23 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:90d&gt;30d / sell-side:90d&gt;14d / consensus:90d&gt;7d / industry-specialist:90d&gt;14d · stale/missing lane 4</span></div>
@@ -3524,7 +3524,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>AI operations platform</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-22 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:91d&gt;30d / sell-side:91d&gt;14d / consensus:91d&gt;7d / industry-specialist:91d&gt;14d · stale/missing lane 4</span></div>
@@ -3593,7 +3593,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>data center power/cooling</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>가격 약세와 bear/context risk가 같이 관찰됨</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 63건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 63건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-02 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:19d / sell-side:19d&gt;14d / consensus:19d&gt;7d / industry-specialist:19d&gt;14d · stale/missing lane 3</span></div>
@@ -3635,7 +3635,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>electrical equipment</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 62건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 62건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
@@ -3677,7 +3677,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>energy management/data center electrical</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 22 · 미완료 role 0</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 23 · 미완료 role 0</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-19 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:94d&gt;30d / sell-side:94d&gt;14d / consensus:94d&gt;7d / industry-specialist:94d&gt;14d · stale/missing lane 4</span></div>
@@ -3718,7 +3718,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>grid/infrastructure contractor</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-22 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:91d&gt;30d / sell-side:91d&gt;14d / consensus:91d&gt;7d / industry-specialist:91d&gt;14d · stale/missing lane 4</span></div>
@@ -3760,7 +3760,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>grid/gas turbine/electrification</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 23 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -3802,7 +3802,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>SMR/nuclear option</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-23 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:90d&gt;30d / sell-side:90d&gt;14d / consensus:90d&gt;7d / industry-specialist:90d&gt;14d · stale/missing lane 4</span></div>
@@ -3846,7 +3846,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>nuclear/power supply</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-20 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:93d&gt;30d / sell-side:93d&gt;14d / consensus:93d&gt;7d / industry-specialist:93d&gt;14d · stale/missing lane 4</span></div>
@@ -4014,17 +4014,17 @@
 <div class="stock-company-thesis"><b>역할</b><span>power cable / transformer / grid equipment</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 189건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 193건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
-<div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
-<div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
+<div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
+<div class="stock-company-thesis muted"><b>Source freshness SLA</b><span>company-primary:0d / sell-side:0d / consensus:0d / industry-specialist:0d · stale/missing lane 0</span></div>
 <div class="stock-company-thesis"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자와 revision 연결 전 reviewed 금지</span></div>
 <div class="stock-company-thesis"><b>다음 검토 큐</b><span>gate 보완: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage · role 보완: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst</span></div>
 <div class="stock-company-thesis warn"><b>Role output 상태</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
 <div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계</span></div>
 <div class="stock-company-thesis"><b>검토 경계</b><span>public source pack 일부 확인 · verified consensus revision 확인 필요 · 판단 보류 · 내부 원자료는 비공개</span></div>
-<div class="stock-company-thesis"><b>느린 자료 cache</b><span>2026-08-13 · 8일 경과 · weekly_medium</span></div>
-<div class="stock-company-thesis"><b>Valuation cache</b><span>2026-08-13 · 8일 경과 · monthly_slow</span></div>
+<div class="stock-company-thesis"><b>느린 자료 cache</b><span>2026-08-21 · 0일 경과 · weekly_medium</span></div>
+<div class="stock-company-thesis"><b>Valuation cache</b><span>2026-08-21 · 0일 경과 · monthly_slow</span></div>
 <div class="stock-company-thesis"><b>실적/가이던스 cache</b><span>2026-05-08 · 105일 경과 · quarterly_slow</span></div>
 </div>
 <div class="stock-metric-row">
@@ -4039,10 +4039,10 @@
 <div class="stock-factor low"><span>가격 위치</span><b>34/100</b><em>약함</em><small>52주 range 상단일수록 가격 부담도 같이 점검</small></div>
 <div class="stock-factor mid"><span>모멘텀</span><b>46/100</b><em>보통</em><small>20D/60D 수익률 기반 단기 추세</small></div>
 <div class="stock-factor low"><span>내러티브</span><b>30/100</b><em>약함</em><small>node score + 직접 뉴스 근거</small></div>
-<div class="stock-factor mid"><span>CAPEX</span><b>48/100</b><em>보통</em><small>hyperscaler/data center 투자 언급 · weekly_medium cache + daily headlines</small></div>
+<div class="stock-factor mid"><span>CAPEX</span><b>66/100</b><em>보통</em><small>hyperscaler/data center 투자 언급 · weekly_medium cache + daily headlines</small></div>
 <div class="stock-factor mid"><span>수요</span><b>48/100</b><em>보통</em><small>주문/성장/AI demand 언급 · weekly_medium cache + daily headlines</small></div>
 <div class="stock-factor mid"><span>공급병목</span><b>66/100</b><em>보통</em><small>HBM/CoWoS/전력/냉각/lead time · weekly_medium cache + daily headlines</small></div>
-<div class="stock-factor low"><span>리스크</span><b>30/100</b><em>낮음</em><small>규제/수출통제/마진/과열/지연 · weekly_medium cache + daily headlines</small></div>
+<div class="stock-factor warn"><span>리스크</span><b>48/100</b><em>주의</em><small>규제/수출통제/마진/과열/지연 · weekly_medium cache + daily headlines</small></div>
 <div class="stock-factor muted"><span>Valuation 부담</span><b>0/100</b><em>부족</em><small>multiple/price target 언급 + 52주 위치 · monthly_slow cache</small></div>
 <div class="stock-factor muted"><span>실적/가이던스</span><b>0/100</b><em>부족</em><small>earnings/outlook/revenue/margin 언급 · quarterly_slow cache</small></div>
 </div>
@@ -4083,7 +4083,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>optical networking</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-20 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:93d&gt;30d / sell-side:93d&gt;14d / consensus:93d&gt;7d / industry-specialist:93d&gt;14d · stale/missing lane 4</span></div>
@@ -4127,7 +4127,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>AI data center Ethernet switching</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 11건 · 미완료 gate 20 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 11건 · 미완료 gate 21 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-06-06 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:76d&gt;30d / sell-side:76d&gt;14d / consensus:76d&gt;7d / industry-specialist:76d&gt;14d · stale/missing lane 4</span></div>
@@ -4210,7 +4210,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>networking/security</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 23 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -4252,7 +4252,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>optical components</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-20 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:93d&gt;30d / sell-side:93d&gt;14d / consensus:93d&gt;7d / industry-specialist:93d&gt;14d · stale/missing lane 4</span></div>
@@ -4294,7 +4294,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>optical components</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 23 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -4336,7 +4336,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>optical/electronics components / camera &amp; substrate adjacency</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:87d&gt;30d / sell-side:87d&gt;14d / consensus:87d&gt;7d / industry-specialist:87d&gt;14d · stale/missing lane 4</span></div>
@@ -4405,7 +4405,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>on-device AI ecosystem</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 5건 · 미완료 gate 22 · 미완료 role 6</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 5건 · 미완료 gate 23 · 미완료 role 6</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-19 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:94d&gt;30d / sell-side:94d&gt;14d / consensus:94d&gt;7d / industry-specialist:94d&gt;14d · stale/missing lane 4</span></div>
@@ -4447,7 +4447,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>robotics/autonomy AI</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-23 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:90d&gt;30d / sell-side:90d&gt;14d / consensus:90d&gt;7d / industry-specialist:90d&gt;14d · stale/missing lane 4</span></div>
@@ -4489,7 +4489,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>robotic surgery</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 23 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -4531,7 +4531,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>medical robotics/devices</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-23 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:90d&gt;30d / sell-side:90d&gt;14d / consensus:90d&gt;7d / industry-specialist:90d&gt;14d · stale/missing lane 4</span></div>
@@ -4573,7 +4573,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>industrial automation</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-23 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:90d&gt;30d / sell-side:90d&gt;14d / consensus:90d&gt;7d / industry-specialist:90d&gt;14d · stale/missing lane 4</span></div>
@@ -4615,7 +4615,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>mobility autonomy / robotics adjacency</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:87d&gt;30d / sell-side:87d&gt;14d / consensus:87d&gt;7d / industry-specialist:87d&gt;14d · stale/missing lane 4</span></div>
@@ -4657,7 +4657,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>ADAS / automotive electronics / robotics supply chain</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:87d&gt;30d / sell-side:87d&gt;14d / consensus:87d&gt;7d / industry-specialist:87d&gt;14d · stale/missing lane 4</span></div>
@@ -4699,7 +4699,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>collaborative robots</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 21 · 미완료 role 4</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 9건 · 미완료 gate 22 · 미완료 role 4</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-18 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:95d&gt;30d / sell-side:95d&gt;14d / consensus:95d&gt;7d / industry-specialist:95d&gt;14d · stale/missing lane 4</span></div>
@@ -4741,17 +4741,17 @@
 <div class="stock-company-thesis"><b>역할</b><span>humanoid/industrial robotics</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 185건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 189건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
-<div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
-<div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
+<div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
+<div class="stock-company-thesis muted"><b>Source freshness SLA</b><span>company-primary:0d / sell-side:0d / consensus:0d / industry-specialist:0d · stale/missing lane 0</span></div>
 <div class="stock-company-thesis"><b>Reference/Model/Revision</b><span>matrix 4행 · 미완료 4 · 원문 숫자와 revision 연결 전 reviewed 금지</span></div>
 <div class="stock-company-thesis"><b>다음 검토 큐</b><span>gate 보완: 증권사/컨센서스 참조, 회사 1차 자료, reference pack 최소, source class coverage · role 보완: Coverage Lead / Sector PM, Company Analyst, Financial Model / Data Analyst</span></div>
 <div class="stock-company-thesis warn"><b>Role output 상태</b><span>0/7 완료 · write boundary 누락 0 · Coverage:보류 / Company:보류 / Model:보류 / Supply:보류 / Valuation:보류 / Red-team:보류 / Publisher:보류</span></div>
 <div class="stock-company-thesis muted"><b>Role output public boundary</b><span>7/7 public boundary 등록 · 누락 0 · 내부 분석/반대논리 초안 비노출 경계</span></div>
 <div class="stock-company-thesis"><b>검토 경계</b><span>public source pack 일부 확인 · verified consensus revision 확인 필요 · 판단 보류 · 내부 원자료는 비공개</span></div>
-<div class="stock-company-thesis"><b>느린 자료 cache</b><span>2026-08-09 · 12일 경과 · weekly_medium</span></div>
-<div class="stock-company-thesis"><b>Valuation cache</b><span>2026-08-09 · 12일 경과 · monthly_slow</span></div>
+<div class="stock-company-thesis"><b>느린 자료 cache</b><span>2026-08-21 · 0일 경과 · weekly_medium</span></div>
+<div class="stock-company-thesis"><b>Valuation cache</b><span>2026-08-21 · 0일 경과 · monthly_slow</span></div>
 <div class="stock-company-thesis"><b>실적/가이던스 cache</b><span>2026-05-08 · 105일 경과 · quarterly_slow</span></div>
 </div>
 <div class="stock-metric-row">
@@ -4783,7 +4783,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>collaborative robots/test</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>맥락 신호가 유지되는 가운데 52주 고점 대비 할인폭이 큼</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-23 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:90d&gt;30d / sell-side:90d&gt;14d / consensus:90d&gt;7d / industry-specialist:90d&gt;14d · stale/missing lane 4</span></div>
@@ -4855,12 +4855,12 @@
 <div class="stock-company-thesis"><b>역할</b><span>cybersecurity/AI security</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 6건 · 미완료 gate 10 · 미완료 role 0</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 6건 · 미완료 gate 11 · 미완료 role 0</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-20 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:93d&gt;30d / sell-side:93d&gt;14d / consensus:93d&gt;7d / industry-specialist:93d&gt;14d · stale/missing lane 4</span></div>
 <div class="stock-company-thesis"><b>Reference/Model/Revision</b><span>matrix 미등록 · 원문 숫자와 revision 연결 전 reviewed 금지</span></div>
-<div class="stock-company-thesis"><b>다음 검토 큐</b><span>gate 보완: source lane freshness SLA, public reference link/body-term 검증, role output write boundary, role output public boundary · role 보완: 없음</span></div>
+<div class="stock-company-thesis"><b>다음 검토 큐</b><span>gate 보완: source lane freshness SLA, 회사별 source pack schema, public reference link/body-term 검증, role output write boundary · role 보완: 없음</span></div>
 <div class="stock-company-thesis warn"><b>Role output 상태</b><span>0/7 완료 · write boundary 누락 7 · Coverage:연결+경계미등록 / Company:연결+경계미등록 / Model:연결+경계미등록 / Supply:연결+경계미등록 / Valuation:연결+경계미등록 / Red-team:연결+경계미등록 / Publisher:연결+경계미등록</span></div>
 <div class="stock-company-thesis warn"><b>Role output public boundary</b><span>0/7 public boundary 등록 · 누락 7 · 내부 분석/반대논리 초안 비노출 경계</span></div>
 <div class="stock-company-thesis"><b>검토 경계</b><span>public source pack 일부 확인 · verified consensus revision 확인 필요 · 판단 보류 · 내부 원자료는 비공개</span></div>
@@ -4897,7 +4897,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>security platform</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 8건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-22 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:91d&gt;30d / sell-side:91d&gt;14d / consensus:91d&gt;7d / industry-specialist:91d&gt;14d · stale/missing lane 4</span></div>
@@ -4939,7 +4939,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>observability/cloud monitoring</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 3/4 · source 9건 · 미완료 gate 21 · 미완료 role 5</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 3/4 · source 9건 · 미완료 gate 22 · 미완료 role 5</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-17 · 보유 brokerage_sell_side, company_primary, market_consensus · 부족 industry_specialist</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:106d&gt;30d / sell-side:확인필요 / consensus:확인필요 / industry-specialist:확인필요 · stale/missing lane 4</span></div>
@@ -4981,7 +4981,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>developer data platform</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 23 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-21 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:92d&gt;30d / sell-side:92d&gt;14d / consensus:92d&gt;7d / industry-specialist:92d&gt;14d · stale/missing lane 4</span></div>
@@ -5023,7 +5023,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>edge/network/security</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-25 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:88d&gt;30d / sell-side:88d&gt;14d / consensus:88d&gt;7d / industry-specialist:88d&gt;14d · stale/missing lane 4</span></div>
@@ -5091,7 +5091,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>battery cells / ESS / high-density storage</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:87d&gt;30d / sell-side:87d&gt;14d / consensus:87d&gt;7d / industry-specialist:87d&gt;14d · stale/missing lane 4</span></div>
@@ -5135,7 +5135,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>battery cells / ESS / global EV-storage supply</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 12건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-25 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:88d&gt;30d / sell-side:88d&gt;14d / consensus:88d&gt;7d / industry-specialist:88d&gt;14d · stale/missing lane 4</span></div>
@@ -5177,7 +5177,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>battery materials / chemicals</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 16건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 16건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:87d&gt;30d / sell-side:87d&gt;14d / consensus:87d&gt;7d / industry-specialist:87d&gt;14d · stale/missing lane 4</span></div>
@@ -5219,7 +5219,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>cathode/anode materials</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 15건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 15건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:87d&gt;30d / sell-side:87d&gt;14d / consensus:87d&gt;7d / industry-specialist:87d&gt;14d · stale/missing lane 4</span></div>
@@ -5261,7 +5261,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>battery / energy / refining transition</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>맥락/내러티브가 우호적이고 가격 부담이 상대적으로 낮음</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>node narrative score는 강한데 현재가는 52주 범위 하단/중단에 가까움</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건 · 미완료 gate 21 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 13건 · 미완료 gate 22 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-05-26 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:87d&gt;30d / sell-side:87d&gt;14d / consensus:87d&gt;7d / industry-specialist:87d&gt;14d · stale/missing lane 4</span></div>
@@ -5329,7 +5329,7 @@
 <div class="stock-company-thesis"><b>역할</b><span>AI 기반 암 진단·검진 및 정밀의료 소프트웨어 공급자</span></div>
 <div class="stock-company-thesis"><b>상태 이유</b><span>신호가 혼재되어 추적 유지</span></div>
 <div class="stock-company-thesis"><b>후보 분류</b><span>가격 위치와 맥락 신호가 한쪽으로 충분히 기울지 않음</span></div>
-<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 154건 · 미완료 gate 19 · 미완료 role 7</span></div>
+<div class="stock-company-thesis warn"><b>기관 검토 게이트</b><span>검토 미완료 · 판단 보류 · source class 4/4 · source 154건 · 미완료 gate 20 · 미완료 role 7</span></div>
 <div class="stock-company-thesis bad"><b>Source pack schema</b><span>schema 미등록 · 회사별 source/reference/model/revision schema 필요</span></div>
 <div class="stock-company-thesis"><b>근거 신선도</b><span>2026-08-13 · 보유 brokerage_sell_side, company_primary, industry_specialist, market_consensus · 부족 없음</span></div>
 <div class="stock-company-thesis warn"><b>Source freshness SLA</b><span>company-primary:8d / sell-side:8d / consensus:8d&gt;7d / industry-specialist:8d · stale/missing lane 1</span></div>
