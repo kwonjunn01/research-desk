@@ -86,9 +86,9 @@
       "price_position_52w_pct": 74.13836976520784,
       "return_20d_pct": -9.5507253647229,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 120.43141,
-      "forward_pe": 31.237648,
-      "price_to_book": 11.724162,
+      "trailing_pe": 118.907036,
+      "forward_pe": 30.559921,
+      "price_to_book": 11.48916,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -2473,7 +2473,7 @@
         "factor": "Search AI monetization",
         "mechanism": "AI infra demand → Korean AI platform / search-commerce monetization / sovereign AI cloud 수요 → search advertising monetization, commerce take-rate and GMV, Naver Cloud/sovereign AI revenue, HyperCLOVA X/API/subscription, content/fintech margin, AI capex/depreciation, EPS/OP revision → EPS/revenue revision → price reflection 순서로 확인한다.",
         "demand_unit": "search advertising monetization, commerce take-rate and GMV, Naver Cloud/sovereign AI revenue, HyperCLOVA X/API/subscription, content/fintech margin, AI capex/depreciation, EPS/OP revision",
-        "bottleneck_pressured": "AI data-center 전력망·변압기·전선/전력기기 lead-time 병목",
+        "bottleneck_pressured": "AI workload/CAPEX 수요가 매출·margin·EPS revision으로 번역되는 demand-side 병목",
         "company_pressure_path": "search advertising monetization, commerce take-rate and GMV, Naver Cloud/sovereign AI revenue, HyperCLOVA X/API/subscription, content/fintech margin, AI capex/depreciation, EPS/OP revision",
         "already_priced": "가격 222,000.00, 일간 +1.1%, 52W +33.3%, 20D +12.7%/60D +9.4%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 NAVER에 AI 검색 방어, 커머스 경쟁, sovereign AI/cloud upside를 동시에 반영한다. 새 판단은 AI 제품 발표가 광고·커머스·클라우드 revenue/EPS revision을 실제로 바꾸는지다.",
