@@ -2605,7 +2605,7 @@
         "factor": "Cloud/MSP revenue conversion",
         "mechanism": "AI infra demand → Enterprise cloud / AI transformation / data-center services 수요 → enterprise cloud/MSP revenue, generative-AI transformation projects, data-center services, IT services margin mix, logistics IT stability, backlog/order pipeline, EPS/OP revision → EPS/revenue revision → price reflection 순서로 확인한다.",
         "demand_unit": "enterprise cloud/MSP revenue, generative-AI transformation projects, data-center services, IT services margin mix, logistics IT stability, backlog/order pipeline, EPS/OP revision",
-        "bottleneck_pressured": "AI data-center 전력망·변압기·전선/전력기기 lead-time 병목",
+        "bottleneck_pressured": "AI workload/CAPEX 수요가 매출·margin·EPS revision으로 번역되는 demand-side 병목",
         "company_pressure_path": "enterprise cloud/MSP revenue, generative-AI transformation projects, data-center services, IT services margin mix, logistics IT stability, backlog/order pipeline, EPS/OP revision",
         "already_priced": "가격 228,000.00, 일간 -2.1%, 52W +34.4%, 20D +16.3%/60D +17.1%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 Samsung SDS를 순수 GPU/전력 병목주가 아니라 기업 AI 전환과 클라우드 서비스 수혜 후보로 본다. 새 판단은 AI 서비스 언급이 recurring cloud revenue와 margin revision을 실제로 만드는지다.",
