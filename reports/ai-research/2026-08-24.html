@@ -459,23 +459,23 @@
 <li><strong>위치:</strong> HF #1 · 👍 27 · Multimodal / Generation · Yunze Tong, Mushui Liu · digest score 9</li>
 <li><strong>쉽게 말하면:</strong> 영상을 만들 때 원하는 장면/의도대로 더 잘 제어하려는 생성 모델 논문이다.</li>
 <li><strong>핵심 내용:</strong> With large pretrained models, existing methods have effectively improved instruction-based video editing. However, most of them rely on an in-place editing assumption.</li>
-<li><strong>핵심 용어:</strong> video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
+<li><strong>핵심 용어:</strong> video editing = 영상 편집: 기존 영상을 조건에 맞게 바꾸는 생성/수정 작업; video/multimodal = 비디오 이해·생성: 연속 프레임의 시간 흐름까지 다루는 멀티모달 작업</li>
 <li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 오늘 핵심 병목과의 직접 연결은 약하다. 코드 공개·벤치마크 조건·실제 workflow 적용 가능성을 기준으로 archive 우선순위를 낮춘다.</li>
 <li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
 </ul>
 <h4>5분 훑기 2. <a href="https://huggingface.co/papers/2608.21360">OmniAssistBench: Assistant-style Interaction Benchmark for Omni-LLMs</a></h4>
 <ul>
 <li><strong>위치:</strong> HF #4 · 👍 22 · Benchmark / Evaluation · Xianyun Sun, Chaoyou Fu · digest score 15</li>
-<li><strong>쉽게 말하면:</strong> 영상을 만들 때 원하는 장면/의도대로 더 잘 제어하려는 생성 모델 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> 비디오를 보는 omni-modal assistant가 사용 목표·시각 상태·대화 맥락을 함께 이해하고 돕는지 재는 interaction benchmark 논문이다.</li>
 <li><strong>핵심 내용:</strong> Recent omni-modal large language models (Omni-LLMs) show great potential as real-time video assistants, which continuously perceive environments and guide users to achieve specific goals. Unlike traditional passive video understanding, interactive assistants should actively combine visual states, user goals, and prior…</li>
-<li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; video generation = 영상 생성: 텍스트/이미지 조건으로 동영상을 만드는 모델</li>
+<li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; omni-modal = 옴니모달: 텍스트·이미지·비디오·음성 등 여러 modality를 한 assistant 안에서 처리하는 방식; video/multimodal = 비디오 이해·생성: 연속 프레임의 시간 흐름까지 다루는 멀티모달 작업</li>
 <li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
 <li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
 </ul>
 <h4>5분 훑기 3. <a href="https://huggingface.co/papers/2608.16425">ParaTempo: Efficient Parallel Reasoning via Temporal Confidence</a></h4>
 <ul>
 <li><strong>위치:</strong> HF #5 · 👍 21 · Reasoning / Post-training · Xuteng Zhang, Wenhao Zeng · digest score 14</li>
-<li><strong>쉽게 말하면:</strong> 영상을 만들 때 원하는 장면/의도대로 더 잘 제어하려는 생성 모델 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> 여러 reasoning 경로를 병렬로 탐색할 때, 어떤 경로를 더 믿고 이어갈지 confidence로 골라 계산비용을 줄이려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Parallel reasoning improves the accuracy and robustness of large reasoning models by exploring multiple solution paths, but its computational cost grows with reasoning depth and branch count. Existing methods for managing these parallel paths typically rely on final-answer consensus, local token confidence, or isolate…</li>
 <li><strong>핵심 용어:</strong> post-training = 기본 학습 이후 보상·데이터·정렬로 능력을 보정하는 단계</li>
 <li><strong>내 판단:</strong> Reasoning / Post-training 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다. 오늘 핵심 병목과의 직접 연결은 약하다. 코드 공개·벤치마크 조건·실제 workflow 적용 가능성을 기준으로 archive 우선순위를 낮춘다.</li>
