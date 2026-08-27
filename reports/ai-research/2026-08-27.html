@@ -362,7 +362,7 @@
 <ul>
 <li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 28, <span class="badge">Agentic AI</span> 26, <span class="badge">Agent Evaluation</span> 15 쪽 attention이 강하다.</li>
 <li><strong>오늘 paper 1개만 본다면:</strong> <a href="https://huggingface.co/papers/2608.24979">FrontierChallenge: Evaluating Scientific Workflow Completion</a> — Agent / Tool-use 후보지만, 실제 제품/연구 병목과 이어지는지는 초록과 benchmark를 확인해야 한다.</li>
-<li><strong>시장 연결 후보 1개:</strong> agent memory/RAG 정밀도 → retrieval·vector DB·cache·보안 tooling 후보</li>
+<li><strong>시장 연결 후보 1개:</strong> voice/personal agent memory → real-time memory backend·privacy·persona tooling 후보</li>
 <li><strong>오늘은 AI Radar 스킵해도 됨 여부:</strong> 아니오 — today_one_paper와 skim 후보만 보면 된다.</li>
 <li><strong>수집 품질:</strong> Total 83, HF Daily 30; HF gate 정상 — 제목 30/30, 순위 30/30, upvote 30/30, abstract 30/30 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
 <li><strong>Collected at:</strong> 2026-08-27T14:31+00:00 UTC / 2026-08-27 23:31 KST</li>
@@ -414,14 +414,14 @@
 <ul>
 <li><strong>위치:</strong> HF #1 · 👍 134 · RAG / Memory · digest score 21 · deep_candidate_2</li>
 <li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 20</li>
-<li><strong>쉽게 말하면:</strong> LLM/agent가 검색 결과를 그대로 먹지 않고, 문서 묶음의 중복·충돌·보완성을 따져 RAG 근거 품질을 높이려는 retrieval/reranking 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> 실시간 음성/대화형 agent가 사실 기억과 감정·persona 기억을 나눠 저장하고, streaming으로 불러오게 하려는 conversational memory 논문이다.</li>
 <li><strong>핵심 내용:</strong> Conversational systems, such as duplex speech language models (SLMs), still lack a streaming, accurate, and empathetic memory system as their soul. We introduce VoiceMem, a simple memory architecture with a parallel informational left brain, an emotional righ…</li>
 <li><strong>핵심 용어:</strong> retrieval/RAG = 검색/RAG: 외부 문서나 기억을 찾아 모델 답변에 붙이는 방식; evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정</li>
-<li><strong>내 판단:</strong> agent 답변의 상한이 retrieval set 품질에 묶인다는 점을 직접 겨냥한다. 단일 문서 점수보다 문서 묶음의 다양성·충돌·보완성을 보는 쪽이라 RAG/검색 품질 병목으로 읽는다. agent와 long-context workflow가 늘수록 답변 품질은 모델 자체보다 검색 근거 묶음의 품질·비용·감사 가능성에 막히기 때문이다.</li>
-<li><strong>확인할 것:</strong> 정확도 개선이 단일 benchmark가 아니라 실제 RAG/search pipeline의 latency·중복 제거·상충 근거 처리까지 개선하는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-08-27-voicemem-streaming-dual-brain-memory-for-real-ti; source=Hugging Face Daily Papers; paper_id=2608.26005; layer=RAG / Memory; agent_layer=Memory / RAG; bottleneck=rag_memory_quality; agent_bottleneck=memory_precision; evidence_class=abstract_enriched</li>
+<li><strong>내 판단:</strong> 개인/음성 agent의 병목을 단순 retrieval 순위가 아니라 <code>실시간 기억 입출력→장기 persona/감정 기억→교체 가능한 memory backend</code>로 재정의한다. 실사용 personal agent의 recall·latency·privacy 경계와 직접 닿는다. voice/personal agent가 상시 대화형 제품으로 가려면 사실 기억뿐 아니라 감정·선호·장기 persona를 낮은 지연으로 다뤄야 하기 때문이다.</li>
+<li><strong>확인할 것:</strong> 실제 대화 배포에서 recall 정확도, latency, persona/감정 추론 오류, privacy/삭제 정책, memory backend 교체성이 함께 검증되는지.</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-08-27-voicemem-streaming-dual-brain-memory-for-real-ti; source=Hugging Face Daily Papers; paper_id=2608.26005; layer=RAG / Memory; agent_layer=Memory / RAG; bottleneck=conversational_memory_quality; agent_bottleneck=memory_precision; evidence_class=abstract_enriched</li>
 <li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Memory / RAG; adoption evidence=abstract_enriched; workload/bottleneck=memory_precision; market recognition=아직 관찰; price/revision=연결 전</li>
-<li><strong>Invalidation:</strong> 정확도 개선이 단일 benchmark가 아니라 실제 RAG/search pipeline의 latency·중복 제거·상충 근거 처리까지 개선하는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
+<li><strong>Invalidation:</strong> 실제 대화 배포에서 recall 정확도, latency, persona/감정 추론 오류, privacy/삭제 정책, memory backend 교체성이 함께 검증되는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h4><a href="https://huggingface.co/papers/2608.19583">VGI-BENCH: Probing Visual Intelligence in Video Generation Models</a></h4>
 <ul>
@@ -553,8 +553,8 @@
 <h2>5. 시장·투자 연결 후보</h2>
 <p>투자 추천 아님. AI research signal이 workload/bottleneck/industry narrative로 번역될 수 있는지 보는 후보만 기록한다.</p>
 <ul>
-<li><strong>후보 1:</strong> agent memory/RAG 정밀도 → retrieval·vector DB·cache·보안 tooling 후보</li>
-<li><strong>근거 signal:</strong> <a href="https://huggingface.co/papers/2608.26005">VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction</a> · bottleneck=rag_memory_quality</li>
+<li><strong>후보 1:</strong> voice/personal agent memory → real-time memory backend·privacy·persona tooling 후보</li>
+<li><strong>근거 signal:</strong> <a href="https://huggingface.co/papers/2608.26005">VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction</a> · bottleneck=conversational_memory_quality</li>
 <li><strong>전파 사슬:</strong> technical legitimacy → workflow adoption → workload/bottleneck → buyer/capex recognition → market narrative</li>
 <li><strong>다음 확인:</strong> 같은 병목이 제품 release note, hyperscaler capex, infra vendor commentary에서 반복되는지</li>
 <li><strong>반증:</strong> 논문/데모가 benchmark 내부에만 머물고 실제 workload 증가 증거가 없으면 보류</li>
