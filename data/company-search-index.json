@@ -1254,9 +1254,9 @@
       "price_position_52w_pct": 34.928945400149594,
       "return_20d_pct": 63.57504215851601,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 49.19,
-      "forward_pe": 33.0,
-      "price_to_book": 13.46,
+      "trailing_pe": 51.22,
+      "forward_pe": 35.0,
+      "price_to_book": 14.01,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -1285,11 +1285,11 @@
         }
       },
       "m1c2_common_block": {
-        "factor": "Analyst tick 2026-05-18: 고압 annealing 장비의 실제 병목성",
-        "mechanism": "AI infra demand → Foundry / Advanced Packaging / Semiconductor Equipment 수요 → order intake, backlog, customer qualification, equipment shipment, service revenue, gross/operating margin → EPS/revenue revision → price reflection 순서로 확인한다.",
-        "demand_unit": "order intake, backlog, customer qualification, equipment shipment, service revenue, gross/operating margin",
-        "bottleneck_pressured": "HBM/advanced packaging yield-control·검사/계측·WFE capex 병목",
-        "company_pressure_path": "order intake, backlog, customer qualification, equipment shipment, service revenue, gross/operating margin",
+        "factor": "High-pressure annealing equipment bottleneck + 선단공정 고객 qualification",
+        "mechanism": "AI/HBM·선단 logic CAPEX가 공정 전환·수율 개선 수요를 만들 때 HPSP 장비가 고객 qualification→수주잔고→장비 출하→service revenue→gross/OP margin→EPS revision으로 연결되는지 확인한다.",
+        "demand_unit": "customer qualification, order intake/backlog, equipment shipment, ASP/service revenue, gross/operating margin",
+        "bottleneck_pressured": "advanced foundry/memory process yield and annealing step capacity",
+        "company_pressure_path": "DART/IR에서 고객별 qualification, 수주/backlog, 장비 출하·ASP, service revenue, gross/OP margin이 확인될 때만 thesis strength를 올린다.",
         "already_priced": "가격 48,500.00, 일간 +0.0%, 52W +34.9%, 20D +63.6%/60D +4.1%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 선단공정/낸드/고객 확장 narrative를 기대할 수 있다. 바뀐 기대치로 인정하려면 high-pressure annealing 장비의 신규 고객, order intake/backlog, shipment, margin이 원문 숫자로 올라와야 한다. EPS proxy: trailing 870.0, forward 1305.0 (public price ÷ Forward PER 역산), forward PE 40.0; verified 30–90일 sell-side revision history는 확인 필요.",
         "five_element_eval": "대체불가능성: 보통; 6~12개월 트리거: 보통; 시장 인지도: 보통; 흑자 모멘텀: 확인필요; 본업 정보 우위: 확인필요",
@@ -3156,9 +3156,9 @@
       "price_position_52w_pct": 26.32135306553911,
       "return_20d_pct": 25.085324232081916,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 31.06,
-      "forward_pe": 28.0,
-      "price_to_book": 11.7,
+      "trailing_pe": 34.79,
+      "forward_pe": 31.0,
+      "price_to_book": 13.1,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3222,9 +3222,9 @@
       "price_position_52w_pct": 52.702702702702695,
       "return_20d_pct": 23.321123321123327,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 77.93,
-      "forward_pe": 56.0,
-      "price_to_book": 14.11,
+      "trailing_pe": 84.68,
+      "forward_pe": 61.0,
+      "price_to_book": 15.33,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
