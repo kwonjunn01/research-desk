@@ -354,6 +354,25 @@
 <div class="desk-card warn"><strong>Ontology Edges</strong><p>56개 supply/dependency/constraint edge</p></div>
 <div class="desk-card violet"><strong>Detailed Registry</strong><p>16개 theme · 38개 node · 11개 query seed</p></div>
 </div>
+<h2>0. 2026-08-28 Weekly QA 반영</h2>
+<p>이번 QA는 상세 registry baseline(16 theme · 38 node · 56 edge/link · 11 query seed)을 바꾸지 않고, 2026-08-22~2026-08-28 AI/Market/Cross reports와 STX/WDC monthly momentum note에서 확인된 evidence 후보를 기존 reference node와 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source-review queue</strong>다. 개별 회사·ticker는 산업 mapping 참고용이며 매수·매도 판단이 아니다.</p>
+<h3>새로 연결된 evidence 후보</h3>
+<ul>
+<li><strong>Scientific/workflow agent eval · harness intelligence</strong>: SWE Refactor Bench, FrontierChallenge, JIT-Agent 반복 → <code>ai_agent</code>, <code>enterprise_ai</code>, <code>training_data</code>, <code>frontier_llm</code>, <code>opensource_llm</code>에 연결 후보. 실제 workflow log·tool-call volume·paid deployment 전까지 adoption 결론 보류.</li>
+<li><strong>Agent memory/RAG · streaming personal memory</strong>: VoiceMem, RetrievalRouter, memory/RAG bottleneck → <code>ai_agent</code>, <code>enterprise_ai</code>, <code>training_data</code>, <code>frontier_llm</code>, <code>opensource_llm</code>에 연결 후보. latency·compliance·production failure evidence 필요.</li>
+<li><strong>HBM / DRAM-NAND / Advanced Packaging / memory shortage</strong>: Reuters Micron AI memory lab, Reuters SK Hynix Indiana HBM output/2030 memory shortage, Purdue advanced packaging facility, NVIDIA NVHBM custom HBM → <code>hbm</code>, <code>dram_nand</code>, <code>cowos</code>, <code>packaging_eq</code>, <code>inspection</code>, <code>nvidia</code>, <code>custom_asic</code>, <code>datacenter_build</code>에 연결 후보. ASP·shipment·customer qualification·EPS/consensus revision 전까지 회사 판단 보류.</li>
+<li><strong>AI data-center power / grid / nuclear / liquid cooling</strong>: Reuters capex-winners, AI DC nuclear/power, PJM 50MW rule, liquid-cooled infrastructure, green-power/export-risk 후보 → <code>hyperscaler</code>, <code>datacenter_build</code>, <code>dc_power</code>, <code>nuclear</code>, <code>transformer</code>, <code>grid_cable</code>, <code>liquid_cooling</code>에 연결 후보. IR/PPA/grid interconnect/order-backlog 확인 queue.</li>
+<li><strong>Physical AI / Robotics / On-device personal agent</strong>: Reuters China robot useful-work skepticism, Bloomberg Hugging Face $400 robot, Perplexity on-device Portable Computer agent, Carbon Robotics field customization → <code>on_device</code>, <code>humanoid</code>, <code>autonomous</code>, <code>korean_ai_chip</code>, <code>nvidia</code>, <code>opensource_llm</code>에 연결 후보. demo/쇼케이스와 field deployment·반복 주문을 분리.</li>
+<li><strong>AI storage/data layer 후보 seed</strong>: STX/WDC monthly momentum에서 AI data growth → nearline HDD/cold-warm storage 수요가 확인됨. baseline에는 storage 전용 node가 없으므로 <code>datacenter_build</code>, <code>hyperscaler</code>, <code>enterprise_ai</code>, <code>dram_nand</code> 주변 adjacent seed로만 유지한다.</li>
+</ul>
+<h3>이번 주 부족한 UX / 데이터</h3>
+<ul>
+<li>현재 page는 KPI cards, 병목 heatmap, Mermaid 기반 supply/dependency network, node detail cards, edge strip, query seeds, risk/metrics 일부를 제공한다.</li>
+<li>아직 <strong>진짜 Sankey/flow interaction</strong>, 클릭형 node side panel, node별 최신 metric/freshness 자동 갱신, node card 내부 주가·뉴스·context panel, query copy/freshness badge, 모바일 company/ticker 압축은 backlog다.</li>
+<li>추가 QA 이슈: Mermaid CDN/JS 실패 시 <code>flowchart LR</code> raw text가 보일 수 있고, public 원본 query seed의 <code>transformer</code>/<code>nuclear</code> ID가 YAML canonical key(<code>transformer_grid</code>/<code>nuclear_smr</code>)와 다르므로 alias 안내가 필요하다.</li>
+<li>상세 보강 기록은 <code>07-sources/reference-dashboard-weekly-qa.md</code>, <code>04-ontology/Reference Dashboard Node Seeds.md</code>, <code>07-sources/reference-dashboard-queries.yaml</code>의 candidate query section에 누적한다.</li>
+<li>이번 주 candidate query IDs: <code>agent_scientific_workflow_eval</code>, <code>voicemem_agent_memory_trust</code>, <code>hbm_indiana_memory_shortage_packaging</code>, <code>ai_dc_power_grid_nuclear_liquid</code>, <code>physical_ai_ondevice_useful_work</code>, <code>ai_storage_data_layer_wdc_stx</code>.</li>
+</ul>
 <h2>0. 2026-08-21 Weekly QA 반영</h2>
 <p>이번 QA는 상세 registry baseline(16 theme · 38 node · 56 edge/link · 11 query seed)을 바꾸지 않고, 2026-08-08~2026-08-21 AI/Market/Cross reports에서 확인된 evidence 후보를 기존 reference node와 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source-review queue</strong>다. 개별 회사·ticker는 산업 mapping 참고용이며 매수·매도 판단이 아니다.</p>
 <h3>새로 연결된 evidence 후보</h3>
@@ -707,6 +726,16 @@
 <li><code>training_data</code>: <code>(&quot;training data&quot; OR &quot;학습 데이터&quot;) (LLM OR 저작권 OR synthetic)</code></li>
 <li><code>transformer</code>: <code>(transformer OR 변압기) (AI 전력 OR HD현대일렉 OR 효성중공업)</code></li>
 <li><code>nuclear</code>: <code>(&quot;SMR&quot; OR &quot;small modular reactor&quot; OR 원전) (AI OR data center OR 데이터센터)</code></li>
+</ul>
+<h3>Candidate query queue — 2026-08-28</h3>
+<p>기준 registry의 원본 11개 query seed는 유지한다. 아래는 collector 정식 반영 전 source-review 후보이며 투자 판단/매수·매도 신호가 아니다.</p>
+<ul>
+<li><code>agent_scientific_workflow_eval</code>: Agent scientific/workflow completion eval — FrontierChallenge, SWE Refactor Bench, JIT-Agent, scientific workflow, whole-repository migration, harness evolution.</li>
+<li><code>voicemem_agent_memory_trust</code>: Agent memory / streaming RAG / provenance trust — VoiceMem, RetrievalRouter, streaming memory, persistent memory, latency/compliance/production failure.</li>
+<li><code>hbm_indiana_memory_shortage_packaging</code>: HBM Indiana capacity / memory shortage / advanced packaging — SK Hynix Indiana, Micron AI memory lab, Purdue packaging facility, NVHBM, qualification/yield.</li>
+<li><code>ai_dc_power_grid_nuclear_liquid</code>: AI data-center power / grid / nuclear / liquid cooling — PJM 50MW rule, interconnect, PPA, nuclear/SMR, liquid cooling, transformer.</li>
+<li><code>physical_ai_ondevice_useful_work</code>: Physical AI / on-device agent / useful-work evidence — Hugging Face robot, Perplexity Portable Computer, China robot useful-work, Carbon Robotics, field deployment.</li>
+<li><code>ai_storage_data_layer_wdc_stx</code>: AI storage / data growth layer adjacent seed — STX/WDC, nearline HDD, mass-capacity storage, AI data growth, cloud storage pricing/backlog.</li>
 </ul>
 <h3>Candidate query queue — 2026-08-21</h3>
 <p>기준 registry의 원본 11개 query seed는 유지한다. 아래는 collector 정식 반영 전 source-review 후보이며 투자 판단/매수·매도 신호가 아니다.</p>
