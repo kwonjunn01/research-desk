@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31",
+  "generated_at": "2026-09-02",
   "method": "agent-based rule registry v0.2; analyst-agent edges are hypotheses and require filings/news verification",
   "rules_version": "0.2.0",
   "agents": [
