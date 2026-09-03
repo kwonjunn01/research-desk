@@ -1254,9 +1254,9 @@
       "price_position_52w_pct": 39.0847711927982,
       "return_20d_pct": 45.19774011299435,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 49.85,
-      "forward_pe": 35.0,
-      "price_to_book": 13.34,
+      "trailing_pe": 50.53,
+      "forward_pe": 36.0,
+      "price_to_book": 13.52,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3153,12 +3153,12 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 720000.0,
       "change_pct": -6.37,
-      "price_position_52w_pct": 24.42788717402874,
+      "price_position_52w_pct": 24.307036247334754,
       "return_20d_pct": 0.5586592178770999,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 30.51,
+      "trailing_pe": 30.12,
       "forward_pe": 27.0,
-      "price_to_book": 11.49,
+      "price_to_book": 11.35,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3192,7 +3192,7 @@
         "demand_unit": "transformer and power-equipment orders, backlog, North America/Middle East grid demand, data-center/grid capex, pricing/lead time, margin, EPS/OP revision",
         "bottleneck_pressured": "AI data-center 전력망·변압기·전선/전력기기 lead-time 병목",
         "company_pressure_path": "transformer and power-equipment orders, backlog, North America/Middle East grid demand, data-center/grid capex, pricing/lead time, margin, EPS/OP revision",
-        "already_priced": "가격 720,000.00, 일간 -6.4%, 52W +24.4%, 20D +0.6%/60D -19.0%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
+        "already_priced": "가격 720,000.00, 일간 -6.4%, 52W +24.3%, 20D +0.6%/60D -19.0%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 전력망·데이터센터 변압기 shortage를 이미 강하게 반영한다. 새 판단은 장기 수주잔고와 판가/margin이 현재 가격 premium을 추가로 정당화하는지다.",
         "five_element_eval": "대체불가능성: 보통; 6~12개월 트리거: 보통; 시장 인지도: 보통; 흑자 모멘텀: 확인필요; 본업 정보 우위: 보통",
         "verification": "DART/IR에서 수주잔고·book-to-bill·지역별 mix·margin·capacity 계획 확인; 증권사 preview/review 2건 이상에서 EPS/OP revision과 backlog assumption 확인; 전력망/변압기 lead time 및 hyperscaler/data-center capex와의 직접 연결 근거 교차검증",
@@ -3222,9 +3222,9 @@
       "price_position_52w_pct": 50.960170697012806,
       "return_20d_pct": 0.050761421319789335,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 76.04,
+      "trailing_pe": 75.66,
       "forward_pe": 55.0,
-      "price_to_book": 13.77,
+      "price_to_book": 13.7,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
