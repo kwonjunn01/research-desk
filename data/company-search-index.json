@@ -1386,9 +1386,9 @@
       "price_position_52w_pct": 59.452817824377455,
       "return_20d_pct": 8.785249457700651,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 11.25,
+      "trailing_pe": 11.46,
       "forward_pe": 5.0,
-      "price_to_book": 2.91,
+      "price_to_book": 2.97,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -1454,9 +1454,9 @@
       "price_position_52w_pct": 49.311294765840216,
       "return_20d_pct": 7.4916387959866215,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 7.16,
+      "trailing_pe": 7.34,
       "forward_pe": 5.0,
-      "price_to_book": 4.34,
+      "price_to_book": 4.45,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -2241,13 +2241,13 @@
       "traffic_light": "⚪ 회색",
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 84.56,
-      "change_pct": 3.3109365624921088,
+      "change_pct": 4.485357322545406,
       "price_position_52w_pct": 25.91473432928295,
-      "return_20d_pct": -5.929468712692221,
+      "return_20d_pct": -0.902381125666929,
       "fundamentals_coverage": 90.0,
       "trailing_pe": null,
-      "forward_pe": -41.532383,
-      "price_to_book": 8.87585,
+      "forward_pe": -43.395256,
+      "price_to_book": 9.273963,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
@@ -2281,7 +2281,7 @@
         "demand_unit": "contracted backlog/RPO, GPU capacity utilization, AI cloud revenue, pricing and gross margin, depreciation/lease/interest cost, capex financing, customer concentration, FCF/EPS revision",
         "bottleneck_pressured": "AI workload/CAPEX 수요가 매출·margin·EPS revision으로 번역되는 demand-side 병목",
         "company_pressure_path": "contracted backlog/RPO, GPU capacity utilization, AI cloud revenue, pricing and gross margin, depreciation/lease/interest cost, capex financing, customer concentration, FCF/EPS revision",
-        "already_priced": "가격 84.56, 일간 +3.3%, 52W +25.9%, 20D -5.9%/60D -17.4%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
+        "already_priced": "가격 84.56, 일간 +4.5%, 52W +25.9%, 20D -0.9%/60D -14.1%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 CoreWeave에 AI backlog와 GPU capacity scarcity를 강하게 반영하지만, 약한 guide·차입·capex·고객 집중도도 같이 본다. 새 판단은 revenue growth headline이 아니라 unit economics와 financing risk의 방향이다.",
         "five_element_eval": "대체불가능성: 확인필요; 6~12개월 트리거: 확인필요; 시장 인지도: 확인필요; 흑자 모멘텀: 확인필요; 본업 정보 우위: 확인필요",
         "verification": "SEC/IR에서 RPO/backlog, top customer concentration, GPU fleet/capex, debt/interest, gross margin 확인; brokerage/consensus 2건 이상에서 revenue guide와 FCF/EPS revision 방향 비교; AI GPU capacity 계약이 실제 utilization과 margin으로 전환되는 원문 근거 확인",
