@@ -4712,10 +4712,10 @@
       "change_pct": -11.459890936255928,
       "price_position_52w_pct": 65.5621158110139,
       "return_20d_pct": 2.1495416524901056,
-      "fundamentals_coverage": 90.0,
-      "trailing_pe": null,
-      "forward_pe": 60.015526,
-      "price_to_book": 12.08459,
+      "fundamentals_coverage": 100.0,
+      "trailing_pe": 526.64386,
+      "forward_pe": 49.541378,
+      "price_to_book": 10.545011,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "확인필요",
