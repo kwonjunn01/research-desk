@@ -362,7 +362,7 @@
 <ul>
 <li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 31, <span class="badge">Agentic AI</span> 23, <span class="badge">Inference Stack</span> 10 쪽 attention이 강하다.</li>
 <li><strong>오늘 paper 1개만 본다면:</strong> <a href="https://huggingface.co/papers/2609.04148">Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments</a> — agent 실행 로그를 long-context 학습 재료로 바꾸는 시도라, 개인 agent의 긴 작업 기억·도구 관찰 통합 병목과 직접 닿는다.</li>
-<li><strong>시장 연결 후보 1개:</strong> personal/enterprise agent → privacy·security·governance tooling 후보</li>
+<li><strong>시장 연결 후보 1개:</strong> agent/inference workload → HBM·server memory·AI server/power 병목 후보</li>
 <li><strong>오늘은 AI Radar 스킵해도 됨 여부:</strong> 아니오 — today_one_paper와 skim 후보만 보면 된다.</li>
 <li><strong>수집 품질:</strong> Total 76, HF Daily 25; HF gate 정상 — 제목 25/25, 순위 25/25, upvote 25/25, abstract 25/25 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
 <li><strong>Collected at:</strong> 2026-09-04T14:31+00:00 UTC / 2026-09-04 23:31 KST</li>
@@ -376,8 +376,8 @@
 <li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 133 <a href="https://huggingface.co/papers/2609.04148">Terminal-Universe: Turning Agent Trajectories into Scalab…</a> / #2 👍 101 <a href="https://huggingface.co/papers/2608.26730">Knowing When Not to Reuse: Conditional Experience Transfe…</a> / #3 👍 97 <a href="https://huggingface.co/papers/2609.03796">LLaDA-Image: Building Strong Image Generators with Fully…</a></li>
 <li><strong>HF Daily quality gate:</strong> 정상 — 제목 25/25, 순위 25/25, upvote 25/25, abstract 25/25 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
 <li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-09-04이 report date와 일치한다.</li>
-<li><strong>Top 10 layer mix:</strong> Inference / Efficiency 3, Reasoning / Post-training 2, Multimodal / Generation 2, Agent / Tool-use 1, RAG / Memory 1, General AI Research 1 — 오늘 먼저 볼 축은 <code>Inference / Efficiency</code>(3개).</li>
-<li><strong>논문 결론:</strong> 오늘은 Multimodal / Generation 3, Inference / Efficiency 3, Agent / Tool-use 2가 핵심이고, 깊게 읽을 후보는 Terminal-Universe: Turning Agent Trajectories into Sc… / Knowing When Not to Reuse: Conditional Experience Tra… / Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4….</li>
+<li><strong>Top 10 layer mix:</strong> Inference / Efficiency 4, Reasoning / Post-training 2, Multimodal / Generation 2, Agent / Tool-use 1, General AI Research 1 — 오늘 먼저 볼 축은 <code>Inference / Efficiency</code>(4개).</li>
+<li><strong>논문 결론:</strong> 오늘은 Inference / Efficiency 4, Multimodal / Generation 3, Agent / Tool-use 2가 핵심이고, 깊게 읽을 후보는 Terminal-Universe: Turning Agent Trajectories into Sc… / Knowing When Not to Reuse: Conditional Experience Tra… / Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4….</li>
 </ul>
 <h4>Decision routing — 먼저 볼/훑을/스킵 후보</h4>
 <ul>
@@ -425,15 +425,15 @@
 </ul>
 <h4><a href="https://huggingface.co/papers/2609.04098">Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #7 · 👍 60 · RAG / Memory · digest score 18 · deep_candidate_3</li>
+<li><strong>위치:</strong> HF #7 · 👍 60 · Inference / Efficiency · digest score 18 · deep_candidate_3</li>
 <li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 15</li>
-<li><strong>쉽게 말하면:</strong> LLM/agent가 검색 결과를 그대로 먹지 않고, 문서 묶음의 중복·충돌·보완성을 따져 RAG 근거 품질을 높이려는 retrieval/reranking 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> 긴 문맥 LLM을 돌릴 때 GPU 메모리를 크게 잡아먹는 KV cache를 더 작게 만들어 비용과 속도 병목을 줄이려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Hybrid LLMs pair softmax attention with linear-attention layers such as Gated DeltaNet (GDN), whose recurrent state summarizes the context in fixed size. Early community 4-bit quantizations of Qwen3.8-27B (48 GDN layers, 16 attention layers) left the GDN bloc…</li>
-<li><strong>핵심 용어:</strong> long context = 긴 문맥: 매우 긴 문서/대화/작업 기록을 한 번에 다루는 능력; quantization = 양자화: 모델 계산/메모리를 줄이려고 숫자 정밀도를 낮추는 기법; retrieval/RAG = 검색/RAG: 외부 문서나 기억을 찾아 모델 답변에 붙이는 방식</li>
-<li><strong>내 판단:</strong> agent 답변의 상한이 retrieval set 품질에 묶인다는 점을 직접 겨냥한다. 단일 문서 점수보다 문서 묶음의 다양성·충돌·보완성을 보는 쪽이라 RAG/검색 품질 병목으로 읽는다. agent와 long-context workflow가 늘수록 답변 품질은 모델 자체보다 검색 근거 묶음의 품질·비용·감사 가능성에 막히기 때문이다.</li>
+<li><strong>핵심 용어:</strong> long context = 긴 문맥: 매우 긴 문서/대화/작업 기록을 한 번에 다루는 능력; quantization = 양자화: 모델 계산/메모리를 줄이려고 숫자 정밀도를 낮추는 기법; prefill = 프리필: 긴 입력을 먼저 읽어 KV 캐시를 만드는 추론 단계</li>
+<li><strong>내 판단:</strong> agent가 길고 많은 요청을 처리할 때 터지는 메모리·prefill 비용 병목을 줄이는 쪽이다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
 <li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-09-04-why-gated-deltanet-survives-4-bit-quantization-n; source=Hugging Face Daily Papers; paper_id=2609.04098; layer=RAG / Memory; agent_layer=Memory / RAG; bottleneck=rag_memory_quality; agent_bottleneck=memory_precision; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Memory / RAG; adoption evidence=abstract_enriched; workload/bottleneck=memory_precision; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-09-04-why-gated-deltanet-survives-4-bit-quantization-n; source=Hugging Face Daily Papers; paper_id=2609.04098; layer=Inference / Efficiency; agent_layer=Runtime / Ops; bottleneck=memory_kv_cache; agent_bottleneck=cost_latency; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Runtime / Ops; adoption evidence=abstract_enriched; workload/bottleneck=cost_latency; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h3>한눈에 보는 오늘의 AI Research 지도</h3>
@@ -477,7 +477,7 @@
 <li><strong>위치:</strong> HF #5 · 👍 62 · Inference / Efficiency · Yuntian Deng, Pengyu Nie · digest score 15</li>
 <li><strong>쉽게 말하면:</strong> 큰 모델을 실제 서비스에서 더 싸고 빠르게 돌리기 위한 실행 최적화 논문이다.</li>
 <li><strong>핵심 내용:</strong> Many recurring text functions are easy to describe but difficult to implement with rules, while calling a large remote model for every input introduces repeated cost, latency, and dependency on a provider. We present compile by training, which turns a natural-language specification into a reusable neural function.</li>
-<li><strong>핵심 용어:</strong> latency = 지연시간: 요청 후 답이 나올 때까지 걸리는 시간</li>
+<li><strong>핵심 용어:</strong> throughput/latency = 처리량/지연시간: 실제 서비스 비용과 응답속도를 좌우하는 실행 지표</li>
 <li><strong>내 판단:</strong> 모델을 실제로 싸고 빠르게 돌리는 inference 병목 쪽이다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
 <li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
 </ul>
@@ -486,7 +486,7 @@
 <li><strong>위치:</strong> HF #6 · 👍 62 · Inference / Efficiency · Heng Wang, Jielin Qiu · digest score 15</li>
 <li><strong>쉽게 말하면:</strong> 긴 문맥 LLM을 돌릴 때 GPU 메모리를 크게 잡아먹는 KV cache를 더 작게 만들어 비용과 속도 병목을 줄이려는 논문이다.</li>
 <li><strong>핵심 내용:</strong> Large language models achieve superior performance on tasks that require extended reasoning, but long chains of thought make the KV cache a severe memory bottleneck. Existing KV cache compression methods share one paradigm: score each cached token by some estimate of how much it will matter later, and keep the top-sco…</li>
-<li><strong>핵심 용어:</strong> KV cache = KV 캐시: 긴 대화/문서를 처리할 때 이전 token 정보를 저장하는 메모리; throughput = 처리량: 같은 시간에 얼마나 많은 요청/token을 처리하는지</li>
+<li><strong>핵심 용어:</strong> KV cache = KV 캐시: 긴 대화/문서를 처리할 때 이전 token 정보를 저장하는 메모리; throughput/latency = 처리량/지연시간: 실제 서비스 비용과 응답속도를 좌우하는 실행 지표</li>
 <li><strong>내 판단:</strong> agent가 길고 많은 요청을 처리할 때 터지는 메모리·prefill 비용 병목을 줄이는 쪽이다. agent 사용량이 늘수록 실제 병목이 비용/속도/메모리로 옮겨가기 때문에 지금 확인할 가치가 있다.</li>
 <li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
 </ul>
@@ -553,8 +553,8 @@
 <h2>5. 시장·투자 연결 후보</h2>
 <p>투자 추천 아님. AI research signal이 workload/bottleneck/industry narrative로 번역될 수 있는지 보는 후보만 기록한다.</p>
 <ul>
-<li><strong>후보 1:</strong> personal/enterprise agent → privacy·security·governance tooling 후보</li>
-<li><strong>근거 signal:</strong> <a href="https://huggingface.co/papers/2608.26730">Knowing When Not to Reuse: Conditional Experience Transfer in Autonomous LLM Post-Training</a> · bottleneck=trust_security</li>
+<li><strong>후보 1:</strong> agent/inference workload → HBM·server memory·AI server/power 병목 후보</li>
+<li><strong>근거 signal:</strong> <a href="https://huggingface.co/papers/2609.04098">Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM</a> · bottleneck=memory_kv_cache</li>
 <li><strong>전파 사슬:</strong> technical legitimacy → workflow adoption → workload/bottleneck → buyer/capex recognition → market narrative</li>
 <li><strong>다음 확인:</strong> 같은 병목이 제품 release note, hyperscaler capex, infra vendor commentary에서 반복되는지</li>
 <li><strong>반증:</strong> 논문/데모가 benchmark 내부에만 머물고 실제 workload 증가 증거가 없으면 보류</li>
