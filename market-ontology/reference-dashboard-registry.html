@@ -354,6 +354,24 @@
 <div class="desk-card warn"><strong>Ontology Edges</strong><p>56개 supply/dependency/constraint edge</p></div>
 <div class="desk-card violet"><strong>Detailed Registry</strong><p>16개 theme · 38개 node · 11개 query seed</p></div>
 </div>
+<h2>0. 2026-09-04 Weekly QA 반영</h2>
+<p>이번 QA는 상세 registry baseline(16 theme · 38 node · 56 edge/link · 11 query seed)을 바꾸지 않고, 2026-08-29~2026-09-04 AI/Market/Cross reports와 PLTR monthly momentum note에서 확인된 evidence 후보를 기존 reference node와 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source-review queue</strong>다. 개별 회사·ticker는 산업 mapping 참고용이며 매수·매도 판단이 아니다.</p>
+<h3>새로 연결된 evidence 후보</h3>
+<ul>
+<li><strong>Agent harness/runtime/eval loop</strong>: Repo-To-Skill, HarnessDev, Aspire, EarlyEval, S3Gym, PaperCompiler 반복 → <code>ai_agent</code>, <code>enterprise_ai</code>, <code>training_data</code>, <code>frontier_llm</code>, <code>opensource_llm</code>에 연결 후보. 실제 workflow log·contract·tool-call volume 전까지 adoption 결론 보류.</li>
+<li><strong>Agent workload → memory/KV/cache → HBM·DRAM</strong>: Language Models Can Control Their Own Attention, It Takes Two to Match, VibeVoice-ASR Streaming, Micron memory shortage beyond HBM, Samsung AI memory share 보도 후보 → <code>ai_agent</code>, <code>hbm</code>, <code>dram_nand</code>, <code>cowos</code>, <code>datacenter_build</code>, <code>dc_power</code>에 연결 후보. ASP·shipment·customer qualification·EPS/consensus revision 전까지 회사 판단 보류.</li>
+<li><strong>AI data-center power/site/EPC/BESS · capex ROI</strong>: Goldman/Yahoo AI capex shocker, PwC data-center capex $31.6T, AWS Saudi cloud region, nuclear/SMR power headlines → <code>hyperscaler</code>, <code>datacenter_build</code>, <code>dc_power</code>, <code>transformer</code>, <code>grid_cable</code>, <code>nuclear</code>, <code>liquid_cooling</code>, <code>gas_power</code>에 연결 후보. PPA·grid interconnect·order/backlog 확인 queue.</li>
+<li><strong>On-device / physical AI / robotics / device security</strong>: Debias-SparseGPT, SnapBench, FoldingAgent, SolarWM/Qwen-Drive 계열 physical-AI 후보, on-device AI security below OS, China humanoid bubble 기사 → <code>on_device</code>, <code>humanoid</code>, <code>autonomous</code>, <code>korean_ai_chip</code>, <code>nvidia</code>, <code>opensource_llm</code>에 연결 후보. demo와 field deployment·반복 주문을 분리.</li>
+<li><strong>Enterprise/RAG/governance/healthcare AI trust</strong>: Beyond Visual Similarity, ExecRetrieval, It Takes Two to Match, on-device security telemetry, healthcare/EHR governance 후보 → <code>enterprise_ai</code>, <code>training_data</code>, <code>frontier_llm</code>, <code>ai_agent</code>에 연결 후보. <code>healthcare_ai</code>는 adjacent subnode 후보로만 추적한다.</li>
+<li><strong>Enterprise/Sovereign AI control-plane 후보</strong>: PLTR monthly momentum의 AIP/Foundry/Gotham control-plane 논점은 <code>enterprise_ai</code>, <code>ai_agent</code>, <code>hyperscaler</code>, <code>training_data</code> 주변 source-review 후보로만 둔다.</li>
+</ul>
+<h3>이번 주 부족한 UX / 데이터</h3>
+<ul>
+<li>현재 page는 KPI cards, 병목 heatmap, Mermaid 기반 supply/dependency network, node detail cards, edge strip, query seeds, risk/metrics 일부를 제공한다.</li>
+<li>아직 <strong>진짜 Sankey/flow interaction</strong>, 클릭형 node side panel, node-level freshness/metrics, node card 내부 주식·뉴스·context panel, query copy/freshness badge, Mermaid CDN 실패 시 raw graph fallback은 backlog다.</li>
+<li>상세 보강 기록은 <code>07-sources/reference-dashboard-weekly-qa.md</code>, <code>04-ontology/Reference Dashboard Node Seeds.md</code>, <code>07-sources/reference-dashboard-queries.yaml</code>의 candidate query section에 누적한다.</li>
+<li>이번 주 candidate query IDs: <code>agent_harness_runtime_eval</code>, <code>memory_kv_hbm_inference_0904</code>, <code>dc_epc_site_power_bess</code>, <code>hyperscaler_capex_utilization_revision</code>, <code>physical_ai_ondevice_security_robotics</code>, <code>enterprise_rag_healthcare_governance</code>, <code>sovereign_ai_operations_control_plane</code>.</li>
+</ul>
 <h2>0. 2026-08-28 Weekly QA 반영</h2>
 <p>이번 QA는 상세 registry baseline(16 theme · 38 node · 56 edge/link · 11 query seed)을 바꾸지 않고, 2026-08-22~2026-08-28 AI/Market/Cross reports와 STX/WDC monthly momentum note에서 확인된 evidence 후보를 기존 reference node와 연결했다. 아래 항목은 투자 추천이 아니라 <strong>dashboard 보강 후보 / source-review queue</strong>다. 개별 회사·ticker는 산업 mapping 참고용이며 매수·매도 판단이 아니다.</p>
 <h3>새로 연결된 evidence 후보</h3>
