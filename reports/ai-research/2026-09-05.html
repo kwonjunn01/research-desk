@@ -516,11 +516,11 @@
 <h4>오늘은 스킵 3. <a href="https://huggingface.co/papers/2609.03199">RoboTok: An Internet-Scale Data Engine for Human Demonstration Retrieval and Dexterous Manipulation Learning</a></h4>
 <ul>
 <li><strong>위치:</strong> HF #11 · 👍 45 · Robotics / Embodied · Howard Qian, Yiting Chen · digest score 14</li>
-<li><strong>쉽게 말하면:</strong> LLM/agent가 검색 결과를 그대로 먹지 않고, 문서 묶음의 중복·충돌·보완성을 따져 RAG 근거 품질을 높이려는 retrieval/reranking 논문이다.</li>
+<li><strong>쉽게 말하면:</strong> 로봇 조작 학습에서 부족한 실제 시연 데이터를, 사람이 한 manipulation video 검색·매칭으로 보강하려는 embodied data-engine 논문이다.</li>
 <li><strong>핵심 내용:</strong> Robot learning increasingly depends on broad and diverse demonstrations, yet collecting robot data remains expensive and poorly suited to covering the long tail of real-world tasks. To address this bottleneck, we introduce RoboTok, an internet-scale data engine that, given a query human manipulation video, retrieves m…</li>
-<li><strong>핵심 용어:</strong> retrieval/RAG = 검색/RAG: 외부 문서나 기억을 찾아 모델 답변에 붙이는 방식; video/multimodal = 비디오 이해·생성: 연속 프레임의 시간 흐름까지 다루는 멀티모달 작업</li>
-<li><strong>내 판단:</strong> agent 답변의 상한이 retrieval set 품질에 묶인다는 점을 직접 겨냥한다. 단일 문서 점수보다 문서 묶음의 다양성·충돌·보완성을 보는 쪽이라 RAG/검색 품질 병목으로 읽는다. agent와 long-context workflow가 늘수록 답변 품질은 모델 자체보다 검색 근거 묶음의 품질·비용·감사 가능성에 막히기 때문이다.</li>
-<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
+<li><strong>핵심 용어:</strong> robot learning = 로봇 학습: 카메라/센서 관찰을 실제 움직임·조작 행동으로 연결하는 학습; demonstration retrieval = 시연 검색: 사람이 수행한 행동 영상을 찾아 로봇 행동 학습 재료로 쓰는 방식; embodied perception = 물리 인식: 영상·공간 정보를 행동 결정에 연결하는 능력</li>
+<li><strong>내 판단:</strong> 텍스트 RAG가 아니라 로봇 학습 데이터 커버리지 병목 신호다. long-tail 조작 시연을 얼마나 잘 찾고 실제 행동 학습으로 전이되는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
+<li><strong>확인할 것:</strong> 검색된 시연이 실제 로봇/시뮬레이터 task 성공률을 올리는지, long-tail 조작에서 false match·latency·데이터 저작권 문제가 생기지 않는지.</li>
 </ul>
 <h2>4. Today&#x27;s Active Lens</h2>
 <blockquote>전체 10 lens를 늘어놓지 않고 오늘 실제 evidence가 있는 3~5개만 유지한다. 위 §1/§2/§3 paper는 중복 카드로 재등장시키지 않는다.</blockquote>
