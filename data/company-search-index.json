@@ -1386,9 +1386,9 @@
       "price_position_52w_pct": 60.970810101672676,
       "return_20d_pct": 10.606060606060597,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 11.46,
-      "forward_pe": 5.0,
-      "price_to_book": 2.97,
+      "trailing_pe": 12.11,
+      "forward_pe": 6.0,
+      "price_to_book": 3.14,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -1420,7 +1420,7 @@
         "factor": "HBM catch-up + DRAM/DDR5 ASP + NAND/foundry drag balance",
         "mechanism": "AI memory demand는 DS Memory margin을 밀어올릴 수 있지만, 삼성은 HBM catch-up 속도와 foundry/System LSI drag가 EPS revision을 좌우한다.",
         "demand_unit": "HBM shipment·yield·share, DRAM/DDR5 ASP·bit shipment, enterprise SSD/NAND margin, foundry/System LSI loss, MX mix, capital return/foreign flow, EPS/OP revision",
-        "bottleneck_pressured": "HBM/DRAM/NAND 공급·가격·margin cycle 병목 + foundry/System LSI drag",
+        "bottleneck_pressured": "AI data-center eSSD·스토리지 컨트롤러 adoption/revenue-conversion 병목",
         "company_pressure_path": "AI memory demand → HBM qualification/share catch-up + DRAM ASP 상승 → DS margin 개선 → foundry/System LSI drag 상쇄 → EPS/OP revision → 가격반영 검증",
         "already_priced": "가격 255,500.00, 일간 +2.2%, 52W +61.0%, 20D +10.6%/60D -14.5%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "gap은 “삼성도 AI 수혜”가 아니라 HBM catch-up 속도와 foundry drag 축소가 아직 보수적으로 반영됐는지다.",
@@ -1454,9 +1454,9 @@
       "price_position_52w_pct": 50.60818282344268,
       "return_20d_pct": 15.822784810126578,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 7.34,
+      "trailing_pe": 7.95,
       "forward_pe": 5.0,
-      "price_to_book": 4.45,
+      "price_to_book": 4.81,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
