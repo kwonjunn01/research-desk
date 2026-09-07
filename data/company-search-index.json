@@ -1055,22 +1055,22 @@
       "price_position_52w_pct": 51.42857142857142,
       "return_20d_pct": 38.931297709923676,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 49.74,
-      "forward_pe": 43.0,
-      "price_to_book": 6.61,
+      "trailing_pe": 50.83,
+      "forward_pe": 44.0,
+      "price_to_book": 6.76,
       "five_element_eval": {
         "대체불가능성": {
-          "rating": "확인필요",
+          "rating": "보통",
           "reason": "semiconductor test socket / materials and AI chip test exposure 안의 niche/고객 승인 장벽은 후보지만 경쟁·고객 concentration·제품별 share 검증 전에는 강 판정 불가.",
           "verification_task": "7d: 제품/고객/수주 route 확인 · 30d: 경쟁사 share와 원문 segment 숫자 재검증"
         },
         "6~12개월 트리거": {
-          "rating": "확인필요",
+          "rating": "보통",
           "reason": "6~12개월 트리거는 test socket and material revenue, AI chip customer expansion, R&D-to-mass-production conversion, high-end socket mix, SKC group synergy, margin leverage, EPS/OP revision가 order/backlog/매출 인식/EPS revision으로 확인되는지에 달려 있다.",
           "verification_task": "7d: 최근 공시·IR·뉴스 event 정리 · 30d: 수주/backlog/분기 실적 반영 확인"
         },
         "시장 인지도": {
-          "rating": "확인필요",
+          "rating": "보통",
           "reason": "ISC는 관련 theme 인지도 후보이나 verified consensus revision과 기관 coverage 강도는 아직 확인 필요.",
           "verification_task": "7d: 증권사/RSS/뉴스 coverage 확인 · 30d: 컨센서스 revision 지속성 점검"
         },
@@ -1080,7 +1080,7 @@
           "verification_task": "7d: 최신 분기 OP/EPS 확인 · 30d: margin/FCF 및 revision 방향 재검증"
         },
         "본업 정보 우위": {
-          "rating": "확인필요",
+          "rating": "보통",
           "reason": "산업 chain 인접성은 정보우위 후보지만 고객별 disclosure와 제품별 매출이 제한되어 원문 확인 필요.",
           "verification_task": "7d: IR/DART/SEC route 확보 · 30d: 제품·고객·지역별 매출/수주 확인"
         }
@@ -1093,7 +1093,7 @@
         "company_pressure_path": "test socket and material revenue, AI chip customer expansion, R&D-to-mass-production conversion, high-end socket mix, SKC group synergy, margin leverage, EPS/OP revision",
         "already_priced": "가격 182,000.00, 일간 +6.0%, 52W +51.4%, 20D +38.9%/60D -4.5%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 ISC에 AI 반도체 테스트 소켓 수혜와 신사업 synergy를 반영한다. 새 판단은 단순 수혜 headline이 아니라 AI 고객 확대와 양산 전환이 매출·margin·revision을 실제로 바꾸는지다.",
-        "five_element_eval": "대체불가능성: 확인필요; 6~12개월 트리거: 확인필요; 시장 인지도: 확인필요; 흑자 모멘텀: 확인필요; 본업 정보 우위: 확인필요",
+        "five_element_eval": "대체불가능성: 보통; 6~12개월 트리거: 보통; 시장 인지도: 보통; 흑자 모멘텀: 확인필요; 본업 정보 우위: 보통",
         "verification": "DART/IR에서 test socket/material 매출, AI 고객 확대, gross/OP margin, 신사업 synergy 숫자 확인; 증권사 preview/review 2건 이상에서 EPS/OP revision과 AI socket demand assumption 비교; 고객 qualification과 양산 전환이 주문·출하·margin으로 연결되는 원문 근거 검증",
         "invalidation": "AI chip socket 주문 또는 고객 qualification이 매출/마진 개선으로 연결되지 않는다.; 소재·신사업 synergy보다 integration cost나 경쟁 압박이 커진다.; 가격 re-rating은 유지되지만 EPS/OP revision history가 정체 또는 하향된다.",
         "action_type": "관찰/검증 · 매수/매도 아님"
@@ -1126,17 +1126,17 @@
       "price_to_book": 6.68,
       "five_element_eval": {
         "대체불가능성": {
-          "rating": "확인필요",
+          "rating": "보통",
           "reason": "test pin / IC socket / probe components for AI and advanced semiconductor testing 안의 niche/고객 승인 장벽은 후보지만 경쟁·고객 concentration·제품별 share 검증 전에는 강 판정 불가.",
           "verification_task": "7d: 제품/고객/수주 route 확인 · 30d: 경쟁사 share와 원문 segment 숫자 재검증"
         },
         "6~12개월 트리거": {
-          "rating": "확인필요",
+          "rating": "보통",
           "reason": "6~12개월 트리거는 test pin and IC socket shipment, AI/advanced semiconductor R&D demand, mass-production conversion, high-margin product mix, factory utilization, customer diversification, EPS/OP revision가 order/backlog/매출 인식/EPS revision으로 확인되는지에 달려 있다.",
           "verification_task": "7d: 최근 공시·IR·뉴스 event 정리 · 30d: 수주/backlog/분기 실적 반영 확인"
         },
         "시장 인지도": {
-          "rating": "확인필요",
+          "rating": "보통",
           "reason": "Leeno Industrial는 관련 theme 인지도 후보이나 verified consensus revision과 기관 coverage 강도는 아직 확인 필요.",
           "verification_task": "7d: 증권사/RSS/뉴스 coverage 확인 · 30d: 컨센서스 revision 지속성 점검"
         },
@@ -1146,7 +1146,7 @@
           "verification_task": "7d: 최신 분기 OP/EPS 확인 · 30d: margin/FCF 및 revision 방향 재검증"
         },
         "본업 정보 우위": {
-          "rating": "확인필요",
+          "rating": "보통",
           "reason": "산업 chain 인접성은 정보우위 후보지만 고객별 disclosure와 제품별 매출이 제한되어 원문 확인 필요.",
           "verification_task": "7d: IR/DART/SEC route 확보 · 30d: 제품·고객·지역별 매출/수주 확인"
         }
@@ -1159,7 +1159,7 @@
         "company_pressure_path": "test pin and IC socket shipment, AI/advanced semiconductor R&D demand, mass-production conversion, high-margin product mix, factory utilization, customer diversification, EPS/OP revision",
         "already_priced": "가격 68,400.00, 일간 +2.7%, 52W +26.3%, 20D +4.1%/60D -31.5%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 Leeno를 반도체 R&D/테스트 고마진 수혜주로 본다. 새 판단은 AI chip 테스트 수요 headline이 아니라 고객 R&D가 양산 전환·제품 mix·margin·EPS revision으로 이어지는지다.",
-        "five_element_eval": "대체불가능성: 확인필요; 6~12개월 트리거: 확인필요; 시장 인지도: 확인필요; 흑자 모멘텀: 확인필요; 본업 정보 우위: 확인필요",
+        "five_element_eval": "대체불가능성: 보통; 6~12개월 트리거: 보통; 시장 인지도: 보통; 흑자 모멘텀: 확인필요; 본업 정보 우위: 보통",
         "verification": "DART/IR에서 테스트 핀·IC socket 매출, gross/OP margin, 고객/R&D mix, 신공장 가동률 확인; 증권사 preview/review 2건 이상에서 EPS/OP revision과 AI 반도체 테스트 수요 assumption 비교; 반도체 R&D/양산 전환이 Leeno 제품 출하로 연결되는 고객·제품 근거 검증",
         "invalidation": "test pin/socket 주문이 AI/R&D headline만큼 늘지 않고 매출 성장률이 둔화된다.; 고마진 mix가 약해지거나 신공장/증설 비용이 margin을 낮춘다.; 가격 premium은 유지되지만 verified EPS/OP revision이 정체 또는 하향된다.",
         "action_type": "관찰/검증 · 매수/매도 아님"
@@ -1784,9 +1784,9 @@
       "price_position_52w_pct": 48.300283286118976,
       "return_20d_pct": 24.343257443082322,
       "fundamentals_coverage": 90.0,
-      "trailing_pe": -35.77,
+      "trailing_pe": -35.21,
       "forward_pe": null,
-      "price_to_book": 55.69,
+      "price_to_book": 54.82,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
