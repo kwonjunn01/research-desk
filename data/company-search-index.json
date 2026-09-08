@@ -1386,9 +1386,9 @@
       "price_position_52w_pct": 65.726467694326,
       "return_20d_pct": 17.391304347826097,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 12.11,
+      "trailing_pe": 12.09,
       "forward_pe": 6.0,
-      "price_to_book": 3.14,
+      "price_to_book": 3.13,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -1454,9 +1454,9 @@
       "price_position_52w_pct": 55.62108367121268,
       "return_20d_pct": 25.56338028169014,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 7.95,
+      "trailing_pe": 7.99,
       "forward_pe": 5.0,
-      "price_to_book": 4.81,
+      "price_to_book": 4.84,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -2279,7 +2279,7 @@
         "factor": "Contracted backlog to revenue / GPU capacity economics",
         "mechanism": "AI GPU 부족 → CoreWeave contracted capacity/RPO → utilization·AI cloud revenue → gross margin이 depreciation/lease/interest 부담을 흡수하는지 → FCF/EPS revision과 가격반영 검증.",
         "demand_unit": "GPU cluster capacity, utilization, contracted backlog/RPO, AI cloud revenue, revenue per GPU-hour proxy, gross margin, capex/debt/interest cost, customer concentration, FCF/EPS revision",
-        "bottleneck_pressured": "AI GPU cloud capacity + financing/FCF conversion bottleneck",
+        "bottleneck_pressured": "AI workload/CAPEX 수요가 매출·margin·EPS revision으로 번역되는 demand-side 병목",
         "company_pressure_path": "GPU supply 확보 → capacity deployment → utilization/revenue recognition → margin/interest/lease cost absorption → FCF/EPS revision → price/revision alignment",
         "already_priced": "가격 89.36, 일간 +5.7%, 52W +31.1%, 20D -1.4%/60D -6.5%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "recognition_gap 1~2/5: GPU cloud scarcity 자체는 이미 시장 인지도가 높다. 남은 gap은 backlog가 margin·FCF revision으로 전환되는 속도가 financing risk보다 빠른지다.",
