@@ -1454,9 +1454,9 @@
       "price_position_52w_pct": 55.94095940959409,
       "return_20d_pct": 25.824561403508774,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 7.99,
+      "trailing_pe": 8.27,
       "forward_pe": 5.0,
-      "price_to_book": 4.84,
+      "price_to_book": 5.01,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "강",
@@ -2241,13 +2241,13 @@
       "traffic_light": "⚪ 회색",
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 99.83,
-      "change_pct": 18.058186946877903,
+      "change_pct": 11.716650982694352,
       "price_position_52w_pct": 42.39611627988078,
-      "return_20d_pct": 10.102571981954679,
+      "return_20d_pct": 13.19877223762116,
       "fundamentals_coverage": 90.0,
       "trailing_pe": null,
-      "forward_pe": -45.858562,
-      "price_to_book": 9.800395,
+      "forward_pe": -51.23165,
+      "price_to_book": 10.948673,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -2281,7 +2281,7 @@
         "demand_unit": "GPU cluster capacity, utilization, contracted backlog/RPO, AI cloud revenue, revenue per GPU-hour proxy, gross margin, capex/debt/interest cost, customer concentration, FCF/EPS revision",
         "bottleneck_pressured": "AI workload/CAPEX 수요가 매출·margin·EPS revision으로 번역되는 demand-side 병목",
         "company_pressure_path": "GPU supply 확보 → capacity deployment → utilization/revenue recognition → margin/interest/lease cost absorption → FCF/EPS revision → price/revision alignment",
-        "already_priced": "가격 99.83, 일간 +18.1%, 52W +42.4%, 20D +10.1%/60D +4.4%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
+        "already_priced": "가격 99.83, 일간 +11.7%, 52W +42.4%, 20D +13.2%/60D +4.3%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "recognition_gap 1~2/5: GPU cloud scarcity 자체는 이미 시장 인지도가 높다. 남은 gap은 backlog가 margin·FCF revision으로 전환되는 속도가 financing risk보다 빠른지다.",
         "five_element_eval": "대체불가능성: 보통; 6~12개월 트리거: 보통; 시장 인지도: 강; 흑자 모멘텀: 약; 본업 정보 우위: 약",
         "verification": "7d: SEC/IR에서 RPO·top customer·GPU fleet·gross margin·interest expense 확인; 30d: brokerage/consensus 2건 이상으로 revenue/FCF/EPS revision 방향 비교; 90d_plus: neocloud capacity shortage timing gap을 prediction board로 이동",
