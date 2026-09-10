@@ -380,12 +380,12 @@
 <blockquote>자동 수집 기반 초안이다. 공개/블로그화 전 사람이 검토한다.</blockquote>
 <h2>0. 20초 요약</h2>
 <ul>
-<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 26, <span class="badge">Agentic AI</span> 20, <span class="badge">Inference Stack</span> 11 쪽 attention이 강하다.</li>
-<li><strong>오늘 paper 1개만 본다면:</strong> <a href="https://huggingface.co/papers/2609.08183">NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness</a> — AI agent가 모델 개발·실험 과정을 실제 executable task로 얼마나 수행하는지 보는 MLE/AI4AI testbed 신호다.</li>
-<li><strong>시장 연결 후보 1개:</strong> post-training/reasoning 품질 → agent 성공률 개선, 직접 market 연결은 아직 약함</li>
+<li><strong>오늘 한 문장:</strong> <span class="badge">AI Research</span> 30, <span class="badge">Agentic AI</span> 28, <span class="badge">Inference Stack</span> 10 쪽 attention이 강하다.</li>
+<li><strong>오늘 paper 1개만 본다면:</strong> <a href="https://huggingface.co/papers/2609.09155">SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators</a> — Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다.</li>
+<li><strong>시장 연결 후보 1개:</strong> agent eval-production gap → observability·evaluation·workflow QA tooling 후보</li>
 <li><strong>오늘은 AI Radar 스킵해도 됨 여부:</strong> 아니오 — today_one_paper와 skim 후보만 보면 된다.</li>
-<li><strong>수집 품질:</strong> Total 63, HF Daily 30; HF gate 정상 — 제목 30/30, 순위 30/30, upvote 30/30, abstract 30/30 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
-<li><strong>Collected at:</strong> 2026-09-10T01:02+00:00 UTC / 2026-09-10 10:02 KST</li>
+<li><strong>수집 품질:</strong> Total 77, HF Daily 26; HF gate 정상 — 제목 26/26, 순위 26/26, upvote 22/26(일부 누락은 비차단), abstract 26/26 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
+<li><strong>Collected at:</strong> 2026-09-10T14:01+00:00 UTC / 2026-09-10 23:01 KST</li>
 </ul>
 <hr>
 <h2>1. 5분 본문 — HF digest + Deep Card</h2>
@@ -393,68 +393,68 @@
 <h3>HF Daily digest — 먼저 볼 논문</h3>
 <h4>20초 요약</h4>
 <ul>
-<li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 377 <a href="https://huggingface.co/papers/2609.08183">NeoHorse-1: Towards Recursive Self-Improvement via Agenti…</a> / #2 👍 178 <a href="https://huggingface.co/papers/2609.08936">AuK Technical Report: An Open-Source Foundational Model f…</a> / #3 👍 116 <a href="https://huggingface.co/papers/2609.08977">Omni Interaction Agent Technical Report</a></li>
-<li><strong>HF Daily quality gate:</strong> 정상 — 제목 30/30, 순위 30/30, upvote 30/30, abstract 30/30 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
+<li><strong>HF Daily Papers / Hugging Face Daily Papers 원본 Top:</strong> #1 👍 58 <a href="https://huggingface.co/papers/2609.10522">Show-Harness: Just a VLM Agent Can Play Robots</a> / #2 👍 48 <a href="https://huggingface.co/papers/2609.10540">Programmable World Model</a> / #3 👍 34 <a href="https://huggingface.co/papers/2609.08572">AgentGrad: Intervention-guided Prompt Optimization for Mu…</a></li>
+<li><strong>HF Daily quality gate:</strong> 정상 — 제목 26/26, 순위 26/26, upvote 22/26(일부 누락은 비차단), abstract 26/26 확보; abstract가 부족하면 다이제스트가 다시 목록형으로 퇴행한다.</li>
 <li><strong>HF Daily freshness gate:</strong> 정상 — KST 수집일 2026-09-10이 report date와 일치한다.</li>
-<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 3, Reasoning / Post-training 3, Robotics / Embodied 3, Multimodal / Generation 1 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(3개).</li>
-<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 3, Reasoning / Post-training 3, Robotics / Embodied 3가 핵심이고, 깊게 읽을 후보는 NeoHorse-1: Towards Recursive Self-Improvement via Ag… / Omni Interaction Agent Technical Report / Miles v0.1: Production-Level Post-Training.</li>
+<li><strong>Top 10 layer mix:</strong> Agent / Tool-use 6, Robotics / Embodied 2, Reasoning / Post-training 2 — 오늘 먼저 볼 축은 <code>Agent / Tool-use</code>(6개).</li>
+<li><strong>논문 결론:</strong> 오늘은 Agent / Tool-use 6, Reasoning / Post-training 4, Robotics / Embodied 2가 핵심이고, 깊게 읽을 후보는 SyncWorld: Visual Calibration Enables World Models as… / Programmable World Model / Scores Alone Do Not Prove Discovery: The Discovery Ce….</li>
 </ul>
 <h4>Decision routing — 먼저 볼/훑을/스킵 후보</h4>
 <ul>
 <li><strong>오늘 읽을 2~3개:</strong> 상세 카드는 아래 <code>Deep Card</code>.</li>
-<li>↳ HF #1 · 👍 377 <a href="https://huggingface.co/papers/2609.08183">NeoHorse-1: Towards Recursive Self-Improvement via Agentic Po…</a></li>
-<li>↳ HF #3 · 👍 116 <a href="https://huggingface.co/papers/2609.08977">Omni Interaction Agent Technical Report</a></li>
-<li>↳ HF #9 · 👍 44 <a href="https://huggingface.co/papers/2609.08368">Miles v0.1: Production-Level Post-Training</a></li>
+<li>↳ HF #10 · 👍 7 <a href="https://huggingface.co/papers/2609.09155">SyncWorld: Visual Calibration Enables World Models as Zero-Sh…</a></li>
+<li>↳ HF #2 · 👍 48 <a href="https://huggingface.co/papers/2609.10540">Programmable World Model</a></li>
+<li>↳ HF #7 · 👍 14 <a href="https://huggingface.co/papers/2609.09219">Scores Alone Do Not Prove Discovery: The Discovery Certificat…</a></li>
 <li><strong>훑고 넘어갈 것:</strong> 상세 카드는 §2 archive.</li>
-<li>↳ HF #2 · 👍 178 <a href="https://huggingface.co/papers/2609.08936">AuK Technical Report: An Open-Source Foundational Model for S…</a></li>
-<li>↳ HF #4 · 👍 79 <a href="https://huggingface.co/papers/2609.08798">Eliciting Weak-to-Strong Generalization with On-Policy Revers…</a></li>
-<li>↳ HF #5 · 👍 50 <a href="https://huggingface.co/papers/2609.06055">DriveZero: End-to-End Driving Beyond Human Demonstrations</a></li>
-<li>↳ HF #6 · 👍 49 <a href="https://huggingface.co/papers/2609.07398">OpenWAM: An Open, Modular Exploration Towards Systematic Worl…</a></li>
+<li>↳ HF #1 · 👍 58 <a href="https://huggingface.co/papers/2609.10522">Show-Harness: Just a VLM Agent Can Play Robots</a></li>
+<li>↳ HF #3 · 👍 34 <a href="https://huggingface.co/papers/2609.08572">AgentGrad: Intervention-guided Prompt Optimization for Multi…</a></li>
+<li>↳ HF #4 · 👍 27 <a href="https://huggingface.co/papers/2609.05405">WearableQA: A Benchmark for Health Reasoning over Real-World…</a></li>
+<li>↳ HF #5 · 👍 18 <a href="https://huggingface.co/papers/2609.08149">SWE-Bench Pro Verified: A Reliable Benchmark for Software Eng…</a></li>
 <li><strong>스킵 후보:</strong> 상세 카드는 §3 archive.</li>
-<li>↳ HF #11 · 👍 41 <a href="https://huggingface.co/papers/2609.05594">SceneMosaic: Efficient and Diverse Simulation-Ready Scene Gen…</a></li>
-<li>↳ HF #12 · 👍 32 <a href="https://huggingface.co/papers/2609.04971">BeaconKV: Key-Value Cache Compression Guided by Beacon Querie…</a></li>
-<li>↳ HF #7 · 👍 46 <a href="https://huggingface.co/papers/2609.05588">GE-Act 2.0: Pretraining and Scaling a World-Action Model for…</a></li>
+<li>↳ HF #11 · 👍 7 <a href="https://huggingface.co/papers/2609.07103">Revisiting Complete Reasoning Traces for Post-Training</a></li>
+<li>↳ HF #8 · 👍 13 <a href="https://huggingface.co/papers/2609.00369">Puppeteer: Object-Grounded Posture-Aware Co-Speech Gesture Ge…</a></li>
+<li>↳ HF #6 · 👍 15 <a href="https://huggingface.co/papers/2609.09113">SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Inte…</a></li>
 <li><strong>중복 없는 카드 배치:</strong> deep 3, skim 4, skip 3; 같은 paper는 세 bucket 중 하나에만 둔다.</li>
 </ul>
 <h3>Deep Card — today_one_paper + deep candidates</h3>
-<h4><a href="https://huggingface.co/papers/2609.08183">NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness</a></h4>
+<h4><a href="https://huggingface.co/papers/2609.09155">SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #1 · 👍 377 · Agent / Tool-use · digest score 20 · today_one_paper</li>
-<li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 26</li>
-<li><strong>쉽게 말하면:</strong> Agent / Tool-use 흐름에서 새로 확인된 연구 신호다. 오늘은 반복 evidence와 실제 workflow 연결 여부를 낮은 우선순위로 추적한다.</li>
-<li><strong>핵심 내용:</strong> Recursive self-improvement (RSI) requires a concrete mechanism through which an AI system observes its capabilities and converts that evidence into the next round of learning. We present NeoHorse-1, a family of agent-native models developed to explore this pa…</li>
-<li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정</li>
-<li><strong>내 판단:</strong> AI agent가 모델 개발·실험 과정을 실제 executable task로 얼마나 수행하는지 보는 MLE/AI4AI testbed 신호다. AI가 AI 개발 업무를 자동화하려면 benchmark 점수보다 실제 실험 설계·실행·디버깅 loop 완주율이 더 중요한 병목이기 때문이다.</li>
-<li><strong>확인할 것:</strong> 실제 MLE task에서 실험 설정·코드 수정·실패 복구·결과 해석을 끝까지 수행하는지, benchmark가 toy task에 머물지 않는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=today_one_paper-2026-09-10-neohorse-1-towards-recursive-self-improvement-vi; source=Hugging Face Daily Papers; paper_id=2609.08183; layer=Agent / Tool-use; agent_layer=Model &amp; Reasoning; bottleneck=post_training_verification; agent_bottleneck=eval_production_gap; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Model &amp; Reasoning; adoption evidence=abstract_enriched; workload/bottleneck=eval_production_gap; market recognition=아직 관찰; price/revision=연결 전</li>
-<li><strong>Invalidation:</strong> 실제 MLE task에서 실험 설정·코드 수정·실패 복구·결과 해석을 끝까지 수행하는지, benchmark가 toy task에 머물지 않는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
+<li><strong>위치:</strong> HF #10 · 👍 7 · Robotics / Embodied · digest score 19 · today_one_paper</li>
+<li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 7</li>
+<li><strong>쉽게 말하면:</strong> Physical AI/로봇 agent가 언어·이미지·영상·소리·행동을 하나의 world model로 묶어 쓰려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> World models are increasingly used as policy-in-the-loop imagination environments, where reliable rollouts require fine-grained controllability with respect to low-level robot actions. A key obstacle to scaling such models in robotics is that actions are not…</li>
+<li><strong>핵심 용어:</strong> robot learning = 로봇 학습: 카메라/센서 관찰을 실제 움직임·조작 행동으로 연결하는 학습; VLA/control = 시각-언어-행동 제어: 보고 들은 지시를 실제 action으로 바꾸는 embodied AI 축; embodied perception = 물리 인식: 영상·공간 정보를 행동 결정에 연결하는 능력</li>
+<li><strong>내 판단:</strong> Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
+<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
+<li><strong>Deep Card metadata:</strong> signal_id=today_one_paper-2026-09-10-syncworld-visual-calibration-enables-world-model; source=Hugging Face Daily Papers; paper_id=2609.09155; layer=Robotics / Embodied; agent_layer=Planning &amp; Control; bottleneck=research_relevance_check; agent_bottleneck=long_horizon_reliability; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Planning &amp; Control; adoption evidence=abstract_enriched; workload/bottleneck=long_horizon_reliability; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Invalidation:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
-<h4><a href="https://huggingface.co/papers/2609.08977">Omni Interaction Agent Technical Report</a></h4>
+<h4><a href="https://huggingface.co/papers/2609.10540">Programmable World Model</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #3 · 👍 116 · Agent / Tool-use · digest score 20 · deep_candidate_2</li>
-<li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 19</li>
+<li><strong>위치:</strong> HF #2 · 👍 48 · Agent / Tool-use · digest score 18 · deep_candidate_2</li>
+<li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 13</li>
 <li><strong>쉽게 말하면:</strong> 이미지·영상·소리 같은 비텍스트 데이터를 더 잘 이해하거나 생성하려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> In this work, we present Gander, an end-to-end model that unifies omni perception, realtime interaction, and agentic capabilities within a single framework. In contrast to turn-based conventional paradigms, Gander continuously receives streaming inputs across…</li>
+<li><strong>핵심 내용:</strong> Recent video world models generate increasingly realistic and interactive visual experiences, yet lack reliable mechanisms for maintaining persistent world state and enforcing programmable rules over extended interactions. We introduce Programmable World Mode…</li>
 <li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; video/multimodal = 비디오 이해·생성: 연속 프레임의 시간 흐름까지 다루는 멀티모달 작업</li>
 <li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
 <li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-09-10-omni-interaction-agent-technical-report; source=Hugging Face Daily Papers; paper_id=2609.08977; layer=Agent / Tool-use; agent_layer=Runtime / Ops; bottleneck=research_relevance_check; agent_bottleneck=research_relevance_check; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Runtime / Ops; adoption evidence=abstract_enriched; workload/bottleneck=research_relevance_check; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-09-10-programmable-world-model; source=Hugging Face Daily Papers; paper_id=2609.10540; layer=Agent / Tool-use; agent_layer=Browser / Computer Use; bottleneck=research_relevance_check; agent_bottleneck=research_relevance_check; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Browser / Computer Use; adoption evidence=abstract_enriched; workload/bottleneck=research_relevance_check; market recognition=아직 관찰; price/revision=연결 전</li>
 <li><strong>Invalidation:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
-<h4><a href="https://huggingface.co/papers/2609.08368">Miles v0.1: Production-Level Post-Training</a></h4>
+<h4><a href="https://huggingface.co/papers/2609.09219">Scores Alone Do Not Prove Discovery: The Discovery Certification Protocol for Auditing AI Research Agents</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #9 · 👍 44 · Reasoning / Post-training · digest score 18 · deep_candidate_3</li>
-<li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 14</li>
-<li><strong>쉽게 말하면:</strong> 최종 답만 맞히는지 보지 않고 풀이 과정이 믿을 만한지도 점수화하는 논문이다.</li>
-<li><strong>핵심 내용:</strong> We present Miles v0.1, a full-stack, production-ready system for frontier post-training. Building upon the clean design of slime, Miles designs each stage of the reinforcement-learning (RL) training loop around a single principle: components should be verifie…</li>
-<li><strong>핵심 용어:</strong> RL = 강화학습: 모델이 정답/보상 신호를 보며 행동을 더 잘하도록 조정하는 학습; distillation = 증류: 큰 모델/기존 모델의 행동을 작은 모델이나 새 모델에 옮기는 학습</li>
-<li><strong>내 판단:</strong> reasoning 과정의 보상 신뢰도를 따져, 겉점수보다 실패 원인을 보는 쪽이다. 모델 능력 향상이 단순 benchmark가 아니라 검증 가능한 보상/긴 작업 안정성으로 이동하는지 보는 재료다.</li>
-<li><strong>확인할 것:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지.</li>
-<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-09-10-miles-v0-1-production-level-post-training; source=Hugging Face Daily Papers; paper_id=2609.08368; layer=Reasoning / Post-training; agent_layer=Model &amp; Reasoning; bottleneck=post_training_verification; agent_bottleneck=post_training_verification; evidence_class=abstract_enriched</li>
-<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Model &amp; Reasoning; adoption evidence=abstract_enriched; workload/bottleneck=post_training_verification; market recognition=아직 관찰; price/revision=연결 전</li>
-<li><strong>Invalidation:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
+<li><strong>위치:</strong> HF #7 · 👍 14 · Agent / Tool-use · digest score 18 · deep_candidate_3</li>
+<li><strong>논문/자료:</strong> Hugging Face Daily Papers · score 16</li>
+<li><strong>쉽게 말하면:</strong> Agent / Tool-use 흐름에서 새로 확인된 연구 신호다. 오늘은 반복 evidence와 실제 workflow 연결 여부를 낮은 우선순위로 추적한다.</li>
+<li><strong>핵심 내용:</strong> AI research agents combine prior knowledge, public sources, and experimental feedback to produce useful results. The Discovery Certification Protocol (DCP) turns claims about these results into executable recovery and feedback tests.</li>
+<li><strong>핵심 용어:</strong> evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정</li>
+<li><strong>내 판단:</strong> Agent / Tool-use 연구 흐름은 확인했지만, 오늘 deep signal보다는 반복 여부를 지켜볼 archive 후보로 둔다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
+<li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
+<li><strong>Deep Card metadata:</strong> signal_id=deep_candidate-2026-09-10-scores-alone-do-not-prove-discovery-the-discover; source=Hugging Face Daily Papers; paper_id=2609.09219; layer=Agent / Tool-use; agent_layer=Eval / Observability; bottleneck=eval_production_gap; agent_bottleneck=tool_error_recovery; evidence_class=abstract_enriched</li>
+<li><strong>5요소 평가 / 시장 연결:</strong> 기술 합법성=Eval / Observability; adoption evidence=abstract_enriched; workload/bottleneck=tool_error_recovery; market recognition=아직 관찰; price/revision=연결 전</li>
+<li><strong>Invalidation:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지. 이 확인되지 않으면 deep signal로 승격하지 않는다.</li>
 </ul>
 <h3>한눈에 보는 오늘의 AI Research 지도</h3>
 <div class="viz-card"><div class="mermaid">flowchart LR
@@ -466,115 +466,115 @@
   MEM --&gt; TRUST[&quot;RAG Security / Trust&quot;]</div></div>
 <h3>오늘의 topic heat / 5분 스캔</h3>
 <ul>
-<li><strong><span class="badge">AI Research</span> 26:</strong> <a href="https://huggingface.co/papers/2609.06652">VidaForge: Open Research Infrastructure for Video Pretraining Data Recipes</a> — Hugging Face Daily Papers, score 14, <span class="badge">AI Research</span></li>
-<li><strong><span class="badge">Agentic AI</span> 20:</strong> <a href="https://huggingface.co/papers/2609.06758">Agentic Visual Generation: From Generative Models to Agentic Control</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span></li>
-<li><strong><span class="badge">Inference Stack</span> 11:</strong> <a href="https://huggingface.co/papers/2609.06289">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
-<li><strong><span class="badge">Post-training</span> 7:</strong> <a href="https://huggingface.co/papers/2609.06289">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
-<li><strong><span class="badge">Agent Evaluation</span> 5:</strong> <a href="https://huggingface.co/papers/2609.06289">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
+<li><strong><span class="badge">AI Research</span> 30:</strong> <a href="https://huggingface.co/papers/2609.05779">Diffs vs. Whole Files: An Empirical Comparison of Iterative Edit-Based and Direct Generation for Flutter/Dart Code Models</a> — Hugging Face Daily Papers, score 11, <span class="badge">AI Research</span></li>
+<li><strong><span class="badge">Agentic AI</span> 28:</strong> <a href="https://huggingface.co/papers/2609.06703">DianShi-RxnDB: A Large-Scale, Fine-Grained Organic Reaction Data Platform Built via a Fully Automated Pipeline for Researchers and AI Agents</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span></li>
+<li><strong><span class="badge">Inference Stack</span> 10:</strong> <a href="https://huggingface.co/papers/2609.10355">Why Is Video Still So Expensive? A Survey of Inference-Efficiency Mechanisms in Video and Audiovisual LLMs</a> — Hugging Face Daily Papers, score 16, <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><strong><span class="badge">Agent Evaluation</span> 9:</strong> <a href="https://huggingface.co/papers/2609.10226">Φ-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agent Evaluation</span></li>
+<li><strong><span class="badge">On-device LLM</span> 6:</strong> <a href="https://huggingface.co/papers/2609.10355">Why Is Video Still So Expensive? A Survey of Inference-Efficiency Mechanisms in Video and Audiovisual LLMs</a> — Hugging Face Daily Papers, score 16, <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 </ul>
 <details><summary>아래는 archive입니다. 시간 없으면 여기서 멈춰도 됨.</summary>
 <h2>2. 훑을 것 3~5개</h2>
-<h4>5분 훑기 1. <a href="https://huggingface.co/papers/2609.08936">AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing</a></h4>
+<h4>5분 훑기 1. <a href="https://huggingface.co/papers/2609.10522">Show-Harness: Just a VLM Agent Can Play Robots</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #2 · 👍 178 · Multimodal / Generation · Ziyang Ma, Zhikang Niu · digest score 12</li>
-<li><strong>쉽게 말하면:</strong> 음성인식 모델이 조용한 녹음실이 아니라 시끄럽고 왜곡된 실제 환경에서도 말을 잘 알아듣게 하려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> We introduce AuK, an open-source foundational model that unifies speech generation and editing through a common interface of natural-language instructions and audio context. To support this broad capability set, we construct approximately 3.03 billion instruction--audio instances and 1.95 million hours of effective su…</li>
-<li><strong>핵심 용어:</strong> multimodal = 멀티모달: 텍스트뿐 아니라 이미지·영상·소리까지 함께 다루는 모델</li>
-<li><strong>내 판단:</strong> 멀티모달/음성 agent가 실제 환경에서 hallucination 없이 듣는 능력과 연결된다. voice/multimodal agent가 현실 환경으로 나오면 음성 robustness가 곧 사용성 병목이 된다.</li>
-<li><strong>확인할 것:</strong> 잡음·억양·왜곡·현장 음성에서 hallucination/누락이 실제로 줄었는지.</li>
+<li><strong>위치:</strong> HF #1 · 👍 58 · Robotics / Embodied · Yanzhe Chen, Zechen Bai · digest score 15</li>
+<li><strong>쉽게 말하면:</strong> Physical AI/로봇 agent가 언어·이미지·영상·소리·행동을 하나의 world model로 묶어 쓰려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to &quot;play&quot; robots through a compact semantic interface linking intent to action.</li>
+<li><strong>핵심 용어:</strong> robot learning = 로봇 학습: 카메라/센서 관찰을 실제 움직임·조작 행동으로 연결하는 학습; VLA/control = 시각-언어-행동 제어: 보고 들은 지시를 실제 action으로 바꾸는 embodied AI 축</li>
+<li><strong>내 판단:</strong> Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
+<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
 </ul>
-<h4>5분 훑기 2. <a href="https://huggingface.co/papers/2609.08798">Eliciting Weak-to-Strong Generalization with On-Policy Reverse Distillation</a></h4>
+<h4>5분 훑기 2. <a href="https://huggingface.co/papers/2609.08572">AgentGrad: Intervention-guided Prompt Optimization for Multi Agent Systems</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #4 · 👍 79 · Reasoning / Post-training · Youngrok Park, Sangmin Bae · digest score 16</li>
-<li><strong>쉽게 말하면:</strong> reasoning/post-training 품질을 데이터·보상·자기검증 방식으로 끌어올리려는 학습 신호다.</li>
-<li><strong>핵심 내용:</strong> Weak-to-strong generalization asks whether stronger models can learn from weaker supervisors and surpass them. This question is particularly important for successive model generations and multi-domain consolidation, where repeating frontier-scale post-training from scratch can be prohibitively expensive.</li>
-<li><strong>핵심 용어:</strong> distillation = 증류: 큰 모델/기존 모델의 행동을 작은 모델이나 새 모델에 옮기는 학습</li>
-<li><strong>내 판단:</strong> 보상·데이터 생성·self-improvement가 reasoning 품질을 실제로 올리는지 확인할 학습 신호다. 모델 능력 향상이 단순 benchmark가 아니라 검증 가능한 보상/긴 작업 안정성으로 이동하는지 보는 재료다.</li>
-<li><strong>확인할 것:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지.</li>
-</ul>
-<h4>5분 훑기 3. <a href="https://huggingface.co/papers/2609.06055">DriveZero: End-to-End Driving Beyond Human Demonstrations</a></h4>
-<ul>
-<li><strong>위치:</strong> HF #5 · 👍 50 · Agent / Tool-use · Hao He, Chengcheng Hu · digest score 16</li>
-<li><strong>쉽게 말하면:</strong> agent가 도구를 쓰며 남긴 긴 작업 기록을 학습 데이터로 압축해 long-context reasoning을 키우려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Most end-to-end autonomous-driving systems learn by imitating human driving logs, leaving their learned behavior constrained by the quality and behavioral coverage of the recorded trajectories. This report presents DriveZero, an end-to-end system that learns driving behavior beyond human demonstrations.</li>
+<li><strong>위치:</strong> HF #3 · 👍 34 · Agent / Tool-use · Jaewon Chu, Jinwoo Seo · digest score 17</li>
+<li><strong>쉽게 말하면:</strong> Agent / Tool-use 흐름에서 새로 확인된 연구 신호다. 오늘은 반복 evidence와 실제 workflow 연결 여부를 낮은 우선순위로 추적한다.</li>
+<li><strong>핵심 내용:</strong> Large language model (LLM)-based multi-agent systems (MAS) achieve strong performance by employing specialized multiple agents, yet their performance depends on the prompt design of each agent. For MAS prompt optimization, textual gradient methods that guide prompt updates using natural-language feedback have emerged…</li>
 <li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조</li>
-<li><strong>내 판단:</strong> agent 실행 로그를 long-context 학습 재료로 바꾸는 시도라, 개인 agent의 긴 작업 기억·도구 관찰 통합 병목과 직접 닿는다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
+<li><strong>내 판단:</strong> Agent / Tool-use 연구 흐름은 확인했지만, 오늘 deep signal보다는 반복 여부를 지켜볼 archive 후보로 둔다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
 <li><strong>확인할 것:</strong> 평가 환경이 실제 browser·OS·tool 실패와 복구 과정을 포함하는지.</li>
 </ul>
-<h4>5분 훑기 4. <a href="https://huggingface.co/papers/2609.07398">OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining</a></h4>
+<h4>5분 훑기 3. <a href="https://huggingface.co/papers/2609.05405">WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #6 · 👍 49 · Robotics / Embodied · Yuran Wang, Siqiao Huang · digest score 13</li>
-<li><strong>쉽게 말하면:</strong> Physical AI/로봇 agent가 언어·이미지·영상·소리·행동을 하나의 world model로 묶어 쓰려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> World-Action Models inherit world knowledge from video-generative priors, and channel it into executable control signals through embodied experience. Existing systems, however, are monolithic: the generative backbone, visual representation, architecture, information flow, inference procedure, and training data are tig…</li>
-<li><strong>핵심 용어:</strong> inference = 추론 실행: 학습이 끝난 모델을 실제 요청에 돌리는 단계</li>
-<li><strong>내 판단:</strong> Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
-<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
+<li><strong>위치:</strong> HF #4 · 👍 27 · Reasoning / Post-training · Ji Soo Lee, Xilun Chen · digest score 17</li>
+<li><strong>쉽게 말하면:</strong> reasoning/post-training 품질을 데이터·보상·자기검증 방식으로 끌어올리려는 학습 신호다.</li>
+<li><strong>핵심 내용:</strong> Recent advances in wearable sensing enable continuous monitoring of physiological and behavioral signals, yet existing benchmarks rarely evaluate whether AI systems can reason over a real user&#x27;s longitudinal wearable record. We introduce WearableQA, a benchmark comprising 4,084 10-option multiple-choice questions cons…</li>
+<li><strong>핵심 용어:</strong> benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트</li>
+<li><strong>내 판단:</strong> 보상·데이터 생성·self-improvement가 reasoning 품질을 실제로 올리는지 확인할 학습 신호다. 벤치마크가 실제 사용 실패를 얼마나 잘 잡는지 확인할 수 있다.</li>
+<li><strong>확인할 것:</strong> 보상/데이터 생성 방식이 shortcut을 만들지 않고 다른 domain·model size에서도 재현되는지.</li>
+</ul>
+<h4>5분 훑기 4. <a href="https://huggingface.co/papers/2609.08149">SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents</a></h4>
+<ul>
+<li><strong>위치:</strong> HF #5 · 👍 18 · Agent / Tool-use · Pujun Zheng, Zixin Shang · digest score 17</li>
+<li><strong>쉽게 말하면:</strong> AI agent가 긴 터미널 작업을 끝까지 수행하는지, 중간 진행·부분 성공까지 촘촘히 평가하는 agent evaluation 논문이다.</li>
+<li><strong>핵심 내용:</strong> SWE-Bench Pro has emerged as a standard benchmark for evaluating software engineering agents on challenging repository-level tasks. However, our analysis work show that its evaluation is undermined by two sources of unreliability: \textbf{reward hacking}, enabled by leakage of gold solutions or hidden evaluation infor…</li>
+<li><strong>핵심 용어:</strong> reward = 보상: 모델 답이나 풀이 과정이 좋은지 점수화하는 신호; agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조; benchmark = 벤치마크: 모델/agent 성능을 비교하기 위한 시험 세트; evaluation = 평가: 모델이 실제로 잘하는지 실패 유형까지 재는 과정</li>
+<li><strong>내 판단:</strong> Agent / Tool-use 연구 흐름은 확인했지만, 오늘 deep signal보다는 반복 여부를 지켜볼 archive 후보로 둔다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
+<li><strong>확인할 것:</strong> 보상 정의가 shortcut을 만들지 않는지, 다른 task로 일반화되는지.</li>
 </ul>
 <h2>3. 스킵 표</h2>
-<h4>오늘은 스킵 1. <a href="https://huggingface.co/papers/2609.05594">SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution</a></h4>
+<h4>오늘은 스킵 1. <a href="https://huggingface.co/papers/2609.07103">Revisiting Complete Reasoning Traces for Post-Training</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #11 · 👍 41 · Multimodal / Generation · Xingjian Ran, Xiaoye Mo · digest score 6</li>
-<li><strong>쉽게 말하면:</strong> 3D 장면 안에서 agent가 촬영 의도에 맞는 카메라 위치·구도·스타일을 스스로 찾고 평가하게 하는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Diverse and simulation-ready indoor scenes are essential for interactive entertainment and embodied AI, yet their scalable generation remains challenging. Recent agentic text-to-3D scene pipelines that rely on vision-language models (VLMs) can generate scenes of high fidelity but require costly iterative object placem…</li>
-<li><strong>핵심 용어:</strong> multimodal = 텍스트·이미지·소리·영상 같은 여러 입력/출력을 함께 다루는 모델</li>
-<li><strong>내 판단:</strong> 3D 공간 이해와 미적 판단을 닫힌 루프 agent로 평가하는 신호다. 범용 개인 agent보다는 embodied/creative agent 평가축으로 본다. 오늘 핵심 병목과의 직접 연결은 약하다. 코드 공개·벤치마크 조건·실제 workflow 적용 가능성을 기준으로 archive 우선순위를 낮춘다.</li>
-<li><strong>확인할 것:</strong> demo 품질이 아니라 평가셋·실패사례·제어 가능성이 있는지.</li>
+<li><strong>위치:</strong> HF #11 · 👍 7 · Reasoning / Post-training · Jaehui Hwang, Sangdoo Yun · digest score 11</li>
+<li><strong>쉽게 말하면:</strong> reasoning/post-training 품질을 데이터·보상·자기검증 방식으로 끌어올리려는 학습 신호다.</li>
+<li><strong>핵심 내용:</strong> Large language models (LLMs) are often post-trained on pre-collected reasoning trajectories to improve their reasoning capability. Such trajectories tend to be long due to complex, interwoven paths, which often include detours on the path toward the answer.</li>
+<li><strong>핵심 용어:</strong> post-training = 기본 학습 이후 보상·데이터·정렬로 능력을 보정하는 단계</li>
+<li><strong>내 판단:</strong> 보상·데이터 생성·self-improvement가 reasoning 품질을 실제로 올리는지 확인할 학습 신호다. 모델 능력 향상이 단순 benchmark가 아니라 검증 가능한 보상/긴 작업 안정성으로 이동하는지 보는 재료다.</li>
+<li><strong>확인할 것:</strong> 보상/데이터 생성 방식이 shortcut을 만들지 않고 다른 domain·model size에서도 재현되는지.</li>
 </ul>
-<h4>오늘은 스킵 2. <a href="https://huggingface.co/papers/2609.04971">BeaconKV: Key-Value Cache Compression Guided by Beacon Queries for Efficient Large Reasoning Model Inference</a></h4>
+<h4>오늘은 스킵 2. <a href="https://huggingface.co/papers/2609.00369">Puppeteer: Object-Grounded Posture-Aware Co-Speech Gesture Generation</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #12 · 👍 32 · Inference / Efficiency · Janghyeon Kim, Minsoo Kim · digest score 11</li>
-<li><strong>쉽게 말하면:</strong> 긴 문맥 LLM을 돌릴 때 GPU 메모리를 크게 잡아먹는 KV cache를 더 작게 만들어 비용과 속도 병목을 줄이려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> Large Reasoning Models (LRMs) achieve superior problem-solving through extended Chain-of-Thought (CoT) generation, but the resulting key-value (KV) cache grows linearly with sequence length and creates severe memory bottlenecks, often exceeding GPU capacity for long reasoning traces. Existing KV cache compression meth…</li>
-<li><strong>핵심 용어:</strong> KV cache = KV 캐시: 긴 대화/문서를 처리할 때 이전 token 정보를 저장하는 메모리; throughput/latency = 처리량/지연시간: 실제 서비스 비용과 응답속도를 좌우하는 실행 지표</li>
-<li><strong>내 판단:</strong> agent가 길고 많은 요청을 처리할 때 터지는 메모리·prefill 비용 병목을 줄이는 쪽이다. 긴 실제 작업을 끝내는 agent 신뢰성·복구력과 직접 맞닿아 있어 오늘 우선 확인할 가치가 있다.</li>
-<li><strong>확인할 것:</strong> 메모리/속도 개선이 어떤 하드웨어·batch·긴 문맥 조건에서 나온 것인지, sparse 전환이 정확도 손실을 만들지 않는지.</li>
+<li><strong>위치:</strong> HF #8 · 👍 13 · Reasoning / Post-training · Vida Adeli, Soroush Mehraban · digest score 13</li>
+<li><strong>쉽게 말하면:</strong> 이미지·영상·소리 같은 비텍스트 데이터를 더 잘 이해하거나 생성하려는 논문이다.</li>
+<li><strong>핵심 내용:</strong> Generating co-speech gestures that are temporally coherent, semantically aligned with speech, and grounded with surrounding objects remains challenging. Prior speech-driven gesture models emphasize audio-gesture alignment but do not explicitly account for posture constraints or surrounding objects, failing to capture…</li>
+<li><strong>핵심 용어:</strong> post-training = 기본 학습 이후 보상·데이터·정렬로 능력을 보정하는 단계</li>
+<li><strong>내 판단:</strong> 멀티모달 생성·인식 신호다. agent/infra와 직접 연결되는지는 확인이 필요하다. voice/multimodal agent가 현실 환경으로 나오면 음성 robustness가 곧 사용성 병목이 된다.</li>
+<li><strong>확인할 것:</strong> 잡음·억양·왜곡·현장 음성에서 hallucination/누락이 실제로 줄었는지.</li>
 </ul>
-<h4>오늘은 스킵 3. <a href="https://huggingface.co/papers/2609.05588">GE-Act 2.0: Pretraining and Scaling a World-Action Model for Robotic Manipulation</a></h4>
+<h4>오늘은 스킵 3. <a href="https://huggingface.co/papers/2609.09113">SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?</a></h4>
 <ul>
-<li><strong>위치:</strong> HF #7 · 👍 46 · Robotics / Embodied · AgiBot Research Team, Renhang Liu · digest score 13</li>
-<li><strong>쉽게 말하면:</strong> Physical AI/로봇 agent가 언어·이미지·영상·소리·행동을 하나의 world model로 묶어 쓰려는 논문이다.</li>
-<li><strong>핵심 내용:</strong> World-action models (WAM) predict future states to guide robot actions, enabling learning from both action-free video and action-labeled interaction. Most inherit pretrained video generators, leaving WAM pretraining and scaling underexplored.</li>
-<li><strong>핵심 용어:</strong> robot learning = 로봇 학습: 카메라/센서 관찰을 실제 움직임·조작 행동으로 연결하는 학습; VLA/control = 시각-언어-행동 제어: 보고 들은 지시를 실제 action으로 바꾸는 embodied AI 축; embodied perception = 물리 인식: 영상·공간 정보를 행동 결정에 연결하는 능력</li>
-<li><strong>내 판단:</strong> Physical AI용 world model backbone 신호다. 실제 로봇/시뮬레이터 task로 이어지는지가 핵심이다. agent가 웹/텍스트를 넘어 물리 환경으로 확장될 때, world model·spatial memory·latency가 실제 adoption 병목이 되기 때문이다.</li>
-<li><strong>확인할 것:</strong> 실제 로봇·시뮬레이터 task에서 action token 제어, latency, compute cost가 감당되는지.</li>
+<li><strong>위치:</strong> HF #6 · 👍 15 · Agent / Tool-use · Yuqiao Tan, Shizhu He · digest score 14</li>
+<li><strong>쉽게 말하면:</strong> Agent / Tool-use 흐름에서 새로 확인된 연구 신호다. 오늘은 반복 evidence와 실제 workflow 연결 여부를 낮은 우선순위로 추적한다.</li>
+<li><strong>핵심 내용:</strong> While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this…</li>
+<li><strong>핵심 용어:</strong> agent = 에이전트: 모델이 도구를 쓰고 여러 단계를 실행해 일을 끝내는 구조</li>
+<li><strong>내 판단:</strong> AI agent가 모델 개발·실험 과정을 실제 executable task로 얼마나 수행하는지 보는 MLE/AI4AI testbed 신호다. AI가 AI 개발 업무를 자동화하려면 benchmark 점수보다 실제 실험 설계·실행·디버깅 loop 완주율이 더 중요한 병목이기 때문이다.</li>
+<li><strong>확인할 것:</strong> 실제 MLE task에서 실험 설정·코드 수정·실패 복구·결과 해석을 끝까지 수행하는지, benchmark가 toy task에 머물지 않는지.</li>
 </ul>
 <h2>4. Today&#x27;s Active Lens</h2>
 <blockquote>전체 10 lens를 늘어놓지 않고 오늘 실제 evidence가 있는 3~5개만 유지한다. 위 §1/§2/§3 paper는 중복 카드로 재등장시키지 않는다.</blockquote>
 <h3>Agent 실사용 — signal+hype 혼재</h3>
 <ul>
 <li><strong>왜 봄:</strong> 도구 사용, workflow, 협업 agent가 실제 제품/업무로 이어지는지</li>
-<li><a href="https://huggingface.co/papers/2609.06289">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
-<li><a href="https://huggingface.co/papers/2609.05324">RoboSPA: Can VLA Models Go Beyond Simple Scenes and Short-Horizon Tasks?</a> — Hugging Face Daily Papers, score 11, <span class="badge">Agent Planning</span> / <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2609.10226">Φ-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2609.10355">Why Is Video Still So Expensive? A Survey of Inference-Efficiency Mechanisms in Video and Audiovisual LLMs</a> — Hugging Face Daily Papers, score 16, <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 </ul>
 <h3>Post-training / RLVR — signal+hype 혼재</h3>
 <ul>
 <li><strong>왜 봄:</strong> 모델 능력 향상이 데이터/보상/검증 가능성으로 이동하는지</li>
-<li><a href="https://huggingface.co/papers/2609.06289">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
-<li><a href="https://huggingface.co/papers/2609.08404">Environments as Scaffold: Enriching Feedback to Bootstrap Self-Evolving Agents in Long-Horizon Tasks</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Post-training</span></li>
+<li><a href="https://huggingface.co/papers/2609.08650">Difficulty-Adaptive Tree-Structured Policy Optimization for Expanding Reasoning Coverage in RLVR</a> — Hugging Face Daily Papers, score 14, <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2609.09187">AgenticGen: Reward-Guided Agentic Video Generation for Advertising</a> — Hugging Face Daily Papers, score 13, <span class="badge">Post-training</span></li>
 </ul>
 <h3>Inference 비용/메모리 — signal+hype 혼재</h3>
 <ul>
 <li><strong>왜 봄:</strong> latency, throughput, memory cost가 adoption 병목인지</li>
-<li><a href="https://huggingface.co/papers/2609.06289">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a> — Hugging Face Daily Papers, score 17, <span class="badge">Agent Evaluation</span> / <span class="badge">Post-training</span> / <span class="badge">Inference Stack</span></li>
-<li><a href="https://huggingface.co/papers/2609.08084">Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation</a> — Hugging Face Daily Papers, score 14, <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2609.10355">Why Is Video Still So Expensive? A Survey of Inference-Efficiency Mechanisms in Video and Audiovisual LLMs</a> — Hugging Face Daily Papers, score 16, <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
+<li><a href="https://huggingface.co/papers/2609.08650">Difficulty-Adaptive Tree-Structured Policy Optimization for Expanding Reasoning Coverage in RLVR</a> — Hugging Face Daily Papers, score 14, <span class="badge">Inference Stack</span></li>
+</ul>
+<h3>Eval / Observability — signal+hype 혼재</h3>
+<ul>
+<li><strong>왜 봄:</strong> benchmark와 실제 사용 간 gap을 줄이는지</li>
+<li><a href="https://huggingface.co/papers/2609.10226">Φ-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agent Evaluation</span></li>
+<li><a href="https://huggingface.co/papers/2609.10355">Why Is Video Still So Expensive? A Survey of Inference-Efficiency Mechanisms in Video and Audiovisual LLMs</a> — Hugging Face Daily Papers, score 16, <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 </ul>
 <h3>On-device / Edge — signal 후보</h3>
 <ul>
 <li><strong>왜 봄:</strong> cloud 의존을 줄이거나 새로운 edge workload를 만드는지</li>
-<li><a href="https://huggingface.co/papers/2609.08084">Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation</a> — Hugging Face Daily Papers, score 14, <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
-<li><a href="https://huggingface.co/papers/2609.07108">Online Draft Co-Training for Speculative Decoding in Large-Scale, Long-Context RL Post-Training</a> — Hugging Face Daily Papers, score 12, <span class="badge">On-device LLM</span> / <span class="badge">Post-training</span></li>
-</ul>
-<h3>RAG / Memory 신뢰성 — signal 후보</h3>
-<ul>
-<li><strong>왜 봄:</strong> agent memory와 retrieval이 실제 신뢰성/보안 문제를 해결하는지</li>
-<li><a href="https://huggingface.co/papers/2609.06758">Agentic Visual Generation: From Generative Models to Agentic Control</a> — Hugging Face Daily Papers, score 14, <span class="badge">Agentic AI</span> / <span class="badge">Agent Planning</span> / <span class="badge">Tool Use / MCP</span></li>
-<li><a href="https://huggingface.co/papers/2609.06652">VidaForge: Open Research Infrastructure for Video Pretraining Data Recipes</a> — Hugging Face Daily Papers, score 14, <span class="badge">AI Research</span></li>
+<li><a href="https://huggingface.co/papers/2609.06703">DianShi-RxnDB: A Large-Scale, Fine-Grained Organic Reaction Data Platform Built via a Fully Automated Pipeline for Researchers and AI Agents</a> — Hugging Face Daily Papers, score 16, <span class="badge">Agentic AI</span></li>
+<li><a href="https://huggingface.co/papers/2609.10355">Why Is Video Still So Expensive? A Survey of Inference-Efficiency Mechanisms in Video and Audiovisual LLMs</a> — Hugging Face Daily Papers, score 16, <span class="badge">On-device LLM</span> / <span class="badge">Inference Stack</span></li>
 </ul>
 <h2>5. 시장·투자 연결 후보</h2>
 <p>투자 추천 아님. AI research signal이 workload/bottleneck/industry narrative로 번역될 수 있는지 보는 후보만 기록한다.</p>
 <ul>
-<li><strong>후보 1:</strong> post-training/reasoning 품질 → agent 성공률 개선, 직접 market 연결은 아직 약함</li>
-<li><strong>근거 signal:</strong> <a href="https://huggingface.co/papers/2609.08183">NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness</a> · bottleneck=post_training_verification</li>
+<li><strong>후보 1:</strong> agent eval-production gap → observability·evaluation·workflow QA tooling 후보</li>
+<li><strong>근거 signal:</strong> <a href="https://huggingface.co/papers/2609.09219">Scores Alone Do Not Prove Discovery: The Discovery Certification Protocol for Auditing AI Research Agents</a> · bottleneck=eval_production_gap</li>
 <li><strong>전파 사슬:</strong> technical legitimacy → workflow adoption → workload/bottleneck → buyer/capex recognition → market narrative</li>
 <li><strong>다음 확인:</strong> 같은 병목이 제품 release note, hyperscaler capex, infra vendor commentary에서 반복되는지</li>
 <li><strong>반증:</strong> 논문/데모가 benchmark 내부에만 머물고 실제 workload 증가 증거가 없으면 보류</li>
@@ -587,38 +587,45 @@
 </ul>
 <h2>7. 원본 링크</h2>
 <ul>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08183">NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08977">Omni Interaction Agent Technical Report</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08798">Eliciting Weak-to-Strong Generalization with On-Policy Reverse Distillation</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.07398">OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06289">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08936">AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06055">DriveZero: End-to-End Driving Beyond Human Demonstrations</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08084">Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08368">Miles v0.1: Production-Level Post-Training</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.04971">BeaconKV: Key-Value Cache Compression Guided by Beacon Queries for Efficient Large Reasoning Model Inference</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06758">Agentic Visual Generation: From Generative Models to Agentic Control</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08404">Environments as Scaffold: Enriching Feedback to Bootstrap Self-Evolving Agents in Long-Horizon Tasks</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06652">VidaForge: Open Research Infrastructure for Video Pretraining Data Recipes</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.07108">Online Draft Co-Training for Speculative Decoding in Large-Scale, Long-Context RL Post-Training</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.05588">GE-Act 2.0: Pretraining and Scaling a World-Action Model for Robotic Manipulation</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.05594">SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.07816">Kalman Delta Networks: Uncertainty-aware Associative Memory</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09153">Procedural Graphs: Self-Evolving Execution Structures for LLM Agents</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.05324">RoboSPA: Can VLA Models Go Beyond Simple Scenes and Short-Horizon Tasks?</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06665">TransNormal-2: Geometry-Grounded Rectified Flow with Edge-Aware Decoding for Precise Normal Estimation</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.07470">Measuring Language Transfer in Robot Policies: Adding Greek to a Cosmos3 Vision-Language-Action Policy</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08149">SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.10522">Show-Harness: Just a VLM Agent Can Play Robots</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08572">AgentGrad: Intervention-guided Prompt Optimization for Multi Agent Systems</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09113">SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09219">Scores Alone Do Not Prove Discovery: The Discovery Certification Protocol for Auditing AI Research Agents</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06703">DianShi-RxnDB: A Large-Scale, Fine-Grained Organic Reaction Data Platform Built via a Fully Automated Pipeline for Researchers and AI Agents</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.10226">Φ-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.10355">Why Is Video Still So Expensive? A Survey of Inference-Efficiency Mechanisms in Video and Audiovisual LLMs</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08965">PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08650">Difficulty-Adaptive Tree-Structured Policy Optimization for Expanding Reasoning Coverage in RLVR</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.10540">Programmable World Model</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.05405">WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09187">AgenticGen: Reward-Guided Agentic Video Generation for Advertising</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.05779">Diffs vs. Whole Files: An Empirical Comparison of Iterative Edit-Based and Direct Generation for Flutter/Dart Code Models</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09264">StochBench: A Domain-Specific Benchmark for Stochastic Processes in Lean</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10509v1">Avatar: Toward Autonomous End-to-End Orchestration of Scientific Workflows using LLMs</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10534v1">Likelihood-free inference with nuisance parameters through normalizing flows</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10355v1">Why Is Video Still So Expensive? A Survey of Inference-Efficiency Mechanisms in Video and Audiovisual LLMs</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.00369">Puppeteer: Object-Grounded Posture-Aware Co-Speech Gesture Generation</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.07103">Revisiting Complete Reasoning Traces for Post-Training</a></li>
 <li><strong>Hacker News:</strong> <a href="https://github.com/yoloshii/ClawMem">Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09123">Mask Forcing: Improving Autoregressive Video Diffusion Distillation via Dual-Noise Masking Rollout</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06746">Reason Through the Latent! Making Latent Visual Reasoning Necessary</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09158">TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.05663">What LLM Trading Agents Actually Do in Production: A Six-Month, Population-Scale Record from Two Fleets</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06373">Multi-Grid Post-Training for Long-Form Multi-Shot Video Generation</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09134">Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09657">RESCUE-BENCH: Towards Relation-Aware Multi-Party Emotional Support Conversation Systems</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.10060">Reference-Based Bias Detection in LLMs via Relative Representations of Hidden States</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.07369">DF26: We Cannot Tell Fake From Real Anymore</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10539v1">IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10522v1">Show-Harness: Just a VLM Agent Can Play Robots</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10441v1">ConvMem: Convolutional Memory for Long-Context Reasoning</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10439v1">Forgetting Only What Matters: Layer-Selective Unlearning toward Robust LLMs</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10430v1">Glyph: A Multi-Strategy Agentic System for Column Description and Sensitivity-Ontology Tagging of Enterprise Data Catalogs</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10495v1">Cross-Model Agreement as a Deployment-Time Reliability Signal for Automatic Polyp Segmentation</a></li>
 <li><strong>Hacker News:</strong> <a href="https://www.getspine.ai/">Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.07498">CosmoH2G: A Hand-to-Gripper Transfer Dataset and Baseline Method for Object Manipulation with Complex Spatial Movements</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08345">CoVeR: Coverage-Based Token Pruning for Multi-View 3D Reasoning in VLMs</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.05592">What Did I Just Say? Self-Listening for Full-Duplex Speech Models</a></li>
-<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.08108">SynthGait-19K: A Physically Grounded Synthetic Video Dataset for Gait Parameter Estimation</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.09155">SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06806">Train Smarter, Not Harder: Switching Signal-Guided Training in Active Learning</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.06490">OracleZoom: On-Policy Self-Distillation Inspired Reference-Constrained Recursive Image Super Resolution</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.10296">The Semantic Bottleneck: Leveraging Semantic Representations for Non-Invasive Speech Decoding</a></li>
+<li><strong>Hugging Face Daily Papers:</strong> <a href="https://huggingface.co/papers/2609.02771">From Reweighting to Rewriting: Unlocking the Intervention Effects of Influential Samples in Training Data Attribution</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10540v1">Programmable World Model</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10392v1">Teacher-Free Self-Distilled Consistency Trajectory Learning for Fast Speech Enhancement</a></li>
 <li><strong>Hacker News:</strong> <a href="https://speko.ai/">Launch HN: Speko (YC S26) – OpenRouter for Voice AI</a></li>
 <li><strong>GitHub:</strong> <a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></li>
 <li><strong>GitHub:</strong> <a href="https://github.com/langflow-ai/langflow">langflow-ai/langflow</a></li>
@@ -636,6 +643,13 @@
 <li><strong>Hacker News:</strong> <a href="https://www.agentmailr.com/">Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)</a></li>
 <li><strong>Hacker News:</strong> <a href="https://vett.sh">Show HN: Vett – Scan, sign, and verify AI agent skills before installing</a></li>
 <li><strong>Hacker News:</strong> <a href="https://getattache.com/">Show HN: I built an AI executive assistant you use through iMessage</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10515v1">PASCAL: A Phase-Aware Shared-Cache Model for Parallel Scans</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10537v1">Towards Tackling Application Logic Flaws through Autonomous Formal-Logic Modeling and Automated Reasoning</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10511v1">Hydrodynamic magnetotransport in a GaAs Corbino geometry</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10500v1">Phonon-Bottleneck-Governed Ultrafast Hot-Carrier Super-Diffusion in Transition Metal Dichalcogenides</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10497v1">Dynamic Reduced-Order Data Assimilation from Sparse Velocity Measurements</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10531v1">Guiding Image-to-3D Generation with Test-Time Partial Observations</a></li>
+<li><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.10524v1">Precision in Rice Variety Classification using Stacking-Based Ensemble Learning</a></li>
 <li><strong>GitHub:</strong> <a href="https://github.com/sponsors/explore">sponsors/explore</a></li>
 <li><strong>GitHub:</strong> <a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a></li>
 <li><strong>GitHub:</strong> <a href="https://github.com/sponsors/affaan-m">sponsors/affaan-m</a></li>
@@ -650,15 +664,6 @@
 <li><strong>Hacker News:</strong> <a href="https://uselibrarian.dev/">Show HN: Librarian – Cut token costs by up to 85% for LangGraph and OpenClaw</a></li>
 <li><strong>Hacker News:</strong> <a href="https://gepa-ai.github.io/gepa/blog/2026/02/18/introducing-optimize-anything/">Show HN: Optimize_anything: A Universal API for Optimizing Any Text Parameter</a></li>
 <li><strong>Hacker News:</strong> <a href="https://github.com/peeramid-labs/nsed">Show HN: NSED is public – Mixture-of-Models to Hit SOTA using self-hosted AI</a></li>
-</ul>
-<h3>Collector warnings</h3>
-<ul>
-<li>arXiv failed: agentic AI: The read operation timed out</li>
-<li>arXiv failed: LLM orchestration: HTTP Error 429: Unknown Error</li>
-<li>arXiv failed: post-training LLM: HTTP Error 429: Unknown Error</li>
-<li>arXiv failed: on-device LLM: The read operation timed out</li>
-<li>arXiv failed: vLLM SGLang inference: The read operation timed out</li>
-<li>arXiv failed: MCP agent framework: The read operation timed out</li>
 </ul>
 </details></article></main>
 </div>
