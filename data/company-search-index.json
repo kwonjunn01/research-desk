@@ -1254,9 +1254,9 @@
       "price_position_52w_pct": 47.02290076335878,
       "return_20d_pct": 49.21875,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 55.58,
-      "forward_pe": 40.0,
-      "price_to_book": 14.87,
+      "trailing_pe": 52.28,
+      "forward_pe": 38.0,
+      "price_to_book": 13.99,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3153,12 +3153,12 @@
       "traffic_reason": "source/revision gate 미완료 · 판단 보류",
       "price": 755000.0,
       "change_pct": 3.71,
-      "price_position_52w_pct": 27.341227125941874,
+      "price_position_52w_pct": 25.986842105263158,
       "return_20d_pct": 2.1650879566982306,
       "fundamentals_coverage": 100.0,
-      "trailing_pe": 31.99,
-      "forward_pe": 29.0,
-      "price_to_book": 12.05,
+      "trailing_pe": 31.69,
+      "forward_pe": 28.0,
+      "price_to_book": 11.94,
       "five_element_eval": {
         "대체불가능성": {
           "rating": "보통",
@@ -3192,7 +3192,7 @@
         "demand_unit": "transformer and power-equipment orders, backlog, North America/Middle East grid demand, data-center/grid capex, pricing/lead time, margin, EPS/OP revision",
         "bottleneck_pressured": "AI data-center 전력망·변압기·전선/전력기기 lead-time 병목",
         "company_pressure_path": "transformer and power-equipment orders, backlog, North America/Middle East grid demand, data-center/grid capex, pricing/lead time, margin, EPS/OP revision",
-        "already_priced": "가격 755,000.00, 일간 +3.7%, 52W +27.3%, 20D +2.2%/60D -36.8%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
+        "already_priced": "가격 755,000.00, 일간 +3.7%, 52W +26.0%, 20D +2.2%/60D -36.8%; 가격반영은 EPS/OP revision과 비교 전 판단 보류.",
         "recognition_gap": "시장은 전력망·데이터센터 변압기 shortage를 이미 강하게 반영한다. 새 판단은 장기 수주잔고와 판가/margin이 현재 가격 premium을 추가로 정당화하는지다.",
         "five_element_eval": "대체불가능성: 보통; 6~12개월 트리거: 보통; 시장 인지도: 보통; 흑자 모멘텀: 확인필요; 본업 정보 우위: 보통",
         "verification": "DART/IR에서 수주잔고·book-to-bill·지역별 mix·margin·capacity 계획 확인; 증권사 preview/review 2건 이상에서 EPS/OP revision과 backlog assumption 확인; 전력망/변압기 lead time 및 hyperscaler/data-center capex와의 직접 연결 근거 교차검증",
