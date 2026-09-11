@@ -68,7 +68,10 @@ pre { background: #080a0f; border: 1px solid var(--border); padding: 16px; borde
 pre, code { overflow-wrap: normal; }
 pre code { background: transparent; padding: 0; white-space: pre; }
 .viz-card { position: relative; background: radial-gradient(circle at 20% 0%, rgba(138,180,255,.12), transparent 35%), #0b0e14; border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin: 18px 0 24px; overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
-.mermaid { min-width: 680px; }
+.mermaid { min-width: 680px; min-height: 180px; color: transparent; position: relative; }
+.mermaid::before { content: "Network graph 로딩 중 · 원문 Mermaid는 숨김 처리"; color: var(--muted); position: absolute; inset: 16px auto auto 16px; font-size: 12px; }
+.mermaid[data-processed="true"] { color: inherit; min-height: 0; }
+.mermaid[data-processed="true"]::before { content: none; }
 .desk-dashboard { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 22px 0 28px; }
 .desk-card { background: linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.022)); border: 1px solid rgba(255,255,255,.09); border-radius: 16px; padding: 14px 15px; box-shadow: 0 14px 40px rgba(0,0,0,.18); }
 .desk-card strong { display: block; color: var(--accent); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 6px; }
